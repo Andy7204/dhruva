@@ -1,0 +1,60 @@
+{
+  "name": "balanced",
+  "capital": 70000.0,
+  "cash": 70000.0,
+  "holdings": {},
+  "orders": [
+    {
+      "id": 1,
+      "side": "BUY",
+      "symbol": "GOLDBEES.NS",
+      "kind": "cushion",
+      "status": "scheduled",
+      "decided_date": "2026-09-16",
+      "target_value": 10238.0,
+      "stop": 0.0,
+      "ref_price": 124.7
+    },
+    {
+      "id": 2,
+      "side": "BUY",
+      "symbol": "INDIGRID.NS",
+      "kind": "cushion",
+      "status": "scheduled",
+      "decided_date": "2026-09-16",
+      "target_value": 6825.0,
+      "stop": 0.0,
+      "ref_price": 0
+    },
+    {
+      "id": 3,
+      "side": "BUY",
+      "symbol": "LIQUIDBEES.NS",
+      "kind": "cushion",
+      "status": "scheduled",
+      "decided_date": "2026-09-16",
+      "target_value": 3412.0,
+      "stop": 0.0,
+      "ref_price": 1000.0
+    }
+  ],
+  "history": [
+    [
+      "2026-09-16",
+      70000.0
+    ]
+  ],
+  "closed_trades": [],
+  "realized_sales": [],
+  "realized_pnl": 0.0,
+  "charges_total": 0.0,
+  "tax_accrued": 0.0,
+  "tax_detail": {},
+  "as_of": "2026-09-16",
+  "inception": "2026-09-16",
+  "step_count": 1,
+  "risk_on": false,
+  "peak_value": 70000.0,
+  "next_rebalance_in": 63,
+  "processed_through": "2026-09-16"
+}

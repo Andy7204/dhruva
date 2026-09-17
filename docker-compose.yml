@@ -1,0 +1,36 @@
+# Dhruva — local runner. Mostly you'll view the live app on Streamlit Cloud;
+# this is the "run it on my own machine" option.
+#
+#   View the dashboard  ->  docker compose up dhruva      then open http://localhost:8501
+#   Refresh the data    ->  docker compose run --rm update
+#   Stop                ->  docker compose down
+#
+# runs/, reports/ and data/cache/ are mounted from the host, so an "update" run
+# writes straight back to your folder and the dashboard picks it up on refresh.
+services:
+  # The dashboard web app (default).
+  dhruva:
+    build: .
+    image: dhruva:latest
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./runs:/app/runs
+      - ./reports:/app/reports
+      - ./data/cache:/app/data/cache
+    restart: unless-stopped
+
+  # One-shot: fetch latest prices, advance the book, rebuild the dashboard.
+  # Optional: put TELEGRAM_TOKEN / TELEGRAM_CHAT / ANTHROPIC_API_KEY in a .env file
+  # next to this one and they'll be passed through.
+  update:
+    build: .
+    image: dhruva:latest
+    command: python scripts/daily_run.py
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./runs:/app/runs
+      - ./reports:/app/reports
+      - ./data/cache:/app/data/cache

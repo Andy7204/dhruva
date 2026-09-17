@@ -1,0 +1,151 @@
+{
+  "_about": "Quant Lab — paper-trading research system. INR base. EDUCATIONAL RESEARCH ONLY, not investment advice. Edit values here; everything reads from this file.",
+  "base_currency": "INR",
+  "starting_capital": 100000,
+
+  "_fill_note": "All orders fill at the SAME day's close (plus slippage) — signal, regime and fill all use that close. This is a standard EOD-backtest convention but is mildly optimistic (you can't compute the close and also transact exactly at it). Treat live results as a touch worse.",
+
+  "slippage_bps": 12,
+  "sizing_ref_vol": 0.30,
+
+  "selection": {
+    "_note": "Screens applied before momentum ranking — realism + risk control.",
+    "min_turnover": 50000000,
+    "_turnover_note": "Only trade names with >= this median daily traded value (INR). ~5 crore/day keeps fills realistic and doubles as a point-in-time size filter (a stock enters only once it is actually liquid, reducing survivorship/look-ahead).",
+    "max_per_sector": 4,
+    "_sector_note": "At most this many holdings from one sector — forces diversification.",
+    "max_extension": 0,
+    "_ext_note": "Skip names more than this fraction above their 200-day line (0 = off). Anti-froth guard."
+  },
+
+  "costs": {
+    "_note": "Groww equity charges, approximate as of 2026 — VERIFY against Groww's live brokerage calculator and update. All rates are fractions of turnover unless in INR.",
+    "broker": "Groww",
+    "brokerage_pct": 0.001,
+    "brokerage_cap": 20,
+    "brokerage_floor": 5,
+    "stt_delivery_buy": 0.001,
+    "stt_delivery_sell": 0.001,
+    "stt_intraday_sell": 0.00025,
+    "exch_txn_nse": 0.0000297,
+    "exch_txn_bse": 0.0000375,
+    "sebi_charges": 0.000001,
+    "stamp_duty_buy_delivery": 0.00015,
+    "stamp_duty_buy_intraday": 0.00003,
+    "gst_pct": 0.18,
+    "dp_charge_sell_delivery": 18.5
+  },
+
+  "sleeves": {
+    "swing":      {"alloc": 0.00, "sizing": "risk",         "max_positions": 5, "risk_per_trade": 0.02, "max_pos_weight": 0.30, "atr_stop_mult": 2.5, "atr_target_mult": 5.0, "max_hold_days": 40,  "product": "delivery"},
+    "short_term": {"alloc": 0.00, "sizing": "risk",         "max_positions": 4, "risk_per_trade": 0.015, "max_pos_weight": 0.30, "atr_stop_mult": 1.5, "atr_target_mult": 2.5, "max_hold_days": 6,   "product": "delivery"},
+    "long_term":  {"alloc": 1.00, "sizing": "inverse_vol", "max_positions": 15, "risk_per_trade": 0.02, "max_pos_weight": 0.12, "atr_stop_mult": 4.0, "atr_target_mult": 0.0, "max_hold_days": 400, "product": "delivery"}
+  },
+  "defensive_basket": {
+    "GOLDBEES.NS": 0.15,
+    "SILVERBEES.NS": 0.10,
+    "INDIGRID.NS": 0.10,
+    "LIQUIDBEES.NS": 0.05
+  },
+  "_defensive_note": "Diversifier basket held alongside momentum stocks. Low-correlation-to-equity assets: gold + silver (metals), an InvIT (infra income), and a liquid/cash ETF. When allocation.mode='adaptive' these weights are RELATIVE (normalised to the defensive share); when 'fixed' they are absolute.",
+
+  "allocation": {
+    "mode": "adaptive",
+    "_mode_note": "'fixed' = always the defensive_basket weights. 'adaptive' = tilt between equity and defensive by market regime: more equity when the market is strong, more defensive when weak. Changes the ratio over time by indicators (no look-ahead — uses only the trailing 50/200-DMA state).",
+    "equity_min": 0.45,
+    "equity_max": 0.85,
+    "gate_diversifiers": true,
+    "_gate_note": "Only hold a diversifier while IT is trending up (above its own 200-DMA); otherwise that slice sits in cash. So gold is held when gold is rising and stepped aside in its dead years — directly addressing 'gold only helps because it rallied'.",
+    "cash_asset": "LIQUIDBEES.NS"
+  },
+
+  "books": {
+    "balanced":   {"capital": 70000, "overrides": {"allocation.mode": "adaptive"}},
+    "aggressive": {"capital": 30000, "overrides": {"defensive_basket": {}, "allocation.mode": "fixed", "regime.enabled": true}}
+  },
+  "_books_note": "Core-satellite 70/30 of a single ₹1,00,000: ₹70k in the balanced core + ₹30k in the aggressive satellite. Follow both books' daily calls together. Change the split, or drop to one book, anytime.",
+  "_books_note": "Two paper books run side by side (₹50k each). 'aggressive' = 100% momentum + crash filter (uses the full drawdown budget for return). 'balanced' = momentum + adaptive diversifier basket (lower drawdown). Compare live, then rebalance the split. Remove this block to run a single book on starting_capital.",
+  "_sleeves_note": "Learned from backtests: fast mean-reversion (short_term) loses after Groww fees, so it starts at 0% and momentum gets the weight. 'equal_weight' keeps money invested to reduce cash drag vs buy&hold.",
+
+  "regime": {
+    "enabled": true,
+    "benchmark": "^NSEI",
+    "ma": 200,
+    "size_scaling": false,
+    "factor_floor": 0.4,
+    "_note": "Below the N-day MA: no NEW long entries (open positions still managed). size_scaling scales per-trade risk by regime strength (close vs 50/200 DMA), floored at factor_floor — smaller size in weak markets, full size in strong ones."
+  },
+
+  "entry_filters": {
+    "_note": "Cost-efficiency gates — the #1 lever found in backtests (over-trading a small book is fatal).",
+    "score_min": {"swing": 0.66, "short_term": 0.5, "long_term": 1.0},
+    "min_edge_to_cost": 4.0,
+    "_edge_note": "Skip an entry unless its expected move (target/stop distance) is at least this multiple of the estimated round-trip Groww cost %. Kills marginal trades the fees would eat.",
+    "min_hold_days": {"swing": 3, "short_term": 2, "long_term": 5},
+    "_hold_note": "No signal/rank exit before this many bars (stops & targets still fire) — stops churn."
+  },
+
+  "exits": {
+    "_note": "Chandelier trailing stop: once in a trade the stop ratchets up to high_since_entry - trail_atr_mult*ATR (never down). 0 = off (mean-reversion exits on its own signal).",
+    "trail_atr_mult": {"swing": 0.0, "short_term": 0.0, "long_term": 0.0}
+  },
+
+  "rebalance": {
+    "long_term_rerank_days": 63,
+    "_long_term_rerank_note": "Long-term sleeve re-ranks momentum every N trading days; drops names that fall out of the top set, rotates into new leaders.",
+    "sleeve_reset_days": 63,
+    "_sleeve_reset_note": "Every N trading days, log sleeve drift vs target allocation (cash is not force-moved between sleeves, only reported)."
+  },
+
+  "universe_file": "data/nifty500.txt",
+  "_universe_file_note": "When set, load_config replaces the inline universe below with the Nifty 500 list. Remove this key to fall back to the small curated list.",
+  "universe": [
+    "RELIANCE.NS","TCS.NS","INFY.NS","HDFCBANK.NS","ICICIBANK.NS","SBIN.NS","ITC.NS","LT.NS",
+    "AXISBANK.NS","BHARTIARTL.NS","KOTAKBANK.NS","HINDUNILVR.NS","BAJFINANCE.NS","MARUTI.NS",
+    "SUNPHARMA.NS","TECHM.NS","WIPRO.NS","TATASTEEL.NS","POWERGRID.NS","NTPC.NS",
+    "ONGC.NS","COALINDIA.NS","ASIANPAINT.NS","TITAN.NS","ULTRACEMCO.NS","NESTLEIND.NS",
+    "ADANIENT.NS","ADANIPORTS.NS","JSWSTEEL.NS","HCLTECH.NS","NIFTYBEES.NS","BANKBEES.NS",
+    "BAJAJFINSV.NS","HDFCLIFE.NS","SBILIFE.NS","PIDILITIND.NS","DABUR.NS","GODREJCP.NS",
+    "HAVELLS.NS","SIEMENS.NS","AMBUJACEM.NS","BANKBARODA.NS","PNB.NS","CANBK.NS",
+    "IOC.NS","BPCL.NS","GAIL.NS","VEDL.NS","HINDALCO.NS","GRASIM.NS",
+    "DIVISLAB.NS","DRREDDY.NS","CIPLA.NS","APOLLOHOSP.NS","EICHERMOT.NS","HEROMOTOCO.NS",
+    "BAJAJ-AUTO.NS","TVSMOTOR.NS","INDUSINDBK.NS","DLF.NS","TATAPOWER.NS","TRENT.NS",
+    "LT.NS","IRCTC.NS","LICI.NS","BEL.NS","CGPOWER.NS","POLYCAB.NS","MOTHERSON.NS"
+  ],
+  "benchmarks": ["^NSEI","^BSESN","^NSEBANK"],
+
+  "settlement": {
+    "fill": "next_open",
+    "settle_days": 1,
+    "_note": "Live book realism: decide after close, order fills at the NEXT session's OPEN, delivery settles T+1 (~1-2 trading days to land in demat). Every fill (stocks AND ETFs like GOLDBEES) pays full Groww charges. The backtest engine still fills at close (a documented approximation); this only governs the live book."
+  },
+
+  "risk": {
+    "circuit_breaker_dd": 0.25,
+    "reset_dd": 0.15,
+    "_note": "Hard floor: if total value falls > circuit_breaker_dd from its peak, go fully defensive (liquidate stocks, hold basket + cash) regardless of signals, until it recovers to within reset_dd of the peak."
+  },
+
+  "tax": {
+    "enabled": true,
+    "equity_stcg_pct": 0.20,
+    "equity_ltcg_pct": 0.125,
+    "ltcg_exemption": 125000,
+    "long_term_days": 365,
+    "aware_exits": true,
+    "ltcg_buffer_days": 35,
+    "_aware_note": "Tax-aware exits: defer selling a WINNING equity held within ltcg_buffer_days of the 1-year mark, so 20% STCG becomes 12.5% LTCG (unless the circuit-breaker fires).",
+    "nonequity_short_pct": 0.30,
+    "nonequity_long_pct": 0.125,
+    "_note": "Indian capital-gains tax (approx, post-Budget 2024). Equity/equity-ETF: STCG 20% (<12mo), LTCG 12.5% over ₹1.25L/yr exemption. Gold/silver ETFs, InvIT, liquid ETF (non-equity): short-term at ~30% slab, long-term 12.5%. For a ₹1L book LTCG is usually under the exemption, so the real drag is ~20% STCG on the frequent momentum trades. VERIFY with a CA."
+  },
+
+  "paper": {
+    "inception_days_back": 0,
+    "_inception_note": "On first run the paper book starts this many trading days before the latest bar, so there is immediate forward-simulated history to review. Set to 0 to start clean from today. Reset with scripts/reset.py.",
+    "adapt_every_days": 21,
+    "_adapt_note": "How often (in trading days) the system re-reviews its own closed trades and updates adaptive strategy weights. Only past trades are used — no lookahead."
+  },
+
+  "data": {"backtest_range": "5y", "update_range": "3mo", "interval": "1d"}
+}

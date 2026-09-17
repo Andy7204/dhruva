@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\Anand Panjakar\inhouse-notebook-workspace\zepp-notebooks\anand-panajkar\claude framework\quant_lab\scripts\daily_run.py", line 9, in <module>
+    from qlab.orchestrator import daily_run  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anand Panjakar\inhouse-notebook-workspace\zepp-notebooks\anand-panajkar\claude framework\quant_lab\qlab\orchestrator.py", line 13, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'

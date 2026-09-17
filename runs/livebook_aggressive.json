@@ -1,0 +1,26 @@
+{
+  "name": "aggressive",
+  "capital": 30000.0,
+  "cash": 30000.0,
+  "holdings": {},
+  "orders": [],
+  "history": [
+    [
+      "2026-09-16",
+      30000.0
+    ]
+  ],
+  "closed_trades": [],
+  "realized_sales": [],
+  "realized_pnl": 0.0,
+  "charges_total": 0.0,
+  "tax_accrued": 0.0,
+  "tax_detail": {},
+  "as_of": "2026-09-16",
+  "inception": "2026-09-16",
+  "step_count": 1,
+  "risk_on": false,
+  "peak_value": 30000.0,
+  "next_rebalance_in": 63,
+  "processed_through": "2026-09-16"
+}
