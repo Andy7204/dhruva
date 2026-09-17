@@ -1,0 +1,3615 @@
+{
+  "window": [
+    "2022-10-03",
+    "2026-09-15"
+  ],
+  "sessions": 975,
+  "data_audit": {
+    "360ONE.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "956bdadbfc276d34162a2b9e8faef248f78c23d6bf1586108ff4bf84b77a778b"
+    },
+    "3MINDIA.NS": {
+      "rows": 1238,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8c414c5c09e60da8702c23599db92b80ed874c8736f372e1167f8e3a56b499bd"
+    },
+    "ABB.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "3e500b659092d84da216fbecf05c23474b1efbc83bfb77ce52b3dc174506be5c"
+    },
+    "ACC.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "87943394789d6fec6f89df9ad2262618b9d7c26ff6a0c7509fb59b6cb257623d"
+    },
+    "ACMESOLAR.NS": {
+      "rows": 461,
+      "rejected": 0,
+      "first": "2024-11-13",
+      "last": "2026-09-17",
+      "sha256": "e91e2b5d4541c33a9b0bc3393ed849239ef18d4cd0fba5c934428ef0e9bc3378"
+    },
+    "AIAENG.NS": {
+      "rows": 1238,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4286d144b5dc22a6d4498129cafe74dd5d30e7d221be6ab70ad3b39743efeb70"
+    },
+    "APLAPOLLO.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5d8858f9c3b811bc0e0a85ce23eb58dc67c96cb301672eb739b6c6a7d86ae4e9"
+    },
+    "AUBANK.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "88e4eee35a2128acba58ddcee9d4b3908402a2f50087085b8efc9055ea770bac"
+    },
+    "AWL.NS": {
+      "rows": 1142,
+      "rejected": 0,
+      "first": "2022-02-08",
+      "last": "2026-09-17",
+      "sha256": "fd78e6c7f8d4ad9cf563c4591825f484e99826e24d3caa52dccb5d98b56b39b0"
+    },
+    "AADHARHFC.NS": {
+      "rows": 584,
+      "rejected": 0,
+      "first": "2024-05-15",
+      "last": "2026-09-17",
+      "sha256": "7f46894b44f5aa4decc7c327d0d5d618990b59552117730746e07734cc05b96e"
+    },
+    "AARTIIND.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0343a97fc4e1f0dda785f29826c09555305004317e0438db6a8720946999464f"
+    },
+    "AAVAS.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0c7df877af542e5745b3b49c61297686c1d4c147651cf9e09de0d023092ac14a"
+    },
+    "ABBOTINDIA.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4a46d304cdb04488de50323cccb1f60becd8ce827a1ca49736a74b99d980a315"
+    },
+    "ACE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "de0297b34cd761aacbdffface47d70ec6387de5c83399dc04cfff4d827a0ace2"
+    },
+    "ACUTAAS.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6b8b1cf88b6419a3be517b6bf85c38e05b9e4ff4e0145c8e97776707d116d8e9"
+    },
+    "ADANIENSOL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "672d51b6d8747b94c8e70a929150dcb24491e5ffadf95bb6c7ecfe75efe6c204"
+    },
+    "ADANIENT.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8bb834ea3c1ab473f49c42eb56db9c1fb4ab6f6bbbe0c210524ff8ad539e7151"
+    },
+    "ADANIGREEN.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0026b3f1eed884dbfea4cd25abe1e9f5d5ea87ad38fcc3efd666a4ca93a98aca"
+    },
+    "ADANIPORTS.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c44ad1d1569148376988d186d4fe247cd795923c1b2142157a801ff048f68627"
+    },
+    "ADANIPOWER.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9c4a62f4d4af126eefe533f2892f2e1c0ce7a0a97c4ca5238f9055f1dba3b122"
+    },
+    "ATGL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e3055416972b3892c8e3952879ac2cd00f10973240cef445493af1af7a3270a1"
+    },
+    "ABCAPITAL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a17a1cafb089d058e73857c55cddeee27c6b8dff14369bda4bac99439056c6e1"
+    },
+    "ABFRL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "cc4bf6938b05bbe19d3e59ecc821d5a24b5d368418e4591f623d3f2044a235a7"
+    },
+    "ABLBL.NS": {
+      "rows": 311,
+      "rejected": 0,
+      "first": "2025-06-24",
+      "last": "2026-09-17",
+      "sha256": "493834b34f57898395c2aa2c372be6faf064223d03413bdfd63fd082586383ed"
+    },
+    "ABREL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "dd731d483cf1994b536e5c771eca38f96c4477d1aa56ec694b303aeb59b5895c"
+    },
+    "ABSLAMC.NS": {
+      "rows": 1224,
+      "rejected": 0,
+      "first": "2021-10-11",
+      "last": "2026-09-17",
+      "sha256": "d0f0e19bac29262fd0aa2850460ef2c986028ff95bced55fd821d75574ea774b"
+    },
+    "CPPLUS.NS": {
+      "rows": 279,
+      "rejected": 0,
+      "first": "2025-08-05",
+      "last": "2026-09-17",
+      "sha256": "8839112e74ba890631a42667547b0bbb33014d6ee890e9f762815f6fab5c5ff9"
+    },
+    "AEGISLOG.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e0d230230b9d784267109dd361c249e52bed2fc06eae34f21ad128f2dcbaeb25"
+    },
+    "AEGISVOPAK.NS": {
+      "rows": 327,
+      "rejected": 0,
+      "first": "2025-06-02",
+      "last": "2026-09-17",
+      "sha256": "d703774e735b7ceaf9d7cbeac98cafed3135013f879de4776edc9c16e0c60077"
+    },
+    "AFCONS.NS": {
+      "rows": 468,
+      "rejected": 0,
+      "first": "2024-11-04",
+      "last": "2026-09-17",
+      "sha256": "5b4bf351e86148e33256d7f79abe395daad22f8c3cd07f8d1773ddddbcfba2df"
+    },
+    "AFFLE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e5c0d377c629d36cfd92a346e1437fbd086e322389919d51c4732950d5fcd44d"
+    },
+    "AJANTPHARM.NS": {
+      "rows": 1239,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "09aeb93d13f5c739982447550fb4eccf06f96ece66f0e544bf495906aeb1708f"
+    },
+    "ALKEM.NS": {
+      "rows": 1239,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "187fee8aff2e6542505efdbbb0041d1f12346599cac9e786fb4484aac09a4f59"
+    },
+    "ABDL.NS": {
+      "rows": 553,
+      "rejected": 0,
+      "first": "2024-07-02",
+      "last": "2026-09-17",
+      "sha256": "7fe7f8f3b6f1732dd9c7eb264068697b8d01ce5f586fba9d50066d16eedec0c9"
+    },
+    "ARE&M.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "cb7475095191d1720cf90d1c748b3020111b6c1e56b14e4717ec5b48754de3ad"
+    },
+    "AMBER.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d6287ffdefd1211b807557d2052c344bb202d812d9e45ef639c57212835bc225"
+    },
+    "AMBUJACEM.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "bc4f23208660026dfe270864119f4a087da2d79a3ec1b9aef97634f4d2e50ce3"
+    },
+    "ANANDRATHI.NS": {
+      "rows": 1179,
+      "rejected": 0,
+      "first": "2021-12-14",
+      "last": "2026-09-17",
+      "sha256": "0600fa54f702d238dbc5639918ed7745de3edf1058908e5ad4a1015238a59837"
+    },
+    "ANANTRAJ.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "509c840d4dfdf1d04a0c4816de2a6288f76861157a1e63d65fee9d5e3ac2c492"
+    },
+    "ANGELONE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "25ed44109fe0c68cb0525dcaa4a798ed7f4a9c977c5d7337fba38031603ed70e"
+    },
+    "ANTHEM.NS": {
+      "rows": 290,
+      "rejected": 0,
+      "first": "2025-07-21",
+      "last": "2026-09-17",
+      "sha256": "1d0d0989a835ee917ffa6b0eef301be0a82b8458c6d432652be7116758a83811"
+    },
+    "ANURAS.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ac32366806dc525658b46eb85c4cfbff599c702bbde3755d5ec108b0d0d942ac"
+    },
+    "APARINDS.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0a8d03f1992e6e33c876ff3a2a3e770caef3f76b6f924a8631c1bdb71ec2a622"
+    },
+    "APOLLOHOSP.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "07bf426ed438f7429b1c2c3bd59ebeace24244df4a579d1a16cee4220d719296"
+    },
+    "APOLLOTYRE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c504b7a01db3a5d8ddc43d3693a38fd71eb26a6e4bf1f112d1fd8f9446c6c433"
+    },
+    "APTUS.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "05bde4f7f384bb270fea19346d4c3e8cd0bcf7b30673169d4d5b3344257a5985"
+    },
+    "ASAHIINDIA.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a6dc26005fee8c59fec34540d2f5ecff5951b32230636a11745d5c52e1be92b6"
+    },
+    "ASHOKLEY.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "759d11a416b27cc7e3dca5f319889ed60af6f4c19b0ebdd1fdbcc7095ac7e1f0"
+    },
+    "ASIANPAINT.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1c49a57b97ee0c39a5bfbfb055bb09d4af7081ee7827e20a905ab4142bd4efad"
+    },
+    "ASTERDM.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9e283b338054ecf44f8410b3eb641a28d4336d8fe91dad1452790f2b56acd44e"
+    },
+    "ASTRAL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "503e08cfd0ac1656c0511b99ad5f408d690ca6bd7bfec42359b01fa5d7262b49"
+    },
+    "ATHERENERG.NS": {
+      "rows": 346,
+      "rejected": 0,
+      "first": "2025-05-06",
+      "last": "2026-09-17",
+      "sha256": "eb40bc85c744d532028b8a9723abdfb4065691117f4804facb254a6f651223e6"
+    },
+    "ATUL.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ba1115b962579940ac91914b93260affdabacc0b3282e812397f2f660760fb9f"
+    },
+    "AUROPHARMA.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ce24b281a7812ba0142336d705ebad7729e8ef89e8e6b5222772d55c2bc3c6b9"
+    },
+    "AIIL.NS": {
+      "rows": 601,
+      "rejected": 0,
+      "first": "2024-04-23",
+      "last": "2026-09-17",
+      "sha256": "e331faa8f8f534d024d35d521342687c0fcd67baacf540648ed3c0d238e00432"
+    },
+    "DMART.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "43e56358df198711367f2e0a9c2361a117d7dc5dbf2ddc142ddad70b60e7a163"
+    },
+    "AXISBANK.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d12066e778954e372787ea3aff7b6aa337c8b2566249ed572f1ccdab1c0c437a"
+    },
+    "BEML.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "79f2176109883b2208d701b6a8e6cfb062b2d36cb80ad3bac343bd98021d8c5f"
+    },
+    "BLS.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "155e738ed0cb4139a9cc89957110f250052a2cec026236ba9268919fe234b68c"
+    },
+    "BSE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "88a63abdf0e8253092eda78b621afe199aeb026946da3faee5fa9cfdee0364c5"
+    },
+    "BAJAJ-AUTO.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f0a56a5293276b0a75bb6dc119649246fac89664f61741b4678e21345a9c711e"
+    },
+    "BAJFINANCE.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8db8897a9a76367f6fb1cdeaad9347d5af06acc9060fc479b5685f3dc7ac710d"
+    },
+    "BAJAJFINSV.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6959cb21b18cdf501825e70cf20ecdd45123522c11d2efca92872decb0502a82"
+    },
+    "BAJAJHLDNG.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f44c17295d594d9e84dc53942f99fb315f4852a0066595f0bacfe6933341ec85"
+    },
+    "BAJAJHFL.NS": {
+      "rows": 502,
+      "rejected": 0,
+      "first": "2024-09-16",
+      "last": "2026-09-17",
+      "sha256": "cbc8909929975d90ce03e1d4aeb9ef59d1fef2f1b3a7920b26bb1fbbaf795256"
+    },
+    "BALKRISIND.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "02db3521021fd06990fb5e62260889e2028dcdd815c968e6e6df7bd85cd831e7"
+    },
+    "BALRAMCHIN.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1b785d89eeda46298edc55a780a5ec01540237073da553964431d193f36f894a"
+    },
+    "BANDHANBNK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4febdb5c889c1ca53061bf5502f163a31c7d006bdcc705ec1fa1096c1544ed99"
+    },
+    "BANKBARODA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f4803c964369b7fbd23df134f6bc25320ea7aacdc5e25a3493261e04ee0e89d5"
+    },
+    "BANKINDIA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a18bca039bfcc203fc0783c043871303ff7dfc439c40d7f07a4989ee2695f894"
+    },
+    "MAHABANK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b4b146ecc32abb59a0f1e626bf374ca5bf1f716fdabb20d7854818156523bb81"
+    },
+    "BATAINDIA.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5c08d2f208702cf722a3581999088ca7f23a0de03259e8ce5cf20dfdd09f3a27"
+    },
+    "BAYERCROP.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d5814ca543b45d8b1c8a8f325dc9a0d4cc5841c548747a592fec3259d3f1177c"
+    },
+    "BELRISE.NS": {
+      "rows": 328,
+      "rejected": 0,
+      "first": "2025-05-28",
+      "last": "2026-09-17",
+      "sha256": "85bc6c8148a3c0d830f086712cac8158658d78ba6be5175e150cf5810cc17470"
+    },
+    "BERGEPAINT.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "849c74377f75b56913db404ad632ec9ec0275a56bd5fb85dd6ac79c3eda863c0"
+    },
+    "BDL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "50d5334e56e1fb260025735219635fa4738089631c20cb3d50a0f9f61c50fec4"
+    },
+    "BEL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "894fbf1620726280183ad792a7dfb7fd61267ed75ef56a009712fddc0a14aecb"
+    },
+    "BHARATFORG.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "31e22e05714ac379eb2f0dab1bc1edfca94817738cdccbed618609216c898d1f"
+    },
+    "BHEL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "754a4ac2d0526c21b55d73aea4b175572fb3dabba83ab82074c27f7af040c78e"
+    },
+    "BPCL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "bfc5a0c4da459474f418a8dc0fa99ef130b1cb0e2f1f89b7cff6afd7b8af4f2a"
+    },
+    "BHARTIARTL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "de58e7ebbde7cd6bc93bed6ab2e04da076ff0d59e5e7bae490abd9128da8fb61"
+    },
+    "BHARTIHEXA.NS": {
+      "rows": 605,
+      "rejected": 0,
+      "first": "2024-04-12",
+      "last": "2026-09-17",
+      "sha256": "1cac0735d6bfc186fb31841d7e717a01a602759f2d687fc75a1c4f38c4909431"
+    },
+    "BIKAJI.NS": {
+      "rows": 949,
+      "rejected": 0,
+      "first": "2022-11-16",
+      "last": "2026-09-17",
+      "sha256": "9d20ae40eb46b5f637978084cbedecfc0f3980965d7b6b5d0f9b2274f2fc4ad3"
+    },
+    "GROWW.NS": {
+      "rows": 215,
+      "rejected": 0,
+      "first": "2025-11-12",
+      "last": "2026-09-17",
+      "sha256": "4f15bd037f51d63e3d5b3ca2bdb88f0fee71db4fba61f829b9fdf5b77607af57"
+    },
+    "BIOCON.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1ceafd3457672ac974ce73984084be4304fbff76f66f05b7725e2baab722f60f"
+    },
+    "BSOFT.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5f96f2bd3c275e38432e2f8dcea622a54bc1027a9745042d0fa757e08adbb43b"
+    },
+    "BLUEDART.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f3c098a0b7fd1891c1b4e95294e0e9b0c5a85bbf6c926538f1937abbf70fbc9a"
+    },
+    "BLUEJET.NS": {
+      "rows": 715,
+      "rejected": 0,
+      "first": "2023-11-01",
+      "last": "2026-09-17",
+      "sha256": "ec1a9ed94795c5ec266a323076ce1119b9e9c635d7fbdd1da8c78716980fe569"
+    },
+    "BLUESTARCO.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0bab52d6f8037c8f4c70cf4ef766d2992541f1dc6f68deb0527e34b0bb4b0039"
+    },
+    "BBTC.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7f003cc2a4df843ba6335aef5a1db993114e63c0858e87e4f9eec389d7fcce87"
+    },
+    "BOSCHLTD.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "db958c8fb094211e9164d02be97205adaf3a5663624497c162d128cddb9eec87"
+    },
+    "FIRSTCRY.NS": {
+      "rows": 525,
+      "rejected": 0,
+      "first": "2024-08-13",
+      "last": "2026-09-17",
+      "sha256": "3a07865a8be57749253625c7bf1f2df036306c207bf5f049f95f8dfacdd106a8"
+    },
+    "BRIGADE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "28c978c906c19539beb48a08b7d35851e08dd1216b8ffbe3e53946780139cb97"
+    },
+    "BRITANNIA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b28ee079ec61df0d53e89997e1a5b6bb6bf671fc7d0c053ccb3929e8f6adb28e"
+    },
+    "MAPMYINDIA.NS": {
+      "rows": 1174,
+      "rejected": 0,
+      "first": "2021-12-21",
+      "last": "2026-09-17",
+      "sha256": "d78cfdca80f6c520e87ce935ca6cb3676cdd8832fe036e9d4b7b8775de520a9b"
+    },
+    "CCL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "637079a7b957191690c490dd34f02ee7e8d2af2f607f81dfe83f65b201c52ef7"
+    },
+    "CESC.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7284d1e757a97927119b310739c46d9b65089d8f314b0e8801c8140e5f126314"
+    },
+    "CGPOWER.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "77cae2d3a61a5af5a56c7ac3ed99237a0d2f74245f2ce690b760d9c602a80195"
+    },
+    "CIEINDIA.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "75d01769dfb057f5f0f07149e4e04f8aa86465a6ba1fd3ae3c4747d5259cd385"
+    },
+    "CRISIL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ef93f6a6b612f5e8b50e5193097281d7f08b91a6cf34278267f957504d7d8494"
+    },
+    "CANFINHOME.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ca141c3907d8a64c000c3afc0b686d1776616ac4514caf5fd0ede4667215aa56"
+    },
+    "CANBK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6cd0800021b2ca574a2a8490de1d852e3069aa6576d6ebdfe717e77fb0d96521"
+    },
+    "CANHLIFE.NS": {
+      "rows": 229,
+      "rejected": 0,
+      "first": "2025-10-17",
+      "last": "2026-09-17",
+      "sha256": "63530b176fac7dd5c1d7132a0361a8bde803d2d762a0b3592b3baa7eb9bd2542"
+    },
+    "CAPLIPOINT.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6f63b680d852842a52c173f00c419e08f1228da8463181a4c2839e03e49e9769"
+    },
+    "CGCL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d737491ccc45507e79c40801a9c171b5bbc9b14d8c86185de3b9f4df060cb614"
+    },
+    "CARBORUNIV.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "58c00eb155f44ce122e2b2271b3b27310033933b0000a50cec96403f3c68254e"
+    },
+    "CARTRADE.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "cab6879b9a36248928d4b382ae6a8b64cb27c42daa2fc13c2aadfb647bfcb962"
+    },
+    "CASTROLIND.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b48388b87173b5ea30138ff27908caff549e85cd272d4a36eab8806437e058b3"
+    },
+    "CEATLTD.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6232cd7fd57c382f251f5bd6406a5cf4572a4f19206fff3218a892f62a10350d"
+    },
+    "CEMPRO.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "33c4dffc24706722e8765bebcc676f19f8972ab249564d12ec2496ec3d371581"
+    },
+    "CENTRALBK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d9aba0e8aef9d78dc60d4cedf192f893058a53c914a48caae64432038a8459a4"
+    },
+    "CDSL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "05180ea9dc7e461e65f41982db936253d07dfcf8c9fef5878a9bec32b8cc12e4"
+    },
+    "CHALET.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "212a0d71ea6713e0e7f02cb53f6cc846b75aed3f1bae76a7e8a9bbbd816a8ad5"
+    },
+    "CHAMBLFERT.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "14fc8f467a4ac158ac98c265f280148bc51957a2074dcbce097bbb53794dc12b"
+    },
+    "CHENNPETRO.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "898a3c728c902945ab147fc9e9271bcd5bed2c9cc6ce38d6cca960276b7872bc"
+    },
+    "CHOICEIN.NS": {
+      "rows": 1099,
+      "rejected": 0,
+      "first": "2022-04-08",
+      "last": "2026-09-17",
+      "sha256": "09a6e7ffea27579c8141fa3b697701a44e1c6369e9473900fc4bc5eaefc36c37"
+    },
+    "CHOLAHLDNG.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a9a7a92df47d0e734928bfeeba9a0d9f3717c917c8ea1bd68c410e80e565f647"
+    },
+    "CHOLAFIN.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ff453041ccf99999876e370c7436dd5a6a7670f46d5b0059a6691b58083cd6fd"
+    },
+    "CIPLA.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "70f18205e006f6bf9f7906ae6c2e8c102dfab519ba53a5dec4f1b735bd1f45bb"
+    },
+    "CUB.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4b1e1a504de41aed18c284a797bf51be34a3c028c57c09f910d2182bb91e1feb"
+    },
+    "CLEAN.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "23a5a0afe06639f53ab51bdef9336ad1ecfc735cee97a3348d976890a9c1a6a4"
+    },
+    "COALINDIA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5c474cf5c8874918065809667e3b0cf7888cf2ed6e428bad4179a133ed33b30d"
+    },
+    "COCHINSHIP.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d43d71c9034bcc88300831c0aeb34fd5fe7afa112b2cf99465bd52d13c48c221"
+    },
+    "COFORGE.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "28f64ed0dfd8f61114b62b92ff044875e946d32fad12ab9c5387f77f49a4e107"
+    },
+    "COHANCE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7b2222ae3f89722916e410ccadc50a6f96cd74d99560e9d598e9daecc040adc1"
+    },
+    "COLPAL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d642760e7c8e076339e138a687c0dd8f3282c73c25cb58d1cb6444d296b4a6d4"
+    },
+    "CAMS.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4332bacd1e2bb09e77bd51dabe07bbb27c482ae5808a027b196d02547660fde0"
+    },
+    "CONCORDBIO.NS": {
+      "rows": 764,
+      "rejected": 0,
+      "first": "2023-08-18",
+      "last": "2026-09-17",
+      "sha256": "967fd9fcb0d56efb597fe205c45a919a493ab92f78a516dd9b0211a479923391"
+    },
+    "CONCOR.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "23509c882dfce41f42208a5b6c947b4fcf03d3b43294adf628a2e01bebd6b2d7"
+    },
+    "COROMANDEL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6ac727a93942449561bee3076cc19d6972bc8a215dfec7a1a334bcad3882b401"
+    },
+    "CRAFTSMAN.NS": {
+      "rows": 1238,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9afb640c172426b76a6b9b5811afd0bd4c81ef615b0cee1d43ce0d47fb4785c2"
+    },
+    "CREDITACC.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e1f8296e7d47c9960c09b195d44fd3b4aa899048ee5793366b64e7f9cc8ec4aa"
+    },
+    "CROMPTON.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "14655c4b2d6e6cd09f9f32bfa047eba02e47e7bf3e5370b2bea9cd18c717a2e8"
+    },
+    "CUMMINSIND.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "734dcf2f4cc200c908c9d28bb396479eb8ce219887d442112afb0bcad0884b81"
+    },
+    "CYIENT.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "cec6a3275088cdb5d316d815eed776aa16c4ac68d91cecbc6b8e55866507365f"
+    },
+    "DCMSHRIRAM.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ab19953d695c862ba5c87211edd77538c5de42d1e9351daf7a61c9cfe53dd3a2"
+    },
+    "DLF.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "12c20817b2b54eaf78d2fe56d5e2aa2d5c8c7e97e9c7543f65c7c2fc3b28b168"
+    },
+    "DOMS.NS": {
+      "rows": 679,
+      "rejected": 0,
+      "first": "2023-12-20",
+      "last": "2026-09-17",
+      "sha256": "7eaea4e6c0133ef4112b633d241bf9abee872cddbde18fbeeb7091394ef19b45"
+    },
+    "DABUR.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a6beed165a453cfab292ebe39b7d17105785758ee4d7aae4ff9eec16e9e910e5"
+    },
+    "DALBHARAT.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4e2512a639bf11f0006a57a7bda305448f1e2fed3f74e9e1c6c3ea96bb68cb6c"
+    },
+    "DATAPATTNS.NS": {
+      "rows": 1173,
+      "rejected": 0,
+      "first": "2021-12-24",
+      "last": "2026-09-17",
+      "sha256": "b33ccd7ca245a20d59130d78b61dc60aaae645d58604881b2188a666a1345d73"
+    },
+    "DEEPAKFERT.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d485038761c0277a6e52ba8b27d5e66d5562e6b938467ac9d825bf1abd1574e1"
+    },
+    "DEEPAKNTR.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "587d5050cda2ab9373086fbf52f7fa13a4091da94b9bfb652c260286c2de40d5"
+    },
+    "DELHIVERY.NS": {
+      "rows": 1072,
+      "rejected": 0,
+      "first": "2022-05-24",
+      "last": "2026-09-17",
+      "sha256": "17feb4885cf14abc1d5b7db1bb17380abbf077c8e663713e09dd639256188ae8"
+    },
+    "DEVYANI.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e72d268b7265e5f3a9ec593addafedb493bcaf964cff2c534c91b6fc88ba353f"
+    },
+    "DIVISLAB.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e0e799d961cae474f038766d5c56512083df6831aaa9f822a04ba20cd750e814"
+    },
+    "DIXON.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "91c7a1c276ac4e666985cc0bf2e7ae6fa1a4cac3db667bc177e168a05a95dab5"
+    },
+    "LALPATHLAB.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1f569eb30bfee0151cfa04069320e4e4ee2b8279ddd52b9b00d5377e5844693e"
+    },
+    "DRREDDY.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8407875e6716f096948e399a564255b69604ba8d96ccf68230579b1f85b23a50"
+    },
+    "HEG.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5d6a3944d59f7a47f50dc00a8749ba748b15ed79428bb53b29f4c8a2d8027c4a"
+    },
+    "EIDPARRY.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e52ec38fb45b876d8a4a4b3603ecb9572047bf82ad2fa954518d26b4dee554d8"
+    },
+    "EIHOTEL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7ee158285b744710968b75142b0e17d3631394610200b032a08956b369c0b7bc"
+    },
+    "EICHERMOT.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "42989af97e999a1840d138f242da7d2986c9484dbc21c2ed2ce12c1897e00470"
+    },
+    "ELECON.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "114f6eacb3905efd294dcc5a681508e252228da35ba558aa62694f564f3b54d7"
+    },
+    "ELGIEQUIP.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "73f1bbb37be0abf15d2ebe270f760973320ae670ede378de9254c5be1bf58ae6"
+    },
+    "EMAMILTD.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4ca0452d0b6557799b8c2c90c4861d6aef22f5ad7c17644d6fadd5a752e24821"
+    },
+    "EMCURE.NS": {
+      "rows": 547,
+      "rejected": 0,
+      "first": "2024-07-10",
+      "last": "2026-09-17",
+      "sha256": "d8e90986611480a8d45127ad756f4cae5e05880ac6300bf6a9f0539ff0bac818"
+    },
+    "EMMVEE.NS": {
+      "rows": 210,
+      "rejected": 0,
+      "first": "2025-11-18",
+      "last": "2026-09-17",
+      "sha256": "542f557c73c9f5d77b00f5c6a005b25bc611c3b1382e1787fef92ba88079ac99"
+    },
+    "ENDURANCE.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7b6930e7e0074e1d4ec5e0ceedd980619c5f70c60091b898e4525b7275baa273"
+    },
+    "ENGINERSIN.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f75e10f770844068e45bd6b7da6479b2991c543876f6c4ee139acd3fe7646fca"
+    },
+    "ERIS.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b70b1ba79253915ced890f4fbe7b1efe6a63d1ca83bc0b459ad3dca06f0ec606"
+    },
+    "ESCORTS.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "17530ded1e2bc7d132855db09728a0fb52d7c61a0e69e0e573fb7d8f0d47382c"
+    },
+    "ETERNAL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "00782a210a9a6cdf048bd3194c0d8ed339bbcd8ccff02fac43a9f1e046fd663a"
+    },
+    "EXIDEIND.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "fb91b08b4d1ae31e495593c6928f84a8a75a65698af0e8094537c5cae59c79cd"
+    },
+    "NYKAA.NS": {
+      "rows": 1204,
+      "rejected": 0,
+      "first": "2021-11-10",
+      "last": "2026-09-17",
+      "sha256": "7b4e0d9a8d76b1db8f80ad1a4dc1a4d074582b2393c43bd14ef004c41fed91c0"
+    },
+    "FEDERALBNK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "aa314aa7a6a938edf6ae8ab8cf49f78b39dff11fd2c26fba3ee8b5076cf2d885"
+    },
+    "FACT.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "fd82bd86b645edf911809c3fb34735cc132c4a88670b9ec40854fcc9d14e8ab9"
+    },
+    "FINCABLES.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5b8f4d03b7bb87d09aaff23680f291e20e5799a2f81eb21326becb00190c323b"
+    },
+    "FSL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0919fad7f9a5efc4fd954ea05806da1b8e69fb396936b8448c7c82ad6cc65829"
+    },
+    "FIVESTAR.NS": {
+      "rows": 947,
+      "rejected": 0,
+      "first": "2022-11-21",
+      "last": "2026-09-17",
+      "sha256": "b4616a6faa1092d6ae72a90d17fdac22389dc10cab36da065edb23aebc4bb26c"
+    },
+    "FORCEMOT.NS": {
+      "rows": 1201,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "33c275dbd05a38b931a6a4926779a421e17b73cfd63d45c6d88be173ad2f82bf"
+    },
+    "FORTIS.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e09efcd9f62908a68d607630f72f5f720211646080a4e3e6bdfa8454e9ec7ef0"
+    },
+    "GAIL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d187e61dbd9d177408ea7af29314d0943c6b7388062cd60ab3e68cae77b84064"
+    },
+    "GVT&D.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6feb94e1a888a459b22556c66536d3d1a970b87bb5a5cdefc4cae8853c86e83e"
+    },
+    "GMRAIRPORT.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "23b5925401aed4c6e859de0abd8563ff41a6ab1c18ebdad5f8387048eeabb70c"
+    },
+    "GABRIEL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b612eaa7f9f2cf3c76134a830cab3e72ba040dbe275cdb18658259567b72454a"
+    },
+    "GALLANTT.NS": {
+      "rows": 1239,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "dfe918044e54bbed3286ae00314bec688c271b27de02d9b030ed57747501ee20"
+    },
+    "GRSE.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8520ededacef244c9039cbc7563e6a75c5244921a4855bb1b98a2e97b5ac5baa"
+    },
+    "GICRE.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b8f5554cfeaa566fce2a7791f1894669dd9793011b31e8c1d6d106aa713aa328"
+    },
+    "GILLETTE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ad2fb200f006f49f8ca974ab4401d7f5c6ce10761b507db45ba188b23c7156a4"
+    },
+    "GLAND.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7ec0943c0cf8e12ff8952b9f809be7577e80bfe488c6957061d4ec105bbeb9e1"
+    },
+    "GLAXO.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "00c05e32c2de890674c1dbe03f44dc452e3b8fb4221eca3c56d31f2a12c041fc"
+    },
+    "GLENMARK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "855bdcbd8238c300a25c1d5239b6679228fb81bc42b139c0fc3ea5dc7a151594"
+    },
+    "MEDANTA.NS": {
+      "rows": 947,
+      "rejected": 0,
+      "first": "2022-11-18",
+      "last": "2026-09-17",
+      "sha256": "9d7ae7e715b9644e8866a9126fbc7e39ad99c5aef01450f0362481e13878d872"
+    },
+    "GODIGIT.NS": {
+      "rows": 579,
+      "rejected": 0,
+      "first": "2024-05-23",
+      "last": "2026-09-17",
+      "sha256": "5c7d0e6425fad6206a65d55ebb3ad3879e295ad77efa4332f2916947f7ed2157"
+    },
+    "GPIL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a00f7a01029ed24f945ca5426e576ba4c055b12550a8fb031239c87ad31bfec8"
+    },
+    "GODFRYPHLP.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "db1a1e9b037b0b74a9f04eb55ff335babf93f2847050f3924066d814a079b22b"
+    },
+    "GODREJCP.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4cb5c8a2c5b3dc6f76c4514c9a9f26c2cf5d0ec4769f1f00823948db375e45ab"
+    },
+    "GODREJIND.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "65d1193ff8d93138a9a3d2ffc6d3f8c2a309bd902550389d24801ca7dbc18ebb"
+    },
+    "GODREJPROP.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "63e8bf53ab46469e5f8709725f05aa1979be1efa6270e9a56464f78bf0713d5d"
+    },
+    "GRANULES.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1a256b7d984c854ad736f7c4620f91f4ea9a6794b663e8dd6d16062cbf329e3d"
+    },
+    "GRAPHITE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "70b812c0c886b78049d3335a849b78abafffd1a7ce925edea86cb005a2fd843b"
+    },
+    "GRASIM.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "50c9f9523f91982b854f0b34af77b578e188542b9819234395dbbbf73fdeca9d"
+    },
+    "GRAVITA.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "af4d42ed7ba292fa1322a669010e8edcacc36472dfd781f4a4593124767b0f9b"
+    },
+    "GESHIP.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "3f9b323992e20f0dc3670928b354da419daa8750fded3d8bac5b6fdc542f4c80"
+    },
+    "FLUOROCHEM.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8963e6e09eafbe0d5af65b4fabaea11f27548e2a105c1daee292d1fa02ebb960"
+    },
+    "GMDCLTD.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d5672a685fe9a6e4cb68c21a9cba1b2e45e44000f9e988188b35aa3ce644f41d"
+    },
+    "HBLENGINE.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a6c03e22025e8ec84b9fb9f928f2d1a431ee67dd5394ee08d2cceb9bcf989eed"
+    },
+    "HCLTECH.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "569af82ceac126e3895b06bfa88f9f89e190324dbb63973d1309b6589eb5be97"
+    },
+    "HDBFS.NS": {
+      "rows": 305,
+      "rejected": 0,
+      "first": "2025-07-02",
+      "last": "2026-09-17",
+      "sha256": "61260f3e069fe34dfaedf08b44f71ac7a88ca89df2abce771312112c0a647f93"
+    },
+    "HDFCAMC.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5d319209e02a24bb6b186f9671fa4dd0e90dc757fba7c8f902edfe526cf51f38"
+    },
+    "HDFCBANK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "95ef5559737658db3641499e05155c7168be20b6cc3005bdaa6bd487c2119e45"
+    },
+    "HDFCLIFE.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "489b5fba9e3af6559cc522020d3db32c09161ef06cd37338c90222e17d848b92"
+    },
+    "HFCL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1ce46ef1dcc44f1b8188a2eecc2ce7d1a70d7d29d08de2db1c8a668badec32af"
+    },
+    "HAVELLS.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c7cbeb532a3fa84de10a7d3f287d55857bb7116bbeea91b21a77de3a04e79caa"
+    },
+    "HEROMOTOCO.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8dbb6200943d5429d0b1f437b0b926a875b6a5da09a8df7acbab89af77b0b8cf"
+    },
+    "HEXT.NS": {
+      "rows": 391,
+      "rejected": 0,
+      "first": "2025-02-19",
+      "last": "2026-09-17",
+      "sha256": "9da60dee8884e626dfce52be0eb09b6da8d338406acc183d7ba4304d8f6115be"
+    },
+    "HSCL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d3682a39ff6baf4330e560e89a92c375fb66e0eb86fa32a45f265d587ee9fa71"
+    },
+    "HINDALCO.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "411ab606b96a97b6bfee773b50c3bdb0b0db553aadae4a3664de2c4421b38682"
+    },
+    "HAL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a26bb013bfaeb32e2e933c7e2e837cd0c71697914e247b8113fa19083d8ae194"
+    },
+    "HINDCOPPER.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c626a4792e2513bb38f18a2b40ddc732f8f17ba99bef36d89edadd0ed77e34fc"
+    },
+    "HINDPETRO.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "79d3c8897906dd5a7f7367e373be809fae1acb1113a7008328f76f2669df15eb"
+    },
+    "HINDUNILVR.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "afc8b4d0e49d8fbe32d5540001fa3d295a724ca2d41ef54d6fccfe1d8dc3fb69"
+    },
+    "HINDZINC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e3890fe7d7c6232668e59979306a65de6301e55d93c379d0bcffba22f0a948f6"
+    },
+    "POWERINDIA.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a040c9f0df7addbe4b9548a5f044eccbc5f34bc0412b9e499dda005681a3b559"
+    },
+    "HOMEFIRST.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "2104c0b06eb38b50a7fe6541a2efbf23080f46414dbbcdacca5d7339ac82cb04"
+    },
+    "HONASA.NS": {
+      "rows": 708,
+      "rejected": 0,
+      "first": "2023-11-07",
+      "last": "2026-09-17",
+      "sha256": "0e415b159c1c7058dff8ba9529e1dbda9914b4598bffbea1dfa81488f227e05e"
+    },
+    "HONAUT.NS": {
+      "rows": 1238,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8412e717c22c16ba23771b8c0001024b42a8cf6e0a43c64b93e19f1816b22c98"
+    },
+    "HUDCO.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "58bde2ddcddb3ce4d9179e94bc1407def722b6b8912a713eea8571d2d9f482ad"
+    },
+    "HYUNDAI.NS": {
+      "rows": 477,
+      "rejected": 0,
+      "first": "2024-10-22",
+      "last": "2026-09-17",
+      "sha256": "4431c29b030d360db61fa3edbe788ccd472477dc3ee7a04ed852def77435e8b6"
+    },
+    "ICICIBANK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ed9e2ad26382a71dc6e8c62cc2be41ec8bbd6e368ca0e71eaeedcba8c1097492"
+    },
+    "ICICIGI.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a6d65c13b199d6b0af202e62c61794753cd9a3f646ba36e8fd149e039b14b086"
+    },
+    "ICICIAMC.NS": {
+      "rows": 188,
+      "rejected": 0,
+      "first": "2025-12-19",
+      "last": "2026-09-17",
+      "sha256": "3e5ead4f8cc57f0d05f0f407174cb342450b3467facf8202f5bbd320a9b95114"
+    },
+    "ICICIPRULI.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7f28b407d21535f23617f749ba9afa064d87f796bdfbd808bee2ed3fe9045f3f"
+    },
+    "IDBI.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6fe1154464438876f22b730ae7b2c884aa815f10514417f207e46df51bdda1d7"
+    },
+    "IDFCFIRSTB.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0838fff7438fe955fa988a856a6dc79e92324ec6a1767625a3197c4e17a5261a"
+    },
+    "IFCI.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f0b776cdcc7ca7c61a836c45a64f0925c75b953e4d0b5bb0f49352bc115f7c5e"
+    },
+    "IIFL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1e65677289250092488f1cc9229ee4018c293169c817eefcb424143746e9fbe6"
+    },
+    "IRB.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "14a94e7378cd3448e63b72803b346b2e935d032fb14068be480762912ad90a84"
+    },
+    "IRCON.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e77671635cd75ae378b0d1c25ccd6705c3644da5d298f122460c16d10ebf3da7"
+    },
+    "ITCHOTELS.NS": {
+      "rows": 408,
+      "rejected": 0,
+      "first": "2025-01-29",
+      "last": "2026-09-17",
+      "sha256": "e88018f477e46f26f38b1e2a60f8257822b1062fc2825998b34180395c9b11f6"
+    },
+    "ITC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f12e93d1203977319a45bd35063b7e75dae6975c20f42c3f5f2b569dd3ffc9e1"
+    },
+    "ITI.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "bff43e8419b6d3232fe440d7bc31d3428c30e011aceabed41a2bf82b5f0bc9be"
+    },
+    "INDGN.NS": {
+      "rows": 586,
+      "rejected": 0,
+      "first": "2024-05-13",
+      "last": "2026-09-17",
+      "sha256": "4ee1a721e1218422604a9e0ea02d82674ec77340da3242f175aae8710d16828f"
+    },
+    "INDIACEM.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "dc0b27fc405f3550baa1b08273d65497614c6c6aee513f6abb53721877115f33"
+    },
+    "INDIAMART.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "96951adc986c133ee4020f6eb35488b100f846e9c52e188f5a2bae4d216c28a5"
+    },
+    "INDIANB.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b111ee7e5194fa96571abd64bae2d875a315e6c874c8b551e45adea6bc39ec5d"
+    },
+    "IEX.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "464b65ab70577ffcdf4c7aac4b0063bc77f6d96f4c9a81faeffd31a2119da434"
+    },
+    "INDHOTEL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "31a2f3af2d9a43245b4b7e37006da88673d3ff8e2dc4aea9113f99efb8c2fadf"
+    },
+    "IOC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ec3e434aa7618079d943285b6cd66356fe3f9da25cccc6a02ef02293222ef993"
+    },
+    "IOB.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a4cc8fe835359d744cad8399ecbf459ca562440cd2feab8f6500e0c2091f6c91"
+    },
+    "IRCTC.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "48d6793e86d9a0fc20363e0b7f8d52ecc3f84dac86181c27d5e3de290e10cf05"
+    },
+    "IRFC.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a534deb2df6a7a09ae1693dbc0cb874c3d36729c0903925493f56a1eddc883cb"
+    },
+    "IREDA.NS": {
+      "rows": 697,
+      "rejected": 0,
+      "first": "2023-11-29",
+      "last": "2026-09-17",
+      "sha256": "45c5db3836b0ab657c42aef46793eb012177408241db54590ee65982b1e907ec"
+    },
+    "IGL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "aa4dc2c8a0dc5b6715f076800342351a260adacfff6af2b768d0a62fc6401ff3"
+    },
+    "INDUSTOWER.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "aa629ca7bac5aa2af2720ebcb8ac67723c21f6028e4fc4f1f98eed78350a8e2a"
+    },
+    "INDUSINDBK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a3837fd8ea6c5dd5ae2095a5bb4b594d73095a64afc11a6f8f037623f8fc27ba"
+    },
+    "NAUKRI.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "76147dca9e466312b59674b5c0df960ae44337c45b2401eaaa43e75af12eaf20"
+    },
+    "INFY.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "627f275c0fdd967f0b363494ad6ba1e8201c9e89b5e805a3b8a0744e1ecfa0f9"
+    },
+    "INOXWIND.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e2a881ff6813063bd036ae9a042b8db6ba5250791808b8e4be134b861d2d5d56"
+    },
+    "INTELLECT.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e908bc18fc238108bc536be741d79d46da32f0d6b268d41546f57e5e0fa426af"
+    },
+    "INDIGO.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "2f05f525d5b660223d06dd564ee415830ed025a4f5e00ae5a870e0a45b4d4270"
+    },
+    "IGIL.NS": {
+      "rows": 429,
+      "rejected": 0,
+      "first": "2024-12-30",
+      "last": "2026-09-17",
+      "sha256": "481a9c9a1a59aed7cb6e7f04df190dbd87d263cd6021343e091b0e5708df060c"
+    },
+    "IKS.NS": {
+      "rows": 434,
+      "rejected": 0,
+      "first": "2024-12-19",
+      "last": "2026-09-17",
+      "sha256": "16057c75353a1578629c33ea5004c94f03de6afe3a0c745e6c39c148aee827a4"
+    },
+    "IPCALAB.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a6605483d46dbefbbf70837e56403d7ffd3f8bf0c388e52c4b684a5711037c2d"
+    },
+    "JKCEMENT.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "2e2ae28118d28892e02402abcc19644286da9a7e17ba9ea1513d01707c7850a7"
+    },
+    "JBMA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "55d4fe84c7f7a3713c7fdf885f6118a43cee34f34ec596ff1490014b92a397da"
+    },
+    "JKTYRE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "3c12e9f537ebe5af0437c0233f10016abcdacb77f7bd084ebb96dd42578b1077"
+    },
+    "JMFINANCIL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f981dbd94c73a200aeb3ab416e4e03a2e7c9f337713e3fdbbbb58d3136bd6352"
+    },
+    "JSWCEMENT.NS": {
+      "rows": 274,
+      "rejected": 0,
+      "first": "2025-08-14",
+      "last": "2026-09-17",
+      "sha256": "8128ca756bbcf2969f19b16746a4e76d84be95bcc60cca70b267cfeb650d25dc"
+    },
+    "JSWDULUX.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "3c94acce7a770f70d733d61b293caf7ab319e653562fdf80b85ba4fda7bc13bf"
+    },
+    "JSWENERGY.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "25e18efa85e9d904ef9a31457af2511d6ca1eda47f64e95e83a3a4b3d0c5678a"
+    },
+    "JSWINFRA.NS": {
+      "rows": 735,
+      "rejected": 0,
+      "first": "2023-10-03",
+      "last": "2026-09-17",
+      "sha256": "5ecc9755b11be68b0d0ca079848428f9e1ab7238864a1a56bdc3122f24f5c49e"
+    },
+    "JSWSTEEL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1dc733591cdefb6bc4fffd52e18c2ced177285b143712b1d35b5f14bc3eb54ca"
+    },
+    "JAINREC.NS": {
+      "rows": 240,
+      "rejected": 0,
+      "first": "2025-10-06",
+      "last": "2026-09-17",
+      "sha256": "8a630e6117c73638a5da9ec67d6b09be7fae4801f6b36a397e0b5df1c90ccd64"
+    },
+    "JPPOWER.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b903ed7a3af01b95450aca04c306dc344183e9d510a07b5577bf7fbea893b2ed"
+    },
+    "J&KBANK.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "55c74e1be361b5c7b4d7a57ae5bdcc2afa4722e3b3cff8168dfa38e04aeceb3e"
+    },
+    "JINDALSAW.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "40601249721ff521fb2db812a63c020c6a9426fcb10fef2641a8e2e121d4a2a4"
+    },
+    "JSL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "71c104127034c0168e19963729c82ee7fb16ef165c0c53efba230929abe425a8"
+    },
+    "JINDALSTEL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c0721b6f555eecf50ef061a55a3ab03b445ffd90a05db0e253861a3220504051"
+    },
+    "JIOFIN.NS": {
+      "rows": 763,
+      "rejected": 0,
+      "first": "2023-08-21",
+      "last": "2026-09-17",
+      "sha256": "59eec8f99cf853c69c3a9e7e6d11440bc6e827354b9294a2891173067d275e4b"
+    },
+    "JUBLFOOD.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "cb8a0f7cb207a5bd498551c142ab064ae98bb9e90ad66cc21c62fdf83539bc65"
+    },
+    "JUBLINGREA.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7c651d41f99567fe0ee506174ba2d7b6206945837b20a28c97806b4a5b6f4bb2"
+    },
+    "JUBLPHARMA.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "440618bb633b3b0da349f127e60a73ec509cedfb4846f24968439cb4a3f16772"
+    },
+    "JWL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "141ac921b9bc55c3613912d4bba701a39fb496b49366515a726387f8c6f3cce3"
+    },
+    "JYOTICNC.NS": {
+      "rows": 662,
+      "rejected": 0,
+      "first": "2024-01-16",
+      "last": "2026-09-17",
+      "sha256": "0eea12487bbad13e37749adc3917fc42ddc3e258a83932382d13162947e633bc"
+    },
+    "KPRMILL.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6019fa6274dea8d209b7761c8b5dd4eb444418a7de530150ef6ec3b0b0c5af84"
+    },
+    "KEI.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "03d64b321b10f7e99c58885cfcb7151175b760357e3b6df1570ec313e9917d9b"
+    },
+    "KPITTECH.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6f333a7d429980436e9dc9b81e596b620c16baa3816fc1d21659f2bdaff49a21"
+    },
+    "KAJARIACER.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "467f05e4d8dd8fcace7ebd5abace8ef68fe75b9feea325ba665b171bef09cd33"
+    },
+    "KPIL.NS": {
+      "rows": 1239,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b7ac4848e0715887edb828fa622d6c59247c38a1c0218381ce516b7c83e47c99"
+    },
+    "KALYANKJIL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d5a51638ddcceae646257ff89959023753b2902ac977ada875f8ef586a2193a2"
+    },
+    "KARURVYSYA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9acfd55e501d800896beb1c3adba613809f3edb22cb0d4c24e3becc4eac78d04"
+    },
+    "KAYNES.NS": {
+      "rows": 948,
+      "rejected": 0,
+      "first": "2022-11-22",
+      "last": "2026-09-17",
+      "sha256": "aab4ac66adaa805fb734ed365a390ab2e70991408c615763438178b14ea4fbdc"
+    },
+    "KEC.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7c358a741183bc858e6e2486edfc23e4158aa8aa15b773acd94406002ca9a875"
+    },
+    "KFINTECH.NS": {
+      "rows": 921,
+      "rejected": 0,
+      "first": "2022-12-29",
+      "last": "2026-09-17",
+      "sha256": "2ebd5dc8c30b5ee868184f6d9f9c831a06339025f580abbb2cf3956fe80d2947"
+    },
+    "KIRLOSENG.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5f150dc9cc2b11e1991f9e0d840fa0b7de131d697bc6040bfc64f9c24f465d47"
+    },
+    "KOTAKBANK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0e66dd1a50a05a152b3ff92434003560e32f66e9e9853ae5894951d698d5b61f"
+    },
+    "KIMS.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "2d2a7fcd5bcf2b6d41549241d50b9427dd21faf2709f836a16ac858deb1138fe"
+    },
+    "LTF.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9ac2c42bd4ada7dcf7b56b91bc8a643e898bc30c4d2c13ad8f1f59949c957653"
+    },
+    "LTTS.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "fd4db0490982e1fa88d09e9f0bc109cb175fc44bc3065a54ab7657dddc055b93"
+    },
+    "LGEINDIA.NS": {
+      "rows": 232,
+      "rejected": 0,
+      "first": "2025-10-14",
+      "last": "2026-09-17",
+      "sha256": "f76ba61e1cbd8b33534405d540da609d0c245403524e62eb162558534d0ad5de"
+    },
+    "LICHSGFIN.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "204de5cdbfa416f00a1a46fd5173c3e3492ed1a4dbaa059386a38d272e4ebeb9"
+    },
+    "LTFOODS.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "dee35183f2ec012991e34dce472f6ca7e1bbc2a33ae28e3c77f18b886e2f5a1d"
+    },
+    "LTM.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9ae2aa3cb9247a7f85cec55ed8e7eb2342933d3846f0ad26151966fc0f10127f"
+    },
+    "LT.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "831bb19e683c16fb069506d5e855df23fb9033f66c616f7c856cd694c4db0303"
+    },
+    "LATENTVIEW.NS": {
+      "rows": 1195,
+      "rejected": 0,
+      "first": "2021-11-23",
+      "last": "2026-09-17",
+      "sha256": "8609c72638c8f2c5636e03e9a72ffbfeb048c6a1b1d867a709ef63d0309139b5"
+    },
+    "LAURUSLABS.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "fbbdb57b4550ce4fcca3807f193a4e704d0ae8d91800e8433119dd8c3c469cf7"
+    },
+    "THELEELA.NS": {
+      "rows": 324,
+      "rejected": 0,
+      "first": "2025-06-02",
+      "last": "2026-09-17",
+      "sha256": "13f73393d057b9f1f0d4095a6630d6e4ff0a532427913a618bc57ed6428e3920"
+    },
+    "LEMONTREE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1b2343aa8ea506fea60da4176a469634c893c00baa0a8a8433cf85ff3c01da3f"
+    },
+    "LENSKART.NS": {
+      "rows": 216,
+      "rejected": 0,
+      "first": "2025-11-10",
+      "last": "2026-09-17",
+      "sha256": "2e3150a16801fd638100c30e8f5f7d6ffa52ea73e3a0fec0547549d3547158e9"
+    },
+    "LICI.NS": {
+      "rows": 1078,
+      "rejected": 0,
+      "first": "2022-05-17",
+      "last": "2026-09-17",
+      "sha256": "60e85594a0fd9df39cbbeac8a8fe6a4aa91c87a5080968522994954dc0cac676"
+    },
+    "LINDEINDIA.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7e55aef0b3d67ad5d42d6fe69204d238dc40b19185dff04b66d3c63b63e7590e"
+    },
+    "LLOYDSME.NS": {
+      "rows": 788,
+      "rejected": 0,
+      "first": "2023-07-17",
+      "last": "2026-09-17",
+      "sha256": "7adce639a3f1665efc11d8c4d1ac2d66273420a5d7bf35fc46a47f4134347435"
+    },
+    "LODHA.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "da49edee37ae1b1e0c42eb3b52e3813852c9ed029d36a2536cba54a17135bb86"
+    },
+    "LUPIN.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1759885a7e0fab9835a82d67ea548c42512a2b6e5e87bbf9fcf646bf58da2abe"
+    },
+    "MMTC.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5067328bec1f1e338445959dfb739ef1d2bead4c29553bcfbb475556fe4a9ac5"
+    },
+    "MRF.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "2b3c11c222baefe40f0b739e46e7bdcfb9fff8845a62dbd2ad69f0d2ab10630f"
+    },
+    "MGL.NS": {
+      "rows": 1239,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4c41ef8e3831cc4fbb4329ed68b99ede8dbac30858d22730667e458d77f4e8da"
+    },
+    "M&MFIN.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "69a795727ca99f9a8f5124cea6ba1be7d3204a88e094bad048886609c5282605"
+    },
+    "M&M.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "cd8f9f7d9cd07441bf2e2a4b141899314d546c264d2183f0eb76852de2f7c475"
+    },
+    "MANAPPURAM.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "da95fd39e0c15a611db6202672c80c558159ac5563d8b81aa7d3416667de6270"
+    },
+    "MRPL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "bf4462925ec655998802b201307d9df50447d1803473cd3195212e466bb6757f"
+    },
+    "MANKIND.NS": {
+      "rows": 834,
+      "rejected": 0,
+      "first": "2023-05-09",
+      "last": "2026-09-17",
+      "sha256": "93dd6a3471857027e91655513f421f56fe65349f0e56060bc4fb3dab17910eb9"
+    },
+    "MARICO.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ec00937dcc7ee23ce4517115bbe8e7963fc1b3177a1d1bb9f2199b5b49620292"
+    },
+    "MARUTI.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5484f6a441c9aebe437305a6833bbb11cfb1448eea78d7524ddc4856c42ef491"
+    },
+    "MFSL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7f03b354aa9d588e992eac537d317dc17c1bba6350c98d2b040ee1e9d94617b7"
+    },
+    "MAXHEALTH.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ce66ebbc13fe57a024da858155cdd8e2248228f08715b221a401c893d5eddf40"
+    },
+    "MAZDOCK.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6eddcfe8d90542ccb789a5950bd3c617a0ae55bd5a659479125c7661feb6f1a5"
+    },
+    "MEESHO.NS": {
+      "rows": 195,
+      "rejected": 0,
+      "first": "2025-12-10",
+      "last": "2026-09-17",
+      "sha256": "62e3064b3cddd827803f8b52fb5e728785dc4f6be89f671ac7d691add2afe56b"
+    },
+    "MINDACORP.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e0471213c9f651ef1c4e919bac729dcab4630c3f76a6604c4a835f3b256f8138"
+    },
+    "MSUMI.NS": {
+      "rows": 1110,
+      "rejected": 0,
+      "first": "2022-03-28",
+      "last": "2026-09-17",
+      "sha256": "dcd82e27716fce10cd5915a75e00c5c38f434c0182099c329b80e437120d70cd"
+    },
+    "MOTILALOFS.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "270b9694c6d1650dc174071f936519098f58e2139d7d058f68c3d586df184e6b"
+    },
+    "MPHASIS.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "05c6df36756b34d0f0b5038fa05b51c2f07e713ec43d164eb2ffe5c12568c4fe"
+    },
+    "MCX.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "2cc32b45f3878e57a53852b9779a5ee8e1cf432caec733a5adfecd30afee5ee1"
+    },
+    "MUTHOOTFIN.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c5595973ef82158cd0a46dbfb769be4bf3413216683d5ecab8fe3b4a3437af72"
+    },
+    "NATCOPHARM.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "fd257c7ca392d6b39535fa6c28ab58ac025b5c4cadfeb43afd8b2888b9b2adee"
+    },
+    "NBCC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ab9b55ae3ea66aa43766e1ffff897f7f38280bca864a810d3502723af8efc267"
+    },
+    "NCC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "bf0ac4e1b54802b367a312ad1205807d0936512acca6beb4d7613135684b734e"
+    },
+    "NHPC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d647e1cd6914e9cc71ad91aa423fe26d126fd42d5f54b74dc2f18b0a14afd2ca"
+    },
+    "NLCINDIA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a5c58219fc4411527bee43d90503b9683f2d0ee99d92eaea08f84b2c99c4fd8b"
+    },
+    "NMDC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f226d4c3cdcb406819462837921c796710d0246f1d5fdbb6a567cb927083566b"
+    },
+    "NSLNISP.NS": {
+      "rows": 884,
+      "rejected": 0,
+      "first": "2023-02-20",
+      "last": "2026-09-17",
+      "sha256": "c17df49c0db528e7fa6728dcb5db1fa8211cda269a2584a978acb259bdf35b3e"
+    },
+    "NTPCGREEN.NS": {
+      "rows": 453,
+      "rejected": 0,
+      "first": "2024-11-27",
+      "last": "2026-09-17",
+      "sha256": "4e2911e6ee2f7791f6e627a957b235abad0d5ca0d2fb534a8bc471fe59dfbdf5"
+    },
+    "NTPC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c33324e5f988aeaaf469e6cec446d9bec89bb740bd090ff341d89bd2c735f889"
+    },
+    "NH.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8f4de4695a85b24b0f7912f889d9949bc5b1b374261820ff80888e21e293e60b"
+    },
+    "NATIONALUM.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "132e7eb3a094cb7c4acb8aef313d8aeb6f98707e6c1b26436375b9cc8be74a45"
+    },
+    "NAVA.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e6cec38d44b1ad7db1be49b1db7bd45a494fa2976b184a0a5d0b34d3a339bb8c"
+    },
+    "NAVINFLUOR.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c0429b956b538a5d20e0b4346728f0a23544a453f9bf41349b16f302e36a7a08"
+    },
+    "NESTLEIND.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "081c564abee99bfb58b276be47c05bcadbcde5b15f6cdbc7655dd61f2aa10666"
+    },
+    "NETWEB.NS": {
+      "rows": 779,
+      "rejected": 0,
+      "first": "2023-07-27",
+      "last": "2026-09-17",
+      "sha256": "887d9ba4989f8995c38d405ecddd25055b29596db9a24a07e624a43de0925b39"
+    },
+    "NEULANDLAB.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "49e42e6fb66a7779c2d3f4d1734491aa499e3ed31229c731d6c985ffdf5b2374"
+    },
+    "NEWGEN.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "fdc8e023ce1f71b4352118ec64649d867e7b4870cb2cbec9ff383e751394bc54"
+    },
+    "NAM-INDIA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8eeb91ccbf2ebcaf27015d239e4dbde515d55631b4c32e5eae9ab9da5fa7092c"
+    },
+    "NIVABUPA.NS": {
+      "rows": 458,
+      "rejected": 0,
+      "first": "2024-11-14",
+      "last": "2026-09-17",
+      "sha256": "d798136c558103984ef3dfcd63f76d670ea7ac755b0aa31076c080e09c6ca07f"
+    },
+    "NUVAMA.NS": {
+      "rows": 737,
+      "rejected": 0,
+      "first": "2023-09-26",
+      "last": "2026-09-17",
+      "sha256": "3d070393c347a23d3e2fb18c76033dc986c443523b5f533e2081cfb93b3b6069"
+    },
+    "NUVOCO.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9203403c7f06866328842d49de5b931efd888dae8bc19b5d509e581a30e300e5"
+    },
+    "OBEROIRLTY.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "acf15c19574c8517091ffb2d8395ab6be254b2845ea96528e0a6cdd7ba030051"
+    },
+    "ONGC.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "fa3e9432d75d5ae3408b812b2d331db85a77841890302190c0ab09b11992aa9e"
+    },
+    "OIL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8deb10bc7a5069c8ad773d5bec8b1b4081c5078ac3d89c68359d675e9883936a"
+    },
+    "OLAELEC.NS": {
+      "rows": 527,
+      "rejected": 0,
+      "first": "2024-08-09",
+      "last": "2026-09-17",
+      "sha256": "63a63c14f43dcca4206febf3042fe879a44a4ad4873726b9db3f7a7a2376a4dd"
+    },
+    "OLECTRA.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a51c984f8dad444369d31211755fb0bdcda9af59fe5d892adf0b89b5e0ccdde9"
+    },
+    "PAYTM.NS": {
+      "rows": 1198,
+      "rejected": 0,
+      "first": "2021-11-18",
+      "last": "2026-09-17",
+      "sha256": "cca38aad317e296e565e843852a7b0e6e6582b783a1ffbdee848fbe6df9a8e45"
+    },
+    "ONESOURCE.NS": {
+      "rows": 411,
+      "rejected": 0,
+      "first": "2025-01-24",
+      "last": "2026-09-17",
+      "sha256": "13c0a337e2abea8c208a5cb9dc520d109a54d87b9b900705aef046f70d31b8bd"
+    },
+    "OFSS.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7b88c582744f5dc59c92f5fe4c2645d16ba6c8d186e966ecc1bb83e9f404548f"
+    },
+    "POLICYBZR.NS": {
+      "rows": 1200,
+      "rejected": 0,
+      "first": "2021-11-15",
+      "last": "2026-09-17",
+      "sha256": "c6f5168964b2ba5100bd43a2d395e0a51dba6fcc1274455c24a4c06f5a062bbb"
+    },
+    "PCBL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "248332522c625ce73c606c69f0c147d3ec14b7f33cdcdbdfb6dd7cdcdcc98bf1"
+    },
+    "PGEL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a7d11ee9f2ae7395c1984972ef06554a8999af2343bc7d0aff682475be889dfa"
+    },
+    "PIIND.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ca31f321475ef17f9ccd087f1503bf3eb3ed737b17c47ae4cf8111d20c675b77"
+    },
+    "PNBHOUSING.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a63e183ba54fbd3cd4f5ce956eda4981bf8b083819e5ed99c93c13fbab6b5b60"
+    },
+    "PTCIL.NS": {
+      "rows": 809,
+      "rejected": 0,
+      "first": "2023-06-09",
+      "last": "2026-09-17",
+      "sha256": "7287464c8620994a2ebf18a675db07f49ece5e56455bd0ea33a396099d591b85"
+    },
+    "PVRINOX.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c2532e53fc017e9cdfab515395fdf60fc434548b08c5af534edb38448d76f8f8"
+    },
+    "PAGEIND.NS": {
+      "rows": 1239,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c59bd9756a59c87fcc6e548c871ebddbf064e2eaa64987d8886d89110c8cc166"
+    },
+    "PARADEEP.NS": {
+      "rows": 1067,
+      "rejected": 0,
+      "first": "2022-05-27",
+      "last": "2026-09-17",
+      "sha256": "d622a468b25ce83e1e42e8d969717cf1b9879183a9c72d3d8eec3d4e74bbeb52"
+    },
+    "PATANJALI.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "34ba8db0f627680f31dc45b903ac5c13fe973c4dad178e8edcbb7bf29ee04349"
+    },
+    "PERSISTENT.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "91dd830f21b8c2cbca10ed4e032eb02484a6ab0410a0fea1cfe7e278bc264341"
+    },
+    "PETRONET.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "05446f008a47d5de171c487740748f5aa37887e15c4afc9ac6949955086249de"
+    },
+    "PFIZER.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "17a528d318d07af54efec8e5d386f4486ef83b5aaaa79d4291596b0aa57a802d"
+    },
+    "PHOENIXLTD.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "006cc6dd382e2c839fa61fae77e22a32f3c9667f9ec11c8355a2ec5664b78912"
+    },
+    "PWL.NS": {
+      "rows": 211,
+      "rejected": 0,
+      "first": "2025-11-18",
+      "last": "2026-09-17",
+      "sha256": "0185170d28f10b5eb4c4200c1ba682b3fa088fce5daf274fa50bba9c2a6d342b"
+    },
+    "PIDILITIND.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "cb23ef8d69d57786903fda44c64ada2c8ed04c6f30811efb3d2db3b891f2c495"
+    },
+    "PINELABS.NS": {
+      "rows": 213,
+      "rejected": 0,
+      "first": "2025-11-14",
+      "last": "2026-09-17",
+      "sha256": "54c3d6af05e9d2e96fd90f2ba734e8868f10e4cce567d230a74d9e38c6ea0838"
+    },
+    "PIRAMALFIN.NS": {
+      "rows": 216,
+      "rejected": 0,
+      "first": "2025-11-07",
+      "last": "2026-09-17",
+      "sha256": "d85be1b32045648188d7fcc5b64d26f5710f2bf32abd9e2a853d7a25062c05fe"
+    },
+    "PPLPHARMA.NS": {
+      "rows": 969,
+      "rejected": 0,
+      "first": "2022-10-19",
+      "last": "2026-09-17",
+      "sha256": "daed3c1abd64175abb69baf608a9d6c8144681e5a15b1c561a96d814cca703a8"
+    },
+    "POLYMED.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "397834d9f43d643e32d4da8357ccdf6b2d4d77fd43dcfbffa3ab63340fe08db5"
+    },
+    "POLYCAB.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ace5480c3acb459191a52543b0ee001419ba60e6ab094028ee49e382741766db"
+    },
+    "POONAWALLA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c7591c61345103505f70e0b4c373193c5560bea1abf06403a3ade09b07bcd16f"
+    },
+    "PFC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6c02e60769544cb6ac890f991152ba7dd958439cdeb3e18252c3683993d1b5f2"
+    },
+    "POWERGRID.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "616af697a56fd4ff7ab292b64e1cd9b65653b3893d1c500c1ead4e1baa890f60"
+    },
+    "PREMIERENE.NS": {
+      "rows": 511,
+      "rejected": 0,
+      "first": "2024-09-03",
+      "last": "2026-09-17",
+      "sha256": "b8319fc521973aa8b5030a37a817a8b390fbc604717757058860496bdcbbd12a"
+    },
+    "PRESTIGE.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c974be5692d58c2475a0db1115cb10629910644c50649f1f5bb439f2c85e04ee"
+    },
+    "PFOCUS.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "11af97f61e276f2bc32f15a4f6b24fecea8fef455372e359d7d5c7a9dfe58a9a"
+    },
+    "PNB.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e86e7a31da44b7ed3b0f509dfbd5b6a98a7103fd03e29888c5dd89f6c779eb11"
+    },
+    "RRKABEL.NS": {
+      "rows": 739,
+      "rejected": 0,
+      "first": "2023-09-20",
+      "last": "2026-09-17",
+      "sha256": "4caf7293650d73f9a5d25ce8300a1ac848edca3dcc76a88e4388f0927cab1d1c"
+    },
+    "RBLBANK.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f32c4e9719a9e042e6dc88f445975b70a021fbc93e690b32cbd90bf38dd6cdca"
+    },
+    "RECLTD.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "87a12f0763868cf3d47f4b72f1a87cac21819ef10398dfefb742a395bc5dcac7"
+    },
+    "RHIM.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "2a6332c149f45f253a520fef3703ae5c9e32ff13af1f95f9b78ae9f634f7c3eb"
+    },
+    "RITES.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "eea539ed3aaf17766092d53d39b8d2936e0b74d604f017aaa4279f05d4a4cb64"
+    },
+    "RADICO.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "669e53f644cac7ca1d961f227bb40e8cfa0b0a7805d168726440e1ff543cbab9"
+    },
+    "RVNL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9c1b648da51df1f614b046edc4b52e13570d7aa69ad60a0adb4a50fe9704bea8"
+    },
+    "RAILTEL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a90a55776c6916208e2704547695391bc2e556f60e3c27ca3d9c6ca5e3b1408d"
+    },
+    "RAINBOW.NS": {
+      "rows": 1079,
+      "rejected": 0,
+      "first": "2022-05-10",
+      "last": "2026-09-17",
+      "sha256": "52b90bb70bd3c3b90d5e6c300d7760269bdc3d159f7f5a0707fb2a34627f0a6c"
+    },
+    "RKFORGE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "adb1fda499a4cc062a1335f22c5c4bae3e586ac9cfcc1bfc07d789d04a8fa311"
+    },
+    "REDINGTON.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b4c253e797414c30101701ac9c0f780002117943ad633313b14680be91adbfd9"
+    },
+    "RELIANCE.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6e69e0fbae7be5f62d68d02c47faa855e7d4973bcd37727cbde10b61fd442f03"
+    },
+    "RPOWER.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "93fa4a31f00a4ebfb0d91190c60c9ac1edec6771b4db3a7ea412d90f56c3da6d"
+    },
+    "SBFC.NS": {
+      "rows": 763,
+      "rejected": 0,
+      "first": "2023-08-16",
+      "last": "2026-09-17",
+      "sha256": "d588ac253344858bc6009242d80b9a0c13ee6264eb744db52e0891e7e9f4caec"
+    },
+    "SBICARD.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0389fa5b7a2bdb8e66cba1260498cf039de2adf1d753a2a08a7d9e7e20b5a53d"
+    },
+    "SBILIFE.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "074d69fb9d6d2090369fa039bd93d70e12bb41f5f5062e6d75eb9416aec10c81"
+    },
+    "SJVN.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e59604c337f0d5d2f553618fa16be2b5df9edff897dcaa626abc11164a56d853"
+    },
+    "SRF.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c4532582fa47b7ed1d9f5112ea03698c7188830622f1ac7f24dd4bf6dfb8ca99"
+    },
+    "SAGILITY.NS": {
+      "rows": 462,
+      "rejected": 0,
+      "first": "2024-11-12",
+      "last": "2026-09-17",
+      "sha256": "5c1db613e2b739d1a4fcb120b3a2368c7cf71bf9ee2e9071edf307623c4fd72a"
+    },
+    "SAILIFE.NS": {
+      "rows": 437,
+      "rejected": 0,
+      "first": "2024-12-18",
+      "last": "2026-09-17",
+      "sha256": "1455bdfa71016c7e36522229b5fb3ad29817cdff01ea90cff4d575899db38def"
+    },
+    "SAMMAANCAP.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e8c5cb9b72491948c36e492c4ece39a1c5ee95926c5e4f1faef38784e9bbfe4c"
+    },
+    "MOTHERSON.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e53267538c98f1e379e619c48cab6d493fd660171d539f204b76110216b0e6c0"
+    },
+    "SAPPHIRE.NS": {
+      "rows": 1196,
+      "rejected": 0,
+      "first": "2021-11-18",
+      "last": "2026-09-17",
+      "sha256": "6cdf425f17c3dc405de730cb08336e2a2ea955da8dc021a8bb90a45e1af6c76c"
+    },
+    "SARDAEN.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "48db87dce37d24f78c8be838544ca1cb89d06bbdac45ab4083b203929c6c0e3d"
+    },
+    "SAREGAMA.NS": {
+      "rows": 1239,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "1654f16165911681d2944efa238131dfcfd859ba8e6922cc0f010cea55550535"
+    },
+    "SCHAEFFLER.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ae48273f16da53b38c077583d353323219af968f6c29fdbbc9a1998257a2f222"
+    },
+    "SCHNEIDER.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "99000755c3089e08ac4d1f3508e4970b8b8c791287912d51511a31f901159184"
+    },
+    "SCI.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "51b41e39105696fec0789bee62284b9396500c5bac19c850bc2f46c4242afd42"
+    },
+    "SHREECEM.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4fe85a0616553578b359474838644839a027d70b9934d7323ac50eea5454b1fe"
+    },
+    "SHRIRAMFIN.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5858ff7af91d8a75a06483218585b1f5ec1aa134a798112c96a18cb8a92c8afe"
+    },
+    "SHYAMMETL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5cd6907240f839e366d5064b1755f78f188a1cde08b70f3c54e09e8122769b00"
+    },
+    "ENRIN.NS": {
+      "rows": 313,
+      "rejected": 0,
+      "first": "2025-06-19",
+      "last": "2026-09-17",
+      "sha256": "bc1a4e9cdf345ce4b69a5687287da1c7b16e53215776fa75356bcbbfe81ffd42"
+    },
+    "SIEMENS.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d9fcba291d274ba26251deb62da2f13defe47d854ca37b0abeb595281b39f92f"
+    },
+    "SIGNATURE.NS": {
+      "rows": 733,
+      "rejected": 0,
+      "first": "2023-09-27",
+      "last": "2026-09-17",
+      "sha256": "11465e6a1a568de0b53299c083ca9c6ac4b02c70e577907272b01cdea8d9463e"
+    },
+    "SOBHA.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d83d6f1fab0f58d6a4f507bd7a7bb52c4e892cf5940e5d8cd7ae47d6e6e43a15"
+    },
+    "SOLARINDS.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5c9dcfa1be1fb70815f115f2e4e11a47a76b5f521dab7dbd69263d92d263d16c"
+    },
+    "SONACOMS.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "742f699adaf2f28e9791a71b11b4f649bb59f1281d439726f4b2b4ecdf7bb6c2"
+    },
+    "SONATSOFTW.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "adadf3fa14b2316e65694dee7ad4eace7f40ca554aaff46945021788e4e67c62"
+    },
+    "STARHEALTH.NS": {
+      "rows": 1182,
+      "rejected": 0,
+      "first": "2021-12-10",
+      "last": "2026-09-17",
+      "sha256": "2544080ac94c3f7dabd637acb9b0362804b89e132d9b9783658e4c22e60bb76e"
+    },
+    "SBIN.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4d8666a9ff68a054a3a04e8a4be0c16d313ab99556dc0e213270c4f39a396c5f"
+    },
+    "SAIL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f69d9534aaf1dc7cbd3ef1694b112dfa8cbeeab910e32bcba5a21f4c3fee14e7"
+    },
+    "SUMICHEM.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5d5d479035ac73048b3ea9e8832fa818e4504ef4a7ad4d86f8e7d560b880e0ed"
+    },
+    "SUNPHARMA.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6137a275e2d72badd747f5e5d90972d9c254bdb41f0ed1126a28d659ac8cb419"
+    },
+    "SUNTV.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4e0de3a0036b717264b1e0173921a9acdc3a706f796d2f66b0fbefdb7d3104c4"
+    },
+    "SUNDARMFIN.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c76a6c0a76aebe1fc841a6bf9b573cf2fc5ab0a22a84f7f3f9e4f681c9956726"
+    },
+    "SUPREMEIND.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b6256f21e559bc5a07121522c5f77d1776bd8006f991a56c52045cdd2033de10"
+    },
+    "SPLPETRO.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e46679da01cbdcc1595a327dc8d65d35f67fd1c981b425d87347fff9c9eac546"
+    },
+    "SUZLON.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c912b791378749dd4dfc6ab4eb6597dbf4867822ffd212e9737aaeb5b9521bec"
+    },
+    "SWANCORP.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "37f75e57ba1b90aa146f631c944bc72d3636d3136245e29dd52886284d706b1b"
+    },
+    "SWIGGY.NS": {
+      "rows": 461,
+      "rejected": 0,
+      "first": "2024-11-13",
+      "last": "2026-09-17",
+      "sha256": "bcbcf7d5d6e765843cbef5ab10409ad0027626a5f5adfee1b9bd2adff22ed207"
+    },
+    "SYNGENE.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "34907231c6253856d678750348c3aa07c2ac6c7c6c2e167907a8921586d50cfb"
+    },
+    "SYRMA.NS": {
+      "rows": 1006,
+      "rejected": 0,
+      "first": "2022-08-26",
+      "last": "2026-09-17",
+      "sha256": "cfa77d12df1126fc3446cd6b6ed3c0c9bd8f26a488a49a2847ea8a4637fe35e1"
+    },
+    "TBOTEK.NS": {
+      "rows": 584,
+      "rejected": 0,
+      "first": "2024-05-15",
+      "last": "2026-09-17",
+      "sha256": "9522586a20504a90b0c598b774077a03ca3c80c38190d9f10e02aae2dcb28756"
+    },
+    "TVSMOTOR.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "6ea17c5cca65627891e43e51c5bcb7e10b4f926a218025618295c33b0768250b"
+    },
+    "TATACAP.NS": {
+      "rows": 235,
+      "rejected": 0,
+      "first": "2025-10-13",
+      "last": "2026-09-17",
+      "sha256": "67826c29cc4414e45d776dc4a9a1db040432a2034a5742803f5671bb754c05f8"
+    },
+    "TATACHEM.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e188536f7ca8931ab0bb9f20a76d47e4ebe446dba7b1a8d66aaf664e0c21a31c"
+    },
+    "TATACOMM.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "2d4b8263552f8357393994da32ea6290155ef5153617e42e7b750bc7a6ee1831"
+    },
+    "TCS.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "3c97209316034b23fea58f71bf9ededdeea2cc49a1eb539a771ac9b84324dbce"
+    },
+    "TATACONSUM.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "3ed9c1eb3d42421f306f82fa23217ab18219e029f670c7d1368949667cbc5bb3"
+    },
+    "TATAELXSI.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e60df150fc1a58546a895aa2465b2743e45a78c8eef65c7cad34c5ea655db305"
+    },
+    "TATAINVEST.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c24db5d70fa27dbdcad2fc74b18c07757eb5262b0d59c3174d745d1513ad8130"
+    },
+    "TMCV.NS": {
+      "rows": 215,
+      "rejected": 0,
+      "first": "2025-11-12",
+      "last": "2026-09-17",
+      "sha256": "d98b477c26fa30400eb09600140de2b8fc5d76f4a2db0c6b4fd8b6a3aa580e3d"
+    },
+    "TMPV.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "37b43b3da06faee8a418683afd8f74a4f8e63c63c1c397f2258f6f47f0449378"
+    },
+    "TATAPOWER.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b18b735009b72384980e1354b9f9567f4354694fd7a0e430b752d9ecce504f7c"
+    },
+    "TATASTEEL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f4987c9e4a1c8ec40098aacd69de08679e945178fcfdd42838950ae555ad6509"
+    },
+    "TATATECH.NS": {
+      "rows": 696,
+      "rejected": 0,
+      "first": "2023-11-30",
+      "last": "2026-09-17",
+      "sha256": "fec4e2a8155e46f36bcb86311de6a8f402ada5dc6478e99af1bce53d03d410a1"
+    },
+    "TTML.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5706739a8e17b6afc2c14029fb9b4e51735f4494f9363ef8cf163c652f98d6d6"
+    },
+    "TECHM.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "22f29bf3ec6da845c61ba911061e13b19587edbb984e9748384abc0a0bcfe1d5"
+    },
+    "TECHNOE.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7177184564eb0a351ca7e6714412e9c273957a7801602ea4bd6a16fbf0a15dad"
+    },
+    "TEGA.NS": {
+      "rows": 1179,
+      "rejected": 0,
+      "first": "2021-12-13",
+      "last": "2026-09-17",
+      "sha256": "32319ffec11040dd97c830fae09e3681fb261a34983137e49b769946f85f1d59"
+    },
+    "TEJASNET.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "43bb41df084870c44c7cbc99eb61fc0342e40951c1f994c68718dcc484d2d5f8"
+    },
+    "TENNIND.NS": {
+      "rows": 210,
+      "rejected": 0,
+      "first": "2025-11-19",
+      "last": "2026-09-17",
+      "sha256": "0dc3a4712bc155e449a5f41ebc5011ae9a4ad07383f037260277b82cf6fb6dfa"
+    },
+    "NIACL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c1d3a50273a19a1e43289c8c2a8d0df05431679fa68932a76446dbc025b37a88"
+    },
+    "RAMCOCEM.NS": {
+      "rows": 1239,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "217233bef6c7fc00edec010298364a641604e67855b19ad33a232f3db7f1f922"
+    },
+    "THERMAX.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d377494f6cf7e96532da4b00397e76f6d23495e1ee5ea9af8e8ccc7151c7c418"
+    },
+    "TIMKEN.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e1294dbcdcb4feba80cc1dc9c676eb16e4515795ef6d63a397275ace050335b0"
+    },
+    "TITAGARH.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "7f40dce5d2222b904774b1c6b250f30f9f11614a2d1ab79b5a3f5e54f3132b72"
+    },
+    "TITAN.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4e0d54ea9fb434bf4c3b421061a53aeb4f5e245a721a4c9292636c04ba06f481"
+    },
+    "TORNTPHARM.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "3d9051ac403126f304ef20049a80c1207fb33a58529a4d891a61962b0a0185e0"
+    },
+    "TORNTPOWER.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e9675169ee5d026c19aae78cf3a0ea6210714572132dd6ddcb0cd31b411be939"
+    },
+    "TARIL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "ea66dadb67befa0ce6c6e9255353e20fde8f8bd2c0982515f3efe67dfec85d94"
+    },
+    "TRAVELFOOD.NS": {
+      "rows": 295,
+      "rejected": 0,
+      "first": "2025-07-14",
+      "last": "2026-09-17",
+      "sha256": "fe4b555f7aa9b2f1e900eaeaf1ff649e93ea700f0638b83fb389da784046235a"
+    },
+    "TRENT.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "32bfefa68cfe51944b49c9bccb9f16a276f6ca09ba02f470c19782c388215544"
+    },
+    "TRIDENT.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9bb3e85d3fd84b40eb11fdcd9fbc1b7a84e4fa4b64335b99dd883ab09aeb80b8"
+    },
+    "TRITURBINE.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "33c61edaae5bca233e6e685772cc36eb863b0d439e0361c5636e2c92d72a59fd"
+    },
+    "TIINDIA.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4f7e75a42111c0d662cd9acf7340ea2c64addd45dd1d9d298eea646790f0df84"
+    },
+    "UCOBANK.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8f448e4ac9b1ce1c3417ed4921dfd5f2d18fd90cdaf06e8f2c2bff0d9839597d"
+    },
+    "UNOMINDA.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "a3bcbc7b5ce9f50128e7f95ec638608ac79181356c28ae5bebe9ce128cccb724"
+    },
+    "UPL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8eaa6930d61d4bb477c9b8859c5d768ac2687d8d0647581757eff57bad4bbb77"
+    },
+    "UTIAMC.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "fee2c82ab4e91f85da6ec68df3eedcfe86f4667bc07677e846190da80b23fb7b"
+    },
+    "ULTRACEMCO.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "8ad6198a5cae7010071cba1832d7e6ee2f8ebf59c59be2b2f4d6dfe4e65cbea5"
+    },
+    "UNIONBANK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "759114f2742fa07ec95f150f1f0baed29e65797b534bdd80bc7564997ca94cb8"
+    },
+    "UBL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4a5c6d8007aab0dc02531371fe19f7fa74145f98ef10a39248052980bd5867f7"
+    },
+    "UNITDSPR.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "e94d086d27ad8226dd08fa5649150437d437b834fbf7b6d5f1e836a1bb745126"
+    },
+    "URBANCO.NS": {
+      "rows": 252,
+      "rejected": 0,
+      "first": "2025-09-17",
+      "last": "2026-09-17",
+      "sha256": "d47792f4dcf31686a0f7da60a9e4049b6f696f6fb5cd64a993e36460c65c056e"
+    },
+    "USHAMART.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "30fd6ca98efd87c179fd54b77ae42e544093616de5462ca7239615a4f995ca0b"
+    },
+    "VTL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "d67c6418da15fa8cfd32f87c77a2da32fb1003e172e9453f6fd9ad8a25c93d5b"
+    },
+    "VBL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "0c99c3bab7f3f10779e8e39792c2d65c64a2f8fbebab45c99879ff0b7e81a050"
+    },
+    "VEDL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5b72a60cb664a80873d377a77c6432eac4eb1a4799d580a72d729a0b70e93214"
+    },
+    "VIJAYA.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "96fbfae1030c975f7428f20ab367a50144fd644a094b51e748d4ef466ceae400"
+    },
+    "VMM.NS": {
+      "rows": 437,
+      "rejected": 0,
+      "first": "2024-12-18",
+      "last": "2026-09-17",
+      "sha256": "3c87ea2916c80f8d50d10e7ffbbf2275730d6c4c57e0c2e09170b55d95704873"
+    },
+    "IDEA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "760136c8350dbe7a1f0922107251671fa1fe428900fcf1435c2637322e906967"
+    },
+    "VOLTAS.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "5b4bb0eef8393c7cb54af4822c5b493ced4db4673b12669d0ec97950d3c83079"
+    },
+    "WAAREEENER.NS": {
+      "rows": 473,
+      "rejected": 0,
+      "first": "2024-10-28",
+      "last": "2026-09-17",
+      "sha256": "2d3a288dc7ab1dd5cfd9a94c1974779dc68b3d1a10fcd2f8efdec14f49f14254"
+    },
+    "WELCORP.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c9c4fb3ab7b51a736eb484b11758337d1966421aa899c6676be230afa3877960"
+    },
+    "WELSPUNLIV.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b51e61040a0d5676009f22afc3fedea69756d1710da54c478e3eca6111a192ee"
+    },
+    "WHIRLPOOL.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "4535fbdbccd66a0b819a0870ad5bdb9d0904b9827e48c2784fe9f569a101689c"
+    },
+    "WIPRO.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9b24c7bc0fa7d89f3ec3f3424877edb83b43573d01f772b12d836d2e0b63f62a"
+    },
+    "WOCKPHARMA.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "53ff20fd81c25d4f21d3d697471733be83b1bd577448246d5070c07feb015608"
+    },
+    "YESBANK.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9dabf35f3c8c8b866b107a8a37faac38d42d82e8ad655a9a9d7fe4c1a1e0f67b"
+    },
+    "ZFCVINDIA.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "c3a6a1b5aca94c5da45b760f1b716892070e6cba4e1fb2d3734aa67349a9e124"
+    },
+    "ZEEL.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "64dd439bbf8489fb332e6dbe8cd594236f4742ded674629de5b5d7f88ed46cb6"
+    },
+    "ZENTEC.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "eb1c4eb2ab7f073e46db80bbc9fd082310bec0a1f0a6cdc401f73cf4751fe1fe"
+    },
+    "ZENSARTECH.NS": {
+      "rows": 1243,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "b8167da436e9fa6a63c0037dc38cfe852ba04f58123e457444486ea6d41ba220"
+    },
+    "ZYDUSLIFE.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "9c1179de8a35cfd64ba3764926f73f307a7088149ca6b9088866b959ce572759"
+    },
+    "ZYDUSWELL.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "db2945be7e81a363879f504dc9a70d1ea8691ee0cb7ed92dfcc662ad89ee71c9"
+    },
+    "ECLERX.NS": {
+      "rows": 1242,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-17",
+      "sha256": "f38f177c4cfc828d5a0aa8e75e3d98ba7ff5f39b1295dd7ab0aecd2ae647d861"
+    },
+    "GOLDBEES.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-16",
+      "last": "2026-09-17",
+      "sha256": "4de39c4c741dcf358b439cf17e2c382f573226d5ce7cc4171d10a96b2d902b21"
+    },
+    "SILVERBEES.NS": {
+      "rows": 1144,
+      "rejected": 0,
+      "first": "2022-02-04",
+      "last": "2026-09-17",
+      "sha256": "6553e65099b0e8a034f94c35fab74a44292506d9a1674c54dd179fd9ce1ed00f"
+    },
+    "INDIGRID.NS": {
+      "rows": 1237,
+      "rejected": 0,
+      "first": "2021-09-16",
+      "last": "2026-09-15",
+      "sha256": "0fdeee6d2c8dca1bbde46d73dcd9bd8de6e208f5016cc9ce269e19245ce4b127"
+    },
+    "LIQUIDBEES.NS": {
+      "rows": 1241,
+      "rejected": 0,
+      "first": "2021-09-16",
+      "last": "2026-09-17",
+      "sha256": "69610138b639cc075a000f8ec82526b1f332a4498100de89224405c318f3d546"
+    },
+    "NIFTYBEES.NS": {
+      "rows": 1240,
+      "rejected": 0,
+      "first": "2021-09-15",
+      "last": "2026-09-15",
+      "sha256": "0800dc08e7dac84c983c38ed27c1bd95e8538757cb353b17d2fe8a2eb6a24dd4"
+    },
+    "^NSEI": {
+      "rows": 1237,
+      "rejected": 0,
+      "first": "2021-09-16",
+      "last": "2026-09-17",
+      "sha256": "2abe72c3997aabbb53d64bd25c8c56fe718bd763910e89e441d05f620fb356fd"
+    }
+  },
+  "variants": {
+    "current_200_63": [
+      200,
+      63,
+      false,
+      "momentum"
+    ],
+    "faster_100_63": [
+      100,
+      63,
+      false,
+      "momentum"
+    ],
+    "faster_50_63": [
+      50,
+      63,
+      false,
+      "momentum"
+    ],
+    "monthly_200_21": [
+      200,
+      21,
+      false,
+      "momentum"
+    ],
+    "crossing_200_63": [
+      200,
+      63,
+      true,
+      "momentum"
+    ],
+    "no_market_gate_63": [
+      0,
+      63,
+      false,
+      "momentum"
+    ],
+    "core_plus_dip": [
+      200,
+      63,
+      false,
+      "dip"
+    ],
+    "core_plus_index": [
+      200,
+      63,
+      false,
+      "hold"
+    ],
+    "index_hold": [
+      0,
+      1,
+      false,
+      "all_hold"
+    ],
+    "index_dip": [
+      0,
+      1,
+      false,
+      "all_dip"
+    ]
+  },
+  "config_sha256": "79971b36170bdcf5560b5ae069d5c27284da8bf2ef6abb041183e0ca4b7aaf5b",
+  "protocol_sha256": "04da0607a41d9c6da61cacc28f1527fe2819b79d2f2c23ce6787033c56491676"
+}

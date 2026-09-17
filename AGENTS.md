@@ -107,3 +107,13 @@ The daily workflow supports manual dispatch and weekdays at 13:00 UTC, requests
 and `data/cache/`. It passes optional `TELEGRAM_TOKEN`, `TELEGRAM_CHAT`,
 `ANTHROPIC_API_KEY`, and `OPENAI_API_KEY` repository secrets to the daily process.
 No narrator key is required; Anthropic is the LLM option without an OpenAI key.
+
+## Isolated strategy challenge study
+`research/README.md` and `research/PROTOCOL.md` describe the reproducible challenge
+tests; `research/results/REPORT.html` contains the full report. These scripts read
+cached data and write only under `research/`. They do not alter production logic,
+state or dashboards. The baseline is current policy with audited research
+execution (past-only cleaning, adjusted ATR, gap stops, settled cash, FIFO,
+shared tax reserve and actual 70/30 books), not an exact deployed-engine replay.
+Current constituent lists, adjusted prices and simplified constant tax rates
+remain material limitations. No variant was chosen for deployment.

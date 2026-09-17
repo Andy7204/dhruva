@@ -1,0 +1,98 @@
+[
+  {
+    "crossing_date": "2022-10-04",
+    "wait_sessions": 62,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": 5.547,
+    "risk_on_at_review": true,
+    "rebound_from_prior_off_episode_low_pct": 2.291
+  },
+  {
+    "crossing_date": "2022-10-12",
+    "wait_sessions": 57,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": 6.476,
+    "risk_on_at_review": true,
+    "rebound_from_prior_off_episode_low_pct": 0.825
+  },
+  {
+    "crossing_date": "2023-03-01",
+    "wait_sessions": 23,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": 0.85,
+    "risk_on_at_review": true,
+    "rebound_from_prior_off_episode_low_pct": 0.849
+  },
+  {
+    "crossing_date": "2023-03-03",
+    "wait_sessions": 21,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": 0.027,
+    "risk_on_at_review": true,
+    "rebound_from_prior_off_episode_low_pct": 1.573
+  },
+  {
+    "crossing_date": "2023-04-05",
+    "wait_sessions": 1,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": 0.24,
+    "risk_on_at_review": true,
+    "rebound_from_prior_off_episode_low_pct": 3.612
+  },
+  {
+    "crossing_date": "2024-11-22",
+    "wait_sessions": 41,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": -3.692,
+    "risk_on_at_review": false,
+    "rebound_from_prior_off_episode_low_pct": 2.387
+  },
+  {
+    "crossing_date": "2025-01-02",
+    "wait_sessions": 13,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": -4.812,
+    "risk_on_at_review": false,
+    "rebound_from_prior_off_episode_low_pct": 2.549
+  },
+  {
+    "crossing_date": "2025-04-21",
+    "wait_sessions": 4,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": -0.357,
+    "risk_on_at_review": false,
+    "rebound_from_prior_off_episode_low_pct": 9.251
+  },
+  {
+    "crossing_date": "2025-04-28",
+    "wait_sessions": 62,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": 3.015,
+    "risk_on_at_review": true,
+    "rebound_from_prior_off_episode_low_pct": 1.203
+  },
+  {
+    "crossing_date": "2025-05-12",
+    "wait_sessions": 53,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": 0.551,
+    "risk_on_at_review": true,
+    "rebound_from_prior_off_episode_low_pct": 3.818
+  },
+  {
+    "crossing_date": "2026-01-27",
+    "wait_sessions": 1,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": 0.665,
+    "risk_on_at_review": true,
+    "rebound_from_prior_off_episode_low_pct": 0.506
+  },
+  {
+    "crossing_date": "2026-02-03",
+    "wait_sessions": 59,
+    "next_review_in_window": true,
+    "nifty_move_to_review_pct": -6.587,
+    "risk_on_at_review": false,
+    "rebound_from_prior_off_episode_low_pct": 2.548
+  }
+]

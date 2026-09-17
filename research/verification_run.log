@@ -1,0 +1,36 @@
+warning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+{
+  "tests_passed": 8,
+  "cashflow_reconciled": {
+    "current_200_63": 175367.13,
+    "faster_100_63": 183565.81,
+    "faster_50_63": 147088.14,
+    "monthly_200_21": 142179.51,
+    "crossing_200_63": 139872.09,
+    "no_market_gate_63": 158253.12,
+    "core_plus_dip": 160963.26,
+    "core_plus_index": 172207.43,
+    "index_hold": 140531.16,
+    "index_dip": 103099.61
+  },
+  "actual_cache_prefix_invariance": [
+    "RELIANCE.NS",
+    "HDFCBANK.NS",
+    "TCS.NS",
+    "GOLDBEES.NS",
+    "NIFTYBEES.NS"
+  ],
+  "production_files_modified": false,
+  "main_protocol_hash_matches": true,
+  "sources_sha256": {
+    "research/challenge.py": "944fdd10965c7d40ce10927c306f741107a75f8f4f903828d8428a16ed86fe15",
+    "research/scenarios.py": "c3ac86ade5e771489fc3d9f4bbf195e1840c78744cc002025386b6871211029e",
+    "research/same_asset.py": "cdf2a3e32895aeccd7d6ffd1b51969f783f1372908cdde657e7e399797cd6a15",
+    "research/test_challenge.py": "42ef0f63a03c3fd29eca24077e251ba395a99e6a252a3840d6fd3179052d087b",
+    "qlab/costs.py": "0e246e2750623d8df53139bfa41ec552dcf40f6a88ab9aa7a160858d6ff0f6bf",
+    "qlab/tax.py": "a170b67331f24b0f2814e1a46ce265208a1c9a40dfe094d866d1f2809a010099",
+    "qlab/engine.py": "4f6abda31ce4951b812e758603f14d4f7f39232f363259961ce0f1a4fa7b2895",
+    "qlab/indicators.py": "f719bb4c53fabd6cece238e7ae3ecb4066aedf41725347bac61cdf7d2d30abc4"
+  }
+}

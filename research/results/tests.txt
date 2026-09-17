@@ -1,0 +1,13 @@
+test_dip_threshold_and_cash_budget (__main__.AccountingTests.test_dip_threshold_and_cash_budget) ... ok
+test_future_extreme_does_not_change_cleaned_past (__main__.AccountingTests.test_future_extreme_does_not_change_cleaned_past) ... ok
+test_gap_stop_worse_open (__main__.AccountingTests.test_gap_stop_worse_open) ... ok
+test_next_open_not_signal_close (__main__.AccountingTests.test_next_open_not_signal_close) ... ok
+test_prefix_engine_matches_complete_engine (__main__.AccountingTests.test_prefix_engine_matches_complete_engine) ... ok
+test_proceeds_unavailable_until_next_session (__main__.AccountingTests.test_proceeds_unavailable_until_next_session) ... ok
+test_shared_exemption (__main__.AccountingTests.test_shared_exemption) ... ok
+test_tax_reduces_nav_and_fifo_basis (__main__.AccountingTests.test_tax_reduces_nav_and_fifo_basis) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.151s
+
+OK

@@ -1,0 +1,248 @@
+{
+  "rebound_80_to_120": {
+    "hold": {
+      "return_pct": 15.355,
+      "cagr_pct": 16.026,
+      "max_drawdown_pct": -20.019,
+      "sharpe_zero_rf": 3.561,
+      "fees_rupees": 305.75,
+      "slippage_rupees": 260.83,
+      "tax_rupees": 3838.68,
+      "nav_before_liquidation": 119500.5,
+      "liquidation_nav": 115354.74,
+      "cash_pct_average": 1.3,
+      "equity_pct_average": 98.7,
+      "trades": 2,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": 19.501
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "dip": {
+      "return_pct": 9.458,
+      "cagr_pct": 9.861,
+      "max_drawdown_pct": -3.811,
+      "sharpe_zero_rf": 2.919,
+      "fees_rupees": 249.75,
+      "slippage_rupees": 174.26,
+      "tax_rupees": 2364.59,
+      "nav_before_liquidation": 109458.37,
+      "liquidation_nav": 109458.37,
+      "cash_pct_average": 81.15,
+      "equity_pct_average": 18.85,
+      "trades": 3,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": 9.458
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "200_day_daily": {
+      "return_pct": 19.854,
+      "cagr_pct": 20.738,
+      "max_drawdown_pct": -4.222,
+      "sharpe_zero_rf": 10.038,
+      "fees_rupees": 311.59,
+      "slippage_rupees": 267.6,
+      "tax_rupees": 4963.49,
+      "nav_before_liquidation": 125137.13,
+      "liquidation_nav": 119853.96,
+      "cash_pct_average": 35.04,
+      "equity_pct_average": 64.96,
+      "trades": 2,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": 25.137
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "200_day_quarterly": {
+      "return_pct": 7.613,
+      "cagr_pct": 7.934,
+      "max_drawdown_pct": -1.993,
+      "sharpe_zero_rf": 6.071,
+      "fees_rupees": 295.66,
+      "slippage_rupees": 249.14,
+      "tax_rupees": 1903.21,
+      "nav_before_liquidation": 109801.39,
+      "liquidation_nav": 107612.82,
+      "cash_pct_average": 50.84,
+      "equity_pct_average": 49.16,
+      "trades": 2,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": 9.801
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    }
+  },
+  "continued_decline_80_to_40": {
+    "hold": {
+      "return_pct": -59.67,
+      "cagr_pct": -61.13,
+      "max_drawdown_pct": -59.67,
+      "sharpe_zero_rf": -19.734,
+      "fees_rupees": 223.94,
+      "slippage_rupees": 165.98,
+      "tax_rupees": 0.0,
+      "nav_before_liquidation": 40460.5,
+      "liquidation_nav": 40330.07,
+      "cash_pct_average": 2.18,
+      "equity_pct_average": 97.82,
+      "trades": 2,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": -59.539
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "dip": {
+      "return_pct": -49.598,
+      "cagr_pct": -50.981,
+      "max_drawdown_pct": -49.598,
+      "sharpe_zero_rf": -15.024,
+      "fees_rupees": 283.01,
+      "slippage_rupees": 179.63,
+      "tax_rupees": 0.0,
+      "nav_before_liquidation": 50556.28,
+      "liquidation_nav": 50401.81,
+      "cash_pct_average": 18.26,
+      "equity_pct_average": 81.74,
+      "trades": 4,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": -49.444
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "200_day_daily": {
+      "return_pct": 0.0,
+      "cagr_pct": 0.0,
+      "max_drawdown_pct": 0.0,
+      "sharpe_zero_rf": null,
+      "fees_rupees": 0.0,
+      "slippage_rupees": 0.0,
+      "tax_rupees": 0.0,
+      "nav_before_liquidation": 100000.0,
+      "liquidation_nav": 100000.0,
+      "cash_pct_average": 100.0,
+      "equity_pct_average": 0.0,
+      "trades": 0,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": 0.0
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "200_day_quarterly": {
+      "return_pct": 0.0,
+      "cagr_pct": 0.0,
+      "max_drawdown_pct": 0.0,
+      "sharpe_zero_rf": null,
+      "fees_rupees": 0.0,
+      "slippage_rupees": 0.0,
+      "tax_rupees": 0.0,
+      "nav_before_liquidation": 100000.0,
+      "liquidation_nav": 100000.0,
+      "cash_pct_average": 100.0,
+      "equity_pct_average": 0.0,
+      "trades": 0,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": 0.0
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    }
+  },
+  "choppy_80_to_105": {
+    "hold": {
+      "return_pct": -20.238,
+      "cagr_pct": -20.967,
+      "max_drawdown_pct": -23.805,
+      "sharpe_zero_rf": -1.858,
+      "fees_rupees": 264.84,
+      "slippage_rupees": 213.41,
+      "tax_rupees": 0.0,
+      "nav_before_liquidation": 79980.5,
+      "liquidation_nav": 79761.75,
+      "cash_pct_average": 1.42,
+      "equity_pct_average": 98.58,
+      "trades": 2,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": -20.019
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "dip": {
+      "return_pct": 24.157,
+      "cagr_pct": 25.253,
+      "max_drawdown_pct": -8.814,
+      "sharpe_zero_rf": 2.895,
+      "fees_rupees": 1070.93,
+      "slippage_rupees": 773.33,
+      "tax_rupees": 6039.26,
+      "nav_before_liquidation": 122626.05,
+      "liquidation_nav": 124157.05,
+      "cash_pct_average": 61.44,
+      "equity_pct_average": 38.56,
+      "trades": 12,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": 22.626
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "200_day_daily": {
+      "return_pct": -2.64,
+      "cagr_pct": -2.746,
+      "max_drawdown_pct": -12.045,
+      "sharpe_zero_rf": -0.367,
+      "fees_rupees": 846.67,
+      "slippage_rupees": 701.32,
+      "tax_rupees": 0.0,
+      "nav_before_liquidation": 97359.87,
+      "liquidation_nav": 97359.87,
+      "cash_pct_average": 64.6,
+      "equity_pct_average": 35.4,
+      "trades": 6,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": -2.64
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    },
+    "200_day_quarterly": {
+      "return_pct": 0.0,
+      "cagr_pct": 0.0,
+      "max_drawdown_pct": 0.0,
+      "sharpe_zero_rf": null,
+      "fees_rupees": 0.0,
+      "slippage_rupees": 0.0,
+      "tax_rupees": 0.0,
+      "nav_before_liquidation": 100000.0,
+      "liquidation_nav": 100000.0,
+      "cash_pct_average": 100.0,
+      "equity_pct_average": 0.0,
+      "trades": 0,
+      "gap_stops": 0,
+      "year_returns_marked": {
+        "2023": 0.0
+      },
+      "end": "2023-12-19",
+      "start": "2023-01-02"
+    }
+  }
+}

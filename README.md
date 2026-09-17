@@ -1,5 +1,15 @@
 # Quant Lab — an honest INR momentum + diversification research system
 
+## Strategy challenge study
+
+`research/` contains an isolated comparison of market-filter speed, review delay,
+alternative satellite rules, index holding and staged dip buying. See
+[research/README.md](research/README.md) for reproduction and
+[the full report](research/results/REPORT.html) for results and limitations.
+It uses next-open execution, modeled costs/tax and separate 70/30 books; its
+audited research execution differs from the original dashboard backtest.
+It does not change the deployed strategy or live paper books.
+
 ## Public dashboard deployment
 
 Use this folder as the repository root. `streamlit_app.py` displays the committed

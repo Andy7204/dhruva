@@ -1,0 +1,262 @@
+Full window 500 current_200_63
+Full window 500 faster_100_63
+Full window 500 faster_50_63
+Full window 500 monthly_200_21
+Full window 500 crossing_200_63
+Full window 500 no_market_gate_63
+Full window 500 core_plus_dip
+Full window 500 core_plus_index
+Full window 500 index_hold
+Full window 500 index_dip
+Full window 100 current_200_63
+Full window 100 faster_100_63
+Full window 100 faster_50_63
+Full window 100 monthly_200_21
+Full window 100 crossing_200_63
+Full window 100 no_market_gate_63
+Full window 100 core_plus_dip
+Full window 100 core_plus_index
+Full window 100 index_hold
+Full window 100 index_dip
+{
+  "500/current_200_63": {
+    "return_pct": 75.367,
+    "cagr_pct": 15.278,
+    "max_drawdown_pct": -10.923,
+    "sharpe_zero_rf": 1.289,
+    "fees_rupees": 8775.27,
+    "slippage_rupees": 2154.51,
+    "tax_rupees": 21585.85,
+    "nav_before_liquidation": 175569.52,
+    "liquidation_nav": 175367.13,
+    "cash_pct_average": 51.86,
+    "equity_pct_average": 35.41,
+    "trades": 414,
+    "gap_stops": 9,
+    "year_returns_marked": {
+      "2022": 0.709,
+      "2023": 52.024,
+      "2024": 13.233,
+      "2025": 3.438,
+      "2026": -2.093
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/faster_100_63": {
+    "return_pct": 83.566,
+    "cagr_pct": 16.619,
+    "max_drawdown_pct": -11.827,
+    "sharpe_zero_rf": 1.308,
+    "fees_rupees": 10113.35,
+    "slippage_rupees": 2351.0,
+    "tax_rupees": 19635.08,
+    "nav_before_liquidation": 184560.1,
+    "liquidation_nav": 183565.81,
+    "cash_pct_average": 50.5,
+    "equity_pct_average": 37.84,
+    "trades": 492,
+    "gap_stops": 6,
+    "year_returns_marked": {
+      "2022": -0.036,
+      "2023": 46.924,
+      "2024": 18.922,
+      "2025": 8.506,
+      "2026": -2.616
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/faster_50_63": {
+    "return_pct": 47.088,
+    "cagr_pct": 10.26,
+    "max_drawdown_pct": -9.726,
+    "sharpe_zero_rf": 1.257,
+    "fees_rupees": 8142.23,
+    "slippage_rupees": 1766.52,
+    "tax_rupees": 11305.02,
+    "nav_before_liquidation": 147943.69,
+    "liquidation_nav": 147088.14,
+    "cash_pct_average": 59.17,
+    "equity_pct_average": 26.6,
+    "trades": 409,
+    "gap_stops": 2,
+    "year_returns_marked": {
+      "2022": 0.709,
+      "2023": 31.882,
+      "2024": 1.787,
+      "2025": 11.895,
+      "2026": -2.201
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/monthly_200_21": {
+    "return_pct": 42.18,
+    "cagr_pct": 9.317,
+    "max_drawdown_pct": -12.047,
+    "sharpe_zero_rf": 0.909,
+    "fees_rupees": 20217.72,
+    "slippage_rupees": 4160.54,
+    "tax_rupees": 13089.48,
+    "nav_before_liquidation": 142407.49,
+    "liquidation_nav": 142179.51,
+    "cash_pct_average": 47.31,
+    "equity_pct_average": 39.98,
+    "trades": 1041,
+    "gap_stops": 25,
+    "year_returns_marked": {
+      "2022": -2.482,
+      "2023": 30.033,
+      "2024": 8.036,
+      "2025": 9.583,
+      "2026": -5.14
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/crossing_200_63": {
+    "return_pct": 39.872,
+    "cagr_pct": 8.865,
+    "max_drawdown_pct": -14.959,
+    "sharpe_zero_rf": 0.843,
+    "fees_rupees": 18692.18,
+    "slippage_rupees": 3775.27,
+    "tax_rupees": 14781.88,
+    "nav_before_liquidation": 139983.61,
+    "liquidation_nav": 139872.09,
+    "cash_pct_average": 48.05,
+    "equity_pct_average": 38.63,
+    "trades": 974,
+    "gap_stops": 4,
+    "year_returns_marked": {
+      "2022": -2.819,
+      "2023": 28.2,
+      "2024": 14.284,
+      "2025": 2.936,
+      "2026": -4.489
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/no_market_gate_63": {
+    "return_pct": 58.253,
+    "cagr_pct": 12.321,
+    "max_drawdown_pct": -14.522,
+    "sharpe_zero_rf": 1.062,
+    "fees_rupees": 11762.18,
+    "slippage_rupees": 2570.56,
+    "tax_rupees": 13380.35,
+    "nav_before_liquidation": 159632.12,
+    "liquidation_nav": 158253.12,
+    "cash_pct_average": 41.87,
+    "equity_pct_average": 47.93,
+    "trades": 589,
+    "gap_stops": 11,
+    "year_returns_marked": {
+      "2022": -0.036,
+      "2023": 35.063,
+      "2024": 18.459,
+      "2025": 3.919,
+      "2026": -3.954
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/core_plus_dip": {
+    "return_pct": 60.963,
+    "cagr_pct": 12.804,
+    "max_drawdown_pct": -8.729,
+    "sharpe_zero_rf": 1.298,
+    "fees_rupees": 5669.28,
+    "slippage_rupees": 1647.08,
+    "tax_rupees": 16691.85,
+    "nav_before_liquidation": 161176.68,
+    "liquidation_nav": 160963.26,
+    "cash_pct_average": 56.41,
+    "equity_pct_average": 29.43,
+    "trades": 238,
+    "gap_stops": 5,
+    "year_returns_marked": {
+      "2022": 0.709,
+      "2023": 38.764,
+      "2024": 10.451,
+      "2025": 5.914,
+      "2026": -1.41
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/core_plus_index": {
+    "return_pct": 72.207,
+    "cagr_pct": 14.749,
+    "max_drawdown_pct": -9.433,
+    "sharpe_zero_rf": 1.367,
+    "fees_rupees": 5693.52,
+    "slippage_rupees": 1689.27,
+    "tax_rupees": 16730.33,
+    "nav_before_liquidation": 172546.55,
+    "liquidation_nav": 172207.43,
+    "cash_pct_average": 34.89,
+    "equity_pct_average": 51.84,
+    "trades": 236,
+    "gap_stops": 5,
+    "year_returns_marked": {
+      "2022": 2.391,
+      "2023": 44.548,
+      "2024": 12.565,
+      "2025": 7.793,
+      "2026": -3.919
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/index_hold": {
+    "return_pct": 40.531,
+    "cagr_pct": 8.994,
+    "max_drawdown_pct": -15.144,
+    "sharpe_zero_rf": 0.841,
+    "fees_rupees": 327.92,
+    "slippage_rupees": 286.54,
+    "tax_rupees": 0.0,
+    "nav_before_liquidation": 140886.07,
+    "liquidation_nav": 140531.16,
+    "cash_pct_average": 0.81,
+    "equity_pct_average": 99.19,
+    "trades": 2,
+    "gap_stops": 0,
+    "year_returns_marked": {
+      "2022": 5.686,
+      "2023": 20.827,
+      "2024": 10.282,
+      "2025": 11.585,
+      "2026": -10.345
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  },
+  "500/index_dip": {
+    "return_pct": 3.1,
+    "cagr_pct": 0.776,
+    "max_drawdown_pct": -3.531,
+    "sharpe_zero_rf": 0.322,
+    "fees_rupees": 285.12,
+    "slippage_rupees": 166.28,
+    "tax_rupees": 0.0,
+    "nav_before_liquidation": 103217.4,
+    "liquidation_nav": 103099.61,
+    "cash_pct_average": 85.87,
+    "equity_pct_average": 14.13,
+    "trades": 4,
+    "gap_stops": 0,
+    "year_returns_marked": {
+      "2022": 0.0,
+      "2023": 0.0,
+      "2024": -0.25,
+      "2025": 3.865,
+      "2026": -0.374
+    },
+    "end": "2026-09-15",
+    "start": "2022-10-03"
+  }
+}
