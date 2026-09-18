@@ -1,0 +1,74 @@
+{
+  "full_500": {
+    "ret": 151.81,
+    "nifty": 35.4,
+    "sharpe": 1.5,
+    "dd": -16.9,
+    "trades": 330,
+    "fees": 22290.6
+  },
+  "wf_500": {
+    "ret": 145.0,
+    "nifty": 18.5,
+    "sharpe": 1.66,
+    "dd": -12.74,
+    "folds": [
+      {
+        "test": "2023-07-18\u21922024-05-07",
+        "oos": 105.62
+      },
+      {
+        "test": "2024-05-08\u21922025-02-14",
+        "oos": 12.24
+      },
+      {
+        "test": "2025-02-17\u21922025-12-03",
+        "oos": 15.88
+      },
+      {
+        "test": "2025-12-04\u21922026-09-14",
+        "oos": -8.39
+      }
+    ]
+  },
+  "n100": {
+    "n": 100,
+    "full_ret": 69.22,
+    "full_nifty": 35.2,
+    "wf_ret": 86.06,
+    "wf_nifty": 17.1,
+    "wf_sharpe": 1.3,
+    "wf_dd": -20.04
+  },
+  "baselines": {
+    "nifty_bh": 35.4,
+    "equal_weight_bh": 173.1
+  },
+  "year_by_year": {
+    "2022": {
+      "trader": 1.1,
+      "nifty": 5.9,
+      "beat": false
+    },
+    "2023": {
+      "trader": 97.8,
+      "nifty": 19.4,
+      "beat": true
+    },
+    "2024": {
+      "trader": 37.8,
+      "nifty": 8.8,
+      "beat": true
+    },
+    "2025": {
+      "trader": 4.3,
+      "nifty": 10.1,
+      "beat": false
+    },
+    "2026": {
+      "trader": -14.2,
+      "nifty": -11.5,
+      "beat": false
+    }
+  }
+}

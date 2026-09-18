@@ -1,0 +1,217 @@
+{
+  "strategy_id": "dhruva_momentum",
+  "strategy_version": "1.0",
+  "name": "Dhruva v1.0",
+  "frozen_at": "2026-09-18T03:50:01.316802+00:00",
+  "source_git_commit": "75dd97e0cca9a89f7f2c1dec6706607cab388e40",
+  "execution_mode": "PAPER",
+  "live_start_date_recorded": "2026-09-16",
+  "timestamp_quality": "Legacy import: original per-decision UTC generation timestamps unavailable; do not infer them.",
+  "universe": {
+    "file": "data/nifty500.txt",
+    "membership": "current constituents, not point-in-time",
+    "count": 501,
+    "additional_data": [
+      "GOLDBEES.NS",
+      "SILVERBEES.NS",
+      "INDIGRID.NS",
+      "LIQUIDBEES.NS"
+    ]
+  },
+  "benchmark": {
+    "symbol": "^NSEI",
+    "type": "Nifty 50 price index, excludes dividends",
+    "choice": "existing predetermined benchmark; live comparison absent in original"
+  },
+  "factors": {
+    "momentum12_1": "(adjclose.shift(21)/adjclose.shift(252)-1)*100",
+    "momentum6_1": "(adjclose.shift(21)/adjclose.shift(126)-1)*100",
+    "score": "(0.7*momentum12_1+0.3*momentum6_1)/vol20",
+    "volatility": "20-session annualized adjusted-close return standard deviation"
+  },
+  "signals": "Positive raw momentum and adjclose > own 200-session average; benchmark trend gates new stocks.",
+  "ranking": "Descending (score, symbol); up to 15; 60-session median turnover >= INR50m; at most 4 per sector.",
+  "entry": "At review schedule new leaders; value=(1/15)*clip(0.30/vol20,0.4,1.8)*equity_weight*NAV; next available open +12bps.",
+  "exit": "Rank/regime exits at review; near-365-day winners deferred within 35 days; 4 raw ATR fixed stop; breaker overrides deferral.",
+  "rebalance": {
+    "sessions": 63,
+    "first_step": true,
+    "interim_trigger": "breaker with stock holdings"
+  },
+  "portfolio": {
+    "books": {
+      "balanced": {
+        "capital": 70000,
+        "overrides": {
+          "allocation.mode": "adaptive"
+        }
+      },
+      "aggressive": {
+        "capital": 30000,
+        "overrides": {
+          "defensive_basket": {},
+          "allocation.mode": "fixed",
+          "regime.enabled": true
+        }
+      }
+    },
+    "allocation": {
+      "mode": "adaptive",
+      "_mode_note": "'fixed' = always the defensive_basket weights. 'adaptive' = tilt between equity and defensive by market regime: more equity when the market is strong, more defensive when weak. Changes the ratio over time by indicators (no look-ahead — uses only the trailing 50/200-DMA state).",
+      "equity_min": 0.45,
+      "equity_max": 0.85,
+      "gate_diversifiers": true,
+      "_gate_note": "Only hold a diversifier while IT is trending up (above its own 200-DMA); otherwise that slice sits in cash. So gold is held when gold is rising and stepped aside in its dead years — directly addressing 'gold only helps because it rallied'.",
+      "cash_asset": "LIQUIDBEES.NS"
+    },
+    "basket": {
+      "GOLDBEES.NS": 0.15,
+      "SILVERBEES.NS": 0.1,
+      "INDIGRID.NS": 0.1,
+      "LIQUIDBEES.NS": 0.05
+    },
+    "configured_max_stock_weight": 0.12,
+    "actual_live_cap_enforced": false,
+    "basket_trade_threshold": "6% of current or target value",
+    "fractional_shares": false
+  },
+  "risk": {
+    "circuit_breaker_dd": 0.25,
+    "reset_dd": 0.15,
+    "_note": "Hard floor: if total value falls > circuit_breaker_dd from its peak, go fully defensive (liquidate stocks, hold basket + cash) regardless of signals, until it recovers to within reset_dd of the peak."
+  },
+  "cost_assumptions": {
+    "_note": "Groww equity charges, approximate as of 2026 — VERIFY against Groww's live brokerage calculator and update. All rates are fractions of turnover unless in INR.",
+    "broker": "Groww",
+    "brokerage_pct": 0.001,
+    "brokerage_cap": 20,
+    "brokerage_floor": 5,
+    "stt_delivery_buy": 0.001,
+    "stt_delivery_sell": 0.001,
+    "stt_intraday_sell": 0.00025,
+    "exch_txn_nse": 2.97e-05,
+    "exch_txn_bse": 3.75e-05,
+    "sebi_charges": 1e-06,
+    "stamp_duty_buy_delivery": 0.00015,
+    "stamp_duty_buy_intraday": 3e-05,
+    "gst_pct": 0.18,
+    "dp_charge_sell_delivery": 18.5
+  },
+  "slippage_bps": 12,
+  "tax_assumptions": {
+    "enabled": true,
+    "equity_stcg_pct": 0.2,
+    "equity_ltcg_pct": 0.125,
+    "ltcg_exemption": 125000,
+    "long_term_days": 365,
+    "aware_exits": true,
+    "ltcg_buffer_days": 35,
+    "_aware_note": "Tax-aware exits: defer selling a WINNING equity held within ltcg_buffer_days of the 1-year mark, so 20% STCG becomes 12.5% LTCG (unless the circuit-breaker fires).",
+    "nonequity_short_pct": 0.3,
+    "nonequity_long_pct": 0.125,
+    "_note": "Indian capital-gains tax (approx, post-Budget 2024). Equity/equity-ETF: STCG 20% (<12mo), LTCG 12.5% over ₹1.25L/yr exemption. Gold/silver ETFs, InvIT, liquid ETF (non-equity): short-term at ~30% slab, long-term 12.5%. For a ₹1L book LTCG is usually under the exemption, so the real drag is ~20% STCG on the frequent momentum trades. VERIFY with a CA."
+  },
+  "tax_accounting": "Accrued per book only; NOT deducted/reserved in original NAV.",
+  "settlement": "T+1 weekday labels only in v1; proceeds immediately spendable; no holiday calendar.",
+  "starting_capital_inr": 100000,
+  "starting_nav_index": 100,
+  "data_source": "Yahoo chart API daily adjusted OHLC; five-year range; recent three-month mutable merge.",
+  "backtest": {
+    "legacy_comparison_period": [
+      "2022-09-30",
+      "2026-09-16"
+    ],
+    "convention": "same-close, pre-tax; not exact live execution; historical results kept as legacy evidence",
+    "challenge_study": "separate audited simulator; not this frozen version"
+  },
+  "limitations": [
+    "centered cleaner changes past with future data",
+    "raw ATR vs adjusted fills",
+    "optimistic gap stops",
+    "tax omitted from NAV and duplicated exemptions",
+    "unsettled sale cash reused",
+    "missed-day recovery skips sessions",
+    "old settled orders pruned",
+    "aggressive book may rank diversifiers",
+    "intraday manual run recorded unfinished Sep17 bar",
+    "stale input and mixed quote/NAV dates",
+    "current constituents and revised adjusted prices",
+    "only two original recorded live dates"
+  ],
+  "version_policy": "Changes to signals, universe, sizing, execution, cost, tax or accounting start a new prospective track. No rewritten original evidence.",
+  "snapshot_hash_algorithm": "sha256; exact Git blob bytes",
+  "snapshot_files": {
+    ".github/workflows/daily.yml": "2d255ea93676e9bd16fa479bcce8689aed5a4a37d06d798f35340f5b263da597",
+    "AGENTS.md": "fd84930c2fa1caaaf0f568c77a8f3250f6b7e99e5d9c00982ee9ca5551fdc33c",
+    "README.md": "56fd7d26dac3495971e154bd409946401af2ed3b7e522b98a3a157c56fe0efe2",
+    "config.json": "79971b36170bdcf5560b5ae069d5c27284da8bf2ef6abb041183e0ca4b7aaf5b",
+    "data/nifty100.txt": "062b50881971a10605f5c8d34c56d733b0bed596dd69251d35ac3b457d3afdc4",
+    "data/nifty500.txt": "b405ce6bcca22c90baa42cc81dcd64c3849dffa6e62f3e53cf218fc32dea5665",
+    "data/nifty500_industry.json": "21cbed71d2fefaaf7263894037f6b62041eedd61f0806030383497a13a286f82",
+    "data/nse_names.json": "c09d0ef5ef5338c6cacdb2da6e636123a0d960a58b69ca4aa3de259584cbf409",
+    "qlab/__init__.py": "2817a43631723d8cc0d24a34a82eaca86d530865511140d149a9b1b890abf390",
+    "qlab/advisor.py": "d1fd70e1ec69f9f74549766a6bb2134e1514bf9e04531a5579d072dad258ef29",
+    "qlab/costs.py": "0e246e2750623d8df53139bfa41ec552dcf40f6a88ab9aa7a160858d6ff0f6bf",
+    "qlab/data.py": "8a9e3c089f473d3d374aa12b6118051f31ad100fc0f9837b0f5f870c6d6d08e5",
+    "qlab/engine.py": "4f6abda31ce4951b812e758603f14d4f7f39232f363259961ce0f1a4fa7b2895",
+    "qlab/indicators.py": "f719bb4c53fabd6cece238e7ae3ecb4066aedf41725347bac61cdf7d2d30abc4",
+    "qlab/learn.py": "29480c188c4608d531e6aa916a759833d75712d6aca10597f49d59cba88de51c",
+    "qlab/livebook.py": "b3eaddb3f93980cf3b96138a892553832ce36a83025671f00fe70917779ba607",
+    "qlab/metrics.py": "5f71d1a99d6329136350e5433a7528ca156903fe24f6069d7197f943c8f9a514",
+    "qlab/narrator.py": "30ca657acb563824a7a0450101355d5d6da2472f2d4e22fae2e8669c2e54fada",
+    "qlab/news.py": "580ab398add04dd357f6d3c36673f619a687409b867b58129349d864dc230ed8",
+    "qlab/notify.py": "04225c46750c422aae8442bffe0a3d0f10c9cdbe2eb710dc529ba3c6bad92c73",
+    "qlab/optimize.py": "8f8a1ad8621779bdf1badb48a710e1e5f68a51ebf79482d4106d615294926468",
+    "qlab/orchestrator.py": "b0bbfefa3434c885010a7fccd47d118ae5cf453163346136c430b7f07774d1f2",
+    "qlab/report.py": "8c59527984738fa67b08bbe2482a6f440b3267c4a420ac566819412db660f84d",
+    "qlab/strategies.py": "e14ca75f010fd52e6f351edaca89e98a378aa3253645d4053d92d54aae5522aa",
+    "qlab/tax.py": "a170b67331f24b0f2814e1a46ce265208a1c9a40dfe094d866d1f2809a010099",
+    "reports/dashboard.html": "7d8b7d7ec296f47b55769c1d4d7718de9b54971a638def4ed7b0c80b50635c32",
+    "requirements.txt": "77ea978631e15441d599df605aa0a9a2ea390e0832db6f8365e6979d24df6ed7",
+    "runs/alert.txt": "8d46c1d53e499e3a7f477c61ac91f4d481daca5854622bbc6692af0760922f67",
+    "runs/backtest_comparison.json": "03c0aa16f8bd9c17f14454a4baa4cb33ae044f2e59305a57542fa1319492a178",
+    "runs/daily_run.log": "29df8f747869528c072beacf215841e77e61d2562db56d1177bb3ac5ff1e8c7d",
+    "runs/journal.jsonl": "3cedaa559b9f92781cfda428ed469b90d5494b7a59e9a201fa51c4e69b89949d",
+    "runs/journal_aggressive.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/journal_balanced.jsonl": "dc23cd97d7481b50b577f3f2c2968c22a6207b583edf4de64182c79b2d559399",
+    "runs/livebook_aggressive.json": "087df8b84ac4c825635cd83a340275939318bef73aed1c1cc5ef1fa821a2e795",
+    "runs/livebook_balanced.json": "1207787ec907972e229126a565f3bf525a8e10c431a03a8b2a5b1f72687157d4",
+    "runs/narrative.txt": "866526f268bb0cc5fb20dd7f0a2d8bac60a9ba6810417a081cd27c150e609038",
+    "runs/state.json": "0ab1ab4431205e03e88df153e42ff45ca63af0e850e4af1da6ade3edbd1f54d4",
+    "runs/today_orders_aggressive.json": "dd3a74296c4be214d1867eb23b102a9bcde9f2c568325ac185dd36ea8f8d8ade",
+    "runs/today_orders_balanced.json": "e0d660e1c9ef40ee1a2a16d39a600219134371bf64883bad403860810e74e047",
+    "runs/todays_call.json": "084dad2c2635404f8a7856eb879f444ba6cae3b18dd5b9e23ba603c71806a68f",
+    "runs/validation.json": "0d5293a69ca09c51594c295587a2ef9f3b5c73e8ca84ddef4eaf42f9bc3ac0e8",
+    "scripts/bakeoff.py": "8fa1228ee6c91909d7e58b2e5601767ffa20a6dd1ab111a35016dca51105a962",
+    "scripts/compare3.py": "fdaff8c6825e262021a9aee7a6f3e637fcc5c196f3e0e08106a44af9cb177d33",
+    "scripts/daily_run.bat": "7485320034a3e8cbdf39291288209a386cedeec184be5110f41c4034f339bbfe",
+    "scripts/daily_run.py": "9d2aa264377ec810225ea0001a622a97a761a709546a4b768334cfc8c32da0be",
+    "scripts/news_overlay.py": "a6ca425456c07d29e13f11909708f4f74dda6e67fc20d19cd05db009fae56055",
+    "scripts/package.py": "12cc2073d155aa9773fd4a3b9a5b139b9fc04fb4629faf31a1acb29c225cd4d8",
+    "scripts/reset_book.py": "35cabbd5d2951b61b60877f7dc5824b7bcf31b419e2fc865795c05950a44c971",
+    "scripts/show_call.py": "8bd83fce5835ca785ef3f180d5b75e858d71b3727211b9fba0bb31d479873989",
+    "scripts/validate.py": "24defb103ef92e1560a45d9c17689f8914ca5638e353344bd798b493024f86c2",
+    "scripts/validate_universe.py": "ae8a941cbf816c762f893c7c1f6e14995fe19b13b33f6bcfc4ad105cdf36ad8f",
+    "streamlit_app.py": "8664f63354b8dc30dbd03133d762448afb7cba0f7dc15c58c090fb162ec4424c"
+  },
+  "active_guard_files": [
+    "qlab/__init__.py",
+    "qlab/costs.py",
+    "qlab/data.py",
+    "qlab/engine.py",
+    "qlab/indicators.py",
+    "qlab/livebook.py",
+    "qlab/metrics.py",
+    "qlab/optimize.py",
+    "qlab/strategies.py",
+    "qlab/tax.py",
+    "config.json",
+    "data/nifty500.txt",
+    "data/nifty500_industry.json"
+  ],
+  "cache_provenance": {
+    "git_commit": "75dd97e0cca9a89f7f2c1dec6706607cab388e40",
+    "path": "data/cache/",
+    "note": "Original input bytes retrievable by Git commit; not copied twice."
+  }
+}

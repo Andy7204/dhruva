@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-15",
+  "risk_on": false,
+  "nifty": 23119.0,
+  "nifty_ma": 24535.0,
+  "ma": 200,
+  "headline": "RISK-OFF \u2014 the Nifty is BELOW its 200-day trend. The strategy stays in cash and opens no new positions. Hold existing winners only while they keep trending.",
+  "avg_win_pct": 22.7,
+  "avg_loss_pct": -7.7,
+  "holdings_actions": [
+    {
+      "action": "HOLD",
+      "symbol": "ANANDRATHI",
+      "sector": "Financial Services",
+      "price": 2183.9,
+      "qty": 6,
+      "unrealized": 2307.0,
+      "stop": 1627.09,
+      "reason": "still a leader \u2014 keep holding"
+    }
+  ],
+  "buys": [],
+  "defensive_basket": [
+    {
+      "symbol": "GOLDBEES",
+      "price": 123.6,
+      "value": 20026.0,
+      "unrealized": 5263.0
+    },
+    {
+      "symbol": "INDIGRID",
+      "price": 138.2,
+      "value": 10090.0,
+      "unrealized": 0.0
+    },
+    {
+      "symbol": "LIQUIDBEES",
+      "price": 1000.0,
+      "value": 7000.0,
+      "unrealized": 169.0
+    },
+    {
+      "symbol": "SILVERBEES",
+      "price": 214.7,
+      "value": 13095.0,
+      "unrealized": 3604.0
+    }
+  ],
+  "target_equity_pct": 61,
+  "target_defensive": {
+    "GOLDBEES": 14.6,
+    "INDIGRID": 9.8,
+    "LIQUIDBEES": 4.9
+  },
+  "cash": 97388.0,
+  "sleeve_equity": 160703.0
+}

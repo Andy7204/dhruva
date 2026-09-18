@@ -107,26 +107,3 @@ The daily workflow supports manual dispatch and weekdays at 13:00 UTC, requests
 and `data/cache/`. It passes optional `TELEGRAM_TOKEN`, `TELEGRAM_CHAT`,
 `ANTHROPIC_API_KEY`, and `OPENAI_API_KEY` repository secrets to the daily process.
 No narrator key is required; Anthropic is the LLM option without an OpenAI key.
-
-## Isolated strategy challenge study
-`research/README.md` and `research/PROTOCOL.md` describe the reproducible challenge
-tests; `research/results/REPORT.html` contains the full report. These scripts read
-cached data and write only under `research/`. They do not alter production logic,
-state or dashboards. The baseline is current policy with audited research
-execution (past-only cleaning, adjusted ATR, gap stops, settled cash, FIFO,
-shared tax reserve and actual 70/30 books), not an exact deployed-engine replay.
-Current constituent lists, adjusted prices and simplified constant tax rates
-remain material limitations. No variant was chosen for deployment.
-
-## Hardening mission and audit
-Read `docs/HARDENING_MISSION.md` and `docs/HARDENING_PROGRESS.md` for the ordered
-hardening work. `docs/CURRENT_STATE_AUDIT.md` supersedes optimistic implementation
-claims above: current live NAV does not reserve tax, T+1 does not restrict cash,
-missed sessions are skipped, and stale data can look healthy. Phase 0 probes
-reproduce these defects without altering production. Preserve v1 before fixes;
-decision/accounting changes need a new prospective version. Never backdate evidence.
-
-The original is frozen in `strategies/dhruva_v1/strategy_manifest.yaml` and
-`snapshot/`. `python -m dhruva.freeze` verifies hashes; `daily_run` rejects changed
-v1 economic source/config/universe before fetching or writing. Never regenerate
-the frozen archive to accept a code change. Corrections use a new prospective track.

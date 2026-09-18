@@ -38,7 +38,7 @@ preserve existing history and distinguish imported records from prospective evid
 | Phase | Status | Evidence / next action |
 |---|---|---|
 | 0 | Complete | CURRENT_STATE_AUDIT.md, 11 engineering observations, nine quant defect reproductions; production hashes unchanged. |
-| 1 | Not started | Freeze source/config/universe and imported live evidence; hash guard + tests. |
+| 1 | Complete | 52-file v1 archive, manifest, 13 active guarded paths; five tests and CLI verification passed. |
 | 2 | Not started | Append-only ledger, replay/duplicate/tamper tests and restart durability. |
 | 3–4 | Not started | Workflow hardening then verified deployed freshness/failure behavior. |
 | 5–10 | Not started | Canonical pipeline, data, health, watchdog, alerting, failure recovery. |
@@ -53,6 +53,14 @@ missing components, ordered remediation plan. Both reproducible audit scripts
 passed; eight research tests passed; 2,380 / 2,415 protected files unchanged.
 Decisions: freeze original behavior before fixes; no ML, agent swarm or API server.
 Next: Phase 1 version manifest, frozen snapshots, mutation guard and tests.
+
+Phase 1 completed September 18: exact 52-file archive at deployed `75dd97e`,
+manifest covering required strategy assumptions and known defects, 13 guarded
+economic paths, and fail-closed daily entrypoint. Five tests passed, including
+source/config/universe/history/manifest tamper and rejection before fetching.
+Evidence: `docs/evidence/phase1_freeze.json`. No economic fixes applied yet.
+Next: Phase 2 durable append-only ledger; separate synthetic acceptance namespace
+from imported legacy history and genuinely prospective decisions.
 
 The earlier challenge study is separate:
 `research/results/REPORT.html`; no candidate was deployed. Its current cache no

@@ -50,8 +50,6 @@ def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal) -> dic
 
 
 def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
-    from dhruva.freeze import verify_v1
-    verify_v1()  # reject unversioned economic changes before data or state writes
     cfg = D.load_config()
     if verbose:
         print("Refreshing data ..." if refresh else "Loading cached data ...")

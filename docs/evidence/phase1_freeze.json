@@ -1,0 +1,14 @@
+{
+  "phase": 1,
+  "date": "2026-09-18",
+  "source_git_commit": "75dd97e0cca9a89f7f2c1dec6706607cab388e40",
+  "snapshot_files": 52,
+  "active_guard_paths": 13,
+  "verification_command": "python -B -m dhruva.freeze",
+  "verification_output": "Verified Dhruva 1.0: 52 frozen files.",
+  "test_command": "python -B -m unittest discover -s tests -v",
+  "tests_passed": 5,
+  "tests_failed": 0,
+  "demonstrated": ["original verifies", "source/config/universe/history mutations rejected", "manifest mutation or missing archive rejected", "Windows checkout newline equivalence", "daily run fails before data fetch on mismatch"],
+  "limitations": ["hashes and Git do not resist an administrator rewriting both", "original records lack per-decision UTC timestamps", "economic defects are preserved, not yet fixed"]
+}

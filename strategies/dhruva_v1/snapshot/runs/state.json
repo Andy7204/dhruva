@@ -1,0 +1,7757 @@
+{
+  "as_of": "2026-09-15",
+  "starting_capital": 100000.0,
+  "sleeves": {
+    "swing": {
+      "cash": 0.0,
+      "start_cash": 0.0,
+      "positions": {}
+    },
+    "short_term": {
+      "cash": 0.0,
+      "start_cash": 0.0,
+      "positions": {}
+    },
+    "long_term": {
+      "cash": 97388.08,
+      "start_cash": 100000.0,
+      "positions": {
+        "GOLDBEES.NS": {
+          "symbol": "GOLDBEES.NS",
+          "sleeve": "long_term",
+          "qty": 162,
+          "avg_price": 91.13,
+          "entry_date": "2023-09-06",
+          "entry_value": 14763.06,
+          "buy_charges": 76.24,
+          "stop": 0.0,
+          "target": 0.0,
+          "max_hold_days": 1000000000,
+          "strategy": "defensive",
+          "bars_held": 0,
+          "high_since": 50.310001373291016,
+          "low_since": 50.310001373291016,
+          "mfe": 0.0,
+          "mae": 0.0,
+          "entry_signals": [
+            "defensive"
+          ],
+          "thesis": "diversifier GOLDBEES.NS"
+        },
+        "SILVERBEES.NS": {
+          "symbol": "SILVERBEES.NS",
+          "sleeve": "long_term",
+          "qty": 61,
+          "avg_price": 155.59,
+          "entry_date": "2023-09-06",
+          "entry_value": 9490.99,
+          "buy_charges": 61.66,
+          "stop": 0.0,
+          "target": 0.0,
+          "max_hold_days": 1000000000,
+          "strategy": "defensive",
+          "bars_held": 0,
+          "high_since": 71.12000274658203,
+          "low_since": 71.12000274658203,
+          "mfe": 0.0,
+          "mae": 0.0,
+          "entry_signals": [
+            "defensive"
+          ],
+          "thesis": "diversifier SILVERBEES.NS"
+        },
+        "INDIGRID.NS": {
+          "symbol": "INDIGRID.NS",
+          "sleeve": "long_term",
+          "qty": 73,
+          "avg_price": 138.22,
+          "entry_date": "2023-09-06",
+          "entry_value": 10090.06,
+          "buy_charges": 63.15,
+          "stop": 0.0,
+          "target": 0.0,
+          "max_hold_days": 1000000000,
+          "strategy": "defensive",
+          "bars_held": 0,
+          "high_since": 101.1435089111328,
+          "low_since": 101.1435089111328,
+          "mfe": 0.0,
+          "mae": 0.0,
+          "entry_signals": [
+            "defensive"
+          ],
+          "thesis": "diversifier INDIGRID.NS"
+        },
+        "LIQUIDBEES.NS": {
+          "symbol": "LIQUIDBEES.NS",
+          "sleeve": "long_term",
+          "qty": 7,
+          "avg_price": 975.83,
+          "entry_date": "2023-09-06",
+          "entry_value": 6830.83,
+          "buy_charges": 39.83,
+          "stop": 0.0,
+          "target": 0.0,
+          "max_hold_days": 1000000000,
+          "strategy": "defensive",
+          "bars_held": 0,
+          "high_since": 910.4862670898438,
+          "low_since": 910.4862670898438,
+          "mfe": 0.0,
+          "mae": 0.0,
+          "entry_signals": [
+            "defensive"
+          ],
+          "thesis": "diversifier LIQUIDBEES.NS"
+        },
+        "ANANDRATHI.NS": {
+          "symbol": "ANANDRATHI.NS",
+          "sleeve": "long_term",
+          "qty": 6,
+          "avg_price": 1799.43,
+          "entry_date": "2026-05-01",
+          "entry_value": 10796.59,
+          "buy_charges": 25.55,
+          "stop": 1627.09,
+          "target": 0.0,
+          "max_hold_days": 400,
+          "strategy": "momentum",
+          "bars_held": 95,
+          "high_since": 2242.0,
+          "low_since": 1710.5999755859375,
+          "mfe": 2655.42,
+          "mae": -532.98,
+          "entry_signals": [
+            "momentum"
+          ],
+          "thesis": "long_term: momentum; entry 1797.27, stop 1627.09 (4.0xATR)"
+        }
+      }
+    }
+  },
+  "realized_pnl": 37967.87,
+  "closed_trades": [
+    {
+      "symbol": "USHAMART.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-09-12",
+      "qty": 19,
+      "entry_price": 342.38,
+      "exit_price": 302.37,
+      "hold_days": 4,
+      "gross_pnl": -760.18,
+      "charges": 46.62,
+      "net_pnl": -806.8,
+      "net_pnl_pct": -12.37,
+      "exit_reason": "stop",
+      "mfe": 436.67,
+      "mae": -893.24,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ENGINERSIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-10-23",
+      "qty": 34,
+      "entry_price": 151.1,
+      "exit_price": 126.47,
+      "hold_days": 31,
+      "gross_pnl": -837.42,
+      "charges": 41.02,
+      "net_pnl": -878.43,
+      "net_pnl_pct": -17.06,
+      "exit_reason": "stop",
+      "mfe": 144.45,
+      "mae": -1054.5,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "USHAMART.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-12",
+      "exit_date": "2023-10-23",
+      "qty": 15,
+      "entry_price": 349.27,
+      "exit_price": 290.35,
+      "hold_days": 27,
+      "gross_pnl": -883.81,
+      "charges": 41.31,
+      "net_pnl": -925.13,
+      "net_pnl_pct": -17.62,
+      "exit_reason": "stop",
+      "mfe": 31.85,
+      "mae": -1136.05,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RKFORGE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-10-26",
+      "qty": 5,
+      "entry_price": 708.15,
+      "exit_price": 589.34,
+      "hold_days": 33,
+      "gross_pnl": -594.06,
+      "charges": 37.55,
+      "net_pnl": -631.61,
+      "net_pnl_pct": -17.79,
+      "exit_reason": "stop",
+      "mfe": 134.24,
+      "mae": -644.92,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CRAFTSMAN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-10-26",
+      "qty": 1,
+      "entry_price": 4882.42,
+      "exit_price": 4357.76,
+      "hold_days": 33,
+      "gross_pnl": -524.66,
+      "charges": 40.61,
+      "net_pnl": -565.26,
+      "net_pnl_pct": -11.55,
+      "exit_reason": "stop",
+      "mfe": 160.18,
+      "mae": -687.49,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MAZDOCK.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-12-11",
+      "qty": 5,
+      "entry_price": 927.07,
+      "exit_price": 1038.91,
+      "hold_days": 63,
+      "gross_pnl": 559.18,
+      "charges": 41.41,
+      "net_pnl": 517.76,
+      "net_pnl_pct": 11.14,
+      "exit_reason": "rebalance",
+      "mfe": 1400.17,
+      "mae": -390.66,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PFC.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-12-11",
+      "qty": 37,
+      "entry_price": 181.43,
+      "exit_price": 347.14,
+      "hold_days": 63,
+      "gross_pnl": 6131.11,
+      "charges": 62.85,
+      "net_pnl": 6068.26,
+      "net_pnl_pct": 90.18,
+      "exit_reason": "rebalance",
+      "mfe": 6260.43,
+      "mae": -21.06,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "JSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-12-11",
+      "qty": 11,
+      "entry_price": 469.07,
+      "exit_price": 536.9,
+      "hold_days": 63,
+      "gross_pnl": 746.17,
+      "charges": 43.8,
+      "net_pnl": 702.37,
+      "net_pnl_pct": 13.58,
+      "exit_reason": "rebalance",
+      "mfe": 870.59,
+      "mae": -518.57,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RVNL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-12-11",
+      "qty": 22,
+      "entry_price": 147.42,
+      "exit_price": 175.42,
+      "hold_days": 63,
+      "gross_pnl": 615.99,
+      "charges": 38.15,
+      "net_pnl": 577.85,
+      "net_pnl_pct": 17.76,
+      "exit_reason": "rebalance",
+      "mfe": 1064.11,
+      "mae": -163.56,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ACE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-12-11",
+      "qty": 6,
+      "entry_price": 701.94,
+      "exit_price": 806.59,
+      "hold_days": 63,
+      "gross_pnl": 627.88,
+      "charges": 40.31,
+      "net_pnl": 587.57,
+      "net_pnl_pct": 13.92,
+      "exit_reason": "rebalance",
+      "mfe": 1128.64,
+      "mae": -366.93,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GLENMARK.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-12-11",
+      "qty": 7,
+      "entry_price": 787.73,
+      "exit_price": 814.14,
+      "hold_days": 63,
+      "gross_pnl": 184.83,
+      "charges": 44.18,
+      "net_pnl": 140.65,
+      "net_pnl_pct": 2.54,
+      "exit_reason": "rebalance",
+      "mfe": 615.93,
+      "mae": -484.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "AUROPHARMA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2023-12-11",
+      "qty": 10,
+      "entry_price": 857.25,
+      "exit_price": 998.05,
+      "hold_days": 63,
+      "gross_pnl": 1408.0,
+      "charges": 60.9,
+      "net_pnl": 1347.11,
+      "net_pnl_pct": 15.68,
+      "exit_reason": "rebalance",
+      "mfe": 1969.16,
+      "mae": -293.92,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ENGINERSIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-10-23",
+      "exit_date": "2023-12-11",
+      "qty": 37,
+      "entry_price": 121.28,
+      "exit_price": 152.26,
+      "hold_days": 32,
+      "gross_pnl": 1146.24,
+      "charges": 42.21,
+      "net_pnl": 1104.04,
+      "net_pnl_pct": 24.54,
+      "exit_reason": "rebalance",
+      "mfe": 1184.72,
+      "mae": -380.96,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "USHAMART.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-10-23",
+      "exit_date": "2023-12-11",
+      "qty": 13,
+      "entry_price": 277.04,
+      "exit_price": 301.36,
+      "hold_days": 32,
+      "gross_pnl": 316.09,
+      "charges": 38.63,
+      "net_pnl": 277.46,
+      "net_pnl_pct": 7.68,
+      "exit_reason": "rebalance",
+      "mfe": 716.4,
+      "mae": -391.02,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CRAFTSMAN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-10-26",
+      "exit_date": "2023-12-11",
+      "qty": 1,
+      "entry_price": 4385.92,
+      "exit_price": 5151.63,
+      "hold_days": 30,
+      "gross_pnl": 765.71,
+      "charges": 41.02,
+      "net_pnl": 724.69,
+      "net_pnl_pct": 16.48,
+      "exit_reason": "rebalance",
+      "mfe": 1008.1,
+      "mae": -11.18,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ZENTEC.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-02-19",
+      "qty": 7,
+      "entry_price": 737.67,
+      "exit_price": 802.65,
+      "hold_days": 47,
+      "gross_pnl": 454.87,
+      "charges": 43.17,
+      "net_pnl": 411.7,
+      "net_pnl_pct": 7.95,
+      "exit_reason": "rebalance",
+      "mfe": 1106.43,
+      "mae": -359.51,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LINDEINDIA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-02-26",
+      "qty": 1,
+      "entry_price": 5778.7,
+      "exit_price": 5495.59,
+      "hold_days": 52,
+      "gross_pnl": -283.11,
+      "charges": 44.35,
+      "net_pnl": -327.46,
+      "net_pnl_pct": -5.65,
+      "exit_reason": "rebalance",
+      "mfe": 176.2,
+      "mae": -480.48,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ZENTEC.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-02-19",
+      "exit_date": "2024-02-26",
+      "qty": 6,
+      "entry_price": 804.58,
+      "exit_price": 805.99,
+      "hold_days": 5,
+      "gross_pnl": 8.46,
+      "charges": 41.04,
+      "net_pnl": -32.58,
+      "net_pnl_pct": -0.67,
+      "exit_reason": "rebalance",
+      "mfe": 168.67,
+      "mae": -39.61,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LINDEINDIA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-02-26",
+      "exit_date": "2024-03-04",
+      "qty": 1,
+      "entry_price": 5508.79,
+      "exit_price": 5405.7,
+      "hold_days": 5,
+      "gross_pnl": -103.09,
+      "charges": 43.52,
+      "net_pnl": -146.61,
+      "net_pnl_pct": -2.66,
+      "exit_reason": "rebalance",
+      "mfe": 54.29,
+      "mae": -170.07,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GRAVITA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2024-03-11",
+      "qty": 8,
+      "entry_price": 777.19,
+      "exit_price": 839.07,
+      "hold_days": 124,
+      "gross_pnl": 495.03,
+      "charges": 48.09,
+      "net_pnl": 446.94,
+      "net_pnl_pct": 7.17,
+      "exit_reason": "rebalance",
+      "mfe": 3026.09,
+      "mae": -615.86,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "JWL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-03-11",
+      "qty": 14,
+      "entry_price": 315.02,
+      "exit_price": 360.74,
+      "hold_days": 61,
+      "gross_pnl": 640.09,
+      "charges": 40.82,
+      "net_pnl": 599.27,
+      "net_pnl_pct": 13.55,
+      "exit_reason": "rebalance",
+      "mfe": 1630.04,
+      "mae": -159.79,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RKFORGE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-10-26",
+      "exit_date": "2024-03-12",
+      "qty": 6,
+      "entry_price": 598.79,
+      "exit_price": 682.88,
+      "hold_days": 92,
+      "gross_pnl": 504.51,
+      "charges": 38.81,
+      "net_pnl": 465.71,
+      "net_pnl_pct": 12.93,
+      "exit_reason": "rebalance",
+      "mfe": 1267.01,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LINDEINDIA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-04",
+      "exit_date": "2024-03-12",
+      "qty": 1,
+      "entry_price": 5418.69,
+      "exit_price": 6280.92,
+      "hold_days": 5,
+      "gross_pnl": 862.23,
+      "charges": 45.24,
+      "net_pnl": 816.99,
+      "net_pnl_pct": 15.04,
+      "exit_reason": "rebalance",
+      "mfe": 948.13,
+      "mae": -29.23,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "JINDALSAW.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2024-03-13",
+      "qty": 20,
+      "entry_price": 182.1,
+      "exit_price": 190.35,
+      "hold_days": 126,
+      "gross_pnl": 165.05,
+      "charges": 38.56,
+      "net_pnl": 126.48,
+      "net_pnl_pct": 3.46,
+      "exit_reason": "rebalance",
+      "mfe": 1801.28,
+      "mae": -625.27,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "JKTYRE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2024-03-13",
+      "qty": 33,
+      "entry_price": 257.38,
+      "exit_price": 421.17,
+      "hold_days": 126,
+      "gross_pnl": 5404.94,
+      "charges": 69.4,
+      "net_pnl": 5335.54,
+      "net_pnl_pct": 62.67,
+      "exit_reason": "rebalance",
+      "mfe": 9266.86,
+      "mae": -606.44,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RECLTD.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-09-06",
+      "exit_date": "2024-03-13",
+      "qty": 27,
+      "entry_price": 206.01,
+      "exit_price": 397.08,
+      "hold_days": 126,
+      "gross_pnl": 5158.98,
+      "charges": 55.42,
+      "net_pnl": 5103.55,
+      "net_pnl_pct": 91.54,
+      "exit_reason": "rebalance",
+      "mfe": 6978.86,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "KAYNES.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-03-13",
+      "qty": 3,
+      "entry_price": 2380.55,
+      "exit_price": 2780.71,
+      "hold_days": 63,
+      "gross_pnl": 1200.47,
+      "charges": 53.89,
+      "net_pnl": 1146.58,
+      "net_pnl_pct": 16.02,
+      "exit_reason": "rebalance",
+      "mfe": 2604.9,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FACT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-03-13",
+      "qty": 5,
+      "entry_price": 785.9,
+      "exit_price": 630.69,
+      "hold_days": 63,
+      "gross_pnl": -776.04,
+      "charges": 38.23,
+      "net_pnl": -814.27,
+      "net_pnl_pct": -20.67,
+      "exit_reason": "stop",
+      "mfe": 604.2,
+      "mae": -1022.29,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "KALYANKJIL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-03-13",
+      "qty": 17,
+      "entry_price": 315.7,
+      "exit_price": 386.05,
+      "hold_days": 63,
+      "gross_pnl": 1195.91,
+      "charges": 45.74,
+      "net_pnl": 1150.16,
+      "net_pnl_pct": 21.38,
+      "exit_reason": "rebalance",
+      "mfe": 1690.64,
+      "mae": -127.65,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ANANTRAJ.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-03-13",
+      "qty": 29,
+      "entry_price": 287.36,
+      "exit_price": 284.98,
+      "hold_days": 63,
+      "gross_pnl": -69.01,
+      "charges": 56.54,
+      "net_pnl": -125.54,
+      "net_pnl_pct": -1.5,
+      "exit_reason": "rebalance",
+      "mfe": 2200.43,
+      "mae": -190.48,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "NEWGEN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-03-13",
+      "qty": 6,
+      "entry_price": 696.03,
+      "exit_price": 700.46,
+      "hold_days": 63,
+      "gross_pnl": 26.56,
+      "charges": 39.6,
+      "net_pnl": -13.04,
+      "net_pnl_pct": -0.31,
+      "exit_reason": "rebalance",
+      "mfe": 1123.91,
+      "mae": -205.74,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ZENTEC.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-02-26",
+      "exit_date": "2024-03-13",
+      "qty": 7,
+      "entry_price": 807.92,
+      "exit_price": 850.12,
+      "hold_days": 11,
+      "gross_pnl": 295.39,
+      "charges": 45.07,
+      "net_pnl": 250.32,
+      "net_pnl_pct": 4.42,
+      "exit_reason": "rebalance",
+      "mfe": 1324.43,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "JWL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-11",
+      "exit_date": "2024-03-18",
+      "qty": 12,
+      "entry_price": 361.61,
+      "exit_price": 341.01,
+      "hold_days": 5,
+      "gross_pnl": -247.12,
+      "charges": 39.69,
+      "net_pnl": -286.81,
+      "net_pnl_pct": -6.59,
+      "exit_reason": "rebalance",
+      "mfe": 102.21,
+      "mae": -751.47,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RKFORGE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-12",
+      "exit_date": "2024-03-19",
+      "qty": 7,
+      "entry_price": 684.52,
+      "exit_price": 633.48,
+      "hold_days": 5,
+      "gross_pnl": -357.3,
+      "charges": 40.57,
+      "net_pnl": -397.87,
+      "net_pnl_pct": -8.28,
+      "exit_reason": "rebalance",
+      "mfe": 0.0,
+      "mae": -601.82,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BSOFT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-18",
+      "exit_date": "2024-05-06",
+      "qty": 7,
+      "entry_price": 699.19,
+      "exit_price": 593.58,
+      "hold_days": 30,
+      "gross_pnl": -739.27,
+      "charges": 40.42,
+      "net_pnl": -779.69,
+      "net_pnl_pct": -15.89,
+      "exit_reason": "rebalance",
+      "mfe": 415.98,
+      "mae": -753.11,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "NEULANDLAB.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-06-19",
+      "qty": 1,
+      "entry_price": 5038.53,
+      "exit_price": 6464.27,
+      "hold_days": 126,
+      "gross_pnl": 1425.74,
+      "charges": 44.75,
+      "net_pnl": 1381.0,
+      "net_pnl_pct": 27.34,
+      "exit_reason": "rebalance",
+      "mfe": 2717.24,
+      "mae": -134.12,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "IFCI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-06-19",
+      "qty": 110,
+      "entry_price": 37.7,
+      "exit_price": 62.54,
+      "hold_days": 63,
+      "gross_pnl": 2733.46,
+      "charges": 44.57,
+      "net_pnl": 2688.9,
+      "net_pnl_pct": 64.68,
+      "exit_reason": "rebalance",
+      "mfe": 3261.5,
+      "mae": -209.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "SUZLON.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-06-19",
+      "qty": 114,
+      "entry_price": 37.39,
+      "exit_price": 48.84,
+      "hold_days": 63,
+      "gross_pnl": 1304.9,
+      "charges": 41.8,
+      "net_pnl": 1263.1,
+      "net_pnl_pct": 29.55,
+      "exit_reason": "rebalance",
+      "mfe": 1676.94,
+      "mae": -215.46,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HBLENGINE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-06-19",
+      "qty": 10,
+      "entry_price": 399.49,
+      "exit_price": 503.23,
+      "hold_days": 63,
+      "gross_pnl": 1037.4,
+      "charges": 40.29,
+      "net_pnl": 997.1,
+      "net_pnl_pct": 24.89,
+      "exit_reason": "rebalance",
+      "mfe": 1579.78,
+      "mae": -235.37,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HSCL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-06-19",
+      "qty": 21,
+      "entry_price": 285.47,
+      "exit_price": 380.54,
+      "hold_days": 63,
+      "gross_pnl": 1996.54,
+      "charges": 50.4,
+      "net_pnl": 1946.13,
+      "net_pnl_pct": 32.39,
+      "exit_reason": "rebalance",
+      "mfe": 2057.03,
+      "mae": -306.26,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TITAGARH.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-06-19",
+      "qty": 7,
+      "entry_price": 831.36,
+      "exit_price": 1481.7,
+      "hold_days": 63,
+      "gross_pnl": 4552.38,
+      "charges": 55.26,
+      "net_pnl": 4497.12,
+      "net_pnl_pct": 77.09,
+      "exit_reason": "rebalance",
+      "mfe": 5320.9,
+      "mae": -213.15,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ADANIPOWER.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-06-19",
+      "qty": 62,
+      "entry_price": 105.79,
+      "exit_price": 147.55,
+      "hold_days": 63,
+      "gross_pnl": 2589.49,
+      "charges": 54.29,
+      "net_pnl": 2535.19,
+      "net_pnl_pct": 38.56,
+      "exit_reason": "rebalance",
+      "mfe": 4549.56,
+      "mae": -339.76,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LUPIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-06-19",
+      "qty": 6,
+      "entry_price": 1577.1,
+      "exit_price": 1542.71,
+      "hold_days": 63,
+      "gross_pnl": -206.36,
+      "charges": 61.4,
+      "net_pnl": -267.77,
+      "net_pnl_pct": -2.82,
+      "exit_reason": "rebalance",
+      "mfe": 722.49,
+      "mae": -660.87,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "JPPOWER.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-19",
+      "exit_date": "2024-06-19",
+      "qty": 270,
+      "entry_price": 15.12,
+      "exit_price": 18.94,
+      "hold_days": 59,
+      "gross_pnl": 1031.17,
+      "charges": 40.57,
+      "net_pnl": 990.6,
+      "net_pnl_pct": 24.2,
+      "exit_reason": "rebalance",
+      "mfe": 1614.6,
+      "mae": -140.4,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BSOFT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-07",
+      "exit_date": "2024-06-19",
+      "qty": 9,
+      "entry_price": 652.07,
+      "exit_price": 662.69,
+      "hold_days": 7,
+      "gross_pnl": 95.58,
+      "charges": 45.61,
+      "net_pnl": 49.97,
+      "net_pnl_pct": 0.85,
+      "exit_reason": "rebalance",
+      "mfe": 179.69,
+      "mae": -134.94,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BSE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-07-10",
+      "qty": 8,
+      "entry_price": 663.84,
+      "exit_price": 746.19,
+      "hold_days": 78,
+      "gross_pnl": 658.78,
+      "charges": 44.3,
+      "net_pnl": 614.48,
+      "net_pnl_pct": 11.54,
+      "exit_reason": "rebalance",
+      "mfe": 3297.52,
+      "mae": -192.63,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BSE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-07-11",
+      "exit_date": "2024-07-19",
+      "qty": 12,
+      "entry_price": 773.96,
+      "exit_price": 745.69,
+      "hold_days": 5,
+      "gross_pnl": -339.24,
+      "charges": 60.31,
+      "net_pnl": -399.56,
+      "net_pnl_pct": -4.29,
+      "exit_reason": "rebalance",
+      "mfe": 275.25,
+      "mae": -356.09,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BAJAJ-AUTO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-19",
+      "exit_date": "2024-07-23",
+      "qty": 1,
+      "entry_price": 9326.47,
+      "exit_price": 8417.93,
+      "hold_days": 23,
+      "gross_pnl": -908.54,
+      "charges": 59.23,
+      "net_pnl": -967.77,
+      "net_pnl_pct": -10.35,
+      "exit_reason": "stop",
+      "mfe": 204.4,
+      "mae": -916.37,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BSE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-07-24",
+      "exit_date": "2024-08-06",
+      "qty": 7,
+      "entry_price": 800.82,
+      "exit_price": 767.08,
+      "hold_days": 9,
+      "gross_pnl": -236.22,
+      "charges": 43.66,
+      "net_pnl": -279.88,
+      "net_pnl_pct": -4.98,
+      "exit_reason": "rebalance",
+      "mfe": 565.16,
+      "mae": -255.85,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TATAINVEST.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-19",
+      "exit_date": "2024-08-14",
+      "qty": 12,
+      "entry_price": 667.57,
+      "exit_price": 579.38,
+      "hold_days": 39,
+      "gross_pnl": -1058.18,
+      "charges": 52.87,
+      "net_pnl": -1111.05,
+      "net_pnl_pct": -13.84,
+      "exit_reason": "stop",
+      "mfe": 295.14,
+      "mae": -1054.04,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MRPL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-19",
+      "exit_date": "2024-08-23",
+      "qty": 31,
+      "entry_price": 208.31,
+      "exit_price": 209.08,
+      "hold_days": 45,
+      "gross_pnl": 24.05,
+      "charges": 48.14,
+      "net_pnl": -24.1,
+      "net_pnl_pct": -0.37,
+      "exit_reason": "rebalance",
+      "mfe": 1164.17,
+      "mae": -509.52,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MRPL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-08-23",
+      "exit_date": "2024-08-30",
+      "qty": 40,
+      "entry_price": 209.58,
+      "exit_price": 202.84,
+      "hold_days": 5,
+      "gross_pnl": -269.73,
+      "charges": 56.32,
+      "net_pnl": -326.05,
+      "net_pnl_pct": -3.88,
+      "exit_reason": "rebalance",
+      "mfe": 58.7,
+      "mae": -391.8,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TATAINVEST.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-08-14",
+      "exit_date": "2024-09-06",
+      "qty": 19,
+      "entry_price": 584.06,
+      "exit_price": 705.97,
+      "hold_days": 16,
+      "gross_pnl": 2316.44,
+      "charges": 74.49,
+      "net_pnl": 2241.95,
+      "net_pnl_pct": 20.16,
+      "exit_reason": "rebalance",
+      "mfe": 4105.56,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MRPL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-08-30",
+      "exit_date": "2024-09-06",
+      "qty": 43,
+      "entry_price": 203.33,
+      "exit_price": 192.9,
+      "hold_days": 5,
+      "gross_pnl": -448.29,
+      "charges": 57.57,
+      "net_pnl": -505.87,
+      "net_pnl_pct": -5.77,
+      "exit_reason": "rebalance",
+      "mfe": 114.98,
+      "mae": -483.01,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ANANDRATHI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2024-09-10",
+      "qty": 7,
+      "entry_price": 945.51,
+      "exit_price": 961.52,
+      "hold_days": 120,
+      "gross_pnl": 112.05,
+      "charges": 49.08,
+      "net_pnl": 62.98,
+      "net_pnl_pct": 0.95,
+      "exit_reason": "rebalance",
+      "mfe": 833.09,
+      "mae": -697.63,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FORCEMOT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-07-10",
+      "exit_date": "2024-09-12",
+      "qty": 1,
+      "entry_price": 8314.14,
+      "exit_price": 6963.84,
+      "hold_days": 44,
+      "gross_pnl": -1350.3,
+      "charges": 53.6,
+      "net_pnl": -1403.9,
+      "net_pnl_pct": -16.85,
+      "exit_reason": "stop",
+      "mfe": 1373.56,
+      "mae": -1366.99,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MRPL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-06",
+      "exit_date": "2024-09-13",
+      "qty": 61,
+      "entry_price": 193.37,
+      "exit_price": 186.81,
+      "hold_days": 5,
+      "gross_pnl": -400.01,
+      "charges": 71.66,
+      "net_pnl": -471.67,
+      "net_pnl_pct": -3.99,
+      "exit_reason": "rebalance",
+      "mfe": 0.0,
+      "mae": -740.15,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TATAINVEST.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-06",
+      "exit_date": "2024-09-13",
+      "qty": 5,
+      "entry_price": 707.67,
+      "exit_price": 695.48,
+      "hold_days": 5,
+      "gross_pnl": -60.94,
+      "charges": 38.1,
+      "net_pnl": -99.05,
+      "net_pnl_pct": -2.79,
+      "exit_reason": "rebalance",
+      "mfe": 66.04,
+      "mae": -107.08,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "KALYANKJIL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-19",
+      "exit_date": "2024-09-18",
+      "qty": 16,
+      "entry_price": 420.16,
+      "exit_price": 691.71,
+      "hold_days": 63,
+      "gross_pnl": 4344.77,
+      "charges": 58.94,
+      "net_pnl": 4285.83,
+      "net_pnl_pct": 63.6,
+      "exit_reason": "rebalance",
+      "mfe": 5177.92,
+      "mae": -55.6,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "WOCKPHARMA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-19",
+      "exit_date": "2024-09-18",
+      "qty": 11,
+      "entry_price": 573.29,
+      "exit_price": 956.7,
+      "hold_days": 63,
+      "gross_pnl": 4217.55,
+      "charges": 56.74,
+      "net_pnl": 4160.8,
+      "net_pnl_pct": 65.82,
+      "exit_reason": "rebalance",
+      "mfe": 5768.51,
+      "mae": -143.99,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "KIRLOSENG.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-19",
+      "exit_date": "2024-09-18",
+      "qty": 4,
+      "entry_price": 1303.84,
+      "exit_price": 1259.98,
+      "hold_days": 63,
+      "gross_pnl": -175.46,
+      "charges": 42.01,
+      "net_pnl": -217.47,
+      "net_pnl_pct": -4.16,
+      "exit_reason": "rebalance",
+      "mfe": 496.62,
+      "mae": -918.6,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ETERNAL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-19",
+      "exit_date": "2024-09-18",
+      "qty": 34,
+      "entry_price": 198.73,
+      "exit_price": 275.52,
+      "hold_days": 63,
+      "gross_pnl": 2610.89,
+      "charges": 55.25,
+      "net_pnl": 2555.63,
+      "net_pnl_pct": 37.73,
+      "exit_reason": "rebalance",
+      "mfe": 2982.48,
+      "mae": -230.52,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "APARINDS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-07-03",
+      "exit_date": "2024-09-18",
+      "qty": 1,
+      "entry_price": 8546.53,
+      "exit_price": 9885.41,
+      "hold_days": 53,
+      "gross_pnl": 1338.88,
+      "charges": 60.63,
+      "net_pnl": 1278.25,
+      "net_pnl_pct": 14.92,
+      "exit_reason": "rebalance",
+      "mfe": 1979.19,
+      "mae": -1068.32,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BAJAJ-AUTO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-07-23",
+      "exit_date": "2024-09-18",
+      "qty": 1,
+      "entry_price": 9034.42,
+      "exit_price": 11301.05,
+      "hold_days": 40,
+      "gross_pnl": 2266.63,
+      "charges": 64.93,
+      "net_pnl": 2201.7,
+      "net_pnl_pct": 24.31,
+      "exit_reason": "rebalance",
+      "mfe": 2558.49,
+      "mae": -214.23,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BSE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-08-07",
+      "exit_date": "2024-09-18",
+      "qty": 5,
+      "entry_price": 795.86,
+      "exit_price": 1289.68,
+      "hold_days": 29,
+      "gross_pnl": 2469.1,
+      "charges": 43.41,
+      "net_pnl": 2425.69,
+      "net_pnl_pct": 60.8,
+      "exit_reason": "rebalance",
+      "mfe": 2557.81,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ANANDRATHI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-10",
+      "exit_date": "2024-09-18",
+      "qty": 9,
+      "entry_price": 963.83,
+      "exit_price": 965.52,
+      "hold_days": 6,
+      "gross_pnl": 15.26,
+      "charges": 58.29,
+      "net_pnl": -43.03,
+      "net_pnl_pct": -0.49,
+      "exit_reason": "rebalance",
+      "mfe": 242.37,
+      "mae": -186.09,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FORCEMOT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-12",
+      "exit_date": "2024-09-19",
+      "qty": 1,
+      "entry_price": 7053.11,
+      "exit_price": 6716.21,
+      "hold_days": 5,
+      "gross_pnl": -336.9,
+      "charges": 50.07,
+      "net_pnl": -386.97,
+      "net_pnl_pct": -5.47,
+      "exit_reason": "rebalance",
+      "mfe": 210.15,
+      "mae": -426.63,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TATAINVEST.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-13",
+      "exit_date": "2024-09-20",
+      "qty": 5,
+      "entry_price": 697.15,
+      "exit_price": 666.64,
+      "hold_days": 5,
+      "gross_pnl": -152.57,
+      "charges": 37.88,
+      "net_pnl": -190.45,
+      "net_pnl_pct": -5.45,
+      "exit_reason": "rebalance",
+      "mfe": 17.36,
+      "mae": -230.38,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "IRFC.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2023-12-11",
+      "exit_date": "2024-10-01",
+      "qty": 76,
+      "entry_price": 79.5,
+      "exit_price": 150.47,
+      "hold_days": 198,
+      "gross_pnl": 5393.21,
+      "charges": 58.14,
+      "net_pnl": 5335.06,
+      "net_pnl_pct": 88.09,
+      "exit_reason": "rebalance",
+      "mfe": 10770.74,
+      "mae": -18.05,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FORCEMOT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-20",
+      "exit_date": "2024-10-04",
+      "qty": 1,
+      "entry_price": 7223.76,
+      "exit_price": 7148.5,
+      "hold_days": 9,
+      "gross_pnl": -75.26,
+      "charges": 51.43,
+      "net_pnl": -126.69,
+      "net_pnl_pct": -1.75,
+      "exit_reason": "rebalance",
+      "mfe": 586.73,
+      "mae": -356.5,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RVNL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-10-07",
+      "qty": 21,
+      "entry_price": 521.18,
+      "exit_price": 442.97,
+      "hold_days": 12,
+      "gross_pnl": -1642.36,
+      "charges": 65.02,
+      "net_pnl": -1707.37,
+      "net_pnl_pct": -15.56,
+      "exit_reason": "stop",
+      "mfe": 408.66,
+      "mae": -1762.32,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HUDCO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-10-07",
+      "qty": 38,
+      "entry_price": 227.69,
+      "exit_price": 198.39,
+      "hold_days": 12,
+      "gross_pnl": -1113.68,
+      "charges": 55.68,
+      "net_pnl": -1169.35,
+      "net_pnl_pct": -13.48,
+      "exit_reason": "rebalance",
+      "mfe": 422.26,
+      "mae": -1239.03,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HUDCO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-10-08",
+      "exit_date": "2024-10-15",
+      "qty": 19,
+      "entry_price": 216.42,
+      "exit_price": 211.88,
+      "hold_days": 5,
+      "gross_pnl": -86.39,
+      "charges": 39.35,
+      "net_pnl": -125.74,
+      "net_pnl_pct": -3.05,
+      "exit_reason": "rebalance",
+      "mfe": 61.17,
+      "mae": -146.27,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "IFCI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-10-18",
+      "qty": 85,
+      "entry_price": 71.63,
+      "exit_price": 58.03,
+      "hold_days": 21,
+      "gross_pnl": -1155.63,
+      "charges": 43.92,
+      "net_pnl": -1199.55,
+      "net_pnl_pct": -19.66,
+      "exit_reason": "stop",
+      "mfe": 153.85,
+      "mae": -1216.35,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "COCHINSHIP.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-10-21",
+      "qty": 6,
+      "entry_price": 1705.55,
+      "exit_price": 1510.94,
+      "hold_days": 22,
+      "gross_pnl": -1167.63,
+      "charges": 62.8,
+      "net_pnl": -1230.43,
+      "net_pnl_pct": -12.0,
+      "exit_reason": "rebalance",
+      "mfe": 1241.34,
+      "mae": -1308.58,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "INOXWIND.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-10-23",
+      "qty": 32,
+      "entry_price": 248.95,
+      "exit_price": 200.23,
+      "hold_days": 24,
+      "gross_pnl": -1559.01,
+      "charges": 51.55,
+      "net_pnl": -1610.56,
+      "net_pnl_pct": -20.17,
+      "exit_reason": "stop",
+      "mfe": 414.4,
+      "mae": -1650.88,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "IFCI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-10-18",
+      "exit_date": "2024-10-25",
+      "qty": 118,
+      "entry_price": 59.36,
+      "exit_price": 50.92,
+      "hold_days": 5,
+      "gross_pnl": -996.2,
+      "charges": 48.39,
+      "net_pnl": -1044.58,
+      "net_pnl_pct": -14.88,
+      "exit_reason": "rebalance",
+      "mfe": 14.16,
+      "mae": -1093.86,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "IFCI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-11-01",
+      "exit_date": "2024-11-14",
+      "qty": 81,
+      "entry_price": 59.02,
+      "exit_price": 57.71,
+      "hold_days": 9,
+      "gross_pnl": -106.12,
+      "charges": 40.81,
+      "net_pnl": -146.93,
+      "net_pnl_pct": -3.07,
+      "exit_reason": "rebalance",
+      "mfe": 848.88,
+      "mae": -255.96,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ARE&M.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-11-18",
+      "qty": 9,
+      "entry_price": 1364.1,
+      "exit_price": 1202.66,
+      "hold_days": 41,
+      "gross_pnl": -1453.02,
+      "charges": 71.54,
+      "net_pnl": -1524.56,
+      "net_pnl_pct": -12.39,
+      "exit_reason": "rebalance",
+      "mfe": 445.67,
+      "mae": -1538.05,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "POWERGRID.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-12-04",
+      "qty": 54,
+      "entry_price": 315.83,
+      "exit_price": 310.75,
+      "hold_days": 52,
+      "gross_pnl": -274.19,
+      "charges": 96.05,
+      "net_pnl": -370.24,
+      "net_pnl_pct": -2.17,
+      "exit_reason": "rebalance",
+      "mfe": 1607.48,
+      "mae": -1324.98,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "COCHINSHIP.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-02",
+      "exit_date": "2024-12-09",
+      "qty": 2,
+      "entry_price": 1643.86,
+      "exit_price": 1666.65,
+      "hold_days": 5,
+      "gross_pnl": 45.59,
+      "charges": 37.65,
+      "net_pnl": 7.93,
+      "net_pnl_pct": 0.24,
+      "exit_reason": "rebalance",
+      "mfe": 152.2,
+      "mae": -69.67,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ARE&M.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-11-25",
+      "exit_date": "2024-12-10",
+      "qty": 5,
+      "entry_price": 1222.38,
+      "exit_price": 1286.12,
+      "hold_days": 11,
+      "gross_pnl": 318.73,
+      "charges": 47.21,
+      "net_pnl": 271.52,
+      "net_pnl_pct": 4.43,
+      "exit_reason": "rebalance",
+      "mfe": 573.46,
+      "mae": -94.83,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HUDCO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-04",
+      "exit_date": "2024-12-11",
+      "qty": 24,
+      "entry_price": 228.89,
+      "exit_price": 238.57,
+      "hold_days": 5,
+      "gross_pnl": 232.47,
+      "charges": 44.19,
+      "net_pnl": 188.28,
+      "net_pnl_pct": 3.42,
+      "exit_reason": "rebalance",
+      "mfe": 309.29,
+      "mae": -104.6,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "IFCI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-11-25",
+      "exit_date": "2024-12-12",
+      "qty": 50,
+      "entry_price": 64.63,
+      "exit_price": 62.85,
+      "hold_days": 13,
+      "gross_pnl": -88.65,
+      "charges": 37.39,
+      "net_pnl": -126.03,
+      "net_pnl_pct": -3.89,
+      "exit_reason": "rebalance",
+      "mfe": 188.5,
+      "mae": -171.5,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "COCHINSHIP.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-09",
+      "exit_date": "2024-12-16",
+      "qty": 3,
+      "entry_price": 1670.66,
+      "exit_price": 1592.04,
+      "hold_days": 5,
+      "gross_pnl": -235.85,
+      "charges": 41.21,
+      "net_pnl": -277.06,
+      "net_pnl_pct": -5.51,
+      "exit_reason": "rebalance",
+      "mfe": 28.34,
+      "mae": -265.51,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ARE&M.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-10",
+      "exit_date": "2024-12-17",
+      "qty": 9,
+      "entry_price": 1289.21,
+      "exit_price": 1237.96,
+      "hold_days": 5,
+      "gross_pnl": -461.3,
+      "charges": 70.65,
+      "net_pnl": -531.96,
+      "net_pnl_pct": -4.57,
+      "exit_reason": "rebalance",
+      "mfe": 94.52,
+      "mae": -523.97,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "POWERGRID.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-04",
+      "exit_date": "2024-12-18",
+      "qty": 27,
+      "entry_price": 311.5,
+      "exit_price": 307.4,
+      "hold_days": 10,
+      "gross_pnl": -110.51,
+      "charges": 56.79,
+      "net_pnl": -167.3,
+      "net_pnl_pct": -1.98,
+      "exit_reason": "rebalance",
+      "mfe": 279.29,
+      "mae": -152.29,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HUDCO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-11",
+      "exit_date": "2024-12-18",
+      "qty": 29,
+      "entry_price": 239.15,
+      "exit_price": 234.16,
+      "hold_days": 5,
+      "gross_pnl": -144.65,
+      "charges": 49.96,
+      "net_pnl": -194.61,
+      "net_pnl_pct": -2.8,
+      "exit_reason": "rebalance",
+      "mfe": 259.69,
+      "mae": -416.81,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "IRFC.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-11",
+      "exit_date": "2024-12-18",
+      "qty": 42,
+      "entry_price": 160.99,
+      "exit_price": 149.35,
+      "hold_days": 5,
+      "gross_pnl": -489.06,
+      "charges": 48.4,
+      "net_pnl": -537.46,
+      "net_pnl_pct": -7.93,
+      "exit_reason": "rebalance",
+      "mfe": 73.53,
+      "mae": -493.67,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TECHNOE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-12-19",
+      "qty": 7,
+      "entry_price": 1557.21,
+      "exit_price": 1519.72,
+      "hold_days": 63,
+      "gross_pnl": -262.42,
+      "charges": 67.87,
+      "net_pnl": -330.28,
+      "net_pnl_pct": -3.02,
+      "exit_reason": "rebalance",
+      "mfe": 1684.38,
+      "mae": -1262.22,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ANANTRAJ.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-09-18",
+      "exit_date": "2024-12-19",
+      "qty": 16,
+      "entry_price": 662.71,
+      "exit_price": 834.27,
+      "hold_days": 63,
+      "gross_pnl": 2744.95,
+      "charges": 73.17,
+      "net_pnl": 2671.78,
+      "net_pnl_pct": 25.14,
+      "exit_reason": "rebalance",
+      "mfe": 2862.28,
+      "mae": -470.63,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RVNL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-10-07",
+      "exit_date": "2024-12-19",
+      "qty": 12,
+      "entry_price": 447.09,
+      "exit_price": 442.81,
+      "hold_days": 51,
+      "gross_pnl": -51.38,
+      "charges": 42.97,
+      "net_pnl": -94.34,
+      "net_pnl_pct": -1.75,
+      "exit_reason": "rebalance",
+      "mfe": 740.35,
+      "mae": -523.09,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "INOXWIND.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-10-23",
+      "exit_date": "2024-12-19",
+      "qty": 25,
+      "entry_price": 208.33,
+      "exit_price": 187.58,
+      "hold_days": 39,
+      "gross_pnl": -518.62,
+      "charges": 41.58,
+      "net_pnl": -560.2,
+      "net_pnl_pct": -10.73,
+      "exit_reason": "rebalance",
+      "mfe": 473.0,
+      "mae": -689.5,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "IFCI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-12",
+      "exit_date": "2024-12-19",
+      "qty": 77,
+      "entry_price": 63.01,
+      "exit_price": 63.82,
+      "hold_days": 5,
+      "gross_pnl": 62.98,
+      "charges": 41.14,
+      "net_pnl": 21.83,
+      "net_pnl_pct": 0.45,
+      "exit_reason": "rebalance",
+      "mfe": 170.17,
+      "mae": -308.77,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HUDCO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-18",
+      "exit_date": "2024-12-26",
+      "qty": 24,
+      "entry_price": 234.72,
+      "exit_price": 214.68,
+      "hold_days": 5,
+      "gross_pnl": -481.0,
+      "charges": 43.25,
+      "net_pnl": -524.25,
+      "net_pnl_pct": -9.28,
+      "exit_reason": "rebalance",
+      "mfe": 21.36,
+      "mae": -519.47,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "POWERGRID.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-18",
+      "exit_date": "2024-12-26",
+      "qty": 32,
+      "entry_price": 308.14,
+      "exit_price": 296.65,
+      "hold_days": 5,
+      "gross_pnl": -367.8,
+      "charges": 62.87,
+      "net_pnl": -430.67,
+      "net_pnl_pct": -4.36,
+      "exit_reason": "rebalance",
+      "mfe": 112.33,
+      "mae": -403.77,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GODFRYPHLP.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-19",
+      "exit_date": "2024-12-30",
+      "qty": 4,
+      "entry_price": 1815.16,
+      "exit_price": 1564.16,
+      "hold_days": 6,
+      "gross_pnl": -1003.99,
+      "charges": 49.55,
+      "net_pnl": -1053.54,
+      "net_pnl_pct": -14.48,
+      "exit_reason": "rebalance",
+      "mfe": 212.26,
+      "mae": -1135.99,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "COHANCE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-19",
+      "exit_date": "2024-12-30",
+      "qty": 10,
+      "entry_price": 1217.96,
+      "exit_price": 1049.99,
+      "hold_days": 6,
+      "gross_pnl": -1679.72,
+      "charges": 70.59,
+      "net_pnl": -1750.31,
+      "net_pnl_pct": -14.34,
+      "exit_reason": "stop",
+      "mfe": 50.4,
+      "mae": -1779.1,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PTCIL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-19",
+      "exit_date": "2024-12-30",
+      "qty": 1,
+      "entry_price": 11720.45,
+      "exit_price": 13482.5,
+      "hold_days": 6,
+      "gross_pnl": 1762.05,
+      "charges": 76.11,
+      "net_pnl": 1685.94,
+      "net_pnl_pct": 14.35,
+      "exit_reason": "rebalance",
+      "mfe": 2279.25,
+      "mae": -371.35,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GODFRYPHLP.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-01-02",
+      "exit_date": "2025-01-09",
+      "qty": 2,
+      "entry_price": 1680.66,
+      "exit_price": 1532.03,
+      "hold_days": 5,
+      "gross_pnl": -297.25,
+      "charges": 37.47,
+      "net_pnl": -334.72,
+      "net_pnl_pct": -9.93,
+      "exit_reason": "rebalance",
+      "mfe": 14.07,
+      "mae": -300.52,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "INDHOTEL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-19",
+      "exit_date": "2025-01-10",
+      "qty": 16,
+      "entry_price": 874.63,
+      "exit_price": 801.4,
+      "hold_days": 15,
+      "gross_pnl": -1171.69,
+      "charges": 80.03,
+      "net_pnl": -1251.71,
+      "net_pnl_pct": -8.92,
+      "exit_reason": "stop",
+      "mfe": 219.04,
+      "mae": -1314.4,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PERSISTENT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-19",
+      "exit_date": "2025-01-13",
+      "qty": 2,
+      "entry_price": 6595.59,
+      "exit_price": 5980.58,
+      "hold_days": 16,
+      "gross_pnl": -1230.0,
+      "charges": 76.22,
+      "net_pnl": -1306.22,
+      "net_pnl_pct": -9.88,
+      "exit_reason": "stop",
+      "mfe": 210.61,
+      "mae": -1376.15,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "KAYNES.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-01-02",
+      "exit_date": "2025-01-13",
+      "qty": 1,
+      "entry_price": 7492.58,
+      "exit_price": 6225.46,
+      "hold_days": 7,
+      "gross_pnl": -1267.12,
+      "charges": 50.03,
+      "net_pnl": -1317.15,
+      "net_pnl_pct": -17.54,
+      "exit_reason": "stop",
+      "mfe": 140.77,
+      "mae": -1462.58,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "NETWEB.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-01-02",
+      "exit_date": "2025-01-13",
+      "qty": 2,
+      "entry_price": 2878.22,
+      "exit_price": 2408.31,
+      "hold_days": 7,
+      "gross_pnl": -939.83,
+      "charges": 43.01,
+      "net_pnl": -982.84,
+      "net_pnl_pct": -17.03,
+      "exit_reason": "stop",
+      "mfe": 22.75,
+      "mae": -1007.06,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TRENT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2025-01-20",
+      "qty": 2,
+      "entry_price": 3938.88,
+      "exit_price": 6070.21,
+      "hold_days": 210,
+      "gross_pnl": 4262.66,
+      "charges": 64.05,
+      "net_pnl": 4198.62,
+      "net_pnl_pct": 53.17,
+      "exit_reason": "rebalance",
+      "mfe": 8778.0,
+      "mae": -211.04,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "COHANCE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-01-02",
+      "exit_date": "2025-01-27",
+      "qty": 9,
+      "entry_price": 1115.79,
+      "exit_price": 983.92,
+      "hold_days": 17,
+      "gross_pnl": -1186.83,
+      "charges": 61.89,
+      "net_pnl": -1248.71,
+      "net_pnl_pct": -12.41,
+      "exit_reason": "rebalance",
+      "mfe": 127.89,
+      "mae": -1507.86,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GVT&D.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-03-13",
+      "exit_date": "2025-01-28",
+      "qty": 4,
+      "entry_price": 903.96,
+      "exit_price": 1582.72,
+      "hold_days": 216,
+      "gross_pnl": 2715.02,
+      "charges": 42.72,
+      "net_pnl": 2672.3,
+      "net_pnl_pct": 73.7,
+      "exit_reason": "rebalance",
+      "mfe": 5317.64,
+      "mae": -413.48,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CHOICEIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-19",
+      "exit_date": "2025-01-28",
+      "qty": 19,
+      "entry_price": 548.26,
+      "exit_price": 490.82,
+      "hold_days": 27,
+      "gross_pnl": -1091.29,
+      "charges": 63.82,
+      "net_pnl": -1155.11,
+      "net_pnl_pct": -11.06,
+      "exit_reason": "stop",
+      "mfe": 293.36,
+      "mae": -1324.49,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "WOCKPHARMA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-01-02",
+      "exit_date": "2025-01-28",
+      "qty": 3,
+      "entry_price": 1448.19,
+      "exit_price": 1197.46,
+      "hold_days": 18,
+      "gross_pnl": -752.18,
+      "charges": 39.17,
+      "net_pnl": -791.35,
+      "net_pnl_pct": -18.17,
+      "exit_reason": "stop",
+      "mfe": 404.28,
+      "mae": -849.27,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TARIL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-06-19",
+      "exit_date": "2025-02-03",
+      "qty": 12,
+      "entry_price": 384.53,
+      "exit_price": 400.35,
+      "hold_days": 158,
+      "gross_pnl": 189.91,
+      "charges": 40.75,
+      "net_pnl": 149.16,
+      "net_pnl_pct": 3.22,
+      "exit_reason": "rebalance",
+      "mfe": 3169.21,
+      "mae": -1006.86,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2024-12-19",
+      "exit_date": "2025-03-12",
+      "qty": 33,
+      "entry_price": 354.29,
+      "exit_price": 301.58,
+      "hold_days": 58,
+      "gross_pnl": -1739.54,
+      "charges": 68.22,
+      "net_pnl": -1807.75,
+      "net_pnl_pct": -15.43,
+      "exit_reason": "stop",
+      "mfe": 1797.07,
+      "mae": -1925.52,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CEMPRO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-04-28",
+      "qty": 21,
+      "entry_price": 533.11,
+      "exit_price": 504.66,
+      "hold_days": 5,
+      "gross_pnl": -597.58,
+      "charges": 68.48,
+      "net_pnl": -666.06,
+      "net_pnl_pct": -5.94,
+      "exit_reason": "rebalance",
+      "mfe": 191.41,
+      "mae": -623.42,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "SARDAEN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-04-29",
+      "qty": 6,
+      "entry_price": 486.25,
+      "exit_price": 459.33,
+      "hold_days": 6,
+      "gross_pnl": -161.53,
+      "charges": 36.62,
+      "net_pnl": -198.15,
+      "net_pnl_pct": -6.77,
+      "exit_reason": "rebalance",
+      "mfe": 208.13,
+      "mae": -175.53,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "SARDAEN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-29",
+      "exit_date": "2025-05-07",
+      "qty": 7,
+      "entry_price": 460.43,
+      "exit_price": 430.05,
+      "hold_days": 5,
+      "gross_pnl": -212.67,
+      "charges": 37.24,
+      "net_pnl": -249.91,
+      "net_pnl_pct": -7.73,
+      "exit_reason": "rebalance",
+      "mfe": 44.47,
+      "mae": -293.58,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "DEEPAKFERT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-05-08",
+      "qty": 4,
+      "entry_price": 1284.14,
+      "exit_price": 1231.03,
+      "hold_days": 12,
+      "gross_pnl": -212.46,
+      "charges": 41.65,
+      "net_pnl": -254.11,
+      "net_pnl_pct": -4.94,
+      "exit_reason": "rebalance",
+      "mfe": 184.38,
+      "mae": -382.86,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "WOCKPHARMA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-05-09",
+      "qty": 2,
+      "entry_price": 1403.08,
+      "exit_price": 1222.83,
+      "hold_days": 13,
+      "gross_pnl": -360.5,
+      "charges": 36.16,
+      "net_pnl": -396.66,
+      "net_pnl_pct": -14.09,
+      "exit_reason": "rebalance",
+      "mfe": 252.64,
+      "mae": -417.96,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "DEEPAKFERT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-08",
+      "exit_date": "2025-05-15",
+      "qty": 4,
+      "entry_price": 1233.99,
+      "exit_price": 1324.99,
+      "hold_days": 5,
+      "gross_pnl": 364.04,
+      "charges": 42.01,
+      "net_pnl": 322.03,
+      "net_pnl_pct": 6.51,
+      "exit_reason": "rebalance",
+      "mfe": 555.0,
+      "mae": -182.65,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MUTHOOTFIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-05-20",
+      "qty": 2,
+      "entry_price": 2161.3,
+      "exit_price": 2011.26,
+      "hold_days": 20,
+      "gross_pnl": -300.08,
+      "charges": 39.6,
+      "net_pnl": -339.67,
+      "net_pnl_pct": -7.84,
+      "exit_reason": "rebalance",
+      "mfe": 319.35,
+      "mae": -302.59,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "SARDAEN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-12",
+      "exit_date": "2025-05-26",
+      "qty": 8,
+      "entry_price": 440.63,
+      "exit_price": 441.01,
+      "hold_days": 10,
+      "gross_pnl": 3.06,
+      "charges": 38.14,
+      "net_pnl": -35.08,
+      "net_pnl_pct": -0.99,
+      "exit_reason": "rebalance",
+      "mfe": 314.56,
+      "mae": -70.2,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "VEDL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-19",
+      "exit_date": "2025-05-30",
+      "qty": 18,
+      "entry_price": 413.31,
+      "exit_price": 406.26,
+      "hold_days": 9,
+      "gross_pnl": -126.97,
+      "charges": 52.31,
+      "net_pnl": -179.27,
+      "net_pnl_pct": -2.4,
+      "exit_reason": "rebalance",
+      "mfe": 250.79,
+      "mae": -186.26,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PGEL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-06-04",
+      "qty": 3,
+      "entry_price": 935.36,
+      "exit_price": 758.3,
+      "hold_days": 31,
+      "gross_pnl": -531.17,
+      "charges": 35.99,
+      "net_pnl": -567.15,
+      "net_pnl_pct": -20.15,
+      "exit_reason": "rebalance",
+      "mfe": 216.59,
+      "mae": -570.12,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ACUTAAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-06-09",
+      "qty": 3,
+      "entry_price": 1133.26,
+      "exit_price": 1115.52,
+      "hold_days": 34,
+      "gross_pnl": -53.2,
+      "charges": 37.8,
+      "net_pnl": -91.0,
+      "net_pnl_pct": -2.67,
+      "exit_reason": "rebalance",
+      "mfe": 328.42,
+      "mae": -281.45,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PGEL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-05",
+      "exit_date": "2025-06-12",
+      "qty": 6,
+      "entry_price": 778.99,
+      "exit_price": 756.41,
+      "hold_days": 5,
+      "gross_pnl": -135.5,
+      "charges": 40.54,
+      "net_pnl": -176.04,
+      "net_pnl_pct": -3.76,
+      "exit_reason": "rebalance",
+      "mfe": 13.29,
+      "mae": -175.92,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ACUTAAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-09",
+      "exit_date": "2025-06-16",
+      "qty": 7,
+      "entry_price": 1118.2,
+      "exit_price": 1091.18,
+      "hold_days": 5,
+      "gross_pnl": -189.18,
+      "charges": 53.95,
+      "net_pnl": -243.13,
+      "net_pnl_pct": -3.1,
+      "exit_reason": "rebalance",
+      "mfe": 92.04,
+      "mae": -308.66,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "VEDL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-10",
+      "exit_date": "2025-06-17",
+      "qty": 30,
+      "entry_price": 431.54,
+      "exit_price": 428.08,
+      "hold_days": 5,
+      "gross_pnl": -103.78,
+      "charges": 77.59,
+      "net_pnl": -181.37,
+      "net_pnl_pct": -1.4,
+      "exit_reason": "rebalance",
+      "mfe": 308.13,
+      "mae": -434.29,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LTFOODS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-19",
+      "exit_date": "2025-06-23",
+      "qty": 18,
+      "entry_price": 381.97,
+      "exit_price": 402.33,
+      "hold_days": 25,
+      "gross_pnl": 366.5,
+      "charges": 50.82,
+      "net_pnl": 315.68,
+      "net_pnl_pct": 4.58,
+      "exit_reason": "rebalance",
+      "mfe": 1776.63,
+      "mae": -166.51,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "WOCKPHARMA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-12",
+      "exit_date": "2025-06-24",
+      "qty": 2,
+      "entry_price": 1271.52,
+      "exit_price": 1728.82,
+      "hold_days": 31,
+      "gross_pnl": 914.6,
+      "charges": 36.9,
+      "net_pnl": 877.69,
+      "net_pnl_pct": 34.39,
+      "exit_reason": "rebalance",
+      "mfe": 1194.56,
+      "mae": -59.04,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CEMPRO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-12",
+      "exit_date": "2025-06-24",
+      "qty": 7,
+      "entry_price": 541.23,
+      "exit_price": 807.29,
+      "hold_days": 31,
+      "gross_pnl": 1862.43,
+      "charges": 41.41,
+      "net_pnl": 1821.02,
+      "net_pnl_pct": 47.93,
+      "exit_reason": "rebalance",
+      "mfe": 2051.0,
+      "mae": -16.37,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MUTHOOTFIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-21",
+      "exit_date": "2025-06-24",
+      "qty": 2,
+      "entry_price": 2074.57,
+      "exit_price": 2541.43,
+      "hold_days": 24,
+      "gross_pnl": 933.73,
+      "charges": 40.58,
+      "net_pnl": 893.15,
+      "net_pnl_pct": 21.47,
+      "exit_reason": "rebalance",
+      "mfe": 1145.89,
+      "mae": -66.66,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "VEDL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-17",
+      "exit_date": "2025-06-24",
+      "qty": 28,
+      "entry_price": 429.11,
+      "exit_price": 422.39,
+      "hold_days": 5,
+      "gross_pnl": -188.2,
+      "charges": 73.14,
+      "net_pnl": -261.34,
+      "net_pnl_pct": -2.17,
+      "exit_reason": "rebalance",
+      "mfe": 215.74,
+      "mae": -593.55,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CARTRADE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-06-27",
+      "qty": 1,
+      "entry_price": 1611.83,
+      "exit_price": 1601.28,
+      "hold_days": 48,
+      "gross_pnl": -10.55,
+      "charges": 33.87,
+      "net_pnl": -44.42,
+      "net_pnl_pct": -2.74,
+      "exit_reason": "rebalance",
+      "mfe": 256.67,
+      "mae": -126.83,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ACUTAAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-16",
+      "exit_date": "2025-06-27",
+      "qty": 10,
+      "entry_price": 1093.8,
+      "exit_price": 1138.87,
+      "hold_days": 9,
+      "gross_pnl": 450.72,
+      "charges": 69.62,
+      "net_pnl": 381.1,
+      "net_pnl_pct": 3.48,
+      "exit_reason": "rebalance",
+      "mfe": 609.24,
+      "mae": -358.77,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LTFOODS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-23",
+      "exit_date": "2025-06-30",
+      "qty": 16,
+      "entry_price": 403.29,
+      "exit_price": 482.53,
+      "hold_days": 5,
+      "gross_pnl": 1267.69,
+      "charges": 50.88,
+      "net_pnl": 1216.81,
+      "net_pnl_pct": 18.81,
+      "exit_reason": "rebalance",
+      "mfe": 1471.69,
+      "mae": -60.9,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-24",
+      "exit_date": "2025-07-01",
+      "qty": 21,
+      "entry_price": 378.75,
+      "exit_price": 349.84,
+      "hold_days": 5,
+      "gross_pnl": -607.16,
+      "charges": 53.6,
+      "net_pnl": -660.76,
+      "net_pnl_pct": -8.29,
+      "exit_reason": "rebalance",
+      "mfe": 344.93,
+      "mae": -631.27,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-07-01",
+      "exit_date": "2025-07-08",
+      "qty": 26,
+      "entry_price": 350.68,
+      "exit_price": 357.22,
+      "hold_days": 5,
+      "gross_pnl": 170.02,
+      "charges": 60.65,
+      "net_pnl": 109.37,
+      "net_pnl_pct": 1.2,
+      "exit_reason": "rebalance",
+      "mfe": 374.45,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ACUTAAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-27",
+      "exit_date": "2025-07-11",
+      "qty": 7,
+      "entry_price": 1141.61,
+      "exit_price": 1143.86,
+      "hold_days": 10,
+      "gross_pnl": 15.77,
+      "charges": 55.16,
+      "net_pnl": -39.39,
+      "net_pnl_pct": -0.49,
+      "exit_reason": "rebalance",
+      "mfe": 183.41,
+      "mae": -406.09,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-07-08",
+      "exit_date": "2025-07-15",
+      "qty": 28,
+      "entry_price": 358.07,
+      "exit_price": 350.91,
+      "hold_days": 5,
+      "gross_pnl": -200.57,
+      "charges": 64.0,
+      "net_pnl": -264.56,
+      "net_pnl_pct": -2.63,
+      "exit_reason": "rebalance",
+      "mfe": 138.79,
+      "mae": -585.99,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-07-15",
+      "exit_date": "2025-07-22",
+      "qty": 26,
+      "entry_price": 351.75,
+      "exit_price": 342.8,
+      "hold_days": 5,
+      "gross_pnl": -232.86,
+      "charges": 59.89,
+      "net_pnl": -292.75,
+      "net_pnl_pct": -3.19,
+      "exit_reason": "rebalance",
+      "mfe": 106.18,
+      "mae": -290.76,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "AIIL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-24",
+      "exit_date": "2025-07-25",
+      "qty": 16,
+      "entry_price": 533.62,
+      "exit_price": 460.18,
+      "hold_days": 23,
+      "gross_pnl": -1175.08,
+      "charges": 55.02,
+      "net_pnl": -1230.09,
+      "net_pnl_pct": -14.37,
+      "exit_reason": "stop",
+      "mfe": 729.28,
+      "mae": -1286.72,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MFSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-24",
+      "exit_date": "2025-08-01",
+      "qty": 9,
+      "entry_price": 1620.34,
+      "exit_price": 1478.7,
+      "hold_days": 28,
+      "gross_pnl": -1274.75,
+      "charges": 82.5,
+      "net_pnl": -1357.25,
+      "net_pnl_pct": -9.29,
+      "exit_reason": "stop",
+      "mfe": 419.04,
+      "mae": -1374.66,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CEATLTD.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-24",
+      "exit_date": "2025-08-04",
+      "qty": 3,
+      "entry_price": 3494.01,
+      "exit_price": 3067.57,
+      "hold_days": 29,
+      "gross_pnl": -1279.3,
+      "charges": 63.7,
+      "net_pnl": -1342.99,
+      "net_pnl_pct": -12.78,
+      "exit_reason": "stop",
+      "mfe": 1415.15,
+      "mae": -1270.25,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "DIVISLAB.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-08",
+      "exit_date": "2025-08-08",
+      "qty": 1,
+      "entry_price": 5916.21,
+      "exit_price": 5883.14,
+      "hold_days": 66,
+      "gross_pnl": -33.07,
+      "charges": 45.54,
+      "net_pnl": -78.61,
+      "net_pnl_pct": -1.33,
+      "exit_reason": "rebalance",
+      "mfe": 1094.33,
+      "mae": -125.07,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ACUTAAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-07-11",
+      "exit_date": "2025-08-08",
+      "qty": 7,
+      "entry_price": 1146.61,
+      "exit_price": 1277.86,
+      "hold_days": 20,
+      "gross_pnl": 918.77,
+      "charges": 57.31,
+      "net_pnl": 861.46,
+      "net_pnl_pct": 10.71,
+      "exit_reason": "rebalance",
+      "mfe": 1612.02,
+      "mae": -159.28,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BLUEJET.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-08-11",
+      "qty": 4,
+      "entry_price": 740.44,
+      "exit_price": 796.07,
+      "hold_days": 79,
+      "gross_pnl": 222.54,
+      "charges": 37.11,
+      "net_pnl": 185.43,
+      "net_pnl_pct": 6.24,
+      "exit_reason": "rebalance",
+      "mfe": 1133.66,
+      "mae": -252.2,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CEATLTD.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-04",
+      "exit_date": "2025-08-11",
+      "qty": 1,
+      "entry_price": 3186.8,
+      "exit_price": 3084.57,
+      "hold_days": 5,
+      "gross_pnl": -102.23,
+      "charges": 37.28,
+      "net_pnl": -139.5,
+      "net_pnl_pct": -4.36,
+      "exit_reason": "rebalance",
+      "mfe": 18.34,
+      "mae": -113.17,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BLUEJET.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-11",
+      "exit_date": "2025-08-19",
+      "qty": 5,
+      "entry_price": 797.99,
+      "exit_price": 777.67,
+      "hold_days": 5,
+      "gross_pnl": -101.6,
+      "charges": 39.06,
+      "net_pnl": -140.66,
+      "net_pnl_pct": -3.52,
+      "exit_reason": "rebalance",
+      "mfe": 17.11,
+      "mae": -202.05,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "DIVISLAB.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-13",
+      "exit_date": "2025-08-21",
+      "qty": 1,
+      "entry_price": 6082.74,
+      "exit_price": 5996.04,
+      "hold_days": 5,
+      "gross_pnl": -86.7,
+      "charges": 46.18,
+      "net_pnl": -132.88,
+      "net_pnl_pct": -2.18,
+      "exit_reason": "rebalance",
+      "mfe": 103.25,
+      "mae": -154.69,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-05",
+      "exit_date": "2025-08-26",
+      "qty": 27,
+      "entry_price": 349.01,
+      "exit_price": 345.97,
+      "hold_days": 14,
+      "gross_pnl": -81.97,
+      "charges": 61.5,
+      "net_pnl": -143.47,
+      "net_pnl_pct": -1.52,
+      "exit_reason": "rebalance",
+      "mfe": 654.58,
+      "mae": -290.06,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CEATLTD.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-13",
+      "exit_date": "2025-08-26",
+      "qty": 2,
+      "entry_price": 3130.34,
+      "exit_price": 3004.98,
+      "hold_days": 8,
+      "gross_pnl": -250.72,
+      "charges": 46.63,
+      "net_pnl": -297.35,
+      "net_pnl_pct": -4.74,
+      "exit_reason": "rebalance",
+      "mfe": 322.13,
+      "mae": -320.31,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BLUEJET.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-19",
+      "exit_date": "2025-08-26",
+      "qty": 5,
+      "entry_price": 779.53,
+      "exit_price": 703.84,
+      "hold_days": 5,
+      "gross_pnl": -378.47,
+      "charges": 38.57,
+      "net_pnl": -417.04,
+      "net_pnl_pct": -10.67,
+      "exit_reason": "rebalance",
+      "mfe": 32.21,
+      "mae": -394.9,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "DIVISLAB.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-22",
+      "exit_date": "2025-09-05",
+      "qty": 1,
+      "entry_price": 6133.59,
+      "exit_price": 5977.14,
+      "hold_days": 9,
+      "gross_pnl": -156.45,
+      "charges": 46.26,
+      "net_pnl": -202.71,
+      "net_pnl_pct": -3.3,
+      "exit_reason": "rebalance",
+      "mfe": 154.98,
+      "mae": -155.74,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-01",
+      "exit_date": "2025-09-08",
+      "qty": 20,
+      "entry_price": 351.41,
+      "exit_price": 336.49,
+      "hold_days": 5,
+      "gross_pnl": -298.35,
+      "charges": 50.04,
+      "net_pnl": -348.4,
+      "net_pnl_pct": -4.95,
+      "exit_reason": "rebalance",
+      "mfe": 252.89,
+      "mae": -308.85,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GODFRYPHLP.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-09-23",
+      "qty": 1,
+      "entry_price": 2460.85,
+      "exit_price": 3277.29,
+      "hold_days": 108,
+      "gross_pnl": 816.44,
+      "charges": 36.62,
+      "net_pnl": 779.82,
+      "net_pnl_pct": 31.58,
+      "exit_reason": "rebalance",
+      "mfe": 1407.43,
+      "mae": -33.17,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BSE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-09-23",
+      "qty": 1,
+      "entry_price": 2085.43,
+      "exit_price": 2114.08,
+      "hold_days": 108,
+      "gross_pnl": 28.65,
+      "charges": 34.96,
+      "net_pnl": -6.31,
+      "net_pnl_pct": -0.3,
+      "exit_reason": "rebalance",
+      "mfe": 936.61,
+      "mae": -39.79,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "DEEPAKFERT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-05-15",
+      "exit_date": "2025-09-23",
+      "qty": 5,
+      "entry_price": 1328.18,
+      "exit_price": 1506.5,
+      "hold_days": 91,
+      "gross_pnl": 891.62,
+      "charges": 50.9,
+      "net_pnl": 840.72,
+      "net_pnl_pct": 12.63,
+      "exit_reason": "rebalance",
+      "mfe": 2129.05,
+      "mae": -302.83,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-24",
+      "exit_date": "2025-09-23",
+      "qty": 8,
+      "entry_price": 1896.01,
+      "exit_price": 1912.31,
+      "hold_days": 63,
+      "gross_pnl": 130.38,
+      "charges": 88.29,
+      "net_pnl": 42.09,
+      "net_pnl_pct": 0.28,
+      "exit_reason": "rebalance",
+      "mfe": 860.9,
+      "mae": -586.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CARTRADE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-27",
+      "exit_date": "2025-09-23",
+      "qty": 5,
+      "entry_price": 1605.12,
+      "exit_price": 2401.91,
+      "hold_days": 60,
+      "gross_pnl": 3983.95,
+      "charges": 64.11,
+      "net_pnl": 3919.85,
+      "net_pnl_pct": 48.73,
+      "exit_reason": "rebalance",
+      "mfe": 5749.4,
+      "mae": -25.6,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MFSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-01",
+      "exit_date": "2025-09-23",
+      "qty": 10,
+      "entry_price": 1474.27,
+      "exit_price": 1582.6,
+      "hold_days": 35,
+      "gross_pnl": 1083.32,
+      "charges": 88.45,
+      "net_pnl": 994.86,
+      "net_pnl_pct": 6.73,
+      "exit_reason": "rebalance",
+      "mfe": 2005.3,
+      "mae": -231.7,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CEATLTD.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-01",
+      "exit_date": "2025-09-23",
+      "qty": 2,
+      "entry_price": 3174.74,
+      "exit_price": 3435.37,
+      "hold_days": 16,
+      "gross_pnl": 521.25,
+      "charges": 48.75,
+      "net_pnl": 472.5,
+      "net_pnl_pct": 7.42,
+      "exit_reason": "rebalance",
+      "mfe": 748.07,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FSL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-11",
+      "exit_date": "2025-09-23",
+      "qty": 23,
+      "entry_price": 357.98,
+      "exit_price": 353.65,
+      "hold_days": 8,
+      "gross_pnl": -99.55,
+      "charges": 56.01,
+      "net_pnl": -155.56,
+      "net_pnl_pct": -1.88,
+      "exit_reason": "rebalance",
+      "mfe": 313.03,
+      "mae": -128.14,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "DIVISLAB.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-16",
+      "exit_date": "2025-09-23",
+      "qty": 2,
+      "entry_price": 6081.74,
+      "exit_price": 6018.92,
+      "hold_days": 5,
+      "gross_pnl": -125.64,
+      "charges": 73.96,
+      "net_pnl": -199.6,
+      "net_pnl_pct": -1.64,
+      "exit_reason": "rebalance",
+      "mfe": 344.94,
+      "mae": -199.81,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LLOYDSME.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2025-09-30",
+      "qty": 8,
+      "entry_price": 1318.79,
+      "exit_price": 1222.8,
+      "hold_days": 5,
+      "gross_pnl": -767.96,
+      "charges": 65.14,
+      "net_pnl": -833.1,
+      "net_pnl_pct": -7.88,
+      "exit_reason": "rebalance",
+      "mfe": 188.86,
+      "mae": -945.66,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LLOYDSME.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-10-09",
+      "exit_date": "2025-10-16",
+      "qty": 6,
+      "entry_price": 1350.91,
+      "exit_price": 1320.22,
+      "hold_days": 5,
+      "gross_pnl": -184.14,
+      "charges": 55.24,
+      "net_pnl": -239.37,
+      "net_pnl_pct": -2.95,
+      "exit_reason": "rebalance",
+      "mfe": 58.66,
+      "mae": -270.54,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LLOYDSME.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-10-21",
+      "exit_date": "2025-10-29",
+      "qty": 6,
+      "entry_price": 1351.41,
+      "exit_price": 1310.04,
+      "hold_days": 5,
+      "gross_pnl": -248.23,
+      "charges": 55.11,
+      "net_pnl": -303.34,
+      "net_pnl_pct": -3.73,
+      "exit_reason": "rebalance",
+      "mfe": 52.66,
+      "mae": -277.74,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ERIS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2025-11-13",
+      "qty": 10,
+      "entry_price": 1628.12,
+      "exit_price": 1508.18,
+      "hold_days": 34,
+      "gross_pnl": -1199.4,
+      "charges": 90.45,
+      "net_pnl": -1289.86,
+      "net_pnl_pct": -7.9,
+      "exit_reason": "rebalance",
+      "mfe": 230.2,
+      "mae": -1298.6,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GABRIEL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2025-11-17",
+      "qty": 4,
+      "entry_price": 1286.06,
+      "exit_price": 1052.86,
+      "hold_days": 36,
+      "gross_pnl": -932.82,
+      "charges": 40.93,
+      "net_pnl": -973.75,
+      "net_pnl_pct": -18.88,
+      "exit_reason": "stop",
+      "mfe": 386.31,
+      "mae": -1105.51,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PARADEEP.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-06-24",
+      "exit_date": "2025-11-21",
+      "qty": 47,
+      "entry_price": 162.12,
+      "exit_price": 152.08,
+      "hold_days": 103,
+      "gross_pnl": -472.0,
+      "charges": 52.37,
+      "net_pnl": -524.37,
+      "net_pnl_pct": -6.87,
+      "exit_reason": "rebalance",
+      "mfe": 3239.32,
+      "mae": -498.43,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ERIS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-11-14",
+      "exit_date": "2025-11-28",
+      "qty": 8,
+      "entry_price": 1543.98,
+      "exit_price": 1584.98,
+      "hold_days": 10,
+      "gross_pnl": 328.04,
+      "charges": 75.83,
+      "net_pnl": 252.21,
+      "net_pnl_pct": 2.04,
+      "exit_reason": "rebalance",
+      "mfe": 1175.57,
+      "mae": -39.51,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FORTIS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2025-12-04",
+      "qty": 17,
+      "entry_price": 967.83,
+      "exit_price": 890.63,
+      "hold_days": 49,
+      "gross_pnl": -1312.48,
+      "charges": 90.99,
+      "net_pnl": -1403.47,
+      "net_pnl_pct": -8.51,
+      "exit_reason": "stop",
+      "mfe": 2300.1,
+      "mae": -1432.54,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PARADEEP.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-11-28",
+      "exit_date": "2025-12-05",
+      "qty": 42,
+      "entry_price": 157.23,
+      "exit_price": 152.52,
+      "hold_days": 5,
+      "gross_pnl": -197.78,
+      "charges": 48.33,
+      "net_pnl": -246.1,
+      "net_pnl_pct": -3.72,
+      "exit_reason": "rebalance",
+      "mfe": 350.13,
+      "mae": -257.08,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ERIS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-11-28",
+      "exit_date": "2025-12-05",
+      "qty": 6,
+      "entry_price": 1588.79,
+      "exit_price": 1541.57,
+      "hold_days": 5,
+      "gross_pnl": -283.34,
+      "charges": 61.56,
+      "net_pnl": -344.9,
+      "net_pnl_pct": -3.61,
+      "exit_reason": "rebalance",
+      "mfe": 38.7,
+      "mae": -311.62,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ERIS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-09",
+      "exit_date": "2025-12-16",
+      "qty": 3,
+      "entry_price": 1694.25,
+      "exit_price": 1546.63,
+      "hold_days": 5,
+      "gross_pnl": -442.85,
+      "charges": 41.24,
+      "net_pnl": -484.09,
+      "net_pnl_pct": -9.5,
+      "exit_reason": "rebalance",
+      "mfe": 0.0,
+      "mae": -458.17,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CHOICEIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-04-21",
+      "exit_date": "2025-12-24",
+      "qty": 11,
+      "entry_price": 556.92,
+      "exit_price": 813.47,
+      "hold_days": 171,
+      "gross_pnl": 2822.11,
+      "charges": 52.83,
+      "net_pnl": 2769.28,
+      "net_pnl_pct": 45.1,
+      "exit_reason": "rebalance",
+      "mfe": 3124.88,
+      "mae": -9.02,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "AIIL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-07-25",
+      "exit_date": "2025-12-24",
+      "qty": 8,
+      "entry_price": 548.82,
+      "exit_price": 583.66,
+      "hold_days": 103,
+      "gross_pnl": 278.73,
+      "charges": 40.35,
+      "net_pnl": 238.38,
+      "net_pnl_pct": 5.42,
+      "exit_reason": "rebalance",
+      "mfe": 919.36,
+      "mae": -397.76,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ANURAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2025-12-24",
+      "qty": 15,
+      "entry_price": 1094.51,
+      "exit_price": 1319.41,
+      "hold_days": 63,
+      "gross_pnl": 3373.54,
+      "charges": 101.21,
+      "net_pnl": 3272.33,
+      "net_pnl_pct": 19.88,
+      "exit_reason": "rebalance",
+      "mfe": 3772.35,
+      "mae": -739.65,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PAYTM.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2025-12-24",
+      "qty": 7,
+      "entry_price": 1180.82,
+      "exit_price": 1323.11,
+      "hold_days": 63,
+      "gross_pnl": 996.06,
+      "charges": 58.59,
+      "net_pnl": 937.48,
+      "net_pnl_pct": 11.31,
+      "exit_reason": "rebalance",
+      "mfe": 1406.86,
+      "mae": -583.94,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ANANDRATHI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2025-12-24",
+      "qty": 8,
+      "entry_price": 1482.5,
+      "exit_price": 1526.42,
+      "hold_days": 63,
+      "gross_pnl": 351.36,
+      "charges": 73.62,
+      "net_pnl": 277.74,
+      "net_pnl_pct": 2.34,
+      "exit_reason": "rebalance",
+      "mfe": 1373.95,
+      "mae": -862.92,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GVT&D.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2025-12-24",
+      "qty": 3,
+      "entry_price": 2992.59,
+      "exit_price": 3151.7,
+      "hold_days": 63,
+      "gross_pnl": 477.34,
+      "charges": 60.69,
+      "net_pnl": 416.64,
+      "net_pnl_pct": 4.63,
+      "exit_reason": "rebalance",
+      "mfe": 969.01,
+      "mae": -909.44,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GABRIEL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-11-17",
+      "exit_date": "2025-12-24",
+      "qty": 4,
+      "entry_price": 1020.37,
+      "exit_price": 1044.48,
+      "hold_days": 27,
+      "gross_pnl": 96.45,
+      "charges": 39.47,
+      "net_pnl": 56.98,
+      "net_pnl_pct": 1.39,
+      "exit_reason": "rebalance",
+      "mfe": 508.62,
+      "mae": -479.73,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "FORTIS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-04",
+      "exit_date": "2025-12-24",
+      "qty": 15,
+      "entry_price": 888.67,
+      "exit_price": 900.66,
+      "hold_days": 14,
+      "gross_pnl": 179.82,
+      "charges": 79.98,
+      "net_pnl": 99.84,
+      "net_pnl_pct": 0.75,
+      "exit_reason": "rebalance",
+      "mfe": 409.62,
+      "mae": -662.49,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ABDL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-01-07",
+      "qty": 15,
+      "entry_price": 616.85,
+      "exit_price": 541.74,
+      "hold_days": 9,
+      "gross_pnl": -1126.73,
+      "charges": 58.4,
+      "net_pnl": -1185.13,
+      "net_pnl_pct": -12.78,
+      "exit_reason": "stop",
+      "mfe": 0.0,
+      "mae": -1457.25,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ABDL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-01-07",
+      "exit_date": "2026-01-14",
+      "qty": 3,
+      "entry_price": 527.97,
+      "exit_price": 470.51,
+      "hold_days": 5,
+      "gross_pnl": -172.38,
+      "charges": 33.64,
+      "net_pnl": -206.03,
+      "net_pnl_pct": -12.94,
+      "exit_reason": "rebalance",
+      "mfe": 9.99,
+      "mae": -177.39,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MARUTI.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-01-16",
+      "qty": 1,
+      "entry_price": 16556.76,
+      "exit_price": 15640.87,
+      "hold_days": 16,
+      "gross_pnl": -915.89,
+      "charges": 92.34,
+      "net_pnl": -1008.24,
+      "net_pnl_pct": -6.08,
+      "exit_reason": "stop",
+      "mfe": 640.53,
+      "mae": -943.56,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HEROMOTOCO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-01-07",
+      "exit_date": "2026-01-22",
+      "qty": 1,
+      "entry_price": 5788.54,
+      "exit_price": 5297.78,
+      "hold_days": 11,
+      "gross_pnl": -490.76,
+      "charges": 43.94,
+      "net_pnl": -534.71,
+      "net_pnl_pct": -9.22,
+      "exit_reason": "stop",
+      "mfe": 0.0,
+      "mae": -505.25,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-01-16",
+      "exit_date": "2026-01-23",
+      "qty": 8,
+      "entry_price": 1452.93,
+      "exit_price": 1378.07,
+      "hold_days": 5,
+      "gross_pnl": -598.93,
+      "charges": 70.43,
+      "net_pnl": -669.36,
+      "net_pnl_pct": -5.75,
+      "exit_reason": "rebalance",
+      "mfe": 0.0,
+      "mae": -689.99,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "NYKAA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-01-27",
+      "qty": 59,
+      "entry_price": 258.26,
+      "exit_price": 232.06,
+      "hold_days": 22,
+      "gross_pnl": -1545.7,
+      "charges": 84.89,
+      "net_pnl": -1630.59,
+      "net_pnl_pct": -10.68,
+      "exit_reason": "stop",
+      "mfe": 866.71,
+      "mae": -1549.34,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CARTRADE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-01-07",
+      "exit_date": "2026-01-28",
+      "qty": 1,
+      "entry_price": 2816.18,
+      "exit_price": 2322.21,
+      "hold_days": 14,
+      "gross_pnl": -493.97,
+      "charges": 36.05,
+      "net_pnl": -530.02,
+      "net_pnl_pct": -18.76,
+      "exit_reason": "stop",
+      "mfe": 43.52,
+      "mae": -550.98,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LTF.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-02-02",
+      "qty": 40,
+      "entry_price": 300.52,
+      "exit_price": 270.41,
+      "hold_days": 26,
+      "gross_pnl": -1204.59,
+      "charges": 70.91,
+      "net_pnl": -1275.5,
+      "net_pnl_pct": -10.59,
+      "exit_reason": "stop",
+      "mfe": 1022.91,
+      "mae": -1370.45,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MUTHOOTFIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-02-02",
+      "qty": 3,
+      "entry_price": 3777.33,
+      "exit_price": 3479.96,
+      "hold_days": 26,
+      "gross_pnl": -892.1,
+      "charges": 68.45,
+      "net_pnl": -960.55,
+      "net_pnl_pct": -8.46,
+      "exit_reason": "stop",
+      "mfe": 1012.13,
+      "mae": -1186.28,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "EICHERMOT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-02-02",
+      "qty": 2,
+      "entry_price": 7245.4,
+      "exit_price": 6747.45,
+      "hold_days": 26,
+      "gross_pnl": -995.89,
+      "charges": 82.7,
+      "net_pnl": -1078.59,
+      "net_pnl_pct": -7.43,
+      "exit_reason": "stop",
+      "mfe": 578.4,
+      "mae": -1154.46,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CARTRADE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-01-28",
+      "exit_date": "2026-02-05",
+      "qty": 2,
+      "entry_price": 2409.79,
+      "exit_price": 2299.24,
+      "hold_days": 6,
+      "gross_pnl": -221.1,
+      "charges": 40.79,
+      "net_pnl": -261.89,
+      "net_pnl_pct": -5.42,
+      "exit_reason": "rebalance",
+      "mfe": 550.62,
+      "mae": -772.18,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RELIANCE.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-02-04",
+      "exit_date": "2026-02-13",
+      "qty": 7,
+      "entry_price": 1451.84,
+      "exit_price": 1411.37,
+      "hold_days": 7,
+      "gross_pnl": -283.25,
+      "charges": 64.45,
+      "net_pnl": -347.7,
+      "net_pnl_pct": -3.41,
+      "exit_reason": "rebalance",
+      "mfe": 100.67,
+      "mae": -294.41,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ABDL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-02-03",
+      "exit_date": "2026-02-19",
+      "qty": 11,
+      "entry_price": 505.53,
+      "exit_price": 501.1,
+      "hold_days": 12,
+      "gross_pnl": -48.73,
+      "charges": 43.88,
+      "net_pnl": -92.6,
+      "net_pnl_pct": -1.66,
+      "exit_reason": "rebalance",
+      "mfe": 371.8,
+      "mae": -128.76,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "AUBANK.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-03-02",
+      "qty": 17,
+      "entry_price": 974.27,
+      "exit_price": 903.38,
+      "hold_days": 46,
+      "gross_pnl": -1205.1,
+      "charges": 91.73,
+      "net_pnl": -1296.83,
+      "net_pnl_pct": -7.81,
+      "exit_reason": "stop",
+      "mfe": 1086.67,
+      "mae": -1361.5,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MUTHOOTFIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-02-03",
+      "exit_date": "2026-03-11",
+      "qty": 1,
+      "entry_price": 3598.13,
+      "exit_price": 3133.61,
+      "hold_days": 25,
+      "gross_pnl": -464.52,
+      "charges": 37.82,
+      "net_pnl": -502.34,
+      "net_pnl_pct": -13.92,
+      "exit_reason": "rebalance",
+      "mfe": 450.54,
+      "mae": -543.56,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HEROMOTOCO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-01-22",
+      "exit_date": "2026-03-13",
+      "qty": 2,
+      "entry_price": 5311.89,
+      "exit_price": 5124.38,
+      "hold_days": 34,
+      "gross_pnl": -375.04,
+      "charges": 66.35,
+      "net_pnl": -441.39,
+      "net_pnl_pct": -4.14,
+      "exit_reason": "rebalance",
+      "mfe": 886.91,
+      "mae": -437.61,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "NYKAA.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-01-27",
+      "exit_date": "2026-03-13",
+      "qty": 48,
+      "entry_price": 236.78,
+      "exit_price": 237.86,
+      "hold_days": 32,
+      "gross_pnl": 51.86,
+      "charges": 70.69,
+      "net_pnl": -18.83,
+      "net_pnl_pct": -0.17,
+      "exit_reason": "rebalance",
+      "mfe": 2343.36,
+      "mae": -179.04,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "EICHERMOT.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-02-03",
+      "exit_date": "2026-03-13",
+      "qty": 1,
+      "entry_price": 7148.8,
+      "exit_price": 6663.14,
+      "hold_days": 27,
+      "gross_pnl": -485.66,
+      "charges": 50.19,
+      "net_pnl": -535.85,
+      "net_pnl_pct": -7.48,
+      "exit_reason": "rebalance",
+      "mfe": 995.91,
+      "mae": -547.92,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LTF.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-02-03",
+      "exit_date": "2026-03-23",
+      "qty": 29,
+      "entry_price": 282.14,
+      "exit_price": 244.83,
+      "hold_days": 33,
+      "gross_pnl": -1081.84,
+      "charges": 53.6,
+      "net_pnl": -1135.44,
+      "net_pnl_pct": -13.84,
+      "exit_reason": "rebalance",
+      "mfe": 730.68,
+      "mae": -1132.24,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ACUTAAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-08-08",
+      "exit_date": "2026-03-27",
+      "qty": 4,
+      "entry_price": 1280.93,
+      "exit_price": 2541.95,
+      "hold_days": 156,
+      "gross_pnl": 5044.05,
+      "charges": 53.15,
+      "net_pnl": 4990.9,
+      "net_pnl_pct": 97.18,
+      "exit_reason": "rebalance",
+      "mfe": 5196.28,
+      "mae": -84.05,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "LAURUSLABS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-09-23",
+      "exit_date": "2026-03-27",
+      "qty": 15,
+      "entry_price": 909.49,
+      "exit_price": 1006.59,
+      "hold_days": 126,
+      "gross_pnl": 1456.53,
+      "charges": 84.24,
+      "net_pnl": 1372.29,
+      "net_pnl_pct": 10.04,
+      "exit_reason": "rebalance",
+      "mfe": 3455.63,
+      "mae": -1318.3,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CHENNPETRO.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-03-27",
+      "qty": 13,
+      "entry_price": 807.38,
+      "exit_price": 911.32,
+      "hold_days": 63,
+      "gross_pnl": 1351.2,
+      "charges": 69.6,
+      "net_pnl": 1281.6,
+      "net_pnl_pct": 12.18,
+      "exit_reason": "rebalance",
+      "mfe": 3029.61,
+      "mae": -1035.22,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RBLBANK.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2025-12-24",
+      "exit_date": "2026-04-27",
+      "qty": 40,
+      "entry_price": 305.53,
+      "exit_price": 311.62,
+      "hold_days": 81,
+      "gross_pnl": 243.66,
+      "charges": 75.04,
+      "net_pnl": 168.62,
+      "net_pnl_pct": 1.38,
+      "exit_reason": "rebalance",
+      "mfe": 1359.64,
+      "mae": -762.87,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RBLBANK.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-05-12",
+      "qty": 20,
+      "entry_price": 336.08,
+      "exit_price": 324.02,
+      "hold_days": 7,
+      "gross_pnl": -241.25,
+      "charges": 48.77,
+      "net_pnl": -290.03,
+      "net_pnl_pct": -4.3,
+      "exit_reason": "rebalance",
+      "mfe": 258.33,
+      "mae": -256.34,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "SBIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-05-12",
+      "qty": 11,
+      "entry_price": 1050.79,
+      "exit_price": 951.14,
+      "hold_days": 7,
+      "gross_pnl": -1096.2,
+      "charges": 69.04,
+      "net_pnl": -1165.24,
+      "net_pnl_pct": -10.06,
+      "exit_reason": "stop",
+      "mfe": 413.51,
+      "mae": -1159.73,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ASHOKLEY.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-05-12",
+      "qty": 31,
+      "entry_price": 159.56,
+      "exit_price": 153.15,
+      "hold_days": 7,
+      "gross_pnl": -198.78,
+      "charges": 41.09,
+      "net_pnl": -239.87,
+      "net_pnl_pct": -4.84,
+      "exit_reason": "rebalance",
+      "mfe": 320.59,
+      "mae": -218.91,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PFOCUS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-05-18",
+      "qty": 18,
+      "entry_price": 310.32,
+      "exit_price": 242.38,
+      "hold_days": 11,
+      "gross_pnl": -1222.98,
+      "charges": 42.14,
+      "net_pnl": -1265.12,
+      "net_pnl_pct": -22.6,
+      "exit_reason": "stop",
+      "mfe": 143.64,
+      "mae": -1349.46,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "PFOCUS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-28",
+      "exit_date": "2026-06-10",
+      "qty": 24,
+      "entry_price": 240.14,
+      "exit_price": 227.01,
+      "hold_days": 9,
+      "gross_pnl": -315.14,
+      "charges": 44.21,
+      "net_pnl": -359.35,
+      "net_pnl_pct": -6.22,
+      "exit_reason": "rebalance",
+      "mfe": 289.2,
+      "mae": -519.36,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ANURAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-28",
+      "exit_date": "2026-06-11",
+      "qty": 12,
+      "entry_price": 1369.64,
+      "exit_price": 1256.49,
+      "hold_days": 10,
+      "gross_pnl": -1357.82,
+      "charges": 90.81,
+      "net_pnl": -1448.62,
+      "net_pnl_pct": -8.79,
+      "exit_reason": "rebalance",
+      "mfe": 0.0,
+      "mae": -1459.68,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "GVT&D.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-06-29",
+      "qty": 1,
+      "entry_price": 4460.52,
+      "exit_price": 4938.33,
+      "hold_days": 41,
+      "gross_pnl": 477.81,
+      "charges": 40.71,
+      "net_pnl": 437.1,
+      "net_pnl_pct": 9.77,
+      "exit_reason": "rebalance",
+      "mfe": 1175.53,
+      "mae": -239.87,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "NETWEB.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-06-29",
+      "qty": 1,
+      "entry_price": 4067.14,
+      "exit_price": 4446.68,
+      "hold_days": 41,
+      "gross_pnl": 379.54,
+      "charges": 39.73,
+      "net_pnl": 339.81,
+      "net_pnl_pct": 8.33,
+      "exit_reason": "rebalance",
+      "mfe": 1173.59,
+      "mae": -398.33,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "CCL.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-06-29",
+      "qty": 8,
+      "entry_price": 1133.3,
+      "exit_price": 1160.17,
+      "hold_days": 41,
+      "gross_pnl": 214.92,
+      "charges": 60.52,
+      "net_pnl": 154.4,
+      "net_pnl_pct": 1.7,
+      "exit_reason": "rebalance",
+      "mfe": 795.72,
+      "mae": -745.58,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "KIRLOSENG.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-06-29",
+      "qty": 4,
+      "entry_price": 1696.65,
+      "exit_price": 2433.03,
+      "hold_days": 41,
+      "gross_pnl": 2945.51,
+      "charges": 56.13,
+      "net_pnl": 2889.38,
+      "net_pnl_pct": 42.47,
+      "exit_reason": "rebalance",
+      "mfe": 4070.44,
+      "mae": -655.16,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "TORNTPHARM.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-06-29",
+      "qty": 3,
+      "entry_price": 4181.81,
+      "exit_price": 4652.01,
+      "hold_days": 41,
+      "gross_pnl": 1410.59,
+      "charges": 79.12,
+      "net_pnl": 1331.47,
+      "net_pnl_pct": 10.59,
+      "exit_reason": "rebalance",
+      "mfe": 1683.27,
+      "mae": 0.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "RBLBANK.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-28",
+      "exit_date": "2026-06-29",
+      "qty": 24,
+      "entry_price": 347.77,
+      "exit_price": 362.43,
+      "hold_days": 22,
+      "gross_pnl": 351.78,
+      "charges": 57.53,
+      "net_pnl": 294.26,
+      "net_pnl_pct": 3.52,
+      "exit_reason": "rebalance",
+      "mfe": 790.66,
+      "mae": -375.12,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "HINDCOPPER.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-07-02",
+      "qty": 15,
+      "entry_price": 535.49,
+      "exit_price": 494.36,
+      "hold_days": 44,
+      "gross_pnl": -617.04,
+      "charges": 53.94,
+      "net_pnl": -670.98,
+      "net_pnl_pct": -8.33,
+      "exit_reason": "rebalance",
+      "mfe": 1239.15,
+      "mae": -755.1,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "SBIN.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-06-26",
+      "exit_date": "2026-07-03",
+      "qty": 15,
+      "entry_price": 1046.65,
+      "exit_price": 1038.75,
+      "hold_days": 5,
+      "gross_pnl": -118.54,
+      "charges": 90.18,
+      "net_pnl": -208.72,
+      "net_pnl_pct": -1.33,
+      "exit_reason": "rebalance",
+      "mfe": 197.25,
+      "mae": -324.0,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "ANURAS.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-06-26",
+      "exit_date": "2026-07-03",
+      "qty": 3,
+      "entry_price": 1276.63,
+      "exit_price": 1268.38,
+      "hold_days": 5,
+      "gross_pnl": -24.76,
+      "charges": 38.78,
+      "net_pnl": -63.54,
+      "net_pnl_pct": -1.65,
+      "exit_reason": "rebalance",
+      "mfe": 21.21,
+      "mae": -64.89,
+      "entry_signals": [
+        "momentum"
+      ]
+    },
+    {
+      "symbol": "MCX.NS",
+      "sleeve": "long_term",
+      "strategy": "momentum",
+      "entry_date": "2026-05-01",
+      "exit_date": "2026-07-07",
+      "qty": 3,
+      "entry_price": 2967.79,
+      "exit_price": 2629.36,
+      "hold_days": 47,
+      "gross_pnl": -1015.3,
+      "charges": 57.05,
+      "net_pnl": -1072.35,
+      "net_pnl_pct": -12.02,
+      "exit_reason": "stop",
+      "mfe": 1511.11,
+      "mae": -1189.77,
+      "entry_signals": [
+        "momentum"
+      ]
+    }
+  ],
+  "equity_history": [
+    [
+      "2023-09-06",
+      99640.91
+    ],
+    [
+      "2023-09-07",
+      100591.88
+    ],
+    [
+      "2023-09-08",
+      102702.3
+    ],
+    [
+      "2023-09-11",
+      104771.73
+    ],
+    [
+      "2023-09-12",
+      99088.03
+    ],
+    [
+      "2023-09-13",
+      99580.71
+    ],
+    [
+      "2023-09-14",
+      100740.24
+    ],
+    [
+      "2023-09-15",
+      101330.81
+    ],
+    [
+      "2023-09-18",
+      101223.07
+    ],
+    [
+      "2023-09-20",
+      101107.11
+    ],
+    [
+      "2023-09-21",
+      99727.19
+    ],
+    [
+      "2023-09-22",
+      100646.54
+    ],
+    [
+      "2023-09-25",
+      100491.66
+    ],
+    [
+      "2023-09-26",
+      100242.01
+    ],
+    [
+      "2023-09-27",
+      102573.77
+    ],
+    [
+      "2023-09-28",
+      102150.55
+    ],
+    [
+      "2023-09-29",
+      103488.02
+    ],
+    [
+      "2023-10-03",
+      103388.44
+    ],
+    [
+      "2023-10-04",
+      101892.3
+    ],
+    [
+      "2023-10-05",
+      101885.85
+    ],
+    [
+      "2023-10-06",
+      102457.08
+    ],
+    [
+      "2023-10-09",
+      100219.08
+    ],
+    [
+      "2023-10-10",
+      101555.67
+    ],
+    [
+      "2023-10-11",
+      102942.2
+    ],
+    [
+      "2023-10-12",
+      103766.61
+    ],
+    [
+      "2023-10-13",
+      103886.04
+    ],
+    [
+      "2023-10-16",
+      104317.73
+    ],
+    [
+      "2023-10-17",
+      104975.58
+    ],
+    [
+      "2023-10-18",
+      104354.96
+    ],
+    [
+      "2023-10-19",
+      104300.99
+    ],
+    [
+      "2023-10-20",
+      104074.79
+    ],
+    [
+      "2023-10-23",
+      100952.3
+    ],
+    [
+      "2023-10-25",
+      99367.27
+    ],
+    [
+      "2023-10-26",
+      98920.0
+    ],
+    [
+      "2023-10-27",
+      101202.27
+    ],
+    [
+      "2023-10-30",
+      101987.24
+    ],
+    [
+      "2023-10-31",
+      103199.38
+    ],
+    [
+      "2023-11-01",
+      103342.45
+    ],
+    [
+      "2023-11-02",
+      105446.27
+    ],
+    [
+      "2023-11-03",
+      106577.7
+    ],
+    [
+      "2023-11-06",
+      107371.55
+    ],
+    [
+      "2023-11-07",
+      108131.96
+    ],
+    [
+      "2023-11-08",
+      109594.74
+    ],
+    [
+      "2023-11-09",
+      109598.72
+    ],
+    [
+      "2023-11-10",
+      111402.24
+    ],
+    [
+      "2023-11-13",
+      112498.01
+    ],
+    [
+      "2023-11-15",
+      113184.11
+    ],
+    [
+      "2023-11-16",
+      113165.13
+    ],
+    [
+      "2023-11-17",
+      114447.0
+    ],
+    [
+      "2023-11-20",
+      115086.81
+    ],
+    [
+      "2023-11-21",
+      115061.11
+    ],
+    [
+      "2023-11-22",
+      114325.8
+    ],
+    [
+      "2023-11-23",
+      114105.72
+    ],
+    [
+      "2023-11-24",
+      114768.41
+    ],
+    [
+      "2023-11-28",
+      114566.13
+    ],
+    [
+      "2023-11-29",
+      115252.07
+    ],
+    [
+      "2023-11-30",
+      116444.32
+    ],
+    [
+      "2023-12-01",
+      118202.14
+    ],
+    [
+      "2023-12-04",
+      119254.24
+    ],
+    [
+      "2023-12-05",
+      118900.18
+    ],
+    [
+      "2023-12-06",
+      119071.12
+    ],
+    [
+      "2023-12-07",
+      119006.41
+    ],
+    [
+      "2023-12-08",
+      118569.82
+    ],
+    [
+      "2023-12-11",
+      118372.87
+    ],
+    [
+      "2023-12-12",
+      118251.1
+    ],
+    [
+      "2023-12-13",
+      119341.31
+    ],
+    [
+      "2023-12-14",
+      120692.06
+    ],
+    [
+      "2023-12-15",
+      121849.1
+    ],
+    [
+      "2023-12-18",
+      123030.99
+    ],
+    [
+      "2023-12-19",
+      123800.54
+    ],
+    [
+      "2023-12-20",
+      119916.82
+    ],
+    [
+      "2023-12-21",
+      122392.98
+    ],
+    [
+      "2023-12-22",
+      122691.03
+    ],
+    [
+      "2023-12-26",
+      123357.04
+    ],
+    [
+      "2023-12-27",
+      123244.17
+    ],
+    [
+      "2023-12-28",
+      123197.95
+    ],
+    [
+      "2023-12-29",
+      124219.6
+    ],
+    [
+      "2024-01-01",
+      124967.5
+    ],
+    [
+      "2024-01-02",
+      125312.53
+    ],
+    [
+      "2024-01-03",
+      125164.48
+    ],
+    [
+      "2024-01-04",
+      125919.55
+    ],
+    [
+      "2024-01-05",
+      125933.34
+    ],
+    [
+      "2024-01-08",
+      126304.45
+    ],
+    [
+      "2024-01-09",
+      126732.32
+    ],
+    [
+      "2024-01-10",
+      126474.37
+    ],
+    [
+      "2024-01-11",
+      127581.49
+    ],
+    [
+      "2024-01-12",
+      128937.21
+    ],
+    [
+      "2024-01-15",
+      129657.02
+    ],
+    [
+      "2024-01-16",
+      132480.51
+    ],
+    [
+      "2024-01-17",
+      131570.87
+    ],
+    [
+      "2024-01-18",
+      131438.27
+    ],
+    [
+      "2024-01-19",
+      134790.81
+    ],
+    [
+      "2024-01-23",
+      133147.48
+    ],
+    [
+      "2024-01-24",
+      135607.15
+    ],
+    [
+      "2024-01-25",
+      137939.81
+    ],
+    [
+      "2024-01-29",
+      139054.09
+    ],
+    [
+      "2024-01-30",
+      138299.62
+    ],
+    [
+      "2024-01-31",
+      140700.48
+    ],
+    [
+      "2024-02-01",
+      139061.07
+    ],
+    [
+      "2024-02-02",
+      139449.8
+    ],
+    [
+      "2024-02-05",
+      138131.3
+    ],
+    [
+      "2024-02-06",
+      138640.83
+    ],
+    [
+      "2024-02-07",
+      138327.76
+    ],
+    [
+      "2024-02-08",
+      139055.08
+    ],
+    [
+      "2024-02-09",
+      137153.12
+    ],
+    [
+      "2024-02-12",
+      132960.53
+    ],
+    [
+      "2024-02-13",
+      134164.83
+    ],
+    [
+      "2024-02-14",
+      135643.21
+    ],
+    [
+      "2024-02-15",
+      138033.38
+    ],
+    [
+      "2024-02-16",
+      138521.37
+    ],
+    [
+      "2024-02-19",
+      138742.57
+    ],
+    [
+      "2024-02-20",
+      138500.56
+    ],
+    [
+      "2024-02-21",
+      137594.53
+    ],
+    [
+      "2024-02-22",
+      137722.14
+    ],
+    [
+      "2024-02-23",
+      138615.9
+    ],
+    [
+      "2024-02-26",
+      138552.18
+    ],
+    [
+      "2024-02-27",
+      138050.88
+    ],
+    [
+      "2024-02-28",
+      135538.99
+    ],
+    [
+      "2024-02-29",
+      138089.46
+    ],
+    [
+      "2024-03-01",
+      139217.1
+    ],
+    [
+      "2024-03-04",
+      140023.45
+    ],
+    [
+      "2024-03-05",
+      139751.51
+    ],
+    [
+      "2024-03-06",
+      137055.93
+    ],
+    [
+      "2024-03-07",
+      137575.24
+    ],
+    [
+      "2024-03-11",
+      134833.69
+    ],
+    [
+      "2024-03-12",
+      132428.77
+    ],
+    [
+      "2024-03-13",
+      125589.54
+    ],
+    [
+      "2024-03-14",
+      129334.44
+    ],
+    [
+      "2024-03-15",
+      129097.38
+    ],
+    [
+      "2024-03-18",
+      128931.66
+    ],
+    [
+      "2024-03-19",
+      127495.36
+    ],
+    [
+      "2024-03-20",
+      126876.11
+    ],
+    [
+      "2024-03-21",
+      129632.21
+    ],
+    [
+      "2024-03-22",
+      130258.3
+    ],
+    [
+      "2024-03-26",
+      130459.44
+    ],
+    [
+      "2024-03-27",
+      130826.87
+    ],
+    [
+      "2024-03-28",
+      131463.13
+    ],
+    [
+      "2024-04-01",
+      133794.92
+    ],
+    [
+      "2024-04-02",
+      135190.69
+    ],
+    [
+      "2024-04-03",
+      137481.87
+    ],
+    [
+      "2024-04-04",
+      138340.13
+    ],
+    [
+      "2024-04-05",
+      138461.81
+    ],
+    [
+      "2024-04-08",
+      137865.23
+    ],
+    [
+      "2024-04-09",
+      138042.71
+    ],
+    [
+      "2024-04-10",
+      137910.69
+    ],
+    [
+      "2024-04-12",
+      138050.86
+    ],
+    [
+      "2024-04-15",
+      136465.36
+    ],
+    [
+      "2024-04-16",
+      137910.37
+    ],
+    [
+      "2024-04-18",
+      138348.96
+    ],
+    [
+      "2024-04-19",
+      137653.09
+    ],
+    [
+      "2024-04-22",
+      139204.91
+    ],
+    [
+      "2024-04-23",
+      141253.91
+    ],
+    [
+      "2024-04-24",
+      141184.2
+    ],
+    [
+      "2024-04-25",
+      142139.3
+    ],
+    [
+      "2024-04-26",
+      143267.91
+    ],
+    [
+      "2024-04-29",
+      143185.87
+    ],
+    [
+      "2024-04-30",
+      143935.73
+    ],
+    [
+      "2024-05-02",
+      145513.42
+    ],
+    [
+      "2024-05-03",
+      145201.38
+    ],
+    [
+      "2024-05-06",
+      143826.78
+    ],
+    [
+      "2024-05-07",
+      142050.41
+    ],
+    [
+      "2024-05-08",
+      142776.43
+    ],
+    [
+      "2024-05-09",
+      140561.17
+    ],
+    [
+      "2024-05-10",
+      141410.1
+    ],
+    [
+      "2024-05-13",
+      139696.78
+    ],
+    [
+      "2024-05-14",
+      142566.47
+    ],
+    [
+      "2024-05-15",
+      143967.44
+    ],
+    [
+      "2024-05-16",
+      145480.76
+    ],
+    [
+      "2024-05-17",
+      147500.94
+    ],
+    [
+      "2024-05-21",
+      150226.85
+    ],
+    [
+      "2024-05-22",
+      150595.56
+    ],
+    [
+      "2024-05-23",
+      151017.25
+    ],
+    [
+      "2024-05-24",
+      150384.81
+    ],
+    [
+      "2024-05-27",
+      150193.37
+    ],
+    [
+      "2024-05-28",
+      148508.41
+    ],
+    [
+      "2024-05-29",
+      149800.22
+    ],
+    [
+      "2024-05-30",
+      148534.83
+    ],
+    [
+      "2024-05-31",
+      150512.55
+    ],
+    [
+      "2024-06-03",
+      154513.37
+    ],
+    [
+      "2024-06-04",
+      144955.8
+    ],
+    [
+      "2024-06-05",
+      146019.06
+    ],
+    [
+      "2024-06-06",
+      147951.3
+    ],
+    [
+      "2024-06-07",
+      149276.37
+    ],
+    [
+      "2024-06-10",
+      150475.64
+    ],
+    [
+      "2024-06-11",
+      151590.27
+    ],
+    [
+      "2024-06-12",
+      153170.2
+    ],
+    [
+      "2024-06-13",
+      153714.71
+    ],
+    [
+      "2024-06-14",
+      154500.36
+    ],
+    [
+      "2024-06-18",
+      155027.47
+    ],
+    [
+      "2024-06-19",
+      153827.63
+    ],
+    [
+      "2024-06-20",
+      153854.7
+    ],
+    [
+      "2024-06-21",
+      154134.24
+    ],
+    [
+      "2024-06-24",
+      154797.04
+    ],
+    [
+      "2024-06-25",
+      154362.04
+    ],
+    [
+      "2024-06-26",
+      154290.25
+    ],
+    [
+      "2024-06-27",
+      153922.19
+    ],
+    [
+      "2024-06-28",
+      155418.81
+    ],
+    [
+      "2024-07-01",
+      157725.88
+    ],
+    [
+      "2024-07-02",
+      158042.95
+    ],
+    [
+      "2024-07-03",
+      158968.5
+    ],
+    [
+      "2024-07-04",
+      160011.22
+    ],
+    [
+      "2024-07-05",
+      161127.32
+    ],
+    [
+      "2024-07-08",
+      161741.38
+    ],
+    [
+      "2024-07-09",
+      161294.68
+    ],
+    [
+      "2024-07-10",
+      161187.96
+    ],
+    [
+      "2024-07-11",
+      162357.95
+    ],
+    [
+      "2024-07-12",
+      162940.65
+    ],
+    [
+      "2024-07-15",
+      163268.64
+    ],
+    [
+      "2024-07-16",
+      162817.76
+    ],
+    [
+      "2024-07-18",
+      159735.32
+    ],
+    [
+      "2024-07-19",
+      156550.81
+    ],
+    [
+      "2024-07-22",
+      156881.96
+    ],
+    [
+      "2024-07-23",
+      155198.73
+    ],
+    [
+      "2024-07-24",
+      156717.22
+    ],
+    [
+      "2024-07-25",
+      155420.1
+    ],
+    [
+      "2024-07-26",
+      156408.84
+    ],
+    [
+      "2024-07-29",
+      158463.47
+    ],
+    [
+      "2024-07-30",
+      160409.93
+    ],
+    [
+      "2024-07-31",
+      161806.11
+    ],
+    [
+      "2024-08-01",
+      160829.39
+    ],
+    [
+      "2024-08-02",
+      160995.32
+    ],
+    [
+      "2024-08-05",
+      155710.01
+    ],
+    [
+      "2024-08-06",
+      153484.75
+    ],
+    [
+      "2024-08-07",
+      156946.82
+    ],
+    [
+      "2024-08-08",
+      157237.92
+    ],
+    [
+      "2024-08-09",
+      159947.9
+    ],
+    [
+      "2024-08-12",
+      160780.39
+    ],
+    [
+      "2024-08-13",
+      159386.26
+    ],
+    [
+      "2024-08-14",
+      159092.92
+    ],
+    [
+      "2024-08-16",
+      160750.35
+    ],
+    [
+      "2024-08-19",
+      162128.48
+    ],
+    [
+      "2024-08-20",
+      162952.14
+    ],
+    [
+      "2024-08-21",
+      162997.32
+    ],
+    [
+      "2024-08-22",
+      164186.21
+    ],
+    [
+      "2024-08-23",
+      166113.6
+    ],
+    [
+      "2024-08-26",
+      166253.0
+    ],
+    [
+      "2024-08-27",
+      168060.6
+    ],
+    [
+      "2024-08-28",
+      168444.46
+    ],
+    [
+      "2024-08-29",
+      167283.03
+    ],
+    [
+      "2024-08-30",
+      169128.08
+    ],
+    [
+      "2024-09-02",
+      168514.61
+    ],
+    [
+      "2024-09-03",
+      168368.35
+    ],
+    [
+      "2024-09-04",
+      168147.28
+    ],
+    [
+      "2024-09-05",
+      168921.63
+    ],
+    [
+      "2024-09-06",
+      166617.76
+    ],
+    [
+      "2024-09-09",
+      165447.33
+    ],
+    [
+      "2024-09-10",
+      167060.43
+    ],
+    [
+      "2024-09-11",
+      167249.15
+    ],
+    [
+      "2024-09-12",
+      168900.24
+    ],
+    [
+      "2024-09-13",
+      169922.01
+    ],
+    [
+      "2024-09-16",
+      170236.29
+    ],
+    [
+      "2024-09-17",
+      169558.89
+    ],
+    [
+      "2024-09-18",
+      168134.18
+    ],
+    [
+      "2024-09-19",
+      165943.01
+    ],
+    [
+      "2024-09-20",
+      170685.4
+    ],
+    [
+      "2024-09-23",
+      170378.07
+    ],
+    [
+      "2024-09-24",
+      170327.79
+    ],
+    [
+      "2024-09-25",
+      170811.79
+    ],
+    [
+      "2024-09-26",
+      170340.01
+    ],
+    [
+      "2024-09-27",
+      171453.94
+    ],
+    [
+      "2024-09-30",
+      170752.33
+    ],
+    [
+      "2024-10-01",
+      170217.34
+    ],
+    [
+      "2024-10-03",
+      167012.31
+    ],
+    [
+      "2024-10-04",
+      166003.5
+    ],
+    [
+      "2024-10-07",
+      161731.09
+    ],
+    [
+      "2024-10-08",
+      165700.41
+    ],
+    [
+      "2024-10-09",
+      167624.89
+    ],
+    [
+      "2024-10-10",
+      168534.74
+    ],
+    [
+      "2024-10-11",
+      168681.47
+    ],
+    [
+      "2024-10-14",
+      169220.2
+    ],
+    [
+      "2024-10-15",
+      170112.18
+    ],
+    [
+      "2024-10-16",
+      169520.7
+    ],
+    [
+      "2024-10-17",
+      168474.47
+    ],
+    [
+      "2024-10-18",
+      167863.43
+    ],
+    [
+      "2024-10-21",
+      165614.42
+    ],
+    [
+      "2024-10-22",
+      162006.52
+    ],
+    [
+      "2024-10-23",
+      162138.9
+    ],
+    [
+      "2024-10-24",
+      161252.1
+    ],
+    [
+      "2024-10-25",
+      158642.54
+    ],
+    [
+      "2024-10-28",
+      160181.63
+    ],
+    [
+      "2024-10-29",
+      161300.77
+    ],
+    [
+      "2024-10-30",
+      162183.57
+    ],
+    [
+      "2024-10-31",
+      164329.96
+    ],
+    [
+      "2024-11-01",
+      164974.44
+    ],
+    [
+      "2024-11-04",
+      162700.47
+    ],
+    [
+      "2024-11-05",
+      162630.07
+    ],
+    [
+      "2024-11-06",
+      164465.27
+    ],
+    [
+      "2024-11-07",
+      162746.35
+    ],
+    [
+      "2024-11-08",
+      160959.2
+    ],
+    [
+      "2024-11-11",
+      161438.91
+    ],
+    [
+      "2024-11-12",
+      160249.09
+    ],
+    [
+      "2024-11-13",
+      156469.56
+    ],
+    [
+      "2024-11-14",
+      156075.65
+    ],
+    [
+      "2024-11-18",
+      155899.13
+    ],
+    [
+      "2024-11-19",
+      157337.15
+    ],
+    [
+      "2024-11-21",
+      158140.27
+    ],
+    [
+      "2024-11-22",
+      159219.25
+    ],
+    [
+      "2024-11-25",
+      160167.2
+    ],
+    [
+      "2024-11-26",
+      158653.66
+    ],
+    [
+      "2024-11-27",
+      159513.62
+    ],
+    [
+      "2024-11-28",
+      158810.0
+    ],
+    [
+      "2024-11-29",
+      159247.76
+    ],
+    [
+      "2024-12-02",
+      159764.0
+    ],
+    [
+      "2024-12-03",
+      161196.7
+    ],
+    [
+      "2024-12-04",
+      161462.68
+    ],
+    [
+      "2024-12-05",
+      162211.05
+    ],
+    [
+      "2024-12-06",
+      162869.28
+    ],
+    [
+      "2024-12-09",
+      162809.15
+    ],
+    [
+      "2024-12-10",
+      162255.15
+    ],
+    [
+      "2024-12-11",
+      162534.49
+    ],
+    [
+      "2024-12-12",
+      162807.75
+    ],
+    [
+      "2024-12-13",
+      162088.23
+    ],
+    [
+      "2024-12-16",
+      163834.72
+    ],
+    [
+      "2024-12-17",
+      163259.72
+    ],
+    [
+      "2024-12-18",
+      162996.52
+    ],
+    [
+      "2024-12-19",
+      162574.51
+    ],
+    [
+      "2024-12-20",
+      159128.92
+    ],
+    [
+      "2024-12-23",
+      159365.13
+    ],
+    [
+      "2024-12-24",
+      158728.3
+    ],
+    [
+      "2024-12-26",
+      160007.75
+    ],
+    [
+      "2024-12-27",
+      161526.07
+    ],
+    [
+      "2024-12-30",
+      160341.92
+    ],
+    [
+      "2024-12-31",
+      160552.59
+    ],
+    [
+      "2025-01-01",
+      160879.8
+    ],
+    [
+      "2025-01-02",
+      162209.09
+    ],
+    [
+      "2025-01-03",
+      162241.67
+    ],
+    [
+      "2025-01-06",
+      159079.13
+    ],
+    [
+      "2025-01-07",
+      160278.0
+    ],
+    [
+      "2025-01-08",
+      158637.34
+    ],
+    [
+      "2025-01-09",
+      157442.35
+    ],
+    [
+      "2025-01-10",
+      155550.65
+    ],
+    [
+      "2025-01-13",
+      151396.81
+    ],
+    [
+      "2025-01-14",
+      151415.69
+    ],
+    [
+      "2025-01-15",
+      152457.65
+    ],
+    [
+      "2025-01-16",
+      153507.79
+    ],
+    [
+      "2025-01-17",
+      153706.77
+    ],
+    [
+      "2025-01-20",
+      153244.0
+    ],
+    [
+      "2025-01-21",
+      151486.22
+    ],
+    [
+      "2025-01-22",
+      150674.18
+    ],
+    [
+      "2025-01-23",
+      151206.07
+    ],
+    [
+      "2025-01-24",
+      150607.85
+    ],
+    [
+      "2025-01-27",
+      148528.19
+    ],
+    [
+      "2025-01-28",
+      146463.1
+    ],
+    [
+      "2025-01-29",
+      147597.96
+    ],
+    [
+      "2025-01-30",
+      147672.72
+    ],
+    [
+      "2025-01-31",
+      147794.83
+    ],
+    [
+      "2025-02-01",
+      147719.75
+    ],
+    [
+      "2025-02-03",
+      147201.4
+    ],
+    [
+      "2025-02-04",
+      147435.52
+    ],
+    [
+      "2025-02-05",
+      148557.11
+    ],
+    [
+      "2025-02-06",
+      148423.86
+    ],
+    [
+      "2025-02-07",
+      148608.74
+    ],
+    [
+      "2025-02-10",
+      148762.67
+    ],
+    [
+      "2025-02-11",
+      148670.04
+    ],
+    [
+      "2025-02-12",
+      148516.33
+    ],
+    [
+      "2025-02-13",
+      148900.78
+    ],
+    [
+      "2025-02-14",
+      148860.27
+    ],
+    [
+      "2025-02-17",
+      148277.19
+    ],
+    [
+      "2025-02-18",
+      148509.32
+    ],
+    [
+      "2025-02-19",
+      149010.6
+    ],
+    [
+      "2025-02-20",
+      149318.01
+    ],
+    [
+      "2025-02-21",
+      149410.52
+    ],
+    [
+      "2025-02-24",
+      149110.65
+    ],
+    [
+      "2025-02-25",
+      148909.77
+    ],
+    [
+      "2025-02-27",
+      148724.49
+    ],
+    [
+      "2025-02-28",
+      147989.64
+    ],
+    [
+      "2025-03-03",
+      148329.29
+    ],
+    [
+      "2025-03-04",
+      148747.45
+    ],
+    [
+      "2025-03-05",
+      149079.69
+    ],
+    [
+      "2025-03-06",
+      148792.42
+    ],
+    [
+      "2025-03-07",
+      148897.74
+    ],
+    [
+      "2025-03-10",
+      148412.96
+    ],
+    [
+      "2025-03-11",
+      148065.28
+    ],
+    [
+      "2025-03-12",
+      147481.04
+    ],
+    [
+      "2025-03-13",
+      147666.6
+    ],
+    [
+      "2025-03-17",
+      148030.64
+    ],
+    [
+      "2025-03-18",
+      148030.64
+    ],
+    [
+      "2025-03-19",
+      148123.69
+    ],
+    [
+      "2025-03-20",
+      148115.29
+    ],
+    [
+      "2025-03-21",
+      147763.28
+    ],
+    [
+      "2025-03-24",
+      147588.33
+    ],
+    [
+      "2025-03-25",
+      147684.53
+    ],
+    [
+      "2025-03-26",
+      147828.92
+    ],
+    [
+      "2025-03-27",
+      148030.58
+    ],
+    [
+      "2025-03-28",
+      148223.53
+    ],
+    [
+      "2025-04-01",
+      148754.93
+    ],
+    [
+      "2025-04-02",
+      148746.1
+    ],
+    [
+      "2025-04-03",
+      148235.67
+    ],
+    [
+      "2025-04-04",
+      147595.69
+    ],
+    [
+      "2025-04-07",
+      146934.4
+    ],
+    [
+      "2025-04-08",
+      147055.58
+    ],
+    [
+      "2025-04-09",
+      147371.93
+    ],
+    [
+      "2025-04-11",
+      148425.12
+    ],
+    [
+      "2025-04-15",
+      148621.66
+    ],
+    [
+      "2025-04-16",
+      149238.59
+    ],
+    [
+      "2025-04-17",
+      149156.45
+    ],
+    [
+      "2025-04-21",
+      149450.18
+    ],
+    [
+      "2025-04-22",
+      150081.68
+    ],
+    [
+      "2025-04-23",
+      149950.1
+    ],
+    [
+      "2025-04-24",
+      150938.21
+    ],
+    [
+      "2025-04-25",
+      149469.68
+    ],
+    [
+      "2025-04-28",
+      149065.47
+    ],
+    [
+      "2025-04-29",
+      149019.46
+    ],
+    [
+      "2025-04-30",
+      148218.62
+    ],
+    [
+      "2025-05-02",
+      148246.01
+    ],
+    [
+      "2025-05-05",
+      149126.72
+    ],
+    [
+      "2025-05-06",
+      148977.66
+    ],
+    [
+      "2025-05-07",
+      149257.58
+    ],
+    [
+      "2025-05-08",
+      148570.14
+    ],
+    [
+      "2025-05-09",
+      148594.04
+    ],
+    [
+      "2025-05-12",
+      148920.69
+    ],
+    [
+      "2025-05-13",
+      149994.13
+    ],
+    [
+      "2025-05-14",
+      150786.46
+    ],
+    [
+      "2025-05-15",
+      150501.44
+    ],
+    [
+      "2025-05-16",
+      150696.17
+    ],
+    [
+      "2025-05-19",
+      151749.55
+    ],
+    [
+      "2025-05-20",
+      150995.8
+    ],
+    [
+      "2025-05-21",
+      152036.76
+    ],
+    [
+      "2025-05-22",
+      151750.08
+    ],
+    [
+      "2025-05-23",
+      151944.62
+    ],
+    [
+      "2025-05-26",
+      153045.55
+    ],
+    [
+      "2025-05-27",
+      152594.23
+    ],
+    [
+      "2025-05-28",
+      153749.33
+    ],
+    [
+      "2025-05-29",
+      153939.08
+    ],
+    [
+      "2025-05-30",
+      154612.27
+    ],
+    [
+      "2025-06-02",
+      155157.24
+    ],
+    [
+      "2025-06-03",
+      155739.95
+    ],
+    [
+      "2025-06-04",
+      156503.65
+    ],
+    [
+      "2025-06-05",
+      157240.81
+    ],
+    [
+      "2025-06-06",
+      157885.75
+    ],
+    [
+      "2025-06-09",
+      158150.53
+    ],
+    [
+      "2025-06-10",
+      158926.19
+    ],
+    [
+      "2025-06-11",
+      159431.71
+    ],
+    [
+      "2025-06-12",
+      158533.44
+    ],
+    [
+      "2025-06-13",
+      159019.92
+    ],
+    [
+      "2025-06-16",
+      159083.4
+    ],
+    [
+      "2025-06-17",
+      158073.62
+    ],
+    [
+      "2025-06-18",
+      158303.49
+    ],
+    [
+      "2025-06-19",
+      156862.88
+    ],
+    [
+      "2025-06-20",
+      157823.55
+    ],
+    [
+      "2025-06-23",
+      157331.57
+    ],
+    [
+      "2025-06-24",
+      156996.21
+    ],
+    [
+      "2025-06-25",
+      158228.13
+    ],
+    [
+      "2025-06-26",
+      157996.35
+    ],
+    [
+      "2025-06-27",
+      158899.21
+    ],
+    [
+      "2025-06-30",
+      160025.25
+    ],
+    [
+      "2025-07-01",
+      159277.62
+    ],
+    [
+      "2025-07-02",
+      159332.01
+    ],
+    [
+      "2025-07-03",
+      160052.36
+    ],
+    [
+      "2025-07-04",
+      159599.78
+    ],
+    [
+      "2025-07-07",
+      159078.55
+    ],
+    [
+      "2025-07-08",
+      159537.75
+    ],
+    [
+      "2025-07-09",
+      159708.99
+    ],
+    [
+      "2025-07-10",
+      159246.79
+    ],
+    [
+      "2025-07-11",
+      158817.89
+    ],
+    [
+      "2025-07-14",
+      160452.15
+    ],
+    [
+      "2025-07-15",
+      161641.76
+    ],
+    [
+      "2025-07-16",
+      161810.42
+    ],
+    [
+      "2025-07-17",
+      161629.22
+    ],
+    [
+      "2025-07-18",
+      161407.27
+    ],
+    [
+      "2025-07-21",
+      162074.16
+    ],
+    [
+      "2025-07-22",
+      161584.82
+    ],
+    [
+      "2025-07-23",
+      162434.55
+    ],
+    [
+      "2025-07-24",
+      160665.14
+    ],
+    [
+      "2025-07-25",
+      157802.22
+    ],
+    [
+      "2025-07-28",
+      158079.77
+    ],
+    [
+      "2025-07-29",
+      160233.54
+    ],
+    [
+      "2025-07-30",
+      160530.2
+    ],
+    [
+      "2025-07-31",
+      161582.89
+    ],
+    [
+      "2025-08-01",
+      159811.44
+    ],
+    [
+      "2025-08-04",
+      161296.64
+    ],
+    [
+      "2025-08-05",
+      161751.02
+    ],
+    [
+      "2025-08-06",
+      160886.81
+    ],
+    [
+      "2025-08-07",
+      160691.74
+    ],
+    [
+      "2025-08-08",
+      160469.38
+    ],
+    [
+      "2025-08-11",
+      160794.21
+    ],
+    [
+      "2025-08-12",
+      160869.22
+    ],
+    [
+      "2025-08-13",
+      161711.1
+    ],
+    [
+      "2025-08-14",
+      160944.58
+    ],
+    [
+      "2025-08-18",
+      162816.36
+    ],
+    [
+      "2025-08-19",
+      163425.1
+    ],
+    [
+      "2025-08-20",
+      163857.42
+    ],
+    [
+      "2025-08-21",
+      164222.18
+    ],
+    [
+      "2025-08-22",
+      163989.91
+    ],
+    [
+      "2025-08-25",
+      164901.28
+    ],
+    [
+      "2025-08-26",
+      162954.41
+    ],
+    [
+      "2025-08-28",
+      161833.56
+    ],
+    [
+      "2025-08-29",
+      162434.21
+    ],
+    [
+      "2025-09-01",
+      164164.38
+    ],
+    [
+      "2025-09-02",
+      163538.17
+    ],
+    [
+      "2025-09-03",
+      164171.24
+    ],
+    [
+      "2025-09-04",
+      163240.78
+    ],
+    [
+      "2025-09-05",
+      163482.17
+    ],
+    [
+      "2025-09-08",
+      162819.62
+    ],
+    [
+      "2025-09-09",
+      163839.61
+    ],
+    [
+      "2025-09-10",
+      162181.23
+    ],
+    [
+      "2025-09-11",
+      161917.77
+    ],
+    [
+      "2025-09-12",
+      161105.15
+    ],
+    [
+      "2025-09-15",
+      161294.03
+    ],
+    [
+      "2025-09-16",
+      162434.12
+    ],
+    [
+      "2025-09-17",
+      162528.7
+    ],
+    [
+      "2025-09-18",
+      162395.83
+    ],
+    [
+      "2025-09-19",
+      163789.08
+    ],
+    [
+      "2025-09-22",
+      162639.99
+    ],
+    [
+      "2025-09-23",
+      162062.97
+    ],
+    [
+      "2025-09-24",
+      162631.48
+    ],
+    [
+      "2025-09-25",
+      161175.61
+    ],
+    [
+      "2025-09-26",
+      158004.55
+    ],
+    [
+      "2025-09-29",
+      159163.14
+    ],
+    [
+      "2025-09-30",
+      158351.48
+    ],
+    [
+      "2025-10-01",
+      161152.55
+    ],
+    [
+      "2025-10-03",
+      161694.24
+    ],
+    [
+      "2025-10-06",
+      164171.72
+    ],
+    [
+      "2025-10-07",
+      163953.34
+    ],
+    [
+      "2025-10-08",
+      164931.15
+    ],
+    [
+      "2025-10-09",
+      164864.48
+    ],
+    [
+      "2025-10-10",
+      164791.24
+    ],
+    [
+      "2025-10-13",
+      165941.52
+    ],
+    [
+      "2025-10-14",
+      166511.67
+    ],
+    [
+      "2025-10-15",
+      167918.81
+    ],
+    [
+      "2025-10-16",
+      167029.11
+    ],
+    [
+      "2025-10-17",
+      167236.54
+    ],
+    [
+      "2025-10-20",
+      168501.48
+    ],
+    [
+      "2025-10-21",
+      168538.52
+    ],
+    [
+      "2025-10-23",
+      165342.18
+    ],
+    [
+      "2025-10-24",
+      157271.26
+    ],
+    [
+      "2025-10-27",
+      165987.4
+    ],
+    [
+      "2025-10-28",
+      166087.0
+    ],
+    [
+      "2025-10-29",
+      166435.37
+    ],
+    [
+      "2025-10-30",
+      166503.33
+    ],
+    [
+      "2025-10-31",
+      165123.28
+    ],
+    [
+      "2025-11-03",
+      166269.21
+    ],
+    [
+      "2025-11-04",
+      165750.77
+    ],
+    [
+      "2025-11-06",
+      164460.25
+    ],
+    [
+      "2025-11-07",
+      166001.49
+    ],
+    [
+      "2025-11-10",
+      165643.49
+    ],
+    [
+      "2025-11-11",
+      165065.74
+    ],
+    [
+      "2025-11-12",
+      164397.51
+    ],
+    [
+      "2025-11-13",
+      163999.84
+    ],
+    [
+      "2025-11-14",
+      162617.4
+    ],
+    [
+      "2025-11-17",
+      162990.03
+    ],
+    [
+      "2025-11-18",
+      161595.02
+    ],
+    [
+      "2025-11-19",
+      162506.84
+    ],
+    [
+      "2025-11-20",
+      163402.14
+    ],
+    [
+      "2025-11-21",
+      162485.31
+    ],
+    [
+      "2025-11-24",
+      162769.36
+    ],
+    [
+      "2025-11-25",
+      162507.83
+    ],
+    [
+      "2025-11-26",
+      164172.83
+    ],
+    [
+      "2025-11-27",
+      163905.2
+    ],
+    [
+      "2025-11-28",
+      164394.87
+    ],
+    [
+      "2025-12-01",
+      164692.08
+    ],
+    [
+      "2025-12-02",
+      164089.2
+    ],
+    [
+      "2025-12-03",
+      164082.68
+    ],
+    [
+      "2025-12-04",
+      163136.39
+    ],
+    [
+      "2025-12-05",
+      163209.49
+    ],
+    [
+      "2025-12-08",
+      161049.26
+    ],
+    [
+      "2025-12-09",
+      162621.09
+    ],
+    [
+      "2025-12-10",
+      161984.72
+    ],
+    [
+      "2025-12-11",
+      162245.7
+    ],
+    [
+      "2025-12-12",
+      164290.64
+    ],
+    [
+      "2025-12-15",
+      164928.01
+    ],
+    [
+      "2025-12-16",
+      164774.9
+    ],
+    [
+      "2025-12-17",
+      164964.86
+    ],
+    [
+      "2025-12-18",
+      165083.66
+    ],
+    [
+      "2025-12-19",
+      167095.36
+    ],
+    [
+      "2025-12-22",
+      168962.64
+    ],
+    [
+      "2025-12-23",
+      169485.23
+    ],
+    [
+      "2025-12-24",
+      169031.06
+    ],
+    [
+      "2025-12-26",
+      168936.58
+    ],
+    [
+      "2025-12-29",
+      168122.2
+    ],
+    [
+      "2025-12-30",
+      168853.97
+    ],
+    [
+      "2025-12-31",
+      170934.0
+    ],
+    [
+      "2026-01-01",
+      171433.87
+    ],
+    [
+      "2026-01-02",
+      171595.83
+    ],
+    [
+      "2026-01-05",
+      172709.96
+    ],
+    [
+      "2026-01-06",
+      172929.0
+    ],
+    [
+      "2026-01-07",
+      172345.04
+    ],
+    [
+      "2026-01-08",
+      168910.91
+    ],
+    [
+      "2026-01-09",
+      167632.18
+    ],
+    [
+      "2026-01-12",
+      168075.98
+    ],
+    [
+      "2026-01-13",
+      167795.17
+    ],
+    [
+      "2026-01-14",
+      169656.15
+    ],
+    [
+      "2026-01-15",
+      167819.47
+    ],
+    [
+      "2026-01-16",
+      170028.92
+    ],
+    [
+      "2026-01-19",
+      169107.93
+    ],
+    [
+      "2026-01-20",
+      166540.51
+    ],
+    [
+      "2026-01-21",
+      166643.4
+    ],
+    [
+      "2026-01-22",
+      164790.05
+    ],
+    [
+      "2026-01-23",
+      164012.77
+    ],
+    [
+      "2026-01-27",
+      165641.18
+    ],
+    [
+      "2026-01-28",
+      167441.45
+    ],
+    [
+      "2026-01-29",
+      170219.97
+    ],
+    [
+      "2026-01-30",
+      166055.2
+    ],
+    [
+      "2026-02-02",
+      160110.11
+    ],
+    [
+      "2026-02-03",
+      163136.03
+    ],
+    [
+      "2026-02-04",
+      164860.33
+    ],
+    [
+      "2026-02-05",
+      163109.67
+    ],
+    [
+      "2026-02-06",
+      163776.45
+    ],
+    [
+      "2026-02-09",
+      166397.0
+    ],
+    [
+      "2026-02-10",
+      166414.06
+    ],
+    [
+      "2026-02-11",
+      167631.2
+    ],
+    [
+      "2026-02-12",
+      168800.65
+    ],
+    [
+      "2026-02-13",
+      165683.48
+    ],
+    [
+      "2026-02-16",
+      166238.65
+    ],
+    [
+      "2026-02-17",
+      166224.17
+    ],
+    [
+      "2026-02-18",
+      167828.56
+    ],
+    [
+      "2026-02-19",
+      166851.08
+    ],
+    [
+      "2026-02-20",
+      167072.7
+    ],
+    [
+      "2026-02-23",
+      166847.41
+    ],
+    [
+      "2026-02-24",
+      167880.38
+    ],
+    [
+      "2026-02-25",
+      169552.27
+    ],
+    [
+      "2026-02-26",
+      169428.74
+    ],
+    [
+      "2026-02-27",
+      168493.64
+    ],
+    [
+      "2026-03-02",
+      167344.43
+    ],
+    [
+      "2026-03-04",
+      165116.64
+    ],
+    [
+      "2026-03-05",
+      166215.27
+    ],
+    [
+      "2026-03-06",
+      165004.13
+    ],
+    [
+      "2026-03-09",
+      162685.81
+    ],
+    [
+      "2026-03-10",
+      165262.66
+    ],
+    [
+      "2026-03-11",
+      163202.32
+    ],
+    [
+      "2026-03-12",
+      162831.24
+    ],
+    [
+      "2026-03-13",
+      159504.49
+    ],
+    [
+      "2026-03-16",
+      159582.29
+    ],
+    [
+      "2026-03-17",
+      161649.64
+    ],
+    [
+      "2026-03-18",
+      161229.52
+    ],
+    [
+      "2026-03-19",
+      158781.07
+    ],
+    [
+      "2026-03-20",
+      160988.1
+    ],
+    [
+      "2026-03-23",
+      156837.41
+    ],
+    [
+      "2026-03-24",
+      159215.93
+    ],
+    [
+      "2026-03-25",
+      161009.23
+    ],
+    [
+      "2026-03-27",
+      159267.43
+    ],
+    [
+      "2026-03-30",
+      160022.74
+    ],
+    [
+      "2026-04-01",
+      161610.39
+    ],
+    [
+      "2026-04-02",
+      160310.44
+    ],
+    [
+      "2026-04-06",
+      162065.45
+    ],
+    [
+      "2026-04-07",
+      161548.1
+    ],
+    [
+      "2026-04-08",
+      163532.88
+    ],
+    [
+      "2026-04-09",
+      162529.01
+    ],
+    [
+      "2026-04-10",
+      163061.83
+    ],
+    [
+      "2026-04-13",
+      162794.84
+    ],
+    [
+      "2026-04-15",
+      164055.47
+    ],
+    [
+      "2026-04-16",
+      164128.34
+    ],
+    [
+      "2026-04-17",
+      164077.7
+    ],
+    [
+      "2026-04-20",
+      164119.36
+    ],
+    [
+      "2026-04-21",
+      164347.76
+    ],
+    [
+      "2026-04-22",
+      164139.46
+    ],
+    [
+      "2026-04-23",
+      163287.61
+    ],
+    [
+      "2026-04-24",
+      163308.33
+    ],
+    [
+      "2026-04-27",
+      163152.45
+    ],
+    [
+      "2026-04-28",
+      162439.92
+    ],
+    [
+      "2026-04-29",
+      162410.62
+    ],
+    [
+      "2026-04-30",
+      162771.86
+    ],
+    [
+      "2026-05-01",
+      162436.86
+    ],
+    [
+      "2026-05-04",
+      162507.94
+    ],
+    [
+      "2026-05-05",
+      162943.44
+    ],
+    [
+      "2026-05-06",
+      165047.41
+    ],
+    [
+      "2026-05-07",
+      166838.4
+    ],
+    [
+      "2026-05-08",
+      165383.59
+    ],
+    [
+      "2026-05-11",
+      164098.95
+    ],
+    [
+      "2026-05-12",
+      162869.31
+    ],
+    [
+      "2026-05-13",
+      166071.07
+    ],
+    [
+      "2026-05-14",
+      166774.74
+    ],
+    [
+      "2026-05-15",
+      164595.04
+    ],
+    [
+      "2026-05-18",
+      164478.43
+    ],
+    [
+      "2026-05-19",
+      164695.71
+    ],
+    [
+      "2026-05-20",
+      164638.75
+    ],
+    [
+      "2026-05-21",
+      164881.41
+    ],
+    [
+      "2026-05-22",
+      164344.42
+    ],
+    [
+      "2026-05-25",
+      165112.83
+    ],
+    [
+      "2026-05-26",
+      164687.63
+    ],
+    [
+      "2026-05-27",
+      165107.55
+    ],
+    [
+      "2026-05-28",
+      164998.66
+    ],
+    [
+      "2026-05-29",
+      163138.41
+    ],
+    [
+      "2026-06-01",
+      162427.8
+    ],
+    [
+      "2026-06-02",
+      163058.7
+    ],
+    [
+      "2026-06-03",
+      162943.28
+    ],
+    [
+      "2026-06-04",
+      163923.44
+    ],
+    [
+      "2026-06-05",
+      162904.73
+    ],
+    [
+      "2026-06-08",
+      160270.85
+    ],
+    [
+      "2026-06-09",
+      160946.25
+    ],
+    [
+      "2026-06-10",
+      158654.71
+    ],
+    [
+      "2026-06-11",
+      157540.64
+    ],
+    [
+      "2026-06-12",
+      160303.64
+    ],
+    [
+      "2026-06-15",
+      161793.11
+    ],
+    [
+      "2026-06-16",
+      161541.27
+    ],
+    [
+      "2026-06-17",
+      161837.23
+    ],
+    [
+      "2026-06-18",
+      161491.62
+    ],
+    [
+      "2026-06-19",
+      161467.95
+    ],
+    [
+      "2026-06-22",
+      164151.58
+    ],
+    [
+      "2026-06-23",
+      163063.85
+    ],
+    [
+      "2026-06-24",
+      163087.77
+    ],
+    [
+      "2026-06-25",
+      161437.01
+    ],
+    [
+      "2026-06-26",
+      161366.01
+    ],
+    [
+      "2026-06-29",
+      161472.25
+    ],
+    [
+      "2026-06-30",
+      161293.52
+    ],
+    [
+      "2026-07-01",
+      161591.6
+    ],
+    [
+      "2026-07-02",
+      162579.16
+    ],
+    [
+      "2026-07-03",
+      163078.5
+    ],
+    [
+      "2026-07-06",
+      162770.3
+    ],
+    [
+      "2026-07-07",
+      161789.67
+    ],
+    [
+      "2026-07-08",
+      161193.79
+    ],
+    [
+      "2026-07-09",
+      161864.33
+    ],
+    [
+      "2026-07-10",
+      161946.96
+    ],
+    [
+      "2026-07-13",
+      161498.07
+    ],
+    [
+      "2026-07-14",
+      161032.63
+    ],
+    [
+      "2026-07-15",
+      161191.77
+    ],
+    [
+      "2026-07-16",
+      161101.9
+    ],
+    [
+      "2026-07-17",
+      160833.94
+    ],
+    [
+      "2026-07-20",
+      161228.09
+    ],
+    [
+      "2026-07-21",
+      161701.56
+    ],
+    [
+      "2026-07-22",
+      161967.14
+    ],
+    [
+      "2026-07-23",
+      161541.5
+    ],
+    [
+      "2026-07-24",
+      161395.67
+    ],
+    [
+      "2026-07-27",
+      161548.11
+    ],
+    [
+      "2026-07-28",
+      160791.82
+    ],
+    [
+      "2026-07-29",
+      160853.19
+    ],
+    [
+      "2026-07-30",
+      160965.92
+    ],
+    [
+      "2026-07-31",
+      161147.91
+    ],
+    [
+      "2026-08-03",
+      161049.96
+    ],
+    [
+      "2026-08-04",
+      160877.5
+    ],
+    [
+      "2026-08-05",
+      161657.59
+    ],
+    [
+      "2026-08-06",
+      162474.55
+    ],
+    [
+      "2026-08-07",
+      163147.45
+    ],
+    [
+      "2026-08-10",
+      163554.38
+    ],
+    [
+      "2026-08-11",
+      163939.18
+    ],
+    [
+      "2026-08-12",
+      164491.38
+    ],
+    [
+      "2026-08-13",
+      164077.96
+    ],
+    [
+      "2026-08-14",
+      163949.75
+    ],
+    [
+      "2026-08-17",
+      164483.8
+    ],
+    [
+      "2026-08-18",
+      164476.17
+    ],
+    [
+      "2026-08-19",
+      163987.69
+    ],
+    [
+      "2026-08-20",
+      164856.63
+    ],
+    [
+      "2026-08-21",
+      165851.81
+    ],
+    [
+      "2026-08-24",
+      165880.62
+    ],
+    [
+      "2026-08-25",
+      165626.65
+    ],
+    [
+      "2026-08-26",
+      165694.34
+    ],
+    [
+      "2026-08-27",
+      165124.74
+    ],
+    [
+      "2026-08-28",
+      165637.67
+    ],
+    [
+      "2026-08-31",
+      164673.66
+    ],
+    [
+      "2026-09-01",
+      163935.46
+    ],
+    [
+      "2026-09-02",
+      163521.63
+    ],
+    [
+      "2026-09-03",
+      164261.93
+    ],
+    [
+      "2026-09-04",
+      164685.37
+    ],
+    [
+      "2026-09-07",
+      159036.17
+    ],
+    [
+      "2026-09-08",
+      164376.65
+    ],
+    [
+      "2026-09-09",
+      164127.23
+    ],
+    [
+      "2026-09-10",
+      164373.79
+    ],
+    [
+      "2026-09-11",
+      163838.14
+    ],
+    [
+      "2026-09-14",
+      158764.08
+    ],
+    [
+      "2026-09-15",
+      160702.78
+    ]
+  ],
+  "run_count": 750,
+  "rerank_counter": 750,
+  "long_target_set": [
+    "ADANIPOWER.NS",
+    "ACUTAAS.NS",
+    "HINDCOPPER.NS",
+    "ATHERENERG.NS",
+    "LAURUSLABS.NS",
+    "CUMMINSIND.NS",
+    "MCX.NS",
+    "ANANDRATHI.NS",
+    "POWERINDIA.NS",
+    "NATIONALUM.NS",
+    "HFCL.NS",
+    "SYRMA.NS",
+    "HINDALCO.NS",
+    "ADANIENSOL.NS",
+    "BELRISE.NS"
+  ],
+  "inception": "2023-09-06",
+  "processed_through": "2026-09-15"
+}

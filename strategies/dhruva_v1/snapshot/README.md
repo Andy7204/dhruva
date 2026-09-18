@@ -1,28 +1,5 @@
 # Quant Lab — an honest INR momentum + diversification research system
 
-## Hardening status
-
-The [current-state audit](docs/CURRENT_STATE_AUDIT.md) found material correctness
-and reliability defects in the original implementation, including tax reserves,
-settlement cash, missed-session recovery and stale-data display. Earlier claims
-below describe the original project and are not evidence those defects are fixed.
-Only two original live dates were recorded at audit; historical simulations are
-not a multi-year live track record. Follow [verified progress](docs/HARDENING_PROGRESS.md).
-
-The [original v1](strategies/dhruva_v1/README.md) is archived with its known flaws.
-The daily entrypoint checks its economic source/configuration hashes before work.
-Future execution/accounting corrections must use a separate prospective version.
-
-## Strategy challenge study
-
-`research/` contains an isolated comparison of market-filter speed, review delay,
-alternative satellite rules, index holding and staged dip buying. See
-[research/README.md](research/README.md) for reproduction and
-[the full report](research/results/REPORT.html) for results and limitations.
-It uses next-open execution, modeled costs/tax and separate 70/30 books; its
-audited research execution differs from the original dashboard backtest.
-It does not change the deployed strategy or live paper books.
-
 ## Public dashboard deployment
 
 Use this folder as the repository root. `streamlit_app.py` displays the committed
