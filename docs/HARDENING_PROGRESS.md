@@ -6,6 +6,14 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+- USER AMENDMENT September18: fix the existing version and paper books in place;
+  do not create a separate degraded product or parallel strategy version. Follow
+  `docs/REPAIR_POLICY.md` over the older new-track wording in historical phase logs
+  and the original mission. Keep the existing archive/Git history as evidence.
+- Change the active-source hash guard to archive-only when implementing fixes.
+  Do not hide current defects by just changing the status label. Recalculated
+  initial paper history must be labelled honestly; simulated Sep17 fills do exist.
+
 - Phases 0–3 complete. Phase4 UI deployed at `75c5c75`; 23 local and remote tests pass.
 - Current wait: real hardened after-close data refresh, earliest16:30 IST September18.
 - Latest verified CI35305870599 succeeded; manual daily35305448785 correctly
@@ -28,11 +36,10 @@ preserve existing history and distinguish imported records from prospective evid
   execution is independent of the local computer.
 - Check fresh usage at phase boundaries. At <=10% remaining in either core window,
   checkpoint exact next action and limiting reset, then defer until capacity returns.
-- Last check September18 at04:10 UTC: five-hour usage93% (7% left), reset
-  **September18 14:16:27 IST** /08:46:27 UTC (Unix1789721187).
-  Weekly usage80% (20% left), reset **September24 10:44:15 IST** (Unix1790226855).
-  Pausing substantive work at the configured low-usage threshold. Fresh checks
-  take precedence; no reset credits or purchases authorized.
+- Reset confirmed September18 at09:12 UTC: five-hour usage21% (79% left), next
+  reset Unix1789740760; weekly usage84% (16% left), reset September24 10:44:15 IST
+  (Unix1790226855). Current wait is the completed-session acceptance gate,
+  not five-hour exhaustion. Keep checking BOTH windows. No purchases/resets.
 - Do not buy credits or redeem a reset. Do not create another continuation task.
 - Python: `C:/Users/adpan/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`.
 - Shell PowerShell. Git push works; gh CLI is absent. GitHub connector reads run
@@ -116,8 +123,9 @@ because the real after-close refresh has not yet been observed.
    Streamlit current commit/date and one NAV. Rerun to prove duplicate safety.
 5. Finish Phase4 acceptance documentation/commit. Then Phase5 canonical guarded
    pipeline, Phase6 data safety, Phase7 health, Phase8 watchdog, Phase9 alerts,
-   Phase10 failure recovery; remaining phases follow the mission. Corrected
-   economics must use a new prospective track, not mutate guarded v1 code/config.
+   Phase10 failure recovery; remaining phases follow the mission. Repair current
+   economics in place as authorized in REPAIR_POLICY.md; update the active-code
+   guard rather than creating a second product. Preserve the original archive.
 6. Audit issues are explicitly authorized to fix. Preserve original history;
    label legacy imports, recovery/reconstructed days and genuine forward decisions.
 

@@ -11,7 +11,10 @@ not a multi-year live track record. Follow [verified progress](docs/HARDENING_PR
 
 The [original v1](strategies/dhruva_v1/README.md) is archived with its known flaws.
 The daily entrypoint checks its economic source/configuration hashes before work.
-Future execution/accounting corrections must use a separate prospective version.
+Per the user's September18 direction, execution/accounting corrections will fix
+the existing app and paper books in place. The archive is evidence, not a separate
+active product. See [repair policy](docs/REPAIR_POLICY.md); recalculations will be
+identified honestly and the current health label will change when checks pass.
 
 The [paper ledger](docs/LEDGER.md) preserves evaluation provenance and exact
 captured portfolio bundles. Restart, duplicate, corruption and remote-checkout
@@ -24,7 +27,7 @@ remaining limits. Calendar coverage is bounded and must be reviewed before expir
 The public page now uses one saved portfolio valuation and displays explicit
 health, dates and commit provenance. Corrupt books withhold totals; stale data
 and failed runs display errors. V1 remains visibly degraded while its economic
-defects are corrected in a new version. Legacy HTML is preserved as evidence,
+defects are corrected in place. Legacy HTML is preserved as evidence,
 but no longer embedded as a second, conflicting live valuation.
 
 ## Strategy challenge study

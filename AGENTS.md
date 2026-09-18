@@ -123,13 +123,18 @@ Read `docs/HARDENING_MISSION.md` and `docs/HARDENING_PROGRESS.md` for the ordere
 hardening work. `docs/CURRENT_STATE_AUDIT.md` supersedes optimistic implementation
 claims above: current live NAV does not reserve tax, T+1 does not restrict cash,
 missed sessions are skipped, and stale data can look healthy. Phase 0 probes
-reproduce these defects without altering production. Preserve v1 before fixes;
-decision/accounting changes need a new prospective version. Never backdate evidence.
+reproduce these defects without altering production. The user's explicit
+September18 instruction now authorizes repairs to the existing version and paper
+books in place; see `docs/REPAIR_POLICY.md`. No parallel degraded strategy or new
+forward track is required for these initial fixes. Never backdate evidence.
 
 The original is frozen in `strategies/dhruva_v1/strategy_manifest.yaml` and
 `snapshot/`. `python -m dhruva.freeze` verifies hashes; `daily_run` rejects changed
-v1 economic source/config/universe before fetching or writing. Never regenerate
-the frozen archive to accept a code change. Corrections use a new prospective track.
+v1 economic source/config/universe before fetching or writing. This describes the
+current guard, which must become archive-only verification when implementing the
+authorized in-place repairs. Keep the original archive/Git history as evidence;
+do not regenerate it to erase the original defects. Label any recalculated paper
+history as corrections/reconstruction, not newly discovered original live signals.
 
 The v1 daily wrapper now captures per-symbol evaluations and both book states in
 `runs/ledger/dhruva_v1/` before updating book projections. Input snapshots and
