@@ -1,0 +1,219 @@
+{
+  "generated_at_utc": "2026-09-18T03:46:41.005486+00:00",
+  "purpose": "Phase 0 audit observations; confirmed defects are not production acceptance passes.",
+  "status": "AUDIT_OBSERVATIONS_REPRODUCED",
+  "runtime": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "numpy": "2.3.5"
+  },
+  "safety": {
+    "live_pipeline_run": false,
+    "network_calls": false,
+    "fixtures": "temporary directories and in-memory only",
+    "production_unchanged": true
+  },
+  "source_hashes_sha256": {
+    ".github/workflows/daily.yml": "2d255ea93676e9bd16fa479bcce8689aed5a4a37d06d798f35340f5b263da597",
+    "config.json": "79971b36170bdcf5560b5ae069d5c27284da8bf2ef6abb041183e0ca4b7aaf5b",
+    "qlab/__init__.py": "2817a43631723d8cc0d24a34a82eaca86d530865511140d149a9b1b890abf390",
+    "qlab/advisor.py": "d1fd70e1ec69f9f74549766a6bb2134e1514bf9e04531a5579d072dad258ef29",
+    "qlab/costs.py": "0e246e2750623d8df53139bfa41ec552dcf40f6a88ab9aa7a160858d6ff0f6bf",
+    "qlab/data.py": "8a9e3c089f473d3d374aa12b6118051f31ad100fc0f9837b0f5f870c6d6d08e5",
+    "qlab/engine.py": "4f6abda31ce4951b812e758603f14d4f7f39232f363259961ce0f1a4fa7b2895",
+    "qlab/indicators.py": "f719bb4c53fabd6cece238e7ae3ecb4066aedf41725347bac61cdf7d2d30abc4",
+    "qlab/learn.py": "29480c188c4608d531e6aa916a759833d75712d6aca10597f49d59cba88de51c",
+    "qlab/livebook.py": "b3eaddb3f93980cf3b96138a892553832ce36a83025671f00fe70917779ba607",
+    "qlab/metrics.py": "5f71d1a99d6329136350e5433a7528ca156903fe24f6069d7197f943c8f9a514",
+    "qlab/narrator.py": "30ca657acb563824a7a0450101355d5d6da2472f2d4e22fae2e8669c2e54fada",
+    "qlab/news.py": "580ab398add04dd357f6d3c36673f619a687409b867b58129349d864dc230ed8",
+    "qlab/notify.py": "04225c46750c422aae8442bffe0a3d0f10c9cdbe2eb710dc529ba3c6bad92c73",
+    "qlab/optimize.py": "8f8a1ad8621779bdf1badb48a710e1e5f68a51ebf79482d4106d615294926468",
+    "qlab/orchestrator.py": "b0bbfefa3434c885010a7fccd47d118ae5cf453163346136c430b7f07774d1f2",
+    "qlab/report.py": "8c59527984738fa67b08bbe2482a6f440b3267c4a420ac566819412db660f84d",
+    "qlab/strategies.py": "e14ca75f010fd52e6f351edaca89e98a378aa3253645d4053d92d54aae5522aa",
+    "qlab/tax.py": "a170b67331f24b0f2814e1a46ce265208a1c9a40dfe094d866d1f2809a010099",
+    "requirements.txt": "77ea978631e15441d599df605aa0a9a2ea390e0832db6f8365e6979d24df6ed7",
+    "scripts/bakeoff.py": "8fa1228ee6c91909d7e58b2e5601767ffa20a6dd1ab111a35016dca51105a962",
+    "scripts/compare3.py": "fdaff8c6825e262021a9aee7a6f3e637fcc5c196f3e0e08106a44af9cb177d33",
+    "scripts/daily_run.bat": "7485320034a3e8cbdf39291288209a386cedeec184be5110f41c4034f339bbfe",
+    "scripts/daily_run.py": "9d2aa264377ec810225ea0001a622a97a761a709546a4b768334cfc8c32da0be",
+    "scripts/news_overlay.py": "a6ca425456c07d29e13f11909708f4f74dda6e67fc20d19cd05db009fae56055",
+    "scripts/package.py": "12cc2073d155aa9773fd4a3b9a5b139b9fc04fb4629faf31a1acb29c225cd4d8",
+    "scripts/reset_book.py": "35cabbd5d2951b61b60877f7dc5824b7bcf31b419e2fc865795c05950a44c971",
+    "scripts/show_call.py": "8bd83fce5835ca785ef3f180d5b75e858d71b3727211b9fba0bb31d479873989",
+    "scripts/validate.py": "24defb103ef92e1560a45d9c17689f8914ca5638e353344bd798b493024f86c2",
+    "scripts/validate_universe.py": "ae8a941cbf816c762f893c7c1f6e14995fe19b13b33f6bcfc4ad105cdf36ad8f",
+    "streamlit_app.py": "8664f63354b8dc30dbd03133d762448afb7cba0f7dc15c58c090fb162ec4424c"
+  },
+  "checks": [
+    {
+      "name": "missed_sessions_not_recovered",
+      "references": [
+        "qlab/orchestrator.py:34-43"
+      ],
+      "observed": {
+        "expected_sessions": [
+          "2026-09-15",
+          "2026-09-16",
+          "2026-09-17"
+        ],
+        "actual_sessions": [
+          "2026-09-17"
+        ]
+      },
+      "expected_observation_reproduced": true,
+      "classification": "CONFIRMED_DEFECT"
+    },
+    {
+      "name": "same_date_rerun_skips_engine_step",
+      "references": [
+        "qlab/orchestrator.py:37-43"
+      ],
+      "observed": {
+        "additional_sessions": []
+      },
+      "expected_observation_reproduced": true,
+      "classification": "VERIFIED_BEHAVIOR"
+    },
+    {
+      "name": "failed_fetch_returns_stale_cache_as_data",
+      "references": [
+        "qlab/data.py:157-170"
+      ],
+      "observed": {
+        "returned_date": "2020-01-01",
+        "console": "! MOCK.NS: MOCK API unavailable"
+      },
+      "expected_observation_reproduced": true,
+      "classification": "CONFIRMED_DEFECT"
+    },
+    {
+      "name": "telegram_delivery_error_silently_false",
+      "references": [
+        "qlab/notify.py:18-26",
+        "qlab/orchestrator.py:101"
+      ],
+      "observed": {
+        "return_value": false
+      },
+      "expected_observation_reproduced": true,
+      "classification": "CONFIRMED_DEFECT"
+    },
+    {
+      "name": "news_failure_misclassified_quiet",
+      "references": [
+        "qlab/news.py:45-69"
+      ],
+      "observed": {
+        "flag": "quiet",
+        "headlines": []
+      },
+      "expected_observation_reproduced": true,
+      "classification": "CONFIRMED_DEFECT"
+    },
+    {
+      "name": "prior_settled_fill_removed",
+      "references": [
+        "qlab/livebook.py:117-119",
+        "qlab/report.py:315-321"
+      ],
+      "observed": {
+        "orders_after_next_session": []
+      },
+      "expected_observation_reproduced": true,
+      "classification": "CONFIRMED_DEFECT"
+    },
+    {
+      "name": "stale_and_partial_books_render_without_warning",
+      "references": [
+        "streamlit_app.py:19-41"
+      ],
+      "observed": {
+        "warnings": [],
+        "metrics": [
+          [
+            "metric",
+            [
+              "Total value",
+              "₹71,000"
+            ]
+          ],
+          [
+            "metric",
+            [
+              "Return",
+              "+1.4%"
+            ]
+          ],
+          [
+            "metric",
+            [
+              "Started with",
+              "₹70,000"
+            ]
+          ]
+        ],
+        "dashboard_rendered": true,
+        "method": "Unmodified app source; only Streamlit calls and __file__ fixture path mocked."
+      },
+      "expected_observation_reproduced": true,
+      "classification": "CONFIRMED_DEFECT"
+    },
+    {
+      "name": "legacy_call_cli",
+      "references": [
+        "scripts/show_call.py:16-21",
+        "qlab/orchestrator.py:45-47"
+      ],
+      "observed": {
+        "command": "python -B scripts/show_call.py",
+        "exit_code": 0,
+        "stdout": "\n====== TODAYS_CALL — TODAY'S CALL 2026-09-15 ======\nRISK-OFF  (Nifty 23119 vs 200-DMA 24535)\nTarget: 61% momentum stocks + diversifiers GOLDBEES 14.6%, INDIGRID 9.8%, LIQUIDBEES 4.9%\nStay defensive — no new stock buys.\nDiversifiers held: GOLDBEES ₹20,026, INDIGRID ₹10,090, LIQUIDBEES ₹7,000, SILVERBEES ₹13,095\n\n(Research only, not advice.)\n",
+        "stderr": ""
+      },
+      "expected_observation_reproduced": true,
+      "classification": "VERIFIED_BEHAVIOR"
+    },
+    {
+      "name": "reset_dry_run",
+      "references": [
+        "scripts/reset_book.py:12-25"
+      ],
+      "observed": {
+        "command": "python -B scripts/reset_book.py",
+        "exit_code": 0,
+        "stdout": "would remove Z:\\dhruva\\runs\\state.json\nwould remove Z:\\dhruva\\runs\\journal.jsonl\nabsent    Z:\\dhruva\\runs\\weights.json\n\nDry run. Re-run with --yes to actually reset the book.\n",
+        "stderr": ""
+      },
+      "expected_observation_reproduced": true,
+      "classification": "VERIFIED_BEHAVIOR"
+    },
+    {
+      "name": "research_unit_tests",
+      "references": [
+        "research/test_challenge.py:29-101"
+      ],
+      "observed": {
+        "command": "python -B research/test_challenge.py",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "test_dip_threshold_and_cash_budget (__main__.AccountingTests.test_dip_threshold_and_cash_budget) ... ok\ntest_future_extreme_does_not_change_cleaned_past (__main__.AccountingTests.test_future_extreme_does_not_change_cleaned_past) ... ok\ntest_gap_stop_worse_open (__main__.AccountingTests.test_gap_stop_worse_open) ... ok\ntest_next_open_not_signal_close (__main__.AccountingTests.test_next_open_not_signal_close) ... ok\ntest_prefix_engine_matches_complete_engine (__main__.AccountingTests.test_prefix_engine_matches_complete_engine) ... ok\ntest_proceeds_unavailable_until_next_session (__main__.AccountingTests.test_proceeds_unavailable_until_next_session) ... ok\ntest_shared_exemption (__main__.AccountingTests.test_shared_exemption) ... ok\ntest_tax_reduces_nav_and_fifo_basis (__main__.AccountingTests.test_tax_reduces_nav_and_fifo_basis) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.160s\n\nOK\n"
+      },
+      "expected_observation_reproduced": true,
+      "classification": "VERIFIED_BEHAVIOR"
+    },
+    {
+      "name": "production_files_unchanged",
+      "references": [
+        "docs/evidence/phase0_engineering_probe.py"
+      ],
+      "observed": {
+        "checked_files": 2380,
+        "changed_files": []
+      },
+      "expected_observation_reproduced": true,
+      "classification": "VERIFIED_BEHAVIOR"
+    }
+  ]
+}

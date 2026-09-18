@@ -1,5 +1,14 @@
 # Quant Lab — an honest INR momentum + diversification research system
 
+## Hardening status
+
+The [current-state audit](docs/CURRENT_STATE_AUDIT.md) found material correctness
+and reliability defects in the original implementation, including tax reserves,
+settlement cash, missed-session recovery and stale-data display. Earlier claims
+below describe the original project and are not evidence those defects are fixed.
+Only two original live dates were recorded at audit; historical simulations are
+not a multi-year live track record. Follow [verified progress](docs/HARDENING_PROGRESS.md).
+
 ## Strategy challenge study
 
 `research/` contains an isolated comparison of market-filter speed, review delay,

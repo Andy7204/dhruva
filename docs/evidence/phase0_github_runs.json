@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-09-17T17:37:51.321Z",
+  "source": "https://api.github.com/repos/Andy7204/dhruva/actions/runs?per_page=10",
+  "runs": [
+    {
+      "id": 35252434924,
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "c4a8c6ce48d1067bbc0a49475bd7191de34b5da5",
+      "head_branch": "main",
+      "created_at": "2026-09-17T17:23:24Z",
+      "updated_at": "2026-09-17T17:28:32Z",
+      "html_url": "https://github.com/Andy7204/dhruva/actions/runs/35252434924"
+    },
+    {
+      "id": 35184975533,
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "ee7531dd3a9e2c061af6116768c8e607fc4801e8",
+      "head_branch": "main",
+      "created_at": "2026-09-17T05:14:43Z",
+      "updated_at": "2026-09-17T05:20:12Z",
+      "html_url": "https://github.com/Andy7204/dhruva/actions/runs/35184975533"
+    }
+  ]
+}

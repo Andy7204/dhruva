@@ -117,3 +117,11 @@ execution (past-only cleaning, adjusted ATR, gap stops, settled cash, FIFO,
 shared tax reserve and actual 70/30 books), not an exact deployed-engine replay.
 Current constituent lists, adjusted prices and simplified constant tax rates
 remain material limitations. No variant was chosen for deployment.
+
+## Hardening mission and audit
+Read `docs/HARDENING_MISSION.md` and `docs/HARDENING_PROGRESS.md` for the ordered
+hardening work. `docs/CURRENT_STATE_AUDIT.md` supersedes optimistic implementation
+claims above: current live NAV does not reserve tax, T+1 does not restrict cash,
+missed sessions are skipped, and stale data can look healthy. Phase 0 probes
+reproduce these defects without altering production. Preserve v1 before fixes;
+decision/accounting changes need a new prospective version. Never backdate evidence.
