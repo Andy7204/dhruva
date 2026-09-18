@@ -12,6 +12,10 @@
     [
       "2026-09-17",
       30000.0
+    ],
+    [
+      "2026-09-18",
+      30000.0
     ]
   ],
   "closed_trades": [],
@@ -20,11 +24,11 @@
   "charges_total": 0.0,
   "tax_accrued": 0.0,
   "tax_detail": {},
-  "as_of": "2026-09-17",
+  "as_of": "2026-09-18",
   "inception": "2026-09-16",
-  "step_count": 2,
+  "step_count": 3,
   "risk_on": false,
   "peak_value": 30000.0,
-  "next_rebalance_in": 62,
-  "processed_through": "2026-09-17"
+  "next_rebalance_in": 61,
+  "processed_through": "2026-09-18"
 }

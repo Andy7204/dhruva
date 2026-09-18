@@ -11,7 +11,7 @@
       "stop": 0.0,
       "acquired": "2026-09-17",
       "settle_date": "2026-09-18",
-      "settled": false
+      "settled": true
     },
     "LIQUIDBEES.NS": {
       "qty": 3,
@@ -21,27 +21,10 @@
       "stop": 0.0,
       "acquired": "2026-09-17",
       "settle_date": "2026-09-18",
-      "settled": false
+      "settled": true
     }
   },
   "orders": [
-    {
-      "id": 1,
-      "side": "BUY",
-      "symbol": "GOLDBEES.NS",
-      "kind": "cushion",
-      "status": "filled",
-      "decided_date": "2026-09-16",
-      "target_value": 10238.0,
-      "stop": 0.0,
-      "ref_price": 124.7,
-      "fill_date": "2026-09-17",
-      "fill_price": 124.41,
-      "qty": 82,
-      "cost": 24.14,
-      "amount": 10201.55,
-      "settle_date": "2026-09-18"
-    },
     {
       "id": 2,
       "side": "BUY",
@@ -52,23 +35,6 @@
       "target_value": 6825.0,
       "stop": 0.0,
       "ref_price": 0
-    },
-    {
-      "id": 3,
-      "side": "BUY",
-      "symbol": "LIQUIDBEES.NS",
-      "kind": "cushion",
-      "status": "filled",
-      "decided_date": "2026-09-16",
-      "target_value": 3412.0,
-      "stop": 0.0,
-      "ref_price": 1000.0,
-      "fill_date": "2026-09-17",
-      "fill_price": 1001.2,
-      "qty": 3,
-      "cost": 9.46,
-      "amount": 3003.6,
-      "settle_date": "2026-09-18"
     }
   ],
   "history": [
@@ -79,6 +45,10 @@
     [
       "2026-09-17",
       69914.49
+    ],
+    [
+      "2026-09-18",
+      70132.58
     ]
   ],
   "closed_trades": [],
@@ -87,11 +57,11 @@
   "charges_total": 33.6,
   "tax_accrued": 0.0,
   "tax_detail": {},
-  "as_of": "2026-09-17",
+  "as_of": "2026-09-18",
   "inception": "2026-09-16",
-  "step_count": 2,
+  "step_count": 3,
   "risk_on": false,
-  "peak_value": 70000.0,
-  "next_rebalance_in": 62,
-  "processed_through": "2026-09-17"
+  "peak_value": 70132.58024597168,
+  "next_rebalance_in": 61,
+  "processed_through": "2026-09-18"
 }
