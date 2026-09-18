@@ -39,7 +39,7 @@ preserve existing history and distinguish imported records from prospective evid
 |---|---|---|
 | 0 | Complete | CURRENT_STATE_AUDIT.md, 11 engineering observations, nine quant defect reproductions; production hashes unchanged. |
 | 1 | Complete | 52-file v1 archive, manifest, 13 active guarded paths; five tests and CLI verification passed. |
-| 2 | Not started | Append-only ledger, replay/duplicate/tamper tests and restart durability. |
+| 2 | Complete | Immutable segments/snapshots and v1 capture; 13 tests; fresh remote checkout/restarted process preserved head and did not duplicate fixture. |
 | 3–4 | Not started | Workflow hardening then verified deployed freshness/failure behavior. |
 | 5–10 | Not started | Canonical pipeline, data, health, watchdog, alerting, failure recovery. |
 | 11–15 | Not started | Backtest, live separation, portfolio, interface, actual strategies. |
@@ -61,6 +61,19 @@ source/config/universe/history/manifest tamper and rejection before fetching.
 Evidence: `docs/evidence/phase1_freeze.json`. No economic fixes applied yet.
 Next: Phase 2 durable append-only ledger; separate synthetic acceptance namespace
 from imported legacy history and genuinely prospective decisions.
+
+Phase 2 completed September 18: `dhruva/ledger.py`, `dhruva/evidence.py`, daily
+orchestrator capture, ledger/evidence tests, `scripts/ledger_acceptance.py`,
+`docs/LEDGER.md`, `.gitattributes`, `.gitignore`, and synthetic ledger namespace.
+Implementation pushed at `00b813a`. Thirteen tests passed. A fresh sparse clone
+from public GitHub and a new Python process returned the identical ledger head
+`dd5c4a3a614f41ae313bf026af853f4a3514199f74ac53800b6d76981ef6cc61`,
+one event, and `new_event_written=false`; evidence `phase2_remote_restart.json`.
+Corrections append; mutations/truncation fail. Snapshot corruption fails.
+This is tamper-evident Git storage, not administrator-proof immutability.
+No economic bugs claimed repaired. Next: Phase 3 workflow/dependency hardening,
+then Phase 4 deployed freshness and failure visibility. Do not start Phase 5
+until combined acceptance evidence is complete.
 
 The earlier challenge study is separate:
 `research/results/REPORT.html`; no candidate was deployed. Its current cache no

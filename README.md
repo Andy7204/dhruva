@@ -13,6 +13,10 @@ The [original v1](strategies/dhruva_v1/README.md) is archived with its known fla
 The daily entrypoint checks its economic source/configuration hashes before work.
 Future execution/accounting corrections must use a separate prospective version.
 
+The [paper ledger](docs/LEDGER.md) preserves evaluation provenance and exact
+captured portfolio bundles. Restart, duplicate, corruption and remote-checkout
+tests pass. This protects evidence; it does not cure v1's accounting limitations.
+
 ## Strategy challenge study
 
 `research/` contains an isolated comparison of market-filter speed, review delay,

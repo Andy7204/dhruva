@@ -130,3 +130,9 @@ The original is frozen in `strategies/dhruva_v1/strategy_manifest.yaml` and
 `snapshot/`. `python -m dhruva.freeze` verifies hashes; `daily_run` rejects changed
 v1 economic source/config/universe before fetching or writing. Never regenerate
 the frozen archive to accept a code change. Corrections use a new prospective track.
+
+The v1 daily wrapper now captures per-symbol evaluations and both book states in
+`runs/ledger/dhruva_v1/` before updating book projections. Input snapshots and
+event segments are immutable through the API, hash-checked and Git-persisted.
+Legacy observations are labelled, not backdated. See `docs/LEDGER.md`.
+`runs/ledger/acceptance_test_only/` is synthetic and must never enter performance.
