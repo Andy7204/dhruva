@@ -40,8 +40,8 @@ preserve existing history and distinguish imported records from prospective evid
 | 0 | Complete | CURRENT_STATE_AUDIT.md, 11 engineering observations, nine quant defect reproductions; production hashes unchanged. |
 | 1 | Complete | 52-file v1 archive, manifest, 13 active guarded paths; five tests and CLI verification passed. |
 | 2 | Complete | Immutable segments/snapshots and v1 capture; 13 tests; fresh remote checkout/restarted process preserved head and did not duplicate fixture. |
-| 3 | In progress | 16 local tests pass; pinned dependencies/actions, failure evidence and intraday/holiday guard; awaiting clean GitHub execution. |
-| 4 | Not started | Verified deployed freshness/failure behavior; combined gate before Phase5. |
+| 3 | Complete | 16 tests and clean Linux install passed remotely; manual35305448785 correctly skipped unfinished session and published durable evidence. |
+| 4 | In progress | Implement deployed freshness/failure behavior; hardened after-close refresh still required for combined gate before Phase5. |
 | 5–10 | Not started | Canonical pipeline, data, health, watchdog, alerting, failure recovery. |
 | 11–15 | Not started | Backtest, live separation, portfolio, interface, actual strategies. |
 | 16–20 | Not started | Sourced research, explanation layer, ML decision, UX, strategy cards. |
@@ -75,6 +75,15 @@ This is tamper-evident Git storage, not administrator-proof immutability.
 No economic bugs claimed repaired. Next: Phase 3 workflow/dependency hardening,
 then Phase 4 deployed freshness and failure visibility. Do not start Phase 5
 until combined acceptance evidence is complete.
+
+Phase3 completed: workflow and dependency pins, safe time/calendar guard,
+always-run outcome publication, tests workflow. Remote CI35305417648 and manual
+daily35305448785 succeeded. Generated commit `e45caaf` retrieved. No optional
+repository/environment secrets exist; basic operation needs none. No Telegram
+or LLM delivery claimed. Manual morning run intentionally did not refresh data.
+Next Phase4: one authoritative displayed value, visible stale/corrupt/failure
+states, version/commit/time information, local UI tests and real deployment check.
+Combined gate also needs actual hardened after-close refresh; do not bypass it.
 
 The earlier challenge study is separate:
 `research/results/REPORT.html`; no candidate was deployed. Its current cache no

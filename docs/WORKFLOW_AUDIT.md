@@ -35,10 +35,28 @@ GitHub supplies its job token. Optional `TELEGRAM_TOKEN` and `TELEGRAM_CHAT` mus
 both exist for Telegram; optional `ANTHROPIC_API_KEY` enables non-OpenAI narration,
 or `OPENAI_API_KEY` is an alternative. Values must never be printed. Optional
 secret presence/delivery is not asserted by this audit. No available connector
-reads secret metadata; remote success proves only baseline token access.
+reads secret metadata. A read-only GitHub settings check on September18 showed
+no repository or environment secrets. None are required for basic operation;
+Telegram/LLM delivery is therefore not configured or claimed. The successful
+remote publisher confirms its GitHub-supplied token has the necessary access.
 
 Known limits: artifact retention is not permanent; Git is the durable copy.
 Runner termination before the always step cannot self-report, requiring Phase8
 watchdog. External failure alerts are not yet implemented (Phase9). Hosting
 freshness is Phase4. Clean Linux install/manual hardened run evidence must be
 recorded before Phase3 is complete; YAML and local tests alone are insufficient.
+
+## Verified remote evidence
+
+- Clean Linux dependency install, all16 tests, freeze verification and restored
+  ledger fixture passed in run35305417648:
+  https://github.com/Andy7204/dhruva/actions/runs/35305417648
+- Hardened manual daily run35305448785 succeeded and committed evidence in
+  `e45caaf`. It correctly recorded `SKIPPED_NOT_DUE / BEFORE_COMPLETED_SESSION`
+  at04:03 UTC (09:33 IST), rather than processing an unfinished session:
+  https://github.com/Andy7204/dhruva/actions/runs/35305448785
+- `runs/operations/35305448785.json` and `job-35305448785.json` are the actual
+  remote output, retrieved by fast-forward Git fetch. Artifact publication passed.
+- This manual run did not refresh prices. Existing scheduled refresh is evidenced
+  separately by run35252434924; the hardened after-close path still needs its
+  own real run during Phase4 acceptance. No false green data claim is made.
