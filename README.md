@@ -21,6 +21,12 @@ Daily runs now record operational attempts and reject intraday processing. The
 [workflow audit](docs/WORKFLOW_AUDIT.md) documents scheduling, dependency pins and
 remaining limits. Calendar coverage is bounded and must be reviewed before expiry.
 
+The public page now uses one saved portfolio valuation and displays explicit
+health, dates and commit provenance. Corrupt books withhold totals; stale data
+and failed runs display errors. V1 remains visibly degraded while its economic
+defects are corrected in a new version. Legacy HTML is preserved as evidence,
+but no longer embedded as a second, conflicting live valuation.
+
 ## Strategy challenge study
 
 `research/` contains an isolated comparison of market-filter speed, review delay,

@@ -142,3 +142,9 @@ or on known non-trading days it records `SKIPPED_NOT_DUE` without advancing v1.
 Calendar coverage is explicit in `data/trading_calendar.json`; expired coverage
 fails closed. Operational completion does not certify data quality. Dependencies
 are pinned in `requirements.lock`; workflow outcomes persist under `runs/operations`.
+
+`streamlit_app.py` now reads `dhruva.health` every 60 seconds during an active
+session. It renders one recorded NAV (before tax), rejects partial/corrupt book
+totals, and flags stale, unfinished or failed evidence. It no longer embeds the
+legacy HTML with conflicting totals/unsupported claims; that file is preserved.
+V1 must never appear HEALTHY while its audited economic defects remain.

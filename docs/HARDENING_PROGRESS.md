@@ -85,6 +85,13 @@ Next Phase4: one authoritative displayed value, visible stale/corrupt/failure
 states, version/commit/time information, local UI tests and real deployment check.
 Combined gate also needs actual hardened after-close refresh; do not bypass it.
 
+Phase4 in progress: `dhruva/health.py`, `streamlit_app.py`, health/UI tests and
+`docs/STREAMLIT_VERIFICATION.md`. 23 tests pass locally. One saved valuation,
+before-tax label, no misleading legacy HTML, explicit stale/corrupt/failed states
+and per-minute health refresh. Next: verify deployed page/commit, then real
+after-close refresh (earliest16:30 IST; normal schedule18:30 IST). Do not fabricate
+a completed-session run in the morning or advance to Phase5 before this gate.
+
 The earlier challenge study is separate:
 `research/results/REPORT.html`; no candidate was deployed. Its current cache no
 longer matches its recorded input hashes after the daily refresh; preserve the
