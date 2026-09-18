@@ -17,6 +17,10 @@ The [paper ledger](docs/LEDGER.md) preserves evaluation provenance and exact
 captured portfolio bundles. Restart, duplicate, corruption and remote-checkout
 tests pass. This protects evidence; it does not cure v1's accounting limitations.
 
+Daily runs now record operational attempts and reject intraday processing. The
+[workflow audit](docs/WORKFLOW_AUDIT.md) documents scheduling, dependency pins and
+remaining limits. Calendar coverage is bounded and must be reviewed before expiry.
+
 ## Strategy challenge study
 
 `research/` contains an isolated comparison of market-filter speed, review delay,

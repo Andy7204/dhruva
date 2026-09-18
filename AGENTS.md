@@ -136,3 +136,9 @@ The v1 daily wrapper now captures per-symbol evaluations and both book states in
 event segments are immutable through the API, hash-checked and Git-persisted.
 Legacy observations are labelled, not backdated. See `docs/LEDGER.md`.
 `runs/ledger/acceptance_test_only/` is synthetic and must never enter performance.
+
+The daily CLI uses an operational guard (`dhruva.operations`): before 16:30 IST
+or on known non-trading days it records `SKIPPED_NOT_DUE` without advancing v1.
+Calendar coverage is explicit in `data/trading_calendar.json`; expired coverage
+fails closed. Operational completion does not certify data quality. Dependencies
+are pinned in `requirements.lock`; workflow outcomes persist under `runs/operations`.

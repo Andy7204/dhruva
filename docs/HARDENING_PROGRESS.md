@@ -40,7 +40,8 @@ preserve existing history and distinguish imported records from prospective evid
 | 0 | Complete | CURRENT_STATE_AUDIT.md, 11 engineering observations, nine quant defect reproductions; production hashes unchanged. |
 | 1 | Complete | 52-file v1 archive, manifest, 13 active guarded paths; five tests and CLI verification passed. |
 | 2 | Complete | Immutable segments/snapshots and v1 capture; 13 tests; fresh remote checkout/restarted process preserved head and did not duplicate fixture. |
-| 3–4 | Not started | Workflow hardening then verified deployed freshness/failure behavior. |
+| 3 | In progress | 16 local tests pass; pinned dependencies/actions, failure evidence and intraday/holiday guard; awaiting clean GitHub execution. |
+| 4 | Not started | Verified deployed freshness/failure behavior; combined gate before Phase5. |
 | 5–10 | Not started | Canonical pipeline, data, health, watchdog, alerting, failure recovery. |
 | 11–15 | Not started | Backtest, live separation, portfolio, interface, actual strategies. |
 | 16–20 | Not started | Sourced research, explanation layer, ML decision, UX, strategy cards. |

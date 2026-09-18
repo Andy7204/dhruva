@@ -13,7 +13,7 @@ FROM python:3.12-slim
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1 PYTHONUTF8=1
 
-COPY requirements.txt .
+COPY requirements.txt requirements.lock ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
