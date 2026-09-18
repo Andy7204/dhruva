@@ -113,6 +113,13 @@ because the real after-close refresh has not yet been observed.
 
 ## Exact next actions on continuation
 
+September18 after-close continuation checkpoint: fresh usage reached90% weekly
+consumed (10% remaining) before manual dispatch. No new workflow was triggered.
+Weekly reset: September24 10:44:15 IST. Existing continuation heartbeat moved to
+Thursday10:50 IST. On resumption first inspect scheduled runs since this checkpoint;
+their evidence may satisfy the real-refresh gate. Restore suitable daily heartbeat
+times once usage permits. All accounting repairs remain pending; no phase advanced.
+
 1. Check usage first. If still <=10% in either window, wait for limiting reset.
 2. Read this file and AGENTS; inspect Git status and fetch remote without losing edits.
 3. After16:30 IST Sep18, trigger the existing daily workflow once via GitHub UI
