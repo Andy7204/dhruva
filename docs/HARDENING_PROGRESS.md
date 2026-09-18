@@ -6,10 +6,11 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
-- Phase 0 audit complete. Engineering and quantitative audits reproduced defects
-  without running the production pipeline or changing live records.
-- Local source checkpoint: `94287c7` (isolated strategy challenge study saved).
-- Last deployed daily-data commit: `75dd97e`; production source originally `ee7531d`.
+- Phases 0–3 complete. Phase4 UI deployed at `75c5c75`; 23 local and remote tests pass.
+- Current wait: real hardened after-close data refresh, earliest16:30 IST September18.
+- Latest verified CI35305870599 succeeded; manual daily35305448785 correctly
+  skipped the unfinished session. No accounting fixes are claimed complete yet.
+- Frozen original v1 source/data baseline remains `75dd97e`; never rewrite it.
 - Public repository: https://github.com/Andy7204/dhruva
 - Public app: https://dhruva-andy7204.streamlit.app/
 - GitHub scheduled run `35252434924` succeeded September 17, 2026,
@@ -21,13 +22,17 @@ preserve existing history and distinguish imported records from prospective evid
 ## Continuation and usage
 
 - User authorized continuation until all tasks are complete, including after resets.
-- Thread heartbeat ID: `continue-dhruva-hardening-after-usage-reset`, hourly.
+- Thread heartbeat ID: `continue-dhruva-hardening-after-usage-reset`, currently
+  daily14:40,16:40,19:40 local time for reset and completed-session checks.
 - Local continuation requires this computer and Codex to remain running. GitHub daily
   execution is independent of the local computer.
 - Check fresh usage at phase boundaries. At <=10% remaining in either core window,
   checkpoint exact next action and limiting reset, then defer until capacity returns.
-- Last check September 18: five-hour usage 9% (91% left), reset Unix 1789721187;
-  weekly usage 67% (33% left), reset Unix 1790226855. Fresh checks take precedence.
+- Last check September18 at04:10 UTC: five-hour usage93% (7% left), reset
+  **September18 14:16:27 IST** /08:46:27 UTC (Unix1789721187).
+  Weekly usage80% (20% left), reset **September24 10:44:15 IST** (Unix1790226855).
+  Pausing substantive work at the configured low-usage threshold. Fresh checks
+  take precedence; no reset credits or purchases authorized.
 - Do not buy credits or redeem a reset. Do not create another continuation task.
 - Python: `C:/Users/adpan/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe`.
 - Shell PowerShell. Git push works; gh CLI is absent. GitHub connector reads run
@@ -91,6 +96,34 @@ before-tax label, no misleading legacy HTML, explicit stale/corrupt/failed state
 and per-minute health refresh. Next: verify deployed page/commit, then real
 after-close refresh (earliest16:30 IST; normal schedule18:30 IST). Do not fabricate
 a completed-session run in the morning or advance to Phase5 before this gate.
+
+Phase4 deployment observed September18 around04:10 UTC: public browser showed
+commit75c5c75, SYSTEM DEGRADED, one NAV INR99,914.49, correct book totals,
+Sep17 portfolio/benchmark dates and the morning SKIPPED_NOT_DUE attempt.
+Remote CI35305870599 passed all23 tests. Evidence saved in
+`docs/evidence/phase4_public_observation.md`. Phase4 remains in progress solely
+because the real after-close refresh has not yet been observed.
+
+## Exact next actions on continuation
+
+1. Check usage first. If still <=10% in either window, wait for limiting reset.
+2. Read this file and AGENTS; inspect Git status and fetch remote without losing edits.
+3. After16:30 IST Sep18, trigger the existing daily workflow once via GitHub UI
+   (or observe its real scheduled run). No early-time bypass and no synthetic clock
+   in production. Workflow URL: https://github.com/Andy7204/dhruva/actions/workflows/daily.yml
+4. Inspect exact logs/errors using the AGENTS playbook; pull generated commit,
+   verify real ledger/snapshot serialization, both book dates and cache dates,
+   Streamlit current commit/date and one NAV. Rerun to prove duplicate safety.
+5. Finish Phase4 acceptance documentation/commit. Then Phase5 canonical guarded
+   pipeline, Phase6 data safety, Phase7 health, Phase8 watchdog, Phase9 alerts,
+   Phase10 failure recovery; remaining phases follow the mission. Corrected
+   economics must use a new prospective track, not mutate guarded v1 code/config.
+6. Audit issues are explicitly authorized to fix. Preserve original history;
+   label legacy imports, recovery/reconstructed days and genuine forward decisions.
+
+Do not spawn new subagents unless user/skill explicitly authorizes it (latest
+developer mode). Prior audit agents stopped at usage limits; their durable scripts
+and outputs are already saved. Do not restart them unnecessarily.
 
 The earlier challenge study is separate:
 `research/results/REPORT.html`; no candidate was deployed. Its current cache no
