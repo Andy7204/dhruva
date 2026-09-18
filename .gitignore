@@ -3,6 +3,8 @@ __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
+.writer.lock
+.pending-*
 
 # Packaging output and local secrets
 dist/

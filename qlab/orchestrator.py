@@ -25,7 +25,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 RUNS = PROJECT_ROOT / "runs"
 
 
-def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal) -> dict:
+def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal, persist=True) -> dict:
     """Advance a realistic live book (next-open fills, T+1 settlement, per-trade costs)."""
     RUNS.mkdir(parents=True, exist_ok=True)
     state_path = RUNS / f"livebook_{name}.json"
@@ -41,12 +41,18 @@ def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal) -> dic
         rf = 1.0 if rfactor is None else float(rfactor.get(date, 1.0))
         LB.step(state, panel, date, cfg_book, rok, rf)
     state["processed_through"] = str(todo[-1].date()) if todo else pt
-    state_path.write_text(json.dumps(state, indent=2, default=str))
-    (RUNS / f"today_orders_{name}.json").write_text(json.dumps(
-        {"as_of": state["as_of"], "orders": [o for o in state["orders"]
-         if o["status"] == "scheduled" or o.get("fill_date") == state["as_of"]]}, indent=2))
+    if persist:
+        _save_book(name, state)
     return {"name": name, "state": state, "capital": cfg_book["starting_capital"],
             "prices_now": E._prices_at(panel, cal[-1])}
+
+
+def _save_book(name, state):
+    from dhruva.ledger import atomic_write
+    atomic_write(RUNS / f"livebook_{name}.json", json.dumps(state, indent=2, default=str).encode('utf-8'))
+    orders = {"as_of": state["as_of"], "orders": [o for o in state["orders"]
+              if o["status"] == "scheduled" or o.get("fill_date") == state["as_of"]]}
+    atomic_write(RUNS / f"today_orders_{name}.json", json.dumps(orders, indent=2).encode('utf-8'))
 
 
 def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
@@ -70,12 +76,22 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
 
     book_defs = cfg.get("books") or {"main": {"capital": cfg["starting_capital"], "overrides": {}}}
     results = []
+    previous = {}
     for name, bk in book_defs.items():
+        state_path = RUNS / f"livebook_{name}.json"
+        previous[name] = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {}
         cfg_book = _apply(cfg, bk.get("overrides", {}))
         cfg_book["starting_capital"] = bk["capital"]
         rg = E.regime_series(cfg_book, bench_e)
         rf = E.regime_factor_series(cfg_book, bench_e)
-        results.append(_run_livebook(cfg_book, name, panel, rg, rf, cal))
+        results.append(_run_livebook(cfg_book, name, panel, rg, rf, cal, persist=False))
+
+    from dhruva.evidence import record_evaluation
+    results, _ = record_evaluation(PROJECT_ROOT, cfg, raw, bench_raw, panel, results, previous)
+    # Ledger contains both books before mutable projections are published. A
+    # repeat restores the first captured same-date bundle, not revised evidence.
+    for result in results:
+        _save_book(result['name'], result['state'])
 
     from qlab import narrator as NR
     from qlab import notify as NT
