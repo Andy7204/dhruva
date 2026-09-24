@@ -39,6 +39,20 @@ def evaluate(root=ROOT, now=None):
 
 
 def main():
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--test-alert',action='store_true')
+    args=parser.parse_args()
+    if args.test_alert:
+        from dhruva.alerts import notify
+        # Test channel cannot replace the real watchdog heartbeat or incidents.
+        results=[notify('watchdog',['Synthetic missed heartbeat fixture'],test=True),
+                 notify('watchdog',['Synthetic missed heartbeat fixture'],test=True),
+                 notify('watchdog',[],test=True)]
+        assert [r['status'] for r in results]==['CREATED','ALREADY_OPEN','RECOVERED'],results
+        atomic_write(ROOT/'runs/watchdog/alert_acceptance.json',canonical(
+            {'synthetic':True,'observed_at':utc_now(),'results':results})+b'\n')
+        print(json.dumps(results)); return 0
     result=evaluate()
     atomic_write(ROOT/'runs/watchdog/latest.json',canonical(result)+b'\n')
     print(json.dumps(result,indent=2))
