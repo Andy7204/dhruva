@@ -53,23 +53,15 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add runs/ reports/dashboard.html data/cache/
-          if git diff --cached --quiet; then
-            echo 'No generated changes.'
-          else
-            git commit -m 'Refresh daily paper books and dashboard'
-            for attempt in 1 2 3; do
-              git push && exit 0
-              sleep 5
-            done
-            echo 'Publication failed. Evidence remains in uploaded artifact; do not force-push.'
-            exit 1
-          fi
+          python -m dhruva.publication
       - name: Preserve operational evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: daily-evidence-${{ github.run_id }}
-          path: runs/operations/
+          path: |
+            runs/
+            reports/dashboard.html
+            data/cache/
           retention-days: 30
           if-no-files-found: warn
