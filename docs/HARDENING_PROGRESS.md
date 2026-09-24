@@ -6,6 +6,11 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+Latest user amendment: stop at **5% remaining**, replacing10%. Fresh usage95%
+five-hour/30% weekly, so the new cutoff is already reached. Reset/resume times
+remain September25 01:18:24/01:25 IST.
+
+
 LATEST September24 evening: user approved ten-phase consolidation, committed
 f834426. New Phase1 complete; new Phase2 in progress.45 local tests pass.
 f34e184 adds daily external failure alerts and ledger/projection equality checks;
@@ -74,7 +79,7 @@ repairs. No remaining scope was dropped or automatically marked complete.
   daily14:40,16:40,19:40 local time for reset and completed-session checks.
 - Local continuation requires this computer and Codex to remain running. GitHub daily
   execution is independent of the local computer.
-- Check fresh usage at phase boundaries. At <=10% remaining in either core window,
+- Check fresh usage at phase boundaries. At <=5% remaining in either core window,
   checkpoint exact next action and limiting reset, then defer until capacity returns.
 - Reset confirmed September18 at09:12 UTC: five-hour usage21% (79% left), next
   reset Unix1789740760; weekly usage84% (16% left), reset September24 10:44:15 IST
@@ -180,7 +185,7 @@ Thursday10:50 IST. On resumption first inspect scheduled runs since this checkpo
 their evidence may satisfy the real-refresh gate. Restore suitable daily heartbeat
 times once usage permits. All accounting repairs remain pending; no phase advanced.
 
-1. Check usage first. If still <=10% in either window, wait for limiting reset.
+1. Check usage first. If still <=5% in either window, wait for limiting reset.
 2. Read this file and AGENTS; inspect Git status and fetch remote without losing edits.
 3. After16:30 IST Sep18, trigger the existing daily workflow once via GitHub UI
    (or observe its real scheduled run). No early-time bypass and no synthetic clock

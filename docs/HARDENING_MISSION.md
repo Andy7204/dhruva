@@ -35,7 +35,7 @@ Report changed files, tests, actual evidence, issues and justified deferrals at 
 phase boundary. Conditional API/ML/agent/commercial work may be rejected with a
 reason; required accounting, reliability and strategy tests may not be waived.
 
-Check usage at start and phase boundaries. At10% or less remaining in either core
+Check usage at start and phase boundaries. At5% or less remaining in either core
 window, checkpoint and resume after the limiting reset through the existing
 continuation heartbeat. Never buy credits or redeem reset credits. Minimize repeated
 reads, redundant full tests and unnecessary infrastructure. Keep working beyond
