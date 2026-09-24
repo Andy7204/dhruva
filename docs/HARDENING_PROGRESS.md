@@ -16,7 +16,9 @@ preserve existing history and distinguish imported records from prospective evid
 
 - Phases 0–4 complete. Phase4 after-close evidence verified September24; see
   `docs/evidence/phase4_after_close.json` and updated public observation.
-- Current work: Phase5 canonical pipeline and safe recovery; in-place repairs.
+- Phase5 complete September24: canonical CLI, chronological recovery, whole-run
+  lock, ledger-based projection recovery and archive-only guard.28 tests pass.
+- Current work: Phase6 strict data safety and causality; in-place repairs.
 - Latest verified CI35305870599 succeeded; manual daily35305448785 correctly
   skipped the unfinished session. No accounting fixes are claimed complete yet.
 - Frozen original v1 source/data baseline remains `75dd97e`; never rewrite it.
@@ -55,7 +57,8 @@ preserve existing history and distinguish imported records from prospective evid
 | 2 | Complete | Immutable segments/snapshots and v1 capture; 13 tests; fresh remote checkout/restarted process preserved head and did not duplicate fixture. |
 | 3 | Complete | 16 tests and clean Linux install passed remotely; manual35305448785 correctly skipped unfinished session and published durable evidence. |
 | 4 | Complete | Four real scheduled refreshes; public Sep23 data at ece92f3;4,016 ledger events/hash-checked snapshots; copied-real-bundle duplicate capture safe. |
-| 5–10 | Not started | Canonical pipeline, data, health, watchdog, alerting, failure recovery. |
+| 5 | Complete | DAILY_PIPELINE.md;28 tests, interrupted two-book publication/recovery/duplicate fixture; actual guarded CLI skip. |
+| 6–10 | Not started | Data, health, watchdog, alerting, failure recovery. |
 | 11–15 | Not started | Backtest, live separation, portfolio, interface, actual strategies. |
 | 16–20 | Not started | Sourced research, explanation layer, ML decision, UX, strategy cards. |
 | 21–25 | Not started | API/execution decisions, architecture/compliance docs, honest case study. |

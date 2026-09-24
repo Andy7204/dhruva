@@ -186,3 +186,11 @@ reports/dashboard.html
 `config.json → costs`. Delivery round-trip on a ₹6,000 order ≈ ₹46 (0.77%),
 dominated by the DP charge + STT + per-order brokerage. **Verify against Groww's
 live calculator and update** — these change with regulation.
+# Current hardening status (September24, 2026)
+
+Public paper app: https://dhruva-andy7204.streamlit.app/ . Canonical daily command:
+`python -m dhruva.run_daily`. See [audit history](docs/AUDIT_HISTORY.md),
+[pipeline](docs/DAILY_PIPELINE.md) and [progress](docs/HARDENING_PROGRESS.md).
+The existing app is being repaired in place; original archive and ledger evidence
+are retained. Recovery is labelled reconstruction. Tax/settlement repairs remain
+pending; old descriptive claims below are subject to the audit, not certification.

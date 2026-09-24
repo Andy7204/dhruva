@@ -58,14 +58,14 @@ Status describes the latest documented verified scope, not intended work.
 | D06 | Raw ATR is mixed with adjusted prices: ATR4 versus adjusted ATR2. | Reproduced; `indicators.py` | Pending production fix; research engine differs |
 | D07 | Price caches and corporate-action adjustment vintages change; no historical point-in-time constituent database. | Inspection/limitation | Prospective snapshots added; historical limitation remains |
 | D08 | No complete zero-volume, freshness, missing-universe and corporate-action validation contract. Initial cache scan found no duplicate dates/impossible OHLC in that sample. | Inspection | Pending |
-| E01 | Recovery recomputes inception from latest date, skipping intermediate missed sessions. Sep14 state plus Sep14–17 data steps only Sep17. | Reproduced; `orchestrator.py` | Pending |
+| E01 | Recovery recomputes inception from latest date, skipping intermediate missed sessions. Sep14 state plus Sep14–17 data steps only Sep17. | Reproduced; `orchestrator.py` | Fixed chronological replay; interruption/recovery test passes |
 | E02 | A morning run finalized the date; evening quotes changed while saved NAV stayed unchanged. | Production observation | Before16:30 guard added; initial history reconciliation pending |
 | E03 | Gap stop can fill at90 when open80/high85/low75: an impossible sale. | Reproduced; `livebook.py`, historical engine | Pending production fix |
 | E04 | T+1 is a status without cash restriction: zero opening cash still buys990 shares using same-day sale proceeds. | Reproduced | Pending |
 | E05 | Business-day settlement ignores exchange/settlement holidays. | Inspection | Pending; run calendar is not a full settlement calendar |
 | E06 | Old settled fills are pruned from orders, contradicting a complete journal. | Reproduced | Prospective ledger added; underlying order pruning pending |
 | E07 | Process-local order counter can reuse identities after restart. | Inspection | Ledger event IDs fixed; engine order IDs pending |
-| E08 | Multi-file overwrites can leave partial book/report state after failure. | Inspection | Atomic individual book writes and ledger-first bundle added; full publication recovery pending |
+| E08 | Multi-file overwrites can leave partial book/report state after failure. | Inspection | Ledger-first bundle and projection recovery tested; report failure still visible through failed attempt |
 | A01 | Tax accrues without reducing cash availability/NAV: tax2000 still leaves NAV100000. | Reproduced | Pending; UI now explicitly before-tax |
 | A02 | Separate books duplicate annual exemption: two100000 gains produce0 versus modeled shared9375. | Reproduced | Pending |
 | A03 | Average cost/earliest holding date replaces FIFO tax lots. | Inspection | Pending |
@@ -147,7 +147,7 @@ See [full report](../research/results/REPORT.md) and fixed protocol.
 
 ## Completion rule
 
-Phases0–4 completed; Phase4 after-close/public acceptance verified September24.
+Phases0–5 completed; Phase4 after-close/public acceptance verified September24.
 Later phases and accounting repairs are not certified complete. Each repair needs
 implementation, relevant tests, observed behavior, documentation and a saved
 commit. Keep decisions deterministic, use no future data, model costs/tax honestly,

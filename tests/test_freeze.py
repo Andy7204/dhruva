@@ -17,10 +17,10 @@ class FreezeTests(unittest.TestCase):
         for path in self.manifest['active_guard_files']:
             target = self.root/path
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(ROOT/path, target)
+            shutil.copyfile(ROOT/'strategies/dhruva_v1/snapshot'/path, target)
 
     def test_original_archive_and_active_code_verify(self):
-        self.assertEqual(verify_v1(self.root)['strategy_version'], '1.0')
+        self.assertEqual(verify_v1(self.root, check_active=True)['strategy_version'], '1.0')
 
     def test_source_config_universe_and_history_mutations_rejected(self):
         paths = ['qlab/livebook.py', 'config.json', 'data/nifty500.txt',
@@ -31,7 +31,7 @@ class FreezeTests(unittest.TestCase):
                 original = target.read_bytes()
                 target.write_bytes(original+b'\nchanged')
                 with self.assertRaises(FrozenStrategyChanged):
-                    verify_v1(self.root)
+                    verify_v1(self.root, check_active=True)
                 target.write_bytes(original)
 
     def test_manifest_tamper_and_missing_archive_rejected(self):
@@ -47,7 +47,13 @@ class FreezeTests(unittest.TestCase):
         for path in self.manifest['active_guard_files']:
             target = self.root/path
             target.write_bytes(target.read_bytes().replace(b'\r\n', b'\n').replace(b'\n', b'\r\n'))
+        verify_v1(self.root, check_active=True)
+
+    def test_authorized_active_repairs_leave_archive_verifiable(self):
+        (self.root/'qlab/livebook.py').write_text('# authorized in-place repair')
         verify_v1(self.root)
+        with self.assertRaises(FrozenStrategyChanged):
+            verify_v1(self.root, check_active=True)
 
     def test_daily_run_rejects_changed_version_before_fetch(self):
         from qlab.orchestrator import daily_run

@@ -25,20 +25,24 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 RUNS = PROJECT_ROOT / "runs"
 
 
-def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal, persist=True) -> dict:
+def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal, persist=True, state=None) -> dict:
     """Advance a realistic live book (next-open fills, T+1 settlement, per-trade costs)."""
     RUNS.mkdir(parents=True, exist_ok=True)
     state_path = RUNS / f"livebook_{name}.json"
-    state = json.loads(state_path.read_text()) if state_path.exists() else LB.new_livebook(cfg_book, name)
+    if state is None:
+        state = json.loads(state_path.read_text()) if state_path.exists() else LB.new_livebook(cfg_book, name)
 
     back = cfg_book["paper"]["inception_days_back"]
     inc_idx = len(cal) - 1 if not back else max(260, len(cal) - back)
     inception = cal[min(inc_idx, len(cal) - 1)]
     pt = state.get("processed_through")
-    todo = [d for d in cal if d >= inception and (pt is None or d > pd.Timestamp(pt))]
+    todo = [d for d in cal if d > pd.Timestamp(pt)] if pt else [d for d in cal if d >= inception]
     for date in todo:
-        rok = True if regime is None else bool(regime.get(date, True))
-        rf = 1.0 if rfactor is None else float(rfactor.get(date, 1.0))
+        if regime is None or date not in regime.index or pd.isna(regime.loc[date]):
+            raise ValueError(f'Missing market regime for {date}')
+        if rfactor is None or date not in rfactor.index or pd.isna(rfactor.loc[date]):
+            raise ValueError(f'Missing allocation regime for {date}')
+        rok = bool(regime.loc[date]); rf = float(rfactor.loc[date])
         LB.step(state, panel, date, cfg_book, rok, rf)
     state["processed_through"] = str(todo[-1].date()) if todo else pt
     if persist:
@@ -57,7 +61,7 @@ def _save_book(name, state):
 
 def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
     from dhruva.freeze import verify_v1
-    verify_v1()  # reject unversioned economic changes before data or state writes
+    verify_v1()  # Original archive integrity; active in-place repairs are authorized.
     cfg = D.load_config()
     if verbose:
         print("Refreshing data ..." if refresh else "Loading cached data ...")
@@ -72,26 +76,61 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
     bench_e = I.enrich(bench_raw)
     regime = E.regime_series(cfg, bench_e)
     rfactor = E.regime_factor_series(cfg, bench_e)
-    cal = E.trading_calendar(panel)
+    cal = bench_raw.index.intersection(E.trading_calendar(panel)).sort_values()
+    if not len(cal):
+        raise ValueError('No benchmark-aligned trading sessions')
 
     book_defs = cfg.get("books") or {"main": {"capital": cfg["starting_capital"], "overrides": {}}}
-    results = []
-    previous = {}
+    import copy
+    from dhruva.ledger import Ledger
+    from dhruva.evidence import record_evaluation
+    ledger = Ledger(PROJECT_ROOT/'runs/ledger/dhruva_v1')
+    ledger.verify()  # corrupt committed evidence must never be silently bypassed
+    states = {}; configs = {}; regimes = {}; factors = {}
     for name, bk in book_defs.items():
         state_path = RUNS / f"livebook_{name}.json"
-        previous[name] = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {}
+        states[name] = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else None
         cfg_book = _apply(cfg, bk.get("overrides", {}))
         cfg_book["starting_capital"] = bk["capital"]
-        rg = E.regime_series(cfg_book, bench_e)
-        rf = E.regime_factor_series(cfg_book, bench_e)
-        results.append(_run_livebook(cfg_book, name, panel, rg, rf, cal, persist=False))
-
-    from dhruva.evidence import record_evaluation
-    results, _ = record_evaluation(PROJECT_ROOT, cfg, raw, bench_raw, panel, results, previous)
-    # Ledger contains both books before mutable projections are published. A
-    # repeat restores the first captured same-date bundle, not revised evidence.
-    for result in results:
-        _save_book(result['name'], result['state'])
+        configs[name] = cfg_book
+        regimes[name] = E.regime_series(cfg_book, bench_e)
+        factors[name] = E.regime_factor_series(cfg_book, bench_e)
+    # Recover a ledger commit that preceded a failed projection write. Only
+    # advance projections to existing evidence; never recalculate its decisions.
+    segments = sorted((ledger.root/'segments').glob('*.json'))
+    if segments:
+        last = json.loads(segments[-1].read_text(encoding='utf-8'))['payload']['state']
+        for captured in last['results']:
+            name = captured['name']; current = states.get(name)
+            if name in configs and (not current or (current.get('processed_through') or '') <= captured['state']['as_of']):
+                states[name] = copy.deepcopy(captured['state'])
+    pending = set()
+    checkpoints = {(s or {}).get('processed_through') for s in states.values()}
+    if len(checkpoints) != 1:
+        raise ValueError('Books have inconsistent checkpoints without a recoverable ledger bundle')
+    for name, state in states.items():
+        pt = (state or {}).get('processed_through')
+        if pt:
+            if pd.Timestamp(pt) > cal[-1]: raise ValueError('Portfolio is ahead of available benchmark data')
+            pending.update(d for d in cal if d > pd.Timestamp(pt))
+        else:
+            back = configs[name]['paper']['inception_days_back']
+            start = max(260, len(cal)-back) if back else len(cal)-1
+            pending.update(cal[min(start, len(cal)-1):])
+    dates = sorted(pending) or [cal[-1]]
+    results = []
+    for date in dates:
+        previous = copy.deepcopy(states)
+        results = [_run_livebook(configs[name], name, panel, regimes[name], factors[name],
+                    pd.DatetimeIndex([date]), persist=False, state=states[name]) for name in book_defs]
+        # Recovery is recorded at today's actual timestamp, not fabricated as
+        # an original live evaluation on the missed date. Snapshots stop at cutoff.
+        results, added = record_evaluation(PROJECT_ROOT, cfg,
+            {s: f.loc[:date] for s,f in raw.items()}, bench_raw.loc[:date], panel,
+            results, previous, recovered=date < cal[-1])
+        for result in results:
+            states[result['name']] = result['state']
+            _save_book(result['name'], result['state'])
 
     from qlab import narrator as NR
     from qlab import notify as NT
@@ -100,7 +139,7 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
     out = R.build_multi_dashboard(cfg, results, bench_e["adjclose"], narrative=narrative)
 
     # alert summary (the scheduler can email / Telegram / Discord this)
-    alines = [f"Dhruva — {results[0]['state'].get('as_of', '')} — place these at the next market open:"]
+    alines = [f"Dhruva PAPER ONLY — {results[0]['state'].get('as_of', '')} — simulated next-open intents:"]
     any_action = False
     for r in results:
         sched = [o for o in r["state"]["orders"] if o["status"] == "scheduled"]
@@ -114,7 +153,7 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
             else:
                 alines.append(f"  SELL {o['symbol'].replace('.NS', '')} ({o.get('reason', '')})")
     if not any_action:
-        alines = [f"Dhruva — {results[0]['state'].get('as_of', '')}: no action today, hold your positions."]
+        alines = [f"Dhruva PAPER ONLY — {results[0]['state'].get('as_of', '')}: NO ACTION — strategy unchanged."]
     (RUNS / "alert.txt").write_text("\n".join(alines), encoding="utf-8")
     NT.send_telegram(narrative + "\n\n" + "\n".join(alines))  # no-op unless TELEGRAM_* env set
 
@@ -137,4 +176,5 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
 
 
 if __name__ == "__main__":
-    daily_run(refresh=False)
+    from dhruva.run_daily import main
+    main()

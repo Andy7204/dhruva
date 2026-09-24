@@ -8,7 +8,7 @@ import traceback
 import uuid
 
 from dhruva.calendar import run_due
-from dhruva.ledger import atomic_write, canonical, utc_now
+from dhruva.ledger import atomic_write, canonical, utc_now, writer_lock
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -20,6 +20,12 @@ def write_attempt(record, root=ROOT):
 
 
 def run(refresh=True):
+    # Serialize the complete state transition, not just individual ledger writes.
+    with writer_lock(ROOT/'runs/pipeline'):
+        return _run(refresh)
+
+
+def _run(refresh=True):
     record = {'run_id': os.getenv('GITHUB_RUN_ID') or str(uuid.uuid4()), 'started_at': utc_now(),
               'event': os.getenv('GITHUB_EVENT_NAME', 'local'), 'strategy_version': '1.0',
               'git_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),

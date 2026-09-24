@@ -1,7 +1,7 @@
 """Capture original v1 evaluations without changing its trading decisions.
 
 Legacy imports are identified explicitly; they are not timestamped forward calls.
-The original economic engine remains frozen until a prospective replacement exists.
+Original archive evidence is retained while authorized repairs proceed in place.
 """
 import copy
 import json
@@ -24,7 +24,7 @@ def frame_snapshot(frame):
             'rows': [[scalar(v) for v in row] for row in frame.itertuples(index=False, name=None)]}
 
 
-def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, generated_at=None):
+def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, generated_at=None, recovered=False):
     root = Path(root)
     ledger = Ledger(root/'runs/ledger/dhruva_v1')
     as_of = max(r['state']['as_of'] for r in results)
@@ -84,14 +84,16 @@ def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, ge
                                signal_score=components['mom_score'], signal_components=components,
                                market_price=price, rationale=(order or {}).get('reason') or
                                ('Legacy state observed; not a newly timestamped signal' if legacy else
-                                'Frozen deterministic v1 evaluation; see components and scheduled paper orders'),
+                                'Deterministic paper evaluation; see components and scheduled paper orders'),
                                portfolio_nav=nav, benchmark_level=bench_level, execution_mode='PAPER',
-                               execution_status='IMPORTED_LEGACY_OBSERVATION' if legacy else
+                               execution_status='RECOVERY_RECONSTRUCTION' if recovered else
+                               'IMPORTED_LEGACY_OBSERVATION' if legacy else
                                ('SCHEDULED_NEXT_OPEN' if order else 'EVALUATED'),
                                data_cutoff_quality='date-only legacy bar; finalization unverified',
                                weight_basis='marked at captured current price, not historical closing weight',
                                target_weight_quality='pre-cost order intent, not guaranteed filled weight',
-                               accounting_quality='FROZEN_V1_KNOWN_DEFECTS'))
+                               recovery_reconstruction=recovered,
+                               accounting_quality='KNOWN_DEFECTS_UNDER_REPAIR'))
     bundle = {'results': copy.deepcopy(results), 'previous': copy.deepcopy(previous),
               'config': cfg, 'data_snapshot': snapshot, 'legacy_import': all(
                   (previous.get(r['name']) or {}).get('as_of') == r['state']['as_of'] for r in results)}

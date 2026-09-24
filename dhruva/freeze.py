@@ -14,7 +14,7 @@ class FrozenStrategyChanged(RuntimeError):
     pass
 
 
-def verify_v1(root=ROOT, *, check_active=True):
+def verify_v1(root=ROOT, *, check_active=False):
     root = Path(root)
     frozen = root / 'strategies/dhruva_v1'
     manifest_path = frozen / 'strategy_manifest.yaml'
@@ -37,7 +37,7 @@ def verify_v1(root=ROOT, *, check_active=True):
                     mismatches.append(path)
         if mismatches:
             raise FrozenStrategyChanged('Frozen v1 changed: '+', '.join(mismatches)+
-                                        '. Create a new prospective version; do not overwrite v1.')
+                                        '. Preserve the original archive; see docs/REPAIR_POLICY.md.')
         return manifest
     except (OSError, KeyError, ValueError) as exc:
         raise FrozenStrategyChanged(f'Cannot verify frozen v1: {exc}') from exc

@@ -129,10 +129,8 @@ books in place; see `docs/REPAIR_POLICY.md`. No parallel degraded strategy or ne
 forward track is required for these initial fixes. Never backdate evidence.
 
 The original is frozen in `strategies/dhruva_v1/strategy_manifest.yaml` and
-`snapshot/`. `python -m dhruva.freeze` verifies hashes; `daily_run` rejects changed
-v1 economic source/config/universe before fetching or writing. This describes the
-current guard, which must become archive-only verification when implementing the
-authorized in-place repairs. Keep the original archive/Git history as evidence;
+`snapshot/`. `python -m dhruva.freeze` verifies original archive hashes, not active
+source equality. In-place repairs are authorized. Keep archive/Git history as evidence;
 do not regenerate it to erase the original defects. Label any recalculated paper
 history as corrections/reconstruction, not newly discovered original live signals.
 
@@ -153,3 +151,9 @@ session. It renders one recorded NAV (before tax), rejects partial/corrupt book
 totals, and flags stale, unfinished or failed evidence. It no longer embeds the
 legacy HTML with conflicting totals/unsupported claims; that file is preserved.
 V1 must never appear HEALTHY while its audited economic defects remain.
+
+Canonical daily command: `python -m dhruva.run_daily`; old CLI delegates to it.
+Phase5 now serializes the operation, replays every unprocessed benchmark session,
+records recovery as reconstruction at the actual generation time, and restores
+partial projections from the committed ledger bundle. See `docs/DAILY_PIPELINE.md`.
+`docs/AUDIT_HISTORY.md` consolidates original findings and verified repair status.
