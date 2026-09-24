@@ -163,3 +163,9 @@ retain original evidence, and do not rename errors away to make health green.
   The failed old run did not preserve its ledger/cache; rerun must use actual time.
 - Health now compares current projections with the latest immutable ledger bundle
   and rejects unexpected changes, including same-date partial publication.
+
+September24 latest: mission consolidated to ten phases without dropping scope.
+45 tests pass. Public UI at f834426 correctly shows stale Sep23 data. Cookie-aware
+actual iframe health endpoint returns200ok; root endpoint is an HTML shell and plain
+HTTP client encountered303 loop. Deployment probe corrected to observed iframe URL.
+Daily retry36017079889 remains running at usage checkpoint; no success claimed.

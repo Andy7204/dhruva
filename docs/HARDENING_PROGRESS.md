@@ -6,6 +6,27 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+LATEST September24 evening: user approved ten-phase consolidation, committed
+f834426. New Phase1 complete; new Phase2 in progress.45 local tests pass.
+f34e184 adds daily external failure alerts and ledger/projection equality checks;
+f7ae72e adds actual Streamlit runtime probe and cash/quantity risk validation.
+Remote CI36017054570 passed; CI for f7ae72e still needs checking. Normal watchdog
+36016354838 and synthetic external alert36016083742 passed; test issue3 closed.
+Daily retry36017079889 (job107692268363) still fetching/calculating at checkpoint.
+FIRST next turn inspect its result/logs, fetch committed outputs, verify ledger and
+public dashboard; do not dispatch another run unnecessarily. Safe publisher may
+rebase over these source/docs commits. Prior daily36015761872 publication failed
+(fetch first); its old artifact lacks ledger/cache, never backdate reconstructed data.
+Public browser verified f834426 loading with Sep23 stale warnings and one99,989.11
+pre-tax total. Actual iframe `/~/+/_stcore/health` returned200ok. Root endpoint was
+HTML/303 and must not be treated as health. Watchdog new probe needs remote run.
+Current usage90% five-hour,29% weekly: stop per user guard. Limiting reset
+2026-09-25T01:18:24+05:30. Resume same heartbeat01:25 IST. No reset redeemed.
+Finish Phase2 external failure/recovery demonstration and refreshed public output;
+then Phase3 in-place accounting/execution repairs. Full risk limits still pending.
+
+
+
 September24 user amendment: exactly ten phases now govern execution; see
 HARDENING_MISSION.md for complete mapping. **New Phase1 complete; new Phase2 in
 progress.** Historical phase numbers below refer to the archived original plan.
