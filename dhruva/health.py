@@ -68,7 +68,8 @@ def inspect(root=ROOT, now=None):
         completed = []
         for path in op.glob('*.json'):
             record = read_json(path)
-            if record.get('status') in ('COMPLETED_UNVERIFIED_DATA', 'SUCCESS', 'SUCCESS_NO_ACTION'):
+            if record.get('status') in ('COMPLETED_UNVERIFIED_DATA', 'SUCCESS', 'SUCCESS_NO_ACTION') or (
+                    record.get('status')=='DEGRADED' and record.get('execution_completed')):
                 completed.append(record)
         if completed: result['last_success'] = max(completed, key=lambda r: r.get('ended_at') or '')
         if (op/'job_latest.json').exists():

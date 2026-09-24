@@ -92,8 +92,8 @@ Status describes the latest documented verified scope, not intended work.
 | O02 | Weekday cron lacked holiday/before-close guards. | Inspection | Guard implemented; explicit calendar only through2026-10-31, then fail closed |
 | O03 | Cron dispatch can arrive hours late; a green job does not establish fresh complete data. | Remote runs | Disclosed; freshness contract/watchdog pending |
 | O04 | No independent missed-run watchdog or reliable failure alert. | Inspection | Pending |
-| O05 | Telegram failure returnsFalse and is ignored. | Reproduced | Pending; no successful delivery claimed |
-| O06 | No durable structured attempt/failure status. | Inspection | Operational records added; complete per-stage health pending |
+| O05 | Telegram failure returnsFalse and is ignored. | Reproduced | Result now logged as delivered/failed/not-configured; no successful delivery claimed |
+| O06 | No durable structured attempt/failure status. | Inspection | Durable attempts and per-stage transitions implemented/tested |
 | O07 | No production reliability suite at baseline. | Inspection |23 production tests added; broader recovery/economics coverage pending |
 | O08 | No genuine live benchmark/strict long-running forward-performance proof. | Inspection | Pending; a few paper dates are not a track record |
 | L01 | `show_call.py`/news overlay read legacy Sep15 artifacts rather than current books. | CLI observation/inspection | Pending |
@@ -147,7 +147,7 @@ See [full report](../research/results/REPORT.md) and fixed protocol.
 
 ## Completion rule
 
-Phases0–6 completed; Phase4 after-close/public acceptance verified September24.
+Phases0–7 completed; Phase4 after-close/public acceptance verified September24.
 Later phases and accounting repairs are not certified complete. Each repair needs
 implementation, relevant tests, observed behavior, documentation and a saved
 commit. Keep decisions deterministic, use no future data, model costs/tax honestly,

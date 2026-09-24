@@ -30,7 +30,14 @@ def _run(refresh=True):
               'event': os.getenv('GITHUB_EVENT_NAME', 'local'), 'strategy_version': '1.0',
               'git_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
               'status': 'RUNNING', 'ended_at': None, 'errors': [], 'warnings': [
-                  'V1 accounting defects remain; this is not production-readiness certification.']}
+                  'Accounting defects remain; this is not production-readiness certification.'],
+              'stages': {name: {'status':'NOT_RUN'} for name in (
+                  'archive','data_ingestion','data_validation','features','benchmark',
+                  'portfolio_engine','risk_engine','ledger','report','alerts')},
+              'execution_completed': False, 'latest_market_date': None}
+    def progress(name, status, detail=None):
+        record['stages'][name] = {'status':status, 'observed_at':utc_now(), 'detail':detail}
+        write_attempt(record)
     write_attempt(record)
     try:
         due, reason = run_due()
@@ -38,13 +45,18 @@ def _run(refresh=True):
             record.update(status='SKIPPED_NOT_DUE', reason=reason)
         else:
             from qlab.orchestrator import daily_run
-            result = daily_run(refresh=refresh)
-            record.update(status='COMPLETED_UNVERIFIED_DATA',
-                          market_date=max(r['state']['as_of'] for r in result['results']))
-            # Until Phase 6 validates fresh complete data, execution success is
-            # explicitly not a HEALTHY data certification.
+            result = daily_run(refresh=refresh, progress=progress)
+            date=max(r['state']['as_of'] for r in result['results'])
+            record.update(status='DEGRADED', execution_completed=True,
+                          market_date=date, latest_market_date=date,
+                          data_status=result['data_quality']['status'],
+                          decision_status=result['decision_status'],
+                          new_evaluations=result['new_evaluations'])
+            record['warnings'].extend(result['data_quality'].get('warnings', []))
         return record
     except Exception as exc:
+        for stage in record['stages'].values():
+            if stage['status']=='RUNNING': stage.update(status='FAILED', error=f'{type(exc).__name__}: {exc}')
         record.update(status='FAILED', errors=[f'{type(exc).__name__}: {exc}'], traceback=traceback.format_exc())
         raise
     finally:

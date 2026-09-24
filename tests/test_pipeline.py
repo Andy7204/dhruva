@@ -71,7 +71,7 @@ class PipelineTests(unittest.TestCase):
                 stack.enter_context(patch.object(O.D,'get_history',return_value=frame))
                 stack.enter_context(patch.object(O.E,'build_panel',return_value={'TEST':frame}))
                 stack.enter_context(patch.object(O.I,'enrich',return_value=frame))
-                stack.enter_context(patch('dhruva.data_quality.validate_inputs',return_value=({'TEST':frame},frame,{'status':'VALID'})))
+                stack.enter_context(patch('dhruva.data_quality.validate_inputs',return_value=({'TEST':frame},frame,{'status':'VALID','coverage':1.,'excluded':{}})))
                 stack.enter_context(patch.object(O.E,'regime_series',return_value=pd.Series(True,index=dates)))
                 stack.enter_context(patch.object(O.E,'regime_factor_series',return_value=pd.Series(1.,index=dates)))
                 stack.enter_context(patch.object(O.LB,'step',side_effect=step))
@@ -92,7 +92,8 @@ class PipelineTests(unittest.TestCase):
                 ledger = Ledger(runs/'ledger/dhruva_v1'); before=ledger.verify()
                 repeated = O.daily_run(refresh=False,verbose=False)
                 self.assertEqual(before,ledger.verify())
-                self.assertEqual(result,repeated)
+                self.assertEqual(result['results'],repeated['results'])
+                self.assertEqual(repeated['new_evaluations'],0)
                 self.assertEqual(len(calls),6)
                 recovered = ledger.find('dhruva-v1:2026-09-21')['payload']['events']
                 self.assertTrue(all(e['execution_status']=='RECOVERY_RECONSTRUCTION' for e in recovered))

@@ -163,3 +163,8 @@ incomplete bars, fails stale benchmark/held data and low universe coverage, and
 records per-symbol exclusions in runs/data_quality.json. Centered cleaning is
 removed; ATR/ADX/Donchian use adjusted units. See docs/DATA_CONTRACT.md. Current
 constituent/adjustment-vintage and tax/settlement limitations remain explicit.
+
+Phase7 structured attempts persist per-stage progress/errors and final execution
+status; see docs/RUN_HEALTH.md. Completed runs remain DEGRADED while economics
+are under repair, separately from data validation. No operational failure-alert
+delivery is yet certified.

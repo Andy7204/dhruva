@@ -59,9 +59,12 @@ def _save_book(name, state):
     atomic_write(RUNS / f"today_orders_{name}.json", json.dumps(orders, indent=2).encode('utf-8'))
 
 
-def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
+def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict:
+    emit = progress or (lambda *args: None)
+    emit('archive','RUNNING')
     from dhruva.freeze import verify_v1
     verify_v1()  # Original archive integrity; active in-place repairs are authorized.
+    emit('archive','COMPLETE')
     cfg = D.load_config()
     book_defs = cfg.get("books") or {"main": {"capital": cfg["starting_capital"], "overrides": {}}}
     input_states = {}
@@ -70,6 +73,7 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
         input_states[name] = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
     if verbose:
         print("Refreshing data ..." if refresh else "Loading cached data ...")
+    emit('data_ingestion','RUNNING')
     if refresh:
         raw = D.update_universe(cfg["universe"], update_range=cfg["data"]["update_range"], clean=False)
         bench_raw = D.update_history(cfg["regime"]["benchmark"], update_range=cfg["data"]["update_range"], clean=False)
@@ -78,7 +82,11 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
         bench_raw = D.get_history(cfg["regime"]["benchmark"], rng=cfg["data"]["backtest_range"], clean=False)
 
     from dhruva.data_quality import validate_inputs
+    emit('data_ingestion','COMPLETE', {'returned_symbols':len(raw)})
+    emit('data_validation','RUNNING')
     valid, bench_valid, quality = validate_inputs(raw, bench_raw, cfg, input_states, PROJECT_ROOT)
+    emit('data_validation','COMPLETE', {'status':quality['status'], 'excluded':quality['excluded'], 'coverage':quality['coverage']})
+    emit('features','RUNNING')
     panel = E.build_panel(valid, cfg)
     bench_e = I.enrich(bench_valid)
     regime = E.regime_series(cfg, bench_e)
@@ -86,12 +94,15 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
     cal = bench_valid.index.intersection(E.trading_calendar(panel)).sort_values()
     if not len(cal):
         raise ValueError('No benchmark-aligned trading sessions')
+    emit('features','COMPLETE')
+    emit('benchmark','COMPLETE', {'latest_date':str(cal[-1].date())})
 
     book_defs = cfg.get("books") or {"main": {"capital": cfg["starting_capital"], "overrides": {}}}
     import copy
     from dhruva.ledger import Ledger
     from dhruva.evidence import record_evaluation
     ledger = Ledger(PROJECT_ROOT/'runs/ledger/dhruva_v1')
+    emit('ledger','RUNNING')
     ledger.verify()  # corrupt committed evidence must never be silently bypassed
     states = {}; configs = {}; regimes = {}; factors = {}
     for name, bk in book_defs.items():
@@ -128,6 +139,9 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
             pending.update(cal[min(start, len(cal)-1):])
     dates = sorted(pending) or [cal[-1]]
     results = []
+    new_evaluations = 0
+    emit('portfolio_engine','RUNNING')
+    emit('risk_engine','RUNNING')
     for date in dates:
         previous = copy.deepcopy(states)
         for st in states.values():
@@ -144,12 +158,17 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
         results, added = record_evaluation(PROJECT_ROOT, cfg,
             {s: f.loc[:date] for s,f in raw.items()}, bench_raw.loc[:date], panel,
             results, previous, recovered=date < cal[-1], quality=quality)
+        new_evaluations += int(added)
         for result in results:
             states[result['name']] = result['state']
             _save_book(result['name'], result['state'])
+    emit('portfolio_engine','COMPLETE', {'new_evaluations':new_evaluations, 'accounting':'KNOWN_LIMITATIONS'})
+    emit('risk_engine','WARNING', 'Existing deterministic risk rules executed; execution/accounting repairs pending')
+    emit('ledger','COMPLETE', ledger.verify())
 
     from qlab import narrator as NR
     from qlab import notify as NT
+    emit('report','RUNNING')
     narrative = NR.narrate(cfg, results)
     (RUNS / "narrative.txt").write_text(narrative, encoding="utf-8")
     out = R.build_multi_dashboard(cfg, results, bench_e["adjclose"], narrative=narrative)
@@ -171,7 +190,13 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
     if not any_action:
         alines = [f"Dhruva PAPER ONLY — {results[0]['state'].get('as_of', '')}: NO ACTION — strategy unchanged."]
     (RUNS / "alert.txt").write_text("\n".join(alines), encoding="utf-8")
-    NT.send_telegram(narrative + "\n\n" + "\n".join(alines))  # no-op unless TELEGRAM_* env set
+    emit('report','COMPLETE', str(out))
+    import os
+    if os.getenv('TELEGRAM_TOKEN') and os.getenv('TELEGRAM_CHAT'):
+        emit('alerts','RUNNING')
+        delivered=NT.send_telegram(narrative + "\n\n" + "\n".join(alines))
+        emit('alerts','COMPLETE' if delivered else 'WARNING', 'Telegram delivered' if delivered else 'Telegram delivery failed')
+    else: emit('alerts','NOT_CONFIGURED', 'Optional Telegram is not configured; external failure channel pending Phase9')
 
     if verbose:
         ccy = cfg["base_currency"]
@@ -188,7 +213,9 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
                 else:
                     print(f"    SCHEDULED SELL {o['symbol']:12s} ({o.get('reason', '')})")
         print(f"\nDashboard: {out}")
-    return {"results": results, "dashboard": str(out), "data_quality": quality}
+    return {"results": results, "dashboard": str(out), "data_quality": quality,
+            'new_evaluations':new_evaluations,
+            'decision_status':'PAPER_INTENTS_PENDING' if any_action else 'NO_ACTION'}
 
 
 if __name__ == "__main__":
