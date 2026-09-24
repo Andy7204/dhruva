@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-09-24T09:23:52.251177+00:00",
+  "source_commit": "ece92f397d293eec0f20f725c241c7cb25a952ea",
+  "health": {
+    "status": "DEGRADED",
+    "problems": [],
+    "warnings": [
+      "Frozen v1 is before tax: tax is not reserved and T+1 cash restrictions are not enforced.",
+      "Recorded observations have known audit defects; they are not a validated live track record."
+    ],
+    "total": 99989.11,
+    "starting_capital": 100000,
+    "market_date": "2026-09-23",
+    "portfolio_date": "2026-09-23",
+    "expected_date": "2026-09-23",
+    "last_success": {
+      "ended_at": "2026-09-23T17:42:40.364722+00:00",
+      "errors": [],
+      "event": "schedule",
+      "git_commit": "789d936f7dc29d7a87330797a2bfd7ae20075984",
+      "market_date": "2026-09-23",
+      "run_id": "35896879641",
+      "started_at": "2026-09-23T17:38:11.241122+00:00",
+      "status": "COMPLETED_UNVERIFIED_DATA",
+      "strategy_version": "1.0",
+      "warnings": [
+        "V1 accounting defects remain; this is not production-readiness certification."
+      ]
+    },
+    "last_attempt": {
+      "ended_at": "2026-09-23T17:42:40.364722+00:00",
+      "errors": [],
+      "event": "schedule",
+      "git_commit": "789d936f7dc29d7a87330797a2bfd7ae20075984",
+      "market_date": "2026-09-23",
+      "run_id": "35896879641",
+      "started_at": "2026-09-23T17:38:11.241122+00:00",
+      "status": "COMPLETED_UNVERIFIED_DATA",
+      "strategy_version": "1.0",
+      "warnings": [
+        "V1 accounting defects remain; this is not production-readiness certification."
+      ]
+    },
+    "strategy_version": "1.0",
+    "git_commit": "ece92f397d293eec0f20f725c241c7cb25a952ea",
+    "ledger": {
+      "segments": 4,
+      "events": 4016,
+      "head": "8181ee3646035cae5731f25346600a34355ab94f7a8c069cafa935ff4c362c57"
+    }
+  },
+  "projection_matches_ledger": true,
+  "duplicate_capture_preserves_original": true,
+  "duplicate_scope": "Two captures in temporary copy of real segments; not a new production daily run",
+  "production_ledger_unchanged": true
+}

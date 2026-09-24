@@ -18,3 +18,20 @@ All23 tests, clean Linux dependency install, freeze and ledger verification pass
 Stale/corrupt/backend-failure UI states were demonstrated by AppTest in isolated
 fixtures, not by corrupting real data. Actual after-close refresh remains pending;
 this observation alone does not pass the complete Phase3–4 gate.
+# September24 after-close verification
+
+Public app was sleeping due to inactivity; the visible wake button restored it.
+Browser then rendered deployment commit `ece92f397d293eec0f20f725c241c7cb25a952ea`,
+September23 benchmark and portfolio dates, expected September23 completed session,
+last pipeline2026-09-23T17:42:40Z, one total INR99,989.11 (69,989.11 +30,000).
+Accounting warning remained visible; no false healthy certification.
+
+Scheduled GitHub runs35370957842,35638182866,35760861795,35896879641 succeeded
+on September18,21,22,23. Fetched real ledger:4 segments,4,016 events, all input
+snapshot hashes verified, and both projections equal the latest ledger bundle.
+Two repeat captures in a temporary copy preserved the original head/results;
+production files untouched. See `phase4_after_close.json` and its verification
+script. This is duplicate capture evidence, not a second production daily run.
+
+The deployed UI received real scheduled outputs after rebuilding, satisfying the
+remaining Phase4 gate. Streamlit inactivity sleep remains a hosting limitation.

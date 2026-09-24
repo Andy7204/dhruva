@@ -14,8 +14,9 @@ preserve existing history and distinguish imported records from prospective evid
   Do not hide current defects by just changing the status label. Recalculated
   initial paper history must be labelled honestly; simulated Sep17 fills do exist.
 
-- Phases 0–3 complete. Phase4 UI deployed at `75c5c75`; 23 local and remote tests pass.
-- Current wait: real hardened after-close data refresh, earliest16:30 IST September18.
+- Phases 0–4 complete. Phase4 after-close evidence verified September24; see
+  `docs/evidence/phase4_after_close.json` and updated public observation.
+- Current work: Phase5 canonical pipeline and safe recovery; in-place repairs.
 - Latest verified CI35305870599 succeeded; manual daily35305448785 correctly
   skipped the unfinished session. No accounting fixes are claimed complete yet.
 - Frozen original v1 source/data baseline remains `75dd97e`; never rewrite it.
@@ -53,7 +54,7 @@ preserve existing history and distinguish imported records from prospective evid
 | 1 | Complete | 52-file v1 archive, manifest, 13 active guarded paths; five tests and CLI verification passed. |
 | 2 | Complete | Immutable segments/snapshots and v1 capture; 13 tests; fresh remote checkout/restarted process preserved head and did not duplicate fixture. |
 | 3 | Complete | 16 tests and clean Linux install passed remotely; manual35305448785 correctly skipped unfinished session and published durable evidence. |
-| 4 | In progress | Implement deployed freshness/failure behavior; hardened after-close refresh still required for combined gate before Phase5. |
+| 4 | Complete | Four real scheduled refreshes; public Sep23 data at ece92f3;4,016 ledger events/hash-checked snapshots; copied-real-bundle duplicate capture safe. |
 | 5–10 | Not started | Canonical pipeline, data, health, watchdog, alerting, failure recovery. |
 | 11–15 | Not started | Backtest, live separation, portfolio, interface, actual strategies. |
 | 16–20 | Not started | Sourced research, explanation layer, ML decision, UX, strategy cards. |
@@ -112,6 +113,13 @@ Remote CI35305870599 passed all23 tests. Evidence saved in
 because the real after-close refresh has not yet been observed.
 
 ## Exact next actions on continuation
+
+September24: usage reset (weekly2% used at start), daily continuation restored.
+Public app woke successfully and displayed September23 data and one INR99,989.11
+total at ece92f3. Four scheduled runs succeeded while local work was paused.
+Phase4 real-data gate is complete; earlier pending instructions below are historical.
+Consolidated audit requested by user: `docs/AUDIT_HISTORY.md`.
+Next Phase5: canonical entrypoint and reliable chronological recovery/publication.
 
 September18 after-close continuation checkpoint: fresh usage reached90% weekly
 consumed (10% remaining) before manual dispatch. No new workflow was triggered.
