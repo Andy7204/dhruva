@@ -168,3 +168,10 @@ Phase7 structured attempts persist per-stage progress/errors and final execution
 status; see docs/RUN_HEALTH.md. Completed runs remain DEGRADED while economics
 are under repair, separately from data validation. No operational failure-alert
 delivery is yet certified.
+
+## September24 ten-phase amendment
+
+The user condensed the mission to ten phases. `docs/HARDENING_MISSION.md` is the
+active plan; `HARDENING_MISSION_ORIGINAL.md` preserves original0–25 detailed scope.
+Current new Phase1 is complete and Phase2 is in progress. Old evidence/phase names
+are historical references, not extra active phases. All audited fixes remain required.

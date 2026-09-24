@@ -1,10 +1,18 @@
 # Dhruva hardening checkpoint
 
-Mission: [HARDENING_MISSION.md](HARDENING_MISSION.md). Follow phases 0–25 in order.
+Mission: [HARDENING_MISSION.md](HARDENING_MISSION.md). Follow the ten consolidated phases in order.
 Read AGENTS.md fully before resuming. Paper research only; deterministic decisions;
 preserve existing history and distinguish imported records from prospective evidence.
 
 ## Current checkpoint
+
+September24 user amendment: exactly ten phases now govern execution; see
+HARDENING_MISSION.md for complete mapping. **New Phase1 complete; new Phase2 in
+progress.** Historical phase numbers below refer to the archived original plan.
+Original phases0–8 have evidence; original9–10 and actual refreshed publication
+remain the immediate gate. New Phase3 contains all in-place accounting/execution
+repairs. No remaining scope was dropped or automatically marked complete.
+
 
 - USER AMENDMENT September18: fix the existing version and paper books in place;
   do not create a separate degraded product or parallel strategy version. Follow
