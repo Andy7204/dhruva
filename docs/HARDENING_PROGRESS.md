@@ -23,7 +23,10 @@ preserve existing history and distinguish imported records from prospective evid
   adjusted indicators repaired. Production after-close run of new rules still due.
 - Phase7 complete: durable stage transitions, exact errors and explicit skipped,
   failed or executed-with-known-limitations outcomes.35 tests pass; RUN_HEALTH.md.
-- Current work: Phase8 watchdog, then external alerts and failure recovery.
+- Current work: Phase8 watchdog implementation tested, not accepted remotely yet.
+ 38 tests pass. Real read-only watchdog PASS for Sep23; see WATCHDOG.md.
+ Next: verify remote CI/new watchdog workflow and implement/demonstrate external
+ alert path before closing Phase8/9; then failure recovery and accounting repairs.
 - Latest verified CI35305870599 succeeded; manual daily35305448785 correctly
   skipped the unfinished session. No accounting fixes are claimed complete yet.
 - Frozen original v1 source/data baseline remains `75dd97e`; never rewrite it.
@@ -65,7 +68,8 @@ preserve existing history and distinguish imported records from prospective evid
 | 5 | Complete | DAILY_PIPELINE.md;28 tests, interrupted two-book publication/recovery/duplicate fixture; actual guarded CLI skip. |
 | 6 | Complete | DATA_CONTRACT.md,34 tests and phase6_data_quality.json real-cache evidence. Economics audited, still explicitly pending repairs. |
 | 7 | Complete | RUN_HEALTH.md;35 tests, stale-benchmark failure retains failed stage and portfolio NOT_RUN. New-schema after-close observation pending. |
-| 8–10 | Not started | Watchdog, alerting, failure recovery and live economic repairs. |
+| 8 | In progress | WATCHDOG.md;38 tests; local real-evidence operational PASS; remote and notification acceptance pending. |
+| 9–10 | Not started | Alerting, failure recovery and live economic repairs. |
 | 11–15 | Not started | Backtest, live separation, portfolio, interface, actual strategies. |
 | 16–20 | Not started | Sourced research, explanation layer, ML decision, UX, strategy cards. |
 | 21–25 | Not started | API/execution decisions, architecture/compliance docs, honest case study. |
@@ -123,6 +127,15 @@ Remote CI35305870599 passed all23 tests. Evidence saved in
 because the real after-close refresh has not yet been observed.
 
 ## Exact next actions on continuation
+
+Latest September24 checkpoint supersedes the earlier historical entries below:
+public app awake; Phase4 verified. Commits23ea1dd (Phase5),54c5477 (Phase6),
+4dccc6f (Phase7). Phase8 implemented/tested locally, acceptance pending. Current
+daily code was not executed intraday: CLI correctly skipped. Observe next genuine
+after-close run and exact stage status; never mark economics repaired from a
+green GitHub job.38 local tests pass. Read AUDIT_HISTORY.md for all open findings.
+Check usage first; at09:38 UTC five-hour85% used, weekly13%, five-hour reset
+Unix1790259540. No reset credit has been redeemed. Existing daily heartbeat active.
 
 September24: usage reset (weekly2% used at start), daily continuation restored.
 Public app woke successfully and displayed September23 data and one INR99,989.11

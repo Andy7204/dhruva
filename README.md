@@ -197,3 +197,6 @@ pending; old descriptive claims below are subject to the audit, not certificatio
 Daily inputs now pass a [data contract](docs/DATA_CONTRACT.md): missing/stale held
 assets or benchmark block advancement; other exclusions are explicit. Cleaning
 is causal and price-based indicators share adjusted units.
+Structured [run health](docs/RUN_HEALTH.md) records failures by stage. The
+[watchdog](docs/WATCHDOG.md) is under acceptance testing; external failure-alert
+delivery and full unattended readiness are not yet certified.
