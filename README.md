@@ -194,3 +194,6 @@ Public paper app: https://dhruva-andy7204.streamlit.app/ . Canonical daily comma
 The existing app is being repaired in place; original archive and ledger evidence
 are retained. Recovery is labelled reconstruction. Tax/settlement repairs remain
 pending; old descriptive claims below are subject to the audit, not certification.
+Daily inputs now pass a [data contract](docs/DATA_CONTRACT.md): missing/stale held
+assets or benchmark block advancement; other exclusions are explicit. Cleaning
+is causal and price-based indicators share adjusted units.

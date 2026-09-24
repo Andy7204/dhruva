@@ -71,6 +71,7 @@ class PipelineTests(unittest.TestCase):
                 stack.enter_context(patch.object(O.D,'get_history',return_value=frame))
                 stack.enter_context(patch.object(O.E,'build_panel',return_value={'TEST':frame}))
                 stack.enter_context(patch.object(O.I,'enrich',return_value=frame))
+                stack.enter_context(patch('dhruva.data_quality.validate_inputs',return_value=({'TEST':frame},frame,{'status':'VALID'})))
                 stack.enter_context(patch.object(O.E,'regime_series',return_value=pd.Series(True,index=dates)))
                 stack.enter_context(patch.object(O.E,'regime_factor_series',return_value=pd.Series(1.,index=dates)))
                 stack.enter_context(patch.object(O.LB,'step',side_effect=step))

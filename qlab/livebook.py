@@ -188,7 +188,7 @@ def step(state, panel, date, cfg, regime_ok, regime_factor):
         for asset, w in asset_weights.items():  # basket toward target weight
             cur = state["holdings"].get(asset, {}).get("qty", 0) * prices.get(asset, 0)
             tgt = w * eq; ap = prices.get(asset, 0)
-            if w > 0 and tgt - cur > 0.06 * max(tgt, 1):
+            if w > 0 and ap > 0 and tgt - cur > 0.06 * max(tgt, 1):
                 state["orders"].append({"id": _oid(), "side": "BUY", "symbol": asset, "kind": "cushion",
                                         "status": "scheduled", "decided_date": dstr,
                                         "target_value": round(tgt - cur, 0), "stop": 0.0,

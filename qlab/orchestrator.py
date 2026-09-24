@@ -63,20 +63,27 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
     from dhruva.freeze import verify_v1
     verify_v1()  # Original archive integrity; active in-place repairs are authorized.
     cfg = D.load_config()
+    book_defs = cfg.get("books") or {"main": {"capital": cfg["starting_capital"], "overrides": {}}}
+    input_states = {}
+    for name in book_defs:
+        path = RUNS / f'livebook_{name}.json'
+        input_states[name] = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {}
     if verbose:
         print("Refreshing data ..." if refresh else "Loading cached data ...")
     if refresh:
-        raw = D.update_universe(cfg["universe"], update_range=cfg["data"]["update_range"])
-        bench_raw = D.update_history(cfg["regime"]["benchmark"], update_range=cfg["data"]["update_range"])
+        raw = D.update_universe(cfg["universe"], update_range=cfg["data"]["update_range"], clean=False)
+        bench_raw = D.update_history(cfg["regime"]["benchmark"], update_range=cfg["data"]["update_range"], clean=False)
     else:
-        raw = D.get_universe(cfg["universe"], rng=cfg["data"]["backtest_range"])
-        bench_raw = D.get_history(cfg["regime"]["benchmark"], rng=cfg["data"]["backtest_range"])
+        raw = D.get_universe(cfg["universe"], rng=cfg["data"]["backtest_range"], clean=False)
+        bench_raw = D.get_history(cfg["regime"]["benchmark"], rng=cfg["data"]["backtest_range"], clean=False)
 
-    panel = E.build_panel(raw, cfg)
-    bench_e = I.enrich(bench_raw)
+    from dhruva.data_quality import validate_inputs
+    valid, bench_valid, quality = validate_inputs(raw, bench_raw, cfg, input_states, PROJECT_ROOT)
+    panel = E.build_panel(valid, cfg)
+    bench_e = I.enrich(bench_valid)
     regime = E.regime_series(cfg, bench_e)
     rfactor = E.regime_factor_series(cfg, bench_e)
-    cal = bench_raw.index.intersection(E.trading_calendar(panel)).sort_values()
+    cal = bench_valid.index.intersection(E.trading_calendar(panel)).sort_values()
     if not len(cal):
         raise ValueError('No benchmark-aligned trading sessions')
 
@@ -91,6 +98,8 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
         state_path = RUNS / f"livebook_{name}.json"
         states[name] = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else None
         cfg_book = _apply(cfg, bk.get("overrides", {}))
+        # Taxonomy must not change when a book overrides its allocation basket.
+        cfg_book['excluded_momentum_assets'] = list(cfg.get('defensive_basket', {}))
         cfg_book["starting_capital"] = bk["capital"]
         configs[name] = cfg_book
         regimes[name] = E.regime_series(cfg_book, bench_e)
@@ -121,13 +130,20 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
     results = []
     for date in dates:
         previous = copy.deepcopy(states)
+        for st in states.values():
+            for symbol in (st or {}).get('holdings', {}):
+                if symbol not in panel or date not in panel[symbol].index:
+                    raise ValueError(f'Held-symbol valuation missing: {symbol} {date}')
+            for order in (st or {}).get('orders', []):
+                if order['status']=='scheduled' and order['side']=='BUY' and order['symbol'] not in valid:
+                    order.update(status='cancelled', reason='Data quality exclusion; no fill attempted', cancelled_date=str(date.date()))
         results = [_run_livebook(configs[name], name, panel, regimes[name], factors[name],
                     pd.DatetimeIndex([date]), persist=False, state=states[name]) for name in book_defs]
         # Recovery is recorded at today's actual timestamp, not fabricated as
         # an original live evaluation on the missed date. Snapshots stop at cutoff.
         results, added = record_evaluation(PROJECT_ROOT, cfg,
             {s: f.loc[:date] for s,f in raw.items()}, bench_raw.loc[:date], panel,
-            results, previous, recovered=date < cal[-1])
+            results, previous, recovered=date < cal[-1], quality=quality)
         for result in results:
             states[result['name']] = result['state']
             _save_book(result['name'], result['state'])
@@ -172,7 +188,7 @@ def daily_run(refresh: bool = True, verbose: bool = True) -> dict:
                 else:
                     print(f"    SCHEDULED SELL {o['symbol']:12s} ({o.get('reason', '')})")
         print(f"\nDashboard: {out}")
-    return {"results": results, "dashboard": str(out)}
+    return {"results": results, "dashboard": str(out), "data_quality": quality}
 
 
 if __name__ == "__main__":

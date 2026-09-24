@@ -24,7 +24,7 @@ def frame_snapshot(frame):
             'rows': [[scalar(v) for v in row] for row in frame.itertuples(index=False, name=None)]}
 
 
-def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, generated_at=None, recovered=False):
+def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, generated_at=None, recovered=False, quality=None):
     root = Path(root)
     ledger = Ledger(root/'runs/ledger/dhruva_v1')
     as_of = max(r['state']['as_of'] for r in results)
@@ -37,7 +37,8 @@ def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, ge
     commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
     snapshot = ledger.snapshot({'config': cfg, 'market': {s: frame_snapshot(f) for s, f in sorted(raw.items())},
                                 'benchmark': frame_snapshot(benchmark),
-                                'fetched_at': generated_at, 'price_convention': 'legacy adjusted OHLC'})
+                                'captured_at': generated_at, 'price_convention': 'adjusted OHLC research units',
+                                'data_quality': quality})
     names_path = root/'data/nse_names.json'
     names = json.loads(names_path.read_text(encoding='utf-8')) if names_path.exists() else {}
     events = []
@@ -76,7 +77,7 @@ def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, ge
                               book=book, rebalance_in=state.get('next_rebalance_in'))
             events.append(dict(run_id=key, generated_at=generated_at,
                                # Original daily bars have dates, not a verified finalization time.
-                               data_cutoff_at=as_of+'T00:00:00+05:30', effective_date=as_of,
+                               data_cutoff_at=as_of+('T15:30:00+05:30' if quality else 'T00:00:00+05:30'), effective_date=as_of,
                                strategy_id='dhruva_momentum:'+book, strategy_version='1.0', git_commit=commit,
                                configuration_hash=digest(cfg), data_snapshot=snapshot, ticker=symbol,
                                company_name=names.get(symbol, symbol), action=action,
@@ -89,7 +90,8 @@ def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, ge
                                execution_status='RECOVERY_RECONSTRUCTION' if recovered else
                                'IMPORTED_LEGACY_OBSERVATION' if legacy else
                                ('SCHEDULED_NEXT_OPEN' if order else 'EVALUATED'),
-                               data_cutoff_quality='date-only legacy bar; finalization unverified',
+                               data_cutoff_quality=('Regular-session closing boundary; dated vendor bars validated, not exchange-certified'
+                                                    if quality else 'date-only legacy bar; finalization unverified'),
                                weight_basis='marked at captured current price, not historical closing weight',
                                target_weight_quality='pre-cost order intent, not guaranteed filled weight',
                                recovery_reconstruction=recovered,

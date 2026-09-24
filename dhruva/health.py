@@ -18,7 +18,7 @@ def read_json(path):
 def inspect(root=ROOT, now=None):
     root = Path(root); now = now or datetime.now(IST)
     result = dict(status='DEGRADED', problems=[], warnings=[
-        'Frozen v1 is before tax: tax is not reserved and T+1 cash restrictions are not enforced.',
+        'Current paper NAV is before tax: tax is not reserved and T+1 cash restrictions are not enforced.',
         'Recorded observations have known audit defects; they are not a validated live track record.'],
         books=[], total=None, starting_capital=None, market_date=None, portfolio_date=None,
         expected_date=None, last_success=None, last_attempt=None, strategy_version='1.0', git_commit='unavailable')
@@ -78,6 +78,16 @@ def inspect(root=ROOT, now=None):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         result['problems'].append(f'OPERATIONAL EVIDENCE UNREADABLE: {exc}')
     ledger = root/'runs/ledger/dhruva_v1'
+    quality_path = root/'runs/data_quality.json'
+    if quality_path.exists():
+        try:
+            result['data_quality'] = read_json(quality_path)
+            if result['data_quality']['status'] == 'FAILED':
+                result['problems'].append('DATA VALIDATION FAILED: '+str(result['data_quality'].get('errors', [])))
+            if result['data_quality'].get('excluded'):
+                result['warnings'].append('Data exclusions: '+', '.join(result['data_quality']['excluded']))
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            result['problems'].append(f'DATA VALIDATION UNREADABLE: {exc}')
     if (ledger/'segments').exists():
         try: result['ledger'] = Ledger(ledger).verify()
         except Exception as exc: result['problems'].append(f'LEDGER INTEGRITY FAILED: {exc}')

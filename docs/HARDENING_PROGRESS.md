@@ -18,7 +18,10 @@ preserve existing history and distinguish imported records from prospective evid
   `docs/evidence/phase4_after_close.json` and updated public observation.
 - Phase5 complete September24: canonical CLI, chronological recovery, whole-run
   lock, ledger-based projection recovery and archive-only guard.28 tests pass.
-- Current work: Phase6 strict data safety and causality; in-place repairs.
+- Phase6 complete September24: DATA_CONTRACT.md;34 tests pass, actual cache
+  validation99.206% coverage with four explicit exclusions. Causal cleaner and
+  adjusted indicators repaired. Production after-close run of new rules still due.
+- Current work: Phase7 structured stage health, then watchdog/alerts/recovery.
 - Latest verified CI35305870599 succeeded; manual daily35305448785 correctly
   skipped the unfinished session. No accounting fixes are claimed complete yet.
 - Frozen original v1 source/data baseline remains `75dd97e`; never rewrite it.
@@ -58,7 +61,8 @@ preserve existing history and distinguish imported records from prospective evid
 | 3 | Complete | 16 tests and clean Linux install passed remotely; manual35305448785 correctly skipped unfinished session and published durable evidence. |
 | 4 | Complete | Four real scheduled refreshes; public Sep23 data at ece92f3;4,016 ledger events/hash-checked snapshots; copied-real-bundle duplicate capture safe. |
 | 5 | Complete | DAILY_PIPELINE.md;28 tests, interrupted two-book publication/recovery/duplicate fixture; actual guarded CLI skip. |
-| 6–10 | Not started | Data, health, watchdog, alerting, failure recovery. |
+| 6 | Complete | DATA_CONTRACT.md,34 tests and phase6_data_quality.json real-cache evidence. Economics audited, still explicitly pending repairs. |
+| 7–10 | Not started | Stage health, watchdog, alerting, failure recovery and live economic repairs. |
 | 11–15 | Not started | Backtest, live separation, portfolio, interface, actual strategies. |
 | 16–20 | Not started | Sourced research, explanation layer, ML decision, UX, strategy cards. |
 | 21–25 | Not started | API/execution decisions, architecture/compliance docs, honest case study. |

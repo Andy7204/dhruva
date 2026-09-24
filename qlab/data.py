@@ -14,6 +14,7 @@ import urllib.parse
 from pathlib import Path
 
 import pandas as pd
+import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CACHE_DIR = PROJECT_ROOT / "data" / "cache"
@@ -90,16 +91,20 @@ def fetch_yahoo(symbol: str, rng: str = "5y", interval: str = "1d",
 
 
 def clean_ohlc(df: pd.DataFrame) -> pd.DataFrame:
-    """Drop corrupt price ticks: non-positive prices and isolated spikes that
-    deviate >50% from the local (centered 5-day) median. Circuit limits cap real
-    Indian daily moves near ±20%, so a 50% deviation is almost always bad data."""
+    """Reject only contemporaneously impossible rows; never inspect future bars.
+
+    Jumps can be genuine corporate actions. The daily quality gate reports them
+    rather than silently changing historical membership with a centered filter.
+    """
     if df is None or df.empty:
         return df
-    df = df[(df["close"] > 0) & (df["adjclose"] > 0)].copy()
-    med = df["adjclose"].rolling(5, center=True, min_periods=3).median()
-    ratio = df["adjclose"] / med
-    good = ratio.between(0.5, 1.5) | med.isna()
-    return df[good]
+    columns = [c for c in ('open','high','low','close','adjclose') if c in df]
+    good = np.isfinite(df[columns]).all(axis=1) & df[columns].gt(0).all(axis=1)
+    if {'open','high','low','close'} <= set(df):
+        good &= df['high'].ge(df[['open','close','low']].max(axis=1))
+        good &= df['low'].le(df[['open','close','high']].min(axis=1))
+    if 'volume' in df: good &= np.isfinite(df['volume']) & df['volume'].ge(0)
+    return df.loc[good].copy()
 
 
 def _read_cache(symbol: str) -> pd.DataFrame | None:
@@ -111,23 +116,24 @@ def _read_cache(symbol: str) -> pd.DataFrame | None:
 
 
 def _write_cache(symbol: str, df: pd.DataFrame) -> None:
-    df.sort_index().to_csv(_cache_path(symbol))
+    from dhruva.ledger import atomic_write
+    atomic_write(_cache_path(symbol), df.sort_index().to_csv().encode('utf-8'))
 
 
 def get_history(symbol: str, rng: str = "5y", interval: str = "1d",
-                refresh: bool = False) -> pd.DataFrame:
+                refresh: bool = False, clean: bool = True) -> pd.DataFrame:
     """Return cached history, fetching if absent or refresh=True."""
     if not refresh:
         cached = _read_cache(symbol)
         if cached is not None and len(cached) > 5:
-            return clean_ohlc(cached)
+            return clean_ohlc(cached) if clean else cached
     df = fetch_yahoo(symbol, rng=rng, interval=interval)
     _write_cache(symbol, df)
-    return clean_ohlc(df)
+    return clean_ohlc(df) if clean else df
 
 
 def update_history(symbol: str, update_range: str = "3mo",
-                   interval: str = "1d") -> pd.DataFrame:
+                   interval: str = "1d", clean: bool = True) -> pd.DataFrame:
     """Fetch recent bars and merge into the cache (cache wins on ties=latest)."""
     cached = _read_cache(symbol)
     fresh = fetch_yahoo(symbol, rng=update_range, interval=interval)
@@ -137,16 +143,16 @@ def update_history(symbol: str, update_range: str = "3mo",
         merged = pd.concat([cached, fresh])
         merged = merged[~merged.index.duplicated(keep="last")].sort_index()
     _write_cache(symbol, merged)
-    return clean_ohlc(merged)
+    return clean_ohlc(merged) if clean else merged
 
 
 def get_universe(symbols: list[str], rng: str = "5y", interval: str = "1d",
-                 refresh: bool = False, pause: float = 0.4) -> dict[str, pd.DataFrame]:
+                 refresh: bool = False, pause: float = 0.4, clean: bool = True) -> dict[str, pd.DataFrame]:
     out: dict[str, pd.DataFrame] = {}
     for i, sym in enumerate(symbols):
         was_cached = _cache_path(sym).exists() and not refresh
         try:
-            out[sym] = get_history(sym, rng=rng, interval=interval, refresh=refresh)
+            out[sym] = get_history(sym, rng=rng, interval=interval, refresh=refresh, clean=clean)
         except Exception as exc:  # noqa: BLE001 - keep going, report per symbol
             print(f"  ! {sym}: {exc}")
         if pause and not was_cached and i < len(symbols) - 1:
@@ -155,15 +161,16 @@ def get_universe(symbols: list[str], rng: str = "5y", interval: str = "1d",
 
 
 def update_universe(symbols: list[str], update_range: str = "3mo",
-                    interval: str = "1d", pause: float = 0.4) -> dict[str, pd.DataFrame]:
+                    interval: str = "1d", pause: float = 0.4, clean: bool = True) -> dict[str, pd.DataFrame]:
     out: dict[str, pd.DataFrame] = {}
     for i, sym in enumerate(symbols):
         try:
-            out[sym] = update_history(sym, update_range=update_range, interval=interval)
+            out[sym] = update_history(sym, update_range=update_range, interval=interval, clean=clean)
         except Exception as exc:  # noqa: BLE001
             print(f"  ! {sym}: {exc}")
             cached = _read_cache(sym)
             if cached is not None:
+                cached.attrs['fetch_error'] = f'{type(exc).__name__}: {exc}'
                 out[sym] = cached
         if pause and i < len(symbols) - 1:
             time.sleep(pause)

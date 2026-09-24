@@ -50,14 +50,14 @@ Status describes the latest documented verified scope, not intended work.
 
 | ID | Finding and impact | Evidence | Status |
 |---|---|---|---|
-| D01 | Centered five-row cleaning lets future rows change past inclusion; `[100,100,200]` rejects the third row but appending `[200,200]` retains it. | Reproduced; `qlab/data.py` | Pending |
-| D02 | Fetch failure returns an old cache as normal data; a2020 fixture was accepted. | Reproduced; `data.py` | Pending data gate; UI date warning added |
-| D03 | Missing symbols are skipped without a complete run-quality contract. | Inspection | Pending |
-| D04 | Held symbol absence crashes stop lookup: `AttributeError: 'NoneType' object has no attribute 'at'`. | Reproduced; `livebook.py` | Pending |
-| D05 | Missing prices can fall back to entry cost; missing regime observations can default risk-on. | Inspection | Pending |
-| D06 | Raw ATR is mixed with adjusted prices: ATR4 versus adjusted ATR2. | Reproduced; `indicators.py` | Pending production fix; research engine differs |
+| D01 | Centered five-row cleaning lets future rows change past inclusion; `[100,100,200]` rejects the third row but appending `[200,200]` retains it. | Reproduced; `qlab/data.py` | Fixed causal rowwise cleaning; prefix tests pass |
+| D02 | Fetch failure returns an old cache as normal data; a2020 fixture was accepted. | Reproduced; `data.py` | Daily gate rejects failed-fetch fallback/stale data; UI warns |
+| D03 | Missing symbols are skipped without a complete run-quality contract. | Inspection | Per-symbol exclusions and95% coverage gate added |
+| D04 | Held symbol absence crashes stop lookup: `AttributeError: 'NoneType' object has no attribute 'at'`. | Reproduced; `livebook.py` | Daily path blocks missing held input before stepping; direct low-level call remains unsupported |
+| D05 | Missing prices can fall back to entry cost; missing regime observations can default risk-on. | Inspection | Daily path rejects missing held prices/regime; legacy engine standalone still needs alignment |
+| D06 | Raw ATR is mixed with adjusted prices: ATR4 versus adjusted ATR2. | Reproduced; `indicators.py` | Fixed adjusted ATR/ADX/Donchian; unit test passes |
 | D07 | Price caches and corporate-action adjustment vintages change; no historical point-in-time constituent database. | Inspection/limitation | Prospective snapshots added; historical limitation remains |
-| D08 | No complete zero-volume, freshness, missing-universe and corporate-action validation contract. Initial cache scan found no duplicate dates/impossible OHLC in that sample. | Inspection | Pending |
+| D08 | No complete zero-volume, freshness, missing-universe and corporate-action validation contract. Initial cache scan found no duplicate dates/impossible OHLC in that sample. | Inspection | Contract implemented/tested on real cache; independent corporate-action certification remains a limitation |
 | E01 | Recovery recomputes inception from latest date, skipping intermediate missed sessions. Sep14 state plus Sep14–17 data steps only Sep17. | Reproduced; `orchestrator.py` | Fixed chronological replay; interruption/recovery test passes |
 | E02 | A morning run finalized the date; evening quotes changed while saved NAV stayed unchanged. | Production observation | Before16:30 guard added; initial history reconciliation pending |
 | E03 | Gap stop can fill at90 when open80/high85/low75: an impossible sale. | Reproduced; `livebook.py`, historical engine | Pending production fix |
@@ -71,7 +71,7 @@ Status describes the latest documented verified scope, not intended work.
 | A03 | Average cost/earliest holding date replaces FIFO tax lots. | Inspection | Pending |
 | A04 | Instrument tax class depends on a book's basket configuration. | Inspection | Pending taxonomy and assumptions review |
 | A05 | Dividend tax at slab is not fully modeled; adjusted-price units do not reconstruct actual historical share/dividend accounting. | Limitation | Pending explicit treatment/disclosure |
-| P01 | Empty aggressive basket admits GOLDBEES as an equity momentum pick. | Reproduced | Pending |
+| P01 | Empty aggressive basket admits GOLDBEES as an equity momentum pick. | Reproduced | Daily book config now preserves common defensive exclusions; historical engine alignment pending |
 | P02 | Position-weight limits, edge/cost checks and exit behavior differ between live and backtest. | Inspection | Pending |
 | P03 | All-cash circuit breaker can remain unable to recover. | Inspection | Pending explicit reset rule |
 | P04 | Both books share200-day market gate and63-session cadence;70/30 does not diversify entry timing. | Inspection/research | Trade-off documented and tested; no winner deployed |
@@ -147,7 +147,7 @@ See [full report](../research/results/REPORT.md) and fixed protocol.
 
 ## Completion rule
 
-Phases0–5 completed; Phase4 after-close/public acceptance verified September24.
+Phases0–6 completed; Phase4 after-close/public acceptance verified September24.
 Later phases and accounting repairs are not certified complete. Each repair needs
 implementation, relevant tests, observed behavior, documentation and a saved
 commit. Keep decisions deterministic, use no future data, model costs/tax honestly,

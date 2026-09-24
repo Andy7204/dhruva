@@ -102,12 +102,13 @@ def enrich(df: pd.DataFrame) -> pd.DataFrame:
     out["macd"], out["macd_sig"], out["macd_hist"] = m, sig, hist
     mid, up, lo, pctb, bw = bollinger(px, 20, 2.0)
     out["bb_mid"], out["bb_up"], out["bb_lo"], out["bb_pctb"], out["bb_bw"] = mid, up, lo, pctb, bw
-    out["atr14"] = atr(out, 14)
-    adx_line, pdi, mdi = adx(out, 14)
+    adjusted = out.assign(open=out['adj_open'], high=out['adj_high'], low=out['adj_low'], close=px)
+    out["atr14"] = atr(adjusted, 14)
+    adx_line, pdi, mdi = adx(adjusted, 14)
     out["adx14"], out["plus_di"], out["minus_di"] = adx_line, pdi, mdi
     out["roc63"] = roc(px, 63)
     out["roc126"] = roc(px, 126)
-    dc_hi, dc_lo = donchian(out, 20)
+    dc_hi, dc_lo = donchian(adjusted, 20)
     out["dc_hi20"], out["dc_lo20"] = dc_hi.shift(1), dc_lo.shift(1)  # prior-N to avoid lookahead
     out["vol20"] = out["ret"].rolling(20, min_periods=20).std() * np.sqrt(252)
     out["volsma20"] = out["volume"].rolling(20, min_periods=20).mean()

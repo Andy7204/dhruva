@@ -160,7 +160,7 @@ def _momentum_top_set(panel, date, k, cfg=None) -> list[str]:
     min_turn = sel.get("min_turnover", 0)
     max_ext = sel.get("max_extension", 0)  # 0 = off
     cap = sel.get("max_per_sector", 999)
-    defensive = set((cfg or {}).get("defensive_basket", {}).keys())
+    defensive = set((cfg or {}).get("defensive_basket", {}).keys()) | set((cfg or {}).get('excluded_momentum_assets', []))
     if (cfg or {}).get("defensive_asset"):
         defensive.add((cfg or {})["defensive_asset"])
     sectors = _sectors()

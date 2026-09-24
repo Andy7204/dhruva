@@ -157,3 +157,9 @@ Phase5 now serializes the operation, replays every unprocessed benchmark session
 records recovery as reconstruction at the actual generation time, and restores
 partial projections from the committed ledger bundle. See `docs/DAILY_PIPELINE.md`.
 `docs/AUDIT_HISTORY.md` consolidates original findings and verified repair status.
+
+Phase6 daily data gate now separates raw inputs/validated rows/features, excludes
+incomplete bars, fails stale benchmark/held data and low universe coverage, and
+records per-symbol exclusions in runs/data_quality.json. Centered cleaning is
+removed; ATR/ADX/Donchian use adjusted units. See docs/DATA_CONTRACT.md. Current
+constituent/adjustment-vintage and tax/settlement limitations remain explicit.
