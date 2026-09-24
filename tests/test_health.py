@@ -15,6 +15,7 @@ class HealthTests(unittest.TestCase):
         self.write('config.json', {'books': {'balanced': {'capital': 70000}, 'aggressive': {'capital': 30000}}})
         for name, capital in [('balanced', 70000), ('aggressive', 30000)]:
             self.write(f'runs/livebook_{name}.json', {'capital': capital, 'as_of': '2026-09-17',
+                                                    'cash':capital,'holdings':{},
                                                     'history': [['2026-09-17', capital]]})
         (self.root/'data/cache').mkdir(parents=True)
         (self.root/'data/cache/_IDX_NSEI.csv').write_text('date,close\n2026-09-17,20000\n')
@@ -39,6 +40,14 @@ class HealthTests(unittest.TestCase):
         h = self.health(datetime(2026, 9, 18, 19, 0, tzinfo=IST))
         self.assertEqual(h['status'], 'UNHEALTHY')
         self.assertTrue(any('STALE' in p for p in h['problems']))
+
+    def test_negative_cash_is_risk_failure_not_healthy_nav(self):
+        path=self.root/'runs/livebook_balanced.json'
+        state=json.loads(path.read_text()); state['cash']=-1
+        path.write_text(json.dumps(state))
+        result=self.health()
+        self.assertIsNone(result['total'])
+        self.assertTrue(any('RISK LIMIT' in p for p in result['problems']))
 
     def test_corrupt_book_withholds_all_totals(self):
         (self.root/'runs/livebook_aggressive.json').write_text('{broken')

@@ -21,3 +21,15 @@ run36016083742. Issue #3 proved actual creation, deduplication and recovery.
 See evidence/phase8_remote_acceptance.md for the initial failed test and repair.
 Phase9 broad alert coverage remains in progress. No Telegram credentials are needed
 for GitHub Issues; the workflow uses its scoped built-in token.
+
+The watchdog now probes the deployed application's actual iframe health endpoint
+(`/~/+/_stcore/health`), observed from the public page. Cookie-aware HTTPS returned
+200 `ok` September24 evening. Root-path health returned an HTML shell and a plain
+client hit303 redirect loops; neither was accepted as healthy. Timeout, redirect,
+non-ok and HTTP failures raise one deduplicated incident. This proves HTTP runtime
+liveness only; committed portfolio/data/ledger checks remain separate. It does not
+simulate a browser visitor or prove the running app's Git revision.
+Daily final-job failures now use the same GitHub issue channel, including ingestion,
+calculation, ledger, tests and publication failures. Health also rejects changed
+book projections and negative cash/invalid long-only quantities. Full position,
+sector, settlement and tax risk checks are still part of consolidated Phase3.

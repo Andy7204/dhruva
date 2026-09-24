@@ -39,6 +39,13 @@ def inspect(root=ROOT, now=None):
             if (not isinstance(value, (int, float)) or not math.isfinite(value) or value < 0 or
                     state['capital'] != spec['capital'] or state['as_of'] != date):
                 raise ValueError(f'{name}: invalid capital, NAV or date')
+            cash=state['cash']
+            if not isinstance(cash,(int,float)) or not math.isfinite(cash) or cash < 0:
+                raise ValueError(f'{name}: RISK LIMIT negative/nonfinite cash')
+            for symbol,holding in state['holdings'].items():
+                qty=holding['qty']
+                if not isinstance(qty,(int,float)) or not math.isfinite(qty) or qty<=0 or int(qty)!=qty:
+                    raise ValueError(f'{name}: RISK LIMIT invalid long-only quantity for {symbol}')
             books.append(dict(name=name, value=value, capital=spec['capital'], as_of=date, state=state))
         if not books or len({b['as_of'] for b in books}) != 1:
             raise ValueError('Portfolio books have inconsistent dates')

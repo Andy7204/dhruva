@@ -54,6 +54,9 @@ def main():
             {'synthetic':True,'observed_at':utc_now(),'results':results})+b'\n')
         print(json.dumps(results)); return 0
     result=evaluate()
+    from dhruva.deployment import check
+    result['errors'].extend(check())
+    result['status']='FAILED' if result['errors'] else 'PASS'
     atomic_write(ROOT/'runs/watchdog/latest.json',canonical(result)+b'\n')
     print(json.dumps(result,indent=2))
     return 1 if result['errors'] else 0
