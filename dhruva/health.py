@@ -90,7 +90,15 @@ def inspect(root=ROOT, now=None):
         except (OSError, ValueError, KeyError, TypeError) as exc:
             result['problems'].append(f'DATA VALIDATION UNREADABLE: {exc}')
     if (ledger/'segments').exists():
-        try: result['ledger'] = Ledger(ledger).verify()
+        try:
+            result['ledger'] = Ledger(ledger).verify()
+            segments=sorted((ledger/'segments').glob('*.json'))
+            if segments:
+                bundle=read_json(segments[-1])['payload']['state']
+                captured={r['name']:r['state'] for r in bundle['results']}
+                projected={b['name']:b['state'] for b in result['books']}
+                if captured!=projected:
+                    result['problems'].append('PORTFOLIO/LEDGER MISMATCH: incomplete publication or altered state')
         except Exception as exc: result['problems'].append(f'LEDGER INTEGRITY FAILED: {exc}')
     else: result['warnings'].append('Prospective ledger awaits its first completed-session evaluation.')
     if result['problems']: result['status'] = 'UNHEALTHY'

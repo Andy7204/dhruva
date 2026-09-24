@@ -23,10 +23,10 @@ preserve existing history and distinguish imported records from prospective evid
   adjusted indicators repaired. Production after-close run of new rules still due.
 - Phase7 complete: durable stage transitions, exact errors and explicit skipped,
   failed or executed-with-known-limitations outcomes.35 tests pass; RUN_HEALTH.md.
-- Current work: Phase8 watchdog implementation tested, not accepted remotely yet.
- 38 tests pass. Real read-only watchdog PASS for Sep23; see WATCHDOG.md.
- Next: verify remote CI/new watchdog workflow and implement/demonstrate external
- alert path before closing Phase8/9; then failure recovery and accounting repairs.
+- Phase8 complete: remote normal watchdog36016354838 and external alert test
+ 36016083742 passed. See evidence/phase8_remote_acceptance.md. Phase9 in progress:
+ daily failure alerts and portfolio/ledger mismatch checks added; broader deployment
+ and risk coverage still pending. Accounting repairs remain pending.
 - Latest verified CI35305870599 succeeded; manual daily35305448785 correctly
   skipped the unfinished session. No accounting fixes are claimed complete yet.
 - Frozen original v1 source/data baseline remains `75dd97e`; never rewrite it.

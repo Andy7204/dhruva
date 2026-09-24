@@ -56,5 +56,13 @@ class HealthTests(unittest.TestCase):
         (self.root/'data/cache/_IDX_NSEI.csv').write_text('date,close\n2026-09-18,20000\n')
         self.assertTrue(any('unfinished' in p for p in self.health()['problems']))
 
+    def test_projection_differs_from_latest_ledger_is_unhealthy(self):
+        self.write('runs/ledger/dhruva_v1/segments/fixture.json',
+                   {'payload':{'state':{'results':[{'name':'balanced','state':{'changed':True}}]}}})
+        with patch('dhruva.health.Ledger.verify',return_value={'events':1}):
+            h=self.health()
+        self.assertTrue(any('PORTFOLIO/LEDGER MISMATCH' in p for p in h['problems']))
+        self.assertEqual(h['status'],'UNHEALTHY')
+
 
 if __name__ == '__main__': unittest.main()

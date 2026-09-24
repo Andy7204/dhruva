@@ -1,4 +1,4 @@
-# Independent operational watchdog (acceptance pending)
+# Independent operational watchdog
 
 `python -m dhruva.watchdog` reads committed evidence without fetching prices,
 making decisions or touching book/ledger state. A separate GitHub workflow runs
@@ -16,7 +16,8 @@ This workflow is independent of the daily job but shares GitHub as a scheduler;
 a GitHub-wide outage can stop both. It does not poll Streamlit with fake users to
 defeat Community Cloud sleep. The dashboard can be woken by a real visitor.
 
-Phase8 is still in progress: a remote workflow execution and external alert path
-must be demonstrated. Artifact/log failure alone is not verified notification
-delivery. Phase9 will harden that one alert channel. Do not mark either complete
-before the actual evidence exists. No Telegram credentials are configured.
+Phase8 remote acceptance passed: normal run36016354838 and synthetic alert
+run36016083742. Issue #3 proved actual creation, deduplication and recovery.
+See evidence/phase8_remote_acceptance.md for the initial failed test and repair.
+Phase9 broad alert coverage remains in progress. No Telegram credentials are needed
+for GitHub Issues; the workflow uses its scoped built-in token.

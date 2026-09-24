@@ -152,3 +152,14 @@ Later phases and accounting repairs are not certified complete. Each repair need
 implementation, relevant tests, observed behavior, documentation and a saved
 commit. Keep decisions deterministic, use no future data, model costs/tax honestly,
 retain original evidence, and do not rename errors away to make health green.
+
+## September24 evening continuation
+
+- Watchdog and real GitHub issue acceptance passed (phase8_remote_acceptance.md).
+- Immediate issue-list lag caused duplicate synthetic alerts; receipt-based lookup
+  fixed and regression tested. Synthetic issues1–3 are closed.
+- Concurrent source push prevented old daily publication: `main -> main (fetch first)`.
+  Safe code-only rebase and full generated-evidence artifact now implemented/tested.
+  The failed old run did not preserve its ledger/cache; rerun must use actual time.
+- Health now compares current projections with the latest immutable ledger bundle
+  and rejects unexpected changes, including same-date partial publication.
