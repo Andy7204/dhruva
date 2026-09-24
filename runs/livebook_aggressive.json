@@ -1,9 +1,9 @@
 {
-  "name": "aggressive",
+  "as_of": "2026-09-24",
   "capital": 30000.0,
   "cash": 30000.0,
-  "holdings": {},
-  "orders": [],
+  "charges_total": 0.0,
+  "closed_trades": [],
   "history": [
     [
       "2026-09-16",
@@ -28,19 +28,23 @@
     [
       "2026-09-23",
       30000.0
+    ],
+    [
+      "2026-09-24",
+      30000.0
     ]
   ],
-  "closed_trades": [],
-  "realized_sales": [],
-  "realized_pnl": 0.0,
-  "charges_total": 0.0,
-  "tax_accrued": 0.0,
-  "tax_detail": {},
-  "as_of": "2026-09-23",
+  "holdings": {},
   "inception": "2026-09-16",
-  "step_count": 6,
-  "risk_on": false,
+  "name": "aggressive",
+  "next_rebalance_in": 57,
+  "orders": [],
   "peak_value": 30000.0,
-  "next_rebalance_in": 58,
-  "processed_through": "2026-09-23"
+  "processed_through": "2026-09-24",
+  "realized_pnl": 0.0,
+  "realized_sales": [],
+  "risk_on": false,
+  "step_count": 7,
+  "tax_accrued": 0.0,
+  "tax_detail": {}
 }
