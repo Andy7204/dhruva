@@ -1,0 +1,15 @@
+{
+  "checkpoint_clock": "2026-09-25T15:45:10Z",
+  "observation_timing": "Browser observation earlier in this session; exact capture timestamp not recorded",
+  "url": "https://dhruva-andy7204.streamlit.app/",
+  "deployment_commit": "b12c46aef4a1959f1edf8b89891ed439721c8138",
+  "recorded_date": "2026-09-24",
+  "nav": 99895.67,
+  "label": "Recorded value after modeled tax reserve",
+  "health": "UNHEALTHY",
+  "stale_warning_correctly_visible": true,
+  "reconstruction_and_distribution_limitations_visible": true,
+  "ci": {"run": 36155273978, "conclusion": "success"},
+  "after_close_dispatch": {"run": 36156071460, "job": 108140816041, "status_at_checkpoint": "in_progress"},
+  "scope": "Public corrected totals verified; today's refresh and full economic completeness are not certified."
+}

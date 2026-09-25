@@ -62,3 +62,17 @@ state verification and a genuine after-close run under the repaired code. Curren
 Yahoo cache does not establish all LIQUIDBEES distributions; do not invent them or
 call the NAV a fully after-tax actual-rupee return. Health retains explicit model
 warnings. Phase4 must align and rerun backtests instead of reusing old returns.
+
+### Confirmed distribution blocker (September25 evening)
+
+The [fund's scheme document](https://mf.nipponindiaim.com/InvestorServices/SIDETF/NipponIndia-ETF-Nifty-1D-Rate-Liquid-BeES.pdf),
+page32, specifies daily compulsory IDCW reinvestment, including weekend accrual,
+and fractional units to three decimal places. Exchange sales use whole units;
+fractional redemption is a separate facility. Retrieved September25,2026.
+Therefore flat price/NAV observations do not demonstrate zero investment income.
+The currently modeled three LIQUIDBEES units exclude unverified distributions.
+Do not estimate them from a quoted annual yield or silently treat unknown income
+as zero. Required repair: sourced dated declarations, entitlement/allotment
+records, fractional inventory and taxable-income reserve, with no double count
+of adjusted-price returns. Current integer-lot checks intentionally describe
+exchange-purchased inventory only, not certification of distribution completeness.
