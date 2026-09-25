@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-09-25T03:12:41.999227+00:00",
+  "ledger": {
+    "segments": 6,
+    "events": 5018,
+    "head": "7fd1a82305f5c7957fe4911e9858a0596039a1a7f9ebc9b30a0eaea0c33caabb"
+  },
+  "corrected_capture_twice_preserves_head": true,
+  "synthetic_changes_only_in_temporary_copy": true,
+  "report_nav": 99895.67
+}

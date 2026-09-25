@@ -59,21 +59,21 @@ Status describes the latest documented verified scope, not intended work.
 | D07 | Price caches and corporate-action adjustment vintages change; no historical point-in-time constituent database. | Inspection/limitation | Prospective snapshots added; historical limitation remains |
 | D08 | No complete zero-volume, freshness, missing-universe and corporate-action validation contract. Initial cache scan found no duplicate dates/impossible OHLC in that sample. | Inspection | Contract implemented/tested on real cache; independent corporate-action certification remains a limitation |
 | E01 | Recovery recomputes inception from latest date, skipping intermediate missed sessions. Sep14 state plus Sep14–17 data steps only Sep17. | Reproduced; `orchestrator.py` | Fixed chronological replay; interruption/recovery test passes |
-| E02 | A morning run finalized the date; evening quotes changed while saved NAV stayed unchanged. | Production observation | Before16:30 guard added; initial history reconciliation pending |
-| E03 | Gap stop can fill at90 when open80/high85/low75: an impossible sale. | Reproduced; `livebook.py`, historical engine | Pending production fix |
-| E04 | T+1 is a status without cash restriction: zero opening cash still buys990 shares using same-day sale proceeds. | Reproduced | Pending |
-| E05 | Business-day settlement ignores exchange/settlement holidays. | Inspection | Pending; run calendar is not a full settlement calendar |
-| E06 | Old settled fills are pruned from orders, contradicting a complete journal. | Reproduced | Prospective ledger added; underlying order pruning pending |
-| E07 | Process-local order counter can reuse identities after restart. | Inspection | Ledger event IDs fixed; engine order IDs pending |
+| E02 | A morning run finalized the date; evening quotes changed while saved NAV stayed unchanged. | Production observation | Guard and append-only initial NAV reconstruction applied September25; original evidence retained |
+| E03 | Gap stop can fill at90 when open80/high85/low75: an impossible sale. | Reproduced; `livebook.py`, historical engine | Live gap fill fixed/tested; legacy backtest alignment remains Phase4 |
+| E04 | T+1 is a status without cash restriction: zero opening cash still buys990 shares using same-day sale proceeds. | Reproduced | Cash-only receivables implemented/tested; payout credited settlement-day end |
+| E05 | Business-day settlement ignores exchange/settlement holidays. | Inspection | Separate clearing calendar verified for September–October2026; expires closed |
+| E06 | Old settled fills are pruned from orders, contradicting a complete journal. | Reproduced | Permanent journal implemented; initial pruned orders recovered from immutable seed |
+| E07 | Process-local order counter can reuse identities after restart. | Inspection | Persisted namespaced identities and restart regression test |
 | E08 | Multi-file overwrites can leave partial book/report state after failure. | Inspection | Ledger-first bundle and projection recovery tested; report failure still visible through failed attempt |
-| A01 | Tax accrues without reducing cash availability/NAV: tax2000 still leaves NAV100000. | Reproduced | Pending; UI now explicitly before-tax |
-| A02 | Separate books duplicate annual exemption: two100000 gains produce0 versus modeled shared9375. | Reproduced | Pending |
-| A03 | Average cost/earliest holding date replaces FIFO tax lots. | Inspection | Pending |
-| A04 | Instrument tax class depends on a book's basket configuration. | Inspection | Pending taxonomy and assumptions review |
+| A01 | Tax accrues without reducing cash availability/NAV: tax2000 still leaves NAV100000. | Reproduced | Shared capital-gains reserve deducts NAV/available cash; distribution tax still pending |
+| A02 | Separate books duplicate annual exemption: two100000 gains produce0 versus modeled shared9375. | Reproduced | Single taxpayer FY exemption and exact reserve allocation tested |
+| A03 | Average cost/earliest holding date replaces FIFO tax lots. | Inspection | Shared taxpayer FIFO plus per-sleeve economic FIFO implemented/tested |
+| A04 | Instrument tax class depends on a book's basket configuration. | Inspection | Explicit instrument taxonomy independent of basket; investor-specific limits documented |
 | A05 | Dividend tax at slab is not fully modeled; adjusted-price units do not reconstruct actual historical share/dividend accounting. | Limitation | Pending explicit treatment/disclosure |
 | P01 | Empty aggressive basket admits GOLDBEES as an equity momentum pick. | Reproduced | Daily book config now preserves common defensive exclusions; historical engine alignment pending |
 | P02 | Position-weight limits, edge/cost checks and exit behavior differ between live and backtest. | Inspection | Pending |
-| P03 | All-cash circuit breaker can remain unable to recover. | Inspection | Pending explicit reset rule |
+| P03 | All-cash circuit breaker can remain unable to recover. | Inspection | Explicit63-session cooldown plus trend recovery fixes cash deadlock; no return-based tuning |
 | P04 | Both books share200-day market gate and63-session cadence;70/30 does not diversify entry timing. | Inspection/research | Trade-off documented and tested; no winner deployed |
 | B01 | Historical engine uses same-day-close fills and pre-tax results versus live next-open execution. | Inspection | Disclosed; alignment pending |
 | B02 | `compare3.py` blends daily returns as if70/30 rebalanced free every day rather than separate live accounts. | Inspection | Pending; challenge study uses separate accounts |
@@ -91,7 +91,7 @@ Status describes the latest documented verified scope, not intended work.
 | O01 | Floating packages/actions made deployments irreproducible. | Inspection | Pinned; clean Linux install and CI verified |
 | O02 | Weekday cron lacked holiday/before-close guards. | Inspection | Guard implemented; explicit calendar only through2026-10-31, then fail closed |
 | O03 | Cron dispatch can arrive hours late; a green job does not establish fresh complete data. | Remote runs | Disclosed; freshness contract/watchdog pending |
-| O04 | No independent missed-run watchdog or reliable failure alert. | Inspection | Pending |
+| O04 | No independent missed-run watchdog or reliable failure alert. | Inspection | Independent remote watchdog and actual GitHub issue lifecycle verified |
 | O05 | Telegram failure returnsFalse and is ignored. | Reproduced | Result now logged as delivered/failed/not-configured; no successful delivery claimed |
 | O06 | No durable structured attempt/failure status. | Inspection | Durable attempts and per-stage transitions implemented/tested |
 | O07 | No production reliability suite at baseline. | Inspection |23 production tests added; broader recovery/economics coverage pending |
@@ -102,7 +102,7 @@ Status describes the latest documented verified scope, not intended work.
 | L04 | News outage becomes `quiet`; items lack full URL/publication/retrieval provenance. | Reproduced/inspection | Pending |
 | L05 | Narrator provider fallback/provenance is insufficiently logged. | Inspection | Pending; LLM still narration only |
 | L06 | `learn.py` is unused heuristic weighting, not trained live ML. | Inspection | ML/adaptive claims must be removed or qualified; ML deferred |
-| L07 | Configuration prose says50/50 while actual configured accounts are70/30. | Inspection | Pending cleanup |
+| L07 | Configuration prose says50/50 while actual configured accounts are70/30. | Inspection | Contradictory duplicate config note removed;70/30 retained |
 
 ## Strategy challenge results (research, not live returns)
 

@@ -6,6 +6,16 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+LATEST September25 Phase3: core repair code ba705dd,59 tests passed. Initial
+correction applied at actual September25 generation time, producing ba705dd;
+ledger head7fd1a82305f5c7957fe4911e9858a0596039a1a7f9ebc9b30a0eaea0c33caabb.
+Same82GOLDBEES+3LIQUIDBEES; latest modeled-reserve NAV99895.67,13.19 above old
+99882.48 from corrected ETF fees. September17 close separately reconstructed.
+Original five segments untouched; correction is sixth segment with two events.
+Core FIFO/shared exemption/settled cash/orders/gap fills fixed; distribution income,
+adjusted-price limits, further risk stress and real after-close acceptance pending.
+
+
 LATEST September25: new Phase2 complete within its operational scope; Phase3
 accounting/execution repairs starting. Real daily retry36017079889 succeeded;
 scheduled36035932204 succeeded with zero additional evaluations. Watchdog36074243248

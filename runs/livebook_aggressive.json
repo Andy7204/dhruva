@@ -1,13 +1,15 @@
 {
-  "as_of": "2026-09-24",
+  "name": "aggressive",
+  "accounting_schema": 2,
   "capital": 30000.0,
   "cash": 30000.0,
-  "charges_total": 0.0,
-  "closed_trades": [],
+  "receivables": [],
+  "holdings": {},
+  "orders": [],
   "history": [
     [
       "2026-09-16",
-      30000.0
+      30000
     ],
     [
       "2026-09-17",
@@ -34,17 +36,64 @@
       30000.0
     ]
   ],
-  "holdings": {},
-  "inception": "2026-09-16",
-  "name": "aggressive",
-  "next_rebalance_in": 57,
-  "orders": [],
-  "peak_value": 30000.0,
-  "processed_through": "2026-09-24",
-  "realized_pnl": 0.0,
+  "closed_trades": [],
   "realized_sales": [],
-  "risk_on": false,
-  "step_count": 7,
+  "realized_pnl": 0.0,
+  "charges_total": 0.0,
   "tax_accrued": 0.0,
-  "tax_detail": {}
+  "tax_detail": {},
+  "as_of": "2026-09-24",
+  "inception": "2026-09-16",
+  "step_count": 7,
+  "processed_through": "2026-09-24",
+  "tax_reserve": 0.0,
+  "account_tax_total": 0.0,
+  "tax_scope": "SHARED_PAPER_ACCOUNT",
+  "risk_on": false,
+  "peak_value": 30000.0,
+  "next_rebalance_in": 57,
+  "history_quality": "RECONSTRUCTED_INITIAL_PAPER_HISTORY",
+  "account_tax_inventory": {
+    "GOLDBEES.NS": {
+      "lots": [
+        {
+          "id": "balanced:legacy:1",
+          "qty": 82,
+          "acquired": "2026-09-17",
+          "economic_cost": 10215.5,
+          "tax_cost": 10215.5
+        }
+      ],
+      "qty": 82,
+      "cost": 10215.5,
+      "avg": 124.57926829268293,
+      "acquired": "2026-09-17"
+    },
+    "LIQUIDBEES.NS": {
+      "lots": [
+        {
+          "id": "balanced:legacy:3",
+          "qty": 3,
+          "acquired": "2026-09-17",
+          "economic_cost": 3010.06,
+          "tax_cost": 3010.06
+        }
+      ],
+      "qty": 3,
+      "cost": 3010.06,
+      "avg": 1003.3533333333334,
+      "acquired": "2026-09-17"
+    }
+  },
+  "reconstruction": {
+    "through": "2026-09-24",
+    "source_snapshots": [
+      "2633c4020d29759c7f85f1b773fc32f93b98608bf7162791dae3bea49479258d",
+      "028a09622669124028163e8b43c11c3b28e3e144678122bdfcb54cf69ec20c18",
+      "b1de916f90ee67c790aabd73553e452fbc22ccf68758453c971207c2cb31cd49",
+      "616e4f0ab1f30228f3145b773316191230c820ec48b88399d787a38245dc4a82",
+      "499c90ee38a09362aff2463d5f2d3b9bb82cf0772bc0e87012894c94f43a6eaa"
+    ],
+    "note": "Original intents, repaired accounting and captured daily bars; not original live signals"
+  }
 }
