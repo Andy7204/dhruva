@@ -175,3 +175,15 @@ The user condensed the mission to ten phases. `docs/HARDENING_MISSION.md` is the
 active plan; `HARDENING_MISSION_ORIGINAL.md` preserves original0–25 detailed scope.
 Current new Phase1 is complete and Phase2 is in progress. Old evidence/phase names
 are historical references, not extra active phases. All audited fixes remain required.
+
+## September25 accounting work (consolidated Phase3)
+
+Consolidated Phase2 passed real refresh/repeat/public/watchdog checks. Phase3 core
+repairs now implement permanent IDs/journal, gap fills, cash-only settlement,
+shared FIFO taxpayer inventory/reserve, explicit costs/tax taxonomy and initial
+history correction. See docs/ACCOUNTING_REPAIRS.md for exact scope and remaining
+distribution/adjusted-price limitations. The correction is append-only, resolves
+same-date retries to the corrected bundle and never edits original evidence.
+Do not use historical statements above about missing core tax/settlement as the
+latest checkpoint; read HARDENING_PROGRESS.md. Do not remove remaining warnings
+until actual tests/deployed evidence and outstanding Phase3 work are complete.

@@ -200,3 +200,13 @@ is causal and price-based indicators share adjusted units.
 Structured [run health](docs/RUN_HEALTH.md) records failures by stage. The
 [watchdog](docs/WATCHDOG.md) is under acceptance testing; external failure-alert
 delivery and full unattended readiness are not yet certified.
+
+## September25 repair update
+
+The ten-phase plan is in [HARDENING_MISSION.md](docs/HARDENING_MISSION.md).
+Operational Phase2 passed real refresh, repeat-run, watchdog and public checks.
+[Accounting repairs](docs/ACCOUNTING_REPAIRS.md) cover shared FIFO/tax reserve,
+settled cash, permanent orders and gap fills. Initial history is explicitly
+reconstructed with original evidence retained. Distribution income and adjusted
+research-unit limitations remain unresolved; no validated performance claim is
+made. Earlier historical promotional claims are superseded by the audit.

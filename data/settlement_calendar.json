@@ -1,0 +1,9 @@
+{
+  "market": "NSE capital market settlement",
+  "source": "https://www.archive.nseclearing.in/content/circulars/CMPT71904.pdf",
+  "reviewed_at": "2026-09-25",
+  "valid_from": "2026-09-01",
+  "valid_through": "2026-10-31",
+  "holidays": ["2026-09-14", "2026-10-02", "2026-10-20"],
+  "note": "Bounded initial-book repair window. No assumed settlement outside coverage; review subsequent clearing circulars before extending. Cash received at settlement-day end is first eligible for next session open."
+}

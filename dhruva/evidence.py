@@ -29,7 +29,7 @@ def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, ge
     ledger = Ledger(root/'runs/ledger/dhruva_v1')
     as_of = max(r['state']['as_of'] for r in results)
     key = f'dhruva-v1:{as_of}'
-    prior = ledger.find(key)
+    prior = ledger.latest_for_date(as_of) or ledger.find(key)
     if prior:
         # Same-day repeated fetches must not replace the first recorded evidence.
         return prior['payload']['state']['results'], False

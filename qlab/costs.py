@@ -17,19 +17,23 @@ def exchange_of(symbol: str) -> str:
 
 
 def order_charges(value: float, side: str, product: str, exchange: str,
-                  costs: dict) -> dict:
+                  costs: dict, symbol: str | None = None) -> dict:
     """Charges for a single BUY or SELL order. `value` = qty * price (INR)."""
     side = side.lower()
     product = product.lower()
     value = float(abs(value))
 
+    if not value:
+        return {k:0. for k in ('value','brokerage','stt','exch_txn','sebi','stamp','gst','dp','ipft','total')}
     brokerage = min(costs["brokerage_cap"], costs["brokerage_pct"] * value)
     brokerage = max(costs["brokerage_floor"], brokerage) if value > 0 else 0.0
 
     if product == "delivery":
         stt = costs["stt_delivery_buy"] * value if side == "buy" else costs["stt_delivery_sell"] * value
         stamp = costs["stamp_duty_buy_delivery"] * value if side == "buy" else 0.0
-        dp = costs["dp_charge_sell_delivery"] if side == "sell" else 0.0
+        dp = costs["dp_charge_sell_delivery"] if side == "sell" and value>=100 else 0.0
+        rates=costs.get('instrument_stt',{}).get(symbol)
+        if rates is not None: stt=value*rates[side]
     else:  # intraday
         stt = 0.0 if side == "buy" else costs["stt_intraday_sell"] * value
         stamp = costs["stamp_duty_buy_intraday"] * value if side == "buy" else 0.0
@@ -38,24 +42,25 @@ def order_charges(value: float, side: str, product: str, exchange: str,
     exch_rate = costs["exch_txn_bse"] if exchange == "BSE" else costs["exch_txn_nse"]
     exch_txn = exch_rate * value
     sebi = costs["sebi_charges"] * value
-    gst = costs["gst_pct"] * (brokerage + exch_txn + sebi)
-    total = brokerage + stt + exch_txn + sebi + stamp + gst + dp
+    ipft=value*costs.get('ipft_nse',0) if exchange=='NSE' else 0.
+    gst = costs["gst_pct"] * (brokerage + exch_txn + sebi + dp + ipft)
+    total = brokerage + stt + exch_txn + sebi + stamp + gst + dp + ipft
     return {
         "value": value, "brokerage": brokerage, "stt": stt, "exch_txn": exch_txn,
-        "sebi": sebi, "stamp": stamp, "gst": gst, "dp": dp, "total": total,
+        "sebi": sebi, "ipft": ipft, "stamp": stamp, "gst": gst, "dp": dp, "total": total,
     }
 
 
 def order_cost(value: float, side: str, symbol: str, product: str,
                costs: dict) -> float:
-    return order_charges(value, side, product, exchange_of(symbol), costs)["total"]
+    return order_charges(value, side, product, exchange_of(symbol), costs, symbol)["total"]
 
 
 def round_trip(buy_value: float, sell_value: float, symbol: str,
                product: str, costs: dict) -> dict:
     exch = exchange_of(symbol)
-    b = order_charges(buy_value, "buy", product, exch, costs)
-    s = order_charges(sell_value, "sell", product, exch, costs)
+    b = order_charges(buy_value, "buy", product, exch, costs, symbol)
+    s = order_charges(sell_value, "sell", product, exch, costs, symbol)
     total = b["total"] + s["total"]
     gross = sell_value - buy_value
     return {

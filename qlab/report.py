@@ -227,7 +227,8 @@ def build_multi_dashboard(cfg, results, bench_series, out_path=None, narrative=N
             g = holds.setdefault(sym, {"qty": 0, "value": 0.0, "avg": h.get("avg", 0),
                                        "kind": h["kind"], "settled": h.get("settled", False)})
             g["qty"] += h["qty"]; g["value"] += h["qty"] * px
-    cur_total = cash + sum(h["value"] for h in holds.values())
+    # The saved NAV is authoritative, including receivables and shared tax reserve.
+    cur_total = sum(s['history'][-1][1] for s in states)
     ret = (cur_total / start_total - 1) * 100
     charges = sum(s.get("charges_total", 0) for s in states)
 
@@ -244,9 +245,12 @@ def build_multi_dashboard(cfg, results, bench_series, out_path=None, narrative=N
                       ("Sortino", "building"), ("Worst dip", "—")]
     tax_due = sum(s.get("tax_accrued", 0) for s in states)
     tax_detail = {}
-    for s in states:
-        for k, v in (s.get("tax_detail") or {}).items():
-            tax_detail[k] = tax_detail.get(k, 0) + v
+    if all(s.get('tax_scope')=='SHARED_PAPER_ACCOUNT' for s in states):
+        tax_detail={f'FY {k} shared account':v['tax'] for k,v in states[0].get('tax_detail',{}).items()}
+    else:
+        for s in states:
+            for k, v in (s.get("tax_detail") or {}).items():
+                if isinstance(v,(int,float)): tax_detail[k] = tax_detail.get(k, 0) + v
     kpis = _kpi_row([("Total value", f"{ccy} {_fmt(cur_total)}"), ("Return", _pnl(ret, 1) + "%"),
                      ("Cash", f"{cash / cur_total * 100:.0f}%" if cur_total else "—"),
                      ("Day", str(days)), ("Fees paid", f"{ccy} {_fmt(charges)}"),
@@ -341,7 +345,7 @@ def build_multi_dashboard(cfg, results, bench_series, out_path=None, narrative=N
 <h3>What you're holding now</h3>
 <div class="card overflow">{holdings_tbl}</div>
 <div class="sub">Split: {split}. Follow both calls together — that is the core-satellite 70/30.</div>
-<div class="sub" style="margin-top:5px">Every fill (stocks <b>and</b> ETFs like GOLDBEES) pays Groww charges, and realised gains accrue capital-gains tax — equity STCG 20% / LTCG 12.5%, gold &amp; silver ETFs at slab / 12.5%. Both are set aside from your net worth so the number is honest. Verify tax with a CA.</div>
+<div class="sub" style="margin-top:5px">Paper values use recorded observations. Repaired books deduct instrument-specific modeled charges and a shared capital-gains reserve with FIFO and cess. Initial history is explicitly reconstructed. Adjusted-price units, distribution income and investor-specific tax assumptions remain limitations; this is not a tax return.</div>
 {tax_html}
 
 <h2>Trade journal — every fill, with charges</h2>

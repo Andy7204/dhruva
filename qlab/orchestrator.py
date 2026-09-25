@@ -25,7 +25,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 RUNS = PROJECT_ROOT / "runs"
 
 
-def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal, persist=True, state=None) -> dict:
+def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal, persist=True, state=None, tax_sync=None, tax_inventory=None) -> dict:
     """Advance a realistic live book (next-open fills, T+1 settlement, per-trade costs)."""
     RUNS.mkdir(parents=True, exist_ok=True)
     state_path = RUNS / f"livebook_{name}.json"
@@ -43,7 +43,8 @@ def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal, persis
         if rfactor is None or date not in rfactor.index or pd.isna(rfactor.loc[date]):
             raise ValueError(f'Missing allocation regime for {date}')
         rok = bool(regime.loc[date]); rf = float(rfactor.loc[date])
-        LB.step(state, panel, date, cfg_book, rok, rf)
+        if tax_sync is None: LB.step(state, panel, date, cfg_book, rok, rf)
+        else: LB.step(state, panel, date, cfg_book, rok, rf, tax_sync=tax_sync,tax_inventory=tax_inventory)
     state["processed_through"] = str(todo[-1].date()) if todo else pt
     if persist:
         _save_book(name, state)
@@ -51,12 +52,13 @@ def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal, persis
             "prices_now": E._prices_at(panel, cal[-1])}
 
 
-def _save_book(name, state):
+def _save_book(name, state, runs=None):
     from dhruva.ledger import atomic_write
-    atomic_write(RUNS / f"livebook_{name}.json", json.dumps(state, indent=2, default=str).encode('utf-8'))
+    runs=Path(runs) if runs is not None else RUNS
+    atomic_write(runs / f"livebook_{name}.json", json.dumps(state, indent=2, default=str).encode('utf-8'))
     orders = {"as_of": state["as_of"], "orders": [o for o in state["orders"]
               if o["status"] == "scheduled" or o.get("fill_date") == state["as_of"]]}
-    atomic_write(RUNS / f"today_orders_{name}.json", json.dumps(orders, indent=2).encode('utf-8'))
+    atomic_write(runs / f"today_orders_{name}.json", json.dumps(orders, indent=2).encode('utf-8'))
 
 
 def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict:
@@ -144,6 +146,14 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
     emit('risk_engine','RUNNING')
     for date in dates:
         previous = copy.deepcopy(states)
+        for name in states:
+            if states[name] is None: states[name]=LB.new_livebook(configs[name],name)
+        inventories=[st.get('account_tax_inventory',{}) for st in states.values()]
+        if any(inv!=inventories[0] for inv in inventories):
+            raise ValueError('Shared tax inventory differs between book projections')
+        tax_inventory=copy.deepcopy(inventories[0])
+        from qlab.tax import reserve_accounts
+        def sync_tax(): reserve_accounts(states,cfg)
         for st in states.values():
             for symbol in (st or {}).get('holdings', {}):
                 if symbol not in panel or date not in panel[symbol].index:
@@ -152,7 +162,16 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
                 if order['status']=='scheduled' and order['side']=='BUY' and order['symbol'] not in valid:
                     order.update(status='cancelled', reason='Data quality exclusion; no fill attempted', cancelled_date=str(date.date()))
         results = [_run_livebook(configs[name], name, panel, regimes[name], factors[name],
-                    pd.DatetimeIndex([date]), persist=False, state=states[name]) for name in book_defs]
+                    pd.DatetimeIndex([date]), persist=False, state=states[name],tax_sync=sync_tax,
+                    tax_inventory=tax_inventory) for name in book_defs]
+        sync_tax()
+        for r in results:
+            r['state']['account_tax_inventory']=copy.deepcopy(tax_inventory)
+            # Later book sales can change the shared reserve attribution.
+            r['state']['history'][-1][1]=round(LB.total_value(r['state'],r['prices_now']),2)
+        if all(r['state'].get('accounting_schema')==2 for r in results):
+            from qlab.accounting import verify
+            verify(results,cfg)
         # Recovery is recorded at today's actual timestamp, not fabricated as
         # an original live evaluation on the missed date. Snapshots stop at cutoff.
         results, added = record_evaluation(PROJECT_ROOT, cfg,

@@ -106,6 +106,11 @@ def inspect(root=ROOT, now=None):
                 projected={b['name']:b['state'] for b in result['books']}
                 if captured!=projected:
                     result['problems'].append('PORTFOLIO/LEDGER MISMATCH: incomplete publication or altered state')
+                if captured and all(s.get('accounting_schema')==2 for s in captured.values()):
+                    from qlab.accounting import verify
+                    result['accounting']=verify(bundle['results'],bundle['config'])
+                    result['warnings']=[w for w in result['warnings'] if not w.startswith('Current paper NAV is before tax:')]
+                    result['warnings'].append('NAV deducts the shared capital-gains reserve. Initial history is explicitly reconstructed; adjusted-price units and distribution-tax treatment remain under review.')
         except Exception as exc: result['problems'].append(f'LEDGER INTEGRITY FAILED: {exc}')
     else: result['warnings'].append('Prospective ledger awaits its first completed-session evaluation.')
     if result['problems']: result['status'] = 'UNHEALTHY'

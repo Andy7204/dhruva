@@ -14,7 +14,7 @@ def render(root=ROOT):
     if health['status'] == 'UNHEALTHY':
         st.error('SYSTEM UNHEALTHY — records may be stale or incomplete. No current strategy conclusion is certified.')
     else:
-        st.warning('SYSTEM DEGRADED — original v1 accounting is under repair. These records are not a validated live track record.')
+        st.warning('SYSTEM DEGRADED — remaining repairs and model limitations are listed below; these records are not a validated live track record.')
     for problem in health['problems']: st.error(problem)
     for warning in health['warnings']: st.warning(warning)
     st.subheader('Update status')
@@ -29,12 +29,13 @@ def render(root=ROOT):
     if success: st.caption('Execution completed; complete-universe data quality is not yet certified. Source commit: '+success['git_commit'])
     st.subheader('Recorded v1 portfolio')
     if health['total'] is not None:
+        basis='after modeled tax reserve' if health.get('accounting') else 'before tax'
         first, second, third = st.columns(3)
-        first.metric('Recorded value before tax', f"₹{health['total']:,.2f}")
-        second.metric('Recorded return before tax', f"{(health['total']/health['starting_capital']-1)*100:+.2f}%")
+        first.metric('Recorded value '+basis, f"₹{health['total']:,.2f}")
+        second.metric('Recorded return '+basis, f"{(health['total']/health['starting_capital']-1)*100:+.2f}%")
         third.metric('Starting paper capital', f"₹{health['starting_capital']:,.0f}")
         st.caption('One set of saved book observations; totals are not revalued from newer cached quotes.')
-        st.table([{'Book': b['name'], 'Date': b['as_of'], 'Recorded value before tax (INR)': b['value'],
+        st.table([{'Book': b['name'], 'Date': b['as_of'], 'Recorded value '+basis+' (INR)': b['value'],
                    'Starting capital (INR)': b['capital']} for b in health['books']])
     else: st.error('Portfolio totals withheld: every configured book must be valid. Partial totals would be misleading.')
     st.subheader('Latest recorded paper instructions')

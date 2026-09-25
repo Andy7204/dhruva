@@ -51,7 +51,7 @@ class PipelineTests(unittest.TestCase):
         dates = pd.to_datetime(['2026-09-21','2026-09-22','2026-09-23'])
         frame = pd.DataFrame({'adjclose':[100.,101.,102.]},index=dates)
         calls = []
-        def step(st, panel, date, config, regime, factor):
+        def step(st, panel, date, config, regime, factor, **kwargs):
             calls.append((st['name'], str(date.date())))
             st['as_of'] = str(date.date())
             st['history'].append([st['as_of'], st['capital']])

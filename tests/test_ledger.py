@@ -63,6 +63,14 @@ class LedgerTests(unittest.TestCase):
         self.assertEqual(path.read_bytes(), raw)
         self.assertEqual(self.ledger.verify()['events'], 2)
 
+    def test_latest_date_selects_correction_without_replacing_original(self):
+        state={'results':[{'name':'fixture','state':{'as_of':'2026-09-17','cash':100}}]}
+        original,_=self.ledger.append('dhruva-v1:2026-09-17',[event()],state)
+        corrected=copy.deepcopy(state);corrected['results'][0]['state']['cash']=99
+        newer,_=self.ledger.append('repair',[event(action='CORRECTION',corrects_event_id=original['payload']['events'][0]['event_id'])],corrected)
+        self.assertEqual(self.ledger.find('dhruva-v1:2026-09-17'),original)
+        self.assertEqual(self.ledger.latest_for_date('2026-09-17'),newer)
+
     def test_partial_checkpoint_crash_recovers_without_duplicate(self):
         from dhruva import ledger
         real_write = ledger.atomic_write

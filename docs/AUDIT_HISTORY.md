@@ -169,3 +169,15 @@ September24 latest: mission consolidated to ten phases without dropping scope.
 actual iframe health endpoint returns200ok; root endpoint is an HTML shell and plain
 HTTP client encountered303 loop. Deployment probe corrected to observed iframe URL.
 Daily retry36017079889 remains running at usage checkpoint; no success claimed.
+
+## September25 core accounting repair work
+
+Operational Phase2 accepted: daily36017079889 recovered publication; scheduled
+36035932204 added zero duplicate evaluations; watchdog36074243248 passed. Public
+Sep24 total99882.48 matched both books. Phase3 code/tests now cover E03/E04/E05
+(bounded clearing calendar),E06/E07,A01/A02/A03/A04, entry caps and breaker recovery.
+Initial corrected history dry run retains82GOLDBEES+3LIQUIDBEES, with13.19 less
+modeled cost after ETF-STT correction/IPFT. Applying/publishing correction and
+remaining distribution income/adjusted-unit checks are separate acceptance work.
+Taxonomies, shared FIFO across sleeves, reserve attribution and policy assumptions
+are documented in ACCOUNTING_REPAIRS.md; do not call the whole phase complete.

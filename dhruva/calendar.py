@@ -40,3 +40,19 @@ def run_due(now=None, cfg=None):
     if not is_session(now.date(), cfg): return False, 'NON_TRADING_DAY'
     if now.time() < time(16, 30): return False, 'BEFORE_COMPLETED_SESSION'
     return True, 'DUE'
+
+
+def settlement_date(day, days=1, cfg=None):
+    """Separate clearing calendar, not pandas business days or trading holidays."""
+    from datetime import date
+    if not isinstance(days,int) or days<1:
+        raise ValueError('Only positive whole-day settlement is supported')
+    cfg=cfg or json.loads((ROOT/'data/settlement_calendar.json').read_text(encoding='utf-8'))
+    day=date.fromisoformat(str(day)[:10])
+    if not cfg['valid_from']<=day.isoformat()<=cfg['valid_through']:
+        raise ValueError(f'Settlement calendar coverage unavailable for {day}')
+    remaining=days
+    while remaining:
+        day+=timedelta(days=1)
+        if is_session(day,cfg): remaining-=1
+    return day.isoformat()

@@ -23,7 +23,7 @@ def main():
     ledger = Ledger(source)
     verified = health['ledger']
     date = health['portfolio_date']
-    original = ledger.find('dhruva-v1:'+date)
+    original = ledger.latest_for_date(date)
     bundle = original['payload']['state']
     assert {r['name']: r['state'] for r in bundle['results']} == {
         b['name']: b['state'] for b in health['books']}

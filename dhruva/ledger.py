@@ -107,6 +107,15 @@ class Ledger:
     def __init__(self, root):
         self.root = Path(root)
 
+    def latest_for_date(self, as_of):
+        """Latest append-only state, including explicit correction bundles."""
+        with writer_lock(self.root):
+            for envelope in reversed(self._read()):
+                results=envelope['payload']['state'].get('results',[])
+                if results and all(r['state'].get('as_of')==as_of for r in results):
+                    return envelope
+        return None
+
     def _read(self):
         previous = ZERO
         result = []
