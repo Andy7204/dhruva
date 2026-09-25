@@ -6,6 +6,12 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+LATEST September25 evening follow-up: CI36154285351 passed for a4db704.
+Additional Phase3 hardening rejects nonfinite saved NAV, invalid shared/own FIFO
+lot quantities and cost bases, and duplicate lot IDs. Seven focused accounting
+tests passed, including corruption probes. Distribution/actual-unit work and
+after-close/public acceptance remain open; no phase completion inferred from CI.
+
 LATEST September25 evening: shortened release checklist in REMAINING_WORK.md
 preserves all ten phases. Remote CI36089495224 failed with `AssertionError: 0 != 1`
 because its single-total test matched the superseded before-tax label. Updated

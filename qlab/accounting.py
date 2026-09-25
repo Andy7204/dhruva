@@ -3,9 +3,29 @@ import math
 from qlab import livebook, tax
 
 
+def _verify_inventory(inventory):
+    for symbol, holding in inventory.items():
+        lots=holding.get('lots',[])
+        if not lots: raise ValueError('Missing FIFO lots: '+symbol)
+        ids=[lot['id'] for lot in lots]
+        if len(ids)!=len(set(ids)): raise ValueError('Duplicate FIFO lot: '+symbol)
+        for lot in lots:
+            qty=lot['qty']
+            if not math.isfinite(qty) or qty<=0 or int(qty)!=qty:
+                raise ValueError('Invalid FIFO quantity: '+symbol)
+            for key in ('economic_cost','tax_cost'):
+                if not math.isfinite(lot[key]) or lot[key]<0:
+                    raise ValueError('Invalid FIFO basis: '+symbol)
+        if sum(lot['qty'] for lot in lots)!=holding['qty']:
+            raise ValueError('FIFO quantity mismatch: '+symbol)
+        if not math.isfinite(holding['cost']) or abs(sum(lot['economic_cost'] for lot in lots)-holding['cost'])>.011:
+            raise ValueError('FIFO cost mismatch: '+symbol)
+
+
 def verify(results,cfg):
     if not results: raise ValueError('No books to reconcile')
     inventory=results[0]['state'].get('account_tax_inventory',{})
+    _verify_inventory(inventory)
     quantities={};sales=[];reserve=0.
     for result in results:
         st=result['state'];sales.extend(st.get('realized_sales',[]))
@@ -20,6 +40,7 @@ def verify(results,cfg):
         for receipt in st.get('receivables',[]):
             if not math.isfinite(receipt['amount']) or receipt['amount']<0:
                 raise ValueError('Invalid settlement receivable')
+        _verify_inventory(st['holdings'])
         for symbol,h in st['holdings'].items():
             if h['qty']<=0 or int(h['qty'])!=h['qty'] or sum(l['qty'] for l in h['lots'])!=h['qty']:
                 raise ValueError('FIFO quantity mismatch: '+symbol)
@@ -27,6 +48,8 @@ def verify(results,cfg):
                 raise ValueError('FIFO cost mismatch: '+symbol)
             quantities[symbol]=quantities.get(symbol,0)+h['qty']
         value=livebook.total_value(st,result['prices_now'])
+        if not math.isfinite(value) or not math.isfinite(st['history'][-1][1]):
+            raise ValueError('Nonfinite NAV')
         if abs(value-st['history'][-1][1])>.011: raise ValueError('Saved NAV mismatch')
     if quantities!={s:h['qty'] for s,h in inventory.items()}:
         raise ValueError('Aggregate holdings differ from shared FIFO')

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 import unittest
-from qlab import tax, lots, costs, livebook
+from qlab import tax, lots, costs, livebook, accounting
 
 
 class AccountingTests(unittest.TestCase):
@@ -9,6 +9,22 @@ class AccountingTests(unittest.TestCase):
 
     def sale(self,gain,symbol='TEST',days=400):
         return {'symbol':symbol,'gain':gain,'holding_days':days,'exit_date':'2026-09-24'}
+
+    def test_corrupt_shared_lots_and_nonfinite_nav_fail_closed(self):
+        import copy
+        state=livebook.new_livebook(self.cfg,'test')
+        holding={}
+        lots.buy(holding,2,200,{'total':0.,'stt':0.},'2026-09-17','test:1')
+        state.update(cash=0.,holdings={'TEST':copy.deepcopy(holding)},
+                     account_tax_inventory={'TEST':copy.deepcopy(holding)},history=[['2026-09-24',200.]])
+        result={'state':state,'prices_now':{'TEST':100.}}
+        self.assertEqual(accounting.verify([result],self.cfg)['status'],'PASS')
+        for key,value in [('qty',-1),('tax_cost',float('nan')),('economic_cost',float('inf'))]:
+            bad=copy.deepcopy(result)
+            bad['state']['account_tax_inventory']['TEST']['lots'][0][key]=value
+            with self.assertRaises(ValueError): accounting.verify([bad],self.cfg)
+        state['history'][-1][1]=float('nan')
+        with self.assertRaisesRegex(ValueError,'Nonfinite NAV'): accounting.verify([result],self.cfg)
 
     def test_shared_exemption_reserve_reduces_nav(self):
         states={n:{'realized_sales':[self.sale(100000)],'cash':100000,'holdings':{}} for n in ('a','b')}

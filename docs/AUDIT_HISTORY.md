@@ -8,6 +8,13 @@ evidence retained and recalculated history identified as reconstruction.
 
 ## What was audited, in order
 
+September25 follow-up: numeric comparisons could silently accept NaN in saved
+NAV/cost, and aggregate shared FIFO quantities did not validate underlying lots.
+Added explicit finite/nonnegative basis and positive integer lot checks, duplicate
+lot rejection and saved-NAV finiteness. Corruption regression tests pass. Remote
+CI36154285351 separately verifies the corrected dashboard-label test and prior
+60-test suite; the new accounting checks require their own published CI result.
+
 1. **Deployment:** repository root, committed state/cache/report, workflow schedule,
    manual execution and public Streamlit rendering. Manual run35184975533 and
    scheduled run35252434924 succeeded. Cron is weekdays18:30 IST; the observed
