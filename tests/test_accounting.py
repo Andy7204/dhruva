@@ -26,6 +26,16 @@ class AccountingTests(unittest.TestCase):
         state['history'][-1][1]=float('nan')
         with self.assertRaisesRegex(ValueError,'Nonfinite NAV'): accounting.verify([result],self.cfg)
 
+    def test_duplicate_books_and_nonfinite_gains_rejected(self):
+        state=livebook.new_livebook(self.cfg,'test')
+        state['history']=[['2026-09-24',state['cash']]]
+        result={'state':state,'prices_now':{}}
+        with self.assertRaisesRegex(ValueError,'Duplicate book identity'):
+            accounting.verify([result,result],self.cfg)
+        state['realized_sales']=[self.sale(float('nan'))]
+        with self.assertRaisesRegex(ValueError,'Nonfinite realized gain'):
+            accounting.verify([result],self.cfg)
+
     def test_shared_exemption_reserve_reduces_nav(self):
         states={n:{'realized_sales':[self.sale(100000)],'cash':100000,'holdings':{}} for n in ('a','b')}
         total,_=tax.reserve_accounts(states,self.cfg)

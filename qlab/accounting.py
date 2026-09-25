@@ -26,9 +26,13 @@ def verify(results,cfg):
     if not results: raise ValueError('No books to reconcile')
     inventory=results[0]['state'].get('account_tax_inventory',{})
     _verify_inventory(inventory)
-    quantities={};sales=[];reserve=0.
+    quantities={};sales=[];reserve=0.;account_order_ids=set();book_names=set()
     for result in results:
         st=result['state'];sales.extend(st.get('realized_sales',[]))
+        if st['name'] in book_names: raise ValueError('Duplicate book identity')
+        book_names.add(st['name'])
+        for sale in st.get('realized_sales',[]):
+            if not math.isfinite(sale['gain']): raise ValueError('Nonfinite realized gain')
         if st.get('account_tax_inventory',{})!=inventory:
             raise ValueError('Shared FIFO inventory mismatch')
         for key in ('cash','tax_reserve','charges_total'):
@@ -37,6 +41,8 @@ def verify(results,cfg):
         reserve+=st.get('tax_reserve',0.)
         orders=st['orders'];ids=[o['id'] for o in orders]
         if len(set(ids))!=len(ids): raise ValueError('Duplicate order identity')
+        if account_order_ids.intersection(ids): raise ValueError('Duplicate account order identity')
+        account_order_ids.update(ids)
         for receipt in st.get('receivables',[]):
             if not math.isfinite(receipt['amount']) or receipt['amount']<0:
                 raise ValueError('Invalid settlement receivable')

@@ -6,6 +6,15 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+LATEST September25 evening: public b12c46a verified one99895.67 total with correct
+Sep24 stale warning and reconstruction caveats. CI36155273978 passed61 tests.
+Manual after-close daily36156071460/job108140816041 dispatched successfully,
+passed tests and is fetching/rebuilding; FIRST inspect its result before another
+dispatch. Commit7196b94 preserves public evidence and fund-document finding:
+LIQUIDBEES requires daily/weekend IDCW and fractional-unit reconciliation, which
+current price data cannot certify. Added duplicate book/account-order and
+nonfinite realized-gain rejection; eight focused accounting tests pass.
+
 LATEST September25 evening follow-up: CI36154285351 passed for a4db704.
 Additional Phase3 hardening rejects nonfinite saved NAV, invalid shared/own FIFO
 lot quantities and cost bases, and duplicate lot IDs. Seven focused accounting
