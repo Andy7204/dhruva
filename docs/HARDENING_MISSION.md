@@ -1,6 +1,6 @@
 # Dhruva: ten-phase execution plan
 
-User amendment, September24, 2026: consolidate the original phases0–25 into
+User amendment, September24, 2026: consolidate the original phases0â€“25 into
 exactly ten phases and execute. This plan supersedes the old numbering, not its
 requirements. [Original detailed scope](HARDENING_MISSION_ORIGINAL.md) remains an
 acceptance checklist and historical record. Old evidence keeps its original names.
@@ -12,15 +12,15 @@ LLMs explain only; no look-ahead; honest costs, taxes and limitations.
 
 | Phase | Work and acceptance | Original scope | Status |
 |---|---|---|---|
-| 1. Audit and preserve evidence | Capability audit, original manifest/archive, immutable snapshots and decisions; verify persistence, mutation detection and duplicate safety. | 0–2 | Complete, recorded evidence |
-| 2. Restore reliable live operation | Calendar-safe canonical daily run, causal validated data, one dashboard NAV, stage health, independent watchdog, external alerts, safe publication and demonstrated failure/recovery. Verify actual after-close output and public app. | 3–10 | In progress; original0–8 complete,9–10 pending |
-| 3. Repair paper accounting and execution | Shared FIFO tax reserve, correct NAV/cash, settlement cash restrictions and calendar, accurate instrument costs/tax, permanent orders and IDs, next-open/gap-stop fills, risk invariants; reconcile initial history transparently. | Audited fixes plus execution/accounting parts of13/22 | Pending |
+| 1. Audit and preserve evidence | Capability audit, original manifest/archive, immutable snapshots and decisions; verify persistence, mutation detection and duplicate safety. | 0â€“2 | Complete, recorded evidence |
+| 2. Restore reliable live operation | Calendar-safe canonical daily run, causal validated data, one dashboard NAV, stage health, independent watchdog, external alerts, safe publication and demonstrated failure/recovery. Verify actual after-close output and public app. | 3â€“10 | In progress; original0â€“8 complete,9â€“10 pending |
+| 3. Repair paper accounting and execution | Shared FIFO tax reserve, correct NAV/cash, settlement cash restrictions and calendar, accurate instrument costs/tax, permanent orders and IDs, next-open/gap-stop fills, risk invariants; reconcile initial history transparently. | Audited fixes plus execution/accounting parts of13/22 | In progress |
 | 4. Validate historical research | Correct execution and metrics; costs/tax, no leakage, walk-forward/regime/sensitivity tests. Reproduce challenge study and test 200-day lag,63-day delay, common filter, dip-buying and opportunity costs under equal assumptions. No return-driven tuning or automatic strategy promotion. | 11 and strategy-challenge request | Pending |
 | 5. Separate and verify performance | Distinct historical, reconstructed and genuine timestamped forward results; live index100, preselected benchmarks, reconciled after-cost/tax metrics and full limitations. | 12 | Pending |
-| 6. Simplify portfolio and strategy architecture | Enforce sizing, sectors, liquidity, turnover, cash and exit constraints; shared strategy interface; current strategy first; useful paper execution boundary only. No real broker orders or invented product families. | Remaining13,14–15,22 | Pending |
-| 7. Make research and narration traceable | Indian-source research with publication/retrieval timestamps and URLs; provenance and failure states; narration cannot change trades. Audit ML and agent claims, implement only measurable useful capability or explicitly defer with evidence. | 16–18 | Pending |
-| 8. Finish the trustworthy public dashboard | Home, decisions, portfolio, separated performance, sourced research, methodology and health; strategy card, changelog and history labels; verify deployed behavior. | 19–20 | Pending |
-| 9. Document architecture and release boundaries | Decide API usefulness; future-product architecture and compliance gates with sourced, limited claims. No commercial features or live trading. | 21,23–24 | Pending |
+| 6. Simplify portfolio and strategy architecture | Enforce sizing, sectors, liquidity, turnover, cash and exit constraints; shared strategy interface; current strategy first; useful paper execution boundary only. No real broker orders or invented product families. | Remaining13,14â€“15,22 | Pending |
+| 7. Make research and narration traceable | Indian-source research with publication/retrieval timestamps and URLs; provenance and failure states; narration cannot change trades. Audit ML and agent claims, implement only measurable useful capability or explicitly defer with evidence. | 16â€“18 | Pending |
+| 8. Finish the trustworthy public dashboard | Home, decisions, portfolio, separated performance, sourced research, methodology and health; strategy card, changelog and history labels; verify deployed behavior. | 19â€“20 | Pending |
+| 9. Document architecture and release boundaries | Decide API usefulness; future-product architecture and compliance gates with sourced, limited claims. No commercial features or live trading. | 21,23â€“24 | Pending |
 | 10. Prove readiness and publish the case study | End-to-end remote/restart/recovery/alert/duplicate/stale acceptance evidence in PRODUCTION_READINESS.md; honest AI-assisted TECHNICAL_CASE_STUDY.md. Close audited findings or explicitly identify unresolved release blockers. | 25 and final readiness | Pending |
 
 ## Execution and completion rules

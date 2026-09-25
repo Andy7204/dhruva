@@ -6,6 +6,15 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+LATEST September25: new Phase2 complete within its operational scope; Phase3
+accounting/execution repairs starting. Real daily retry36017079889 succeeded;
+scheduled36035932204 succeeded with zero additional evaluations. Watchdog36074243248
+and CI36017696913 passed. Public3e57688 shows Sep24 and single99882.48 before-tax NAV,
+no stale warning, explicit accounting limitations. Five immutable segments/5016 events
+verified, no projection mismatch. Evidence: phase2_live_recovery_2026-09-25.json and
+PHASE2_ACCEPTANCE.md. Start usage0% five-hour31% weekly. Threshold5% remaining.
+
+
 Latest user amendment: stop at **5% remaining**, replacing10%. Fresh usage95%
 five-hour/30% weekly, so the new cutoff is already reached. Reset/resume times
 remain September25 01:18:24/01:25 IST.

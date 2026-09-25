@@ -1,0 +1,239 @@
+{
+  "observed_at": "2026-09-25T02:50:54.283073+00:00",
+  "health": {
+    "status": "DEGRADED",
+    "problems": [],
+    "warnings": [
+      "Current paper NAV is before tax: tax is not reserved and T+1 cash restrictions are not enforced.",
+      "Recorded observations have known audit defects; they are not a validated live track record.",
+      "Data exclusions: HEG.NS, ICICIAMC.NS, INDIGRID.NS"
+    ],
+    "total": 99882.48,
+    "starting_capital": 100000,
+    "market_date": "2026-09-24",
+    "portfolio_date": "2026-09-24",
+    "expected_date": "2026-09-24",
+    "last_success": {
+      "data_status": "VALID_WITH_EXCLUSIONS",
+      "decision_status": "NO_ACTION",
+      "ended_at": "2026-09-24T17:45:44.243134+00:00",
+      "errors": [],
+      "event": "schedule",
+      "execution_completed": true,
+      "git_commit": "c3fc1c8ad98f79d256fd15c04257788b33fdc068",
+      "latest_market_date": "2026-09-24",
+      "market_date": "2026-09-24",
+      "new_evaluations": 0,
+      "run_id": "36035932204",
+      "stages": {
+        "alerts": {
+          "detail": "Optional Telegram is not configured; external failure channel pending Phase9",
+          "observed_at": "2026-09-24T17:45:44.181313+00:00",
+          "status": "NOT_CONFIGURED"
+        },
+        "archive": {
+          "detail": null,
+          "observed_at": "2026-09-24T17:41:14.152776+00:00",
+          "status": "COMPLETE"
+        },
+        "benchmark": {
+          "detail": {
+            "latest_date": "2026-09-24"
+          },
+          "observed_at": "2026-09-24T17:45:29.590277+00:00",
+          "status": "COMPLETE"
+        },
+        "data_ingestion": {
+          "detail": {
+            "returned_symbols": 504
+          },
+          "observed_at": "2026-09-24T17:45:12.951522+00:00",
+          "status": "COMPLETE"
+        },
+        "data_validation": {
+          "detail": {
+            "coverage": 0.9940476190476191,
+            "excluded": {
+              "HEG.NS": "stale/missing completed session 2026-09-24",
+              "ICICIAMC.NS": "insufficient trend history (<200 sessions)",
+              "INDIGRID.NS": "stale/missing completed session 2026-09-24"
+            },
+            "status": "VALID_WITH_EXCLUSIONS"
+          },
+          "observed_at": "2026-09-24T17:45:15.880943+00:00",
+          "status": "COMPLETE"
+        },
+        "features": {
+          "detail": null,
+          "observed_at": "2026-09-24T17:45:29.588350+00:00",
+          "status": "COMPLETE"
+        },
+        "ledger": {
+          "detail": {
+            "events": 5016,
+            "head": "d543aaa6735f5cf7284a4c8779c3f483c85b10f383e7c3b684b2f238a6225760",
+            "segments": 5
+          },
+          "observed_at": "2026-09-24T17:45:44.171420+00:00",
+          "status": "COMPLETE"
+        },
+        "portfolio_engine": {
+          "detail": {
+            "accounting": "KNOWN_LIMITATIONS",
+            "new_evaluations": 0
+          },
+          "observed_at": "2026-09-24T17:45:37.168690+00:00",
+          "status": "COMPLETE"
+        },
+        "report": {
+          "detail": "/home/runner/work/dhruva/dhruva/reports/dashboard.html",
+          "observed_at": "2026-09-24T17:45:44.179859+00:00",
+          "status": "COMPLETE"
+        },
+        "risk_engine": {
+          "detail": "Existing deterministic risk rules executed; execution/accounting repairs pending",
+          "observed_at": "2026-09-24T17:45:37.169799+00:00",
+          "status": "WARNING"
+        }
+      },
+      "started_at": "2026-09-24T17:41:13.791925+00:00",
+      "status": "DEGRADED",
+      "strategy_version": "1.0",
+      "warnings": [
+        "Accounting defects remain; this is not production-readiness certification.",
+        "Excluded symbols are ineligible for orders; see per-symbol reasons",
+        "Historical anomalies flagged; rowwise cleaning is causal, corporate actions are not independently certified"
+      ]
+    },
+    "last_attempt": {
+      "data_status": "VALID_WITH_EXCLUSIONS",
+      "decision_status": "NO_ACTION",
+      "ended_at": "2026-09-24T17:45:44.243134+00:00",
+      "errors": [],
+      "event": "schedule",
+      "execution_completed": true,
+      "git_commit": "c3fc1c8ad98f79d256fd15c04257788b33fdc068",
+      "latest_market_date": "2026-09-24",
+      "market_date": "2026-09-24",
+      "new_evaluations": 0,
+      "run_id": "36035932204",
+      "stages": {
+        "alerts": {
+          "detail": "Optional Telegram is not configured; external failure channel pending Phase9",
+          "observed_at": "2026-09-24T17:45:44.181313+00:00",
+          "status": "NOT_CONFIGURED"
+        },
+        "archive": {
+          "detail": null,
+          "observed_at": "2026-09-24T17:41:14.152776+00:00",
+          "status": "COMPLETE"
+        },
+        "benchmark": {
+          "detail": {
+            "latest_date": "2026-09-24"
+          },
+          "observed_at": "2026-09-24T17:45:29.590277+00:00",
+          "status": "COMPLETE"
+        },
+        "data_ingestion": {
+          "detail": {
+            "returned_symbols": 504
+          },
+          "observed_at": "2026-09-24T17:45:12.951522+00:00",
+          "status": "COMPLETE"
+        },
+        "data_validation": {
+          "detail": {
+            "coverage": 0.9940476190476191,
+            "excluded": {
+              "HEG.NS": "stale/missing completed session 2026-09-24",
+              "ICICIAMC.NS": "insufficient trend history (<200 sessions)",
+              "INDIGRID.NS": "stale/missing completed session 2026-09-24"
+            },
+            "status": "VALID_WITH_EXCLUSIONS"
+          },
+          "observed_at": "2026-09-24T17:45:15.880943+00:00",
+          "status": "COMPLETE"
+        },
+        "features": {
+          "detail": null,
+          "observed_at": "2026-09-24T17:45:29.588350+00:00",
+          "status": "COMPLETE"
+        },
+        "ledger": {
+          "detail": {
+            "events": 5016,
+            "head": "d543aaa6735f5cf7284a4c8779c3f483c85b10f383e7c3b684b2f238a6225760",
+            "segments": 5
+          },
+          "observed_at": "2026-09-24T17:45:44.171420+00:00",
+          "status": "COMPLETE"
+        },
+        "portfolio_engine": {
+          "detail": {
+            "accounting": "KNOWN_LIMITATIONS",
+            "new_evaluations": 0
+          },
+          "observed_at": "2026-09-24T17:45:37.168690+00:00",
+          "status": "COMPLETE"
+        },
+        "report": {
+          "detail": "/home/runner/work/dhruva/dhruva/reports/dashboard.html",
+          "observed_at": "2026-09-24T17:45:44.179859+00:00",
+          "status": "COMPLETE"
+        },
+        "risk_engine": {
+          "detail": "Existing deterministic risk rules executed; execution/accounting repairs pending",
+          "observed_at": "2026-09-24T17:45:37.169799+00:00",
+          "status": "WARNING"
+        }
+      },
+      "started_at": "2026-09-24T17:41:13.791925+00:00",
+      "status": "DEGRADED",
+      "strategy_version": "1.0",
+      "warnings": [
+        "Accounting defects remain; this is not production-readiness certification.",
+        "Excluded symbols are ineligible for orders; see per-symbol reasons",
+        "Historical anomalies flagged; rowwise cleaning is causal, corporate actions are not independently certified"
+      ]
+    },
+    "strategy_version": "1.0",
+    "git_commit": "3e576888c6b73bc990d559091045418593d006eb",
+    "data_quality": {
+      "convention": "Adjusted-price research units; current constituents, not point-in-time membership",
+      "coverage": 0.9940476190476191,
+      "errors": [],
+      "excluded": {
+        "HEG.NS": "stale/missing completed session 2026-09-24",
+        "ICICIAMC.NS": "insufficient trend history (<200 sessions)",
+        "INDIGRID.NS": "stale/missing completed session 2026-09-24"
+      },
+      "expected_date": "2026-09-24",
+      "generated_at": "2026-09-24T17:45:12.954339+00:00",
+      "status": "VALID_WITH_EXCLUSIONS",
+      "warnings": [
+        "Excluded symbols are ineligible for orders; see per-symbol reasons",
+        "Historical anomalies flagged; rowwise cleaning is causal, corporate actions are not independently certified"
+      ]
+    },
+    "ledger": {
+      "segments": 5,
+      "events": 5016,
+      "head": "d543aaa6735f5cf7284a4c8779c3f483c85b10f383e7c3b684b2f238a6225760"
+    },
+    "public_observation": {
+      "deployment_commit": "3e576888c6b73bc990d559091045418593d006eb",
+      "market_date": "2026-09-24",
+      "portfolio_date": "2026-09-24",
+      "total_before_tax": 99882.48,
+      "status": "DEGRADED",
+      "stale_warning": false
+    }
+  },
+  "remote_success_runs": [
+    36017079889,
+    36035932204,
+    36074243248,
+    36017696913
+  ]
+}
