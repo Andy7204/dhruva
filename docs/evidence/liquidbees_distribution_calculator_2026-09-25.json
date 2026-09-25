@@ -1,0 +1,45 @@
+{
+  "retrieved_at": "2026-09-25T18:18:15.538479+00:00",
+  "source_url": "https://investeasy.nipponindiaim.com/rmfgsamnew/Products/LiquidBeES/DividendsCalculator.aspx",
+  "method": "Official browser calculator, Individual,3 units,2026-09-18 through2026-09-25",
+  "displayed_result_units": "0.003000000000",
+  "rows": [
+    {
+      "date": "2026-09-18",
+      "reinvestment_units": "0.0003560000",
+      "total_units": "3.000356"
+    },
+    {
+      "date": "2026-09-20",
+      "reinvestment_units": "0.0007184000",
+      "total_units": "3.0010744"
+    },
+    {
+      "date": "2026-09-21",
+      "reinvestment_units": "0.0003634000",
+      "total_units": "3.0014378"
+    },
+    {
+      "date": "2026-09-22",
+      "reinvestment_units": "0.0003642000",
+      "total_units": "3.001802"
+    },
+    {
+      "date": "2026-09-23",
+      "reinvestment_units": "0.0003622000",
+      "total_units": "3.0021642"
+    },
+    {
+      "date": "2026-09-24",
+      "reinvestment_units": "0.0003620000",
+      "total_units": "3.0025262"
+    }
+  ],
+  "limitations": [
+    "Gross rates; TDS may change credited units",
+    "No September25 row returned",
+    "Rounded displayed result differs from unrounded accrued units",
+    "Calculator output is not a demat allotment statement",
+    "Not yet posted to paper books"
+  ]
+}

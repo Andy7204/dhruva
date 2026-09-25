@@ -76,3 +76,13 @@ as zero. Required repair: sourced dated declarations, entitlement/allotment
 records, fractional inventory and taxable-income reserve, with no double count
 of adjusted-price returns. Current integer-lot checks intentionally describe
 exchange-purchased inventory only, not certification of distribution completeness.
+
+Income liability support now accepts explicit `income_receipts` (book/id/gross/
+taxable_date). Configured `income_slab_pct` defaults to the existing30% slab;
+cess/surcharge apply. Capital losses and the equity LTCG exemption cannot offset
+this income. It participates once in shared reserve/NAV reconciliation. No
+production receipt has been inferred or posted: receipt ingestion, fractional
+allotment inventory and raw-unit execution integration remain required. TDS must
+be represented as prepaid tax rather than reducing taxable gross income.
+[Broker tax explanation](https://support.zerodha.com/category/console/reports/taxation/articles/dividends-on-liquid-etfs-and-liquid-bees)
+retrieved September25 corroborates slab taxation and allotment-value cost basis.

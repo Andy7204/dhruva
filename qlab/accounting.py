@@ -59,7 +59,8 @@ def verify(results,cfg):
         if abs(value-st['history'][-1][1])>.011: raise ValueError('Saved NAV mismatch')
     if quantities!={s:h['qty'] for s,h in inventory.items()}:
         raise ValueError('Aggregate holdings differ from shared FIFO')
-    actual,_=tax.accrued_tax(sales,cfg)
+    income=[receipt for r in results for receipt in r['state'].get('income_receipts',[])]
+    actual,_=tax.accrued_tax(sales,cfg,income)
     if abs(reserve-actual)>.011: raise ValueError('Shared tax reserve mismatch')
     return {'status':'PASS','tax_reserve':round(reserve,2),
             'nav':round(sum(r['state']['history'][-1][1] for r in results),2),

@@ -8,6 +8,12 @@ evidence retained and recalculated history identified as reconstruction.
 
 ## What was audited, in order
 
+September25 late evening: added explicit distribution-income tax liability to
+shared reserve; tests prove capital losses/exemption cannot shelter dividend/IDCW
+income. Official fund calculator yields daily reinvestment rows, saved separately
+as research evidence. Allotment/cash integration and actual-unit reconciliation
+are still open; no invented income was added to published books.63 local tests pass.
+
 September25 follow-up: numeric comparisons could silently accept NaN in saved
 NAV/cost, and aggregate shared FIFO quantities did not validate underlying lots.
 Added explicit finite/nonnegative basis and positive integer lot checks, duplicate

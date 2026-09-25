@@ -6,6 +6,20 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+LATEST September25 late evening: distribution-income liability is now included in
+shared tax reserve and accounting verification through explicit income_receipts.
+Capital losses/LTCG exemption do not offset slab-taxed income; duplicate receipts
+and nonfinite amounts fail.63 tests pass. No production receipt has been posted.
+Official calculator discovered via fund page: source and exact returned daily
+reinvestment rows saved in evidence/liquidbees_distribution_calculator_2026-09-25.json.
+Inputs Individual/3units/Sep18–25; detailed accrued units0.0025262 throughSep24,
+rounded displayed result0.003. NoSep25 row. Do not equate rounded calculator
+output to actual allotments or silently use it as original forward evidence.
+Next: integrate sourced accrual/allotment accounting and actual-unit execution;
+verify eligibility/rounding/end-date semantics, then Phase3 risk stress. Phases4–10
+remain pending. Current public Sep25 NAV99977.67 is unchanged. Usage90% five-hour,
+60% weekly; stop at95% used, reset1790367505. Continue through same heartbeat.
+
 Public refresh CONFIRMED after the acceptance below: da18dc8 displays Sep25 and
 99977.67, no stale error. CI36164625265 passed all62 tests on refreshed data.
 

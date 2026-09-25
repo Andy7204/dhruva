@@ -36,6 +36,18 @@ class AccountingTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'Nonfinite realized gain'):
             accounting.verify([result],self.cfg)
 
+    def test_income_tax_not_sheltered_by_capital_loss_or_exemption(self):
+        receipt={'id':'distribution:1','book':'a','gross':10000.,'taxable_date':'2026-09-25'}
+        amount,detail=tax.accrued_tax([self.sale(-20000)],self.cfg,[receipt])
+        self.assertEqual(amount,3120.)
+        self.assertEqual(detail['2026']['income_tax'],3120.)
+        self.assertEqual(detail['2026']['loss_carry']['lt'],20000.)
+        with self.assertRaisesRegex(ValueError,'Duplicate income'):
+            tax.accrued_tax([],self.cfg,[receipt,receipt])
+        state={'income_receipts':[receipt],'cash':10000,'holdings':{}}
+        tax.reserve_accounts({'a':state},self.cfg)
+        self.assertEqual(livebook.total_value(state,{}),6880.)
+
     def test_shared_exemption_reserve_reduces_nav(self):
         states={n:{'realized_sales':[self.sale(100000)],'cash':100000,'holdings':{}} for n in ('a','b')}
         total,_=tax.reserve_accounts(states,self.cfg)

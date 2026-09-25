@@ -5,6 +5,7 @@ Current-period rates; external investments, basic allowance and rebate excluded.
 """
 from collections import defaultdict
 from datetime import date
+import math
 
 
 def _fy(value):
@@ -30,11 +31,12 @@ def is_long(sale):
     return date.fromisoformat(sale['exit_date'])>anniversary
 
 
-def accrued_tax(sales,cfg):
+def accrued_tax(sales,cfg,income=()):
     tx=cfg.get('tax',{})
-    if not tx.get('enabled') or not sales: return 0.,{}
+    if not tx.get('enabled'): return 0.,{}
     buckets=defaultdict(lambda:defaultdict(float))
     for sale in sales:
+        if not math.isfinite(sale['gain']): raise ValueError('Nonfinite realized gain')
         kind=instrument_type(sale['symbol'],cfg)
         long=is_long(sale)
         if kind=='specified_debt_fund' and sale.get('acquired','2023-04-01')>='2023-04-01': long=False
@@ -60,6 +62,26 @@ def accrued_tax(sales,cfg):
         detail[str(year)]={'tax':amount,'taxable_gains':gains,
             'loss_carry':{t:round(sum(x['amount'] for x in carry if x['term']==t),2) for t in ('st','lt')}}
         total+=amount
+    # Cash dividends and reinvested IDCW are income, not capital gains. Capital
+    # losses/exemption must never shelter this income. TDS is a prepaid-tax asset,
+    # not a reduction of gross taxable income or of this gross liability.
+    income_by_year=defaultdict(float)
+    seen=set()
+    for receipt in income:
+        identity=(receipt['book'],receipt['id'])
+        if identity in seen: raise ValueError('Duplicate income receipt')
+        seen.add(identity)
+        gross=receipt['gross']
+        if not math.isfinite(gross) or gross<0: raise ValueError('Invalid gross income')
+        income_by_year[_fy(receipt['taxable_date'])]+=gross
+    slab=tx.get('income_slab_pct',tx.get('nonequity_short_pct',0.3))
+    if not math.isfinite(slab) or not 0<=slab<=1: raise ValueError('Invalid income slab')
+    for year,gross in income_by_year.items():
+        amount=round(gross*slab*(1+tx.get('surcharge_pct',0))*(1+tx.get('cess_pct',0.04)),2)
+        entry=detail.setdefault(str(year),{'tax':0.,'taxable_gains':{},'loss_carry':{}})
+        entry.update(income_gross=round(gross,2),income_tax=amount)
+        entry['tax']=round(entry['tax']+amount,2)
+        total+=amount
     return round(total,2),detail
 
 
@@ -69,8 +91,10 @@ def reserve_accounts(states,cfg):
     recorded; available cash and NAV subtract reserve. Prior FY tax stays reserved.
     """
     sales=[s for state in states.values() for s in state.get('realized_sales',[])]
-    total,detail=accrued_tax(sales,cfg)
-    weights={name:sum(max(0,s['gain']) for s in st.get('realized_sales',[])) for name,st in states.items()}
+    income=[r for state in states.values() for r in state.get('income_receipts',[])]
+    total,detail=accrued_tax(sales,cfg,income)
+    weights={name:sum(max(0,s['gain']) for s in st.get('realized_sales',[]))+
+             sum(r['gross'] for r in st.get('income_receipts',[])) for name,st in states.items()}
     denom=sum(weights.values());remaining=total
     names=sorted(states)
     for i,name in enumerate(names):
