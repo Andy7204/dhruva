@@ -1,4 +1,5 @@
 import copy
+import json
 import unittest
 from unittest.mock import patch
 from pathlib import Path
@@ -11,8 +12,13 @@ class StreamlitTests(unittest.TestCase):
     def test_real_app_has_one_total_and_no_false_green(self):
         app = AppTest.from_file(str(ROOT/'streamlit_app.py')).run(timeout=20)
         self.assertEqual(len(app.exception), 0, list(app.exception))
-        totals = [m for m in app.metric if m.label == 'Recorded value before tax']
+        totals = [m for m in app.metric if m.label.startswith('Recorded value ')]
         self.assertEqual(len(totals), 1)
+        books=[json.loads(p.read_text(encoding='utf-8')) for p in (ROOT/'runs').glob('livebook_*.json')]
+        expected=sum(b['history'][-1][1] for b in books)
+        self.assertEqual(totals[0].value,f'₹{expected:,.2f}')
+        if all(b.get('accounting_schema')==2 for b in books):
+            self.assertIn('after modeled tax reserve',totals[0].label)
         self.assertTrue(len(app.warning) or len(app.error))
 
     def test_corrupt_stale_and_failed_states_render_warnings(self):

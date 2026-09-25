@@ -6,6 +6,14 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+LATEST September25 evening: shortened release checklist in REMAINING_WORK.md
+preserves all ten phases. Remote CI36089495224 failed with `AssertionError: 0 != 1`
+because its single-total test matched the superseded before-tax label. Updated
+the assertion to verify one total, exact recorded book sum and modeled-reserve
+label. Added shared-report-tax regression coverage. All60 tests pass locally on
+the corrected production states; remote CI and public refresh still need checking.
+Continuation heartbeat updated to this checkpoint and the5% remaining cutoff.
+
 LATEST September25 Phase3: core repair code ba705dd,59 tests passed. Initial
 correction applied at actual September25 generation time, producing ba705dd;
 ledger head7fd1a82305f5c7957fe4911e9858a0596039a1a7f9ebc9b30a0eaea0c33caabb.
