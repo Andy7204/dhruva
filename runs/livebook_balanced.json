@@ -1,106 +1,43 @@
 {
-  "name": "balanced",
-  "accounting_schema": 2,
-  "capital": 70000.0,
-  "cash": 56774.44,
-  "receivables": [],
-  "holdings": {
+  "account_tax_inventory": {
     "GOLDBEES.NS": {
-      "qty": 82,
-      "cost": 10215.5,
+      "acquired": "2026-09-17",
       "avg": 124.57926829268293,
-      "kind": "cushion",
-      "stop": 0.0,
+      "cost": 10215.5,
       "lots": [
         {
-          "id": "balanced:legacy:1",
-          "qty": 82,
           "acquired": "2026-09-17",
           "economic_cost": 10215.5,
+          "id": "balanced:legacy:1",
+          "qty": 82,
           "tax_cost": 10215.5
         }
       ],
-      "acquired": "2026-09-17",
-      "acquired_step": 2,
-      "settle_date": "2026-09-18",
-      "settled": true
+      "qty": 82
     },
     "LIQUIDBEES.NS": {
-      "qty": 3,
-      "cost": 3010.06,
+      "acquired": "2026-09-17",
       "avg": 1003.3533333333334,
-      "kind": "cushion",
-      "stop": 0.0,
+      "cost": 3010.06,
       "lots": [
         {
-          "id": "balanced:legacy:3",
-          "qty": 3,
           "acquired": "2026-09-17",
           "economic_cost": 3010.06,
+          "id": "balanced:legacy:3",
+          "qty": 3,
           "tax_cost": 3010.06
         }
       ],
-      "acquired": "2026-09-17",
-      "acquired_step": 2,
-      "settle_date": "2026-09-18",
-      "settled": true
+      "qty": 3
     }
   },
-  "orders": [
-    {
-      "side": "BUY",
-      "symbol": "GOLDBEES.NS",
-      "kind": "cushion",
-      "decided_date": "2026-09-16",
-      "target_value": 10238.0,
-      "stop": 0.0,
-      "ref_price": 124.7,
-      "id": "balanced:legacy:1",
-      "legacy_id": 1,
-      "status": "settled",
-      "provenance": "RECONSTRUCTED_FROM_ORIGINAL_INTENT",
-      "fill_date": "2026-09-17",
-      "fill_price": 124.41,
-      "qty": 82,
-      "cost": 13.95,
-      "amount": 10201.55,
-      "settle_date": "2026-09-18"
-    },
-    {
-      "side": "BUY",
-      "symbol": "INDIGRID.NS",
-      "kind": "cushion",
-      "decided_date": "2026-09-16",
-      "target_value": 6825.0,
-      "stop": 0.0,
-      "ref_price": 0,
-      "id": "balanced:legacy:2",
-      "legacy_id": 2,
-      "status": "cancelled",
-      "provenance": "RECONSTRUCTED_FROM_ORIGINAL_INTENT",
-      "cancelled_date": "2026-09-16",
-      "reason": "Reconstruction: invalid original reference price; no executable intent"
-    },
-    {
-      "side": "BUY",
-      "symbol": "LIQUIDBEES.NS",
-      "kind": "cushion",
-      "decided_date": "2026-09-16",
-      "target_value": 3412.0,
-      "stop": 0.0,
-      "ref_price": 1000.0,
-      "id": "balanced:legacy:3",
-      "legacy_id": 3,
-      "status": "settled",
-      "provenance": "RECONSTRUCTED_FROM_ORIGINAL_INTENT",
-      "fill_date": "2026-09-17",
-      "fill_price": 1001.2,
-      "qty": 3,
-      "cost": 6.46,
-      "amount": 3003.6,
-      "settle_date": "2026-09-18"
-    }
-  ],
+  "account_tax_total": 0.0,
+  "accounting_schema": 2,
+  "as_of": "2026-09-25",
+  "capital": 70000.0,
+  "cash": 56774.44,
+  "charges_total": 20.41,
+  "closed_trades": [],
   "history": [
     [
       "2026-09-16",
@@ -129,59 +66,120 @@
     [
       "2026-09-24",
       69895.67
+    ],
+    [
+      "2026-09-25",
+      69977.67
     ]
   ],
-  "closed_trades": [],
-  "realized_sales": [],
-  "realized_pnl": 0.0,
-  "charges_total": 20.41,
-  "tax_accrued": 0.0,
-  "tax_detail": {},
-  "as_of": "2026-09-24",
-  "inception": "2026-09-16",
-  "step_count": 7,
-  "processed_through": "2026-09-24",
-  "risk_on": false,
-  "tax_reserve": 0.0,
-  "account_tax_total": 0.0,
-  "tax_scope": "SHARED_PAPER_ACCOUNT",
-  "peak_value": 70145.77024597168,
-  "next_rebalance_in": 57,
   "history_quality": "RECONSTRUCTED_INITIAL_PAPER_HISTORY",
-  "account_tax_inventory": {
+  "holdings": {
     "GOLDBEES.NS": {
+      "acquired": "2026-09-17",
+      "acquired_step": 2,
+      "avg": 124.57926829268293,
+      "cost": 10215.5,
+      "kind": "cushion",
       "lots": [
         {
-          "id": "balanced:legacy:1",
-          "qty": 82,
           "acquired": "2026-09-17",
           "economic_cost": 10215.5,
+          "id": "balanced:legacy:1",
+          "qty": 82,
           "tax_cost": 10215.5
         }
       ],
       "qty": 82,
-      "cost": 10215.5,
-      "avg": 124.57926829268293,
-      "acquired": "2026-09-17"
+      "settle_date": "2026-09-18",
+      "settled": true,
+      "stop": 0.0
     },
     "LIQUIDBEES.NS": {
+      "acquired": "2026-09-17",
+      "acquired_step": 2,
+      "avg": 1003.3533333333334,
+      "cost": 3010.06,
+      "kind": "cushion",
       "lots": [
         {
-          "id": "balanced:legacy:3",
-          "qty": 3,
           "acquired": "2026-09-17",
           "economic_cost": 3010.06,
+          "id": "balanced:legacy:3",
+          "qty": 3,
           "tax_cost": 3010.06
         }
       ],
       "qty": 3,
-      "cost": 3010.06,
-      "avg": 1003.3533333333334,
-      "acquired": "2026-09-17"
+      "settle_date": "2026-09-18",
+      "settled": true,
+      "stop": 0.0
     }
   },
+  "inception": "2026-09-16",
+  "name": "balanced",
+  "next_rebalance_in": 56,
+  "orders": [
+    {
+      "amount": 10201.55,
+      "cost": 13.95,
+      "decided_date": "2026-09-16",
+      "fill_date": "2026-09-17",
+      "fill_price": 124.41,
+      "id": "balanced:legacy:1",
+      "kind": "cushion",
+      "legacy_id": 1,
+      "provenance": "RECONSTRUCTED_FROM_ORIGINAL_INTENT",
+      "qty": 82,
+      "ref_price": 124.7,
+      "settle_date": "2026-09-18",
+      "side": "BUY",
+      "status": "settled",
+      "stop": 0.0,
+      "symbol": "GOLDBEES.NS",
+      "target_value": 10238.0
+    },
+    {
+      "cancelled_date": "2026-09-16",
+      "decided_date": "2026-09-16",
+      "id": "balanced:legacy:2",
+      "kind": "cushion",
+      "legacy_id": 2,
+      "provenance": "RECONSTRUCTED_FROM_ORIGINAL_INTENT",
+      "reason": "Reconstruction: invalid original reference price; no executable intent",
+      "ref_price": 0,
+      "side": "BUY",
+      "status": "cancelled",
+      "stop": 0.0,
+      "symbol": "INDIGRID.NS",
+      "target_value": 6825.0
+    },
+    {
+      "amount": 3003.6,
+      "cost": 6.46,
+      "decided_date": "2026-09-16",
+      "fill_date": "2026-09-17",
+      "fill_price": 1001.2,
+      "id": "balanced:legacy:3",
+      "kind": "cushion",
+      "legacy_id": 3,
+      "provenance": "RECONSTRUCTED_FROM_ORIGINAL_INTENT",
+      "qty": 3,
+      "ref_price": 1000.0,
+      "settle_date": "2026-09-18",
+      "side": "BUY",
+      "status": "settled",
+      "stop": 0.0,
+      "symbol": "LIQUIDBEES.NS",
+      "target_value": 3412.0
+    }
+  ],
+  "peak_value": 70145.77024597168,
+  "processed_through": "2026-09-25",
+  "realized_pnl": 0.0,
+  "realized_sales": [],
+  "receivables": [],
   "reconstruction": {
-    "through": "2026-09-24",
+    "note": "Original intents, repaired accounting and captured daily bars; not original live signals",
     "source_snapshots": [
       "2633c4020d29759c7f85f1b773fc32f93b98608bf7162791dae3bea49479258d",
       "028a09622669124028163e8b43c11c3b28e3e144678122bdfcb54cf69ec20c18",
@@ -189,6 +187,12 @@
       "616e4f0ab1f30228f3145b773316191230c820ec48b88399d787a38245dc4a82",
       "499c90ee38a09362aff2463d5f2d3b9bb82cf0772bc0e87012894c94f43a6eaa"
     ],
-    "note": "Original intents, repaired accounting and captured daily bars; not original live signals"
-  }
+    "through": "2026-09-24"
+  },
+  "risk_on": false,
+  "step_count": 8,
+  "tax_accrued": 0.0,
+  "tax_detail": {},
+  "tax_reserve": 0.0,
+  "tax_scope": "SHARED_PAPER_ACCOUNT"
 }
