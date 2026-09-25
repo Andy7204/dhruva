@@ -6,6 +6,19 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+Public refresh CONFIRMED after the acceptance below: da18dc8 displays Sep25 and
+99977.67, no stale error. CI36164625265 passed all62 tests on refreshed data.
+
+LATEST September25 after-close acceptance: daily36156071460 SUCCESS, published
+ecea39c. Sep25, one new evaluation; seven ledger segments/6018events, head
+36001b8a81420a385c6e620c2e02fb9155f9b2dc2b2bf87fb3e36d9a9a7d16b0.
+Post-fetch health: no problems, accountingPASS, NAV99977.67 (69977.67+30000).
+StatusDEGRADED reflects remaining distribution/adjusted-price limitations only.
+All62 tests passed before this refresh; latest source da18dc8 rebased safely over
+the workflow's data commit after a non-fast-forward push, with no data discarded.
+Continuation heartbeat updated. Phase3 is still incomplete; prioritize sourced
+distribution and actual-unit repairs, not repeated deployment work.
+
 LATEST September25 evening: public b12c46a verified one99895.67 total with correct
 Sep24 stale warning and reconstruction caveats. CI36155273978 passed61 tests.
 Manual after-close daily36156071460/job108140816041 dispatched successfully,

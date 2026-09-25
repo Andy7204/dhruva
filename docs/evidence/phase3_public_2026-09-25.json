@@ -11,5 +11,19 @@
   "reconstruction_and_distribution_limitations_visible": true,
   "ci": {"run": 36155273978, "conclusion": "success"},
   "after_close_dispatch": {"run": 36156071460, "job": 108140816041, "status_at_checkpoint": "in_progress"},
-  "scope": "Public corrected totals verified; today's refresh and full economic completeness are not certified."
+  "scope": "Public corrected totals verified; full economic completeness is not certified.",
+  "subsequent_after_close_verification": {
+    "daily_run": 36156071460,
+    "conclusion": "success",
+    "recorded_date": "2026-09-25",
+    "nav": 99977.67,
+    "public_deployment": "da18dc8ff00765a4179cced375d65c6ebd2efba0",
+    "public_stale_error": false,
+    "accounting": "PASS",
+    "ledger_segments": 7,
+    "ledger_events": 6018,
+    "ci_run": 36164625265,
+    "ci_conclusion": "success",
+    "tests": 62
+  }
 }
