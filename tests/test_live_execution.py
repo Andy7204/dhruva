@@ -82,6 +82,30 @@ class LiveExecutionTests(unittest.TestCase):
         self.assertEqual(self.state['receivables'],[])
         self.assertEqual(self.state['realized_sales'],[])
 
+    def test_sale_fee_deficit_uses_cash_not_negative_receivable(self):
+        self.hold(); self.state['holdings']['TEST']['stop']=0
+        self.state['cash']=100.
+        self.state['orders']=[{'id':'fixture:1','side':'SELL','symbol':'TEST',
+            'kind':'stock','status':'scheduled','decided_date':'2026-09-21'}]
+        with patch('qlab.livebook.C.order_charges',return_value={'total':810.,'stt':0.}):
+            L.step(self.state,self.panel,self.date,self.cfg,False,1.)
+        self.assertEqual(self.state['cash'],90.)
+        self.assertEqual(self.state['receivables'],[])
+        self.assertNotIn('TEST',self.state['holdings'])
+        self.assertEqual(L.total_value(self.state,{}),90.)
+
+    def test_unfunded_sale_fee_deficit_fails_before_fill(self):
+        self.hold(); self.state['holdings']['TEST']['stop']=0
+        self.state['cash']=0.
+        self.state['orders']=[{'id':'fixture:1','side':'SELL','symbol':'TEST',
+            'kind':'stock','status':'scheduled','decided_date':'2026-09-21'}]
+        with patch('qlab.livebook.C.order_charges',return_value={'total':810.,'stt':0.}):
+            with self.assertRaisesRegex(ValueError,'sale charge deficit'):
+                L.step(self.state,self.panel,self.date,self.cfg,False,1.)
+        self.assertEqual(self.state['orders'][0]['status'],'scheduled')
+        self.assertEqual(self.state['holdings']['TEST']['qty'],10)
+        self.assertEqual(self.state['receivables'],[])
+
     def test_stock_fill_respects_weight_limit_after_costs(self):
         self.cfg['sleeves']['long_term']['max_pos_weight']=.12
         self.state['orders']=[{'id':'fixture:1','side':'BUY','symbol':'TEST','kind':'stock',

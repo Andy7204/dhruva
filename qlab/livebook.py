@@ -142,6 +142,14 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
         state['receivables']=pending
 
     def sale_receivable(amount, order_id):
+        # Delivery fees can exceed a tiny sale's proceeds. Reserve the deficit
+        # immediately from settled cash instead of inventing a negative asset.
+        amount=round(amount,2)
+        if amount < 0:
+            if available_cash() < -amount:
+                raise ValueError('Insufficient settled cash for sale charge deficit')
+            state['cash']=round(state['cash']+amount,2)
+            return
         state['receivables'].append({'order_id':order_id,'amount':round(amount,2),
                                     'settle_date':settlement})
 

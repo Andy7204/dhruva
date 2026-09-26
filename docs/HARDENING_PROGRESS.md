@@ -6,6 +6,13 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+September26 additional stress repair: sale fees exceeding gross proceeds now
+debit their deficit from settled available cash immediately, never create a
+negative receivable, and fail closed before filling if that cash is unavailable.
+Both funded and unfunded cases pass;13 focused execution tests pass. This is a
+conservative paper cash policy, not broker margin. Holding-wide top-up settlement
+and shared-FIFO exit-estimate stress remain open alongside income reconciliation.
+
 September26 verification follow-up: cb632f0 remote CI36214115964 SUCCESS;
 scheduled watchdog36202359869 also SUCCESS. Saved read-only acceptance in
 docs/evidence/quoted_execution_replay_2026-09-26.json (producing commit cb632f0):

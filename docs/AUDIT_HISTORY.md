@@ -204,6 +204,10 @@ Taxonomies, shared FIFO across sleeves, reserve attribution and policy assumptio
 are documented in ACCOUNTING_REPAIRS.md; do not call the whole phase complete.
 # September26 fractional sell intent and acceptance follow-up
 
+Tiny sale fees could exceed gross proceeds and produce a negative receivable.
+Deficits now debit settled available cash immediately; insufficient funds fail
+closed before the fill. Funded/unfunded regressions pass (13 execution tests).
+
 A fractional requested sell below one unit could round to zero while still
 entering sale accounting. It now cancels before costs, FIFO or receivables change;
 regression and all11 execution tests pass. CI36214115964 passed preceding quoted
