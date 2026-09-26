@@ -68,6 +68,33 @@ def _settle_date(date, days):
     return settlement_date(date,days)
 
 
+def _near_term_fifo_winner(inventory, qty, price, date, long_days, buffer_days):
+    """Past-only exit heuristic over the taxpayer lots actually consumed by FIFO.
+
+    Not a tax saving forecast: future prices and annual exemption usage are unknown.
+    """
+    left=qty
+    for lot in inventory.get('lots',[]):
+        used=min(left,lot['qty'])
+        if used<=0: break
+        held=(pd.Timestamp(date)-pd.Timestamp(lot['acquired'])).days
+        basis=lot['tax_cost']/lot['qty']
+        if price>basis and long_days-buffer_days<=held<=long_days:
+            return True
+        left=round(left-used,9)
+    return False
+
+
+def _deliverable_qty(holding, day):
+    """Whole FIFO units available before today's settlement; no BTST credit."""
+    quantity=0.
+    for lot in holding.get('lots',[]):
+        if lot.get('settle_date',holding.get('settle_date',day))>=day:
+            break
+        quantity+=lot['qty']
+    return int(round(quantity,9))
+
+
 def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_inventory=None):
     dstr = str(pd.Timestamp(date).date())
     if state.get('as_of') == dstr: return state
@@ -193,7 +220,10 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
             state["charges_total"] = round(state["charges_total"] + ch, 2)
             h = state["holdings"].setdefault(o["symbol"], {"qty": 0, "cost": 0.0, "avg": 0.0,
                                                            "kind": o["kind"], "stop": o.get("stop", 0.0)})
+            for lot in h.get('lots',[]):
+                lot.setdefault('settle_date',h.get('settle_date',dstr))
             LOTS.buy(h,qty,gross,charges(gross,'buy',o['symbol']),dstr,o['id'])
+            next(lot for lot in h['lots'] if lot['id']==o['id'])['settle_date']=settlement
             h.setdefault('acquired_step',state['step_count'])
             if tax_inventory is not None:
                 LOTS.buy(tax_inventory.setdefault(o['symbol'],{}),qty,gross,
@@ -206,7 +236,9 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
             h = state["holdings"].get(o["symbol"])
             if not h or h["qty"] < 1:
                 o.update(status="cancelled",cancelled_date=dstr,reason="Insufficient cash or quantity"); continue
-            if h.get('settle_date',dstr)>=dstr:
+            deliverable=_deliverable_qty(h,dstr)
+            requested=int(min(h['qty'],o.get('qty') or h['qty']))
+            if deliverable < requested:
                 o['pending_reason']='Awaiting delivery settlement'; continue
             qty = int(min(h["qty"], o.get("qty") or h["qty"]))
             if qty < 1:
@@ -232,11 +264,11 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
 
     # ---- 3. manage STOPS (resting orders — fill same day at the stop) ----
     for sym, h in list(state["holdings"].items()):
-        if h["kind"] != "stock" or not h.get("stop") or h.get('settle_date',dstr)>=dstr:
+        if h["kind"] != "stock" or not h.get("stop") or not _deliverable_qty(h,dstr):
             continue
         e = panel.get(sym); low = execution_price(e,date,'low')
         if low is not None and low <= h["stop"]:
-            fill = min(h["stop"], execution_price(e,date,'open')) * (1 - slip); qty = int(h["qty"])
+            fill = min(h["stop"], execution_price(e,date,'open')) * (1 - slip); qty = _deliverable_qty(h,dstr)
             if not qty: continue  # fractional fund allotments cannot trade on exchange
             gross = fill * qty
             ch = _est_cost(gross, "sell", sym)
@@ -291,9 +323,9 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
             h = state["holdings"][s]
             minimum=cfg.get('entry_filters',{}).get('min_hold_days',{}).get('long_term',0)
             if not breaker and state['step_count']-h.get('acquired_step',0)<minimum: continue
-            hd = (pd.Timestamp(dstr) - pd.Timestamp(h.get("acquired", dstr))).days
-            gain = (prices.get(s, h["avg"]) - h["avg"]) * h["qty"]
-            if aware and not breaker and gain > 0 and (ltd - buf) <= hd <= ltd:
+            fifo = tax_inventory[s] if tax_inventory is not None else h
+            if aware and not breaker and _near_term_fifo_winner(
+                    fifo, int(h['qty']), prices[s], dstr, ltd, buf):
                 continue  # tax-aware: hold a near-1-yr winner past 12mo (STCG 20% → LTCG 12.5%)
             state["orders"].append({"id": _oid(state), "side": "SELL", "symbol": s, "kind": "stock",
                                     "status": "scheduled", "decided_date": dstr,

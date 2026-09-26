@@ -204,6 +204,13 @@ Taxonomies, shared FIFO across sleeves, reserve attribution and policy assumptio
 are documented in ACCOUNTING_REPAIRS.md; do not call the whole phase complete.
 # September26 fractional sell intent and acceptance follow-up
 
+Further repairs: tax-aware exit timing read sleeve average basis/oldest date
+instead of consumed shared FIFO lots; corrected and covered by mixed-lot tests.
+Top-ups reset the holding's settlement date, suppressing stops on already
+delivered units; per-lot delivery metadata now preserves those units. Mixed
+settlement regression passes.77 integrated tests passed before the top-up repair;
+15 focused execution tests pass after it. FIFO subtraction uses stored precision.
+
 Tiny sale fees could exceed gross proceeds and produce a negative receivable.
 Deficits now debit settled available cash immediately; insufficient funds fail
 closed before the fill. Funded/unfunded regressions pass (13 execution tests).

@@ -72,6 +72,23 @@ class LiveExecutionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'calendar coverage'):
             L._settle_date('2026-10-30',1)
 
+    def test_exit_heuristic_uses_only_consumed_shared_fifo_lots(self):
+        inventory={'lots':[
+            {'qty':2,'tax_cost':100.,'acquired':'2024-01-01'},
+            {'qty':3,'tax_cost':150.,'acquired':'2025-10-01'}]}
+        self.assertFalse(L._near_term_fifo_winner(inventory,2,80.,'2026-09-22',365,30))
+        self.assertTrue(L._near_term_fifo_winner(inventory,3,80.,'2026-09-22',365,30))
+        self.assertFalse(L._near_term_fifo_winner(inventory,3,40.,'2026-09-22',365,30))
+
+    def test_top_up_does_not_block_stop_on_old_settled_units(self):
+        self.hold()
+        self.state['orders']=[{'id':'fixture:1','side':'BUY','symbol':'TEST','kind':'stock',
+            'status':'scheduled','decided_date':'2026-09-21','target_value':160.,'stop':90.}]
+        self.step()
+        self.assertEqual(self.state['holdings']['TEST']['qty'],2)
+        self.assertEqual(self.state['orders'][-1]['qty'],10)
+        self.assertEqual(self.state['holdings']['TEST']['lots'][0]['settle_date'],'2026-09-23')
+
     def test_fractional_sell_intent_cannot_create_zero_quantity_fill(self):
         self.hold(); self.state['holdings']['TEST']['stop']=0
         self.state['orders']=[{'id':'fixture:1','side':'SELL','symbol':'TEST',

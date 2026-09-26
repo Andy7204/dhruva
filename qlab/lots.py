@@ -34,7 +34,7 @@ def sell(holding, qty, gross, charges, exited, symbol, order_id):
             'gain':round((gross-charges['total']+charges['stt'])*share-basis,2),
             'economic_gain':round((gross-charges['total'])*share-economic,2)})
         lot['qty']=round(lot['qty']-used,9);lot['economic_cost']=round(lot['economic_cost']-economic,2)
-        lot['tax_cost']=round(lot['tax_cost']-basis,2);left-=used
+        lot['tax_cost']=round(lot['tax_cost']-basis,2);left=round(left-used,9)
     holding['lots']=[l for l in holding['lots'] if l['qty']]
     summarize(holding)
     return records

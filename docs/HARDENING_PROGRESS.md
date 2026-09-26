@@ -6,6 +6,15 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+September26 latest: prior be58e39 CI36214370882 SUCCESS. Shared-FIFO exit heuristic
+now evaluates only taxpayer lots consumed by the proposed sale, not a sleeve's
+average basis/oldest date;77 integrated tests passed. FIFO subtraction rounds at
+stored precision. Subsequent top-up settlement repair retains each older lot's
+delivery date: stops may sell settled whole units while new units remain blocked;
+scheduled full sells wait for sufficient delivered quantity.15 focused execution
+tests pass including the mixed-settlement stop. Source income reconciliation and
+real forward-session acceptance still block Phase3 completion; phases4–10 pending.
+
 September26 additional stress repair: sale fees exceeding gross proceeds now
 debit their deficit from settled available cash immediately, never create a
 negative receivable, and fail closed before filling if that cash is unavailable.

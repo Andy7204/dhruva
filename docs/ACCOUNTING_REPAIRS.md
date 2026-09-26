@@ -89,6 +89,13 @@ retrieved September25 corroborates slab taxation and allotment-value cost basis.
 
 ### September26 implementation
 
+Exit timing's existing near-long-term-winner heuristic now reads the shared FIFO
+lots the exit would consume. It remains a deterministic heuristic, not a forecast
+of future tax savings. Top-ups retain older lots' settlement dates; resting stops
+can dispose of delivered whole units while new units stay unavailable. Full
+scheduled sells wait until their requested whole quantity is deliverable. No
+same-day settlement credit or margin is introduced.
+
 Live fills and marking now use quoted OHLC, leaving adjusted features to the
 deterministic signal layer. ATR stop distances are converted to quote units.
 Legacy held positions can migrate only when prior quoted/adjusted prices agree;
