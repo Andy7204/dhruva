@@ -193,3 +193,7 @@ signal inputs. Raw-history revisions for holdings fail closed pending explicit
 corporate-action reconciliation. `qlab.income` handles sourced cash/fractional
 unit receipts and TDS assets; no unverified calculator income has been posted.
 See ACCOUNTING_REPAIRS.md and the newest progress entry for remaining acceptance.
+
+September26 follow-up: exit timing checks consumed shared FIFO lots, top-ups
+preserve per-lot delivery eligibility, and sale-fee deficits require settled cash.
+Keep unknown distribution income and pending forward acceptance visible.

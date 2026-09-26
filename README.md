@@ -214,5 +214,7 @@ made. Earlier historical promotional claims are superseded by the audit.
 
 Paper execution now uses quoted prices while signals retain adjusted features.
 Sourced distribution receipts support cash, fractional units and prepaid TDS.
+Tax-aware exit timing reads shared FIFO lots; top-ups preserve old delivery dates
+so stops can sell settled units. Sale-fee deficits require settled cash.
 Historical income reconciliation and deployed acceptance are still incomplete;
 see [accounting repairs](docs/ACCOUNTING_REPAIRS.md). This is paper research only.

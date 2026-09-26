@@ -3,9 +3,10 @@
 September25 user priority: finish quickly using minimal credits. The ten-phase
 mission remains authoritative; this checklist removes repeated planning, not scope.
 
-1. **Restore green CI and verify deployment (Phase3).** Fix the stale UI-test
-   label, confirm corrected99895.67 NAV/ledger on the public app, and inspect the
-   next real after-close run. Do not rerun already verified old workflows.
+1. **Verify new code only (Phase3).** Earlier CI, corrected public NAV and Sep25
+   after-close daily are verified; do not repeat those tasks. Check latest791d751
+   CI, then obtain a genuine trading-session acceptance of the new quoted-unit,
+   receipt and per-lot settlement code when the market next closes.
 2. **Close economic blockers (Phase3).** Distribution/dividend income and tax,
    adjusted-price versus actual-unit handling, risk stress and shared-account
    execution invariants. Keep specific warnings until supported by evidence.
