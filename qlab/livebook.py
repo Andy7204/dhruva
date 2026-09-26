@@ -201,6 +201,10 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
             if h.get('settle_date',dstr)>=dstr:
                 o['pending_reason']='Awaiting delivery settlement'; continue
             qty = int(min(h["qty"], o.get("qty") or h["qty"]))
+            if qty < 1:
+                o.update(status='cancelled', cancelled_date=dstr,
+                         reason='No whole exchange units requested')
+                continue
             fill = op * (1 - slip); gross = fill * qty; ch = _est_cost(gross, "sell", o["symbol"])
             sale_receivable(gross-ch,o["id"])
             state["charges_total"] = round(state["charges_total"] + ch, 2)

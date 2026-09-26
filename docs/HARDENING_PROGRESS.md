@@ -6,6 +6,17 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+September26 verification follow-up: cb632f0 remote CI36214115964 SUCCESS;
+scheduled watchdog36202359869 also SUCCESS. Saved read-only acceptance in
+docs/evidence/quoted_execution_replay_2026-09-26.json (producing commit cb632f0):
+NAV99977.67, duplicate no-op, projections unchanged. Additional fractional sell
+intent guard cancels requests below one exchange unit before FIFO/receivable
+mutation;11 focused execution tests pass. No redundant daily dispatched.
+Next Phase3: sourced accrual/allotment reconciliation and risk stress. Explicit
+remaining stress cases include sale charges exceeding proceeds, conservative
+holding-wide settlement on top-ups, and shared-FIFO tax-aware exit estimates.
+No production income receipt posted; do not label Phase3 or phases4–10 complete.
+
 LATEST September26 morning: actual quoted-price execution/marking implemented,
 adjusted ATR converted to quote units, migration checks acquisition/prior quotes,
 and raw-history revision guard fails closed. Sourced cash/fractional-unit receipt

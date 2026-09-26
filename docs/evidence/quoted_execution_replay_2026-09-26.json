@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-09-26T03:13:33.873919+00:00",
+  "producing_commit": "cb632f0a3a6430d1161096a734e877f1eefcfc60",
+  "scope": "Read-only captured Sep25 no-rebalance execution/mark replay, not a new live run",
+  "source_snapshot": "f37a0a66a4182f684607fd8cb747a1883f39c4ee60dd103557e49b0cc7268f9a",
+  "ledger": {
+    "segments": 7,
+    "events": 6018,
+    "head": "36001b8a81420a385c6e620c2e02fb9155f9b2dc2b2bf87fb3e36d9a9a7d16b0"
+  },
+  "accounting": {
+    "status": "PASS",
+    "tax_reserve": 0.0,
+    "nav": 99977.67,
+    "scope": "FIFO, cash, settlement receivables, order identities, shared tax and saved NAV"
+  },
+  "recorded_nav": 99977.67,
+  "duplicate_noop": true,
+  "live_projections_unchanged": true
+}

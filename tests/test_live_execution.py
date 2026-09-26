@@ -72,6 +72,16 @@ class LiveExecutionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'calendar coverage'):
             L._settle_date('2026-10-30',1)
 
+    def test_fractional_sell_intent_cannot_create_zero_quantity_fill(self):
+        self.hold(); self.state['holdings']['TEST']['stop']=0
+        self.state['orders']=[{'id':'fixture:1','side':'SELL','symbol':'TEST',
+            'kind':'stock','status':'scheduled','decided_date':'2026-09-21','qty':.003}]
+        self.step()
+        self.assertEqual(self.state['orders'][0]['status'],'cancelled')
+        self.assertEqual(self.state['holdings']['TEST']['qty'],10)
+        self.assertEqual(self.state['receivables'],[])
+        self.assertEqual(self.state['realized_sales'],[])
+
     def test_stock_fill_respects_weight_limit_after_costs(self):
         self.cfg['sleeves']['long_term']['max_pos_weight']=.12
         self.state['orders']=[{'id':'fixture:1','side':'BUY','symbol':'TEST','kind':'stock',

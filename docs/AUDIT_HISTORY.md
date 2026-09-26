@@ -202,3 +202,11 @@ modeled cost after ETF-STT correction/IPFT. Applying/publishing correction and
 remaining distribution income/adjusted-unit checks are separate acceptance work.
 Taxonomies, shared FIFO across sleeves, reserve attribution and policy assumptions
 are documented in ACCOUNTING_REPAIRS.md; do not call the whole phase complete.
+# September26 fractional sell intent and acceptance follow-up
+
+A fractional requested sell below one unit could round to zero while still
+entering sale accounting. It now cancels before costs, FIFO or receivables change;
+regression and all11 execution tests pass. CI36214115964 passed preceding quoted
+execution/income implementation cb632f0. Saved replay evidence reproduces99977.67
+and proves duplicate safety without writing live books. Distribution source
+completeness and broader risk acceptance remain open; no receipt was invented.

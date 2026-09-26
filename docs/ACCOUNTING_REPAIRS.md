@@ -99,9 +99,9 @@ This is a fail-closed corporate-action guard, not an automatic split processor.
 atomically. Config `income_receipts` is processed after fills, before shared tax
 and final NAV. It requires book/id, gross/withheld, effective/taxable dates,
 retrieval timestamp, HTTPS source and SHA256. Future data cannot be used; a late
+amendment to an already recorded session requires explicit ledger correction.
 Daily ingestion additionally requires `source_path` within the project and verifies
 its bytes against the SHA256 before posting. A hash string alone is insufficient.
-amendment to an already recorded session requires explicit ledger correction.
 Weekend events may enter the next unprocessed session. TDS is a prepaid-tax asset;
 gross income is taxed once, with net unpaid tax restricting available cash.
 Reinvested lots retain allotment basis; exchange sales remain whole units while
@@ -110,5 +110,5 @@ fractional remainders remain owned. Allotment units/net proceeds must reconcile.
 No calculator-derived income is posted yet. The September26 query through26
 still returns only rows through24. Missing25 is unknown, not zero. Receipt source
 ingestion, pending accrual versus actual allotment reconciliation and forward
-deployed acceptance remain outstanding;70 tests passed before the additional
-fractional FIFO remainder regression, which also passed in the focused suite.
+deployed acceptance remain outstanding. Remote CI36214115964 passed cb632f0;
+the recorded quoted-execution replay reproduces99977.67 without mutating books.
