@@ -6,6 +6,12 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+September26 closing verification:791d751 remote CI36217467250 SUCCESS (archive,
+complete unittest suite and ledger acceptance). Working tree clean after c3eabc9.
+Usage94% five-hour used,77% weekly at last read, near5% remaining cutoff.
+Reset13:28:33 IST; same continuation heartbeat updated to13:35 IST daily.
+First resume from unresolved income/Phase3 acceptance, not already-passed CI.
+
 September26 latest: prior be58e39 CI36214370882 SUCCESS. Shared-FIFO exit heuristic
 now evaluates only taxpayer lots consumed by the proposed sale, not a sleeve's
 average basis/oldest date;77 integrated tests passed. FIFO subtraction rounds at
