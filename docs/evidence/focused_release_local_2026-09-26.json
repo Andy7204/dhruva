@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-09-26T08:15:22.272000+00:00",
+  "commit": "17e8a4bfdaf86d802c25d3cdb86e2f702b1e6c55",
+  "status": "OPERATIONAL",
+  "portfolio_date": "2026-09-25",
+  "nav": 99977.67,
+  "problems": [],
+  "forward_rows": [
+    {
+      "Date": "2026-09-24",
+      "Paper NAV": 99895.67,
+      "Nifty level": 23063.099609375,
+      "Record type": "Corrected starting point",
+      "Recorded at": "2026-09-25T03:11:55.642779+00:00",
+      "Paper index": 100.0,
+      "Nifty price index": 100.0
+    },
+    {
+      "Date": "2026-09-25",
+      "Paper NAV": 99977.67,
+      "Nifty level": 23140.5,
+      "Record type": "Forward paper observation",
+      "Recorded at": "2026-09-25T15:48:53.052776+00:00",
+      "Paper index": 100.08208563994816,
+      "Nifty price index": 100.33560272442104
+    }
+  ],
+  "scope": "Local read-only render inputs; public and next-session acceptance separate"
+}

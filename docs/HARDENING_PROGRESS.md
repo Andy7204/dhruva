@@ -1,5 +1,14 @@
 # Dhruva hardening checkpoint
 
+PUBLIC RESTORED September26: browser verified17e8a4b at
+https://dhruva-andy7204.streamlit.app/ — OPERATIONAL, Sep25NAV99977.67,
+both books HOLD, prices/holdings/journal, strategy explanation, forward chart
+(corrected Sep24 base, Sep25forward observation) and historical scorecard visible.
+No blanket degraded banner; original prior attempt's historical status remains
+unchanged. Next acceptance is next genuinely due weekday run (MondaySeptember28).
+Do not restart the old mission or repeat deployed UI work. After that run verifies
+current book/ledger/public date, disable development heartbeat; daily/watchdog stay.
+
 Focused release follow-up: dd45eb2 remote CI36229073500 SUCCESS. Added operational
 status regression (8 health tests pass). Public cold start exposed costly full
 snapshot decompression on every UI refresh: UI now verifies ledger chain and
