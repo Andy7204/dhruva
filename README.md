@@ -210,3 +210,9 @@ settled cash, permanent orders and gap fills. Initial history is explicitly
 reconstructed with original evidence retained. Distribution income and adjusted
 research-unit limitations remain unresolved; no validated performance claim is
 made. Earlier historical promotional claims are superseded by the audit.
+# September26 accounting checkpoint
+
+Paper execution now uses quoted prices while signals retain adjusted features.
+Sourced distribution receipts support cash, fractional units and prepaid TDS.
+Historical income reconciliation and deployed acceptance are still incomplete;
+see [accounting repairs](docs/ACCOUNTING_REPAIRS.md). This is paper research only.

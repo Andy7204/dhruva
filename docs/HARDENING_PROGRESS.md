@@ -6,6 +6,21 @@ preserve existing history and distinguish imported records from prospective evid
 
 ## Current checkpoint
 
+LATEST September26 morning: actual quoted-price execution/marking implemented,
+adjusted ATR converted to quote units, migration checks acquisition/prior quotes,
+and raw-history revision guard fails closed. Sourced cash/fractional-unit receipt
+posting is atomic; TDS asset and shared reserve reconcile, whole-unit exchange
+sales retain fractional FIFO remnants. Daily receipt input requires preserved
+source bytes/hash. Recovery/repeat and late-amendment tests pass. Full72-test
+suite passed before one additional quote migration test; focused execution and
+pipeline suites including the additional case pass. Read-only Sep25 quote replay
+matches99977.67, duplicate no-op, original books unchanged. No production income
+receipt or historical income correction has been posted. Phase3 still pending
+actual source reconciliation, risk acceptance and deployed real-session evidence.
+September26 calculator request through26 still returned only through24, disproving
+any assumption that simply extending the requested end date supplies25. Evidence
+saved separately; retain unknown-income warning. Latest prior CI36172623963 passed.
+
 LATEST September25 late evening: distribution-income liability is now included in
 shared tax reserve and accounting verification through explicit income_receipts.
 Capital losses/LTCG exemption do not offset slab-taxed income; duplicate receipts

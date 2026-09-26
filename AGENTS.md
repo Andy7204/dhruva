@@ -187,3 +187,9 @@ same-date retries to the corrected bundle and never edits original evidence.
 Do not use historical statements above about missing core tax/settlement as the
 latest checkpoint; read HARDENING_PROGRESS.md. Do not remove remaining warnings
 until actual tests/deployed evidence and outstanding Phase3 work are complete.
+
+September26: live execution/marking now uses quoted OHLC; adjusted series remain
+signal inputs. Raw-history revisions for holdings fail closed pending explicit
+corporate-action reconciliation. `qlab.income` handles sourced cash/fractional
+unit receipts and TDS assets; no unverified calculator income has been posted.
+See ACCOUNTING_REPAIRS.md and the newest progress entry for remaining acceptance.

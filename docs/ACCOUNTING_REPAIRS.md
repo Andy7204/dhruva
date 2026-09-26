@@ -86,3 +86,29 @@ allotment inventory and raw-unit execution integration remain required. TDS must
 be represented as prepaid tax rather than reducing taxable gross income.
 [Broker tax explanation](https://support.zerodha.com/category/console/reports/taxation/articles/dividends-on-liquid-etfs-and-liquid-bees)
 retrieved September25 corroborates slab taxation and allotment-value cost basis.
+
+### September26 implementation
+
+Live fills and marking now use quoted OHLC, leaving adjusted features to the
+deterministic signal layer. ATR stop distances are converted to quote units.
+Legacy held positions can migrate only when prior quoted/adjusted prices agree;
+changed previously recorded raw quotes require explicit corporate-action repair.
+This is a fail-closed corporate-action guard, not an automatic split processor.
+
+`qlab.income.post_receipt` posts evidenced cash or fractional-unit receipts
+atomically. Config `income_receipts` is processed after fills, before shared tax
+and final NAV. It requires book/id, gross/withheld, effective/taxable dates,
+retrieval timestamp, HTTPS source and SHA256. Future data cannot be used; a late
+Daily ingestion additionally requires `source_path` within the project and verifies
+its bytes against the SHA256 before posting. A hash string alone is insufficient.
+amendment to an already recorded session requires explicit ledger correction.
+Weekend events may enter the next unprocessed session. TDS is a prepaid-tax asset;
+gross income is taxed once, with net unpaid tax restricting available cash.
+Reinvested lots retain allotment basis; exchange sales remain whole units while
+fractional remainders remain owned. Allotment units/net proceeds must reconcile.
+
+No calculator-derived income is posted yet. The September26 query through26
+still returns only rows through24. Missing25 is unknown, not zero. Receipt source
+ingestion, pending accrual versus actual allotment reconciliation and forward
+deployed acceptance remain outstanding;70 tests passed before the additional
+fractional FIFO remainder regression, which also passed in the focused suite.

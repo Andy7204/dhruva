@@ -37,7 +37,7 @@ def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, ge
     commit = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
     snapshot = ledger.snapshot({'config': cfg, 'market': {s: frame_snapshot(f) for s, f in sorted(raw.items())},
                                 'benchmark': frame_snapshot(benchmark),
-                                'captured_at': generated_at, 'price_convention': 'adjusted OHLC research units',
+                                'captured_at': generated_at, 'price_convention': 'quoted execution prices; adjusted signal features; see per-book convention',
                                 'data_quality': quality})
     names_path = root/'data/nse_names.json'
     names = json.loads(names_path.read_text(encoding='utf-8')) if names_path.exists() else {}

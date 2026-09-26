@@ -49,7 +49,7 @@ def _run_livebook(cfg_book: dict, name: str, panel, regime, rfactor, cal, persis
     if persist:
         _save_book(name, state)
     return {"name": name, "state": state, "capital": cfg_book["starting_capital"],
-            "prices_now": E._prices_at(panel, cal[-1])}
+            "prices_now": LB.execution_prices(panel, cal[-1])}
 
 
 def _save_book(name, state, runs=None):
@@ -164,6 +164,16 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
         results = [_run_livebook(configs[name], name, panel, regimes[name], factors[name],
                     pd.DatetimeIndex([date]), persist=False, state=states[name],tax_sync=sync_tax,
                     tax_inventory=tax_inventory) for name in book_defs]
+        from qlab.income import post_receipt, verify_source
+        for receipt in cfg.get('income_receipts',[]):
+            if receipt['book'] not in states: raise ValueError('Unknown income receipt book')
+            if receipt['effective_date']<=str(date.date()): verify_source(PROJECT_ROOT,receipt)
+            prior=previous.get(receipt['book']) or {}
+            if prior.get('as_of')==str(date.date()) and not any(
+                    r['id']==receipt['id'] for r in prior.get('income_receipts',[])):
+                if receipt['effective_date']<=str(date.date()):
+                    raise ValueError('Same-day income amendment requires explicit ledger correction')
+            post_receipt(states[receipt['book']],tax_inventory,receipt,str(date.date()),prior.get('as_of'))
         sync_tax()
         for r in results:
             r['state']['account_tax_inventory']=copy.deepcopy(tax_inventory)

@@ -22,6 +22,19 @@ from qlab import costs as C
 from qlab import tax as TAX
 from qlab import lots as LOTS
 
+
+def execution_price(frame, date, field='close'):
+    """Quoted prices for executable units; adjusted-only legacy fixtures remain explicit."""
+    column=field if field in frame.columns else {'open':'adj_open','low':'adj_low','close':'adjclose'}[field]
+    value=E._get(frame,date,column)
+    if value is not None and (not math.isfinite(value) or value<=0):
+        raise ValueError('Invalid executable price')
+    return value
+
+
+def execution_prices(panel,date):
+    return {s:p for s,f in panel.items() if (p:=execution_price(f,date)) is not None}
+
 def _oid(state):
     # Persisted counter + book namespace: independent of process restart/order date.
     used={str(o['id']) for o in state['orders']}
@@ -47,7 +60,7 @@ def total_value(state, prices):
         if symbol not in prices or not math.isfinite(prices[symbol]) or prices[symbol]<=0:
             raise ValueError(f'Missing/invalid valuation price: {symbol}')
     mv = sum(h["qty"] * prices[s] for s, h in state["holdings"].items())
-    return state["cash"] + sum(r["amount"] for r in state.get("receivables",[])) + mv - state.get("tax_reserve",0.)
+    return state["cash"] + state.get('tax_prepaid',0.) + sum(r["amount"] for r in state.get("receivables",[])) + mv - state.get("tax_reserve",0.)
 
 
 def _settle_date(date, days):
@@ -62,8 +75,23 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
         raise ValueError('Cannot step a paper book backwards')
     for symbol in state['holdings']:
         frame=panel.get(symbol)
-        if frame is None or any(E._get(frame,date,c) is None for c in ('adj_open','adj_low','adjclose')):
+        if frame is None or any(execution_price(frame,date,c) is None for c in ('open','low','close')):
             raise ValueError(f'Missing held-symbol executable prices: {symbol}')
+        previous=state.get('as_of')
+        if previous and 'close' in frame and pd.Timestamp(previous) not in frame.index:
+            raise ValueError(f'Missing prior raw quote for held symbol: {symbol}')
+        if previous and 'close' in frame and pd.Timestamp(previous) in frame.index:
+            old_quote=execution_price(frame,pd.Timestamp(previous))
+            recorded=state.get('last_raw_prices',{}).get(symbol)
+            if recorded is not None and not math.isclose(old_quote,recorded,rel_tol=1e-7,abs_tol=1e-6):
+                raise ValueError(f'Held raw-price history revised: {symbol}; corporate-action reconciliation required')
+            if state.get('price_convention')!='actual_quoted_units':
+                check_dates={previous}|{lot['acquired'] for lot in state['holdings'][symbol].get('lots',[])}
+                for check_date in check_dates:
+                    quote=execution_price(frame,pd.Timestamp(check_date))
+                    adjusted=E._get(frame,pd.Timestamp(check_date),'adjclose')
+                    if quote is None or adjusted is None or not math.isclose(quote,adjusted,rel_tol=1e-7,abs_tol=1e-6):
+                        raise ValueError(f'Legacy adjusted units require explicit reconciliation: {symbol}')
     settlement=_settle_date(date,cfg.get('settlement',{}).get('settle_days',1))
     for symbol,holding in state['holdings'].items():
         if not holding.get('lots'):
@@ -74,14 +102,15 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
     slip = cfg.get("slippage_bps", 5) / 10000.0
     settle_days = cfg.get("settlement", {}).get("settle_days", 1)
     ccfg = cfg["costs"]; prod = "delivery"
-    prices = {s: E._get(panel[s], date, "adjclose") for s in panel
-              if E._get(panel[s], date, "adjclose") is not None}
+    prices = execution_prices(panel,date)
 
     def sync_tax():
         if tax_sync: tax_sync()
         else: TAX.reserve_accounts({state['name']:state},cfg)
 
-    def available_cash(): return max(0.,state['cash']-state.get('tax_reserve',0.))
+    def available_cash():
+        unpaid=max(0.,state.get('tax_reserve',0.)-state.get('tax_prepaid',0.))
+        return max(0.,state['cash']-unpaid)
 
     def charges(value,side,sym):
         return C.order_charges(value,side,prod,C.exchange_of(sym),ccfg,sym)
@@ -124,7 +153,7 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
         if o["status"] != "scheduled" or o.get("decided_date",dstr) >= dstr:
             continue
         e = panel.get(o["symbol"])
-        op = E._get(e, date, "adj_open") if e is not None else None
+        op = execution_price(e,date,'open') if e is not None else None
         if op is None:
             continue  # market shut for it — stays scheduled
         if o["side"] == "BUY":
@@ -137,7 +166,7 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
                 if o['symbol'] not in stocks and (len(stocks)>=sp['max_positions'] or
                     sum((sectors.get(s) or s)==sec for s in stocks)>=cfg.get('selection',{}).get('max_per_sector',999)):
                     o.update(status='cancelled',cancelled_date=dstr,reason='Position/sector count limit');continue
-                open_prices={s:E._get(panel[s],date,'adj_open') for s in state['holdings']}
+                open_prices={s:execution_price(panel[s],date,'open') for s in state['holdings']}
                 nav_open=total_value(state,open_prices)
                 held_qty=stocks.get(o['symbol'],{}).get('qty',0)
                 cap=sp['max_pos_weight']
@@ -171,7 +200,7 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
                 o.update(status="cancelled",cancelled_date=dstr,reason="Insufficient cash or quantity"); continue
             if h.get('settle_date',dstr)>=dstr:
                 o['pending_reason']='Awaiting delivery settlement'; continue
-            qty = min(h["qty"], o.get("qty") or h["qty"])
+            qty = int(min(h["qty"], o.get("qty") or h["qty"]))
             fill = op * (1 - slip); gross = fill * qty; ch = _est_cost(gross, "sell", o["symbol"])
             sale_receivable(gross-ch,o["id"])
             state["charges_total"] = round(state["charges_total"] + ch, 2)
@@ -193,9 +222,11 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
     for sym, h in list(state["holdings"].items()):
         if h["kind"] != "stock" or not h.get("stop") or h.get('settle_date',dstr)>=dstr:
             continue
-        e = panel.get(sym); low = E._get(e, date, "adj_low")
+        e = panel.get(sym); low = execution_price(e,date,'low')
         if low is not None and low <= h["stop"]:
-            fill = min(h["stop"], E._get(e,date,"adj_open")) * (1 - slip); qty = h["qty"]; gross = fill * qty
+            fill = min(h["stop"], execution_price(e,date,'open')) * (1 - slip); qty = int(h["qty"])
+            if not qty: continue  # fractional fund allotments cannot trade on exchange
+            gross = fill * qty
             ch = _est_cost(gross, "sell", sym)
             stop_id=_oid(state)
             sale_receivable(gross-ch,stop_id)
@@ -205,7 +236,7 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
                                     "status": "filled", "fill_date": dstr, "fill_price": round(fill, 2),
                                     "qty": qty, "cost": round(ch, 2), "amount": round(gross, 2),
                                     "reason": "stop-loss hit", "settle_date": settlement})
-            del state["holdings"][sym]
+            if h['qty']<=0: del state["holdings"][sym]
 
     settle_cash(True)
 
@@ -262,6 +293,8 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
             tv = min((1 / K) * tilt * eq_weight * eq,sp['max_pos_weight']*eq)
             px = prices.get(s); atr = E._get(panel[s], date, "atr14")
             if not px or not atr: continue
+            adjusted=E._get(panel[s],date,'adjclose')
+            if adjusted: atr*=px/adjusted  # ATR signal units -> quoted execution units.
             estimated_fees=_est_cost(tv,'buy',s)+_est_cost(tv,'sell',s)
             distance=sp['atr_stop_mult']*atr/px
             if tv<=0 or distance<cfg.get('entry_filters',{}).get('min_edge_to_cost',0)*estimated_fees/tv: continue
@@ -287,4 +320,7 @@ def step(state, panel, date, cfg, regime_ok, regime_factor, tax_sync=None, tax_i
     sync_tax()
     state["history"].append([dstr, round(total_value(state, prices), 2)])
     state["as_of"] = dstr
+    raw_units=all('close' in panel[s] for s in state['holdings'])
+    state['price_convention']='actual_quoted_units' if raw_units else 'legacy_adjusted_fixture_units'
+    state['last_raw_prices']={s:prices[s] for s in state['holdings'] if 'close' in panel[s]}
     return state

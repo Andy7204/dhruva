@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import hashlib
 from unittest.mock import patch
 
 import pandas as pd
@@ -48,15 +49,23 @@ class PipelineTests(unittest.TestCase):
                'data':{'backtest_range':'5y'}, 'regime':{'benchmark':'INDEX'},
                'paper':{'inception_days_back':0},
                'books':{'balanced':{'capital':700},'aggressive':{'capital':300}}}
+        cfg['tax']=json.loads(Path('config.json').read_text(encoding='utf-8'))['tax']
+        cfg['income_receipts']=[{'id':'income-fixture','book':'balanced','symbol':'TEST',
+            'gross':100.,'withheld':10.,'effective_date':'2026-09-23','taxable_date':'2026-09-23',
+            'retrieved_at':'2026-09-23T12:00:00+00:00','mode':'cash',
+            'source_url':'https://example.org/fixture','source_path':'source.txt',
+            'source_sha256':hashlib.sha256(b'fixture').hexdigest()}]
         dates = pd.to_datetime(['2026-09-21','2026-09-22','2026-09-23'])
         frame = pd.DataFrame({'adjclose':[100.,101.,102.]},index=dates)
         calls = []
         def step(st, panel, date, config, regime, factor, **kwargs):
             calls.append((st['name'], str(date.date())))
             st['as_of'] = str(date.date())
+            st['price_convention']='actual_quoted_units'
             st['history'].append([st['as_of'], st['capital']])
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); runs = root/'runs'; runs.mkdir()
+            (root/'source.txt').write_bytes(b'fixture')
             for name, capital in [('balanced',700),('aggressive',300)]:
                 st = O.LB.new_livebook({'starting_capital':capital}, name)
                 st.update(as_of='2026-09-18', processed_through='2026-09-18', history=[['2026-09-18',capital]])
@@ -98,6 +107,13 @@ class PipelineTests(unittest.TestCase):
                 recovered = ledger.find('dhruva-v1:2026-09-21')['payload']['events']
                 self.assertTrue(all(e['execution_status']=='RECOVERY_RECONSTRUCTION' for e in recovered))
                 self.assertEqual(before['segments'],3)
+                balanced=next(r['state'] for r in result['results'] if r['name']=='balanced')
+                self.assertEqual(balanced['history'][-1][1],768.8)
+                self.assertEqual(len(balanced['income_receipts']),1)
+                cfg['income_receipts'].append(dict(cfg['income_receipts'][0],id='late-amendment'))
+                with self.assertRaisesRegex(ValueError,'explicit ledger correction'):
+                    O.daily_run(refresh=False,verbose=False)
+                self.assertEqual(before,ledger.verify())
 
 
 if __name__ == '__main__': unittest.main()

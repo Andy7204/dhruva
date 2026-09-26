@@ -8,6 +8,14 @@ evidence retained and recalculated history identified as reconstruction.
 
 ## What was audited, in order
 
+September26: quoted execution separated from adjusted signals; held raw-history
+revisions and ambiguous legacy unit migration fail closed. Added atomic sourced
+cash/fractional income posting, prepaid TDS accounting, source hash verification,
+whole-unit sale enforcement, fractional FIFO remainder validation and receipt
+recovery/deduplication tests. A read-only captured Sep25 replay preserves NAV and
+live files. These repairs are implemented/tested; actual historical distribution
+posting and complete Phase3 acceptance remain open. No original evidence changed.
+
 September25 late evening: added explicit distribution-income tax liability to
 shared reserve; tests prove capital losses/exemption cannot shelter dividend/IDCW
 income. Official fund calculator yields daily reinvestment rows, saved separately

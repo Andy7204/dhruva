@@ -80,6 +80,37 @@ class LiveExecutionTests(unittest.TestCase):
         qty=self.state['holdings']['TEST']['qty']
         self.assertLessEqual(qty*80,self.state['capital']*.12)
 
+    def test_quoted_execution_does_not_buy_adjusted_price_units(self):
+        frame=self.panel['TEST']
+        frame['open']=160.;frame['low']=150.;frame['close']=164.
+        self.state['orders']=[{'id':'fixture:1','side':'BUY','symbol':'TEST','kind':'stock',
+            'status':'scheduled','decided_date':'2026-09-21','target_value':1600}]
+        self.step()
+        self.assertEqual(self.state['holdings']['TEST']['qty'],10)
+        self.assertEqual(self.state['orders'][0]['fill_price'],160.)
+        self.assertEqual(self.state['last_raw_prices']['TEST'],164.)
+        self.assertEqual(self.state['price_convention'],'actual_quoted_units')
+
+    def test_revised_raw_history_fails_before_mutating_position(self):
+        self.hold()
+        self.state.update(price_convention='actual_quoted_units',last_raw_prices={'TEST':100.})
+        self.panel['TEST']=pd.DataFrame({'open':[50.,51.],'low':[49.,50.],
+            'close':[50.,52.],'adjclose':[50.,52.]},index=pd.to_datetime(['2026-09-21','2026-09-22']))
+        before=copy.deepcopy(self.state)
+        with self.assertRaisesRegex(ValueError,'corporate-action reconciliation'):
+            self.step()
+        self.assertEqual(self.state,before)
+
+    def test_legacy_entry_adjustment_requires_explicit_reconciliation(self):
+        self.hold()
+        self.panel['TEST']=pd.DataFrame({'open':[100.,100.,100.],'low':[100.,100.,100.],
+            'close':[100.,100.,100.],'adjclose':[50.,100.,100.]},
+            index=pd.to_datetime(['2026-09-01','2026-09-21','2026-09-22']))
+        before=copy.deepcopy(self.state)
+        with self.assertRaisesRegex(ValueError,'Legacy adjusted units'):
+            self.step()
+        self.assertEqual(self.state,before)
+
     def test_all_cash_breaker_can_reset_only_after_cooldown_and_trend(self):
         self.state.update(cash=70000,peak_value=100000,breaker=True,breaker_trigger_step=1,step_count=63)
         with patch('qlab.livebook.E._momentum_top_set',return_value=[]),patch('qlab.livebook.E._allocation',return_value=(1.,{})):
