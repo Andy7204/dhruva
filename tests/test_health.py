@@ -73,5 +73,21 @@ class HealthTests(unittest.TestCase):
         self.assertTrue(any('PORTFOLIO/LEDGER MISMATCH' in p for p in h['problems']))
         self.assertEqual(h['status'],'UNHEALTHY')
 
+    def test_operational_requires_matching_accounting_and_current_quality(self):
+        results=[]
+        for name in ('balanced','aggressive'):
+            path=self.root/f'runs/livebook_{name}.json'
+            state=json.loads(path.read_text());state['accounting_schema']=2
+            self.write(f'runs/livebook_{name}.json',state)
+            results.append({'name':name,'state':state,'prices_now':{}})
+        self.write('runs/ledger/dhruva_v1/segments/fixture.json',
+                   {'payload':{'state':{'results':results,'config':{}}}})
+        self.write('runs/operations/latest.json',{'status':'SUCCESS','ended_at':'2026-09-17T18:30:00+05:30'})
+        self.write('runs/data_quality.json',{'status':'VALID','expected_date':'2026-09-17'})
+        with patch('dhruva.health.Ledger.verify',return_value={'events':1}),patch('qlab.accounting.verify',return_value={'status':'PASS'}):
+            self.assertEqual(self.health()['status'],'OPERATIONAL')
+            self.write('runs/data_quality.json',{'status':'VALID','expected_date':'2026-09-16'})
+            self.assertNotEqual(self.health()['status'],'OPERATIONAL')
+
 
 if __name__ == '__main__': unittest.main()

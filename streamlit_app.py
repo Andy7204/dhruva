@@ -11,8 +11,9 @@ st.set_page_config(page_title='Dhruva', page_icon='🪷', layout='wide')
 
 @st.fragment(run_every='60s')
 def render(root=ROOT):
-    health = inspect(root)
     st.title('Dhruva · paper research')
+    with st.spinner('Checking saved books and event history…'):
+        health = inspect(root,verify_snapshots=False)
     if health['status'] == 'UNHEALTHY':
         st.error('SYSTEM UNHEALTHY — records may be stale or incomplete. No current strategy conclusion is certified.')
     elif health['status']=='OPERATIONAL':
@@ -30,6 +31,7 @@ def render(root=ROOT):
     st.write('Recorded portfolio date: '+str(health['portfolio_date'] or 'Unavailable'))
     st.write('Strategy: Dhruva v'+health['strategy_version']+' · PAPER ONLY')
     st.code('Deployment commit: '+health['git_commit'], language=None)
+    st.caption('This page verifies the event chain and saved balances. Full historical input snapshots are checked by the daily pipeline and watchdog, not decompressed again on every page refresh.')
     if success: st.caption('Source commit: '+success['git_commit']+' · Excluded symbols cannot receive new orders.')
     st.subheader('Recorded v1 portfolio')
     if health['total'] is not None:

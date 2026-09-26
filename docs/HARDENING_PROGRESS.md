@@ -1,5 +1,11 @@
 # Dhruva hardening checkpoint
 
+Focused release follow-up: dd45eb2 remote CI36229073500 SUCCESS. Added operational
+status regression (8 health tests pass). Public cold start exposed costly full
+snapshot decompression on every UI refresh: UI now verifies ledger chain and
+accounting without decompressing all snapshots; daily/watchdog full checks remain.
+Both UI tests pass in3.86s locally. Public confirmation follows this deployment.
+
 FOCUSED RELEASE September26: UI restored with operational status, daily calls,
 holdings/recorded prices, full order journal, plain strategy explanation, existing
 research scorecard and separate ledger forward chart/download. Corrected starting

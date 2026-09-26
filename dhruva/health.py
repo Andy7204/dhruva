@@ -15,7 +15,7 @@ def read_json(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
-def inspect(root=ROOT, now=None):
+def inspect(root=ROOT, now=None, *, verify_snapshots=True):
     root = Path(root); now = now or datetime.now(IST)
     result = dict(status='DEGRADED', problems=[], warnings=[
         'Current paper NAV is before tax: tax is not reserved and T+1 cash restrictions are not enforced.',
@@ -98,7 +98,8 @@ def inspect(root=ROOT, now=None):
             result['problems'].append(f'DATA VALIDATION UNREADABLE: {exc}')
     if (ledger/'segments').exists():
         try:
-            result['ledger'] = Ledger(ledger).verify()
+            result['ledger'] = Ledger(ledger).verify(verify_snapshots=verify_snapshots)
+            result['snapshot_verification']='current full check' if verify_snapshots else 'daily pipeline and watchdog; UI verifies event chain'
             segments=sorted((ledger/'segments').glob('*.json'))
             if segments:
                 bundle=read_json(segments[-1])['payload']['state']
