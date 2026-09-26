@@ -1,5 +1,11 @@
 # AGENTS.md — Dhruva handoff for AI agents
 
+LATEST USER AMENDMENT September26: mandatory ten-phase mission is cancelled.
+docs/FOCUSED_RELEASE.md is the active limited scope: normal daily paper books and
+calls, understandable strategy, honest backtests and separate forward performance.
+Old sequential phase gates below are historical and superseded. Preserve safety
+and evidence; do not expand the release or wait indefinitely for perfect income data.
+
 You are an AI agent (e.g. ChatGPT with GitHub + Streamlit connectors) asked to run,
 deploy, or debug **Dhruva**. Read this fully first. It is the source of truth for
 the project's shape and the exact next steps.

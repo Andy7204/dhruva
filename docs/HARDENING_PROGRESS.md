@@ -1,5 +1,12 @@
 # Dhruva hardening checkpoint
 
+USER AMENDMENT September26: ten-phase programme CANCELLED as mandatory scope.
+Read FOCUSED_RELEASE.md first: restore useful daily paper calls/books, strategy
+explanation, honest backtests and distinct accumulating forward performance.
+Old phase entries below are history, not obligations or release gates. Latest
+code791d751 CI36217467250 passed. Usage99% five-hour at amendment; resume13:35IST
+after13:28:33 reset. Replace old heartbeat scope, preserve normal daily workflows.
+
 Mission: [HARDENING_MISSION.md](HARDENING_MISSION.md). Follow the ten consolidated phases in order.
 Read AGENTS.md fully before resuming. Paper research only; deterministic decisions;
 preserve existing history and distinguish imported records from prospective evidence.
