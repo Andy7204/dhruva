@@ -44,7 +44,7 @@ def inspect(root=ROOT, now=None):
                 raise ValueError(f'{name}: RISK LIMIT negative/nonfinite cash')
             for symbol,holding in state['holdings'].items():
                 qty=holding['qty']
-                if not isinstance(qty,(int,float)) or not math.isfinite(qty) or qty<=0 or int(qty)!=qty:
+                if not isinstance(qty,(int,float)) or not math.isfinite(qty) or qty<=0 or not math.isclose(qty*1000,round(qty*1000),rel_tol=0,abs_tol=1e-8):
                     raise ValueError(f'{name}: RISK LIMIT invalid long-only quantity for {symbol}')
             books.append(dict(name=name, value=value, capital=spec['capital'], as_of=date, state=state))
         if not books or len({b['as_of'] for b in books}) != 1:
@@ -103,16 +103,20 @@ def inspect(root=ROOT, now=None):
             if segments:
                 bundle=read_json(segments[-1])['payload']['state']
                 captured={r['name']:r['state'] for r in bundle['results']}
+                for book in result['books']:
+                    book['prices'] = next((r.get('prices_now',{}) for r in bundle['results'] if r['name']==book['name']),{})
                 projected={b['name']:b['state'] for b in result['books']}
                 if captured!=projected:
                     result['problems'].append('PORTFOLIO/LEDGER MISMATCH: incomplete publication or altered state')
                 if captured and all(s.get('accounting_schema')==2 for s in captured.values()):
                     from qlab.accounting import verify
                     result['accounting']=verify(bundle['results'],bundle['config'])
-                    result['warnings']=[w for w in result['warnings'] if not w.startswith('Current paper NAV is before tax:')]
-                    result['warnings'].append('NAV deducts the shared capital-gains reserve. Initial history is explicitly reconstructed; adjusted-price units and distribution-tax treatment remain under review.')
+                    result['warnings']=[w for w in result['warnings'] if not w.startswith(('Current paper NAV is before tax:', 'Recorded observations have known'))]
+                    result['warnings'].append('NAV includes modeled costs and shared tax reserve. Unverified distribution income (including LIQUIDBEES) is not included; returns are incomplete by that amount. Initial history was corrected and is labelled separately.')
         except Exception as exc: result['problems'].append(f'LEDGER INTEGRITY FAILED: {exc}')
     else: result['warnings'].append('Prospective ledger awaits its first completed-session evaluation.')
     if result['problems']: result['status'] = 'UNHEALTHY'
-    # Never GREEN for v1: known accounting defects and incomplete data validation.
+    elif (result.get('accounting') and result.get('data_quality',{}).get('status') in ('VALID','VALID_WITH_EXCLUSIONS')
+          and result['data_quality'].get('expected_date')==result['portfolio_date'] and result.get('last_success')):
+        result['status'] = 'OPERATIONAL'
     return result

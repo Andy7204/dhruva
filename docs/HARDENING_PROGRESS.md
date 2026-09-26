@@ -1,5 +1,14 @@
 # Dhruva hardening checkpoint
 
+FOCUSED RELEASE September26: UI restored with operational status, daily calls,
+holdings/recorded prices, full order journal, plain strategy explanation, existing
+research scorecard and separate ledger forward chart/download. Corrected starting
+point/recovery labels preserved; Nifty price-only benchmark limitations explicit.
+Daily success is no longer hardcoded DEGRADED; health still rejects stale/corrupt
+evidence and discloses missing distributions.79 tests passed; first UI test hit
+20-second timeout because local health verification took31.86s;60-second cold-start
+test passed. Publish/public inspection and next real due run remain acceptance.
+
 USER AMENDMENT September26: ten-phase programme CANCELLED as mandatory scope.
 Read FOCUSED_RELEASE.md first: restore useful daily paper calls/books, strategy
 explanation, honest backtests and distinct accumulating forward performance.

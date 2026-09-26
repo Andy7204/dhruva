@@ -30,7 +30,7 @@ def _run(refresh=True):
               'event': os.getenv('GITHUB_EVENT_NAME', 'local'), 'strategy_version': '1.0',
               'git_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
               'status': 'RUNNING', 'ended_at': None, 'errors': [], 'warnings': [
-                  'Accounting defects remain; this is not production-readiness certification.'],
+                  'Paper simulation: modeled costs/tax; unverified distributions remain excluded.'],
               'stages': {name: {'status':'NOT_RUN'} for name in (
                   'archive','data_ingestion','data_validation','features','benchmark',
                   'portfolio_engine','risk_engine','ledger','report','alerts')},
@@ -47,7 +47,7 @@ def _run(refresh=True):
             from qlab.orchestrator import daily_run
             result = daily_run(refresh=refresh, progress=progress)
             date=max(r['state']['as_of'] for r in result['results'])
-            record.update(status='DEGRADED', execution_completed=True,
+            record.update(status='SUCCESS', execution_completed=True,
                           market_date=date, latest_market_date=date,
                           data_status=result['data_quality']['status'],
                           decision_status=result['decision_status'],

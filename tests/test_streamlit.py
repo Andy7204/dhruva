@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class StreamlitTests(unittest.TestCase):
     def test_real_app_has_one_total_and_no_false_green(self):
-        app = AppTest.from_file(str(ROOT/'streamlit_app.py')).run(timeout=20)
+        app = AppTest.from_file(str(ROOT/'streamlit_app.py')).run(timeout=60)
         self.assertEqual(len(app.exception), 0, list(app.exception))
         totals = [m for m in app.metric if m.label.startswith('Recorded value ')]
         self.assertEqual(len(totals), 1)

@@ -6,6 +6,13 @@ calls, understandable strategy, honest backtests and separate forward performanc
 Old sequential phase gates below are historical and superseded. Preserve safety
 and evidence; do not expand the release or wait indefinitely for perfect income data.
 
+Focused release implementation September26: streamlit_app.py shows saved calls,
+holdings/prices, journal, methodology, research scorecard and separate ledger-based
+forward performance. dhruva.presentation is read-only. Health can be OPERATIONAL
+only with matching validated accounting/data/ledger and completed execution;
+model limitations remain visible. Daily operation SUCCESS means execution success,
+not proof of profitability. Keep future corrections/recoveries honestly labelled.
+
 You are an AI agent (e.g. ChatGPT with GitHub + Streamlit connectors) asked to run,
 deploy, or debug **Dhruva**. Read this fully first. It is the source of truth for
 the project's shape and the exact next steps.

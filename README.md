@@ -218,3 +218,17 @@ Tax-aware exit timing reads shared FIFO lots; top-ups preserve old delivery date
 so stops can sell settled units. Sale-fee deficits require settled cash.
 Historical income reconciliation and deployed acceptance are still incomplete;
 see [accounting repairs](docs/ACCOUNTING_REPAIRS.md). This is paper research only.
+
+## Focused daily app release
+
+The ten-phase programme is superseded by [the focused release](docs/FOCUSED_RELEASE.md).
+The public app shows daily paper calls, recorded holdings/prices, order history,
+strategy explanation, existing challenge-study backtests and separate forward
+paper performance against a Nifty price reference. A corrected starting point and
+recovered sessions are labelled, never presented as original live decisions.
+Operational status requires valid current books, matching ledger, validated data
+and a completed run; unknown distribution income remains explicitly disclosed.
+Daily evaluation follows the63-session allocation cadence and daily stop rules.
+Scheduled GitHub runs remain weekdays18:30IST; fills are next eligible open.
+Exchange/settlement calendars have bounded coverage and require official updates
+before expiry; unattended operation is monitored, not guaranteed forever.
