@@ -1,5 +1,10 @@
 # Dhruva hardening checkpoint
 
+September28 recovery: public browser now loads f2f93fc and full dashboard again.
+It correctly flags Sep25 data as stale versus completedSep28; today's scheduled
+18:30IST refresh is still pending (checked before18:00). Do not confuse restored
+hosting with fresh portfolio data. Verify next run and incident4 at20:00 follow-up.
+
 September28 before scheduled daily: checked17:53IST; today's18:30IST job not yet
 due. Overnight watchdog36359322168 failed with exact error `DEPLOYMENT UNREACHABLE:
 HTTPError: HTTP Error400: Bad Request`; GitHub incident4 created. Browser confirmed
