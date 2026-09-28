@@ -1,5 +1,14 @@
 # Dhruva hardening checkpoint
 
+September28 priority follow-up verification: full89-test suite passed after the
+metrics and call/narration repairs. GitHub CI36460126078 passed7d3055a; prior
+calendar-alert CI36458238796 passedf5dcd14. Added simultaneous-order regression:
+both position-count and sector-count constraints reject the second disallowed
+fill while retaining nonnegative cash; all16 live-execution tests passed.
+Calendar extension remains bounded atOctober31: November8 special-session timing
+is not configured, and clearing circular retrieval failed with HTTP400 timeout.
+Do not extend coverage by guessing. No new daily dispatch or paper-history edits.
+
 September28 performance follow-up: metrics had an off-by-one annualization period
 (253observations are252returns), erased two-point losses as0%, silently dropped
 missing NAV rows and used fake999 profit factor when no losses existed. Fixed with

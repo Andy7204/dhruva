@@ -44,6 +44,24 @@ class LiveExecutionTests(unittest.TestCase):
         self.assertEqual(self.state,before)
         self.assertEqual(self.state['orders'][0]['status'],'scheduled')
 
+    def test_multiple_pending_buys_respect_position_and_sector_limits(self):
+        for limit in ('positions','sector'):
+            with self.subTest(limit=limit):
+                self.setUp()
+                self.cfg['sleeves']['long_term']['max_positions']=1 if limit=='positions' else 10
+                self.cfg['selection']['max_per_sector']=1 if limit=='sector' else 10
+                self.panel['OTHER']=self.panel['TEST'].copy()
+                self.state['orders']=[
+                    {'id':f'fixture:{i}','side':'BUY','symbol':symbol,'kind':'stock',
+                     'status':'scheduled','decided_date':'2026-09-21','target_value':800.}
+                    for i,symbol in enumerate(('TEST','OTHER'),1)]
+                with patch('qlab.livebook.E._sectors',return_value={'TEST':'same','OTHER':'same'}):
+                    self.step()
+                self.assertEqual(set(self.state['holdings']),{'TEST'})
+                self.assertEqual(self.state['orders'][1]['status'],'cancelled')
+                self.assertEqual(self.state['orders'][1]['reason'],'Position/sector count limit')
+                self.assertGreaterEqual(self.state['cash'],0.)
+
     def test_missing_held_prices_fails_without_mutation(self):
         self.hold(); self.panel={}; before=copy.deepcopy(self.state)
         with self.assertRaisesRegex(ValueError,'Missing held-symbol'):
