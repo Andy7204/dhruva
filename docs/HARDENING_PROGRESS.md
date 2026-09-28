@@ -1,5 +1,12 @@
 # Dhruva hardening checkpoint
 
+September28 before scheduled daily: checked17:53IST; today's18:30IST job not yet
+due. Overnight watchdog36359322168 failed with exact error `DEPLOYMENT UNREACHABLE:
+HTTPError: HTTP Error400: Bad Request`; GitHub incident4 created. Browser confirmed
+Community Cloud inactivity sleep and wake requested. During startup health returned
+HTTP503; do not call recovery verified until ready. No strategy/data edits or
+redundant daily dispatch.20:00IST focused acceptance automation remains active.
+
 PUBLIC RESTORED September26: browser verified17e8a4b at
 https://dhruva-andy7204.streamlit.app/ — OPERATIONAL, Sep25NAV99977.67,
 both books HOLD, prices/holdings/journal, strategy explanation, forward chart
