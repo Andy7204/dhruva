@@ -33,7 +33,7 @@
   },
   "account_tax_total": 0.0,
   "accounting_schema": 2,
-  "as_of": "2026-09-25",
+  "as_of": "2026-09-28",
   "capital": 70000.0,
   "cash": 56774.44,
   "charges_total": 20.41,
@@ -70,6 +70,10 @@
     [
       "2026-09-25",
       69977.67
+    ],
+    [
+      "2026-09-28",
+      69710.35
     ]
   ],
   "history_quality": "RECONSTRUCTED_INITIAL_PAPER_HISTORY",
@@ -117,7 +121,7 @@
   },
   "inception": "2026-09-16",
   "name": "balanced",
-  "next_rebalance_in": 56,
+  "next_rebalance_in": 55,
   "orders": [
     {
       "amount": 10201.55,
@@ -174,7 +178,7 @@
     }
   ],
   "peak_value": 70145.77024597168,
-  "processed_through": "2026-09-25",
+  "processed_through": "2026-09-28",
   "realized_pnl": 0.0,
   "realized_sales": [],
   "receivables": [],
@@ -190,9 +194,14 @@
     "through": "2026-09-24"
   },
   "risk_on": false,
-  "step_count": 8,
+  "step_count": 9,
   "tax_accrued": 0.0,
   "tax_detail": {},
   "tax_reserve": 0.0,
-  "tax_scope": "SHARED_PAPER_ACCOUNT"
+  "tax_scope": "SHARED_PAPER_ACCOUNT",
+  "price_convention": "actual_quoted_units",
+  "last_raw_prices": {
+    "GOLDBEES.NS": 121.16999816894531,
+    "LIQUIDBEES.NS": 999.989990234375
+  }
 }

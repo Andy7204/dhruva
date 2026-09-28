@@ -33,7 +33,7 @@
   },
   "account_tax_total": 0.0,
   "accounting_schema": 2,
-  "as_of": "2026-09-25",
+  "as_of": "2026-09-28",
   "capital": 30000.0,
   "cash": 30000.0,
   "charges_total": 0.0,
@@ -70,16 +70,20 @@
     [
       "2026-09-25",
       30000.0
+    ],
+    [
+      "2026-09-28",
+      30000.0
     ]
   ],
   "history_quality": "RECONSTRUCTED_INITIAL_PAPER_HISTORY",
   "holdings": {},
   "inception": "2026-09-16",
   "name": "aggressive",
-  "next_rebalance_in": 56,
+  "next_rebalance_in": 55,
   "orders": [],
   "peak_value": 30000.0,
-  "processed_through": "2026-09-25",
+  "processed_through": "2026-09-28",
   "realized_pnl": 0.0,
   "realized_sales": [],
   "receivables": [],
@@ -95,9 +99,11 @@
     "through": "2026-09-24"
   },
   "risk_on": false,
-  "step_count": 8,
+  "step_count": 9,
   "tax_accrued": 0.0,
   "tax_detail": {},
   "tax_reserve": 0.0,
-  "tax_scope": "SHARED_PAPER_ACCOUNT"
+  "tax_scope": "SHARED_PAPER_ACCOUNT",
+  "price_convention": "actual_quoted_units",
+  "last_raw_prices": {}
 }
