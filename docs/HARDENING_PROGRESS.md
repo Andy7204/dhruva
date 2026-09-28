@@ -1,5 +1,16 @@
 # Dhruva hardening checkpoint
 
+FOCUSED RELEASE ACCEPTED September28: real after-close daily36436841771 SUCCESS,
+manually dispatched once at20:03IST because scheduled job had not started/queued.
+Published732a721: Sep28NAV99710.35, bothHOLD, one new evaluation,8segments7018events,
+3 unique forward dates. Public browser confirmed SUCCESS/OPERATIONAL, matching
+date/NAV and Sep28forward row. Watchdog36359322168 retry SUCCESS; hosting awake.
+Evidence: docs/evidence/focused_release_acceptance_2026-09-28.json. No remaining
+focused release gate. Disable development heartbeat; daily/watchdog remain active.
+Known limits remain disclosed: distributions, simulated execution/tax, delayed
+GitHub cron, possible Streamlit sleep and calendar coverage endingOctober31.
+Future maintenance is not a restart of the cancelled ten-phase programme.
+
 September28 recovery: public browser now loads f2f93fc and full dashboard again.
 It correctly flags Sep25 data as stale versus completedSep28; today's scheduled
 18:30IST refresh is still pending (checked before18:00). Do not confuse restored

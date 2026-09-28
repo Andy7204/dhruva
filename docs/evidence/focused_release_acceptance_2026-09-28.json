@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-09-28T14:40:40.680998+00:00",
+  "daily_run": 36436841771,
+  "trigger": "manual after delayed schedule; real completed September28 session",
+  "workflow_result": "success",
+  "published_commit": "732a72142cf1dabf4968125e7df572dedc934eee",
+  "health": "OPERATIONAL",
+  "problems": [],
+  "nav": 99710.35,
+  "date": "2026-09-28",
+  "ledger": {
+    "segments": 8,
+    "events": 7018,
+    "head": "fc3ce0d629f4b2d7218fd2beb0ed54238f0489f005a0ff2fea3d949b1a53fa04"
+  },
+  "new_evaluations": 1,
+  "forward_rows": [
+    {
+      "Date": "2026-09-24",
+      "Paper NAV": 99895.67,
+      "Nifty level": 23063.099609375,
+      "Record type": "Corrected starting point",
+      "Recorded at": "2026-09-25T03:11:55.642779+00:00",
+      "Paper index": 100.0,
+      "Nifty price index": 100.0
+    },
+    {
+      "Date": "2026-09-25",
+      "Paper NAV": 99977.67,
+      "Nifty level": 23140.5,
+      "Record type": "Forward paper observation",
+      "Recorded at": "2026-09-25T15:48:53.052776+00:00",
+      "Paper index": 100.08208563994816,
+      "Nifty price index": 100.33560272442104
+    },
+    {
+      "Date": "2026-09-28",
+      "Paper NAV": 99710.35,
+      "Nifty level": 22780.25,
+      "Record type": "Forward paper observation",
+      "Recorded at": "2026-09-28T14:38:26.516409+00:00",
+      "Paper index": 99.81448645371717,
+      "Nifty price index": 98.77358371526078
+    }
+  ],
+  "watchdog_retry": {
+    "run": 36359322168,
+    "result": "success"
+  },
+  "limitations": [
+    "Unverified distributions excluded",
+    "Nifty price-only reference",
+    "Calendar coverage through October31; review official calendars before expiry",
+    "Community Cloud may sleep; GitHub scheduling may be delayed"
+  ]
+}

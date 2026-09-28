@@ -1,5 +1,10 @@
 # Active scope — user amendment September26, 2026
 
+ACCEPTED September28: implementation, remote CI, real after-close daily run,
+matching public books/calls and new forward row verified. See latest progress and
+docs/evidence/focused_release_acceptance_2026-09-28.json. Development continuation
+ends; normal daily/watchdog automation remains. Earlier checkpoint below is history.
+
 The user cancelled the mandatory ten-phase programme. This document supersedes
 its completion requirements and sequential gates. Keep past audit evidence;
 do not keep expanding the project. Existing fixes and safety rules remain.
