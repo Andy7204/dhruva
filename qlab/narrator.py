@@ -11,6 +11,8 @@ from __future__ import annotations
 import json
 import os
 import urllib.request
+import hashlib
+from datetime import datetime, timezone
 
 
 def _facts(cfg, results) -> dict:
@@ -32,7 +34,9 @@ def _facts(cfg, results) -> dict:
     return {"date": s0.get("as_of"), "ccy": ccy, "value": round(val), "start": start,
             "return_pct": round((val / start - 1) * 100, 1), "day": s0.get("step_count"),
             "risk_on": s0.get("risk_on"), "circuit_breaker": breaker,
-            "next_rebalance_in": s0.get("next_rebalance_in"), "orders": orders}
+            "next_rebalance_in": s0.get("next_rebalance_in"), "orders": orders,
+            "holdings": sorted({s for r in results for s in r['state']['holdings']}),
+            "limitations": 'Paper only; modeled costs/tax; unverified distribution income excluded.'}
 
 
 def _rule_based(f: dict) -> str:
@@ -40,29 +44,30 @@ def _rule_based(f: dict) -> str:
     p = [f"As of {f['date']} (day {f['day']}), Dhruva is worth {ccy}{f['value']:,} "
          f"({f['return_pct']:+.1f}% since you started with {ccy}{f['start']:,})."]
     if f["circuit_breaker"]:
-        p.append("The circuit-breaker is ON — the book fell past its drawdown limit, so it has "
-                 "de-risked into the defensive cushion and cash until it recovers.")
+        p.append("The circuit-breaker is ON in at least one book. Stock reduction follows the "
+                 "recorded orders and execution checks; a scheduled sale is not a completed sale.")
     elif f["risk_on"]:
         p.append("The market is above its long-term (200-day) trend, so the strategy is happy to "
                  "hold momentum leaders.")
     else:
-        p.append("The market is below its 200-day trend, so — by rule — it buys no new stocks today; "
-                 "it holds the defensive cushion (gold/silver/InvIT) and keeps the rest in cash, "
-                 "waiting for the trend to turn back up.")
+        p.append("The market filter is defensive. New stock allocation is restricted; existing "
+                 "holdings still follow their exit rules. A trend recovery does not itself trigger an immediate rebalance.")
+    if f.get('holdings'):
+        p.append('Recorded holdings: '+', '.join(f['holdings'])+'.')
     buys = [o for o in f["orders"] if o["side"] == "BUY"]
     sells = [o for o in f["orders"] if o["side"] == "SELL"]
     if buys:
-        p.append("To place at the next market open: " +
+        p.append("Pending paper buy intents: " +
                  ", ".join(f"buy {o['symbol']} (~{ccy}{o['amount']:,.0f})" for o in buys) +
-                 ". These fill at tomorrow's opening price and settle in about a day.")
+                 ". Fills use the next eligible session's open, subject to prices, cash, risk and settlement checks; they may remain pending or be cancelled.")
     if sells:
-        p.append("Selling: " + ", ".join(f"{o['symbol']} ({o['reason']})" for o in sells) + ".")
+        p.append("Pending paper sell intents: " + ", ".join(f"{o['symbol']} ({o['reason']})" for o in sells) + ".")
     if not buys and not sells:
-        p.append("No orders to place today — just hold what you have.")
+        p.append("HOLD: no pending paper orders in the saved books.")
     if f.get("next_rebalance_in"):
         p.append(f"The next scheduled review of the stock list is in about {f['next_rebalance_in']} "
                  f"trading days.")
-    p.append("(Automated, rules-based paper trading — not advice.)")
+    p.append("Modeled costs and tax apply; unverified distribution income is excluded. (Automated paper trading — not advice.)")
     return " ".join(p)
 
 
@@ -102,5 +107,14 @@ def _llm(f: dict) -> str | None:
 
 
 def narrate(cfg, results) -> str:
+    return narrate_with_metadata(cfg,results)['text']
+
+
+def narrate_with_metadata(cfg, results) -> dict:
     f = _facts(cfg, results)
-    return _llm(f) or _rule_based(f)
+    generated=_llm(f)
+    provider=('anthropic' if os.environ.get('ANTHROPIC_API_KEY') else 'openai') if generated else 'rules'
+    text=('AI wording (unverified; saved orders are authoritative): '+generated) if generated else _rule_based(f)
+    return {'generated_at':datetime.now(timezone.utc).isoformat(),'facts':f,'source':provider,
+            'text':text,'text_sha256':hashlib.sha256(text.encode('utf-8')).hexdigest(),
+            'scope':'Explanation only; cannot change orders or fills'}

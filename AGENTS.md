@@ -1,5 +1,11 @@
 # AGENTS.md — Dhruva handoff for AI agents
 
+September28 priority follow-up authorization: use old phases as a backlog for
+important pending fixes, not mandatory sequential gates. Latest user allows
+remaining usage down to zero; save checkpoints before exhaustion. show_call uses
+health-checked live books; narrator writes source/facts/time/hash provenance and
+marks optional AI prose unverified. Do not claim scheduled trades already filled.
+
 September28 maintenance: watchdog raises an advance calendar-maintenance incident
 14 days before trading or settlement coverage expires. This does not stop valid
 daily trading simulations or extend calendar dates. REMAINING_WORK.md replaces

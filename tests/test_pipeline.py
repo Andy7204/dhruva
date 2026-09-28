@@ -84,7 +84,7 @@ class PipelineTests(unittest.TestCase):
                 stack.enter_context(patch.object(O.E,'regime_series',return_value=pd.Series(True,index=dates)))
                 stack.enter_context(patch.object(O.E,'regime_factor_series',return_value=pd.Series(1.,index=dates)))
                 stack.enter_context(patch.object(O.LB,'step',side_effect=step))
-                stack.enter_context(patch('qlab.narrator.narrate',return_value='Fixture prose'))
+                stack.enter_context(patch('qlab.narrator.narrate_with_metadata',return_value={'text':'Fixture prose','source':'rules'}))
                 stack.enter_context(patch.object(O.R,'build_multi_dashboard',return_value='fixture.html'))
                 stack.enter_context(patch('qlab.notify.send_telegram'))
                 save = O._save_book

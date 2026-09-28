@@ -1,5 +1,12 @@
 # Dhruva hardening checkpoint
 
+September28 user authorized priority follow-ups from old phase list and usage
+down to zero (supersedes5% cutoff for this requested work). Selected stale CLI
+and narration truthfulness first: show_call now reads health-checked saved books,
+withholds stale/corrupt calls, and never invents win-case returns. Narration labels
+pending orders accurately and saves facts/source/timestamp/hash in narrative.json;
+AI wording explicitly unverified.3 focused tests and real CLI check passed.
+
 September28 bounded maintenance: added14-day advance calendar-expiry alert to
 existing watchdog incident path; trading and settlement checked independently,
 missing/corrupt calendar reported.5 focused watchdog tests pass, including14/15-day

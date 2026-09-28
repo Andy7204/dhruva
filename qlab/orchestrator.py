@@ -198,7 +198,9 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
     from qlab import narrator as NR
     from qlab import notify as NT
     emit('report','RUNNING')
-    narrative = NR.narrate(cfg, results)
+    narration = NR.narrate_with_metadata(cfg, results)
+    narrative = narration['text']
+    (RUNS / 'narrative.json').write_text(json.dumps(narration,indent=2),encoding='utf-8')
     (RUNS / "narrative.txt").write_text(narrative, encoding="utf-8")
     out = R.build_multi_dashboard(cfg, results, bench_e["adjclose"], narrative=narrative)
 

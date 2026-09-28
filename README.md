@@ -221,6 +221,11 @@ see [accounting repairs](docs/ACCOUNTING_REPAIRS.md). This is paper research onl
 
 ## Focused daily app release
 
+`python scripts/show_call.py` reads current validated saved paper orders, matching
+the dashboard, and withholds stale/unverified calls. Daily narration provenance
+(facts, source, generation time and text hash) is saved in `runs/narrative.json`.
+Optional AI wording is labelled unverified and never changes decisions.
+
 The watchdog alerts14 days before either trading or settlement calendar expires,
 so official calendar renewal can happen before daily processing would stop.
 
