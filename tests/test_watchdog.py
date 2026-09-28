@@ -3,9 +3,33 @@ import unittest
 from unittest.mock import patch
 from dhruva.calendar import IST
 from dhruva.watchdog import evaluate
+from dhruva.watchdog import calendar_maintenance
+from pathlib import Path
+import tempfile
+import json
 
 
 class WatchdogTests(unittest.TestCase):
+    def test_calendar_notice_boundary_both_calendars_and_expiry(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);(root/'data').mkdir()
+            for name in ('trading_calendar.json','settlement_calendar.json'):
+                (root/'data'/name).write_text(json.dumps({'valid_through':'2026-10-31'}))
+            self.assertEqual(calendar_maintenance(root,datetime(2026,10,16,tzinfo=IST)),[])
+            warnings=calendar_maintenance(root,datetime(2026,10,17,tzinfo=IST))
+            self.assertEqual(len(warnings),2)
+            self.assertTrue(all('14 days remaining' in w for w in warnings))
+            self.assertTrue(all('-1 days remaining' in w for w in calendar_maintenance(root,datetime(2026,11,1,tzinfo=IST))))
+            (root/'data/trading_calendar.json').write_text('{broken')
+            self.assertTrue(any('CALENDAR UNREADABLE' in w for w in calendar_maintenance(root,datetime(2026,10,16,tzinfo=IST))))
+
+    def test_advance_notice_enters_existing_external_alert_errors(self):
+        with patch('dhruva.watchdog.inspect',return_value=self.health()),patch(
+                'dhruva.watchdog.calendar_maintenance',return_value=['CALENDAR MAINTENANCE: fixture']):
+            result=evaluate(now=datetime(2026,9,24,2,30,tzinfo=IST))
+        self.assertEqual(result['status'],'FAILED')
+        self.assertIn('CALENDAR MAINTENANCE: fixture',result['errors'])
+
     def health(self, date='2026-09-23'):
         return dict(problems=[],warnings=['Accounting pending'],market_date=date,
                     portfolio_date=date,last_success={'market_date':date,'run_id':'fixture'},

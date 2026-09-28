@@ -1,5 +1,11 @@
 # Dhruva hardening checkpoint
 
+September28 bounded maintenance: added14-day advance calendar-expiry alert to
+existing watchdog incident path; trading and settlement checked independently,
+missing/corrupt calendar reported.5 focused watchdog tests pass, including14/15-day
+boundary, expired file and incident routing. No calendar dates extended or strategy
+changed. Replaced obsolete REMAINING_WORK.md phase checklist with real maintenance.
+
 FOCUSED RELEASE ACCEPTED September28: real after-close daily36436841771 SUCCESS,
 manually dispatched once at20:03IST because scheduled job had not started/queued.
 Published732a721: Sep28NAV99710.35, bothHOLD, one new evaluation,8segments7018events,

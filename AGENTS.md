@@ -1,5 +1,10 @@
 # AGENTS.md — Dhruva handoff for AI agents
 
+September28 maintenance: watchdog raises an advance calendar-maintenance incident
+14 days before trading or settlement coverage expires. This does not stop valid
+daily trading simulations or extend calendar dates. REMAINING_WORK.md replaces
+the obsolete phase checklist; development heartbeat remains disabled.
+
 LATEST USER AMENDMENT September26: mandatory ten-phase mission is cancelled.
 docs/FOCUSED_RELEASE.md is the active limited scope: normal daily paper books and
 calls, understandable strategy, honest backtests and separate forward performance.

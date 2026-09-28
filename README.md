@@ -221,6 +221,9 @@ see [accounting repairs](docs/ACCOUNTING_REPAIRS.md). This is paper research onl
 
 ## Focused daily app release
 
+The watchdog alerts14 days before either trading or settlement calendar expires,
+so official calendar renewal can happen before daily processing would stop.
+
 The ten-phase programme is superseded by [the focused release](docs/FOCUSED_RELEASE.md).
 The public app shows daily paper calls, recorded holdings/prices, order history,
 strategy explanation, existing challenge-study backtests and separate forward

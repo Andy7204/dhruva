@@ -1,29 +1,18 @@
-# Short release checklist
+# Remaining maintenance — September28, 2026
 
-September25 user priority: finish quickly using minimal credits. The ten-phase
-mission remains authoritative; this checklist removes repeated planning, not scope.
+The focused release is accepted. The ten-phase programme is cancelled; do not
+resume its checklist. Development heartbeat is disabled. Normal daily paper-book
+updates and watchdog remain active.
 
-1. **Verify new code only (Phase3).** Earlier CI, corrected public NAV and Sep25
-   after-close daily are verified; do not repeat those tasks. Check latest791d751
-   CI, then obtain a genuine trading-session acceptance of the new quoted-unit,
-   receipt and per-lot settlement code when the market next closes.
-2. **Close economic blockers (Phase3).** Distribution/dividend income and tax,
-   adjusted-price versus actual-unit handling, risk stress and shared-account
-   execution invariants. Keep specific warnings until supported by evidence.
-3. **One reproducible research pass (Phases4–5).** Fix backtest timing/metrics,
-   rerun the existing strategy-challenge protocol on pinned inputs, and separate
-   reconstructed history from genuine forward returns. No parameter hunting.
-4. **Minimum useful completion (Phases6–9).** Reuse current strategy/data/ledger
-   components; fix remaining stale CLIs, packaging, research/narrator provenance
-   and dashboard claims. Complete strategy card, changelog and architecture/
-   compliance documents. Explicitly defer optional ML, agents, API servers,
-   commercial features and additional strategies unless evidence requires them.
-5. **One final readiness pass (Phase10).** Verify remote daily/watchdog/alerts,
-   restart, duplicate, failure recovery, stale UI and preserved evidence. Publish
-   the readiness matrix and honest technical case study; list any real blockers.
+- Calendar renewal: trading and settlement coverage ends October31. The existing
+  watchdog raises a maintenance incident14 days before either expires. Review
+  official exchange and clearing circulars before extending dates. Never invent
+  holidays or bypass expired-calendar guards.
+- Distribution completeness: reconcile sourced LIQUIDBEES income/allotments when
+  reliable records are available. Keep the visible exclusion until then; rounded
+  calculator estimates are not proof of actual credited units.
+- Hosting/scheduling: Community Cloud may sleep and GitHub cron may start late.
+  Existing watchdog reports failures; perpetual availability is not guaranteed.
 
-Use focused tests while editing; one full suite for an integrated change. Reuse
-remote evidence and source reviews; inspect deltas rather than rereading the whole
-repository. No new dependencies/infrastructure for cosmetic completeness. Advance
-phase statuses only on implemented, tested, demonstrated evidence. Stop at5%
-remaining in either usage window and update the same continuation heartbeat.
+No additional architecture, broad research reruns or documentation programme is
+required. Make bounded fixes when concrete failures or maintenance needs arise.

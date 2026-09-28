@@ -1,5 +1,5 @@
 """Independent read-only check; does not fetch prices or advance the strategy."""
-from datetime import datetime, timedelta, time
+from datetime import datetime, timedelta, time, date
 import json
 from pathlib import Path
 
@@ -8,6 +8,23 @@ from dhruva.health import inspect
 from dhruva.ledger import atomic_write, canonical, utc_now
 
 ROOT=Path(__file__).resolve().parents[1]
+
+
+def calendar_maintenance(root, now):
+    """Warn before bounded exchange calendars stop unattended operation."""
+    errors=[]
+    today=now.astimezone(IST).date()
+    for name in ('trading_calendar.json','settlement_calendar.json'):
+        try:
+            cfg=json.loads((Path(root)/'data'/name).read_text(encoding='utf-8'))
+            expiry=date.fromisoformat(cfg['valid_through'])
+            remaining=(expiry-today).days
+            if remaining<=14:
+                errors.append(f'CALENDAR MAINTENANCE: {name} coverage ends {expiry}; '
+                              f'{remaining} days remaining. Review official exchange/clearing circulars before extending.')
+        except (OSError,ValueError,KeyError,TypeError) as exc:
+            errors.append(f'CALENDAR UNREADABLE: {name}: {exc}')
+    return errors
 
 
 def evaluate(root=ROOT, now=None):
@@ -23,6 +40,7 @@ def evaluate(root=ROOT, now=None):
     except ValueError as exc:
         expected=None; health['problems'].append(str(exc))
     errors=[p for p in health['problems'] if ' STALE:' not in p]
+    errors.extend(calendar_maintenance(root,now))
     for field in ('market_date','portfolio_date'):
         if expected and (not health[field] or health[field]<expected):
             errors.append(f'{field} stale/missing: {health[field]}; required {expected}')
