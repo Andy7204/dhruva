@@ -221,6 +221,11 @@ see [accounting repairs](docs/ACCOUNTING_REPAIRS.md). This is paper research onl
 
 ## Focused daily app release
 
+Performance helpers count return intervals (observations minus one), reject
+missing/nonfinite NAV rather than hiding it, and distinguish undefined profit
+factor from a real numeric ratio. Short curves expose whether annualization is
+available; old stored research results are not silently regenerated.
+
 `python scripts/show_call.py` reads current validated saved paper orders, matching
 the dashboard, and withholds stale/unverified calls. Daily narration provenance
 (facts, source, generation time and text hash) is saved in `runs/narrative.json`.

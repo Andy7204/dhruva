@@ -17,15 +17,27 @@ def max_drawdown(equity: pd.Series) -> tuple[float, pd.Timestamp | None]:
 
 
 def compute_metrics(equity: pd.Series, closed_trades: list[dict], ppy: int = PPY) -> dict:
-    equity = pd.Series(equity).dropna()
-    out: dict = {"final_equity": float(equity.iloc[-1]) if len(equity) else 0.0}
+    equity = pd.Series(equity,dtype=float)
+    if not isinstance(ppy,int) or isinstance(ppy,bool) or ppy<=0:
+        raise ValueError('Periods per year must be a positive integer')
+    if len(equity) and (not np.isfinite(equity.to_numpy()).all() or (equity<=0).any()):
+        raise ValueError('Metrics require finite positive NAV; missing observations cannot be silently dropped')
+    if not equity.index.is_unique or not equity.index.is_monotonic_increasing:
+        raise ValueError('Metrics require unique chronological observations')
+    periods=max(0,len(equity)-1)
+    out: dict = {"final_equity": float(equity.iloc[-1]) if len(equity) else 0.0,
+                 'return_periods':periods,'periods_per_year':ppy,
+                 'annualization_available':periods>=2}
     if len(equity) < 3:
         out.update({"total_return_pct": 0.0, "cagr_pct": 0.0, "ann_vol_pct": 0.0,
                     "sharpe": 0.0, "sortino": 0.0, "max_drawdown_pct": 0.0, "calmar": 0.0})
+        if periods:
+            out['total_return_pct']=round((equity.iloc[-1]/equity.iloc[0]-1)*100,2)
+            out['max_drawdown_pct']=round(max_drawdown(equity)[0]*100,2)
     else:
         rets = equity.pct_change().dropna()
         start, end = float(equity.iloc[0]), float(equity.iloc[-1])
-        years = max(len(equity) / ppy, 1e-9)
+        years = periods / ppy
         total_return = end / start - 1.0
         cagr = (end / start) ** (1 / years) - 1.0 if start > 0 else 0.0
         ann_vol = float(rets.std(ddof=0) * np.sqrt(ppy))
@@ -49,6 +61,7 @@ def compute_metrics(equity: pd.Series, closed_trades: list[dict], ppy: int = PPY
     n = len(closed_trades)
     if n:
         pnls = np.array([t["net_pnl"] for t in closed_trades], dtype=float)
+        if not np.isfinite(pnls).all(): raise ValueError('Nonfinite trade PnL')
         wins = pnls[pnls > 0]
         losses = pnls[pnls < 0]
         gross_win = float(wins.sum())
@@ -59,14 +72,15 @@ def compute_metrics(equity: pd.Series, closed_trades: list[dict], ppy: int = PPY
             "win_rate_pct": round(len(wins) / n * 100, 1),
             "avg_win": round(float(wins.mean()), 1) if len(wins) else 0.0,
             "avg_loss": round(float(losses.mean()), 1) if len(losses) else 0.0,
-            "profit_factor": round(gross_win / gross_loss, 2) if gross_loss > 1e-9 else 999.0,
+            "profit_factor": round(gross_win / gross_loss, 2) if gross_loss > 1e-9 else None,
+            'profit_factor_status':'DEFINED' if gross_loss>1e-9 else 'NO_LOSSES' if gross_win>0 else 'NO_NONZERO_PNL',
             "expectancy": round(float(pnls.mean()), 1),
             "total_net_pnl": round(float(pnls.sum()), 1),
             "avg_hold_days": round(float(np.mean(holds)), 1) if holds else 0.0,
             "total_charges": round(sum(t.get("charges", 0.0) for t in closed_trades), 1),
         })
     else:
-        out.update({"num_trades": 0, "win_rate_pct": 0.0, "profit_factor": 0.0,
+        out.update({"num_trades": 0, "win_rate_pct": 0.0, "profit_factor": None,'profit_factor_status':'NO_TRADES',
                     "expectancy": 0.0, "total_net_pnl": 0.0, "avg_hold_days": 0.0,
                     "total_charges": 0.0})
     return out

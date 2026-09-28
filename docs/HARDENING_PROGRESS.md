@@ -1,5 +1,12 @@
 # Dhruva hardening checkpoint
 
+September28 performance follow-up: metrics had an off-by-one annualization period
+(253observations are252returns), erased two-point losses as0%, silently dropped
+missing NAV rows and used fake999 profit factor when no losses existed. Fixed with
+explicit period metadata/validation and null+reason for undefined profit factor.
+4 regression tests pass. Existing research scorecard is preserved: its independent
+calendar-day annualization is not this function; no historical results overwritten.
+
 September28 user authorized priority follow-ups from old phase list and usage
 down to zero (supersedes5% cutoff for this requested work). Selected stale CLI
 and narration truthfulness first: show_call now reads health-checked saved books,
