@@ -36,3 +36,12 @@ Acceptance fixture: `python scripts/ledger_acceptance.py`. Its namespace is
 fresh remote checkout: the same head/event count must return with no new event.
 `python -m unittest discover -s tests -v` tests restart, duplicate conflicts,
 corrections, tampering, truncation, input corruption and a checkpoint crash.
+
+## Chunked snapshots (September29, 2026)
+
+New input snapshots keep the same key (SHA-256 of the whole canonical object) but
+are stored as `snapshots/<key>.manifest.json` plus weekly content-addressed price
+chunks in `snapshots/chunks/`. Unchanged weeks are shared, so a daily snapshot adds
+about 0.7 MB instead of about 14.6 MB (measured on the September25 and 28 inputs).
+Reading reassembles the object and verifies its hash. The eight earlier whole-file
+`<key>.json.gz` snapshots are unchanged and still verify.

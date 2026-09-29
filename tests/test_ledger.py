@@ -89,8 +89,35 @@ class LedgerTests(unittest.TestCase):
         key = self.ledger.snapshot({'data': [1, 2, None]})
         self.assertEqual(key, self.ledger.snapshot({'data': [1, 2, None]}))
         self.assertEqual(self.ledger.read_snapshot(key), {'data': [1, 2, None]})
-        (self.root/'snapshots'/f'{key}.json.gz').write_bytes(b'broken')
+        (self.root/'snapshots'/f'{key}.manifest.json').write_bytes(b'broken')
         with self.assertRaises(LedgerError): self.ledger.read_snapshot(key)
+
+    def test_chunked_frames_roundtrip_and_share_unchanged_weeks(self):
+        import gzip, hashlib
+        from dhruva.ledger import canonical
+        def frame(days): return {'columns':['close'],'dates':days,'rows':[[float(i)] for i in range(len(days))]}
+        days=['2026-09-%02dT00:00:00'%d for d in (1,2,8,9,15,16)]
+        first={'market':{'A':frame(days[:5]),'B':frame(days[:5])},'benchmark':frame(days[:5]),'config':{'x':1}}
+        second={'market':{'A':frame(days),'B':frame(days)},'benchmark':frame(days),'config':{'x':1}}
+        k1=self.ledger.snapshot(first); k2=self.ledger.snapshot(second)
+        self.assertEqual(k1,hashlib.sha256(canonical(first)).hexdigest())
+        self.assertEqual(self.ledger.read_snapshot(k1),first)
+        self.assertEqual(self.ledger.read_snapshot(k2),second)
+        self.assertEqual(self.ledger.snapshot(second),k2)
+        # Three weeks, two unchanged: the second snapshot adds only one chunk.
+        self.assertEqual(len(list((self.root/'snapshots/chunks').glob('*.gz'))),4)
+        chunk=next((self.root/'snapshots/chunks').glob('*.gz'))
+        chunk.write_bytes(gzip.compress(b'{}'))
+        with self.assertRaises(LedgerError): self.ledger.read_snapshot(k2)
+
+    def test_legacy_whole_snapshots_still_verify(self):
+        import gzip, hashlib
+        from dhruva.ledger import canonical
+        raw=canonical({'legacy':True}); key=hashlib.sha256(raw).hexdigest()
+        (self.root/'snapshots').mkdir(parents=True,exist_ok=True)
+        (self.root/'snapshots'/f'{key}.json.gz').write_bytes(gzip.compress(raw,mtime=0))
+        self.assertEqual(self.ledger.read_snapshot(key),{'legacy':True})
+        self.assertEqual(self.ledger.snapshot({'legacy':True}),key)
 
     def test_validation_rejects_real_money_future_cutoff_and_nan(self):
         for change in ({'execution_mode': 'EXECUTED'}, {'portfolio_nav': float('nan')},

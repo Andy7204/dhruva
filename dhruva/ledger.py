@@ -209,25 +209,96 @@ class Ledger:
             return envelope, True
 
     def snapshot(self, value):
-        """Content-addressed immutable exact input object; compression has no timestamp."""
+        """Content-addressed immutable exact input object; compression has no timestamp.
+
+        The key is always the SHA-256 of the whole canonical object. Price frames are
+        stored as weekly content-addressed chunks, so a new daily snapshot only adds
+        the changed week instead of re-storing every symbol's full history.
+        """
         raw = canonical(value)
         key = hashlib.sha256(raw).hexdigest()
-        path = self.root/'snapshots'/f'{key}.json.gz'
+        legacy = self.root/'snapshots'/f'{key}.json.gz'
+        manifest_path = self.root/'snapshots'/f'{key}.manifest.json'
         with writer_lock(self.root):
-            if path.exists():
-                if gzip.decompress(path.read_bytes()) != raw:
+            if legacy.exists():
+                if gzip.decompress(legacy.read_bytes()) != raw:
+                    raise LedgerError('Snapshot content changed')
+            elif manifest_path.exists():
+                if self._assemble(key) != raw:
                     raise LedgerError('Snapshot content changed')
             else:
-                atomic_write(path, gzip.compress(raw, mtime=0))
+                skeleton, weeks = _split_frames(value)
+                chunks = []
+                for week in sorted(weeks):
+                    body = canonical({'week': week, 'frames': weeks[week]})
+                    chunk = hashlib.sha256(body).hexdigest()
+                    path = self.root/'snapshots/chunks'/f'{chunk}.json.gz'
+                    if not path.exists():
+                        atomic_write(path, gzip.compress(body, mtime=0))
+                    chunks.append(chunk)
+                atomic_write(manifest_path, canonical({'format': 'weekly-frame-chunks-v1', 'sha256': key,
+                                                       'skeleton': skeleton, 'chunks': chunks})+b'\n')
+                if self._assemble(key) != raw:
+                    raise LedgerError('Chunked snapshot does not reproduce its input')
         return key
+
+    def _assemble(self, key):
+        manifest = json.loads((self.root/'snapshots'/f'{key}.manifest.json').read_bytes())
+        frames = {}
+        for chunk in manifest['chunks']:
+            body = gzip.decompress((self.root/'snapshots/chunks'/f'{chunk}.json.gz').read_bytes())
+            if hashlib.sha256(body).hexdigest() != chunk:
+                raise LedgerError('Snapshot chunk integrity failure')
+            for frame_id, part in json.loads(body)['frames'].items():
+                target = frames.setdefault(frame_id, {'dates': [], 'rows': []})
+                target['dates'] += part['dates']; target['rows'] += part['rows']
+        return canonical(_join_frames(manifest['skeleton'], frames))
 
     def read_snapshot(self, key):
         if len(key) != 64 or any(c not in '0123456789abcdef' for c in key):
             raise LedgerError('Invalid snapshot identifier')
         try:
-            raw = gzip.decompress((self.root/'snapshots'/f'{key}.json.gz').read_bytes())
+            legacy = self.root/'snapshots'/f'{key}.json.gz'
+            raw = gzip.decompress(legacy.read_bytes()) if legacy.exists() else self._assemble(key)
             if hashlib.sha256(raw).hexdigest() != key:
                 raise LedgerError('Snapshot integrity failure')
             return json.loads(raw)
-        except (OSError, ValueError, EOFError) as exc:
+        except (OSError, ValueError, EOFError, KeyError) as exc:
             raise LedgerError(f'Cannot read snapshot: {exc}') from exc
+
+
+FRAME_KEYS = {'columns', 'dates', 'rows'}
+
+
+def _week(day):
+    from datetime import date, timedelta
+    d = date.fromisoformat(day[:10])
+    return (d - timedelta(days=d.weekday())).isoformat()
+
+
+def _split_frames(value, path='', weeks=None):
+    """Replace sorted price frames with placeholders; collect their rows by week."""
+    weeks = {} if weeks is None else weeks
+    if isinstance(value, dict):
+        if (set(value) == FRAME_KEYS and value['dates'] and len(value['dates']) == len(value['rows'])
+                and all(isinstance(d, str) and len(d) >= 10 for d in value['dates'])
+                and all(a <= b for a, b in zip(value['dates'], value['dates'][1:]))):
+            for day, row in zip(value['dates'], value['rows']):
+                part = weeks.setdefault(_week(day), {}).setdefault(path, {'dates': [], 'rows': []})
+                part['dates'].append(day); part['rows'].append(row)
+            return {'__frame__': path, 'columns': value['columns']}, weeks
+        return {k: _split_frames(v, path+'/'+k, weeks)[0] for k, v in value.items()}, weeks
+    if isinstance(value, list):
+        return [_split_frames(v, path+'/'+str(i), weeks)[0] for i, v in enumerate(value)], weeks
+    return value, weeks
+
+
+def _join_frames(value, frames):
+    if isinstance(value, dict):
+        if set(value) == {'__frame__', 'columns'}:
+            part = frames.get(value['__frame__'], {'dates': [], 'rows': []})
+            return {'columns': value['columns'], 'dates': part['dates'], 'rows': part['rows']}
+        return {k: _join_frames(v, frames) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_join_frames(v, frames) for v in value]
+    return value
