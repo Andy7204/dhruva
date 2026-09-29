@@ -1,0 +1,169 @@
+{
+ "symbol": "ELLEN",
+ "discovered": "2026-09-29",
+ "discovery_price": 369.35,
+ "reviews": [
+  {
+   "date": "2026-09-29",
+   "trigger": "owner request",
+   "stage2_score": 87.4,
+   "price": 369.35,
+   "model": "claude-opus-5-5 via Claude Code session (owner Pro plan, no API cost)",
+   "reviewed_at": "2026-09-29T17:44:55.756651+00:00",
+   "result": {
+    "symbol": "ELLEN",
+    "company": "Ellenbarrie Industrial Gases Ltd",
+    "sector": "Industrial gases (NSE: Chemicals)",
+    "score": {
+     "demand_shock": 5,
+     "supply_constraint": 4,
+     "pricing_power": 4,
+     "revenue_acceleration": 6,
+     "operating_leverage": 5,
+     "eps_acceleration": 4,
+     "capacity_catalyst": 8,
+     "cash_flow_quality": 8,
+     "valuation_asymmetry": 3,
+     "management_governance": 3,
+     "balance_sheet": 5,
+     "total": 55
+    },
+    "band": "REJECT",
+    "status": "YELLOW",
+    "action": "WAIT",
+    "capital_to_deploy_inr": 0,
+    "thesis": "A well-run, net-cash industrial gas utility adding capacity: a 325 TPD take-or-pay onsite plant (Jai Balaji) started 25 Sep 2026, two merchant plants (~450-500 TPD) under construction, and a Rs481 cr BHEL ASU build-and-transfer order. Core growth is real but moderate (revenue +18%, company EBITDA +21% YoY). Reported PAT +87% is mostly other income on IPO cash, lower interest and tax. At ~43x reported and ~68x core earnings the price already assumes steady compounding; this is not a Sandisk-type inflection.",
+    "chain_missing_links": [
+     "Industry change: industrial gas demand grows ~7.5%/yr (company-cited F&S); no shortage evident",
+     "Pricing: oxygen/nitrogen prices flat and contractual; argon recovering but below H1 FY26",
+     "Operating leverage: EBITDA growth only slightly above revenue growth YoY",
+     "EPS acceleration is non-operating (other income 37% of FY26 PBT)",
+     "Valuation gap: none; multiple already high"
+    ],
+    "demand_signal": "Steel capacity build-out (~35% of revenue) and >600 TPD onsite enquiries (MANAGEMENT CLAIM); National Coal Gasification Mission needs large ASUs (policy FACT, company benefit ASSUMPTION).",
+    "supply_signal": "Argon supply is tied to oxygen capacity (structural, per management); merchant markets are regional oligopolies with Linde/Inox/Air Liquide; new merchant plants start without contracts and need 18-24 months to ramp, so no evident shortage.",
+    "pricing_signal": "O2/N2 stable; argon recovered from Q3 FY26 low but below H1 FY26 (MANAGEMENT CLAIM). Weak pricing-power evidence.",
+    "order_book": "BHEL Rs481 cr turnkey 1,200 TPD ASU, build-and-transfer over 8 quarters, commissioning FY29 (FACT), roughly 1.3x FY26 revenue, but project-engineering margins are typically far below gas margins (ASSUMPTION). 15-year onsite contracts are take-or-pay.",
+    "capacity_catalyst": "1,933 TPD incl. 320-325 TPD East India onsite commissioned 25 Sep 2026 (FACT); North India 220 TPD bulk and West/Central bulk (~450-500 TPD combined) under construction; capex guidance Rs250 cr FY27, Rs200 cr FY28. Legacy plants fully utilized; Uluberia-2 ramping.",
+    "cfo_to_pat": "FY26 CFO Rs1,325m vs PAT Rs1,044m = 1.27 (FACT); receivables fell 826 to 633m on revenue +9%; FCF negative from capex (class A productive growth investment).",
+    "debt": "Borrowings ~Rs180 cr vs ~Rs520 cr investments/deposits/loans at FY26 end: net cash (CALCULATION); Crisil A/Stable, A1 reaffirmed 28 Sep 2026 (FACT).",
+    "roce": "Core EBITDA/invested capital ~12-14% (CALCULATION); management targets project ROCE >15%.",
+    "valuation": "Price Rs369.35, mcap ~Rs5,205 cr (141m shares). TTM PAT Rs1,207m gives P/E ~43; ex other income (after tax) ~68x; EV/core EBITDA ~40x. Below the Rs400 IPO price (Jul 2025).",
+    "management_credibility": "MEDIUM",
+    "scenarios": {
+     "bear": {
+      "fy2_eps": 7.5,
+      "fy3_eps": 8.5,
+      "fy5_eps": 10.0,
+      "exit_pe": 28,
+      "price": 238,
+      "multiple": 0.65,
+      "cagr_pct": -12,
+      "assumptions": "Gas revenue +10%/yr, argon falls, merchant ramps slow, margin 35%, other income falls as cash is spent; exit on FY30 EPS."
+     },
+     "base": {
+      "fy2_eps": 11.5,
+      "fy3_eps": 12.3,
+      "fy5_eps": 15.5,
+      "exit_pe": 36,
+      "price": 443,
+      "multiple": 1.2,
+      "cagr_pct": 5,
+      "assumptions": "Gas revenue +18%/yr from new plants, 40% gas EBITDA margin, BHEL EPC at ~12% margin, D&A rises with capex; exit on FY30 EPS about 3.5 years out."
+     },
+     "bull": {
+      "fy2_eps": 14.0,
+      "fy3_eps": 17.0,
+      "fy5_eps": 24.0,
+      "exit_pe": 45,
+      "price": 765,
+      "multiple": 2.1,
+      "cagr_pct": 23,
+      "assumptions": "Gas revenue +25%/yr incl. a >600 TPD onsite win, margin 42%, argon firm; exit on FY30 EPS."
+     },
+     "extreme_bull": {
+      "fy2_eps": 16.0,
+      "fy3_eps": 21.0,
+      "fy5_eps": 30.0,
+      "exit_pe": 50,
+      "price": 1500,
+      "multiple": 4.1,
+      "cagr_pct": 29,
+      "assumptions": "Several 1,000+ TPD own-and-operate contracts from coal gasification and steel, gas revenue +35%/yr; exit on FY32 EPS."
+     }
+    },
+    "plausible": {
+     "2x": "NO in base; YES only in bull: ~25% gas revenue CAGR plus a 45x exit multiple in ~3.5 years.",
+     "3x": "NO: needs multiple large onsite wins and a rising multiple.",
+     "5x": "5x NOT reasonably underwritable.",
+     "10x": "10x NOT reasonably underwritable."
+    },
+    "kill_conditions": [
+     "Q2 FY27 gas revenue growth below 15% YoY despite the Jai Balaji plant",
+     "Company EBITDA margin (ex other income) below 36% for two quarters",
+     "North India / West-Central plants delayed beyond FY28",
+     "Receivable days above 90 or CFO/PAT below 0.8",
+     "Large acquisition or related-party transaction using IPO cash"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (~Nov 2026): first Jai Balaji onsite revenue",
+     "Onsite contract win >600 TPD",
+     "Coal-gasification own-and-operate awards",
+     "North India plant commissioning"
+    ],
+    "biggest_risk": "Paying ~68x core earnings for a business growing core EBITDA ~20%: multiple contraction can offset growth for years.",
+    "next_datapoint": "Q2 FY27 result: core EBITDA growth and margin with a full month of Jai Balaji onsite revenue.",
+    "confidence": "MEDIUM",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "Q1 FY27 revenue 987m (+18%), EBITDA 387m (+21%), PAT 350m (+87%), other income 171m",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/ELLENBARRIE2024_07082026192817_Announcement_Earnings_Conference_Call_Investor_Presentation.pdf"
+     },
+     {
+      "claim": "FY26 P&L, balance sheet, cash flow; capacity 1,933 TPD; capex guidance",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/ELLENBARRIE2024_07082026192817_Announcement_Earnings_Conference_Call_Investor_Presentation.pdf"
+     },
+     {
+      "claim": "Legacy plants fully utilized; 40%+ margin target; >600 TPD enquiries; 18-24 month merchant ramp; argon trend",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/ELLENBARRIE2024_13082026145002_Announcement_Earnings_Conference_Call_Transcript.pdf"
+     },
+     {
+      "claim": "325 TPD Jai Balaji onsite ASU commissioned 25 Sep 2026, 15-year take-or-pay",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/ELLENBARRIE2024_25092026141614_Announcement_Commissioning_of_Jai_Balaji_ASU_Plant25092026.pdf"
+     },
+     {
+      "claim": "Rs481 cr BHEL 1,200 TPD ASU build-and-transfer, 8 quarters, FY29",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/ELLENBARRIE2024_28092026184137_Announcement_Press_Release_BHEl_28092026.pdf"
+     },
+     {
+      "claim": "Crisil A/Stable, A1 on Rs50 cr bank facilities",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/ELLENBARRIE2024_28092026152847_Announcement_Credit_Rating_28092026.pdf"
+     },
+     {
+      "claim": "IPO price band Rs380-400, June 2025",
+      "type": "FACT",
+      "url": "https://www.business-standard.com/amp/markets/news/ellenbarrie-industrial-sets-ipo-price-band-at-380-400-check-details-here-125061900353_1.html"
+     },
+     {
+      "claim": "P/E, core P/E, EV/EBITDA, scenario EPS and prices",
+      "type": "CALCULATION",
+      "url": ""
+     },
+     {
+      "claim": "EPC margin ~12%, growth rates in scenarios",
+      "type": "ASSUMPTION",
+      "url": ""
+     }
+    ]
+   }
+  }
+ ]
+}

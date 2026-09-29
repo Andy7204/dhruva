@@ -1,24 +1,24 @@
 # DEEPAKNTR — Deepak Nitrite Ltd. (Chemicals)
 Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 92.9 · Stage 2 score 84.7 · score 20 sessions ago 92.9 · 60 sessions ago 92.9
+Stage 1 score 92.9 · Stage 2 score 83.2 · score 20 sessions ago 92.9 · 60 sessions ago 92.9
 Price ₹1529.00 · 12-month return -17.9% · -18.5% from 52-week high · RS rank 44.4 · stage-2 trend False · turnover ₹37.63 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 36.4% · QoQ 21.6% (previous QoQ 7.4%) · quarters of sequential growth in last 4: 4
-EBITDA YoY 158.8% · EBITDA margin 21.5% (change 10.2 pts) · incremental EBITDA margin 49.5%
+EBITDA YoY 185.0% · EBITDA margin 21.0% (change 10.9 pts) · incremental EBITDA margin 51.0%
 PAT YoY 207.5% · PAT margin 13.4% · EPS YoY 207.4% · turnaround False
-One-off share of EBITDA 0.0% · unusual items share of PBT 0.0% · tax rate 26.2%
+One-off share of EBITDA 2.6% · unusual items share of PBT 0.0% · tax rate 26.2%
 
 ## Cash flow and balance sheet (latest fiscal year)
 CFO/PAT 0.98 · class: A productive growth investment · receivables growth 18.2% vs revenue -4.1% · inventory growth -6.9% · receivable days 71
-Net debt/EBITDA 1.25 · interest cover 24.2 · dilution 0.0% · ROE 9.4% · EBITDA/invested capital 14.0%
+Net debt/EBITDA 1.25 · interest cover 23.6 · dilution 0.0% · ROE 9.4% · EBITDA/invested capital 14.0%
 
 ## Valuation
 Market cap ₹20854 cr · TTM P/E 26.6 · PEG 0.13 · EV/EBITDA 21.5 · EPS growth minus 12-month price return 217.9 pts
 
 ## Industry (same NSE industry, this scan)
-45 peers · 58% growing revenue >20% · 71% expanding EBITDA margin · median revenue YoY 24.0%
+45 peers · 58% growing revenue >20% · 62% expanding EBITDA margin · median revenue YoY 24.0%
 
 Flags: none
 

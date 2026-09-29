@@ -1,24 +1,24 @@
 # IMFA — Indian Metals & Ferro Alloys Ltd. (Metals & Mining)
 Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 85.1 · Stage 2 score 75.9 · score 20 sessions ago 85.1 · 60 sessions ago 85.1
+Stage 1 score 86.1 · Stage 2 score 77.4 · score 20 sessions ago 86.1 · 60 sessions ago 86.1
 Price ₹1206.50 · 12-month return 7.4% · -27.1% from 52-week high · RS rank 37.6 · stage-2 trend False · turnover ₹10.73 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 69.3% · QoQ 25.8% (previous QoQ 8.6%) · quarters of sequential growth in last 4: 4
-EBITDA YoY 238.5% · EBITDA margin 30.6% (change 15.3 pts) · incremental EBITDA margin 52.7%
+EBITDA YoY 298.8% · EBITDA margin 29.3% (change 16.9 pts) · incremental EBITDA margin 53.6%
 PAT YoY 306.5% · PAT margin 20.0% · EPS YoY 306.5% · turnaround False
-One-off share of EBITDA 0.0% · unusual items share of PBT % · tax rate 25.4%
+One-off share of EBITDA 4.6% · unusual items share of PBT % · tax rate 25.4%
 
 ## Cash flow and balance sheet (latest fiscal year)
 CFO/PAT 0.75 · class: A productive growth investment · receivables growth 111.2% vs revenue 10.2% · inventory growth 10.8% · receivable days 31
-Net debt/EBITDA 1.38 · interest cover 23.6 · dilution 0.0% · ROE 15.6% · EBITDA/invested capital 17.7%
+Net debt/EBITDA 1.38 · interest cover 22.6 · dilution 0.0% · ROE 15.6% · EBITDA/invested capital 17.7%
 
 ## Valuation
 Market cap ₹6510 cr · TTM P/E 12.5 · PEG 0.04 · EV/EBITDA 11.5 · EPS growth minus 12-month price return 192.6 pts
 
 ## Industry (same NSE industry, this scan)
-24 peers · 58% growing revenue >20% · 54% expanding EBITDA margin · median revenue YoY 22.9%
+24 peers · 58% growing revenue >20% · 58% expanding EBITDA margin · median revenue YoY 22.9%
 
 Flags: PAT up while CFO down; receivables growing much faster than revenue
 

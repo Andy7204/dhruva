@@ -1,7 +1,7 @@
 # NATIONALUM — National Aluminium Co. Ltd. (Metals & Mining)
 Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 85.8 · Stage 2 score 76.4 · score 20 sessions ago 85.8 · 60 sessions ago 85.8
+Stage 1 score 85.8 · Stage 2 score 77.2 · score 20 sessions ago 85.8 · 60 sessions ago 85.8
 Price ₹346.65 · 12-month return 72.8% · -21.5% from 52-week high · RS rank 74.2 · stage-2 trend False · turnover ₹161.24 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
@@ -18,7 +18,7 @@ Net debt/EBITDA 0.02 · interest cover 282.6 · dilution 0.0% · ROE 26.8% · EB
 Market cap ₹63667 cr · TTM P/E 10.5 · PEG 0.38 · EV/EBITDA 7.5 · EPS growth minus 12-month price return -44.9 pts
 
 ## Industry (same NSE industry, this scan)
-24 peers · 58% growing revenue >20% · 54% expanding EBITDA margin · median revenue YoY 22.9%
+24 peers · 58% growing revenue >20% · 58% expanding EBITDA margin · median revenue YoY 22.9%
 
 Flags: none
 

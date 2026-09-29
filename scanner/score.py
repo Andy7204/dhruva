@@ -57,7 +57,12 @@ def technicals(frame):
 
 def fundamentals(f, close, ret_12m):
     """All ratios the framework asks for that free data supports. Returns (parts, facts, flags)."""
-    rev, ebitda, nebitda = s(f, 'quarterlyTotalRevenue'), s(f, 'quarterlyEBITDA'), s(f, 'quarterlyNormalizedEBITDA')
+    rev, nebitda = s(f, 'quarterlyTotalRevenue'), s(f, 'quarterlyNormalizedEBITDA')
+    opinc, dep, other = s(f, 'quarterlyOperatingIncome'), s(f, 'quarterlyReconciledDepreciation'), s(f, 'quarterlyOtherNonOperatingIncomeExpenses')
+    # Yahoo's EBITDA for Indian companies includes other income (e.g. interest on IPO cash).
+    # Operating income + depreciation matches company-reported EBITDA; use it when available.
+    ebitda = ([o+d for o, d in zip(opinc[-len(dep):], dep)] if len(opinc) >= 5 and len(dep) >= 5
+              else s(f, 'quarterlyEBITDA'))
     pat, eps, pbt, tax = s(f, 'quarterlyNetIncome'), s(f, 'quarterlyDilutedEPS'), s(f, 'quarterlyPretaxIncome'), s(f, 'quarterlyTaxProvision')
     unusual, interest = s(f, 'quarterlyTotalUnusualItems'), s(f, 'quarterlyInterestExpense')
     x, flags = {}, []
@@ -85,6 +90,11 @@ def fundamentals(f, close, ret_12m):
         x['one_off_share'] = abs(ebitda[-1]-nebitda[-1])/abs(ebitda[-1])*100
     if unusual and pbt and pbt[-1]:
         x['unusual_share_of_pbt'] = abs(unusual[-1])/abs(pbt[-1])*100
+    if len(other) >= 5 and len(pbt) >= 5:
+        x['other_income_share_of_pbt'] = other[-1]/pbt[-1]*100 if pbt[-1] > 0 else None
+        core_now, core_then = pbt[-1]-other[-1], pbt[-5]-other[-5]
+        x['core_pbt_yoy'] = growth(core_now, core_then)
+        if (x['other_income_share_of_pbt'] or 0) > 25: flags.append('other income over 25% of pre-tax profit')
     if tax and pbt and pbt[-1] > 0:
         x['tax_rate'] = tax[-1]/pbt[-1]*100
     # annual cash-flow forensics
@@ -133,10 +143,12 @@ def fundamentals(f, close, ret_12m):
         'leverage': (0.4*ramp((x.get('ebitda_yoy') or 0)/max(x.get('rev_yoy') or 0, 5), 0.8, 1.8)
                      + 0.3*ramp((x.get('incremental_ebitda_margin') or 0)-(x.get('ebitda_margin') or 0), 0, 15)
                      + 0.3*ramp(x.get('ebitda_margin_change'), 0, 5)) if ok else 0.,
-        'profit': (1. if x.get('turnaround') else 0.6*ramp(x.get('pat_yoy'), 10, 70)
-                   + 0.4*float((x.get('pat_yoy') or 0) > (x.get('ebitda_yoy') or 0) > (x.get('rev_yoy') or 0) > 0)),
-        'quality': 0.5*(1-ramp(x.get('unusual_share_of_pbt'), 10, 40) if 'unusual_share_of_pbt' in x else .3)
-                   + 0.5*(1.-ramp(abs((x.get('tax_rate') or 25)-25), 10, 25)),
+        # Judge profit growth on core pre-tax profit (excluding other income) when available.
+        'profit': (1. if x.get('turnaround') else 0.6*ramp(x.get('core_pbt_yoy', x.get('pat_yoy')), 10, 70)
+                   + 0.4*float((x.get('core_pbt_yoy', x.get('pat_yoy')) or 0) > (x.get('ebitda_yoy') or 0) > (x.get('rev_yoy') or 0) > 0)),
+        'quality': 0.35*(1-ramp(x.get('unusual_share_of_pbt'), 10, 40) if 'unusual_share_of_pbt' in x else .3)
+                   + 0.35*(1-ramp(x.get('other_income_share_of_pbt'), 10, 40) if x.get('other_income_share_of_pbt') is not None else .3)
+                   + 0.3*(1.-ramp(abs((x.get('tax_rate') or 25)-25), 10, 25)),
         'cash': 0.5*ramp(x.get('cfo_to_pat'), 0.3, 0.9)
                 + 0.25*(0 if 'receivables growing much faster than revenue' in flags else 1 if 'receivables_growth' in x else .3)
                 + 0.25*(1 if x['cash_flow_class'] in ('healthy', 'A productive growth investment') else 0),

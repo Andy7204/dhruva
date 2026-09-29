@@ -20,7 +20,8 @@ CACHE = ROOT/'data'/'scanner_cache'
 UNIVERSE = ROOT/'data'/'universe.csv'
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125 Safari/537.36'
 Q = ['TotalRevenue', 'EBITDA', 'NormalizedEBITDA', 'TotalUnusualItems', 'PretaxIncome', 'TaxProvision',
-     'InterestExpense', 'NetIncome', 'GrossProfit', 'DilutedEPS', 'OrdinarySharesNumber']
+     'InterestExpense', 'NetIncome', 'GrossProfit', 'DilutedEPS', 'OrdinarySharesNumber',
+     'OperatingIncome', 'ReconciledDepreciation', 'OtherNonOperatingIncomeExpenses']
 A = ['OperatingCashFlow', 'CapitalExpenditure', 'FreeCashFlow', 'AccountsReceivable', 'Inventory', 'AccountsPayable',
      'CashAndCashEquivalents', 'NetDebt', 'TotalDebt', 'OrdinarySharesNumber', 'EBITDA', 'TotalRevenue', 'NetIncome',
      'InvestedCapital', 'StockholdersEquity', 'InterestExpense', 'DilutedEPS']
