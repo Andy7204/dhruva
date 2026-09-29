@@ -30,6 +30,13 @@ Backtests are not forecasts. Factor-index history before each launch date is
 NSE's back-calculation; only 4–14 years are genuinely live. The pre-registered
 pass/fail test is in [docs/SUCCESS_CRITERIA.md](docs/SUCCESS_CRITERIA.md).
 
+## Inflection radar (stock research)
+
+A three-stage funnel over about 750 NSE stocks looks for early fundamental
+inflections (Sandisk-like setups): a daily quantitative scan, a narrowing to 10
+candidates with evidence dossiers, and Claude deep underwriting of those 10 with a
+persistent thesis database. See [docs/MULTIBAGGER.md](docs/MULTIBAGGER.md).
+
 ## How it runs
 
 - `.github/workflows/daily.yml` (weekdays 18:30 IST, often delayed by GitHub):

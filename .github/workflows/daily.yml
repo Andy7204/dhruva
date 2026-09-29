@@ -42,6 +42,17 @@ jobs:
       - name: Update market data and paper books
         id: pipeline
         run: python -m dhruva.daily
+      - name: Restore scanner cache (prices, fundamentals, filings)
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: data/scanner_cache
+          key: scanner-${{ github.run_id }}
+          restore-keys: scanner-
+      - name: Inflection funnel (Stages 1-3)
+        id: inflection
+        continue-on-error: true
+        timeout-minutes: 30
+        run: python -m scanner.daily
       - name: Commit refreshed data and dashboard
         if: always()
         run: |

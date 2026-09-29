@@ -19,6 +19,9 @@ dhruva/forward.py     replays books; appends runs/forward/log.jsonl once per boo
 dhruva/performance.py forward metrics and pre-registered verdict
 dhruva/watchdog.py    independent freshness check; dhruva/alerts.py opens/closes GitHub issues
 dhruva/digest.py      change-only / Friday notices on a standing GitHub issue
+scanner/              Stage 1 score (score.py), Stage 2 funnel + dossiers (stage2.py), data fetchers (data.py), daily entry
+underwriter/run.py    Stage 3 Claude underwriter; thesis DB runs/inflection/db/, report, capital ledger
+prompts/underwriter.md  the owner's underwriting framework plus output contract
 streamlit_app.py      read-only public app
 ```
 

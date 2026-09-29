@@ -21,3 +21,4 @@ dist/
 # Local virtual environment
 .venv/
 research/long/
+data/scanner_cache/
