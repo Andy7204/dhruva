@@ -44,6 +44,15 @@ def render(root=ROOT):
         st.table([{'Book': b['name'], 'Date': b['as_of'], 'Recorded value '+basis+' (INR)': b['value'],
                    'Starting capital (INR)': b['capital']} for b in health['books']])
     else: st.error('Portfolio totals withheld: every configured book must be valid. Partial totals would be misleading.')
+    st.subheader('Income estimate — assumption only')
+    st.caption('LIQUIDBEES scenario: 4% simple annual income on ₹1,000 per prior-close settled unit, ACT/365 including weekends; configured slab tax, surcharge and cess, no reinvestment. Accrues from the September30, 2026 close. This is not a yield forecast, verified receipt, spendable balance or recorded NAV. Unknown actual credits and withholding remain excluded.')
+    estimates=[{'Book':b['name'], 'Through':b['state']['income_scenario']['as_of'],
+                'Assumed gross (INR)':round(b['state']['income_scenario']['gross'],2),
+                'Assumed tax (INR)':round(b['state']['income_scenario']['tax'],2),
+                'Assumed net (INR)':round(b['state']['income_scenario']['net'],2)}
+               for b in health['books'] if b['state'].get('income_scenario')]
+    if estimates: st.table(estimates)
+    else: st.write('No prospective income estimate recorded yet; it begins with the next eligible daily evaluations.')
     st.subheader('Daily paper calls and portfolio')
     st.caption('Evaluated after the market closes, normally 18:30 IST on weekdays. BUY/SELL are paper orders for the next eligible open; HOLD means no new trade. Closed-market days do not create new signals.')
     if health['status']=='UNHEALTHY':

@@ -16,7 +16,18 @@ def is_session(day, cfg=None):
     cfg = cfg or calendar_config()
     if not cfg['valid_from'] <= day.isoformat() <= cfg['valid_through']:
         raise ValueError(f'Exchange calendar coverage unavailable for {day}; review official circulars')
+    if day.isoformat() in cfg.get('special_sessions',{}):
+        completed_after(day,cfg)  # Require sourced, explicit timing.
+        return True
     return day.weekday() < 5 and day.isoformat() not in cfg['holidays']
+
+
+def completed_after(day,cfg):
+    special=cfg.get('special_sessions',{}).get(day.isoformat())
+    if special is None: return time(16,30)
+    if not special.get('source_url','').startswith('https://'):
+        raise ValueError('Special session requires official timing source')
+    return time.fromisoformat(special['completed_after_ist'])
 
 
 def expected_date(now=None, cfg=None):
@@ -25,7 +36,7 @@ def expected_date(now=None, cfg=None):
     day = now.date()
     # Daily vendor data has a buffer after the regular market close. Normal
     # published deadline is 18:30 IST; this boundary prevents intraday processing.
-    if now.time() < time(16, 30): day -= timedelta(days=1)
+    if now.time() < completed_after(day,cfg): day -= timedelta(days=1)
     for _ in range(10):
         # Sept17 is the known preceding original session; not broad historic coverage.
         if day.isoformat() == '2026-09-17': return day.isoformat()
@@ -38,7 +49,7 @@ def run_due(now=None, cfg=None):
     cfg = cfg or calendar_config()
     now = (now or datetime.now(IST)).astimezone(IST)
     if not is_session(now.date(), cfg): return False, 'NON_TRADING_DAY'
-    if now.time() < time(16, 30): return False, 'BEFORE_COMPLETED_SESSION'
+    if now.time() < completed_after(now.date(),cfg): return False, 'BEFORE_COMPLETED_SESSION'
     return True, 'DUE'
 
 

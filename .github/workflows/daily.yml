@@ -3,6 +3,8 @@ name: Daily paper-trading update
 on:
   schedule:
     - cron: '0 13 * * 1-5'
+    # Weekend special sessions only; ordinary weekends exit through the guard.
+    - cron: '0 18 * * 0,6'
   workflow_dispatch:
 
 permissions:

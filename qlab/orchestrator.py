@@ -175,6 +175,11 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
                     raise ValueError('Same-day income amendment requires explicit ledger correction')
             post_receipt(states[receipt['book']],tax_inventory,receipt,str(date.date()),prior.get('as_of'))
         sync_tax()
+        from qlab.income_model import accrue
+        for name, state in states.items():
+            accrue(state, previous.get(name), str(date.date()),
+                   cfg.get('tax',{}).get('income_slab_pct',cfg.get('tax',{}).get('nonequity_short_pct',0.30))
+                   *(1+cfg.get('tax',{}).get('surcharge_pct',0))*(1+cfg.get('tax',{}).get('cess_pct',0.04)))
         for r in results:
             r['state']['account_tax_inventory']=copy.deepcopy(tax_inventory)
             # Later book sales can change the shared reserve attribution.

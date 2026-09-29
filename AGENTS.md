@@ -1,5 +1,11 @@
 # AGENTS.md — Dhruva handoff for AI agents
 
+September29 authorized income scenario: see docs/INCOME_SCENARIO.md. Separate
+4% illustrative ACT/365 LIQUIDBEES estimate from September30close; never put it
+in NAV/cash/units or treat it as verified income. Daily ledger captures it.
+Calendar supports sourced special-session completion times; weekend23:30IST
+checks skip ordinary closures. November8 actual timing still requires NSE source.
+
 September29: trading calendar verified throughNovember7 (November8 Muhurat timing
 still unannounced); settlement calendar throughDecember31 perCMPT71904. Income
 allotment lots carry their own credit date so they cannot inherit old delivery

@@ -1,5 +1,14 @@
 # Dhruva hardening checkpoint
 
+September29 user approved explicit income simulation. Implemented prospective
+4% scenario, prior-close settled units, ACT/365, configured tax including surcharge
+and cess; separate from NAV, cash, inventory and actual receipts. StartsSeptember30
+close; no past book rewrite. Existing daily ledger persists model metadata/totals.
+UI shows assumptions and separate gross/tax/net. Calendar supports official sourced
+special-session completion thresholds in both guard/freshness, plus weekend late
+workflow checks (closed days skip). Synthetic timing tests are not real NSE times.
+3 new model/calendar tests,4 pipeline tests and2 actual Streamlit tests passed.
+
 September29 calendar/income request: official CMPT71904 retrieved through web
 search; ordinary clearing coverage extended toDecember31 with November10/24 and
 December25 holidays. CMTR71775 and current NSE holiday page still leave November8

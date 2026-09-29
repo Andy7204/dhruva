@@ -247,6 +247,12 @@ Exchange/settlement calendars have bounded coverage and require official updates
 before expiry; unattended operation is monitored, not guaranteed forever.
 # September29 calendar and income maintenance
 
+The dashboard now includes a separate **assumption-only income estimate**:
+4% simple annual LIQUIDBEES income with configured tax, accruing prospectively
+from September30close. It does not inflate recorded NAV or spendable cash.
+See [model assumptions](docs/INCOME_SCENARIO.md). Weekend checks support future
+officially configured special sessions; ordinary closed days are skipped.
+
 Ordinary trading coverage is verified through November7, settlement through
 December31. NSE has not yet announced November8 Muhurat session timing; the app
 fails closed from that date until the special session is configured. Existing
