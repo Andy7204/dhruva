@@ -4,7 +4,7 @@ Added September29, 2026 at the owner's request. Reuses research/challenge.py
 unchanged; only the price source differs (up to 20 years of Yahoo daily bars in
 research/long/data/cache, which is not committed). Never touches production.
 
-    python research/long_window.py --fetch   # download, once
+    python research/long_window.py --fetch   # download once, then repair logged vendor glitches
     python research/long_window.py           # run, writes research/results/long_window.json
 
 Point-in-time index membership is not freely available and Yahoo has no prices
@@ -55,6 +55,32 @@ def fetch():
     print(json.dumps({'symbols': len(symbols), 'failed': failed}), flush=True)
 
 
+def repair():
+    """Drop vendor glitch rows: an >80% one-day move that reverts within 5 sessions.
+
+    Found after the first long run: Yahoo priced NIFTYBEES/GOLDBEES about 90%/99%
+    low for two days around their December 2019 unit splits, triggering fake
+    stop-loss sales. Uses later bars to recognise an error, so it is a documented
+    data repair for research only, never a signal. Every removed row is logged.
+    """
+    removed = {}
+    for path in sorted((LONG/'data/cache').glob('*.csv')):
+        df = pd.read_csv(path, index_col='date', parse_dates=True)
+        a = df['adjclose'].to_numpy(); drop = []
+        i = 1
+        while i < len(a):
+            if a[i-1] > 0 and abs(a[i]/a[i-1]-1) > 0.8:
+                back = next((j for j in range(i+1, min(i+6, len(a))) if abs(a[j]/a[i-1]-1) < 0.25), None)
+                if back:
+                    drop += list(range(i, back)); i = back; continue
+            i += 1
+        if drop:
+            removed[path.stem] = [str(df.index[k].date()) for k in drop]
+            df.drop(df.index[drop]).to_csv(path)
+    (HERE/'results/long_window_repairs.json').write_text(json.dumps(removed, indent=2), encoding='utf-8')
+    print(json.dumps(removed), flush=True)
+
+
 def survivor_basket(m, start, end, universe, cost_cfg):
     """Equal-weight buy-and-hold of every listed stock with a price at start."""
     allowed = m.stock_set if universe == '500' else m.stock_set & m.n100
@@ -72,6 +98,23 @@ def survivor_basket(m, start, end, universe, cost_cfg):
 def main():
     import challenge
     challenge.ROOT = LONG  # Market reads ROOT/data/cache and ROOT/data/nifty100.txt
+    # challenge.Trial resets the circuit breaker only when NAV recovers within
+    # reset_dd of its peak. A liquidated book earning zero on cash never can, so it
+    # stayed in cash from about 2016 in the first long run. Production (qlab/livebook)
+    # also releases after cooldown_sessions with the 200-day market trend on and
+    # resets the peak; mirror that here without editing the audited 4-year study.
+    original = challenge.Trial.decide
+
+    def decide(self, b, i):
+        risk = self.m.cfg['risk']
+        if (b.breaker and i - getattr(b, 'tripped_at', i) >= risk.get('cooldown_sessions', 63)
+                and self.m.gates[200][i]):
+            b.breaker = False; b.peak = b.value(self.m, i) - self.reserve(b)
+        was = b.breaker
+        original(self, b, i)
+        if b.breaker and not was:
+            b.tripped_at = i
+    challenge.Trial.decide = decide
     cfg = D.load_config()
     m = challenge.Market(cfg)
     # Start once the NIFTYBEES benchmark itself has prices, after the usual warmup.
@@ -101,4 +144,7 @@ def main():
 
 
 if __name__ == '__main__':
-    fetch() if '--fetch' in sys.argv else main()
+    if '--fetch' in sys.argv:
+        fetch(); repair()
+    else:
+        main()
