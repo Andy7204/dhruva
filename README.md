@@ -245,3 +245,11 @@ Daily evaluation follows the63-session allocation cadence and daily stop rules.
 Scheduled GitHub runs remain weekdays18:30IST; fills are next eligible open.
 Exchange/settlement calendars have bounded coverage and require official updates
 before expiry; unattended operation is monitored, not guaranteed forever.
+# September29 calendar and income maintenance
+
+Ordinary trading coverage is verified through November7, settlement through
+December31. NSE has not yet announced November8 Muhurat session timing; the app
+fails closed from that date until the special session is configured. Existing
+watchdog alerts before expiry. Income lots preserve their individual credit dates.
+LIQUIDBEES calculator estimates remain excluded from NAV until entitlement,
+credit timing and withholding can be reconciled; this is not zero income.

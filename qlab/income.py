@@ -66,7 +66,11 @@ def post_receipt(state, inventory, receipt, as_of, previous_as_of=None):
         own=updated['holdings'].setdefault(symbol,{'kind':'cushion','stop':0.,'settle_date':str(day)})
         for holding in (own,shared.setdefault(symbol,{})):
             lots.buy(holding,qty,basis,{'total':0.,'stt':0.},str(effective),identity)
-            next(lot for lot in holding['lots'] if lot['id']==identity)['origin']='distribution'
+            new_lot=next(lot for lot in holding['lots'] if lot['id']==identity)
+            new_lot['origin']='distribution'
+            # A credited allotment must not inherit an older holding's delivery
+            # date and become sellable at an open preceding its credit.
+            new_lot['settle_date']=str(effective)
         updated['cash']=round(updated['cash']+residual,2)
     else: raise ValueError('Unsupported income receipt mode')
     updated['tax_prepaid']=round(updated.get('tax_prepaid',0.)+withheld,2)

@@ -32,6 +32,8 @@ class OperationsTests(unittest.TestCase):
         self.assertTrue(run_due(dt('2026-09-18T18:30'))[0])
         self.assertEqual(run_due(dt('2026-09-19T18:30'))[1], 'NON_TRADING_DAY')
         self.assertEqual(run_due(dt('2026-10-02T18:30'))[1], 'NON_TRADING_DAY')
+        self.assertTrue(run_due(dt('2026-11-06T18:30'))[0])
+        with self.assertRaises(ValueError): run_due(dt('2026-11-08T18:30'))
         with self.assertRaises(ValueError): run_due(dt('2027-01-02T18:30'))
 
     def test_failure_record_written_and_exception_not_swallowed(self):

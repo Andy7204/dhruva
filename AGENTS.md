@@ -1,5 +1,10 @@
 # AGENTS.md — Dhruva handoff for AI agents
 
+September29: trading calendar verified throughNovember7 (November8 Muhurat timing
+still unannounced); settlement calendar throughDecember31 perCMPT71904. Income
+allotment lots carry their own credit date so they cannot inherit old delivery
+eligibility. No calculator estimate was posted as an actual income receipt.
+
 September28 priority follow-up authorization: use old phases as a backlog for
 important pending fixes, not mandatory sequential gates. Latest user allows
 remaining usage down to zero; save checkpoints before exhaustion. show_call uses

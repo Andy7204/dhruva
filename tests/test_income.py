@@ -54,6 +54,17 @@ class IncomeTests(unittest.TestCase):
         self.state['price_convention']='adjusted'
         with self.assertRaisesRegex(ValueError,'actual quoted units'): self.post()
 
+    def test_allotment_does_not_inherit_old_delivery_date(self):
+        self.receipt.update(mode='reinvested_units',gross=1000.,withheld=0.,units=1.,unit_price=1000.)
+        holding={'kind':'cushion','settle_date':'2026-09-18'}
+        lots.buy(holding,3,3000.,{'total':0.,'stt':0.},'2026-09-17','original')
+        self.state['holdings']['LIQUIDBEES.NS']=holding
+        self.inventory['LIQUIDBEES.NS']=copy.deepcopy(holding)
+        self.post()
+        own=self.state['holdings']['LIQUIDBEES.NS']
+        self.assertEqual(livebook._deliverable_qty(own,'2026-09-25'),3)
+        self.assertEqual(livebook._deliverable_qty(own,'2026-09-28'),4)
+
     def test_late_future_and_unobserved_receipts(self):
         self.receipt['effective_date']='2026-09-24'
         with self.assertRaisesRegex(ValueError,'explicit ledger correction'): self.post()

@@ -1,5 +1,21 @@
 # Dhruva hardening checkpoint
 
+September29 calendar/income request: official CMPT71904 retrieved through web
+search; ordinary clearing coverage extended toDecember31 with November10/24 and
+December25 holidays. CMTR71775 and current NSE holiday page still leave November8
+Muhurat timing pending; ordinary trading extended toNovember7, not past the
+unconfigured special session. No fabricated session times or2027 dates.
+Fixed income delivery eligibility: a new reinvestment lot now records its own
+effective credit date, rather than inheriting an old holding's settlement date.
+8 income and16 execution tests passed; new regression proves no same-day-open
+sale of newly credited units. Original books/history unchanged.
+Sources: https://nsearchives.nseindia.com/content/circulars/CMPT71904.pdf and
+https://www.nseindia.com/resources/exchange-communication-holidays/ .
+Nippon SID confirms daily reinvestment but periodic demat upload to3decimals:
+https://mf.nipponindiaim.com/InvestorServices/SIDETF/NipponIndia-ETF-Nifty-1D-Rate-Liquid-BeES.pdf .
+Public calculator is not an allotment confirmation. Entitlement/credit schedule,
+rounding and withholding remain unresolved; no production receipt was invented.
+
 September28 priority follow-up verification: full89-test suite passed after the
 metrics and call/narration repairs. GitHub CI36460126078 passed7d3055a; prior
 calendar-alert CI36458238796 passedf5dcd14. Added simultaneous-order regression:

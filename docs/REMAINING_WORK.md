@@ -4,7 +4,10 @@ The focused release is accepted. The ten-phase programme is cancelled; do not
 resume its checklist. Development heartbeat is disabled. Normal daily paper-book
 updates and watchdog remain active.
 
-- Calendar renewal: trading and settlement coverage ends October31. The existing
+- Calendar renewal: ordinary trading coverage now ends November7; settlement
+  coverage ends December31, using the official 2026 clearing circular. November8
+  Muhurat timing is still unannounced; special-session handling must be configured
+  from its circular before expanding trading coverage. The existing
   watchdog raises a maintenance incident14 days before either expires. Review
   official exchange and clearing circulars before extending dates. Never invent
   holidays or bypass expired-calendar guards.

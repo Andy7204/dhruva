@@ -87,8 +87,11 @@ class LiveExecutionTests(unittest.TestCase):
     def test_settlement_holiday_weekend_and_expiry(self):
         self.assertEqual(L._settle_date('2026-10-01',1),'2026-10-05')
         self.assertEqual(L._settle_date('2026-09-11',1),'2026-09-15')
+        self.assertEqual(L._settle_date('2026-10-30',1),'2026-11-02')
+        self.assertEqual(L._settle_date('2026-11-09',1),'2026-11-11')
+        self.assertEqual(L._settle_date('2026-12-24',1),'2026-12-28')
         with self.assertRaisesRegex(ValueError,'calendar coverage'):
-            L._settle_date('2026-10-30',1)
+            L._settle_date('2026-12-31',1)
 
     def test_exit_heuristic_uses_only_consumed_shared_fifo_lots(self):
         inventory={'lots':[
