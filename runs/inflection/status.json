@@ -1,6 +1,6 @@
 {
  "session": "2026-09-29",
- "started_at": "2026-09-29T13:48:49.777519+00:00",
+ "started_at": "2026-09-29T13:53:02.804234+00:00",
  "warnings": [],
  "symbols": 750,
  "priced": 745,
@@ -19,10 +19,10 @@
   "IMFA",
   "GLENMARK"
  ],
- "announcements": 68264,
+ "announcements": 68277,
  "news_ok": true,
  "price_errors": 5,
  "fundamental_errors": 0,
  "announcement_errors": [],
- "ended_at": "2026-09-29T13:49:47.614194+00:00"
+ "ended_at": "2026-09-29T13:54:46.152096+00:00"
 }

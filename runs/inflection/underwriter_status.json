@@ -43,5 +43,7 @@
   ]
  ],
  "reviewed": [],
- "errors": []
+ "errors": [
+  "No Anthropic credential; Stage 3 skipped. Add the ANTHROPIC_API_KEY repository secret."
+ ]
 }
