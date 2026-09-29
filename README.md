@@ -247,6 +247,10 @@ Exchange/settlement calendars have bounded coverage and require official updates
 before expiry; unattended operation is monitored, not guaranteed forever.
 # September29 calendar and income maintenance
 
+**Moving to Claude Code:** start with [the complete handoff](docs/CLAUDE_HANDOFF.md)
+and [the handoff sheet / starter prompt](docs/HANDOFF_CHECKLIST.md). Local project:
+`Z:\dhruva`. `CLAUDE.md` is the repository entry point for the next assistant.
+
 The dashboard now includes a separate **assumption-only income estimate**:
 4% simple annual LIQUIDBEES income with configured tax, accruing prospectively
 from September30close. It does not inflate recorded NAV or spendable cash.

@@ -1,5 +1,10 @@
 # AGENTS.md — Dhruva handoff for AI agents
 
+September29 assistant transfer: `CLAUDE.md` is the Claude Code entry point;
+`docs/CLAUDE_HANDOFF.md` contains the full dated operational handoff and
+`docs/HANDOFF_CHECKLIST.md` the action sheet and copy/paste startup prompt.
+Preparing the handoff does not itself transfer credentials or Codex reminders.
+
 September29 authorized income scenario: see docs/INCOME_SCENARIO.md. Separate
 4% illustrative ACT/365 LIQUIDBEES estimate from September30close; never put it
 in NAV/cash/units or treat it as verified income. Daily ledger captures it.
