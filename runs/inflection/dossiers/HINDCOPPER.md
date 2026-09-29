@@ -1,8 +1,8 @@
 # HINDCOPPER — Hindustan Copper Ltd. (Metals & Mining)
 Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 86.5 · Stage 2 score 77.7 · score 20 sessions ago 86.5 · 60 sessions ago 86.5
-Price ₹474.35 · 12-month return 52.0% · -37.6% from 52-week high · RS rank 60.9 · stage-2 trend False · turnover ₹386.15 cr/day
+Stage 1 score 84.0 · Stage 2 score 75.4 · score 20 sessions ago 84.0 · 60 sessions ago 84.0
+Price ₹474.35 · 12-month return 52.0% · -37.6% from 52-week high · RS rank 58.0 · stage-2 trend False · turnover ₹386.15 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 81.4% · QoQ -19.0% (previous QoQ 68.2%) · quarters of sequential growth in last 4: 2
@@ -18,7 +18,7 @@ Net debt/EBITDA 0.10 · interest cover 148.4 · dilution 0.0% · ROE 27.5% · EB
 Market cap ₹45871 cr · TTM P/E 40.4 · PEG 0.25 · EV/EBITDA 32.1 · EPS growth minus 12-month price return 109.8 pts
 
 ## Industry (same NSE industry, this scan)
-24 peers · 58% growing revenue >20% · 58% expanding EBITDA margin · median revenue YoY 22.9%
+25 peers · 56% growing revenue >20% · 56% expanding EBITDA margin · median revenue YoY 22.1%
 
 Flags: none
 

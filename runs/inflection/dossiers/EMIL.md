@@ -1,24 +1,24 @@
 # EMIL — Electronics Mart India Ltd. (Consumer Services)
 Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 91.8 · Stage 2 score 79.8 · score 20 sessions ago 91.8 · 60 sessions ago 91.8
-Price ₹191.71 · 12-month return 30.9% · -4.3% from 52-week high · RS rank 96.1 · stage-2 trend True · turnover ₹66.97 cr/day
+Stage 1 score 90.2 · Stage 2 score 79.1 · score 20 sessions ago 90.2 · 60 sessions ago 90.2
+Price ₹191.71 · 12-month return 30.9% · -4.3% from 52-week high · RS rank 94.4 · stage-2 trend True · turnover ₹66.97 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 39.1% · QoQ 26.4% (previous QoQ -1.4%) · quarters of sequential growth in last 4: 2
-EBITDA YoY 117.1% · EBITDA margin 9.9% (change 3.5 pts) · incremental EBITDA margin 19.0%
+EBITDA YoY 133.6% · EBITDA margin 10.0% (change 4.0 pts) · incremental EBITDA margin 20.3%
 PAT YoY 458.1% · PAT margin 5.0% · EPS YoY 460.7% · turnaround False
-One-off share of EBITDA 0.8% · unusual items share of PBT 0.0% · tax rate 25.6%
+One-off share of EBITDA 0.0% · unusual items share of PBT 0.0% · tax rate 25.6%
 
 ## Cash flow and balance sheet (latest fiscal year)
 CFO/PAT 4.14 · class: healthy · receivables growth -25.5% vs revenue 6.6% · inventory growth 0.8% · receivable days 3
-Net debt/EBITDA 1.87 · interest cover 6.4 · dilution 0.0% · ROE 6.6% · EBITDA/invested capital 17.9%
+Net debt/EBITDA 1.87 · interest cover 6.5 · dilution 0.0% · ROE 6.6% · EBITDA/invested capital 17.9%
 
 ## Valuation
 Market cap ₹7376 cr · TTM P/E 35.8 · PEG 0.08 · EV/EBITDA 18.3 · EPS growth minus 12-month price return 169.1 pts
 
 ## Industry (same NSE industry, this scan)
-46 peers · 50% growing revenue >20% · 33% expanding EBITDA margin · median revenue YoY 19.6%
+43 peers · 51% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY 22.4%
 
 Flags: none
 

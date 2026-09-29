@@ -1,8 +1,8 @@
 # GESHIP — Great Eastern Shipping Co. Ltd. (Services)
 Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 91.7 · Stage 2 score 76.3 · score 20 sessions ago 91.7 · 60 sessions ago 91.7
-Price ₹1537.80 · 12-month return 54.5% · -10.6% from 52-week high · RS rank 81.7 · stage-2 trend False · turnover ₹140.83 cr/day
+Stage 1 score 89.4 · Stage 2 score 75.4 · score 20 sessions ago 89.4 · 60 sessions ago 89.4
+Price ₹1537.80 · 12-month return 54.5% · -10.6% from 52-week high · RS rank 78.9 · stage-2 trend False · turnover ₹140.83 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 66.9% · QoQ 32.7% (previous QoQ 3.9%) · quarters of sequential growth in last 4: 4
@@ -18,7 +18,7 @@ Net debt/EBITDA 0.23 · interest cover 69.4 · dilution 0.0% · ROE 17.4% · EBI
 Market cap ₹21955 cr · TTM P/E 5.9 · PEG 0.04 · EV/EBITDA 5.7 · EPS growth minus 12-month price return 104.9 pts
 
 ## Industry (same NSE industry, this scan)
-26 peers · 62% growing revenue >20% · 27% expanding EBITDA margin · median revenue YoY 25.3%
+23 peers · 74% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY 28.3%
 
 Flags: none
 

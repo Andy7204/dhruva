@@ -13,16 +13,16 @@ Paper research, not investment advice. Holdings change only after the owner conf
 | ELLEN | 55 | YELLOW | WAIT | 2026-09-29 | ₹369.35 on 2026-09-29 |
 
 ## Stage 2 finalists today (quantitative, not yet underwritten unless listed above)
-- NAVINFLUOR (Chemicals): Stage 2 89.7, Stage 1 97.6
-- DEEPAKNTR (Chemicals): Stage 2 83.2, Stage 1 92.9
-- ALKYLAMINE (Chemicals): Stage 2 83.1, Stage 1 92.7
-- EMIL (Consumer Services): Stage 2 79.8, Stage 1 91.8
-- LUPIN (Healthcare): Stage 2 79.1, Stage 1 92.2
-- HINDCOPPER (Metals & Mining): Stage 2 77.7, Stage 1 86.5
-- IMFA (Metals & Mining): Stage 2 77.4, Stage 1 86.1
-- NATIONALUM (Metals & Mining): Stage 2 77.2, Stage 1 85.8
-- GESHIP (Services): Stage 2 76.3, Stage 1 91.7
-- KANSAINER (Consumer Durables): Stage 2 75.3, Stage 1 88.7
+- NAVINFLUOR (Chemicals): Stage 2 89.5, Stage 1 95.3
+- ELLEN (Chemicals): Stage 2 85.6, Stage 1 90.1
+- DEEPAKNTR (Chemicals): Stage 2 82.8, Stage 1 90.4
+- EMIL (Consumer Services): Stage 2 79.1, Stage 1 90.2
+- LUPIN (Healthcare): Stage 2 76.7, Stage 1 88.4
+- HINDCOPPER (Metals & Mining): Stage 2 75.4, Stage 1 84.0
+- GESHIP (Services): Stage 2 75.4, Stage 1 89.4
+- IMFA (Metals & Mining): Stage 2 75.2, Stage 1 83.7
+- NATIONALUM (Metals & Mining): Stage 2 74.9, Stage 1 83.4
+- KANSAINER (Consumer Durables): Stage 2 74.7, Stage 1 87.4
 
 ## Action engine
 Available cash ₹0 · confirmed holdings: none

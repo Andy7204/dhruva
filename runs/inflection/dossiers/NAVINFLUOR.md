@@ -1,24 +1,24 @@
 # NAVINFLUOR — Navin Fluorine International Ltd. (Chemicals)
 Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 97.6 · Stage 2 score 89.7 · score 20 sessions ago 97.6 · 60 sessions ago 97.6
-Price ₹8234.50 · 12-month return 73.4% · -6.2% from 52-week high · RS rank 89.1 · stage-2 trend False · turnover ₹104.07 cr/day
+Stage 1 score 95.3 · Stage 2 score 89.5 · score 20 sessions ago 95.3 · 60 sessions ago 95.3
+Price ₹8234.50 · 12-month return 73.4% · -6.2% from 52-week high · RS rank 86.3 · stage-2 trend False · turnover ₹104.07 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 49.1% · QoQ 11.4% (previous QoQ 5.1%) · quarters of sequential growth in last 4: 4
-EBITDA YoY 99.8% · EBITDA margin 34.2% (change 8.7 pts) · incremental EBITDA margin 51.8%
+EBITDA YoY 105.8% · EBITDA margin 37.5% (change 10.3 pts) · incremental EBITDA margin 58.6%
 PAT YoY 156.2% · PAT margin 23.3% · EPS YoY 147.7% · turnaround False
-One-off share of EBITDA 9.8% · unusual items share of PBT 0.0% · tax rate 23.6%
+One-off share of EBITDA 0.0% · unusual items share of PBT 0.0% · tax rate 23.6%
 
 ## Cash flow and balance sheet (latest fiscal year)
 CFO/PAT 1.35 · class: healthy · receivables growth 29.1% vs revenue 40.0% · inventory growth 38.2% · receivable days 84
-Net debt/EBITDA 1.06 · interest cover 11.1 · dilution 3.3% · ROE 16.7% · EBITDA/invested capital 21.9%
+Net debt/EBITDA 1.06 · interest cover 12.2 · dilution 3.3% · ROE 16.7% · EBITDA/invested capital 21.9%
 
 ## Valuation
 Market cap ₹42201 cr · TTM P/E 55.4 · PEG 0.38 · EV/EBITDA 38.1 · EPS growth minus 12-month price return 74.3 pts
 
 ## Industry (same NSE industry, this scan)
-45 peers · 58% growing revenue >20% · 62% expanding EBITDA margin · median revenue YoY 24.0%
+44 peers · 61% growing revenue >20% · 70% expanding EBITDA margin · median revenue YoY 25.2%
 
 Flags: none
 

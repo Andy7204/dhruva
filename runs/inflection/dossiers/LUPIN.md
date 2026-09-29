@@ -1,24 +1,24 @@
 # LUPIN — Lupin Ltd. (Healthcare)
 Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 92.2 · Stage 2 score 79.1 · score 20 sessions ago 92.2 · 60 sessions ago 92.2
-Price ₹2052.10 · 12-month return 6.9% · -18.4% from 52-week high · RS rank 39.2 · stage-2 trend False · turnover ₹132.47 cr/day
+Stage 1 score 88.4 · Stage 2 score 76.7 · score 20 sessions ago 88.4 · 60 sessions ago 88.4
+Price ₹2052.10 · 12-month return 6.9% · -18.4% from 52-week high · RS rank 36.1 · stage-2 trend False · turnover ₹132.47 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 47.7% · QoQ 11.2% (previous QoQ 4.1%) · quarters of sequential growth in last 4: 4
-EBITDA YoY 90.7% · EBITDA margin 30.0% (change 6.8 pts) · incremental EBITDA margin 44.1%
+EBITDA YoY 80.8% · EBITDA margin 30.3% (change 5.5 pts) · incremental EBITDA margin 42.0%
 PAT YoY 83.2% · PAT margin 17.2% · EPS YoY 83.1% · turnaround False
-One-off share of EBITDA 4.7% · unusual items share of PBT 4.4% · tax rate 29.8%
+One-off share of EBITDA 3.5% · unusual items share of PBT 4.4% · tax rate 29.8%
 
 ## Cash flow and balance sheet (latest fiscal year)
 CFO/PAT 1.38 · class: healthy · receivables growth 20.1% vs revenue 23.9% · inventory growth 11.1% · receivable days 88
-Net debt/EBITDA 0.20 · interest cover 22.5 · dilution 0.1% · ROE 23.8% · EBITDA/invested capital 30.5%
+Net debt/EBITDA 0.20 · interest cover 22.7 · dilution 0.1% · ROE 23.8% · EBITDA/invested capital 30.5%
 
 ## Valuation
 Market cap ₹93818 cr · TTM P/E 17.8 · PEG 0.21 · EV/EBITDA 11.0 · EPS growth minus 12-month price return 76.2 pts
 
 ## Industry (same NSE industry, this scan)
-70 peers · 51% growing revenue >20% · 43% expanding EBITDA margin · median revenue YoY 21.0%
+66 peers · 56% growing revenue >20% · 45% expanding EBITDA margin · median revenue YoY 23.3%
 
 Flags: none
 

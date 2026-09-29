@@ -1,28 +1,28 @@
 {
  "session": "2026-09-29",
- "started_at": "2026-09-29T17:45:19.346172+00:00",
+ "started_at": "2026-09-29T18:24:38.958198+00:00",
  "warnings": [],
- "symbols": 750,
- "priced": 745,
- "fundamentals_ok": 744,
+ "symbols": 745,
+ "priced": 740,
+ "fundamentals_ok": 728,
  "vetoed": 7,
  "stage2_pool": 50,
  "finalists": [
   "NAVINFLUOR",
+  "ELLEN",
   "DEEPAKNTR",
-  "ALKYLAMINE",
   "EMIL",
   "LUPIN",
   "HINDCOPPER",
+  "GESHIP",
   "IMFA",
   "NATIONALUM",
-  "GESHIP",
   "KANSAINER"
  ],
- "announcements": 68431,
+ "announcements": 68435,
  "news_ok": true,
  "price_errors": 5,
  "fundamental_errors": 0,
  "announcement_errors": [],
- "ended_at": "2026-09-29T17:46:58.952554+00:00"
+ "ended_at": "2026-09-29T18:25:13.590218+00:00"
 }
