@@ -83,6 +83,14 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
         raw = D.get_universe(cfg["universe"], rng=cfg["data"]["backtest_range"], clean=False)
         bench_raw = D.get_history(cfg["regime"]["benchmark"], rng=cfg["data"]["backtest_range"], clean=False)
 
+    tr_symbol = (cfg.get('total_return_benchmark') or {}).get('symbol')
+    tr_raw = None
+    if tr_symbol:
+        try:  # Comparison only; never a strategy input, so failure must not stop the books.
+            tr_raw = (D.update_history(tr_symbol, update_range=cfg["data"]["update_range"], clean=False) if refresh
+                      else D.get_history(tr_symbol, rng=cfg["data"]["backtest_range"], clean=False))
+        except Exception as exc:
+            emit('total_return_benchmark','WARNING', f'Total-return benchmark {tr_symbol} unavailable: {type(exc).__name__}')
     from dhruva.data_quality import validate_inputs
     emit('data_ingestion','COMPLETE', {'returned_symbols':len(raw)})
     emit('data_validation','RUNNING')
@@ -175,11 +183,12 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
                     raise ValueError('Same-day income amendment requires explicit ledger correction')
             post_receipt(states[receipt['book']],tax_inventory,receipt,str(date.date()),prior.get('as_of'))
         sync_tax()
-        from qlab.income_model import accrue
+        from qlab.income_model import accrue, accrue_cash
+        income_tax=(cfg.get('tax',{}).get('income_slab_pct',cfg.get('tax',{}).get('nonequity_short_pct',0.30))
+                    *(1+cfg.get('tax',{}).get('surcharge_pct',0))*(1+cfg.get('tax',{}).get('cess_pct',0.04)))
         for name, state in states.items():
-            accrue(state, previous.get(name), str(date.date()),
-                   cfg.get('tax',{}).get('income_slab_pct',cfg.get('tax',{}).get('nonequity_short_pct',0.30))
-                   *(1+cfg.get('tax',{}).get('surcharge_pct',0))*(1+cfg.get('tax',{}).get('cess_pct',0.04)))
+            accrue(state, previous.get(name), str(date.date()), income_tax)
+            accrue_cash(state, previous.get(name), str(date.date()), income_tax)
         for r in results:
             r['state']['account_tax_inventory']=copy.deepcopy(tax_inventory)
             # Later book sales can change the shared reserve attribution.
@@ -191,7 +200,8 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
         # an original live evaluation on the missed date. Snapshots stop at cutoff.
         results, added = record_evaluation(PROJECT_ROOT, cfg,
             {s: f.loc[:date] for s,f in raw.items()}, bench_raw.loc[:date], panel,
-            results, previous, recovered=date < cal[-1], quality=quality)
+            results, previous, recovered=date < cal[-1], quality=quality,
+            tr_benchmark=tr_raw.loc[:date] if tr_raw is not None else None)
         new_evaluations += int(added)
         for result in results:
             states[result['name']] = result['state']

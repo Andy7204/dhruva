@@ -3,7 +3,8 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 from dhruva.health import inspect
-from dhruva.presentation import forward_rows, portfolio_rows
+import json
+from dhruva.presentation import forward_rows, portfolio_rows, success_status
 
 ROOT = Path(__file__).resolve().parent
 st.set_page_config(page_title='Dhruva', page_icon='🪷', layout='wide')
@@ -46,11 +47,13 @@ def render(root=ROOT):
     else: st.error('Portfolio totals withheld: every configured book must be valid. Partial totals would be misleading.')
     st.subheader('Income estimate — assumption only')
     st.caption('LIQUIDBEES scenario: 4% simple annual income on ₹1,000 per prior-close settled unit, ACT/365 including weekends; configured slab tax, surcharge and cess, no reinvestment. Accrues from the September30, 2026 close. This is not a yield forecast, verified receipt, spendable balance or recorded NAV. Unknown actual credits and withholding remain excluded.')
-    estimates=[{'Book':b['name'], 'Through':b['state']['income_scenario']['as_of'],
-                'Assumed gross (INR)':round(b['state']['income_scenario']['gross'],2),
-                'Assumed tax (INR)':round(b['state']['income_scenario']['tax'],2),
-                'Assumed net (INR)':round(b['state']['income_scenario']['net'],2)}
-               for b in health['books'] if b['state'].get('income_scenario')]
+    st.caption('Idle cash scenario: the same 4% simple annual rate and tax on prior-close settled cash, as if parked in a liquid fund. Also from the September30 close, also outside recorded NAV.')
+    estimates=[{'Book':b['name'], 'Scenario':label, 'Through':b['state'][key]['as_of'],
+                'Assumed gross (INR)':round(b['state'][key]['gross'],2),
+                'Assumed tax (INR)':round(b['state'][key]['tax'],2),
+                'Assumed net (INR)':round(b['state'][key]['net'],2)}
+               for b in health['books'] for key,label in (('income_scenario','LIQUIDBEES units'),('cash_yield_scenario','Idle cash'))
+               if b['state'].get(key)]
     if estimates: st.table(estimates)
     else: st.write('No prospective income estimate recorded yet; it begins with the next eligible daily evaluations.')
     st.subheader('Daily paper calls and portfolio')
@@ -82,8 +85,21 @@ def render(root=ROOT):
             rows=forward_rows(root)
             if rows:
                 frame=pd.DataFrame(rows)
-                st.line_chart(frame.set_index('Date')[['Paper index','Nifty price index']])
-                st.caption('Both series start at 100 at the labelled starting point. Nifty is a price-only, untaxed, cost-free reference, not an investable total-return comparison. Paper NAV includes modeled costs/tax but excludes unverified income. A few days cannot establish effectiveness; this record accumulates with each daily run.')
+                st.line_chart(frame.set_index('Date')[['Paper index','Paper index + assumed income','NIFTYBEES total-return index','Nifty price index']])
+                st.caption('All series start at 100 at the labelled starting point. NIFTYBEES is the fair benchmark: an investable Nifty 50 ETF whose price keeps constituent dividends, so it tracks the Total Return Index less a small fee. It is shown before any tax an investor would pay on selling. The Nifty price index omits dividends and flatters the strategy by about 1.3% a year. Paper NAV includes modeled costs/tax; the "+ assumed income" line adds the 4% scenarios above and is not recorded NAV. Missing NIFTYBEES values are vendor gaps, not zero. A few days cannot establish effectiveness.')
+                criteria=json.loads((root/'config.json').read_text(encoding='utf-8')).get('success_criteria')
+                if criteria:
+                    verdict=success_status(rows,criteria)
+                    st.subheader('Does it work? Pre-registered test')
+                    st.write(f"**{verdict['verdict']}** — {verdict['reason']}")
+                    st.write(f"Rule, fixed in advance: after at least {criteria['earliest_verdict_years']} years, recorded paper NAV must beat NIFTYBEES by at least "
+                             f"{criteria['pass_min_excess_cagr_pct']:.1f} percentage points a year, with worst drawdown under {criteria['max_drawdown_limit_pct']:.0f}%. "
+                             f"It fails early if drawdown breaches that limit, or if after {criteria['early_fail_after_years']} year it trails NIFTYBEES by "
+                             f"{criteria['early_fail_cumulative_shortfall_pct']:.0f} points or more; final verdict at {criteria['final_verdict_years']} years. Assumed income never counts.")
+                    if verdict.get('through'):
+                        st.caption(f"Progress {verdict['start']} to {verdict['through']} ({verdict['years']:.2f} years): paper {verdict['paper_return_pct']:+.2f}%, "
+                                   f"NIFTYBEES {verdict['benchmark_return_pct']:+.2f}%, worst paper drawdown {verdict['worst_drawdown_pct']:.2f}%. "
+                                   '[Criteria and change log](https://github.com/Andy7204/dhruva/blob/main/docs/SUCCESS_CRITERIA.md)')
                 st.dataframe(frame,hide_index=True,use_container_width=True)
                 st.download_button('Download dated performance records',frame.to_csv(index=False),'dhruva_forward.csv','text/csv')
         except (ValueError,KeyError,OSError,TypeError) as exc:

@@ -24,7 +24,7 @@ def frame_snapshot(frame):
             'rows': [[scalar(v) for v in row] for row in frame.itertuples(index=False, name=None)]}
 
 
-def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, generated_at=None, recovered=False, quality=None):
+def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, generated_at=None, recovered=False, quality=None, tr_benchmark=None):
     root = Path(root)
     ledger = Ledger(root/'runs/ledger/dhruva_v1')
     as_of = max(r['state']['as_of'] for r in results)
@@ -44,6 +44,8 @@ def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, ge
     events = []
     date = pd.Timestamp(as_of)
     bench_level = scalar(benchmark.at[date, 'adjclose']) if date in benchmark.index else None
+    tr_level = (scalar(tr_benchmark.at[date, 'close']) if tr_benchmark is not None
+                and date in tr_benchmark.index else None)
     for result in results:
         state = result['state']; book = result['name']; prev = previous.get(book) or {}
         legacy = prev.get('as_of') == state['as_of']
@@ -86,7 +88,8 @@ def record_evaluation(root, cfg, raw, benchmark, panel, results, previous, *, ge
                                market_price=price, rationale=(order or {}).get('reason') or
                                ('Legacy state observed; not a newly timestamped signal' if legacy else
                                 'Deterministic paper evaluation; see components and scheduled paper orders'),
-                               portfolio_nav=nav, benchmark_level=bench_level, execution_mode='PAPER',
+                               portfolio_nav=nav, benchmark_level=bench_level,
+                               total_return_benchmark_level=tr_level, execution_mode='PAPER',
                                execution_status='RECOVERY_RECONSTRUCTION' if recovered else
                                'IMPORTED_LEGACY_OBSERVATION' if legacy else
                                ('SCHEDULED_NEXT_OPEN' if order else 'EVALUATED'),

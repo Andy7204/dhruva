@@ -1,7 +1,7 @@
 import copy
 import unittest
 from datetime import datetime
-from qlab.income_model import accrue
+from qlab.income_model import accrue, accrue_cash, scenario_net
 from dhruva.calendar import run_due, expected_date, IST
 
 
@@ -28,6 +28,20 @@ class IncomeModelTests(unittest.TestCase):
         self.assertNotIn('income_scenario',state)
         accrue(state,prior,'2026-10-01',.312)
         self.assertEqual(state['income_scenario']['gross'],0.)
+
+    def test_idle_cash_yield_is_prospective_and_outside_nav(self):
+        prior={'as_of':'2026-10-02','cash':36500.,'holdings':{},'history':[['2026-10-02',36500.]]}
+        state=copy.deepcopy(prior); state['as_of']='2026-10-05'
+        accrue_cash(state,prior,'2026-10-05',.312)
+        model=state['cash_yield_scenario']
+        self.assertAlmostEqual(model['gross'],36500*.04*3/365)
+        self.assertAlmostEqual(scenario_net(state),model['gross']*.688)
+        self.assertEqual((state['cash'],state['history']),(prior['cash'],prior['history']))
+        saved=copy.deepcopy(state); accrue_cash(state,prior,'2026-10-05',.312)
+        self.assertEqual(state,saved)
+        early=copy.deepcopy(prior); early['as_of']='2026-09-28'
+        fresh={}; accrue_cash(fresh,early,'2026-09-29',.312)
+        self.assertNotIn('cash_yield_scenario',fresh)
 
     def test_special_session_uses_own_completed_time(self):
         # Synthetic timing only, not a claim about actual Muhurat hours.

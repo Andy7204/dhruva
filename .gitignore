@@ -17,3 +17,6 @@ dist/
 # ignored — committing them makes the first Streamlit/Actions run fast and the
 # dashboard render immediately. Remove data/cache/ here if you'd rather keep the
 # repo small (the daily cron will refetch prices on its first run).
+
+# Local virtual environment
+.venv/

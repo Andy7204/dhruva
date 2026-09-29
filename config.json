@@ -283,5 +283,21 @@
     "backtest_range": "5y",
     "update_range": "3mo",
     "interval": "1d"
+  },
+  "total_return_benchmark": {
+    "symbol": "NIFTYBEES.NS",
+    "_note": "Investable Nifty 50 ETF. Its NAV retains constituent dividends (vendor adjusted close equals close for 2021-2026, i.e. no ETF distributions), so its quoted price tracks the Nifty 50 Total Return Index less about 0.04% annual fee. Fetched for comparison only; never a strategy input."
+  },
+  "success_criteria": {
+    "status": "PROPOSED_DEFAULT_2026-09-29",
+    "benchmark": "NIFTYBEES.NS",
+    "nav_basis": "recorded NAV after modeled costs and tax reserve; assumption-only income never counts",
+    "earliest_verdict_years": 3,
+    "final_verdict_years": 5,
+    "pass_min_excess_cagr_pct": 2.0,
+    "max_drawdown_limit_pct": 25.0,
+    "early_fail_after_years": 1,
+    "early_fail_cumulative_shortfall_pct": 15.0,
+    "_note": "Fixed before results. PASS: at or after earliest verdict, annualized return beats NIFTYBEES by the minimum margin and worst drawdown stays inside the limit. FAIL: drawdown breaches the limit, or after early_fail_after_years cumulative return trails NIFTYBEES by the shortfall, or at the final verdict the PASS test is not met. Otherwise INCONCLUSIVE. Any change must be dated and explained in docs/SUCCESS_CRITERIA.md."
   }
 }
