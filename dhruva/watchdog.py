@@ -1,83 +1,58 @@
-"""Independent read-only check; does not fetch prices or advance the strategy."""
-from datetime import datetime, timedelta, time, date
+"""Independent read-only liveness check; never fetches prices or changes books."""
+from datetime import date, datetime, time, timedelta
 import json
 from pathlib import Path
 
 from dhruva.calendar import IST, expected_date
-from dhruva.health import inspect
-from dhruva.ledger import atomic_write, canonical, utc_now
+from dhruva.util import atomic_write, canonical, utc_now
 
-ROOT=Path(__file__).resolve().parents[1]
-
-
-def calendar_maintenance(root, now):
-    """Warn before bounded exchange calendars stop unattended operation."""
-    errors=[]
-    today=now.astimezone(IST).date()
-    for name in ('trading_calendar.json','settlement_calendar.json'):
-        try:
-            cfg=json.loads((Path(root)/'data'/name).read_text(encoding='utf-8'))
-            expiry=date.fromisoformat(cfg['valid_through'])
-            remaining=(expiry-today).days
-            if remaining<=14:
-                errors.append(f'CALENDAR MAINTENANCE: {name} coverage ends {expiry}; '
-                              f'{remaining} days remaining. Review official exchange/clearing circulars before extending.')
-        except (OSError,ValueError,KeyError,TypeError) as exc:
-            errors.append(f'CALENDAR UNREADABLE: {name}: {exc}')
-    return errors
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def evaluate(root=ROOT, now=None):
-    now=now or datetime.now(IST)
-    health=inspect(root, now)
-    # Main job nominal18:30; permit delayed dispatch through00:30 next day.
-    # At other times check the preceding completed deadline, never today's
-    # still-not-due job. Data validation failures are immediately actionable.
-    deadline_day=now.date()-timedelta(days=1)
-    if now.time()<time(0,30): deadline_day-=timedelta(days=1)
-    reference=datetime.combine(deadline_day,time(18,30),tzinfo=IST)
-    try: expected=expected_date(reference)
+    now = now or datetime.now(IST)
+    errors, warnings = [], []
+    day = now.date()-timedelta(days=1 if now.time() >= time(0, 30) else 2)
+    try:
+        required = expected_date(datetime.combine(day, time(18, 30), tzinfo=IST))
     except ValueError as exc:
-        expected=None; health['problems'].append(str(exc))
-    errors=[p for p in health['problems'] if ' STALE:' not in p]
-    errors.extend(calendar_maintenance(root,now))
-    for field in ('market_date','portfolio_date'):
-        if expected and (not health[field] or health[field]<expected):
-            errors.append(f'{field} stale/missing: {health[field]}; required {expected}')
-    success=health.get('last_success') or {}
-    if expected and (success.get('market_date') or '')<expected:
-        errors.append('MISSED_RUN: no completed attempt for '+expected)
-    ledger=health.get('ledger') or {}
-    if not ledger.get('events'): errors.append('LEDGER_HEARTBEAT_MISSING')
-    return dict(observed_at=utc_now(),status='FAILED' if errors else 'PASS',
-                required_session=expected, last_completed_run=success.get('run_id'),
-                market_date=health['market_date'],portfolio_date=health['portfolio_date'],
-                ledger_head=ledger.get('head'),errors=errors,
-                warnings=health['warnings'],scope='Operational liveness only; not accounting certification')
+        required = None; errors.append(str(exc))
+    try:
+        cal = json.loads((Path(root)/'data/trading_calendar.json').read_text(encoding='utf-8'))
+        left = (date.fromisoformat(cal['valid_through'])-now.date()).days
+        if left <= 14:
+            errors.append(f'CALENDAR MAINTENANCE: trading calendar ends {cal["valid_through"]}, {left} days left. Add official NSE dates.')
+    except (OSError, ValueError, KeyError) as exc:
+        errors.append(f'CALENDAR UNREADABLE: {exc}')
+    try:
+        status = json.loads((Path(root)/'runs/status.json').read_text(encoding='utf-8'))
+        if status.get('status') == 'FAILED':
+            errors.append('LAST DAILY RUN FAILED: '+'; '.join(status.get('errors', [])))
+        warnings += status.get('warnings', [])
+    except (OSError, ValueError):
+        errors.append('DAILY STATUS MISSING')
+    try:
+        state = json.loads((Path(root)/'runs/forward/state.json').read_text(encoding='utf-8'))
+        as_of = min(b['as_of'] for b in state.values())
+        if required and as_of < required:
+            errors.append(f'BOOKS STALE: recorded {as_of}, required {required}')
+    except (OSError, ValueError, KeyError):
+        cfg = json.loads((Path(root)/'config.v2.json').read_text(encoding='utf-8'))
+        if required and required > cfg['forward_start']:
+            errors.append('FORWARD BOOKS MISSING')
+    return {'observed_at': utc_now(), 'required_session': required, 'status': 'FAILED' if errors else 'PASS',
+            'errors': errors, 'warnings': warnings}
 
 
 def main():
-    import argparse
-    parser=argparse.ArgumentParser()
-    parser.add_argument('--test-alert',action='store_true')
-    args=parser.parse_args()
-    if args.test_alert:
-        from dhruva.alerts import notify
-        # Test channel cannot replace the real watchdog heartbeat or incidents.
-        results=[notify('watchdog',['Synthetic missed heartbeat fixture'],test=True),
-                 notify('watchdog',['Synthetic missed heartbeat fixture'],test=True),
-                 notify('watchdog',[],test=True)]
-        assert [r['status'] for r in results]==['CREATED','ALREADY_OPEN','RECOVERED'],results
-        atomic_write(ROOT/'runs/watchdog/alert_acceptance.json',canonical(
-            {'synthetic':True,'observed_at':utc_now(),'results':results})+b'\n')
-        print(json.dumps(results)); return 0
-    result=evaluate()
+    result = evaluate()
     from dhruva.deployment import check
-    result['errors'].extend(check())
-    result['status']='FAILED' if result['errors'] else 'PASS'
-    atomic_write(ROOT/'runs/watchdog/latest.json',canonical(result)+b'\n')
-    print(json.dumps(result,indent=2))
+    result['errors'] += check()
+    result['status'] = 'FAILED' if result['errors'] else 'PASS'
+    atomic_write(ROOT/'runs/watchdog/latest.json', canonical(result)+b'\n')
+    print(json.dumps(result, indent=1))
     return 1 if result['errors'] else 0
 
 
-if __name__=='__main__': raise SystemExit(main())
+if __name__ == '__main__':
+    raise SystemExit(main())

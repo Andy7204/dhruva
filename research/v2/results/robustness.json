@@ -1,44 +1,44 @@
 {
  "Accelerating dual momentum (Mom30, Midcap Mom50, Nasdaq-100, gold)": {
-  "offset_0": 17.76,
-  "offset_5": 13.35,
-  "offset_10": 16.18,
-  "offset_15": 17.17,
-  "double_costs": 15.59
+  "offset_0": 17.86,
+  "offset_5": 13.89,
+  "offset_10": 16.12,
+  "offset_15": 18.76,
+  "double_costs": 15.81
  },
  "Midcap Momentum 50 70% + Gold 30%, yearly": {
-  "offset_0": 17.5,
-  "offset_5": 17.65,
-  "offset_10": 17.59,
-  "offset_15": 17.54,
-  "double_costs": 17.45
+  "offset_0": 17.54,
+  "offset_5": 17.59,
+  "offset_10": 17.57,
+  "offset_15": 17.44,
+  "double_costs": 17.48
  },
  "Momentum 30 60% + Gold 20% + Nasdaq-100 20%, yearly": {
-  "offset_0": 15.22,
-  "offset_5": 15.17,
-  "offset_10": 15.19,
-  "offset_15": 15.16,
-  "double_costs": 15.2
+  "offset_0": 15.24,
+  "offset_5": 15.09,
+  "offset_10": 15.16,
+  "offset_15": 15.02,
+  "double_costs": 15.21
  },
  "Midcap150 Momentum 50 buy and hold": {
-  "offset_0": 17.25,
-  "offset_5": 17.25,
-  "offset_10": 17.3,
-  "offset_15": 16.96,
-  "double_costs": 17.25
+  "offset_0": 17.33,
+  "offset_5": 17.14,
+  "offset_10": 17.17,
+  "offset_15": 16.88,
+  "double_costs": 17.32
  },
  "Alpha 50 buy and hold": {
-  "offset_0": 13.1,
-  "offset_5": 12.92,
-  "offset_10": 12.83,
-  "offset_15": 12.62,
-  "double_costs": 13.1
+  "offset_0": 13.15,
+  "offset_5": 12.82,
+  "offset_10": 12.77,
+  "offset_15": 12.58,
+  "double_costs": 13.14
  },
  "Nifty 50 buy and hold (benchmark)": {
-  "offset_0": 8.6,
-  "offset_5": 8.38,
-  "offset_10": 8.48,
-  "offset_15": 8.27,
-  "double_costs": 8.6
+  "offset_0": 8.59,
+  "offset_5": 8.3,
+  "offset_10": 8.36,
+  "offset_15": 8.19,
+  "double_costs": 8.58
  }
 }

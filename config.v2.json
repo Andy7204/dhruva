@@ -1,0 +1,29 @@
+{
+  "_about": "Dhruva v2: paper-only forward test of index strategies chosen from research/v2. Educational research, not investment advice.",
+  "forward_start": "2026-09-30",
+  "capital": 1000000,
+  "benchmark": "Nifty 50 buy and hold (benchmark)",
+  "books": {
+    "A": {"strategy": "Midcap Momentum 50 70% + Gold 30%, yearly", "label": "A · Midcap Momentum 50 + gold"},
+    "B": {"strategy": "Momentum 30 60% + Gold 20% + Nasdaq-100 20%, yearly", "label": "B · Momentum 30 + gold + Nasdaq-100"},
+    "C": {"strategy": "Accelerating dual momentum (Mom30, Midcap Mom50, Nasdaq-100, gold)", "label": "C · Accelerating dual momentum (aggressive)"}
+  },
+  "instruments": {
+    "MIDMOM50": "Nifty Midcap150 Momentum 50 index (ETF or index fund)",
+    "MOM30": "Nifty200 Momentum 30 index (ETF or index fund)",
+    "GOLD": "Gold ETF (GOLDBEES)",
+    "NDX": "Nasdaq-100 fund in INR (for example MON100)",
+    "LIQ": "Liquid fund / LIQUIDBEES (modeled at 6% a year)",
+    "N50": "Nifty 50 index (NIFTYBEES)"
+  },
+  "success_criteria": {
+    "status": "PROPOSED_DEFAULT_2026-09-29",
+    "earliest_verdict_years": 3,
+    "final_verdict_years": 5,
+    "pass_min_excess_cagr_pct": 3.0,
+    "max_drawdown_limit_pct": 35.0,
+    "early_fail_after_years": 1,
+    "early_fail_cumulative_shortfall_pct": 15.0,
+    "_note": "Applied to each book's after-tax liquidation value against Nifty 50 buy-and-hold under the same costs and tax. Changes must be dated in docs/SUCCESS_CRITERIA.md."
+  }
+}

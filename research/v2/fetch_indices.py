@@ -10,7 +10,7 @@ import csv, json, time, urllib.request
 from datetime import date, datetime
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent/'data'
+OUT = Path(__file__).resolve().parents[2]/'data'/'indices'
 INDICES = ['NIFTY 50','NIFTY NEXT 50','NIFTY 100','NIFTY 200','NIFTY 500','NIFTY MIDCAP 150',
     'NIFTY SMALLCAP 250','NIFTY MIDCAP 100','NIFTY200 MOMENTUM 30','NIFTY MIDCAP150 MOMENTUM 50',
     'NIFTY500 MOMENTUM 50','NIFTY ALPHA 50','NIFTY100 LOW VOLATILITY 30','NIFTY200 QUALITY 30',

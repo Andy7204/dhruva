@@ -38,9 +38,6 @@ jobs:
         env:
           WATCHDOG_OUTCOME: ${{ steps.watchdog.outcome }}
         run: python -m dhruva.alerts
-      - name: Verify external test alert lifecycle
-        if: ${{ inputs.test_alert == true }}
-        run: python -m dhruva.watchdog --test-alert
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:

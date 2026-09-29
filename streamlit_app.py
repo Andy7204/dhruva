@@ -1,139 +1,119 @@
-"""Read-only paper research display with freshness and one recorded NAV."""
-from pathlib import Path
-import streamlit as st
-import pandas as pd
-from dhruva.health import inspect
+"""Dhruva v2 — read-only view of saved paper books and research. Never recalculates trades."""
 import json
-from dhruva.presentation import forward_rows, portfolio_rows, success_status
+from datetime import datetime
+from pathlib import Path
+
+import pandas as pd
+import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
-st.set_page_config(page_title='Dhruva', page_icon='🪷', layout='wide')
+NAMES = {'MIDMOM50': 'Midcap150 Momentum 50', 'MOM30': 'Nifty200 Momentum 30', 'GOLD': 'Gold',
+         'NDX': 'Nasdaq-100', 'LIQ': 'Liquid fund', 'N50': 'Nifty 50'}
+HOW = {
+    'A': 'Holds 70% in the Nifty Midcap150 Momentum 50 index and 30% in gold. Rebalances back to 70/30 once a year. Momentum picks midcaps that rose most over 6 and 12 months; gold cushions equity crashes.',
+    'B': 'Holds 60% Nifty200 Momentum 30, 20% gold and 20% Nasdaq-100 (in rupees). Rebalances once a year. The most diversified book: large-cap momentum, a crash hedge and a foreign growth market.',
+    'C': 'Every 21 sessions, scores Momentum 30, Midcap Momentum 50, Nasdaq-100 and gold by the average of their 1-, 3- and 6-month returns and holds only the best one. If even the best is negative, it holds a liquid fund. Backtest 13.4–18.8% a year depending only on which week it reviews, so its edge is fragile; it also pays more short-term tax.',
+}
 
 
-@st.fragment(run_every='60s')
-def render(root=ROOT):
-    st.title('Dhruva · paper research')
-    with st.spinner('Checking saved books and event history…'):
-        health = inspect(root,verify_snapshots=False)
-    if health['status'] == 'UNHEALTHY':
-        st.error('SYSTEM UNHEALTHY — records may be stale or incomplete. No current strategy conclusion is certified.')
-    elif health['status']=='OPERATIONAL':
-        st.success('Daily paper engine operational — latest completed session recorded. Model limitations below still apply.')
+def read(path):
+    try:
+        return json.loads((ROOT/path).read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return None
+
+
+def mix(weights):
+    return ', '.join(f'{NAMES.get(a, a)} {w*100:.0f}%' for a, w in sorted(weights.items(), key=lambda x: -x[1]) if w > .005) or 'Cash'
+
+
+def render():
+    st.set_page_config(page_title='Dhruva', page_icon='🪷', layout='wide')
+    st.title('Dhruva · index strategy paper lab')
+    st.caption('Paper-only forward test of three deterministic index strategies against Nifty 50. '
+               'Educational research, not investment advice. No real orders.')
+    cfg = read('config.v2.json')
+    status = read('runs/status.json') or {}
+    state = read('runs/forward/state.json')
+
+    try:
+        from dhruva.calendar import expected_date
+        expected = expected_date()
+    except Exception as exc:  # calendar coverage problems must be visible
+        expected = None; st.error(f'Calendar: {exc}')
+    as_of = min(b['as_of'] for b in state.values()) if state else None
+    if status.get('status') == 'FAILED':
+        st.error('Last daily update failed: '+'; '.join(status.get('errors', [])))
+    elif state and expected and as_of < expected and expected > cfg['forward_start']:
+        st.warning(f'Books recorded through {as_of}; latest completed session is {expected}. The daily update runs after 18:30 IST.')
+    elif state:
+        st.success(f'Books up to date through {as_of}.')
     else:
-        st.warning('Paper records available; accounting or operational verification is incomplete.')
-    for problem in health['problems']: st.error(problem)
-    for warning in health['warnings']: st.warning(warning)
-    st.subheader('Update status')
-    success = health['last_success']; attempt = health['last_attempt']
-    st.write('Last completed pipeline: '+(success['ended_at'] if success else 'Not yet recorded by the hardened pipeline'))
-    st.write('Latest pipeline attempt: '+(f"{attempt.get('ended_at') or attempt.get('started_at')} — {attempt['status']}" if attempt else 'Unknown'))
-    st.write('Latest benchmark data: '+str(health['market_date'] or 'Unavailable'))
-    st.write('Expected completed market session: '+str(health['expected_date'] or 'Calendar unavailable'))
-    st.write('Recorded portfolio date: '+str(health['portfolio_date'] or 'Unavailable'))
-    st.write('Strategy: Dhruva v'+health['strategy_version']+' · PAPER ONLY')
-    st.code('Deployment commit: '+health['git_commit'], language=None)
-    st.caption('This page verifies the event chain and saved balances. Full historical input snapshots are checked by the daily pipeline and watchdog, not decompressed again on every page refresh.')
-    if success: st.caption('Source commit: '+success['git_commit']+' · Excluded symbols cannot receive new orders.')
-    st.subheader('Recorded v1 portfolio')
-    if health['total'] is not None:
-        basis='after modeled tax reserve' if health.get('accounting') else 'before tax'
-        first, second, third = st.columns(3)
-        first.metric('Recorded value '+basis, f"₹{health['total']:,.2f}")
-        second.metric('Recorded return '+basis, f"{(health['total']/health['starting_capital']-1)*100:+.2f}%")
-        third.metric('Starting paper capital', f"₹{health['starting_capital']:,.0f}")
-        st.caption('One set of saved book observations; totals are not revalued from newer cached quotes.')
-        st.table([{'Book': b['name'], 'Date': b['as_of'], 'Recorded value '+basis+' (INR)': b['value'],
-                   'Starting capital (INR)': b['capital']} for b in health['books']])
-    else: st.error('Portfolio totals withheld: every configured book must be valid. Partial totals would be misleading.')
-    st.subheader('Income estimate — assumption only')
-    st.caption('LIQUIDBEES scenario: 4% simple annual income on ₹1,000 per prior-close settled unit, ACT/365 including weekends; configured slab tax, surcharge and cess, no reinvestment. Accrues from the September30, 2026 close. This is not a yield forecast, verified receipt, spendable balance or recorded NAV. Unknown actual credits and withholding remain excluded.')
-    st.caption('Idle cash scenario: the same 4% simple annual rate and tax on prior-close settled cash, as if parked in a liquid fund. Also from the September30 close, also outside recorded NAV.')
-    estimates=[{'Book':b['name'], 'Scenario':label, 'Through':b['state'][key]['as_of'],
-                'Assumed gross (INR)':round(b['state'][key]['gross'],2),
-                'Assumed tax (INR)':round(b['state'][key]['tax'],2),
-                'Assumed net (INR)':round(b['state'][key]['net'],2)}
-               for b in health['books'] for key,label in (('income_scenario','LIQUIDBEES units'),('cash_yield_scenario','Idle cash'))
-               if b['state'].get(key)]
-    if estimates: st.table(estimates)
-    else: st.write('No prospective income estimate recorded yet; it begins with the next eligible daily evaluations.')
-    st.subheader('Daily paper calls and portfolio')
-    st.caption('Evaluated after the market closes, normally 18:30 IST on weekdays. BUY/SELL are paper orders for the next eligible open; HOLD means no new trade. Closed-market days do not create new signals.')
-    if health['status']=='UNHEALTHY':
-        st.warning('Calls below are saved historical records, not current conclusions; resolve the reported errors first.')
-    for book in health['books']:
-        state=book['state']; pending=[o for o in state['orders'] if o['status']=='scheduled']
-        action=', '.join(sorted({o['side'] for o in pending})) if pending else 'HOLD'
-        changed=max([d for o in state['orders'] for d in (o.get('decided_date'),o.get('fill_date')) if d] or [state.get('inception') or 'start'])
-        st.write(f"**{book['name'].title()} — {action} · {book['as_of']}**"+('' if pending else f" · no change since {changed}"))
-        st.write(('Market filter permits stock entries.' if state.get('risk_on') else
-                  'Market filter is defensive: new stock entries are restricted; existing positions follow exit rules.')+
-                 (' Circuit breaker is active.' if state.get('breaker') else '')+
-                 f" Next regular allocation review in {state.get('next_rebalance_in','unknown')} trading sessions. Stops are checked daily.")
-        st.caption(f"Cash ₹{state['cash']:,.2f} · Tax reserve ₹{state.get('tax_reserve',0):,.2f} · Unsettled sale proceeds ₹{sum(r['amount'] for r in state.get('receivables',[])):,.2f}")
-    holdings,orders=portfolio_rows(health['books'])
-    if holdings: st.dataframe(holdings, hide_index=True, use_container_width=True)
-    else: st.write('No holdings available.')
-    with st.expander('Permanent paper order journal'):
-        if orders: st.dataframe(orders,hide_index=True,use_container_width=True)
-        else: st.write('No paper orders recorded.')
-    st.subheader('How the strategy works')
-    st.write('Dhruva ranks eligible Nifty-500 stocks by past 12-month momentum. A 200-day market trend filter restricts stock buying in weak markets. The 70% balanced core and 30% aggressive book share that filter but use different defensive allocations. Gold, silver, liquid funds and cash can reduce equity exposure; they are not guaranteed protection.')
-    st.write('Both books review allocations every 63 trading sessions. Each completed session still updates prices, fills eligible prior orders, checks stops and the drawdown circuit breaker, and records BUY, SELL or HOLD. A trend recovery does not guarantee an immediate purchase. This approach can miss rebounds and lose during choppy markets. It is not a buy-at-the-bottom strategy.')
-    st.caption('Costs, slippage, settlement restrictions and modeled shared tax reserve affect paper balances. Tax assumptions are simplified. AI may explain a call; it cannot choose trades.')
-    st.subheader('Forward paper performance')
-    if health.get('ledger') and health['total'] is not None and not any('LEDGER' in p for p in health['problems']):
-        try:
-            rows=forward_rows(root)
-            if rows:
-                frame=pd.DataFrame(rows)
-                st.line_chart(frame.set_index('Date')[['Paper index','Paper index + assumed income','NIFTYBEES total-return index','Nifty price index']])
-                st.caption('All series start at 100 at the labelled starting point. NIFTYBEES is the fair benchmark: an investable Nifty 50 ETF whose price keeps constituent dividends, so it tracks the Total Return Index less a small fee. It is shown before any tax an investor would pay on selling. The Nifty price index omits dividends and flatters the strategy by about 1.3% a year. Paper NAV includes modeled costs/tax; the "+ assumed income" line adds the 4% scenarios above and is not recorded NAV. Missing NIFTYBEES values are vendor gaps, not zero. A few days cannot establish effectiveness.')
-                criteria=json.loads((root/'config.json').read_text(encoding='utf-8')).get('success_criteria')
-                if criteria:
-                    verdict=success_status(rows,criteria)
-                    st.subheader('Does it work? Pre-registered test')
-                    st.write(f"**{verdict['verdict']}** — {verdict['reason']}")
-                    st.write(f"Rule, fixed in advance: after at least {criteria['earliest_verdict_years']} years, recorded paper NAV must beat NIFTYBEES by at least "
-                             f"{criteria['pass_min_excess_cagr_pct']:.1f} percentage points a year, with worst drawdown under {criteria['max_drawdown_limit_pct']:.0f}%. "
-                             f"It fails early if drawdown breaches that limit, or if after {criteria['early_fail_after_years']} year it trails NIFTYBEES by "
-                             f"{criteria['early_fail_cumulative_shortfall_pct']:.0f} points or more; final verdict at {criteria['final_verdict_years']} years. Assumed income never counts.")
-                    if verdict.get('through'):
-                        st.caption(f"Progress {verdict['start']} to {verdict['through']} ({verdict['years']:.2f} years): paper {verdict['paper_return_pct']:+.2f}%, "
-                                   f"NIFTYBEES {verdict['benchmark_return_pct']:+.2f}%, worst paper drawdown {verdict['worst_drawdown_pct']:.2f}%. "
-                                   '[Criteria and change log](https://github.com/Andy7204/dhruva/blob/main/docs/SUCCESS_CRITERIA.md)')
-                st.dataframe(frame,hide_index=True,use_container_width=True)
-                st.download_button('Download dated performance records',frame.to_csv(index=False),'dhruva_forward.csv','text/csv')
-        except (ValueError,KeyError,OSError,TypeError) as exc:
-            st.error('Forward history unavailable: '+str(exc))
-    else: st.write('Forward chart withheld until ledger and portfolio evidence are available.')
-    st.subheader('Historical backtest — separate research simulation')
-    st.warning('Retrospective challenge study, not an exact replay of today’s repaired live engine. Uses current constituents (survivorship bias), adjusted-price research units, simplified tax and execution assumptions. Results are not a forecast or a validated live return.')
-    score=root/'research/results/scorecard.csv'
+        st.info(f"Forward test starts with the {cfg['forward_start']} close. First paper allocations fill at the next session's close.")
+    for w in status.get('warnings', []):
+        st.warning(w)
+
+    st.header('Current paper calls')
+    if state:
+        bench = state.get('N50', {}).get('liquidation_value')
+        cols = st.columns(3)
+        for col, bid in zip(cols, [b for b in cfg['books']]):
+            b = state[bid]
+            with col:
+                st.subheader(b['label'])
+                if b.get('pending_target'):
+                    st.markdown(f"**REBALANCE at next close →** {mix(b['pending_target'])}")
+                else:
+                    nxt = b.get('next_review_in')
+                    st.markdown('**HOLD**' + (f' · next review in {nxt} sessions' if nxt else ''))
+                st.write('Holding: '+mix(b['weights']))
+                st.metric('Value after tax (paper)', f"₹{b['liquidation_value']:,.0f}",
+                          f"{(b['liquidation_value']/bench-1)*100:+.2f}% vs Nifty 50" if bench else None)
+                st.caption(f"Last decision {b.get('last_decision')} · trades {b['trades']} · costs ₹{b['costs']:,.0f} · tax paid ₹{b['tax_paid']:,.0f}")
+    else:
+        st.write('No paper allocations yet.')
+
+    st.header('Forward performance')
+    from dhruva.forward import history
+    hist = history(ROOT)
+    if len(hist) >= 2:
+        idx = hist/hist.iloc[0]*100
+        idx.columns = [(state or {}).get(c, {}).get('label', c) for c in idx.columns]
+        import altair as alt
+        long = idx.reset_index(names='Date').melt('Date', var_name='Book', value_name='Index (start = 100)')
+        st.altair_chart(alt.Chart(long).mark_line().encode(
+            x='Date:T', y=alt.Y('Index (start = 100):Q', scale=alt.Scale(zero=False)), color='Book:N'), use_container_width=True)
+        from dhruva.performance import summary
+        rows = summary(hist, cfg['success_criteria'])
+        st.dataframe(pd.DataFrame(rows).set_index('Book'), width='stretch')
+        st.caption('Values are after ETF costs and after the tax that selling everything would trigger. '
+                   'Annualized figures and ratios appear only after enough history; a few weeks prove nothing.')
+    else:
+        st.write('The chart starts once two sessions are recorded.')
+
+    st.header('Pre-registered success test')
+    c = cfg['success_criteria']
+    st.write(f"Each book passes only if, after at least {c['earliest_verdict_years']} years, its after-tax annual return beats Nifty 50 "
+             f"buy-and-hold by {c['pass_min_excess_cagr_pct']:.0f}+ points with worst drawdown under {c['max_drawdown_limit_pct']:.0f}%. "
+             f"It fails early on a deeper drawdown, or if after {c['early_fail_after_years']} year it trails Nifty 50 by "
+             f"{c['early_fail_cumulative_shortfall_pct']:.0f}+ points. Final verdict at {c['final_verdict_years']} years.")
+
+    st.header('How each strategy works')
+    for bid, spec in cfg['books'].items():
+        st.markdown(f"**{spec['label']}** — {HOW.get(bid, '')}")
+    st.caption('Signals use closes up to each day; trades fill at the next close. Costs: ETF expense ratios plus 0.1–0.3% per trade. '
+               'Tax: Indian FIFO capital gains (equity 20%/12.5%, gold and foreign funds 12.5% after two years or 31.2% slab), paid each April.')
+
+    st.header('Backtest evidence (research, not a forecast)')
+    score = ROOT/'research/v2/results/scorecard.csv'
     if score.exists():
-        table=pd.read_csv(score,index_col=0)
-        table.index=table.index.map(lambda s:{
-            'current_200_63':'Current policy: 200-day trend / 63-session review',
-            'faster_100_63':'100-day trend / 63-session review',
-            'faster_50_63':'50-day trend / 63-session review',
-            'monthly_200_21':'200-day trend / monthly review',
-            'crossing_200_63':'200-day trend / extra crossing reviews',
-            'no_market_gate_63':'No market trend filter',
-            'core_plus_dip':'70% current core + 30% dip buying',
-            'core_plus_index':'70% current core + 30% index holding',
-            'index_hold':'NIFTYBEES buy and hold',
-            'index_dip':'Staged NIFTYBEES dip buying'}.get(s.split('/')[-1],s))
-        st.caption('Existing study: 3 October 2022–15 September 2026. Returns include modeled research costs/tax and terminal liquidation. No best-performing variant was automatically deployed.')
-        st.dataframe(table[['return_pct','cagr_pct','max_drawdown_pct','fees_rupees','tax_rupees','trades']].rename(columns={
-            'return_pct':'Return %','cagr_pct':'Annualized return %','max_drawdown_pct':'Worst drawdown %',
-            'fees_rupees':'Fees INR','tax_rupees':'Tax INR','trades':'Fills'}),use_container_width=True)
-        st.markdown('[Read the existing study, dip-buying comparisons and limitations](https://github.com/Andy7204/dhruva/blob/main/research/results/REPORT.md)')
-    st.subheader('Methodology and evidence')
-    st.markdown('[Audit](https://github.com/Andy7204/dhruva/blob/main/docs/CURRENT_STATE_AUDIT.md) · '
-                '[Verified progress](https://github.com/Andy7204/dhruva/blob/main/docs/HARDENING_PROGRESS.md) · '
-                '[Frozen v1](https://github.com/Andy7204/dhruva/tree/main/strategies/dhruva_v1)')
-    st.write('Historical simulations are separate from forward paper observations. Original historical results contain the limitations documented in the audit.')
-    st.caption('Educational paper research only. No real orders. Health refreshes every 60 seconds while this page is active. '
-               'Weekday scheduling is nominal; missed or delayed jobs are not a no-signal conclusion.')
+        table = pd.read_csv(score)
+        st.dataframe(table, hide_index=True, width='stretch')
+    st.warning('Survivorship-free official NSE Total Return Indices, but factor-index history before each launch date is NSE\'s back-calculation. '
+               'Only the "live" columns use real post-launch data (4–14 years). 24 strategies were tested, so the best look better than their future. '
+               'The 2008 crash causes the deepest drawdowns. Momentum is now widely used and may earn less in future.')
+    st.markdown('[Method, data and limits](https://github.com/Andy7204/dhruva/blob/main/research/v2/README.md)')
+    st.caption(f'Page rendered {datetime.now():%Y-%m-%d %H:%M}. Data: niftyindices.com, Yahoo Finance.')
 
 
 render()

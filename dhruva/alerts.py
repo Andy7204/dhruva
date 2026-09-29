@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 import urllib.request
 import time
-from dhruva.ledger import atomic_write, canonical
+from dhruva.util import atomic_write, canonical
 
 RECEIPTS=Path(__file__).resolve().parents[1]/'runs/alerts'
 

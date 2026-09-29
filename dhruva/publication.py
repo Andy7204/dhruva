@@ -4,7 +4,7 @@ import subprocess
 import time
 
 ROOT=Path(__file__).resolve().parents[1]
-PATHS=['runs/','reports/dashboard.html','data/cache/']
+PATHS=['runs/','data/indices/']
 
 
 def publish(root=ROOT):
@@ -14,7 +14,7 @@ def publish(root=ROOT):
     git('add','--',*PATHS)
     if git('diff','--cached','--quiet',check=False).returncode==0:
         return 'NO_CHANGES'
-    git('commit','-m','Refresh daily paper books and dashboard')
+    git('commit','-m','Refresh daily paper books')
     for attempt in range(3):
         if git('push','origin','HEAD:main',check=False).returncode==0: return 'PUBLISHED'
         git('fetch','origin','main')

@@ -1,0 +1,56 @@
+Nifty 50 buy and hold (benchmark)
+Nifty 500 buy and hold
+Midcap 150 buy and hold
+Smallcap 250 buy and hold
+Nifty200 Momentum 30 buy and hold
+Midcap150 Momentum 50 buy and hold
+Alpha 50 buy and hold
+Low Volatility 30 buy and hold
+Quality 30 buy and hold
+Nifty200 Value 30 buy and hold
+Alpha Low-Vol 30 buy and hold
+Multi-factor equal weight (Mom, LowVol, Quality, Value), yearly
+Momentum 30 + Low Vol 30, 50/50 yearly
+Momentum 30 60% + Gold 20% + Nasdaq-100 20%, yearly
+Midcap Momentum 50 70% + Gold 30%, yearly
+Factor rotation top-1, 12-month, monthly, dual momentum
+Factor rotation top-2, 12-month, monthly, dual momentum
+Factor rotation top-2, 6-month, quarterly, dual momentum
+Global dual momentum (Nifty 50, Nasdaq-100, gold), 12-month
+Accelerating dual momentum (Mom30, Midcap Mom50, Nasdaq-100, gold)
+Momentum 30 with 200-day trend filter, monthly
+Nifty 50 with 200-day trend filter, monthly
+Midcap Momentum 50 with 200-day trend filter, monthly
+Momentum 30 volatility-targeted 15%, monthly
+{'window': ['2007-10-04', '2026-09-29'], 'holdout_from': '2016-01-01', 'candidates': 24, 'capital': 1000000, 'basis': 'liquidation value after ETF costs and Indian tax; one-day execution lag'}
+                                                          strategy  CAGR  maxDD  Sharpe  Sortino  Calmar  design CAGR  holdout CAGR  beat 5y %  beat 10y %  live from  live CAGR  Nifty50 same period
+                         Midcap Momentum 50 70% + Gold 30%, yearly 17.79 -48.69   0.904    1.250   0.365        16.09         18.15      100.0       100.0 2022-08-16      18.50                 6.49
+                                Midcap150 Momentum 50 buy and hold 17.29 -70.27   0.658    0.887   0.246        14.86         18.29      100.0       100.0 2022-08-16      14.79                 6.49
+               Momentum 30 60% + Gold 20% + Nasdaq-100 20%, yearly 15.34 -44.87   0.779    1.062   0.342        12.53         16.83       99.0       100.0 2020-08-25      17.10                11.76
+Accelerating dual momentum (Mom30, Midcap Mom50, Nasdaq-100, gold) 13.41 -52.49   0.530    0.704   0.255        16.94         11.99       56.6        46.5 2022-08-16      21.53                 6.49
+                                    Nifty200 Value 30 buy and hold 13.21 -58.50   0.414    0.603   0.226         9.23         15.88       44.8        50.8 2024-06-12       3.17                -0.29
+                                 Nifty200 Momentum 30 buy and hold 13.20 -63.32   0.472    0.633   0.209        10.29         14.89       97.2       100.0 2020-08-25      15.00                11.76
+             Midcap Momentum 50 with 200-day trend filter, monthly 13.17 -35.40   0.557    0.740   0.372        18.24          8.97       71.7        88.6 2022-08-16      10.08                 6.49
+   Multi-factor equal weight (Mom, LowVol, Quality, Value), yearly 13.09 -54.67   0.506    0.694   0.239        12.12         13.45       86.5       100.0 2024-06-12      -1.14                -0.29
+                                             Alpha 50 buy and hold 13.08 -76.92   0.420    0.549   0.170         7.76         16.78       93.0       100.0 2012-11-19      19.02                11.03
+                                     Alpha Low-Vol 30 buy and hold 12.89 -54.81   0.532    0.697   0.235        12.90         12.28       85.3       100.0 2017-07-10      10.89                 9.74
+                                           Quality 30 buy and hold 12.75 -53.03   0.517    0.711   0.240        15.13         10.36       80.8        92.9 2018-04-18       9.24                 9.73
+                                           Midcap 150 buy and hold 12.73 -70.51   0.429    0.583   0.181         8.76         15.33       89.4       100.0 2007-10-01      12.73                 8.61
+                            Momentum 30 + Low Vol 30, 50/50 yearly 12.68 -55.69   0.499    0.666   0.228        11.39         13.19       99.7       100.0 2020-08-25      13.88                11.76
+                                    Low Volatility 30 buy and hold 12.04 -46.18   0.502    0.681   0.261        12.31         11.30       86.2       100.0 2016-07-08      10.94                10.41
+                      Momentum 30 volatility-targeted 15%, monthly 11.94 -28.27   0.528    0.715   0.422        13.34         11.01       67.9        92.9 2020-08-25      12.96                11.76
+                                         Smallcap 250 buy and hold 10.43 -73.36   0.306    0.413   0.142         6.75         12.95       57.8        74.6 2007-10-01      10.43                 8.61
+          Factor rotation top-2, 6-month, quarterly, dual momentum 10.15 -39.83   0.320    0.447   0.255        12.59         10.29       57.9        46.7 2024-06-12      -2.97                -0.29
+                    Momentum 30 with 200-day trend filter, monthly 10.11 -35.76   0.357    0.467   0.283        12.50          7.94       52.5        69.8 2020-08-25       7.51                11.76
+           Factor rotation top-1, 12-month, monthly, dual momentum  9.51 -67.37   0.275    0.365   0.141         4.20         12.73       62.4        74.4 2024-06-12      -1.78                -0.29
+                                            Nifty 500 buy and hold  9.33 -61.14   0.275    0.367   0.153         5.82         11.86       58.5        81.9 2007-10-01       9.33                 8.61
+           Factor rotation top-2, 12-month, monthly, dual momentum  8.78 -59.51   0.244    0.320   0.148         6.01         11.40       35.1        27.9 2024-06-12       2.38                -0.29
+                                 Nifty 50 buy and hold (benchmark)  8.61 -56.60   0.236    0.316   0.152         5.63         10.78        0.0         0.0 2007-10-01       8.61                 8.61
+       Global dual momentum (Nifty 50, Nasdaq-100, gold), 12-month  7.34 -31.35   0.160    0.228   0.234         6.29          8.64       18.6         0.0 2007-10-01       7.34                 8.61
+                       Nifty 50 with 200-day trend filter, monthly  5.40 -40.95   0.006    0.008   0.132         7.50          7.95        6.0         7.3 2007-10-01       5.40                 8.61
+Accelerating dual momentum (Mom30, Midcap Mom50, Nasdaq-100, gold) {'offset_0': np.float64(17.86), 'offset_5': np.float64(13.89), 'offset_10': np.float64(16.12), 'offset_15': np.float64(18.76), 'double_costs': np.float64(15.81)}
+Midcap Momentum 50 70% + Gold 30%, yearly {'offset_0': np.float64(17.54), 'offset_5': np.float64(17.59), 'offset_10': np.float64(17.57), 'offset_15': np.float64(17.44), 'double_costs': np.float64(17.48)}
+Momentum 30 60% + Gold 20% + Nasdaq-100 20%, yearly {'offset_0': np.float64(15.24), 'offset_5': np.float64(15.09), 'offset_10': np.float64(15.16), 'offset_15': np.float64(15.02), 'double_costs': np.float64(15.21)}
+Midcap150 Momentum 50 buy and hold {'offset_0': np.float64(17.33), 'offset_5': np.float64(17.14), 'offset_10': np.float64(17.17), 'offset_15': np.float64(16.88), 'double_costs': np.float64(17.32)}
+Alpha 50 buy and hold {'offset_0': np.float64(13.15), 'offset_5': np.float64(12.82), 'offset_10': np.float64(12.77), 'offset_15': np.float64(12.58), 'double_costs': np.float64(13.14)}
+Nifty 50 buy and hold (benchmark) {'offset_0': np.float64(8.59), 'offset_5': np.float64(8.3), 'offset_10': np.float64(8.36), 'offset_15': np.float64(8.19), 'double_costs': np.float64(8.58)}

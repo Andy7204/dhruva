@@ -1,25 +1,12 @@
 # Dhruva — Claude Code entry point
 
-Read `AGENTS.md` fully, then `docs/CLAUDE_HANDOFF.md` and
-`docs/HANDOFF_CHECKLIST.md`. Latest user instructions override historical plans.
+Read `AGENTS.md`. Public paper-only app: https://github.com/Andy7204/dhruva,
+Streamlit entry `streamlit_app.py`, branch `main`, local checkout `Z:\dhruva`.
 
-This is an existing public **paper-only** app, not a new build. Local Windows
-checkout: `Z:\dhruva`; public repository: `https://github.com/Andy7204/dhruva`.
-Main branch: `main`; Streamlit entry: `streamlit_app.py`.
+v2 (September29, 2026): three index strategy paper books (A, B, C) against Nifty 50,
+forward test from the September30, 2026 close. v1 stock picking was deleted after
+it lost to Nifty; it is recoverable from tag `v1-final`.
 
-Non-negotiable: deterministic trading, no look-ahead, honest costs/tax, no real
-orders, no silent rewriting of saved history. LLM narration never controls trades.
-The original 26-phase and later ten-phase programmes were cancelled. Do not
-restart them or undertake a new architecture/research programme without a request.
-
-Repair current books in place. Preserve original archive and immutable ledger.
-Read newest `docs/HARDENING_PROGRESS.md` entries first; older claims about missing
-tax/settlement or mandatory phase gates are historical, not current requirements.
-
-September29 reference code: `9e27d1f`, 94 tests and remote CI passed. Source is
-newer than last observed completed book date September28. Do not call later daily
-execution verified merely because CI passed. Check current Actions and books.
-
-Keep changes focused, tests relevant, and communication plain. User prioritizes
-working daily paper calls and accumulating honest forward evidence over expansion.
-The separate 4% income scenario is an assumption, never a receipt or NAV component.
+Non-negotiable: deterministic rules, no look-ahead, honest costs and tax, no real
+orders, never rewrite `runs/forward/log.jsonl` rows, no investment advice. Change
+strategies or success criteria only on the owner's request, with a dated note.

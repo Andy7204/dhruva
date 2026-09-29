@@ -4,9 +4,9 @@ on:
     paths:
       - 'dhruva/**'
       - 'streamlit_app.py'
-      - 'qlab/**'
+      - 'lab/**'
       - 'tests/**'
-      - 'strategies/**'
+      - 'config.v2.json'
       - 'requirements*'
       - '.github/workflows/**'
       - 'data/trading_calendar.json'
@@ -28,6 +28,4 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.lock
       - run: python -m pip install --retries 3 --timeout 30 -r requirements.lock
-      - run: python -m dhruva.freeze
       - run: python -m unittest discover -s tests -v
-      - run: python scripts/ledger_acceptance.py

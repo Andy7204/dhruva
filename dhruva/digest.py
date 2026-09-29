@@ -1,59 +1,61 @@
 """Change-only paper call notices plus a Friday weekly summary.
 
 Daily evaluation continues; people are only notified when something changed
-(new paper orders, fills, market filter or circuit breaker flips) or once a week.
+(a book decides a new allocation) or once a week on Fridays.
 """
 from datetime import date
 import json
 import os
 from pathlib import Path
 
-from dhruva.ledger import atomic_write, canonical
+from dhruva.util import atomic_write, canonical
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKER = '<!-- dhruva-digest -->'
 TITLE = '[Dhruva] Paper call updates'
 
 
-def build(previous, results, ccy='₹'):
-    """Return {'kind': CHANGE|WEEKLY|NONE, 'as_of', 'text'} from saved states only."""
-    as_of = results[0]['state']['as_of']
+NAMES = {'MIDMOM50': 'Midcap Momentum 50', 'MOM30': 'Momentum 30', 'GOLD': 'gold', 'NDX': 'Nasdaq-100',
+         'LIQ': 'liquid fund', 'N50': 'Nifty 50'}
+
+
+def _mix(weights):
+    return ', '.join(f'{NAMES.get(a, a)} {w*100:.0f}%' for a, w in sorted(weights.items(), key=lambda x: -x[1]) if w > 0.005) or 'cash'
+
+
+def build(previous, books, ccy='₹'):
+    """Return {'kind': CHANGE|WEEKLY|NONE, 'as_of', 'text'} from book summaries only."""
+    as_of = next(iter(books.values()))['as_of']
+    bench = books.get('N50', {}).get('liquidation_value')
     changes = []
-    for r in results:
-        name, st = r['name'], r['state']
-        old = previous.get(name) or {}
-        for o in st['orders']:
-            if o['status'] == 'scheduled' and o.get('decided_date') == as_of:
-                changes.append(f"{name}: new paper {o['side']} {o['symbol']} for the next open"
-                               + (f" ({o['reason']})" if o.get('reason') else ''))
-            if o.get('fill_date') == as_of and o['status'] == 'filled':
-                changes.append(f"{name}: filled {o['side']} {o['symbol']} {o.get('qty')} @ {o.get('fill_price')}")
-        if old and bool(old.get('risk_on')) != bool(st.get('risk_on')):
-            changes.append(f"{name}: market filter turned {'ON (stock entries allowed)' if st.get('risk_on') else 'OFF (defensive)'}")
-        if old and bool(old.get('breaker')) != bool(st.get('breaker')):
-            changes.append(f"{name}: circuit breaker {'ACTIVE' if st.get('breaker') else 'released'}")
-    nav = sum(r['state']['history'][-1][1] for r in results)
-    week_ago = [sum(v for d, v in r['state']['history'][-6:-5]) for r in results]
-    lines = [f'Dhruva PAPER ONLY — {as_of} — total recorded NAV {ccy}{nav:,.2f}']
+    for bid, b in books.items():
+        if bid == 'N50': continue
+        if b.get('pending_target'):
+            old = (previous.get(bid) or {}).get('weights') or {}
+            target = b['pending_target']
+            if any(abs(target.get(a, 0)-old.get(a, 0)) > 0.02 for a in set(target) | set(old)):
+                changes.append(f"{b['label']}: rebalance at the next close to {_mix(target)}")
+    lines = [f'Dhruva PAPER ONLY — {as_of}']
     if changes:
-        kind = 'CHANGE'; lines += ['What changed:'] + ['- '+c for c in changes]
+        kind = 'CHANGE'; lines += ['New paper calls:'] + ['- '+c for c in changes]
     elif date.fromisoformat(as_of).weekday() == 4:
-        kind = 'WEEKLY'
-        lines.append('Weekly summary: no trades or signal changes this session.')
-        if all(week_ago):
-            lines.append(f'Change over the last five recorded sessions: {(nav/sum(week_ago)-1)*100:+.2f}%')
+        kind = 'WEEKLY'; lines.append('Weekly summary: no new calls.')
     else:
         kind = 'NONE'; lines.append('No change.')
-    for r in results:
-        st = r['state']
-        lines.append(f"{r['name']}: {len(st['holdings'])} holdings, cash {ccy}{st['cash']:,.0f}, "
-                     f"next allocation review in {st.get('next_rebalance_in', '?')} sessions")
+    for bid, b in books.items():
+        lines.append(f"{b['label']}: {ccy}{b['liquidation_value']:,.0f} after tax"
+                     + (f" ({(b['liquidation_value']/bench-1)*100:+.2f}% vs Nifty 50)" if bench and bid != 'N50' else '')
+                     + f"; holding {_mix(b['weights'])}")
+    lines.append('Paper research, not investment advice.')
     return {'kind': kind, 'as_of': as_of, 'text': '\n'.join(lines)}
 
 
 def post(root=ROOT, client=None):
     """Comment on one standing issue, at most once per session date."""
-    digest = json.loads((root/'runs/digest.json').read_text(encoding='utf-8'))
+    path = root/'runs/digest.json'
+    if not path.exists():
+        return {'status': 'NOTHING_TO_SEND'}
+    digest = json.loads(path.read_text(encoding='utf-8'))
     if digest['kind'] == 'NONE':
         return {'status': 'NOTHING_TO_SEND'}
     receipt = root/'runs/alerts/digest-last.json'

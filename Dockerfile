@@ -1,13 +1,10 @@
-# Dhruva — momentum wealth engine. Portable container for any device.
+# Dhruva — index strategy paper lab. Portable container.
 #
 #   Build:  docker build -t dhruva .
 #   Serve the dashboard (http://localhost:8501):
 #           docker run -p 8501:8501 dhruva
 #   Run one daily update instead:
-#           docker run dhruva python scripts/daily_run.py
-#   With Telegram + LLM narrator:
-#           docker run -e TELEGRAM_TOKEN=xxx -e TELEGRAM_CHAT=yyy \
-#                      -e ANTHROPIC_API_KEY=zzz dhruva python scripts/daily_run.py
+#           docker run dhruva python -m dhruva.daily
 FROM python:3.12-slim
 
 WORKDIR /app

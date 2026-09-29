@@ -3,8 +3,8 @@ import json, sys
 from pathlib import Path
 import pandas as pd
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-import engine as E, strategies as S
+sys.path.insert(0, str(HERE.parents[1]))
+from lab import engine as E, strategies as S
 
 TOP = ['Accelerating dual momentum (Mom30, Midcap Mom50, Nasdaq-100, gold)',
        'Midcap Momentum 50 70% + Gold 30%, yearly',

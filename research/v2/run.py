@@ -10,9 +10,9 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
-import engine as E  # noqa: E402
-import strategies as S  # noqa: E402
+sys.path.insert(0, str(HERE.parents[1]))
+from lab import engine as E  # noqa: E402
+from lab import strategies as S  # noqa: E402
 
 OUT = HERE/'results'
 HOLDOUT = '2016-01-01'
