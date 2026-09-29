@@ -106,8 +106,8 @@ class LedgerTests(unittest.TestCase):
         self.assertEqual(self.ledger.snapshot(second),k2)
         # Three weeks, two unchanged: the second snapshot adds only one chunk.
         self.assertEqual(len(list((self.root/'snapshots/chunks').glob('*.gz'))),4)
-        chunk=next((self.root/'snapshots/chunks').glob('*.gz'))
-        chunk.write_bytes(gzip.compress(b'{}'))
+        used=json.loads((self.root/'snapshots'/f'{k2}.manifest.json').read_bytes())['chunks'][-1]
+        (self.root/'snapshots/chunks'/f'{used}.json.gz').write_bytes(gzip.compress(b'{}'))
         with self.assertRaises(LedgerError): self.ledger.read_snapshot(k2)
 
     def test_legacy_whole_snapshots_still_verify(self):
