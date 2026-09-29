@@ -236,11 +236,16 @@ def daily_run(refresh: bool = True, verbose: bool = True, progress=None) -> dict
     if not any_action:
         alines = [f"Dhruva PAPER ONLY — {results[0]['state'].get('as_of', '')}: NO ACTION — strategy unchanged."]
     (RUNS / "alert.txt").write_text("\n".join(alines), encoding="utf-8")
+    from dhruva.digest import build as build_digest
+    digest = build_digest(input_states, results, cfg['base_currency'])
+    (RUNS / 'digest.json').write_text(json.dumps(digest, indent=2, ensure_ascii=False), encoding='utf-8')
     emit('report','COMPLETE', str(out))
     import os
-    if os.getenv('TELEGRAM_TOKEN') and os.getenv('TELEGRAM_CHAT'):
+    if digest['kind'] == 'NONE':
+        emit('alerts','COMPLETE', 'No change; notices are sent only on change or the Friday summary')
+    elif os.getenv('TELEGRAM_TOKEN') and os.getenv('TELEGRAM_CHAT'):
         emit('alerts','RUNNING')
-        delivered=NT.send_telegram(narrative + "\n\n" + "\n".join(alines))
+        delivered=NT.send_telegram(digest['text'] + "\n\n" + narrative)
         emit('alerts','COMPLETE' if delivered else 'WARNING', 'Telegram delivered' if delivered else 'Telegram delivery failed')
     else: emit('alerts','NOT_CONFIGURED', 'Optional Telegram is not configured; external failure channel pending Phase9')
 

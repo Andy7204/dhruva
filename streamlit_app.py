@@ -63,7 +63,8 @@ def render(root=ROOT):
     for book in health['books']:
         state=book['state']; pending=[o for o in state['orders'] if o['status']=='scheduled']
         action=', '.join(sorted({o['side'] for o in pending})) if pending else 'HOLD'
-        st.write(f"**{book['name'].title()} — {action} · {book['as_of']}**")
+        changed=max([d for o in state['orders'] for d in (o.get('decided_date'),o.get('fill_date')) if d] or [state.get('inception') or 'start'])
+        st.write(f"**{book['name'].title()} — {action} · {book['as_of']}**"+('' if pending else f" · no change since {changed}"))
         st.write(('Market filter permits stock entries.' if state.get('risk_on') else
                   'Market filter is defensive: new stock entries are restricted; existing positions follow exit rules.')+
                  (' Circuit breaker is active.' if state.get('breaker') else '')+
