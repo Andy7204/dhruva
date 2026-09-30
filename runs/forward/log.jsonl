@@ -1,0 +1,4 @@
+{"book": "A", "date": "2026-09-30", "liquidation_value": 1000000.0, "nav": 1000000.0, "pending_target": null, "recorded_at": "2026-09-30T18:14:16.387126+00:00", "weights": {}}
+{"book": "B", "date": "2026-09-30", "liquidation_value": 1000000.0, "nav": 1000000.0, "pending_target": null, "recorded_at": "2026-09-30T18:14:16.387126+00:00", "weights": {}}
+{"book": "C", "date": "2026-09-30", "liquidation_value": 1000000.0, "nav": 1000000.0, "pending_target": null, "recorded_at": "2026-09-30T18:14:16.387126+00:00", "weights": {}}
+{"book": "N50", "date": "2026-09-30", "liquidation_value": 1000000.0, "nav": 1000000.0, "pending_target": null, "recorded_at": "2026-09-30T18:14:16.387126+00:00", "weights": {}}

@@ -1,8 +1,8 @@
 # ELLEN — Ellenbarrie Industrial Gases Ltd. (Chemicals)
-Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-09-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 90.1 · Stage 2 score 85.6 · score 20 sessions ago 90.1 · 60 sessions ago 90.1
-Price ₹369.35 · 12-month return -25.7% · -24.2% from 52-week high · RS rank 83.9 · stage-2 trend False · turnover ₹51.63 cr/day
+Price ₹356.90 · 12-month return -26.7% · -25.5% from 52-week high · RS rank 81.3 · stage-2 trend False · turnover ₹55.09 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 18.0% · QoQ 12.9% (previous QoQ 7.5%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 1.27 · class: A productive growth investment · receivables growth -23.
 Net debt/EBITDA 1.08 · interest cover 28.0 · dilution 0.0% · ROE 10.7% · EBITDA/invested capital 14.3%
 
 ## Valuation
-Market cap ₹5205 cr · TTM P/E 43.1 · PEG 0.58 · EV/EBITDA 32.5 · EPS growth minus 12-month price return 100.3 pts
+Market cap ₹5030 cr · TTM P/E 41.7 · PEG 0.56 · EV/EBITDA 31.4 · EPS growth minus 12-month price return 101.4 pts
 
 ## Industry (same NSE industry, this scan)
 44 peers · 61% growing revenue >20% · 70% expanding EBITDA margin · median revenue YoY 25.2%

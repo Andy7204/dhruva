@@ -1,8 +1,8 @@
 # IMFA — Indian Metals & Ferro Alloys Ltd. (Metals & Mining)
-Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-09-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 83.7 · Stage 2 score 75.2 · score 20 sessions ago 83.7 · 60 sessions ago 83.7
-Price ₹1206.50 · 12-month return 7.4% · -27.1% from 52-week high · RS rank 34.6 · stage-2 trend False · turnover ₹10.73 cr/day
+Price ₹1190.90 · 12-month return 6.4% · -28.0% from 52-week high · RS rank 30.7 · stage-2 trend False · turnover ₹10.60 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 69.3% · QoQ 25.8% (previous QoQ 8.6%) · quarters of sequential growth in last 4: 4
@@ -15,7 +15,7 @@ CFO/PAT 0.75 · class: A productive growth investment · receivables growth 111.
 Net debt/EBITDA 1.38 · interest cover 23.6 · dilution 0.0% · ROE 15.6% · EBITDA/invested capital 17.7%
 
 ## Valuation
-Market cap ₹6510 cr · TTM P/E 12.5 · PEG 0.04 · EV/EBITDA 11.5 · EPS growth minus 12-month price return 192.6 pts
+Market cap ₹6425 cr · TTM P/E 12.4 · PEG 0.04 · EV/EBITDA 11.4 · EPS growth minus 12-month price return 193.6 pts
 
 ## Industry (same NSE industry, this scan)
 25 peers · 56% growing revenue >20% · 56% expanding EBITDA margin · median revenue YoY 22.1%

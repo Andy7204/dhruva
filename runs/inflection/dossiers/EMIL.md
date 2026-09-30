@@ -1,8 +1,8 @@
 # EMIL — Electronics Mart India Ltd. (Consumer Services)
-Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-09-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 90.2 · Stage 2 score 79.1 · score 20 sessions ago 90.2 · 60 sessions ago 90.2
-Price ₹191.71 · 12-month return 30.9% · -4.3% from 52-week high · RS rank 94.4 · stage-2 trend True · turnover ₹66.97 cr/day
+Price ₹205.36 · 12-month return 43.9% · 0.0% from 52-week high · RS rank 96.7 · stage-2 trend True · turnover ₹80.84 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 39.1% · QoQ 26.4% (previous QoQ -1.4%) · quarters of sequential growth in last 4: 2
@@ -15,7 +15,7 @@ CFO/PAT 4.14 · class: healthy · receivables growth -25.5% vs revenue 6.6% · i
 Net debt/EBITDA 1.87 · interest cover 6.5 · dilution 0.0% · ROE 6.6% · EBITDA/invested capital 17.9%
 
 ## Valuation
-Market cap ₹7376 cr · TTM P/E 35.8 · PEG 0.08 · EV/EBITDA 18.3 · EPS growth minus 12-month price return 169.1 pts
+Market cap ₹7901 cr · TTM P/E 38.3 · PEG 0.08 · EV/EBITDA 19.4 · EPS growth minus 12-month price return 156.1 pts
 
 ## Industry (same NSE industry, this scan)
 43 peers · 51% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY 22.4%

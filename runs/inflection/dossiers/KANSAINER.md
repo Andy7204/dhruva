@@ -1,8 +1,8 @@
 # KANSAINER — Kansai Nerolac Paints Ltd. (Consumer Durables)
-Evidence dossier generated 2026-09-29 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-09-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 87.4 · Stage 2 score 74.7 · score 20 sessions ago 87.4 · 60 sessions ago 87.4
-Price ₹181.33 · 12-month return -26.1% · -29.4% from 52-week high · RS rank 18.3 · stage-2 trend False · turnover ₹6.07 cr/day
+Price ₹177.99 · 12-month return -27.4% · -30.7% from 52-week high · RS rank 15.4 · stage-2 trend False · turnover ₹5.96 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 30.7% · QoQ 21.5% (previous QoQ -1.4%) · quarters of sequential growth in last 4: 2
@@ -15,7 +15,7 @@ CFO/PAT 1.52 · class: healthy · receivables growth 8.2% vs revenue 3.0% · inv
 Net debt/EBITDA 0.02 · interest cover 47.8 · dilution 0.0% · ROE 8.8% · EBITDA/invested capital 15.6%
 
 ## Valuation
-Market cap ₹14663 cr · TTM P/E 21.4 · PEG 0.19 · EV/EBITDA 13.9 · EPS growth minus 12-month price return 139.5 pts
+Market cap ₹14393 cr · TTM P/E 21.0 · PEG 0.19 · EV/EBITDA 13.6 · EPS growth minus 12-month price return 140.8 pts
 
 ## Industry (same NSE industry, this scan)
 39 peers · 44% growing revenue >20% · 46% expanding EBITDA margin · median revenue YoY 18.2%

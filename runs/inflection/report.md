@@ -1,11 +1,11 @@
-# Dhruva inflection report — 2026-09-29
+# Dhruva inflection report — 2026-09-30
 
 Paper research, not investment advice. Holdings change only after the owner confirms a trade.
 
 ## Material changes
 | Company | Previous | New | Status | Action | Change |
 |---|---:|---:|---|---|---|
-| ELLEN | — | 55 | YELLOW | WAIT | first review |
+| none today | | | | | |
 
 ## Sandisk radar (latest underwriting, by score)
 | Company | Score | Status | Action | Last review | Discovered at |
@@ -18,7 +18,7 @@ Paper research, not investment advice. Holdings change only after the owner conf
 - DEEPAKNTR (Chemicals): Stage 2 82.8, Stage 1 90.4
 - EMIL (Consumer Services): Stage 2 79.1, Stage 1 90.2
 - LUPIN (Healthcare): Stage 2 76.7, Stage 1 88.4
-- HINDCOPPER (Metals & Mining): Stage 2 75.4, Stage 1 84.0
+- HINDCOPPER (Metals & Mining): Stage 2 75.4, Stage 1 84.1
 - GESHIP (Services): Stage 2 75.4, Stage 1 89.4
 - IMFA (Metals & Mining): Stage 2 75.2, Stage 1 83.7
 - NATIONALUM (Metals & Mining): Stage 2 74.9, Stage 1 83.4

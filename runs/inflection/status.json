@@ -1,11 +1,11 @@
 {
- "session": "2026-09-29",
- "started_at": "2026-09-29T18:24:38.958198+00:00",
+ "session": "2026-09-30",
+ "started_at": "2026-09-30T18:14:18.017080+00:00",
  "warnings": [],
  "symbols": 745,
  "priced": 740,
  "fundamentals_ok": 728,
- "vetoed": 7,
+ "vetoed": 8,
  "stage2_pool": 50,
  "finalists": [
   "NAVINFLUOR",
@@ -19,10 +19,10 @@
   "NATIONALUM",
   "KANSAINER"
  ],
- "announcements": 68435,
+ "announcements": 68944,
  "news_ok": true,
  "price_errors": 5,
  "fundamental_errors": 0,
  "announcement_errors": [],
- "ended_at": "2026-09-29T18:25:13.590218+00:00"
+ "ended_at": "2026-09-30T18:16:16.199205+00:00"
 }
