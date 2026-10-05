@@ -26,7 +26,7 @@ def features(sym, fund, events, as_of):
     e180 = _window(events, sym, as_of, 180)
     e365 = _window(events, sym, as_of, 365)
     orders = e180[e180['desc'] == 'Bagging/Receiving of orders/contracts'] if e180 is not None and len(e180) else pd.DataFrame()
-    x['order_intensity_180d'] = float(orders['order_intensity'].fillna(0).sum()) if 'order_intensity' in orders else 0.
+    x['order_intensity_180d'] = min(1.0, float(orders['order_intensity'].fillna(0).sum())) if 'order_intensity' in orders else 0.  # capped
     x['tier1_order_180d'] = bool(orders['tier1_customer'].fillna(False).any()) if 'tier1_customer' in orders else False
     cap = e365[e365['desc'] == 'Capacity addition'] if e365 is not None and len(e365) else pd.DataFrame()
     x['capacity_pct_365d'] = float(cap['capacity_pct'].max()) if 'capacity_pct' in cap and cap['capacity_pct'].notna().any() else 0.

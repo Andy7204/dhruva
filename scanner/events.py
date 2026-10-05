@@ -84,10 +84,15 @@ def amounts(text, usd_inr):
     return out
 
 
+TOTALS = ('order book', 'orderbook', 'order inflow', 'order backlog', 'turnover', 'revenue', 'net worth', 'market cap',
+          'total income', 'total order', 'classif', 'categor', 'range of', 'paid-up', 'paid up', 'share capital', 'profit')
+
+
 def order_facts(text, usd_inr):
     t = ' '.join(text.split())
     low = t.lower()
-    found = amounts(t, usd_inr)
+    # Drop company totals and size-band boilerplate (e.g. "order book of Rs 3,07,990 crore").
+    found = [(pos, v) for pos, v in amounts(t, usd_inr) if not any(w in low[max(0, pos-120):pos] for w in TOTALS)]
     value = None
     for key in ('size of order', 'size of the order', 'value of order', 'order value', 'contract value', 'total potential value',
                 'consideration', 'size', 'value', 'worth'):
@@ -142,12 +147,11 @@ def preferential_facts(text, usd_inr):
 
 
 def rating_facts(text):
+    """Only an actual rating action counts; disclaimers mention "upgrade/downgrade" generically."""
     low = ' '.join(text.split()).lower()
-    if 'upgrad' in low: move = 1
-    elif 'downgrad' in low: move = -1
-    elif 'outlook' in low and 'positive' in low and 'revised' in low: move = 0.5
-    elif 'outlook' in low and 'negative' in low and 'revised' in low: move = -0.5
-    else: move = 0
+    up = re.search(r'(?:rating[s]?\s+(?:has|have)\s+been\s+upgraded|upgraded\s+(?:the\s+|its\s+)?(?:long|short|rating|from|to)|upgrade\s+in\s+(?:the\s+)?rating|outlook\s+(?:revised|changed)\s+(?:from\s+\w+\s+)?to\s+positive)', low)
+    down = re.search(r'(?:rating[s]?\s+(?:has|have)\s+been\s+downgraded|downgraded\s+(?:the\s+)?(?:long|short|rating|from|to)|outlook\s+(?:revised|changed)\s+(?:from\s+\w+\s+)?to\s+negative)', low)
+    move = 1 if up and not down else -1 if down and not up else 0
     return {'rating_move': move}
 
 
@@ -186,9 +190,13 @@ def evaluate(filings, fund, prices, usd_inr, universe=None):
         if desc == ORDER:
             f = order_facts(text, usd_inr); row.update(f)
             if f['value_cr'] and rev:
-                annual = f['value_cr']/(f['years'] or 1)
-                row['order_intensity'] = round(annual*f['firmness']/rev, 3)
-                if row['order_intensity'] >= FAST['order_intensity']: why.append(f"order ≈{row['order_intensity']*100:.0f}% of annual revenue (after firmness haircut)")
+                annual = f['value_cr']/(f['years'] or 1.5)  # no stated tenure: assume ~18 months, typical for Indian orders
+                intensity = annual*f['firmness']/rev
+                if intensity > 1.0:
+                    row['needs_check'] = f'extracted order ≈{intensity*100:.0f}% of annual revenue; verify in the filing'
+                    intensity = None  # implausible single order: not counted until verified
+                row['order_intensity'] = round(intensity, 3) if intensity is not None else None
+                if intensity and intensity >= FAST['order_intensity']: why.append(f"order ≈{intensity*100:.0f}% of annual revenue (after firmness haircut)")
             if f['tier1_customer']: why.append('global Tier-1/hyperscale customer')
         elif desc == CAPACITY:
             f = capacity_facts(text, usd_inr); row.update(f)

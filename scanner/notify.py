@@ -17,8 +17,14 @@ MARKER = '<!-- dhruva-inflection -->'
 TITLE = '[Dhruva] Inflection radar updates'
 
 
+def _last_posted():
+    r = ROOT/'runs/alerts/inflection-last.json'
+    return json.loads(r.read_text(encoding='utf-8')).get('as_of') if r.exists() else None
+
+
 def build(session):
     lines, material = [f'**Dhruva inflection radar — {session}** (paper research, not advice)'], False
+    since = _last_posted()  # include Stage 3 results written by the morning routine after the last notice
     fl = INF/'fast_lane.csv'
     if fl.exists():
         t = pd.read_csv(fl)
@@ -29,7 +35,8 @@ def build(session):
     tr = INF/'transitions.jsonl'
     if tr.exists():
         rows = [json.loads(x) for x in tr.read_text(encoding='utf-8').splitlines() if x.strip()]
-        today = [r for r in rows if r['date'] == session and r['from'] != r['to']]
+        today = [r for r in rows if r['from'] != r['to'] and (r['date'] == session or (since and r['date'] >= since and r.get('posted') is None))]
+        today = [r for r in today if not (since and r['date'] < since)]
         if today:
             material = True
             lines += ['', 'State changes (paper model portfolio):'] + [
@@ -40,6 +47,18 @@ def build(session):
         if new:
             material = True
             lines += ['', f'Missed-winner audit: {len(new)} new'] + [f"- {x['symbol']} +{x.get('excess_return_pct')}% vs Nifty 500 since {x['move_start']}: {x['diagnosis']}" for x in new[:8]]
+    db = INF/'db'
+    if db.exists():
+        fresh = []
+        for path in db.glob('*.json'):
+            rec = json.loads(path.read_text(encoding='utf-8')); rv = rec['reviews'][-1]
+            if rv['date'] == session or (since and rv.get('reviewed_at', '')[:10] >= since):
+                r = rv['result']
+                fresh.append(f"- {rec['symbol']}: confirmation {r.get('confirmation_score') or r['score']['total']}, "
+                             f"EV {r.get('ev_2y_pct')}%, {r['status']}, {r.get('proposed_state', r.get('action'))} — {r['thesis'][:220]}")
+        if fresh:
+            material = True
+            lines += ['', 'New Stage 3 underwriting:'] + fresh
     q = INF/'stage3_queue.json'
     if q.exists():
         items = json.loads(q.read_text(encoding='utf-8'))
