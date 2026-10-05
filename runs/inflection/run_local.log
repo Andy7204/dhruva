@@ -1,0 +1,65 @@
+{
+ "session": "2026-10-01",
+ "started_at": "2026-10-05T03:57:51.247433+00:00",
+ "warnings": [],
+ "universe": 2575,
+ "priced": 2571,
+ "liquid": 1642,
+ "eligible": 1463,
+ "fundamentals_ok": 1493,
+ "vetoed": 15,
+ "material_events": 443,
+ "new_signals": 0,
+ "fast_lane": [
+  "ARIS",
+  "STLTECH",
+  "MARINE",
+  "LT",
+  "AEQUS"
+ ],
+ "finalists": [
+  "ARIS",
+  "STLTECH",
+  "MARINE",
+  "LT",
+  "AEQUS",
+  "NAVINFLUOR",
+  "DEEPAKNTR",
+  "ALKYLAMINE",
+  "GANDHAR",
+  "LUPIN"
+ ],
+ "announcements": 102363,
+ "news_ok": true,
+ "usd_inr": 96.25,
+ "price_errors": 0,
+ "fundamental_errors": 0,
+ "announcement_errors": [],
+ "ended_at": "2026-10-05T04:00:35.322052+00:00"
+}
+          symbol           industry               source  discovery_score  stage1_score  order_intensity_180d  capacity_pct_365d  promoter_pct_mcap_365d  rev_yoy  ebitda_yoy  market_cap_cr
+68          ARIS       Unclassified            fast_lane             26.3          82.9                 1.000                0.0                    0.00    37.12       68.23        1133.70
+98       STLTECH  Telecommunication  fast_lane,discovery             78.9          81.0                 0.808               50.0                    0.00    81.56      193.89       46633.74
+712       MARINE       Unclassified  fast_lane,discovery             40.0          51.1                 1.000                0.0                    0.00     3.36       27.84        6109.27
+1205          LT       Construction  fast_lane,discovery             35.0          36.1                 1.000                0.0                    0.00    -8.67      -25.43      508075.98
+1376       AEQUS      Capital Goods            fast_lane             10.2          29.2                 0.000                0.0                    3.61    54.77      -46.51       18011.76
+0     NAVINFLUOR          Chemicals         confirmation             11.6          97.7                 0.000                0.0                    0.00    49.10       99.80       41698.40
+2      DEEPAKNTR          Chemicals         confirmation              8.6          92.9                 0.000                0.0                    0.00    36.39      184.97       20360.75
+3     ALKYLAMINE          Chemicals         confirmation             15.0          92.7                 0.000                0.0                    0.00    36.77       97.02        8906.23
+1        GANDHAR       Unclassified         confirmation             15.0          93.6                 0.000                0.0                    0.00    91.81      512.10        2766.08
+5          LUPIN         Healthcare         confirmation              1.5          92.2                 0.000                0.0                    0.00    47.73       90.65       92862.22
+13    PIDILITIND          Chemicals         confirmation              9.0          89.1                 0.000                0.0                    0.00    44.90       88.73      149000.98
+12          ATUL          Chemicals         confirmation              8.4          89.1                 0.000                0.0                    0.00    27.30       76.53       17255.81
+4     APCOTEXIND       Unclassified         confirmation             15.0          92.5                 0.000                0.0                    0.00    39.88      203.33        3075.70
+17     BALAMINES          Chemicals         confirmation              7.6          88.5                 0.000                0.0                    0.00    27.23      111.85        6649.33
+7           SOTL       Unclassified         confirmation             14.0          91.8                 0.000                0.0                    0.00    49.70      508.37        5001.48
+9     GALAXYSURF       Unclassified         confirmation             12.5          91.5                 0.000                0.0                    0.00    39.44      101.21        8427.24
+6           EMIL  Consumer Services         confirmation             14.3          91.8                 0.000                0.0                    0.00    39.07      117.13        7850.80
+22      SUMICHEM          Chemicals         confirmation              7.6          87.6                 0.000                0.0                    0.00    56.51       95.12       20844.33
+8         GESHIP           Services         confirmation              5.0          91.7                 0.000                0.0                    0.00    66.91      138.40       21852.33
+24        LXCHEM          Chemicals         confirmation             12.0          87.4                 0.000                0.0                    0.00    36.45       93.79        5027.19
+10         TATVA       Unclassified         confirmation              9.9          90.6                 0.000                0.0                    0.00    42.95       86.36        4077.70
+16     KANSAINER  Consumer Durables         confirmation              7.6          88.8                 0.000                0.0                    0.00    30.66       98.16       14173.35
+11     DIVGIITTS       Unclassified         confirmation             15.0          89.7                 0.000                0.0                    0.00    91.34      164.53        3475.44
+15         UFLEX       Unclassified         confirmation             10.0          88.9                 0.000                0.0                    0.00    35.52       94.26        4692.66
+19         YASHO       Unclassified         confirmation             19.6          88.1                 0.000                0.0                    0.00    54.93      126.19        4866.24

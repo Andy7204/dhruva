@@ -1,24 +1,26 @@
-# LUPIN — Lupin Ltd. (Healthcare)
-Evidence dossier generated 2026-09-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+# LUPIN — Lupin Limited (Healthcare)
+Evidence dossier generated 2026-10-01 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 88.4 · Stage 2 score 76.7 · score 20 sessions ago 88.4 · 60 sessions ago 88.4
-Price ₹2030.20 · 12-month return 5.0% · -19.3% from 52-week high · RS rank 31.8 · stage-2 trend False · turnover ₹135.81 cr/day
+Stage 1 score 92.2 · Stage 2 score 98.8 · score 20 sessions ago 88.4 · 60 sessions ago 88.4
+Price ₹2031.20 · 12-month return 6.3% · -19.2% from 52-week high · RS rank 33.5 · stage-2 trend False · turnover ₹139.14 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
-Revenue YoY 47.7% · QoQ 11.2% (previous QoQ 4.1%) · quarters of sequential growth in last 4: 4
-EBITDA YoY 80.8% · EBITDA margin 30.3% (change 5.5 pts) · incremental EBITDA margin 42.0%
+Revenue YoY 47.7% · QoQ % (previous QoQ 4.1%) · quarters of sequential growth in last 4: 4
+EBITDA YoY 90.7% · EBITDA margin 30.0% (change 6.8 pts) · incremental EBITDA margin 44.1%
 PAT YoY 83.2% · PAT margin 17.2% · EPS YoY 83.1% · turnaround False
-One-off share of EBITDA 3.5% · unusual items share of PBT 4.4% · tax rate 29.8%
+One-off share of EBITDA 4.7% · unusual items share of PBT 4.4% · tax rate 29.8%
 
 ## Cash flow and balance sheet (latest fiscal year)
 CFO/PAT 1.38 · class: healthy · receivables growth 20.1% vs revenue 23.9% · inventory growth 11.1% · receivable days 88
-Net debt/EBITDA 0.20 · interest cover 22.7 · dilution 0.1% · ROE 23.8% · EBITDA/invested capital 30.5%
+Net debt/EBITDA 0.20 · interest cover 22.5 · dilution 0.1% · ROE 23.8% · EBITDA/invested capital 30.5%
 
 ## Valuation
-Market cap ₹92816 cr · TTM P/E 17.6 · PEG 0.21 · EV/EBITDA 10.9 · EPS growth minus 12-month price return 78.1 pts
+Market cap ₹92862 cr · TTM P/E 17.6 · PEG 0.21 · EV/EBITDA 10.9 · EPS growth minus 12-month price return 76.8 pts
 
 ## Industry (same NSE industry, this scan)
-66 peers · 56% growing revenue >20% · 45% expanding EBITDA margin · median revenue YoY 23.3%
+66 peers · 56% growing revenue >20% · 42% expanding EBITDA margin · median revenue YoY 23.3%
+
+Discovery score 1.5 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.6 pts, turnaround False) · fast lane: False · source: confirmation
 
 Flags: none
 
