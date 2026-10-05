@@ -39,13 +39,36 @@ def _get(url, headers=None, timeout=30, tries=3):
 
 
 def refresh_universe():
-    """Nifty Total Market (Nifty 500 + Microcap 250): official current list with NSE industry."""
-    raw = _get('https://www.niftyindices.com/IndexConstituent/ind_niftytotalmarket_list.csv').decode('utf-8-sig')
-    rows = [r for r in csv.DictReader(io.StringIO(raw)) if r.get('Symbol') and r.get('Series', 'EQ') == 'EQ']
-    if len(rows) < 500:
-        raise RuntimeError(f'Universe list too short: {len(rows)}')
-    frame = pd.DataFrame({'symbol': [r['Symbol'].strip() for r in rows], 'name': [r['Company Name'].strip() for r in rows],
-                          'industry': [r['Industry'].strip() for r in rows]})
+    """All NSE main-board (EQ) equities; industry from the official Nifty Total Market list where available.
+
+    Names that leave the list are kept in data/universe_log.csv (point-in-time record).
+    """
+    raw = _get('https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv').decode('utf-8-sig')
+    rows = [{k.strip(): (v or '').strip() for k, v in r.items()} for r in csv.DictReader(io.StringIO(raw))]
+    # BE (trade-for-trade) included: NSE moves stocks there after explosive moves (e.g. STLTECH in 2026).
+    eq = [r for r in rows if r.get('SERIES') in ('EQ', 'BE') and r.get('SYMBOL')]
+    if len(eq) < 1500:
+        raise RuntimeError(f'NSE equity list too short: {len(eq)}')
+    industry = {}
+    try:
+        tm = _get('https://www.niftyindices.com/IndexConstituent/ind_niftytotalmarket_list.csv').decode('utf-8-sig')
+        industry = {r['Symbol'].strip(): r['Industry'].strip() for r in csv.DictReader(io.StringIO(tm)) if r.get('Symbol')}
+    except Exception:
+        pass
+    old = pd.read_csv(UNIVERSE) if UNIVERSE.exists() else pd.DataFrame(columns=['symbol', 'name', 'industry'])
+    known = dict(zip(old['symbol'], old['industry']))
+    frame = pd.DataFrame({'symbol': [r['SYMBOL'] for r in eq], 'name': [r['NAME OF COMPANY'] for r in eq], 'series': [r['SERIES'] for r in eq],
+                          'industry': [industry.get(r['SYMBOL']) or (known.get(r['SYMBOL']) if known.get(r['SYMBOL']) != 'Unclassified' else None)
+                                       or 'Unclassified' for r in eq]})
+    added, removed = set(frame['symbol'])-set(old['symbol']), set(old['symbol'])-set(frame['symbol'])
+    if (added or removed) and len(old):
+        log = ROOT/'data'/'universe_log.csv'
+        stamp = date.today().isoformat()
+        lines = [f'{stamp},added,{s}' for s in sorted(added)]+[f'{stamp},removed,{s}' for s in sorted(removed)]
+        new_file = not log.exists()
+        with log.open('a', encoding='utf-8') as f:
+            if new_file: f.write('date,change,symbol\n')
+            f.write('\n'.join(lines)+'\n')
     frame.to_csv(UNIVERSE, index=False)
     return frame
 

@@ -28,29 +28,41 @@ def mix(weights):
 
 
 def radar():
-    st.caption('Three-stage funnel over about 750 NSE stocks (Nifty 500 + Microcap 250). Stage 1 scores every company on '
-               'measurable fundamentals; Stage 2 narrows to 10 using industry-wide inflection, score momentum and filings; '
-               'Stage 3 has Claude underwrite those 10 with your framework. Paper research, not investment advice.')
+    st.caption('Early-inflection funnel over ~2,500 NSE equities (main board + trade-for-trade). Stage 1 gives every liquid stock a '
+               'Discovery score (orders vs revenue, capacity, promoter money, margin inflection, turnaround) and a Confirmation score '
+               '(reported growth, operating leverage, cash flow, valuation); material filings take a fast lane. Stage 2 builds evidence '
+               'dossiers; Stage 3 (Claude) underwrites and a fixed rule gate sets the state: research, starter, build, core, hold, trim or exit. '
+               'Paper research, not investment advice.')
     rep = ROOT/'runs/inflection/report.md'
     if rep.exists():
-        st.markdown(rep.read_text(encoding='utf-8').split('
-', 1)[1])
+        st.markdown(rep.read_text(encoding='utf-8').split('\n', 1)[1])
     status = read('runs/inflection/underwriter_status.json') or {}
     for e in status.get('errors', []):
         st.warning(e)
     s2 = ROOT/'runs/inflection/stage2.csv'
     if s2.exists():
-        st.subheader('Stage 2 pool (top 50 from Stage 1)')
+        st.subheader('Stage 2 pool (fast lane + top 25 discovery + top 25 confirmation)')
         t = pd.read_csv(s2)
-        cols = [c for c in ['symbol', 'name', 'industry', 'finalist', 'stage2_score', 'stage1_score', 'industry_score', 'score_change_20s',
+        cols = [c for c in ['symbol', 'name', 'industry', 'finalist', 'fast_lane', 'source', 'discovery_score', 'stage1_score',
+                            'order_intensity_180d', 'capacity_pct_365d', 'promoter_pct_mcap_365d', 'core_margin_qoq_change',
+                            'industry_score', 'score_change_20s', 'discovery_change_20s',
                             'rev_yoy', 'ebitda_yoy', 'pat_yoy', 'incremental_ebitda_margin', 'cfo_to_pat', 'pe', 'peg',
                             'expectation_gap', 'market_cap_cr', 'orders_90d', 'capacity_90d', 'legal_or_regulatory_90d', 'flags'] if c in t]
         st.dataframe(t[cols], hide_index=True, width='stretch')
+    ev = ROOT/'runs/inflection/events.csv'
+    if ev.exists():
+        e = pd.read_csv(ev)
+        st.subheader('Material filings (last 180 days, extracted from NSE PDFs)')
+        st.dataframe(e[e['material']].sort_values('date', ascending=False).head(50), hide_index=True, width='stretch')
+    prec = ROOT/'runs/inflection/audit/signal_precision.csv'
+    if prec.exists():
+        st.subheader('Signal precision so far (forward return vs Nifty 500 after each firing)')
+        st.dataframe(pd.read_csv(prec), hide_index=True, width='stretch')
     s1 = ROOT/'runs/inflection/stage1.csv'
     if s1.exists():
         full = pd.read_csv(s1)
         st.download_button(f'Download all {len(full)} Stage 1 scores (CSV)', full.to_csv(index=False), 'stage1.csv', 'text/csv')
-    st.markdown('[How the framework works and its limits](https://github.com/Andy7204/dhruva/blob/main/docs/MULTIBAGGER.md)')
+    st.markdown('[Architecture v3, rules and limits](https://github.com/Andy7204/dhruva/blob/main/docs/ARCHITECTURE_V3.md)')
 
 
 def render():

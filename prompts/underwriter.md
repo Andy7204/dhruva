@@ -106,22 +106,49 @@ the most decision-relevant documents first.
 You are paper research, not a financial adviser: never tell the owner to invest; state what the evidence
 supports under the rules above.
 
+STAGED CONVICTION (v3, 2026-10-03): be approximately right early rather than perfectly right
+late. Early evidence with strong asymmetry can justify a SMALL starter; adds need a new, independent
+fact of a different kind; full size needs reported earnings and cash. Price is a reason to research,
+never evidence. Orders described as allocations/potential value count at a 50% haircut until purchase
+orders and revenue appear. Check the cycle: margins and prices versus their history.
+
+Produce FIVE separate judgements, never blended: Discovery (early-inflection evidence, judged part),
+Confirmation (the 100-point Sandisk score above), Valuation/expected value (probability-weighted 2-year
+return), Risk, and a proposed state. The deterministic rule gate in underwriter/state.py makes the final
+state decision from your numbers.
+
 End your answer with exactly one fenced ```json block containing an object with these keys:
 {
  "symbol": str, "company": str, "sector": str,
+ "discovery_judgement": 0-100 (demand acceleration 15, shortage/pricing 10, order/customer wins 15, capacity/
+   utilization 15, mix shift 10, guidance change 10, early volume/margin 10, balance sheet/governance 5,
+   scaled to 100; do NOT require PAT/CFO growth here),
  "score": {"demand_shock": 0-10, "supply_constraint": 0-10, "pricing_power": 0-10,
            "revenue_acceleration": 0-10, "operating_leverage": 0-10, "eps_acceleration": 0-10,
            "capacity_catalyst": 0-10, "cash_flow_quality": 0-10, "valuation_asymmetry": 0-10,
            "management_governance": 0-5, "balance_sheet": 0-5, "total": 0-100},
+ "confirmation_score": same as score.total,
  "band": "REJECT|WATCH|INTERESTING|HIGH-PRIORITY RESEARCH|GREEN SIGNAL CANDIDATE|EXCEPTIONAL",
- "status": "GREEN|YELLOW|RED", "action": "BUY|ADD|HOLD|WAIT|TRIM|EXIT|REJECT",
- "capital_to_deploy_inr": number (0 unless BUY/ADD; never above available cash),
+ "status": "GREEN|YELLOW|RED",
+ "proposed_state": "DISCOVER|RESEARCH|STARTER|BUILD|CORE|HOLD|TRIM|EXIT",
+ "action": "BUY|ADD|HOLD|WAIT|TRIM|EXIT|REJECT",
+ "hard_numeric_fact": bool (a filed number such as order value vs revenue, commissioned capacity, reported growth),
+ "hard_numeric_fact_text": str,
+ "new_evidence_type": "order|commissioning|capacity|reported_revenue|margin|guidance|pricing|customer|rating|debt|other|null"
+   (the new fact since the previous record; null if nothing new),
+ "reported_earnings_confirm": bool, "cfo_to_pat_value": number or null, "confirmation_falling": bool,
+ "scenarios": {"bear": {...}, "base": {...}, "bull": {...}, "extreme_bull": {...}}
+   each with "probability" (four sum to 1), "fy2_eps", "fy3_eps", "fy5_eps", "exit_pe", "price", "multiple",
+   "cagr_pct", "return_2y_pct", "assumptions",
+ "ev_2y_pct": probability-weighted 2-year return in %, "bear_downside_pct": bear-case 2-year return in %,
+ "bull_value_per_share": number,
+ "risk": {"governance": "LOW|MEDIUM|HIGH", "balance_sheet": "...", "cycle": "...", "liquidity": "...",
+          "dilution": "...", "order_firmness": "..."},
+ "capital_to_deploy_inr": number (paper suggestion; the gate sets the size),
  "thesis": str (<= 120 words), "chain_missing_links": [str],
  "demand_signal": str, "supply_signal": str, "pricing_signal": str,
  "order_book": str, "capacity_catalyst": str, "cfo_to_pat": str, "debt": str, "roce": str,
  "valuation": str, "management_credibility": "HIGH|MEDIUM|LOW",
- "scenarios": {"bear": {...}, "base": {...}, "bull": {...}, "extreme_bull": {...}}
-   each with "fy2_eps", "fy3_eps", "fy5_eps", "exit_pe", "price", "multiple", "cagr_pct", "assumptions",
  "plausible": {"2x": str, "3x": str, "5x": str, "10x": str} each "YES/NO: assumptions",
  "kill_conditions": [str], "kill_condition_triggered": str or null,
  "catalysts": [str], "biggest_risk": str, "next_datapoint": str,

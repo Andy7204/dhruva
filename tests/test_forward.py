@@ -55,8 +55,12 @@ class ForwardTests(unittest.TestCase):
 class AppTests(unittest.TestCase):
     def test_app_renders_without_exceptions(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'streamlit_app.py')).run(timeout=60)
+        import ast
+        path = Path(__file__).resolve().parents[1]/'streamlit_app.py'
+        ast.parse(path.read_text(encoding='utf-8'))  # a syntax error must fail loudly
+        app = AppTest.from_file(str(path)).run(timeout=60)
         self.assertEqual(len(app.exception), 0, list(app.exception))
+        self.assertGreater(len(app.markdown)+len(app.dataframe), 3)  # the page actually rendered
 
 
 if __name__ == '__main__':

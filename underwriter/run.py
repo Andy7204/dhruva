@@ -101,87 +101,162 @@ def underwrite(client, symbol, dossier, previous, context):
     return result, text, usage
 
 
+def _md(v):
+    return '—' if v is None or (isinstance(v, float) and v != v) else v
+
+
 def report(session, stage2, cap):
+    """Daily report: fast lane, state changes, positions, radar, finalists, audit, final output."""
+    from underwriter import state as ST
+    pos = ST.load()
     rows = []
     for path in sorted(DB.glob('*.json')):
         rec = json.loads(path.read_text(encoding='utf-8')); r = rec['reviews'][-1]; prev = rec['reviews'][-2] if len(rec['reviews']) > 1 else None
-        rows.append({'symbol': rec['symbol'], 'score': r['result']['score']['total'], 'prev': prev['result']['score']['total'] if prev else None,
-                     'status': r['result']['status'], 'action': r['result']['action'], 'date': r['date'], 'r': r['result'],
+        res = r['result']
+        rows.append({'symbol': rec['symbol'], 'conf': res.get('confirmation_score') or res['score']['total'],
+                     'prev': (prev['result'].get('confirmation_score') or prev['result']['score']['total']) if prev else None,
+                     'disc': pos.get(rec['symbol'], {}).get('discovery'), 'ev': res.get('ev_2y_pct'), 'status': res['status'],
+                     'state': pos.get(rec['symbol'], {}).get('state', res.get('proposed_state', '')), 'date': r['date'], 'r': res,
                      'discovered': rec['discovered'], 'discovery_price': rec['discovery_price']})
-    rows.sort(key=lambda x: -x['score'])
-    L = [f'# Dhruva inflection report — {session}', '', 'Paper research, not investment advice. Holdings change only after the owner confirms a trade.', '']
-    changed = [x for x in rows if x['date'] == session]
-    L += ['## Material changes', '| Company | Previous | New | Status | Action | Change |', '|---|---:|---:|---|---|---|']
-    L += [f"| {x['symbol']} | {x['prev'] if x['prev'] is not None else '—'} | {x['score']} | {x['status']} | {x['action']} | {x['r'].get('material_change', '')} |" for x in changed] or ['| none today | | | | | |']
-    L += ['', '## Sandisk radar (latest underwriting, by score)', '| Company | Score | Status | Action | Last review | Discovered at |', '|---|---:|---|---|---|---|']
-    L += [f"| {x['symbol']} | {x['score']} | {x['status']} | {x['action']} | {x['date']} | ₹{x['discovery_price']} on {x['discovered']} |" for x in rows]
-    L += ['', '## Stage 2 finalists today (quantitative, not yet underwritten unless listed above)']
-    L += [f"- {r.symbol} ({r.industry}): Stage 2 {r.stage2_score}, Stage 1 {r.stage1_score}" for r in stage2[stage2['finalist']].itertuples()]
-    L += ['', '## Action engine', f"Available cash ₹{cap['cash_inr']:,.0f} · confirmed holdings: {', '.join(cap['holdings']) or 'none'}"]
-    buys = [x for x in changed if x['r']['action'] in ('BUY', 'ADD') and x['score'] >= 80]
-    if buys:
-        for x in buys: L.append(f"- {x['r']['action']} {x['symbol']}: up to ₹{min(x['r'].get('capital_to_deploy_inr', 0), cap['cash_inr']):,.0f} (paper recommendation; not executed)")
+    rows.sort(key=lambda x: -(x['conf'] or 0))
+    L = [f'# Dhruva inflection report — {session}', '',
+         'Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.', '']
+    fl = INF/'fast_lane.csv'
+    L += ['## Fast lane (material filings this week)']
+    if fl.exists():
+        t = pd.read_csv(fl)
+        L += [f"- {e.symbol} {e.date}: {e.desc} — {e.fast_lane_reasons} (price ₹{_md(e.price)})" for e in t.itertuples()] or ['- none']
     else:
-        L.append('- NO ACTION. Cash is a legitimate position.')
+        L.append('- none')
+    trans = pd.read_json(INF/'transitions.jsonl', lines=True) if (INF/'transitions.jsonl').exists() else pd.DataFrame()
+    today = trans[trans['date'].astype(str) == session] if len(trans) else trans
+    L += ['', '## State changes today', '| Company | From | To | Paper amount | Price | Reason |', '|---|---|---|---:|---:|---|']
+    L += [f"| {t['symbol']} | {t['from']} | {t['to']} | ₹{t['inr']:,.0f} | {_md(t['price'])} | {t['reason']} |" for _, t in today.iterrows()] or ['| none | | | | | |']
+    L += ['', '## Positions by state (paper model portfolio)',
+          '| Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |', '|---|---|---|---:|---:|---:|---:|---|']
+    order = {s: i for i, s in enumerate(('CORE', 'BUILD', 'STARTER', 'HOLD', 'TRIM', 'RESEARCH', 'EXIT', 'DISCOVER'))}
+    for sym, p in sorted(pos.items(), key=lambda kv: order.get(kv[1].get('state'), 9)):
+        if p.get('state') == 'DISCOVER': continue
+        L.append(f"| {sym} | {p['state']} | {p.get('since', '')} | ₹{sum(e['inr'] for e in p.get('entries', [])):,.0f} | {_md(p.get('discovery'))} | "
+                 f"{_md(p.get('confirmation'))} | {_md(p.get('ev_2y_pct'))} | {p.get('last_reason', '')} |")
+    L += ['', '## Underwritten radar (latest review, by Confirmation score)',
+          '| Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |', '|---|---:|---:|---:|---:|---|---|---|']
+    L += [f"| {x['symbol']} | {x['conf']} | {_md(x['prev'])} | {_md(x['disc'])} | {_md(x['ev'])} | {x['status']} | {x['state']} | {x['date']} |" for x in rows]
+    L += ['', '## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)']
+    for r in stage2[stage2['finalist']].itertuples():
+        L.append(f"- {r.symbol} ({r.industry}): discovery {_md(getattr(r, 'discovery_score', None))}, confirmation {r.stage1_score}, source {getattr(r, 'source', '')}")
+    q = INF/'stage3_queue.json'
+    if q.exists():
+        items = json.loads(q.read_text(encoding='utf-8'))
+        L += ['', '## Stage 3 queue (underwritten in Claude Code sessions)'] + ([f"- {x['symbol']}: {x['trigger']}" for x in items] or ['- empty'])
+    miss = INF/'audit'/'missed.jsonl'
+    if miss.exists():
+        m = [json.loads(x) for x in miss.read_text(encoding='utf-8').splitlines() if x.strip()]
+        recent = [x for x in m if x.get('detected_on') == session]
+        L += ['', f"## Missed-winner audit ({len(m)} cases logged; {len(recent)} new today)"]
+        L += [f"- {x['symbol']}: +{_md(x.get('excess_return_pct'))}% vs Nifty 500 since {x['move_start']} — {x['diagnosis']}" for x in recent[:10]]
+    L += ['', '## Cash', f"Your confirmed cash ₹{cap['cash_inr']:,.0f} · confirmed holdings: {', '.join(cap['holdings']) or 'none'} · "
+          'starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.']
     if rows:
         b = rows[0]; r = b['r']
-        L += ['', '## Final output', f"BEST CURRENT OPPORTUNITY: {b['symbol']}", f"CURRENT SCORE: {b['score']}", f"BEST ACTION: {r['action']}",
-              f"CAPITAL TO DEPLOY NOW: ₹{r.get('capital_to_deploy_inr', 0) if b in buys else 0:,.0f}", f"WHY: {r['thesis']}"]
+        L += ['', '## Final output', f"BEST CURRENT OPPORTUNITY: {b['symbol']}", f"CONFIRMATION / DISCOVERY: {b['conf']} / {_md(b['disc'])}",
+              f"STATE: {b['state']}", f"EXPECTED VALUE (2y, probability-weighted): {_md(r.get('ev_2y_pct'))}% · bear case {_md(r.get('bear_downside_pct'))}%",
+              f"WHY: {r['thesis']}"]
         for k in ('bear', 'base', 'bull'):
-            sc = r['scenarios'].get(k, {}); L.append(f"{k.upper()} CASE: price {sc.get('price')} ({sc.get('multiple')}×, {sc.get('cagr_pct')}% CAGR) — {sc.get('assumptions', '')}")
+            sc = r['scenarios'].get(k, {})
+            L.append(f"{k.upper()} CASE ({_md(sc.get('probability'))}): price {sc.get('price')} ({sc.get('multiple')}×) — {sc.get('assumptions', '')}")
         for k in ('2x', '3x', '5x', '10x'): L.append(f"{k.upper()} PLAUSIBLE? {r['plausible'].get(k, 'unknown')}")
         L += [f"BIGGEST THESIS RISK: {r.get('biggest_risk')}", f"NEXT DATAPOINT: {r.get('next_datapoint')}", f"CONFIDENCE: {r.get('confidence')}"]
     (INF/'report.md').write_text('\n'.join(L)+'\n', encoding='utf-8')
 
 
-def run(session, limit=None):
-    DB.mkdir(parents=True, exist_ok=True)
+def queue(session, limit=5):
+    """Who needs Stage 3 now: fast-lane tickets first, then finalists whose evidence changed."""
     stage2 = pd.read_csv(INF/'stage2.csv')
-    cap = capital(session)
-    finalists = stage2[stage2['finalist']]
     from scanner.data import announcements
-    news, _ = announcements(session)
+    news, _ = announcements(session, days=180)
     filings = {}
     for a in news:
         if a.get('desc') in ('Outcome of Board Meeting', 'Investor Presentation', 'Bagging/Receiving of orders/contracts',
-                             'Commencement of commercial production/operations', 'Credit Rating- Revision'):
+                             'Commencement of commercial production/operations', 'Capacity addition', 'Credit Rating- Revision', 'Preferential issue'):
             filings.setdefault(a['symbol'], []).append(a)
-    queue = [(r, why) for r in finalists.to_dict('records') if (why := due(r, record(r['symbol']), session, filings))]
+    fast = stage2['fast_lane'] if 'fast_lane' in stage2 else pd.Series(False, index=stage2.index)
+    cands = stage2[stage2['finalist'] | fast].assign(_fl=fast).sort_values(['_fl', 'stage2_score'], ascending=False)
+    out = []
+    for r in cands.to_dict('records'):
+        rec = record(r['symbol'])
+        why = ('fast lane: '+str(r.get('source'))) if r.get('_fl') and not rec else due(r, rec, session, filings)
+        if why:
+            out.append({'symbol': r['symbol'], 'trigger': why, 'dossier': f"runs/inflection/dossiers/{r['symbol']}.md",
+                        'price': r['close'], 'discovery_d': r.get('discovery_score'), 'fast_lane': bool(r.get('_fl')),
+                        'stage2_score': r['stage2_score']})
+    out = out[:limit]
+    (INF/'stage3_queue.json').write_text(json.dumps(out, indent=1, default=str), encoding='utf-8')
+    return out, stage2
+
+
+def ingest(symbol, result, session, price=None, discovery_d=None, fast_lane=False, model='Claude Code session',
+           stage2_score=None, trigger='queue'):
+    """Validate a Stage 3 result, append it to the thesis DB, and apply the state gate."""
+    from underwriter import state as ST
+    for key in ('score', 'status', 'thesis', 'scenarios', 'kill_conditions', 'sources', 'ev_2y_pct', 'bear_downside_pct'):
+        if key not in result: raise ValueError(f'Stage 3 result missing {key}')
+    probs = [v.get('probability') for v in result['scenarios'].values() if isinstance(v, dict)]
+    if probs and all(p is not None for p in probs) and abs(sum(probs)-1) > 0.05:
+        raise ValueError('Scenario probabilities must sum to 1')
+    DB.mkdir(parents=True, exist_ok=True)
+    rec = record(symbol) or {'symbol': symbol, 'discovered': session, 'discovery_price': price, 'reviews': []}
+    rec['reviews'].append({'date': session, 'trigger': trigger, 'stage2_score': stage2_score, 'price': price, 'model': model,
+                           'reviewed_at': datetime.now(timezone.utc).isoformat(), 'result': result})
+    (DB/f'{symbol}.json').write_text(json.dumps(rec, indent=1, ensure_ascii=False), encoding='utf-8')
+    pos = ST.load()
+    new, inr, reason = ST.apply(symbol, result, pos, session, price, discovery_d, fast_lane)
+    ST.save(pos)
+    return new, inr, reason
+
+
+def run(session, limit=None):
+    """Daily: credit cash, build the Stage 3 queue, underwrite via API only if a key exists, rebuild the report."""
+    DB.mkdir(parents=True, exist_ok=True)
+    cap = capital(session)
+    q, stage2 = queue(session)
+    status = {'session': session, 'queue': q, 'reviewed': [], 'errors': [],
+              'mode': 'Claude Code routine (subscription) unless ANTHROPIC_API_KEY is set'}
     limit = limit if limit is not None else int(os.getenv('UNDERWRITER_MAX', '3'))
-    status = {'session': session, 'queued': [(r['symbol'], why) for r, why in queue], 'reviewed': [], 'errors': []}
-    if queue[:limit] and not (os.getenv('ANTHROPIC_API_KEY') or os.getenv('ANTHROPIC_AUTH_TOKEN')):
-        status['errors'].append('No Anthropic credential; Stage 3 skipped. Add the ANTHROPIC_API_KEY repository secret.')
-        queue = []
-    if queue[:limit]:
+    if q[:limit] and os.getenv('ANTHROPIC_API_KEY'):
         import anthropic
         client = anthropic.Anthropic()
-        context = {'available_cash_inr': cap['cash_inr'], 'confirmed_holdings': cap['holdings'],
-                   'priority_list': [{'symbol': p.stem, 'score': json.loads(p.read_text(encoding='utf-8'))['reviews'][-1]['result']['score']['total']}
-                                     for p in DB.glob('*.json')]}
-        for row, why in queue[:limit]:
-            sym = row['symbol']; rec = record(sym)
+        context = {'available_cash_inr': cap['cash_inr'], 'confirmed_holdings': cap['holdings']}
+        for item in q[:limit]:
+            sym = item['symbol']; rec = record(sym)
             try:
-                dossier = (INF/'dossiers'/f'{sym}.md').read_text(encoding='utf-8')
+                dossier = (ROOT/item['dossier']).read_text(encoding='utf-8')
                 result, text, usage = underwrite(client, sym, dossier, rec['reviews'][-1]['result'] if rec else None, context)
-                rec = rec or {'symbol': sym, 'discovered': session, 'discovery_price': row['close'], 'reviews': []}
-                rec['reviews'].append({'date': session, 'trigger': why, 'stage2_score': row['stage2_score'], 'price': row['close'],
-                                       'model': MODEL, 'usage': usage, 'reviewed_at': datetime.now(timezone.utc).isoformat(),
-                                       'result': result})
-                (DB/f'{sym}.json').write_text(json.dumps(rec, indent=1, ensure_ascii=False), encoding='utf-8')
-                (INF/'transcripts').mkdir(exist_ok=True)
-                (INF/'transcripts'/f'{sym}_{session}.md').write_text(text, encoding='utf-8')
-                status['reviewed'].append({'symbol': sym, 'score': result['score']['total'], 'action': result['action'], 'usage': usage})
+                new, inr, reason = ingest(sym, result, session, item['price'], item['discovery_d'], item['fast_lane'], MODEL,
+                                          item['stage2_score'], item['trigger'])
+                status['reviewed'].append({'symbol': sym, 'state': new, 'inr': inr, 'reason': reason, 'usage': usage})
             except Exception as exc:
                 status['errors'].append(f'{sym}: {type(exc).__name__}: {exc}')
     report(session, stage2, cap)
-    (INF/'underwriter_status.json').write_text(json.dumps(status, indent=1), encoding='utf-8')
+    (INF/'underwriter_status.json').write_text(json.dumps(status, indent=1, default=str), encoding='utf-8')
     return status
 
 
 def main():
-    p = argparse.ArgumentParser(); p.add_argument('--session', required=True); p.add_argument('--limit', type=int)
+    p = argparse.ArgumentParser()
+    p.add_argument('--session', required=True); p.add_argument('--limit', type=int)
+    p.add_argument('--ingest', help='SYMBOL=path/to/result.json written by a Claude Code session')
     a = p.parse_args()
-    print(json.dumps(run(a.session, a.limit), indent=1))
+    if a.ingest:
+        sym, path = a.ingest.split('=', 1)
+        qp = INF/'stage3_queue.json'
+        q = {x['symbol']: x for x in json.loads(qp.read_text(encoding='utf-8'))} if qp.exists() else {}
+        item = q.get(sym, {})
+        print(ingest(sym, json.loads(Path(path).read_text(encoding='utf-8')), a.session, item.get('price'), item.get('discovery_d'),
+                     item.get('fast_lane', False), 'Claude Code session', item.get('stage2_score'), item.get('trigger', 'manual')))
+        report(a.session, pd.read_csv(INF/'stage2.csv'), capital(a.session))
+        return
+    print(json.dumps(run(a.session, a.limit), indent=1, default=str))
 
 
 if __name__ == '__main__':
