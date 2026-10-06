@@ -9,7 +9,7 @@ import traceback
 from datetime import datetime
 from pathlib import Path
 
-from dhruva.calendar import IST, expected_date, run_due
+from dhruva.calendar import IST, expected_date
 from dhruva.util import atomic_write, canonical, utc_now
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,11 +21,14 @@ def run(root=ROOT, now=None, force=False):
     now = now or datetime.now(IST)
     status = {'started_at': utc_now(), 'status': 'RUNNING', 'errors': [], 'warnings': []}
     try:
-        due, reason = run_due(now)
-        if not due and not force:
-            status.update(status='SKIPPED_NOT_DUE', reason=reason)
-            return status
+        # GitHub often starts the 18:30 IST job after midnight. Do not ask "is today due?";
+        # process the latest completed session whenever the books are behind it.
         session = expected_date(now)
+        state = root/'runs/forward/state.json'
+        recorded = min(b['as_of'] for b in json.loads(state.read_text(encoding='utf-8')).values()) if state.exists() else ''
+        if recorded >= session and not force:
+            status.update(status='SKIPPED_UP_TO_DATE', reason=f'books already recorded through {recorded}', session=session)
+            return status
         status['session'] = session
         status['data'] = marketdata.update(session)
         stale = [f for f in REQUIRED if marketdata.latest(f) < session]

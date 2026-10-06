@@ -1,3 +1,4 @@
+import unittest.mock
 import json
 import sys
 import tempfile
@@ -65,3 +66,21 @@ class AppTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class GuardTests(unittest.TestCase):
+    def test_late_start_after_midnight_still_processes_missed_session(self):
+        from datetime import datetime
+        from dhruva import daily
+        from dhruva.calendar import IST
+        with tempfile.TemporaryDirectory() as t:
+            root = Path(t); (root/'runs/forward').mkdir(parents=True)
+            (root/'runs/forward/state.json').write_text(json.dumps({'A': {'as_of': '2026-10-05'}}))
+            # 02:10 IST Tuesday: the Monday 2026-10-05 session is complete and already recorded
+            done = daily.run(root, datetime(2026, 10, 6, 2, 10, tzinfo=IST))
+            self.assertEqual(done['status'], 'SKIPPED_UP_TO_DATE')
+            (root/'runs/forward/state.json').write_text(json.dumps({'A': {'as_of': '2026-09-30'}}))
+            with unittest.mock.patch('dhruva.marketdata.update', side_effect=RuntimeError('fetch attempted')):
+                late = daily.run(root, datetime(2026, 10, 6, 2, 10, tzinfo=IST))
+            self.assertEqual(late['session'], '2026-10-05')  # not skipped as "before market close"
+            self.assertIn('fetch attempted', late['errors'][0])

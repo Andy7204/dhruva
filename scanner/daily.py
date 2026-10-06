@@ -6,14 +6,17 @@ import json
 import sys
 from datetime import datetime
 
-from dhruva.calendar import IST, expected_date, run_due
+from dhruva.calendar import IST, expected_date
 
 
 def main():
     now = datetime.now(IST)
-    if not run_due(now)[0] and '--force' not in sys.argv:
-        print('Not due'); return 0
-    session = expected_date(now)
+    session = expected_date(now)  # latest completed session, even if the job starts after midnight
+    from pathlib import Path
+    done = Path(__file__).resolve().parents[1]/'runs/inflection/status.json'
+    last = json.loads(done.read_text(encoding='utf-8')).get('session', '') if done.exists() else ''
+    if last >= session and '--force' not in sys.argv:
+        print(f'Inflection scan already done for {last}'); return 0
     from scanner.run import run as stages12
     from scanner import audit, notify
     from scanner.data import universe
