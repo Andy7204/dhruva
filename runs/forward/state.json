@@ -1,66 +1,88 @@
 {
  "A": {
-  "as_of": "2026-09-30",
-  "cash_weight": 1.0,
-  "costs": 0.0,
+  "as_of": "2026-10-06",
+  "cash_weight": 0.0,
+  "costs": 2694.61,
   "label": "A \u00b7 Midcap Momentum 50 + gold",
-  "last_decision": null,
-  "last_target": null,
-  "liquidation_value": 1000000.0,
-  "nav": 1000000.0,
-  "next_review_in": 252,
+  "last_decision": "2026-09-30",
+  "last_target": {
+   "GOLD": 0.3,
+   "MIDMOM50": 0.7
+  },
+  "liquidation_value": 1009001.18,
+  "nav": 1012091.81,
+  "next_review_in": 249,
   "pending_target": null,
   "strategy": "Midcap Momentum 50 70% + Gold 30%, yearly",
   "tax_paid": 0.0,
-  "trades": 0,
-  "weights": {}
+  "trades": 2,
+  "weights": {
+   "GOLD": 0.2938,
+   "MIDMOM50": 0.7062
+  }
  },
  "B": {
-  "as_of": "2026-09-30",
-  "cash_weight": 1.0,
-  "costs": 0.0,
+  "as_of": "2026-10-06",
+  "cash_weight": -0.0,
+  "costs": 2193.42,
   "label": "B \u00b7 Momentum 30 + gold + Nasdaq-100",
-  "last_decision": null,
-  "last_target": null,
-  "liquidation_value": 1000000.0,
-  "nav": 1000000.0,
-  "next_review_in": 252,
+  "last_decision": "2026-09-30",
+  "last_target": {
+   "GOLD": 0.2,
+   "MOM30": 0.6,
+   "NDX": 0.2
+  },
+  "liquidation_value": 1011962.81,
+  "nav": 1016253.7,
+  "next_review_in": 249,
   "pending_target": null,
   "strategy": "Momentum 30 60% + Gold 20% + Nasdaq-100 20%, yearly",
   "tax_paid": 0.0,
-  "trades": 0,
-  "weights": {}
+  "trades": 3,
+  "weights": {
+   "GOLD": 0.1968,
+   "MOM30": 0.6044,
+   "NDX": 0.1988
+  }
  },
  "C": {
-  "as_of": "2026-09-30",
-  "cash_weight": 1.0,
-  "costs": 0.0,
+  "as_of": "2026-10-06",
+  "cash_weight": -0.0,
+  "costs": 2991.03,
   "label": "C \u00b7 Accelerating dual momentum (aggressive)",
-  "last_decision": null,
-  "last_target": null,
-  "liquidation_value": 1000000.0,
-  "nav": 1000000.0,
-  "next_review_in": 21,
+  "last_decision": "2026-09-30",
+  "last_target": {
+   "NDX": 1.0
+  },
+  "liquidation_value": 1011671.15,
+  "nav": 1018341.87,
+  "next_review_in": 18,
   "pending_target": null,
   "strategy": "Accelerating dual momentum (Mom30, Midcap Mom50, Nasdaq-100, gold)",
   "tax_paid": 0.0,
-  "trades": 0,
-  "weights": {}
+  "trades": 1,
+  "weights": {
+   "NDX": 1.0
+  }
  },
  "N50": {
-  "as_of": "2026-09-30",
-  "cash_weight": 1.0,
-  "costs": 0.0,
+  "as_of": "2026-10-06",
+  "cash_weight": -0.0,
+  "costs": 999.0,
   "label": "Nifty 50 buy and hold (benchmark)",
-  "last_decision": null,
-  "last_target": null,
-  "liquidation_value": 1000000.0,
-  "nav": 1000000.0,
+  "last_decision": "2026-09-30",
+  "last_target": {
+   "N50": 1.0
+  },
+  "liquidation_value": 1011493.99,
+  "nav": 1014776.02,
   "next_review_in": null,
   "pending_target": null,
   "strategy": "Nifty 50 buy and hold (benchmark)",
   "tax_paid": 0.0,
-  "trades": 0,
-  "weights": {}
+  "trades": 1,
+  "weights": {
+   "N50": 1.0
+  }
  }
 }
