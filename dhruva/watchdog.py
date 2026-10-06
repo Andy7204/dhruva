@@ -40,6 +40,12 @@ def evaluate(root=ROOT, now=None):
         cfg = json.loads((Path(root)/'config.v2.json').read_text(encoding='utf-8'))
         if required and required > cfg['forward_start']:
             errors.append('FORWARD BOOKS MISSING')
+    try:
+        inf = json.loads((Path(root)/'runs/inflection/status.json').read_text(encoding='utf-8'))
+        if required and inf.get('session', '') < required:
+            errors.append(f"INFLECTION SCAN STALE: last scan {inf.get('session')}, required {required} (check the 'Inflection funnel' step log)")
+    except (OSError, ValueError):
+        errors.append('INFLECTION SCAN STATUS MISSING')
     return {'observed_at': utc_now(), 'required_session': required, 'status': 'FAILED' if errors else 'PASS',
             'errors': errors, 'warnings': warnings}
 
