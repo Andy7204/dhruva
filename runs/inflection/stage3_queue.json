@@ -1,0 +1,47 @@
+[
+ {
+  "symbol": "STLTECH",
+  "trigger": "fast lane: fast_lane,discovery",
+  "dossier": "runs/inflection/dossiers/STLTECH.md",
+  "price": 1016.7,
+  "discovery_d": 42.6,
+  "fast_lane": true,
+  "stage2_score": 184.8
+ },
+ {
+  "symbol": "PATELRMART",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/PATELRMART.md",
+  "price": 227.01,
+  "discovery_d": 5.0,
+  "fast_lane": true,
+  "stage2_score": 156.9
+ },
+ {
+  "symbol": "MARINE",
+  "trigger": "fast lane: fast_lane,discovery",
+  "dossier": "runs/inflection/dossiers/MARINE.md",
+  "price": 478.85,
+  "discovery_d": 25.0,
+  "fast_lane": true,
+  "stage2_score": 156.8
+ },
+ {
+  "symbol": "TARIL",
+  "trigger": "fast lane: fast_lane,discovery",
+  "dossier": "runs/inflection/dossiers/TARIL.md",
+  "price": 283.65,
+  "discovery_d": 25.3,
+  "fast_lane": true,
+  "stage2_score": 136.9
+ },
+ {
+  "symbol": "LT",
+  "trigger": "fast lane: fast_lane,discovery",
+  "dossier": "runs/inflection/dossiers/LT.md",
+  "price": 3770.0,
+  "discovery_d": 25.0,
+  "fast_lane": true,
+  "stage2_score": 136.7
+ }
+]

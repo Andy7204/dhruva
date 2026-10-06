@@ -1,7 +1,9 @@
 {
  "monthly_inr": 10000,
- "credited_months": [],
- "cash_inr": 0.0,
+ "credited_months": [
+  "2026-10"
+ ],
+ "cash_inr": 10000.0,
  "holdings": {},
  "applied_trades": 0
 }

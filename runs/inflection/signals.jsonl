@@ -463,3 +463,11 @@
 {"date": "2026-04-07", "desc": "Credit Rating", "logged_on": "2026-10-01", "price": 319.0, "reasons": "credit rating upgrade", "symbol": "VGUARD"}
 {"date": "2026-04-07", "desc": "Credit Rating", "logged_on": "2026-10-01", "price": 27.190000534057617, "reasons": "credit rating upgrade", "symbol": "PFS"}
 {"date": "2026-04-04", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-01", "price": 454.3999938964844, "reasons": "order \u224820% of annual revenue (after firmness haircut)", "symbol": "JKIL"}
+{"date": "2026-10-05", "desc": "Credit Rating- Revision", "logged_on": "2026-10-06", "price": 31.350000381469727, "reasons": "credit rating upgrade", "symbol": "IOB"}
+{"date": "2026-10-05", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-06", "price": 469.1499938964844, "reasons": "order \u224827% of annual revenue (after firmness haircut)", "symbol": "MARINE"}
+{"date": "2026-10-05", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-06", "price": 469.1499938964844, "reasons": "order \u224827% of annual revenue (after firmness haircut)", "symbol": "MARINE"}
+{"date": "2026-10-05", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-06", "price": 3750.0, "reasons": "order \u224872% of annual revenue (after firmness haircut)", "symbol": "LT"}
+{"date": "2026-10-03", "desc": "Credit Rating- Revision", "logged_on": "2026-10-06", "price": 211.0, "reasons": "credit rating upgrade", "symbol": "PATELRMART"}
+{"date": "2026-10-02", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-06", "price": 280.79998779296875, "reasons": "order \u224826% of annual revenue (after firmness haircut)", "symbol": "TARIL"}
+{"date": "2026-10-02", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-06", "price": 280.79998779296875, "reasons": "order \u224826% of annual revenue (after firmness haircut)", "symbol": "TARIL"}
+{"date": "2026-10-01", "desc": "Credit Rating", "logged_on": "2026-10-06", "price": 987.0, "reasons": "credit rating upgrade", "symbol": "AUBANK"}

@@ -1,8 +1,8 @@
 # LUPIN — Lupin Limited (Healthcare)
-Evidence dossier generated 2026-10-01 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 92.2 · Stage 2 score 98.8 · score 20 sessions ago 88.4 · 60 sessions ago 88.4
-Price ₹2031.20 · 12-month return 6.3% · -19.2% from 52-week high · RS rank 33.5 · stage-2 trend False · turnover ₹139.14 cr/day
+Stage 1 score 92.2 · Stage 2 score 98.6 · score 20 sessions ago 88.4 · 60 sessions ago 88.4
+Price ₹2029.30 · 12-month return 2.8% · -19.3% from 52-week high · RS rank 33.9 · stage-2 trend False · turnover ₹137.97 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 47.7% · QoQ % (previous QoQ 4.1%) · quarters of sequential growth in last 4: 4
@@ -15,16 +15,17 @@ CFO/PAT 1.38 · class: healthy · receivables growth 20.1% vs revenue 23.9% · i
 Net debt/EBITDA 0.20 · interest cover 22.5 · dilution 0.1% · ROE 23.8% · EBITDA/invested capital 30.5%
 
 ## Valuation
-Market cap ₹92862 cr · TTM P/E 17.6 · PEG 0.21 · EV/EBITDA 10.9 · EPS growth minus 12-month price return 76.8 pts
+Market cap ₹92775 cr · TTM P/E 17.6 · PEG 0.21 · EV/EBITDA 10.9 · EPS growth minus 12-month price return 80.3 pts
 
 ## Industry (same NSE industry, this scan)
-66 peers · 56% growing revenue >20% · 42% expanding EBITDA margin · median revenue YoY 23.3%
+65 peers · 55% growing revenue >20% · 42% expanding EBITDA margin · median revenue YoY 22.9%
 
 Discovery score 1.5 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.6 pts, turnaround False) · fast lane: False · source: confirmation
 
 Flags: none
 
 ## Recent relevant NSE filings (newest first)
+- 2026-10-06 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated October 06, 2026, titled "Lupin Launches Formoflo-G® MDI, World s First Fixed-dose Triple Combination Drug for COPD Management". · https://nsearchives.nseindia.com/corporate/Lupin2_06102026093541_SELetterpressrelease.pdf
 - 2026-09-28 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated September 28, 2026, titled "Lupin Receives Tentative Approval from U.S. FDA for Novel Apixaban Oral Suspension". · https://nsearchives.nseindia.com/corporate/Lupin2_28092026091311_SELetterPressRelease.pdf
 - 2026-09-08 · Analysts/Institutional Investor Meet/Con. Call Updates · Lupin Limited has informed the Exchange about Schedule of Institutional Investors Meets. · https://nsearchives.nseindia.com/corporate/Lupin2_08092026163044_SE_Intimation_Schedule_of_Analyst_Investors_Meet.pdf
 - 2026-09-04 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated September 04, 2026, titled "Lupin Receives U.S. FDA Approval for Modafinil Tablets, USP". · https://nsearchives.nseindia.com/corporate/Lupin2_04092026173742_SELetterPressRelease.pdf
@@ -39,6 +40,5 @@ Flags: none
 - 2026-08-06 · Outcome of Board Meeting · Lupin Limited has submitted to the Exchange, Unaudited Standalone and Consolidated Financial Results of the Company for the quarter ended June 30, 2026. · https://nsearchives.nseindia.com/corporate/Lupin2_06082026215040_SE_Outcome_UFR_intimation.pdf
 - 2026-07-31 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated July 31, 2026, titled "Lupin Announces the Approval of Diazepam Injection, USP in the United States". · https://nsearchives.nseindia.com/corporate/Lupin2_31072026170502_SELetterPressRelease.pdf
 - 2026-07-31 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated July 31, 2026, titled "Lupin Announces U.S. FDA Approval and Launch of Sugammadex Injection". · https://nsearchives.nseindia.com/corporate/Lupin2_31072026111234_SELetterPressRelease.pdf
-- 2026-07-22 · Analysts/Institutional Investor Meet/Con. Call Updates · Lupin Limited has informed the Exchange about Schedule of Earnings Call for Q1 FY27. · https://nsearchives.nseindia.com/corporate/Lupin2_22072026184213_SE_Intimation_Earnings_Call_Q1_FY27.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

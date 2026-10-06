@@ -1,0 +1,7 @@
+type,firings,mean_excess_20d,mean_excess_60d,mean_excess_120d,hit_rate_20d,hit_rate_60d,hit_rate_120d
+capacity,1,38.9,,,100.0,,
+capex,7,-1.04,9.43,,28.6,42.9,
+credit rating upgrade,331,2.13,6.87,24.8,41.7,26.6,2.1
+global Tier-,10,12.91,12.5,,60.0,20.0,
+order,91,3.47,4.11,41.76,45.1,16.5,3.3
+promoter puts in,15,4.78,2.18,51.43,53.3,26.7,20.0

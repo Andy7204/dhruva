@@ -1,8 +1,8 @@
 # ALKYLAMINE — Alkyl Amines Chemicals Limited (Chemicals)
-Evidence dossier generated 2026-10-01 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 92.7 · Stage 2 score 101.9 · score 20 sessions ago 90.3 · 60 sessions ago 90.3
-Price ₹1741.40 · 12-month return -9.0% · -16.7% from 52-week high · RS rank 55.7 · stage-2 trend False · turnover ₹9.08 cr/day
+Price ₹1962.20 · 12-month return 3.9% · -6.1% from 52-week high · RS rank 66.1 · stage-2 trend True · turnover ₹37.34 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 36.8% · QoQ % (previous QoQ 9.3%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 1.33 · class: healthy · receivables growth -0.2% vs revenue -2.4% · i
 Net debt/EBITDA 0.22 · interest cover 342.6 · dilution 0.0% · ROE 11.7% · EBITDA/invested capital 20.6%
 
 ## Valuation
-Market cap ₹8906 cr · TTM P/E 38.5 · PEG 0.37 · EV/EBITDA 28.4 · EPS growth minus 12-month price return 114.5 pts
+Market cap ₹10035 cr · TTM P/E 43.4 · PEG 0.41 · EV/EBITDA 32.0 · EPS growth minus 12-month price return 101.6 pts
 
 ## Industry (same NSE industry, this scan)
 44 peers · 61% growing revenue >20% · 64% expanding EBITDA margin · median revenue YoY 25.2%

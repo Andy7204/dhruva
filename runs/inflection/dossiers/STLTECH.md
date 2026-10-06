@@ -1,8 +1,8 @@
 # STLTECH — Sterlite Technologies Limited (Telecommunication)
-Evidence dossier generated 2026-10-01 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 81.0 · Stage 2 score 184.9 · score 20 sessions ago  · 60 sessions ago 
-Price ₹955.35 · 12-month return 743.4% · 0.0% from 52-week high · RS rank 100.0 · stage-2 trend True · turnover ₹169.10 cr/day
+Stage 1 score 80.9 · Stage 2 score 184.8 · score 20 sessions ago  · 60 sessions ago 
+Price ₹1016.70 · 12-month return 742.1% · 0.0% from 52-week high · RS rank 100.0 · stage-2 trend True · turnover ₹193.65 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 81.6% · QoQ % (previous QoQ 14.6%) · quarters of sequential growth in last 4: 3
@@ -15,25 +15,15 @@ CFO/PAT 9.29 · class: healthy · receivables growth 29.1% vs revenue 19.3% · i
 Net debt/EBITDA 2.54 · interest cover 7.0 · dilution 0.0% · ROE 2.5% · EBITDA/invested capital 14.7%
 
 ## Valuation
-Market cap ₹46634 cr · TTM P/E 200.3 · PEG  · EV/EBITDA 79.9 · EPS growth minus 12-month price return  pts
+Market cap ₹49628 cr · TTM P/E 213.1 · PEG  · EV/EBITDA 84.8 · EPS growth minus 12-month price return  pts
 
 ## Industry (same NSE industry, this scan)
 12 peers · 25% growing revenue >20% · 50% expanding EBITDA margin · median revenue YoY 7.6%
 
-Discovery score 78.9 (order intensity 180d 0.81, capacity +50%, promoter money 0.0% of mcap, core margin QoQ change 5.4 pts, turnaround True) · fast lane: True · source: fast_lane,discovery
+Discovery score 42.6 (order intensity 180d 0.21, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 5.4 pts, turnaround True) · fast lane: True · source: fast_lane,discovery
 
 ## Extracted event facts (CALCULATIONS from filing PDFs; verify in the source)
-- date=2026-10-01 · desc=Bagging/Receiving of orders/contracts · value_cr=11550.0 · years=5.0 · firmness=0.5 · customer=international · tier1_customer=True · order_intensity=0.205 · fast_lane_reasons=order ≈21% of annual revenue (after firmness haircut); global Tier-1/hyperscale customer · url=https://nsearchives.nseindia.com/corporate/STLTECH_01102026112437_SE_Intimation_Hyperscaler_Contract_Oct26_Signed.pdf
-- date=2026-09-03 · desc=Capacity addition · capacity_pct=50.0 · utilization_pct=70.0 · capex_cr=3000.0 · fast_lane_reasons=capacity +50% · url=https://nsearchives.nseindia.com/corporate/STLTECH_03092026173848_BMOutcome03Sep2026_Signed.pdf
-- date=2026-09-02 · desc=Credit Rating · rating_move=1.0 · fast_lane_reasons=credit rating upgrade · url=https://nsearchives.nseindia.com/corporate/STLTECH_02092026160439_Credit_rating-Sept_2026_Signed.pdf
-- date=2026-08-29 · desc=Bagging/Receiving of orders/contracts · value_cr=2772.0 · years=3.0 · firmness=0.5 · customer=international · tier1_customer=True · order_intensity=0.082 · fast_lane_reasons=global Tier-1/hyperscale customer · url=https://nsearchives.nseindia.com/corporate/STLTECH_29082026200552_SEIntimationContractsigning290826finalsigned.pdf
-- date=2026-08-05 · desc=Bagging/Receiving of orders/contracts · value_cr=2021.25 · years=3.0 · firmness=1.0 · customer=international · tier1_customer=False · order_intensity=0.12 · url=https://nsearchives.nseindia.com/corporate/STLTECH_05082026192126_SE_Intimation_Uniti_contract_signed.pdf
-- date=2026-08-01 · desc=Bagging/Receiving of orders/contracts · value_cr=960.0 · years=2.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.085 · url=https://nsearchives.nseindia.com/corporate/STLTECH_01082026225208_SE_Intimation_contract_signed.pdf
-- date=2026-07-07 · desc=Credit Rating · rating_move=1.0 · fast_lane_reasons=credit rating upgrade · url=https://nsearchives.nseindia.com/corporate/STLTECH_07072026183622_Credit_rating_-_July_2026_F_signed.pdf
-- date=2026-06-30 · desc=Qualified Institutional Placement · url=https://nsearchives.nseindia.com/corporate/STLTECH_30062026235727_SE_Intimation-Issue_closing_intimation-_June_30_2026_signed.pdf
-- date=2026-06-25 · desc=Qualified Institutional Placement · url=https://nsearchives.nseindia.com/corporate/STLTECH_25062026000352_SE_Intimation-IssueOpeningIntimation_June_24_2026_signed.pdf
-- date=2026-06-17 · desc=Credit Rating · rating_move=1.0 · fast_lane_reasons=credit rating upgrade · url=https://nsearchives.nseindia.com/corporate/STLTECH_17062026151834_SEintimationCredit_ratingJune2026_signed.pdf
-- date=2026-05-22 · desc=Bagging/Receiving of orders/contracts · value_cr=10683.75 · years=3.0 · firmness=0.5 · customer=international · tier1_customer=True · order_intensity=0.316 · fast_lane_reasons=order ≈32% of annual revenue (after firmness haircut); global Tier-1/hyperscale customer · url=https://nsearchives.nseindia.com/corporate/STLTECH_22052026154803_SE_Intimationbaggingofcontract_May22_signed.pdf
+- date=2026-10-01 · desc=Bagging/Receiving of orders/contracts · value_cr=11569.2 · years=5.0 · firmness=0.5 · customer=international · tier1_customer=True · order_intensity=0.206 · fast_lane_reasons=order ≈21% of annual revenue (after firmness haircut); global Tier-1/hyperscale customer · url=https://nsearchives.nseindia.com/corporate/STLTECH_01102026112437_SE_Intimation_Hyperscaler_Contract_Oct26_Signed.pdf
 
 Flags: none
 
