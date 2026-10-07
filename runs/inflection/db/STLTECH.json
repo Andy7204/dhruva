@@ -1,0 +1,172 @@
+{
+ "symbol": "STLTECH",
+ "discovered": "2026-10-06",
+ "discovery_price": 1016.7,
+ "reviews": [
+  {
+   "date": "2026-10-06",
+   "trigger": "fast lane: fast_lane,discovery",
+   "stage2_score": 184.8,
+   "price": 1016.7,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-07T02:45:39.168772+00:00",
+   "result": {
+    "symbol": "STLTECH",
+    "company": "Sterlite Technologies Limited",
+    "sector": "Telecommunication (optical fibre/cable, AI data-centre connectivity)",
+    "discovery_judgement": 72,
+    "score": {
+     "demand_shock": 9,
+     "supply_constraint": 6,
+     "pricing_power": 5,
+     "revenue_acceleration": 10,
+     "operating_leverage": 9,
+     "eps_acceleration": 9,
+     "capacity_catalyst": 8,
+     "cash_flow_quality": 6,
+     "valuation_asymmetry": 1,
+     "management_governance": 3,
+     "balance_sheet": 4,
+     "total": 70
+    },
+    "confirmation_score": 70,
+    "band": "INTERESTING",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "Q1FY27 revenue Rs1,910cr (+87% YoY, +33% QoQ), EBITDA Rs397cr (+184%), margin ~20.8%; order book Rs18,618cr; hyperscaler contract ~US$1.11bn FY27-29 (search-reported, NSE PDF not readable here)",
+    "new_evidence_type": "order",
+    "reported_earnings_confirm": true,
+    "cfo_to_pat_value": null,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 8,
+      "fy3_eps": 14,
+      "fy5_eps": 16,
+      "exit_pe": 18,
+      "price": 252,
+      "multiple": 0.25,
+      "cagr_pct": -50.2,
+      "return_2y_pct": -75.2,
+      "assumptions": "Hyperscaler volumes slip, margin back to ~14%, multiple de-rates to 18x"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 24,
+      "fy3_eps": 30,
+      "fy5_eps": 36,
+      "exit_pe": 32,
+      "price": 960,
+      "multiple": 0.94,
+      "cagr_pct": -2.8,
+      "return_2y_pct": -5.6,
+      "assumptions": "Rev ~Rs8,000cr FY27/Rs11,000cr FY28, EBITDA margin ~20%, ~48.8cr shares; P/E compresses from ~63x FY27 to 32x"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 30,
+      "fy3_eps": 40,
+      "fy5_eps": 52,
+      "exit_pe": 40,
+      "price": 1600,
+      "multiple": 1.57,
+      "cagr_pct": 25.4,
+      "return_2y_pct": 57.4,
+      "assumptions": "Capacity +50% by FY29 fully absorbed, margin 22%+"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 36,
+      "fy3_eps": 52,
+      "fy5_eps": 70,
+      "exit_pe": 45,
+      "price": 2340,
+      "multiple": 2.3,
+      "cagr_pct": 51.7,
+      "return_2y_pct": 130.2,
+      "assumptions": "Second hyperscaler contract, AI-DC cycle persists"
+     }
+    },
+    "ev_2y_pct": -1.8,
+    "bear_downside_pct": -75.2,
+    "bull_value_per_share": 1600,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "Net debt-free post Rs1,500cr QIP (company claim); FY26 ND/EBITDA 2.54 per dossier",
+     "cycle": "HIGH: AI-DC capex cycle, margins at ~20-quarter high",
+     "liquidity": "LOW risk, Rs194cr/day",
+     "dilution": "QIP Rs1,500cr recently; dossier dilution 0.0%",
+     "order_firmness": "MEDIUM: signed multi-year supply contract but volume-based; dossier applies 0.5 haircut"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Real, reported operating inflection (revenue +87%, EBITDA +184%) tied to hyperscaler/AI-DC fibre demand, but stock is up ~742% in 12 months at 0% from high, ~63x my FY27 base EPS. Probability-weighted 2y return is roughly flat because the price already discounts the base case. Interesting business, no asymmetry now.",
+    "chain_missing_links": [
+     "Consensus FY27 EPS (Rs8.72 aggregator, stale) vs post-Q1 revisions unknown",
+     "Capacity/utilisation numbers unknown",
+     "CFO for Q1 unknown"
+    ],
+    "demand_signal": "AI data-centre connectivity demand; optical connectivity attach rate 16% (company claim, search-reported)",
+    "supply_signal": "Capacity expansion ~50% by FY29 on Rs3,000cr capex (reported); industry supply tightness not independently verified",
+    "pricing_signal": "EBITDA margin 20.8% vs ~13% a year ago; mix-driven, pricing unknown",
+    "order_book": "Rs18,618cr (company, search-reported) vs ~Rs7,000cr annualised Q1 revenue; ~2.5x",
+    "capacity_catalyst": "Rs3,000cr capex, +50% capacity, completion by end FY29",
+    "cfo_to_pat": "Dossier FY26 9.29x on tiny PAT base (not meaningful); Q1FY27 unknown",
+    "debt": "Reported net-debt-free after QIP",
+    "roce": "EBITDA/invested capital 14.7% (dossier, FY26); ROE 2.5%",
+    "valuation": "TTM P/E 213, EV/EBITDA 85; ~63x my FY27 base EPS",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs FY29 EPS ~Rs60 at 34x",
+     "3x": "NO: not reasonably underwritable",
+     "5x": "NO: not reasonably underwritable",
+     "10x": "NO: not reasonably underwritable"
+    },
+    "kill_conditions": [
+     "Hyperscaler contract cancelled/deferred or volumes cut",
+     "EBITDA margin below 15% for two quarters",
+     "Q2 CFO/PAT < 0.5 with receivables outgrowing revenue",
+     "Large further equity dilution"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2FY27 results (late Oct)",
+     "First deliveries/revenue under the US$1.11bn contract"
+    ],
+    "biggest_risk": "Priced for perfection after 742% run; any slip de-rates multiple sharply.",
+    "next_datapoint": "Q2FY27 results: revenue, EBITDA margin, CFO, order-book conversion; wait for pullback giving EV > +30%.",
+    "confidence": "MEDIUM",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "Q1FY27 revenue/EBITDA/order book (web aggregators, not NSE PDF)",
+      "type": "FACT",
+      "url": ""
+     },
+     {
+      "claim": "Net debt-free after QIP, attach rate 16%",
+      "type": "MANAGEMENT CLAIM",
+      "url": ""
+     },
+     {
+      "claim": "Nuvama TP 1100, CLSA 950, Arihant 931; Nuvama EPS +23%/25%",
+      "type": "ANALYST ESTIMATE",
+      "url": ""
+     },
+     {
+      "claim": "Scenario EPS and prices",
+      "type": "ASSUMPTION",
+      "url": ""
+     },
+     {
+      "claim": "P/E on FY27 base EPS",
+      "type": "CALCULATION",
+      "url": ""
+     }
+    ]
+   }
+  }
+ ]
+}

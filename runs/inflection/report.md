@@ -12,16 +12,24 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| STLTECH | DISCOVER | RESEARCH | ₹0 | 1016.7 | fast-lane event or discovery >= 60 |
+| PATELRMART | DISCOVER | RESEARCH | ₹0 | 227.01 | fast-lane event or discovery >= 60 |
+| MARINE | DISCOVER | RESEARCH | ₹0 | 478.85 | fast-lane event or discovery >= 60 |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
 |---|---|---|---:|---:|---:|---:|---|
+| STLTECH | RESEARCH | 2026-10-06 | ₹0 | 54.4 | 70 | -1.8 | fast-lane event or discovery >= 60 |
+| PATELRMART | RESEARCH | 2026-10-06 | ₹0 | 9.0 | 34 | 9.4 | fast-lane event or discovery >= 60 |
+| MARINE | RESEARCH | 2026-10-06 | ₹0 | 39.8 | 47 | 3.4 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
 |---|---:|---:|---:|---:|---|---|---|
+| STLTECH | 70 | — | 54.4 | -1.8 | YELLOW | RESEARCH | 2026-10-06 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
+| MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
+| PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
 - STLTECH (Telecommunication): discovery 42.6, confirmation 80.9, source fast_lane,discovery
@@ -58,18 +66,18 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 Your confirmed cash ₹10,000 · confirmed holdings: none · starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.
 
 ## Final output
-BEST CURRENT OPPORTUNITY: ELLEN
-CONFIRMATION / DISCOVERY: 55 / —
-STATE: 
-EXPECTED VALUE (2y, probability-weighted): —% · bear case —%
-WHY: A well-run, net-cash industrial gas utility adding capacity: a 325 TPD take-or-pay onsite plant (Jai Balaji) started 25 Sep 2026, two merchant plants (~450-500 TPD) under construction, and a Rs481 cr BHEL ASU build-and-transfer order. Core growth is real but moderate (revenue +18%, company EBITDA +21% YoY). Reported PAT +87% is mostly other income on IPO cash, lower interest and tax. At ~43x reported and ~68x core earnings the price already assumes steady compounding; this is not a Sandisk-type inflection.
-BEAR CASE (—): price 238 (0.65×) — Gas revenue +10%/yr, argon falls, merchant ramps slow, margin 35%, other income falls as cash is spent; exit on FY30 EPS.
-BASE CASE (—): price 443 (1.2×) — Gas revenue +18%/yr from new plants, 40% gas EBITDA margin, BHEL EPC at ~12% margin, D&A rises with capex; exit on FY30 EPS about 3.5 years out.
-BULL CASE (—): price 765 (2.1×) — Gas revenue +25%/yr incl. a >600 TPD onsite win, margin 42%, argon firm; exit on FY30 EPS.
-2X PLAUSIBLE? NO in base; YES only in bull: ~25% gas revenue CAGR plus a 45x exit multiple in ~3.5 years.
-3X PLAUSIBLE? NO: needs multiple large onsite wins and a rising multiple.
-5X PLAUSIBLE? 5x NOT reasonably underwritable.
-10X PLAUSIBLE? 10x NOT reasonably underwritable.
-BIGGEST THESIS RISK: Paying ~68x core earnings for a business growing core EBITDA ~20%: multiple contraction can offset growth for years.
-NEXT DATAPOINT: Q2 FY27 result: core EBITDA growth and margin with a full month of Jai Balaji onsite revenue.
+BEST CURRENT OPPORTUNITY: STLTECH
+CONFIRMATION / DISCOVERY: 70 / 54.4
+STATE: RESEARCH
+EXPECTED VALUE (2y, probability-weighted): -1.8% · bear case -75.2%
+WHY: Real, reported operating inflection (revenue +87%, EBITDA +184%) tied to hyperscaler/AI-DC fibre demand, but stock is up ~742% in 12 months at 0% from high, ~63x my FY27 base EPS. Probability-weighted 2y return is roughly flat because the price already discounts the base case. Interesting business, no asymmetry now.
+BEAR CASE (0.3): price 252 (0.25×) — Hyperscaler volumes slip, margin back to ~14%, multiple de-rates to 18x
+BASE CASE (0.4): price 960 (0.94×) — Rev ~Rs8,000cr FY27/Rs11,000cr FY28, EBITDA margin ~20%, ~48.8cr shares; P/E compresses from ~63x FY27 to 32x
+BULL CASE (0.22): price 1600 (1.57×) — Capacity +50% by FY29 fully absorbed, margin 22%+
+2X PLAUSIBLE? NO: needs FY29 EPS ~Rs60 at 34x
+3X PLAUSIBLE? NO: not reasonably underwritable
+5X PLAUSIBLE? NO: not reasonably underwritable
+10X PLAUSIBLE? NO: not reasonably underwritable
+BIGGEST THESIS RISK: Priced for perfection after 742% run; any slip de-rates multiple sharply.
+NEXT DATAPOINT: Q2FY27 results: revenue, EBITDA margin, CFO, order-book conversion; wait for pullback giving EV > +30%.
 CONFIDENCE: MEDIUM

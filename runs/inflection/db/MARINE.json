@@ -1,0 +1,162 @@
+{
+ "symbol": "MARINE",
+ "discovered": "2026-10-06",
+ "discovery_price": 478.85,
+ "reviews": [
+  {
+   "date": "2026-10-06",
+   "trigger": "fast lane: fast_lane,discovery",
+   "stage2_score": 156.8,
+   "price": 478.85,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-07T02:45:40.444832+00:00",
+   "result": {
+    "symbol": "MARINE",
+    "company": "Marine Electricals (India) Limited",
+    "sector": "Electrical equipment (data-centre power distribution)",
+    "discovery_judgement": 62,
+    "score": {
+     "demand_shock": 7,
+     "supply_constraint": 4,
+     "pricing_power": 3,
+     "revenue_acceleration": 7,
+     "operating_leverage": 5,
+     "eps_acceleration": 6,
+     "capacity_catalyst": 7,
+     "cash_flow_quality": 1,
+     "valuation_asymmetry": 2,
+     "management_governance": 2,
+     "balance_sheet": 3,
+     "total": 47
+    },
+    "confirmation_score": 47,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "Orders Rs393.5cr (5 Oct, two filings listed in dossier – may be the same award duplicated) plus Rs250.8cr (28 Sep); order book Rs2,073cr at June 2026 vs Q1 revenue Rs234cr (search-reported); dossier shows revenue YoY only 3.4% – conflicts with reported +59%, unresolved",
+    "new_evidence_type": "order",
+    "reported_earnings_confirm": true,
+    "cfo_to_pat_value": -0.28,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 4.5,
+      "fy3_eps": 6,
+      "fy5_eps": 7,
+      "exit_pe": 25,
+      "price": 150,
+      "multiple": 0.31,
+      "cagr_pct": -44.0,
+      "return_2y_pct": -68.7,
+      "assumptions": "Receivables stuck (178 days), margin stays ~10%, derating"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 5.3,
+      "fy3_eps": 10.8,
+      "fy5_eps": 13,
+      "exit_pe": 45,
+      "price": 486.0,
+      "multiple": 1.01,
+      "cagr_pct": 0.7,
+      "return_2y_pct": 1.5,
+      "assumptions": "Rev Rs1,100cr FY27 / Rs1,650cr FY28 / Rs2,100cr FY29, PAT margin ~7%, 14cr shares"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 6.5,
+      "fy3_eps": 14,
+      "fy5_eps": 19,
+      "exit_pe": 55,
+      "price": 770,
+      "multiple": 1.61,
+      "cagr_pct": 26.8,
+      "return_2y_pct": 60.8,
+      "assumptions": "Goa plant 800 units/yr ramp, margin 12%"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 7.5,
+      "fy3_eps": 18,
+      "fy5_eps": 24,
+      "exit_pe": 60,
+      "price": 1080,
+      "multiple": 2.26,
+      "cagr_pct": 50.2,
+      "return_2y_pct": 125.5,
+      "assumptions": "Data-centre boom continues, new large customers"
+     }
+    },
+    "ev_2y_pct": 3.4,
+    "bear_downside_pct": -68.7,
+    "bull_value_per_share": 770,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "ND/EBITDA 0.62",
+     "cycle": "HIGH: data-centre capex cycle",
+     "liquidity": "MEDIUM, Rs97cr/day",
+     "dilution": "5.5% (dossier)",
+     "order_firmness": "MEDIUM: firm domestic POs (firmness 1.0) but customers lack tier-1 status; a duplicate listing possible"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Data-centre power-distribution orders now ~2x annual revenue and a new Goa plant arriving by Mar-2027, but cash conversion is poor (CFO/PAT -0.28, receivable days 178), equity diluted 5.5%, and ~100x TTM P/E leaves EV only ~+3%. Early-evidence story worth watching, no asymmetry yet.",
+    "chain_missing_links": [
+     "Cash conversion link (ORDER→CASH) broken so far",
+     "Valuation gap absent",
+     "Dossier-vs-reported revenue discrepancy unresolved"
+    ],
+    "demand_signal": "Data-centre power orders (Digital Edge, Micron DXDC, STT GDC)",
+    "supply_signal": "Unknown",
+    "pricing_signal": "EBITDA margin ~10.5-10.8%, up ~0.6-2pts",
+    "order_book": "Rs2,073cr (Jun-26) + ~Rs640cr new orders since",
+    "capacity_catalyst": "Goa plant, ~800 power train units/yr by Mar-2027",
+    "cfo_to_pat": "-0.28 (FY, class C/D)",
+    "debt": "ND/EBITDA 0.62",
+    "roce": "ROE 11.8%",
+    "valuation": "TTM P/E 104, EV/EBITDA 68, PEG 3.7",
+    "management_credibility": "LOW",
+    "plausible": {
+     "2x": "NO: needs FY29 EPS ~Rs18 at 53x",
+     "3x": "NO",
+     "5x": "NO: not reasonably underwritable",
+     "10x": "NO: not reasonably underwritable"
+    },
+    "kill_conditions": [
+     "CFO/PAT negative again in H1FY27",
+     "Receivable days >180",
+     "Order cancellations/delays",
+     "Further dilution"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2FY27 results",
+     "Goa plant commissioning"
+    ],
+    "biggest_risk": "Cash stuck in receivables at 100x earnings.",
+    "next_datapoint": "Q2FY27 revenue, CFO, receivable days; NSE filing check of the two 5-Oct awards.",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "Q1FY27 revenue Rs234cr, order book Rs2,073cr (aggregators)",
+      "type": "FACT",
+      "url": ""
+     },
+     {
+      "claim": "Goa plant capacity target",
+      "type": "MANAGEMENT CLAIM",
+      "url": ""
+     },
+     {
+      "claim": "Scenario EPS",
+      "type": "ASSUMPTION",
+      "url": ""
+     }
+    ]
+   }
+  }
+ ]
+}

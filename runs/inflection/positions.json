@@ -1,0 +1,53 @@
+{
+ "STLTECH": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-06",
+    "type": "order",
+    "text": "Q1FY27 revenue Rs1,910cr (+87% YoY, +33% QoQ), EBITDA Rs397cr (+184%), margin ~20.8%; order book Rs18,618cr; hyperscaler contract ~US$1.11bn FY27-29 (search-reported, NSE PDF not readable here)"
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-06",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-06",
+  "discovery": 54.4,
+  "confirmation": 70,
+  "ev_2y_pct": -1.8
+ },
+ "PATELRMART": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-06",
+    "type": "rating",
+    "text": "Q1FY27 total income Rs310cr (+69%), EBITDA Rs19.7cr (+24%), PAT Rs9.5cr (+37%); credit rating revised (direction/agency not verified)"
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-06",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-06",
+  "discovery": 9.0,
+  "confirmation": 34,
+  "ev_2y_pct": 9.4
+ },
+ "MARINE": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-06",
+    "type": "order",
+    "text": "Orders Rs393.5cr (5 Oct, two filings listed in dossier – may be the same award duplicated) plus Rs250.8cr (28 Sep); order book Rs2,073cr at June 2026 vs Q1 revenue Rs234cr (search-reported); dossier shows revenue YoY only 3.4% – conflicts with reported +59%, unresolved"
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-06",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-06",
+  "discovery": 39.8,
+  "confirmation": 47,
+  "ev_2y_pct": 3.4
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "symbol": "PATELRMART",
+ "discovered": "2026-10-06",
+ "discovery_price": 227.01,
+ "reviews": [
+  {
+   "date": "2026-10-06",
+   "trigger": "fast lane: fast_lane",
+   "stage2_score": 156.9,
+   "price": 227.01,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-07T02:45:39.805472+00:00",
+   "result": {
+    "symbol": "PATELRMART",
+    "company": "Patel Retail Limited",
+    "sector": "Retail (supermarkets, private label)",
+    "discovery_judgement": 15,
+    "score": {
+     "demand_shock": 3,
+     "supply_constraint": 1,
+     "pricing_power": 1,
+     "revenue_acceleration": 8,
+     "operating_leverage": 2,
+     "eps_acceleration": 5,
+     "capacity_catalyst": 3,
+     "cash_flow_quality": 1,
+     "valuation_asymmetry": 6,
+     "management_governance": 2,
+     "balance_sheet": 2,
+     "total": 34
+    },
+    "confirmation_score": 34,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": false,
+    "hard_numeric_fact_text": "Q1FY27 total income Rs310cr (+69%), EBITDA Rs19.7cr (+24%), PAT Rs9.5cr (+37%); credit rating revised (direction/agency not verified)",
+    "new_evidence_type": "rating",
+    "reported_earnings_confirm": true,
+    "cfo_to_pat_value": -2.14,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 14,
+      "fy3_eps": 12,
+      "fy5_eps": 12,
+      "exit_pe": 8,
+      "price": 96,
+      "multiple": 0.42,
+      "cagr_pct": -35.0,
+      "return_2y_pct": -57.7,
+      "assumptions": "Inventory/working-capital stress, margin squeeze, illiquid de-rating"
+     },
+     "base": {
+      "probability": 0.45,
+      "fy2_eps": 17,
+      "fy3_eps": 20,
+      "fy5_eps": 25,
+      "exit_pe": 12,
+      "price": 240,
+      "multiple": 1.06,
+      "cagr_pct": 2.8,
+      "return_2y_pct": 5.7,
+      "assumptions": "Store rollout ~50→70, margin ~6%"
+     },
+     "bull": {
+      "probability": 0.2,
+      "fy2_eps": 21,
+      "fy3_eps": 27,
+      "fy5_eps": 38,
+      "exit_pe": 15,
+      "price": 405,
+      "multiple": 1.78,
+      "cagr_pct": 33.6,
+      "return_2y_pct": 78.4,
+      "assumptions": "Margin recovery, private label mix"
+     },
+     "extreme_bull": {
+      "probability": 0.05,
+      "fy2_eps": 25,
+      "fy3_eps": 34,
+      "fy5_eps": 50,
+      "exit_pe": 18,
+      "price": 612,
+      "multiple": 2.7,
+      "cagr_pct": 64.2,
+      "return_2y_pct": 169.6,
+      "assumptions": "Scale-up of Indian Chaska brand"
+     }
+    },
+    "ev_2y_pct": 9.4,
+    "bear_downside_pct": -57.7,
+    "bull_value_per_share": 405,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "ND/EBITDA 1.43, interest cover 7.6",
+     "cycle": "LOW",
+     "liquidity": "HIGH: ~Rs1.4cr/day turnover, mcap Rs758cr",
+     "dilution": "LOW",
+     "order_firmness": "N/A (retail)"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Fast-growing small retailer at ~17x with a rating upgrade, but growth is low quality: EBITDA margin down 2.2pts, incremental margin 3%, CFO negative (-2.1x PAT), inventory +81%. Rating upgrade is not an inflection. No demand/supply/pricing edge; ordinary store-rollout story.",
+    "chain_missing_links": [
+     "Industry shock/shortage absent",
+     "Margin leverage absent",
+     "Positive CFO absent"
+    ],
+    "demand_signal": "Store rollout (53 stores) – not an industry shock",
+    "supply_signal": "None",
+    "pricing_signal": "None; margin falling",
+    "order_book": "N/A",
+    "capacity_catalyst": "New stores (Nos. 53-54)",
+    "cfo_to_pat": "-2.14 (FY, dossier) class C/D",
+    "debt": "ND/EBITDA 1.43",
+    "roce": "ROE 10.7%; EBITDA/IC 17.1%",
+    "valuation": "TTM P/E 17.4, EV/EBITDA 10.6",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs38 at 12x",
+     "3x": "NO",
+     "5x": "NO: not reasonably underwritable",
+     "10x": "NO: not reasonably underwritable"
+    },
+    "kill_conditions": [
+     "Second year of negative CFO",
+     "EBITDA margin <5%",
+     "Rating downgrade"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2FY27 results",
+     "New store openings"
+    ],
+    "biggest_risk": "Working-capital deterioration in an illiquid stock.",
+    "next_datapoint": "H1FY27 CFO and inventory days.",
+    "confidence": "MEDIUM",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "Q1FY27 revenue/EBITDA/PAT (press releases via aggregators)",
+      "type": "FACT",
+      "url": ""
+     },
+     {
+      "claim": "Dossier CFO/PAT, inventory, margins",
+      "type": "CALCULATION",
+      "url": ""
+     },
+     {
+      "claim": "Scenario EPS",
+      "type": "ASSUMPTION",
+      "url": ""
+     }
+    ]
+   }
+  }
+ ]
+}
