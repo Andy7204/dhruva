@@ -18,7 +18,7 @@ from scanner.score import ramp
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'runs'/'inflection'
-RELEVANT = ('Bagging/Receiving of orders/contracts', 'Commencement of commercial production/operations',
+RELEVANT = ('Bagging/Receiving of orders/contracts', 'Commencement of commercial production/operations', 'Capacity addition', 'Preferential issue', 'Press Release',
             'Credit Rating', 'Acquisition', 'Outcome of Board Meeting', 'Investor Presentation',
             'Analysts/Institutional Investor Meet/Con. Call Updates', 'Press Release', 'Financial Result')
 
@@ -98,6 +98,7 @@ def funnel(stage1, news, session, events=None, top=25, top2=10, min_turnover_cr=
         ev = events[events['symbol'] == r['symbol']] if events is not None and len(events) else None
         (folder/f"{r['symbol']}.md").write_text(dossier(r, ind.loc[r['industry']] if r['industry'] in ind.index else None,
                                                         by.get(r['symbol'], []), session, ev), encoding='utf-8')
+        (folder/f"{r['symbol']}_filings.md").write_text(filing_texts(r['symbol'], by.get(r['symbol'], []), session), encoding='utf-8')
     pool['finalist'] = pool['symbol'].isin(finalists['symbol'])
     pool.to_csv(OUT/'stage2.csv', index=False)
     if len(tickets): tickets.to_csv(OUT/'fast_lane.csv', index=False)
@@ -136,3 +137,25 @@ def dossier(r, ind, filings, session, events=None):
         lines.append(f"- {str(a.get('time'))[:10]} · {a.get('desc')} · {a.get('text', '')[:200]} · {a.get('url') or ''}")
     lines += ['', 'Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.']
     return '\n'.join(lines)+'\n'
+
+
+PRIMARY = ('Outcome of Board Meeting', 'Investor Presentation', 'Analysts/Institutional Investor Meet/Con. Call Updates',
+           'Bagging/Receiving of orders/contracts', 'Commencement of commercial production/operations', 'Capacity addition',
+           'Credit Rating', 'Preferential issue', 'Press Release')
+
+
+def filing_texts(symbol, filings, session, max_docs=6, max_chars=8000):
+    """Text of the newest primary filings, saved beside the dossier.
+
+    Stage 3 runs in a cloud sandbox that cannot reach nseindia.com, so the GitHub
+    job (which can) stores the source text here. Quote it as FACT with the URL.
+    """
+    from scanner.events import pdf_text
+    docs = [a for a in sorted(filings, key=lambda a: str(a.get('time')), reverse=True)
+            if any((a.get('desc') or '').startswith(p) for p in PRIMARY) and (a.get('url') or '').lower().endswith('.pdf')]
+    out = [f'# {symbol} — source filing text (extracted {session} from NSE PDFs; first {max_chars} characters each)', '']
+    for a in docs[:max_docs]:
+        text = pdf_text(a['url']) or ''
+        out += [f"## {str(a.get('time'))[:10]} · {a.get('desc')}", f"Source: {a['url']}", '',
+                ' '.join(text.split())[:max_chars] or '(text not extracted yet; PDF budget or scanned image)', '']
+    return '\n'.join(out)+'\n'
