@@ -15,6 +15,8 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | STLTECH | DISCOVER | RESEARCH | ₹0 | 1016.7 | fast-lane event or discovery >= 60 |
 | PATELRMART | DISCOVER | RESEARCH | ₹0 | 227.01 | fast-lane event or discovery >= 60 |
 | MARINE | DISCOVER | RESEARCH | ₹0 | 478.85 | fast-lane event or discovery >= 60 |
+| LT | DISCOVER | RESEARCH | ₹0 | 3770.0 | fast-lane event or discovery >= 60 |
+| TARIL | DISCOVER | RESEARCH | ₹0 | 283.65 | fast-lane event or discovery >= 60 |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -22,6 +24,8 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | STLTECH | RESEARCH | 2026-10-06 | ₹0 | 54.4 | 70 | -1.8 | fast-lane event or discovery >= 60 |
 | PATELRMART | RESEARCH | 2026-10-06 | ₹0 | 9.0 | 34 | 9.4 | fast-lane event or discovery >= 60 |
 | MARINE | RESEARCH | 2026-10-06 | ₹0 | 39.8 | 47 | 3.4 | fast-lane event or discovery >= 60 |
+| LT | RESEARCH | 2026-10-06 | ₹0 | 29.0 | 37 | 15.3 | fast-lane event or discovery >= 60 |
+| TARIL | RESEARCH | 2026-10-06 | ₹0 | 37.2 | 39 | 17.6 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
@@ -29,6 +33,8 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | STLTECH | 70 | — | 54.4 | -1.8 | YELLOW | RESEARCH | 2026-10-06 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
 | MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
+| TARIL | 39 | — | 37.2 | 17.6 | YELLOW | RESEARCH | 2026-10-06 |
+| LT | 37 | — | 29.0 | 15.3 | YELLOW | RESEARCH | 2026-10-06 |
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)

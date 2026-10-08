@@ -1,0 +1,167 @@
+{
+ "symbol": "TARIL",
+ "discovered": "2026-10-06",
+ "discovery_price": 283.65,
+ "reviews": [
+  {
+   "date": "2026-10-06",
+   "trigger": "fast lane: fast_lane,discovery",
+   "stage2_score": 136.9,
+   "price": 283.65,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-08T02:45:15.643341+00:00",
+   "result": {
+    "symbol": "TARIL",
+    "company": "Transformers And Rectifiers (India) Limited",
+    "sector": "Capital goods (power transformers)",
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 8.5,
+      "fy3_eps": 8.0,
+      "fy5_eps": 9,
+      "exit_pe": 18,
+      "price": 144.0,
+      "multiple": 0.51,
+      "cagr_pct": -28.7,
+      "return_2y_pct": -49.2,
+      "assumptions": "Execution slips, receivables stay ~130 days, FY27 guidance missed, derating to 18x"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 9.5,
+      "fy3_eps": 12.0,
+      "fy5_eps": 14,
+      "exit_pe": 28,
+      "price": 336.0,
+      "multiple": 1.18,
+      "cagr_pct": 8.8,
+      "return_2y_pct": 18.5,
+      "assumptions": "FY27 rev +~20% (below 25% guide), ~9% PAT margin, Changodar ramps from Q3 FY27, ~30cr shares"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 10.5,
+      "fy3_eps": 15.0,
+      "fy5_eps": 19,
+      "exit_pe": 32,
+      "price": 480.0,
+      "multiple": 1.69,
+      "cagr_pct": 30.1,
+      "return_2y_pct": 69.2,
+      "assumptions": "Guidance met, 10% PAT margin, order book converts, enquiry pipeline Rs23,000cr wins"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 11.5,
+      "fy3_eps": 18.0,
+      "fy5_eps": 24,
+      "exit_pe": 35,
+      "price": 630.0,
+      "multiple": 2.22,
+      "cagr_pct": 49.0,
+      "return_2y_pct": 122.1,
+      "assumptions": "Grid capex supercycle plus export share gains"
+     }
+    },
+    "ev_2y_pct": 17.6,
+    "bear_downside_pct": -49.2,
+    "bull_value_per_share": 480.0,
+    "discovery_judgement": 55,
+    "score": {
+     "demand_shock": 7,
+     "supply_constraint": 6,
+     "pricing_power": 4,
+     "revenue_acceleration": 3,
+     "operating_leverage": 2,
+     "eps_acceleration": 2,
+     "capacity_catalyst": 6,
+     "cash_flow_quality": 0,
+     "valuation_asymmetry": 4,
+     "management_governance": 2,
+     "balance_sheet": 3,
+     "total": 39
+    },
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "Two 2 Oct 2026 order intimations (GETCO) ~Rs1,000cr (dossier, ~26% of annual revenue); unexecuted order book Rs6,630cr at 30 Jun 2026 vs FY26 revenue Rs2,395cr (~2.8x) (search-reported)",
+    "new_evidence_type": "order",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": -0.4,
+    "confirmation_falling": false,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "ND/EBITDA 1.05, interest cover 6.3",
+     "cycle": "MEDIUM: grid/transformer capex cycle strong but stock -43% in 12m",
+     "liquidity": "LOW, Rs122cr/day",
+     "dilution": "0.0% (dossier)",
+     "order_firmness": "MEDIUM: firm state-utility POs (GETCO, PGCIL) but tendered, receivable-heavy"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Record order book (Rs6,630cr, ~2.8x FY26 revenue) and Changodar expansion with utilisation normalising from Q3 FY27 give a credible grid-capex story, but reported Q1 FY27 revenue +8%, flat EBITDA, PAT down, CFO/PAT -0.40 and receivable days 132 show no earnings inflection yet. EV is modest with a deep bear case.",
+    "chain_missing_links": [
+     "Revenue acceleration (Q1 +8% vs 25% FY27 guide)",
+     "Operating leverage / EPS growth",
+     "ORDER->CASH conversion (CFO/PAT -0.40)"
+    ],
+    "demand_signal": "Grid transformer orders: GETCO ~Rs1,000cr, PGCIL Rs1,000cr+; Q1 inflow Rs2,114cr (+218%) (search-reported)",
+    "supply_signal": "Unknown (transformer lead times not verified)",
+    "pricing_signal": "EBITDA margin 16.3% dossier (-0.3pt); no pricing evidence",
+    "order_book": "Rs6,630cr at 30 Jun 2026, +26% YoY; enquiry pipeline ~Rs23,000cr (search-reported, management)",
+    "capacity_catalyst": "Changodar expansion due ~Aug 2026; utilisation normalising Q3 FY27 (management claim)",
+    "cfo_to_pat": "-0.40 (FY, class C/D)",
+    "debt": "ND/EBITDA 1.05",
+    "roce": "ROE 17.4%",
+    "valuation": "TTM P/E 32.9, EV/EBITDA 20.9, mcap Rs8,514cr",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs18 at 32x",
+     "3x": "NO: not reasonably underwritable",
+     "5x": "NO: not reasonably underwritable",
+     "10x": "NO: not reasonably underwritable"
+    },
+    "kill_conditions": [
+     "FY27 revenue growth guidance cut below 15%",
+     "Receivable days rise above 150 or CFO/PAT negative again in H1 FY27",
+     "Q2 FY27 revenue not above Rs700cr"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results and call (date in 6 Oct intimation)",
+     "Changodar commissioning",
+     "Further utility orders"
+    ],
+    "biggest_risk": "Order book fails to convert to cash: receivables +89% vs revenue +24%, negative CFO.",
+    "next_datapoint": "Q2 FY27 results: revenue vs Rs700cr, Changodar utilisation, CFO and receivable days",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "GETCO order intimation 2 Oct 2026 (value from dossier extraction)",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/TRIL_02102026163021_IntimationofOrder02102026GETCO.pdf"
+     },
+     {
+      "claim": "Q1 FY27 revenue +8%, order book Rs6,630cr (web, supplementary)",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://solarquarter.com/2026/07/21/transformers-rectifiers-india-reports-8-q1-fy27-revenue-growth-order-book-reaches-record-inr-6630-crore/"
+     },
+     {
+      "claim": "FY27 guidance 25% revenue, 16% EBITDA, 9-10% PAT margin (web, supplementary)",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://electricalmirror.net/transformers-rectifiers-q1-fy27-results-record-order-book/"
+     },
+     {
+      "claim": "CFO/PAT -0.40, receivables +89%, P/E 32.9; EBITDA margin 16.3% in dossier vs 19.2% consolidated reported in web sources (conflict, unresolved)",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/TARIL.md"
+     }
+    ],
+    "confirmation_score": 39
+   }
+  }
+ ]
+}

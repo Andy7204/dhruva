@@ -1,0 +1,151 @@
+{
+ "symbol": "LT",
+ "company": "Larsen & Toubro Limited",
+ "sector": "Construction / EPC conglomerate",
+ "scenarios": {
+  "bear": {
+   "probability": 0.3,
+   "fy2_eps": 128,
+   "fy3_eps": 135,
+   "fy5_eps": 150,
+   "exit_pe": 22,
+   "price": 2970,
+   "multiple": 0.79,
+   "cagr_pct": -11.2,
+   "return_2y_pct": -21.2,
+   "assumptions": "Middle East awards slip, margin stays ~8-9%, derating to 22x"
+  },
+  "base": {
+   "probability": 0.45,
+   "fy2_eps": 140,
+   "fy3_eps": 160,
+   "fy5_eps": 185,
+   "exit_pe": 27,
+   "price": 4320,
+   "multiple": 1.15,
+   "cagr_pct": 7.0,
+   "return_2y_pct": 14.6,
+   "assumptions": "Revenue +10-12% per guidance, PAT ~+12% CAGR, multiple ~27x"
+  },
+  "bull": {
+   "probability": 0.2,
+   "fy2_eps": 148,
+   "fy3_eps": 180,
+   "fy5_eps": 215,
+   "exit_pe": 32,
+   "price": 5760,
+   "multiple": 1.53,
+   "cagr_pct": 23.6,
+   "return_2y_pct": 52.8,
+   "assumptions": "Execution normalises H2 FY27, margin recovery, 32x"
+  },
+  "extreme_bull": {
+   "probability": 0.05,
+   "fy2_eps": 155,
+   "fy3_eps": 200,
+   "fy5_eps": 250,
+   "exit_pe": 36,
+   "price": 7200,
+   "multiple": 1.91,
+   "cagr_pct": 38.2,
+   "return_2y_pct": 91.0,
+   "assumptions": "Offshore wind, data-centre and semiconductor optionality re-rate"
+  }
+ },
+ "ev_2y_pct": 15.3,
+ "bear_downside_pct": -21.2,
+ "bull_value_per_share": 5760,
+ "discovery_judgement": 35,
+ "score": {
+  "demand_shock": 6,
+  "supply_constraint": 3,
+  "pricing_power": 2,
+  "revenue_acceleration": 3,
+  "operating_leverage": 1,
+  "eps_acceleration": 3,
+  "capacity_catalyst": 3,
+  "cash_flow_quality": 6,
+  "valuation_asymmetry": 3,
+  "management_governance": 4,
+  "balance_sheet": 3,
+  "total": 37
+ },
+ "band": "REJECT",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "Order book Rs7.79 lakh cr at 30 Jun 2026 (+27% YoY), Q1 inflow Rs1,08,014cr vs Q1 revenue Rs67,942cr (search-reported). Dossier order value Rs308,512cr on 30 Sep and 5 Oct filings is NOT trusted (likely extraction error or aggregate)",
+ "new_evidence_type": "order",
+ "reported_earnings_confirm": false,
+ "cfo_to_pat_value": 1.04,
+ "confirmation_falling": true,
+ "risk": {
+  "governance": "LOW",
+  "balance_sheet": "ND/EBITDA 3.2 (dossier, includes financial services), interest cover 11.3",
+  "cycle": "MEDIUM: infra/Middle East capex cycle",
+  "liquidity": "LOW risk, Rs598cr/day",
+  "dilution": "0.0%",
+  "order_firmness": "LOW-MEDIUM: Middle East awards deferred, large offshore wind awards"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Record Rs7.79 lakh cr order book and 10-12% FY27 guidance, but a Rs5.2 lakh cr mega-cap at 32x TTM P/E, with EBITDA down ~3% and margin 9.0% in Q1, execution slipping and other income lifting profit, is not an early inflection and offers no asymmetry. Large orders are not new information for L&T.",
+ "chain_missing_links": [
+  "Operating leverage (EBITDA falling)",
+  "Valuation gap",
+  "Early-stage inflection: already widely covered"
+ ],
+ "demand_signal": "Q1 inflow Rs1.08 lakh cr +14%; Middle East and offshore wind (search-reported)",
+ "supply_signal": "Unknown",
+ "pricing_signal": "No evidence; margin down ~90bp",
+ "order_book": "Rs7.79 lakh cr, +27% YoY, 52% international (search-reported)",
+ "capacity_catalyst": "L&T Semiconductor Technologies launched 40 products (18 Sep filing); revenue contribution unknown",
+ "cfo_to_pat": "1.04 (FY, healthy)",
+ "debt": "ND/EBITDA 3.2 (dossier)",
+ "roce": "ROE 14.7%",
+ "valuation": "TTM P/E 31.9, EV/EBITDA 18.8",
+ "management_credibility": "HIGH",
+ "plausible": {
+  "2x": "NO: needs EPS Rs235 at 32x within 5y",
+  "3x": "NO",
+  "5x": "NO: not reasonably underwritable",
+  "10x": "NO: not reasonably underwritable"
+ },
+ "kill_conditions": [
+  "FY27 order inflow/revenue guidance cut below 10%",
+  "Consolidated EBITDA margin below 8.5% for two quarters",
+  "Middle East awards not resuming by Q3 FY27"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results",
+  "Middle East award pickup"
+ ],
+ "biggest_risk": "Derating from 32x P/E if execution and margins keep slipping.",
+ "next_datapoint": "Q2 FY27: revenue growth vs 10-12% guide, EBITDA margin, Middle East order inflow",
+ "confidence": "MEDIUM",
+ "material_change": "first review. Dossier conflict: dossier shows quarter revenue -8.7% and PAT -25% YoY, while web-reported Q1 FY27 shows revenue +7% and PAT +14% (dossier EBITDA margin 9.0% matches). Unresolved; stage 2 data may be stale or mis-aligned",
+ "sources": [
+  {
+   "claim": "5 Oct 2026 order press release; value not verified",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/PAM_05102026093512_PressRelease05102026.pdf"
+  },
+  {
+   "claim": "Order book Rs7.79 lakh cr, inflow Rs1.08 lakh cr (web, supplementary)",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://www.kotakneo.com/news/stocks/lt-q1-fy27-results-pat-rises-14-order-inflow-rs-1-08-lakh-crore/"
+  },
+  {
+   "claim": "EBITDA -3%, margin 9.0%, other income support (web, supplementary)",
+   "type": "CALCULATION",
+   "url": "https://www.indmoney.com/blog/stocks/why-larsen-share-is-rising-after-q1-results"
+  },
+  {
+   "claim": "FY27 guidance 10-12% (broker note)",
+   "type": "ANALYST ESTIMATE",
+   "url": "https://mailcontent.icicidirect.com/mailcontent/idirect_lt_q1fy27.pdf"
+  }
+ ],
+ "confirmation_score": 37
+}

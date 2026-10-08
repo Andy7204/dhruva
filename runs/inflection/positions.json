@@ -49,5 +49,39 @@
   "discovery": 39.8,
   "confirmation": 47,
   "ev_2y_pct": 3.4
+ },
+ "LT": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-06",
+    "type": "order",
+    "text": "Order book Rs7.79 lakh cr at 30 Jun 2026 (+27% YoY), Q1 inflow Rs1,08,014cr vs Q1 revenue Rs67,942cr (search-reported). Dossier order value Rs308,512cr on 30 Sep and 5 Oct filings is NOT trusted (likely extraction error or aggregate)"
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-06",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-06",
+  "discovery": 29.0,
+  "confirmation": 37,
+  "ev_2y_pct": 15.3
+ },
+ "TARIL": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-06",
+    "type": "order",
+    "text": "Two 2 Oct 2026 order intimations (GETCO) ~Rs1,000cr (dossier, ~26% of annual revenue); unexecuted order book Rs6,630cr at 30 Jun 2026 vs FY26 revenue Rs2,395cr (~2.8x) (search-reported)"
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-06",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-06",
+  "discovery": 37.2,
+  "confirmation": 39,
+  "ev_2y_pct": 17.6
  }
 }
