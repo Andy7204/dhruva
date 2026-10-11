@@ -1,22 +1,18 @@
-# Dhruva inflection report — 2026-10-06
+# Dhruva inflection report — 2026-10-09
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
 ## Fast lane (material filings this week)
-- LT 2026-10-05: Bagging/Receiving of orders/contracts — order ≈72% of annual revenue (after firmness haircut) (price ₹3750.0)
-- STLTECH 2026-10-01: Bagging/Receiving of orders/contracts — order ≈21% of annual revenue (after firmness haircut); global Tier-1/hyperscale customer (price ₹955.3499755859376)
+- LT 2026-10-07: Bagging/Receiving of orders/contracts — order ≈72% of annual revenue (after firmness haircut) (price ₹3701.5)
 - MARINE 2026-10-05: Bagging/Receiving of orders/contracts — order ≈27% of annual revenue (after firmness haircut) (price ₹469.1499938964844)
-- TARIL 2026-10-02: Bagging/Receiving of orders/contracts — order ≈26% of annual revenue (after firmness haircut) (price ₹280.79998779296875)
-- PATELRMART 2026-10-03: Credit Rating- Revision — credit rating upgrade (price ₹211.0)
+- MAXHEALTH 2026-10-09: Credit Rating — credit rating upgrade (price ₹883.7999877929688)
+- ADANIENT 2026-10-07: Credit Rating — credit rating upgrade (price ₹2743.0)
+- INDHOTEL 2026-10-09: Credit Rating- Revision — credit rating upgrade (price ₹715.6500244140625)
 
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| STLTECH | DISCOVER | RESEARCH | ₹0 | 1016.7 | fast-lane event or discovery >= 60 |
-| PATELRMART | DISCOVER | RESEARCH | ₹0 | 227.01 | fast-lane event or discovery >= 60 |
-| MARINE | DISCOVER | RESEARCH | ₹0 | 478.85 | fast-lane event or discovery >= 60 |
-| LT | DISCOVER | RESEARCH | ₹0 | 3770.0 | fast-lane event or discovery >= 60 |
-| TARIL | DISCOVER | RESEARCH | ₹0 | 283.65 | fast-lane event or discovery >= 60 |
+| none | | | | | |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -38,35 +34,35 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- STLTECH (Telecommunication): discovery 42.6, confirmation 80.9, source fast_lane,discovery
-- PATELRMART (Unclassified): discovery 5.0, confirmation 51.2, source fast_lane
 - MARINE (Unclassified): discovery 25.0, confirmation 51.1, source fast_lane,discovery
-- TARIL (Capital Goods): discovery 25.3, confirmation 32.3, source fast_lane,discovery
+- MAXHEALTH (Healthcare): discovery 6.4, confirmation 47.3, source fast_lane
+- INDHOTEL (Consumer Services): discovery 5.0, confirmation 36.1, source fast_lane
 - LT (Construction): discovery 25.0, confirmation 36.1, source fast_lane,discovery
+- ADANIENT (Metals & Mining): discovery 5.0, confirmation 20.4, source fast_lane
 - NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.6, source confirmation
-- DEEPAKNTR (Chemicals): discovery 8.6, confirmation 92.9, source confirmation
+- DEEPAKNTR (Chemicals): discovery 8.6, confirmation 92.8, source confirmation
 - ALKYLAMINE (Chemicals): discovery 15.0, confirmation 92.7, source confirmation
 - GANDHAR (Unclassified): discovery 15.0, confirmation 93.6, source confirmation
 - LUPIN (Healthcare): discovery 1.5, confirmation 92.2, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- STLTECH: fast lane: fast_lane,discovery
-- PATELRMART: fast lane: fast_lane
-- MARINE: fast lane: fast_lane,discovery
-- TARIL: fast lane: fast_lane,discovery
-- LT: fast lane: fast_lane,discovery
+- MAXHEALTH: fast lane: fast_lane
+- INDHOTEL: fast lane: fast_lane
+- LT: new filing: Bagging/Receiving of orders/contracts
+- ADANIENT: fast lane: fast_lane
+- NAVINFLUOR: first review
 
-## Missed-winner audit (235 cases logged; 234 new today)
-- GANDHAR: +52.1% vs Nifty 500 since 2026-07-08 — no history before the move (logging started later)
-- SOTL: +125.9% vs Nifty 500 since 2026-04-10 — no history before the move (logging started later)
-- EMIL: +56.6% vs Nifty 500 since 2026-07-09 — no history before the move (logging started later)
-- TATVA: +55.5% vs Nifty 500 since 2026-07-09 — no history before the move (logging started later)
-- UFLEX: +53.0% vs Nifty 500 since 2026-07-08 — no history before the move (logging started later)
-- KMEW: +45.2% vs Nifty 500 since 2026-07-09 — no history before the move (logging started later)
-- BALAMINES: +113.0% vs Nifty 500 since 2026-04-10 — no history before the move (logging started later)
-- YASHO: +50.2% vs Nifty 500 since 2026-07-08 — no history before the move (logging started later)
-- MARKSANS: +82.2% vs Nifty 500 since 2026-04-10 — no history before the move (logging started later)
-- NRAIL: +64.5% vs Nifty 500 since 2026-07-08 — no history before the move (logging started later)
+## Missed-winner audit (429 cases logged; 194 new today)
+- GANDHAR: +51.1% vs Nifty 500 since 2026-07-10 — no history before the move (logging started later)
+- EMIL: +47.4% vs Nifty 500 since 2026-07-10 — no history before the move (logging started later)
+- SOTL: +121.3% vs Nifty 500 since 2026-04-13 — no history before the move (logging started later)
+- TATVA: +41.2% vs Nifty 500 since 2026-07-10 — no history before the move (logging started later)
+- UFLEX: +42.9% vs Nifty 500 since 2026-07-10 — no history before the move (logging started later)
+- BALAMINES: +88.3% vs Nifty 500 since 2026-04-13 — no history before the move (logging started later)
+- YASHO: +40.9% vs Nifty 500 since 2026-07-10 — no history before the move (logging started later)
+- FAIRCHEMOR: +23.2% vs Nifty 500 since 2026-09-08 — no history before the move (logging started later)
+- KMEW: +84.3% vs Nifty 500 since 2026-04-13 — no history before the move (logging started later)
+- MARKSANS: +75.2% vs Nifty 500 since 2026-04-13 — no history before the move (logging started later)
 
 ## Cash
 Your confirmed cash ₹10,000 · confirmed holdings: none · starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.

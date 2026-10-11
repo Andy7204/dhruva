@@ -1,8 +1,8 @@
 # MARINE — Marine Electricals (India) Limited (Unclassified)
-Evidence dossier generated 2026-10-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 51.1 · Stage 2 score 156.8 · score 20 sessions ago  · 60 sessions ago 
-Price ₹478.85 · 12-month return 113.7% · 0.0% from 52-week high · RS rank 98.0 · stage-2 trend True · turnover ₹96.95 cr/day
+Stage 1 score 51.1 · Stage 2 score 156.9 · score 20 sessions ago  · 60 sessions ago 
+Price ₹455.65 · 12-month return 111.5% · -4.8% from 52-week high · RS rank 97.6 · stage-2 trend True · turnover ₹105.22 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 3.4% · QoQ % (previous QoQ 32.0%) · quarters of sequential growth in last 4: 1
@@ -15,17 +15,20 @@ CFO/PAT -0.28 · class: C/D weak: negative operating cash flow · receivables gr
 Net debt/EBITDA 0.62 · interest cover 6.8 · dilution 5.5% · ROE 11.8% · EBITDA/invested capital 17.3%
 
 ## Valuation
-Market cap ₹6701 cr · TTM P/E 104.3 · PEG 3.71 · EV/EBITDA 67.7 · EPS growth minus 12-month price return -85.5 pts
+Market cap ₹6377 cr · TTM P/E 99.3 · PEG 3.53 · EV/EBITDA 64.5 · EPS growth minus 12-month price return -83.3 pts
 
 ## Industry (same NSE industry, this scan)
-754 peers · 46% growing revenue >20% · 40% expanding EBITDA margin · median revenue YoY 18.1%
+750 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
 
-Discovery score 25.0 (order intensity 180d 0.80, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change  pts, turnaround False) · fast lane: True · source: fast_lane,discovery
+Discovery score 25.0 (order intensity 180d 1.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change  pts, turnaround False) · fast lane: True · source: fast_lane,discovery
 
 ## Extracted event facts (CALCULATIONS from filing PDFs; verify in the source)
 - date=2026-10-05 · desc=Bagging/Receiving of orders/contracts · value_cr=393.52 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.271 · fast_lane_reasons=order ≈27% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/MARINE_05102026101936_Signed_Regulation_30_Award_CTRL.pdf
 - date=2026-10-05 · desc=Bagging/Receiving of orders/contracts · value_cr=393.52 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.271 · fast_lane_reasons=order ≈27% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/MARINE_05102026093406_Signed_Regulation_30_Award_CTRL.pdf
 - date=2026-09-28 · desc=Bagging/Receiving of orders/contracts · value_cr=250.78 · years=1.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.259 · fast_lane_reasons=order ≈26% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/MARINE_28092026095814_Signed_Final_28092026_Regulation_30.pdf
+- date=2026-09-04 · desc=Bagging/Receiving of orders/contracts · value_cr=80.77 · firmness=0.5 · customer=domestic · tier1_customer=False · order_intensity=0.028 · url=https://nsearchives.nseindia.com/corporate/MARINE_04092026114537_Signed_Regulation_30_DXDC__Micron.pdf
+- date=2026-09-01 · desc=Bagging/Receiving of orders/contracts · value_cr=229.73 · years=1.25 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.19 · url=https://nsearchives.nseindia.com/corporate/MARINE_01092026095720_Regulation_30_Signed_Digital_Edge_DC_India.pdf
+- date=2026-08-31 · desc=Bagging/Receiving of orders/contracts · value_cr=398.81 · years=1.5 · firmness=0.5 · customer=domestic · tier1_customer=False · order_intensity=0.137 · url=https://nsearchives.nseindia.com/corporate/MARINE_31082026133729_Signed_Classic__PDG_Group.pdf
 
 Flags: PAT up while CFO down
 

@@ -1,8 +1,8 @@
 # GANDHAR — Gandhar Oil Refinery (India) Limited (Unclassified)
-Evidence dossier generated 2026-10-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 93.6 · Stage 2 score 99.3 · score 20 sessions ago  · 60 sessions ago 
-Price ₹282.50 · 12-month return 98.2% · -0.0% from 52-week high · RS rank 94.2 · stage-2 trend True · turnover ₹16.94 cr/day
+Stage 1 score 93.6 · Stage 2 score 99.4 · score 20 sessions ago  · 60 sessions ago 
+Price ₹296.55 · 12-month return 112.7% · -0.9% from 52-week high · RS rank 95.3 · stage-2 trend True · turnover ₹21.48 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 91.8% · QoQ % (previous QoQ -6.3%) · quarters of sequential growth in last 4: 3
@@ -15,15 +15,17 @@ CFO/PAT 0.94 · class: healthy · receivables growth 7.5% vs revenue 8.7% · inv
 Net debt/EBITDA 0.58 · interest cover 22.1 · dilution 0.0% · ROE 10.0% · EBITDA/invested capital 15.9%
 
 ## Valuation
-Market cap ₹2765 cr · TTM P/E 9.2 · PEG 0.01 · EV/EBITDA 12.0 · EPS growth minus 12-month price return 101.8 pts
+Market cap ₹2903 cr · TTM P/E 9.6 · PEG 0.02 · EV/EBITDA 12.6 · EPS growth minus 12-month price return 87.3 pts
 
 ## Industry (same NSE industry, this scan)
-754 peers · 46% growing revenue >20% · 40% expanding EBITDA margin · median revenue YoY 18.1%
+750 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
 
 Discovery score 15.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 10.4 pts, turnaround False) · fast lane: False · source: confirmation
 
 ## Extracted event facts (CALCULATIONS from filing PDFs; verify in the source)
 - date=2026-09-30 · desc=Credit Rating- Others · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/GANDHAROIL_30092026174215_Gandhar_Oil_-_Reaffirmed_Credit_Rating.pdf
+- date=2026-09-01 · desc=Credit Rating- Others · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/GANDHAROIL_01092026165841_Gandhar_Oil_-_Credit_Rating_Final.pdf
+- date=2026-09-01 · desc=Credit Rating- New · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/GANDHAROIL_01092026125812_Gandhar_Oil_-_Credit_Rating_Final.pdf
 
 Flags: inventory growing much faster than revenue
 
