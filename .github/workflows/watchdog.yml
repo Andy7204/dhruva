@@ -1,7 +1,7 @@
 name: Independent daily watchdog
 on:
   schedule:
-    - cron: '0 21 * * *' #02:30 IST, after the previous daily deadline
+    - cron: '30 1 * * *' # 07:00 IST, after the daily run and its retry
   workflow_dispatch:
     inputs:
       test_alert:

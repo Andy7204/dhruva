@@ -15,7 +15,9 @@ def calendar_config():
 def is_session(day, cfg=None):
     cfg = cfg or calendar_config()
     if not cfg['valid_from'] <= day.isoformat() <= cfg['valid_through']:
-        raise ValueError(f'Exchange calendar coverage unavailable for {day}; review official circulars')
+        # Outside verified coverage: assume weekdays trade. A missed holiday only makes the
+        # run wait for data (no failure); the watchdog warns to add official dates.
+        return day.weekday() < 5
     if day.isoformat() in cfg.get('special_sessions',{}):
         completed_after(day,cfg)  # Require sourced, explicit timing.
         return True

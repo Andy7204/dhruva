@@ -17,6 +17,7 @@ DATA = ROOT/'data'/'indices'
 NSE = {'NIFTY_50': 'NIFTY 50', 'NIFTY200_MOMENTUM_30': 'NIFTY200 MOMENTUM 30',
        'NIFTY_MIDCAP150_MOMENTUM_50': 'NIFTY MIDCAP150 MOMENTUM 50'}
 UA = 'Mozilla/5.0'
+UA_NSE = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125 Safari/537.36'
 
 
 def nse_tri(name, start, end):
@@ -53,9 +54,9 @@ def merge(file, fresh, through):
     fresh = fresh[fresh.index <= pd.Timestamp(through)].dropna()
     common = fresh.index.intersection(old.index)
     revisions = [str(d.date()) for d in common if abs(fresh[d]/old[d]-1) > 1e-4]
-    new = fresh[fresh.index > old.index.max()]
+    new = fresh[~fresh.index.isin(old.index)]  # append later rows and fill earlier gaps; never overwrite
     if len(new):
-        pd.concat([old, new]).rename('tri').to_csv(path, index_label='date')
+        pd.concat([old, new]).sort_index().rename('tri').to_csv(path, index_label='date')
     return len(new), revisions
 
 
@@ -65,11 +66,51 @@ def update(through):
     report = {}
     for file, name in NSE.items():
         report[file] = merge(file, nse_tri(name, start, end), through)
-    report['GOLDBEES'] = merge('GOLDBEES', yahoo_close('GOLDBEES.NS'), through)
+    report['GOLDBEES'] = merge('GOLDBEES', etf_close('GOLDBEES', end-timedelta(days=12), end), through)
     ndx, inr = yahoo_close('^NDX'), yahoo_close('INR=X')
     inr = inr.reindex(ndx.index.union(inr.index)).ffill()
     report['NASDAQ100_INR'] = merge('NASDAQ100_INR', (ndx*inr.reindex(ndx.index)).dropna(), through)
     return {k: {'added': a, 'revisions_ignored': r} for k, (a, r) in report.items()}
+
+
+def bhavcopy_close(symbol, day):
+    """Official NSE closing price from the daily security bhavcopy, or None if not published yet."""
+    url = f'https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_{day:%d%m%Y}.csv'
+    try:
+        raw = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA_NSE}), timeout=30).read().decode('utf-8', 'replace')
+    except Exception:
+        return None
+    for line in raw.splitlines()[1:]:
+        cells = [c.strip() for c in line.split(',')]
+        if len(cells) > 8 and cells[0] == symbol and cells[1] == 'EQ':
+            try:
+                return float(cells[8])
+            except ValueError:
+                return None
+    return None
+
+
+def etf_close(symbol, start, end):
+    """NSE-listed ETF closes: official NSE bhavcopy first (Yahoo often lags or skips days), Yahoo as fallback."""
+    from dhruva.calendar import is_session
+    out = {}
+    day = start
+    while day <= end:
+        try:
+            ok = is_session(day)
+        except ValueError:
+            ok = day.weekday() < 5
+        if ok:
+            v = bhavcopy_close(symbol, day)
+            if v is not None: out[pd.Timestamp(day)] = v
+        day += timedelta(days=1)
+    s = pd.Series(out, dtype=float)
+    try:
+        y = yahoo_close(symbol+'.NS')
+        s = pd.concat([s, y[~y.index.isin(s.index)]]).sort_index()
+    except Exception:
+        pass
+    return s
 
 
 def latest(file):

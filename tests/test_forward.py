@@ -83,4 +83,15 @@ class GuardTests(unittest.TestCase):
             with unittest.mock.patch('dhruva.marketdata.update', side_effect=RuntimeError('fetch attempted')):
                 late = daily.run(root, datetime(2026, 10, 6, 2, 10, tzinfo=IST))
             self.assertEqual(late['session'], '2026-10-05')  # not skipped as "before market close"
-            self.assertIn('fetch attempted', late['errors'][0])
+            self.assertEqual(late['status'], 'WAITING_FOR_DATA')  # transient fetch error: wait, do not fail
+            self.assertIn('fetch attempted', late['reason'])
+
+    def test_watchdog_tolerates_one_late_session_but_not_two(self):
+        from dhruva import watchdog as W
+        errors, warnings = [], []
+        W.stale('BOOKS', '2026-10-08', '2026-10-09', errors, warnings)
+        self.assertEqual((len(errors), len(warnings)), (0, 1))
+        W.stale('BOOKS', '2026-10-07', '2026-10-09', errors, warnings)
+        self.assertEqual(len(errors), 1)
+        W.stale('BOOKS', '2026-10-09', '2026-10-12', errors, warnings)  # weekend between: one session behind
+        self.assertEqual(len(errors), 1)

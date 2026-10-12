@@ -30,10 +30,16 @@ def run(root=ROOT, now=None, force=False):
             status.update(status='SKIPPED_UP_TO_DATE', reason=f'books already recorded through {recorded}', session=session)
             return status
         status['session'] = session
-        status['data'] = marketdata.update(session)
+        try:
+            status['data'] = marketdata.update(session)
+        except Exception as exc:  # vendor/network hiccup: retry run catches up; watchdog alerts if it persists
+            status.update(status='WAITING_FOR_DATA', reason=f'Data fetch failed: {type(exc).__name__}: {exc}')
+            return status
         stale = [f for f in REQUIRED if marketdata.latest(f) < session]
         if stale:
-            raise RuntimeError('Data not yet published for '+session+': '+', '.join(stale))
+            # Vendors sometimes publish late. Wait for the retry run instead of failing (and emailing).
+            status.update(status='WAITING_FOR_DATA', reason='Not yet published for '+session+': '+', '.join(stale))
+            return status
         cfg = forward.config(root)
         books = forward.replay(cfg, through=session)
         if not books:
