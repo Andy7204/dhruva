@@ -77,8 +77,10 @@ def run(frames, universe_syms, session):
     path = AUDIT/'missed.jsonl'
     known = {(r['symbol'], r['move_start']) for r in map(json.loads, path.read_text(encoding='utf-8').splitlines())} if path.exists() else set()
     new = []
+    first_log = hist['date'].min() if len(hist) else session
     for _, r in m.iterrows():
         if (r['symbol'], r['move_start']) in known: continue
+        if r['move_start'] < first_log: continue  # move began before Dhruva logged anything: no fair diagnosis possible
         why, best = diagnose(r, universe_syms, hist, signals, trans)
         new.append({**r.to_dict(), 'detected_on': session, 'diagnosis': why, 'best_discovery_before': best,
                     'review': 'pending: reconstruct filings 30/60/90 days before move_start; propose rule; test on controls'})

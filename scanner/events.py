@@ -84,15 +84,21 @@ def amounts(text, usd_inr):
     return out
 
 
-TOTALS = ('order book', 'orderbook', 'order inflow', 'order backlog', 'turnover', 'revenue', 'net worth', 'market cap',
+TOTALS = ('background', 'about ', 'order book', 'orderbook', 'order inflow', 'order backlog', 'turnover', 'revenue', 'net worth', 'market cap',
           'total income', 'total order', 'classif', 'categor', 'range of', 'paid-up', 'paid up', 'share capital', 'profit')
+
+
+# Amounts describing the company itself ("L&T is a USD 32 billion Indian multinational").
+SELF = ('multinational', 'conglomerate', 'company', 'enterprise', 'group', 'organisation', 'organization', 'market capitali')
 
 
 def order_facts(text, usd_inr):
     t = ' '.join(text.split())
     low = t.lower()
     # Drop company totals and size-band boilerplate (e.g. "order book of Rs 3,07,990 crore").
-    found = [(pos, v) for pos, v in amounts(t, usd_inr) if not any(w in low[max(0, pos-120):pos] for w in TOTALS)]
+    found = [(pos, v) for pos, v in amounts(t, usd_inr)
+             if not any(w in low[max(0, pos-120):pos] for w in TOTALS)
+             and not any(w in low[pos:pos+80] for w in SELF)]
     value = None
     for key in ('size of order', 'size of the order', 'value of order', 'order value', 'contract value', 'total potential value',
                 'consideration', 'size', 'value', 'worth'):
