@@ -1,8 +1,8 @@
 # LT — Larsen & Toubro Limited (Construction)
-Evidence dossier generated 2026-10-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-12 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 36.1 · Stage 2 score 136.7 · score 20 sessions ago 36.5 · 60 sessions ago 36.5
-Price ₹3703.30 · 12-month return -0.7% · -16.2% from 52-week high · RS rank 44.2 · stage-2 trend False · turnover ₹625.28 cr/day
+Price ₹3627.50 · 12-month return -2.7% · -17.9% from 52-week high · RS rank 41.1 · stage-2 trend False · turnover ₹619.38 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY -8.7% · QoQ % (previous QoQ 15.8%) · quarters of sequential growth in last 4: 2
@@ -15,24 +15,26 @@ CFO/PAT 1.04 · class: healthy · receivables growth 12.6% vs revenue 11.8% · i
 Net debt/EBITDA 3.20 · interest cover 11.3 · dilution 0.0% · ROE 14.7% · EBITDA/invested capital 14.4%
 
 ## Valuation
-Market cap ₹509438 cr · TTM P/E 31.3 · PEG  · EV/EBITDA 18.6 · EPS growth minus 12-month price return -24.3 pts
+Market cap ₹499011 cr · TTM P/E 30.7 · PEG  · EV/EBITDA 18.2 · EPS growth minus 12-month price return -22.3 pts
 
 ## Industry (same NSE industry, this scan)
 23 peers · 4% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY -5.6%
 
-Discovery score 25.0 (order intensity 180d 1.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change -1.4 pts, turnaround False) · fast lane: True · source: fast_lane,discovery
+Discovery score 35.0 (order intensity 180d 1.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change -1.4 pts, turnaround False) · fast lane: True · source: fast_lane,discovery
 
 ## Extracted event facts (CALCULATIONS from filing PDFs; verify in the source)
-- date=2026-10-07 · desc=Bagging/Receiving of orders/contracts · value_cr=309696.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.722 · fast_lane_reasons=order ≈72% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_07102026101304_PressRelease07102026.pdf
-- date=2026-10-05 · desc=Bagging/Receiving of orders/contracts · value_cr=309696.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.722 · fast_lane_reasons=order ≈72% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_05102026093512_PressRelease05102026.pdf
-- date=2026-09-30 · desc=Bagging/Receiving of orders/contracts · value_cr=309696.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.722 · fast_lane_reasons=order ≈72% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_30092026121641_PressRelease30092026.pdf
+- date=2026-10-07 · desc=Bagging/Receiving of orders/contracts · value_cr=306432.01 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.715 · fast_lane_reasons=order ≈71% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_07102026101304_PressRelease07102026.pdf
+- date=2026-10-05 · desc=Bagging/Receiving of orders/contracts · value_cr=306432.01 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.715 · fast_lane_reasons=order ≈71% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_05102026093512_PressRelease05102026.pdf
+- date=2026-09-30 · desc=Bagging/Receiving of orders/contracts · value_cr=306432.01 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.715 · fast_lane_reasons=order ≈71% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_30092026121641_PressRelease30092026.pdf
 - date=2026-09-17 · desc=Credit Rating · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/PAM_17092026142102_ESGRating17092026.pdf
-- date=2026-09-09 · desc=Bagging/Receiving of orders/contracts · value_cr=309696.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.722 · fast_lane_reasons=order ≈72% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_09092026100141_PressRelease09092026.pdf
+- date=2026-09-09 · desc=Bagging/Receiving of orders/contracts · value_cr=306432.01 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.715 · fast_lane_reasons=order ≈71% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_09092026100141_PressRelease09092026.pdf
 - date=2026-09-04 · desc=Credit Rating · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/PAM_04092026173240_SE_Intimation_Credit_Rating_CRISIL_0409.pdf
 - date=2026-09-01 · desc=Credit Rating · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/PAM_01092026191301_SE_Intimation_CreditRating_IndiaRatings_010926.pdf
-- date=2026-08-25 · desc=Bagging/Receiving of orders/contracts · value_cr=309696.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.722 · fast_lane_reasons=order ≈72% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_25082026093347_PressRelease25082026.pdf
-- date=2026-08-24 · desc=Bagging/Receiving of orders/contracts · value_cr=309696.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.722 · fast_lane_reasons=order ≈72% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_24082026093929_PressRelease24082026.pdf
-- date=2026-08-20 · desc=Bagging/Receiving of orders/contracts · value_cr=309696.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.722 · fast_lane_reasons=order ≈72% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_20082026100532_Press_Release_Initmation_sgd.pdf
+- date=2026-08-25 · desc=Bagging/Receiving of orders/contracts · value_cr=306432.01 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.715 · fast_lane_reasons=order ≈71% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_25082026093347_PressRelease25082026.pdf
+- date=2026-08-24 · desc=Bagging/Receiving of orders/contracts · value_cr=306432.01 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.715 · fast_lane_reasons=order ≈71% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_24082026093929_PressRelease24082026.pdf
+- date=2026-08-20 · desc=Bagging/Receiving of orders/contracts · value_cr=306432.01 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.715 · fast_lane_reasons=order ≈71% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/PAM_20082026100532_Press_Release_Initmation_sgd.pdf
+- date=2026-08-17 · desc=Bagging/Receiving of orders/contracts · value_cr=306432.01 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.715 · fast_lane_reasons=order ≈71% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/Subhodh_17082026113557_SEIntimation_Pressrelease_17082026.pdf
+- date=2026-08-13 · desc=Bagging/Receiving of orders/contracts · firmness=1.0 · customer=international · tier1_customer=True · fast_lane_reasons=global Tier-1/hyperscale customer · url=https://nsearchives.nseindia.com/corporate/PAM_13082026112910_PressRelease13082026.pdf
 
 Flags: other income over 25% of pre-tax profit
 

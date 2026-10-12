@@ -482,3 +482,7 @@
 {"date": "2026-10-06", "desc": "Credit Rating", "logged_on": "2026-10-09", "price": 280.6000061035156, "reasons": "credit rating upgrade", "symbol": "JNPR"}
 {"date": "2026-10-06", "desc": "Credit Rating", "logged_on": "2026-10-09", "price": 1102.0999755859375, "reasons": "credit rating upgrade", "symbol": "PNBHOUSING"}
 {"date": "2026-09-05", "desc": "Credit Rating", "logged_on": "2026-10-09", "price": 124.98999786376952, "reasons": "credit rating upgrade", "symbol": "DBOL"}
+{"date": "2026-10-12", "desc": "Credit Rating- Revision", "logged_on": "2026-10-12", "price": 511.54998779296875, "reasons": "credit rating upgrade", "symbol": "ARVIND"}
+{"date": "2026-10-10", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-12", "price": 817.8499755859375, "reasons": "order \u224857% of annual revenue (after firmness haircut)", "symbol": "VIVIANA"}
+{"date": "2026-08-17", "desc": "Credit Rating- Revision", "logged_on": "2026-10-12", "price": 3608.39990234375, "reasons": "credit rating upgrade", "symbol": "INDOTECH"}
+{"date": "2026-08-04", "desc": "Credit Rating", "logged_on": "2026-10-12", "price": 282.6000061035156, "reasons": "credit rating upgrade", "symbol": "ITI"}

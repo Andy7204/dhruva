@@ -1,6 +1,6 @@
 {
  "A": {
-  "as_of": "2026-10-09",
+  "as_of": "2026-10-12",
   "cash_weight": 0.0,
   "costs": 2694.61,
   "label": "A \u00b7 Midcap Momentum 50 + gold",
@@ -9,20 +9,20 @@
    "GOLD": 0.3,
    "MIDMOM50": 0.7
   },
-  "liquidation_value": 1002307.83,
-  "nav": 1004069.32,
-  "next_review_in": 246,
+  "liquidation_value": 1001413.97,
+  "nav": 1002521.07,
+  "next_review_in": 245,
   "pending_target": null,
   "strategy": "Midcap Momentum 50 70% + Gold 30%, yearly",
   "tax_paid": 0.0,
   "trades": 2,
   "weights": {
-   "GOLD": 0.2993,
-   "MIDMOM50": 0.7007
+   "GOLD": 0.296,
+   "MIDMOM50": 0.704
   }
  },
  "B": {
-  "as_of": "2026-10-09",
+  "as_of": "2026-10-12",
   "cash_weight": -0.0,
   "costs": 2193.42,
   "label": "B \u00b7 Momentum 30 + gold + Nasdaq-100",
@@ -32,21 +32,21 @@
    "MOM30": 0.6,
    "NDX": 0.2
   },
-  "liquidation_value": 1000717.28,
-  "nav": 1002078.63,
-  "next_review_in": 246,
+  "liquidation_value": 1001745.21,
+  "nav": 1003261.29,
+  "next_review_in": 245,
   "pending_target": null,
   "strategy": "Momentum 30 60% + Gold 20% + Nasdaq-100 20%, yearly",
   "tax_paid": 0.0,
   "trades": 3,
   "weights": {
-   "GOLD": 0.2017,
-   "MOM30": 0.5983,
-   "NDX": 0.1999
+   "GOLD": 0.199,
+   "MOM30": 0.6001,
+   "NDX": 0.2009
   }
  },
  "C": {
-  "as_of": "2026-10-09",
+  "as_of": "2026-10-12",
   "cash_weight": -0.0,
   "costs": 2991.03,
   "label": "C \u00b7 Accelerating dual momentum (aggressive)",
@@ -54,9 +54,9 @@
   "last_target": {
    "NDX": 1.0
   },
-  "liquidation_value": 1005817.18,
-  "nav": 1009865.58,
-  "next_review_in": 15,
+  "liquidation_value": 1009912.23,
+  "nav": 1015828.49,
+  "next_review_in": 14,
   "pending_target": null,
   "strategy": "Accelerating dual momentum (Mom30, Midcap Mom50, Nasdaq-100, gold)",
   "tax_paid": 0.0,
@@ -66,7 +66,7 @@
   }
  },
  "N50": {
-  "as_of": "2026-10-09",
+  "as_of": "2026-10-12",
   "cash_weight": -0.0,
   "costs": 999.0,
   "label": "Nifty 50 buy and hold (benchmark)",
@@ -74,8 +74,8 @@
   "last_target": {
    "N50": 1.0
   },
-  "liquidation_value": 1002467.31,
-  "nav": 1003380.25,
+  "liquidation_value": 996378.89,
+  "nav": 996378.89,
   "next_review_in": null,
   "pending_target": null,
   "strategy": "Nifty 50 buy and hold (benchmark)",

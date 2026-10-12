@@ -1,8 +1,8 @@
 # MAXHEALTH — Max Healthcare Institute Limited (Healthcare)
-Evidence dossier generated 2026-10-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-12 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 47.3 · Stage 2 score 153.7 · score 20 sessions ago 43.9 · 60 sessions ago 43.9
-Price ₹883.80 · 12-month return -21.8% · -27.0% from 52-week high · RS rank 24.4 · stage-2 trend False · turnover ₹289.68 cr/day
+Stage 1 score 47.6 · Stage 2 score 154.0 · score 20 sessions ago 43.9 · 60 sessions ago 43.9
+Price ₹865.95 · 12-month return -24.3% · -28.5% from 52-week high · RS rank 20.3 · stage-2 trend False · turnover ₹285.09 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 16.7% · QoQ % (previous QoQ 3.6%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 1.13 · class: healthy · receivables growth 41.1% vs revenue 19.0% · i
 Net debt/EBITDA 0.96 · interest cover 8.4 · dilution 0.1% · ROE 13.4% · EBITDA/invested capital 17.1%
 
 ## Valuation
-Market cap ₹86006 cr · TTM P/E 59.3 · PEG 12.45 · EV/EBITDA 37.8 · EPS growth minus 12-month price return 26.6 pts
+Market cap ₹84269 cr · TTM P/E 58.1 · PEG 12.20 · EV/EBITDA 37.0 · EPS growth minus 12-month price return 29.1 pts
 
 ## Industry (same NSE industry, this scan)
 65 peers · 55% growing revenue >20% · 42% expanding EBITDA margin · median revenue YoY 22.9%

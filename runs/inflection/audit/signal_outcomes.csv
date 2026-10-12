@@ -74,8 +74,8 @@ HFCL,2026-09-14,Capacity addition,capex ≥30% of market cap,,,,capex
 RBLBANK,2026-09-11,Credit Rating,credit rating upgrade,,,,credit rating upgrade
 PIRAMALFIN,2026-09-11,Credit Rating,credit rating upgrade,,,,credit rating upgrade
 GLENMARK,2026-09-11,Credit Rating,credit rating upgrade,,,,credit rating upgrade
-APARINDS,2026-09-10,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-RATNAMANI,2026-09-10,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+APARINDS,2026-09-10,Credit Rating- Revision,credit rating upgrade,8.1,,,credit rating upgrade
+RATNAMANI,2026-09-10,Credit Rating,credit rating upgrade,-6.1,,,credit rating upgrade
 RELIANCE,2026-09-09,Credit Rating,credit rating upgrade,-4.8,,,credit rating upgrade
 RPEL,2026-09-09,Credit Rating- Revision,credit rating upgrade,7.5,,,credit rating upgrade
 LT,2026-09-09,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),-1.9,,,order
@@ -234,9 +234,9 @@ HLEGLAS,2026-07-17,Credit Rating,credit rating upgrade,-23.6,,,credit rating upg
 BANKINDIA,2026-07-17,Credit Rating,credit rating upgrade,-0.6,,,credit rating upgrade
 BANKINDIA,2026-07-17,Credit Rating,credit rating upgrade,-0.6,,,credit rating upgrade
 NRAIL,2026-07-17,Credit Rating- Others,credit rating upgrade,21.2,,,credit rating upgrade
-OBEROIRLTY,2026-07-16,Credit Rating,credit rating upgrade,-2.8,,,credit rating upgrade
-VEDL,2026-07-16,Credit Rating,credit rating upgrade,3.1,,,credit rating upgrade
-AURUM,2026-07-16,Preferential issue,promoter puts in 40.36% of market cap at 100% of market price,-8.6,,,promoter puts in
+OBEROIRLTY,2026-07-16,Credit Rating,credit rating upgrade,-2.8,-4.0,,credit rating upgrade
+VEDL,2026-07-16,Credit Rating,credit rating upgrade,3.1,7.4,,credit rating upgrade
+AURUM,2026-07-16,Preferential issue,promoter puts in 40.36% of market cap at 100% of market price,-8.6,-0.8,,promoter puts in
 LOKESHMACH,2026-07-15,Bagging/Receiving of orders/contracts,order ≈27% of annual revenue (after firmness haircut),8.0,46.9,,order
 RBLBANK,2026-07-14,Credit Rating- New,credit rating upgrade,0.8,10.5,,credit rating upgrade
 SBIN,2026-07-14,Credit Rating,credit rating upgrade,2.7,-2.9,,credit rating upgrade
@@ -413,10 +413,10 @@ MINDACORP,2026-04-24,Credit Rating- Revision,credit rating upgrade,9.3,24.4,,cre
 RATNAVEER,2026-04-24,Credit Rating- Revision,credit rating upgrade,25.5,20.9,,credit rating upgrade
 SOLARINDS,2026-04-24,Credit Rating,credit rating upgrade,20.0,18.8,,credit rating upgrade
 ATULAUTO,2026-04-24,Bagging/Receiving of orders/contracts,order ≈28% of annual revenue (after firmness haircut); global Tier-1/hyperscale customer,-3.2,-6.9,,order
-BALRAMCHIN,2026-04-23,Preferential issue,promoter puts in 23.5% of market cap at 100% of market price,0.3,8.4,,promoter puts in
-AZAD,2026-04-23,Bagging/Receiving of orders/contracts,global Tier-1/hyperscale customer,-3.3,11.8,,global Tier-
-LT,2026-04-23,Bagging/Receiving of orders/contracts,order ≈101% of annual revenue (after firmness haircut),-2.2,-9.1,,order
-SIGNPOST,2026-04-22,Credit Rating,credit rating upgrade,3.4,15.9,,credit rating upgrade
+BALRAMCHIN,2026-04-23,Preferential issue,promoter puts in 23.5% of market cap at 100% of market price,0.3,8.4,32.2,promoter puts in
+AZAD,2026-04-23,Bagging/Receiving of orders/contracts,global Tier-1/hyperscale customer,-3.3,11.8,43.1,global Tier-
+LT,2026-04-23,Bagging/Receiving of orders/contracts,order ≈101% of annual revenue (after firmness haircut),-2.2,-9.1,-8.0,order
+SIGNPOST,2026-04-22,Credit Rating,credit rating upgrade,3.4,15.9,-5.7,credit rating upgrade
 PREMEXPLN,2026-04-22,Bagging/Receiving of orders/contracts,order ≈50% of annual revenue (after firmness haircut),5.7,23.9,31.6,order
 PNCINFRA,2026-04-21,Bagging/Receiving of orders/contracts,order ≈62% of annual revenue (after firmness haircut),4.8,16.2,-32.0,order
 OPTIEMUS,2026-04-21,Credit Rating,credit rating upgrade,4.7,38.7,105.1,credit rating upgrade
@@ -462,3 +462,7 @@ MANBA,2026-10-07,Credit Rating- Revision,credit rating upgrade,,,,credit rating 
 LT,2026-10-07,Bagging/Receiving of orders/contracts,order ≈72% of annual revenue (after firmness haircut),,,,order
 PNBHOUSING,2026-10-06,Credit Rating,credit rating upgrade,,,,credit rating upgrade
 DBOL,2026-09-05,Credit Rating,credit rating upgrade,14.9,,,credit rating upgrade
+ARVIND,2026-10-12,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
+VIVIANA,2026-10-10,Bagging/Receiving of orders/contracts,order ≈57% of annual revenue (after firmness haircut),,,,order
+INDOTECH,2026-08-17,Credit Rating- Revision,credit rating upgrade,-1.8,,,credit rating upgrade
+ITI,2026-08-04,Credit Rating,credit rating upgrade,-3.5,,,credit rating upgrade

@@ -1,4 +1,4 @@
-# MAXHEALTH — source filing text (extracted 2026-10-09 from NSE PDFs; first 8000 characters each)
+# MAXHEALTH — source filing text (extracted 2026-10-12 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-09 · Credit Rating
 Source: https://nsearchives.nseindia.com/corporate/MAXHEALTH_09102026222417_SE_Intimation.pdf

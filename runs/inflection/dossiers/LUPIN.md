@@ -1,8 +1,8 @@
 # LUPIN — Lupin Limited (Healthcare)
-Evidence dossier generated 2026-10-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-12 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 92.2 · Stage 2 score 98.6 · score 20 sessions ago 88.4 · 60 sessions ago 88.4
-Price ₹1956.50 · 12-month return 1.6% · -22.2% from 52-week high · RS rank 30.9 · stage-2 trend False · turnover ₹141.59 cr/day
+Price ₹1935.00 · 12-month return 1.5% · -23.1% from 52-week high · RS rank 29.1 · stage-2 trend False · turnover ₹139.15 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 47.7% · QoQ % (previous QoQ 4.1%) · quarters of sequential growth in last 4: 4
@@ -15,7 +15,7 @@ CFO/PAT 1.38 · class: healthy · receivables growth 20.1% vs revenue 23.9% · i
 Net debt/EBITDA 0.20 · interest cover 22.5 · dilution 0.1% · ROE 23.8% · EBITDA/invested capital 30.5%
 
 ## Valuation
-Market cap ₹89447 cr · TTM P/E 17.0 · PEG 0.20 · EV/EBITDA 10.5 · EPS growth minus 12-month price return 81.5 pts
+Market cap ₹88464 cr · TTM P/E 16.8 · PEG 0.20 · EV/EBITDA 10.4 · EPS growth minus 12-month price return 81.6 pts
 
 ## Industry (same NSE industry, this scan)
 65 peers · 55% growing revenue >20% · 42% expanding EBITDA margin · median revenue YoY 22.9%

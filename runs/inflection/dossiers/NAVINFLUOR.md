@@ -1,8 +1,8 @@
 # NAVINFLUOR — Navin Fluorine International Limited (Chemicals)
-Evidence dossier generated 2026-10-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-12 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 97.6 · Stage 2 score 106.8 · score 20 sessions ago 95.3 · 60 sessions ago 95.3
-Price ₹8352.50 · 12-month return 82.6% · -4.8% from 52-week high · RS rank 85.0 · stage-2 trend True · turnover ₹92.78 cr/day
+Price ₹8561.00 · 12-month return 87.2% · -2.4% from 52-week high · RS rank 86.5 · stage-2 trend True · turnover ₹93.04 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 49.1% · QoQ % (previous QoQ 5.1%) · quarters of sequential growth in last 4: 4
@@ -15,7 +15,7 @@ CFO/PAT 1.35 · class: healthy · receivables growth 29.1% vs revenue 40.0% · i
 Net debt/EBITDA 1.06 · interest cover 11.1 · dilution 3.3% · ROE 16.7% · EBITDA/invested capital 21.9%
 
 ## Valuation
-Market cap ₹42805 cr · TTM P/E 56.2 · PEG 0.38 · EV/EBITDA 38.6 · EPS growth minus 12-month price return 65.1 pts
+Market cap ₹43874 cr · TTM P/E 57.6 · PEG 0.39 · EV/EBITDA 39.5 · EPS growth minus 12-month price return 60.5 pts
 
 ## Industry (same NSE industry, this scan)
 44 peers · 61% growing revenue >20% · 64% expanding EBITDA margin · median revenue YoY 25.2%
@@ -26,6 +26,8 @@ Discovery score 6.6 (order intensity 180d 0.00, capacity +0%, promoter money 0.0
 - date=2026-09-29 · desc=Commencement of commercial production/operations · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_29092026164657_Intimationreg30.pdf
 - date=2026-09-29 · desc=Commencement of commercial production/operations · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_29092026153201_Intimationreg30.pdf
 - date=2026-09-16 · desc=Credit Rating- New · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_16092026115634_Revision_in_Ratings.pdf
+- date=2026-08-18 · desc=Credit Rating- New · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_18082026175857_upload.pdf
+- date=2026-08-13 · desc=Credit Rating- Revision · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_13082026184117_upload.pdf
 
 Flags: none
 

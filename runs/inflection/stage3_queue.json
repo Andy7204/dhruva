@@ -3,45 +3,45 @@
   "symbol": "MAXHEALTH",
   "trigger": "fast lane: fast_lane",
   "dossier": "runs/inflection/dossiers/MAXHEALTH.md",
-  "price": 883.8,
+  "price": 865.95,
   "discovery_d": 6.4,
   "fast_lane": true,
-  "stage2_score": 153.7
+  "stage2_score": 154.0
  },
  {
-  "symbol": "INDHOTEL",
+  "symbol": "HBLENGINE",
   "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/INDHOTEL.md",
-  "price": 715.65,
+  "dossier": "runs/inflection/dossiers/HBLENGINE.md",
+  "price": 730.35,
+  "discovery_d": 15.2,
+  "fast_lane": true,
+  "stage2_score": 150.7
+ },
+ {
+  "symbol": "ARVIND",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/ARVIND.md",
+  "price": 511.55,
   "discovery_d": 5.0,
   "fast_lane": true,
-  "stage2_score": 141.1
+  "stage2_score": 149.6
  },
  {
   "symbol": "LT",
   "trigger": "new filing: Bagging/Receiving of orders/contracts",
   "dossier": "runs/inflection/dossiers/LT.md",
-  "price": 3703.3,
-  "discovery_d": 25.0,
+  "price": 3627.5,
+  "discovery_d": 35.0,
   "fast_lane": true,
   "stage2_score": 136.7
  },
  {
-  "symbol": "ADANIENT",
-  "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/ADANIENT.md",
-  "price": 2634.4,
-  "discovery_d": 5.0,
+  "symbol": "VIVIANA",
+  "trigger": "fast lane: fast_lane,discovery",
+  "dossier": "runs/inflection/dossiers/VIVIANA.md",
+  "price": 847.85,
+  "discovery_d": 30.0,
   "fast_lane": true,
-  "stage2_score": 129.2
- },
- {
-  "symbol": "NAVINFLUOR",
-  "trigger": "first review",
-  "dossier": "runs/inflection/dossiers/NAVINFLUOR.md",
-  "price": 8352.5,
-  "discovery_d": 6.6,
-  "fast_lane": false,
-  "stage2_score": 106.8
+  "stage2_score": 135.8
  }
 ]

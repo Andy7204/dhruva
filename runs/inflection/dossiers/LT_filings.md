@@ -1,4 +1,4 @@
-# LT — source filing text (extracted 2026-10-09 from NSE PDFs; first 8000 characters each)
+# LT — source filing text (extracted 2026-10-12 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-07 · Bagging/Receiving of orders/contracts
 Source: https://nsearchives.nseindia.com/corporate/PAM_07102026101304_PressRelease07102026.pdf

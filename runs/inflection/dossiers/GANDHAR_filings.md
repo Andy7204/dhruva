@@ -1,4 +1,4 @@
-# GANDHAR — source filing text (extracted 2026-10-09 from NSE PDFs; first 8000 characters each)
+# GANDHAR — source filing text (extracted 2026-10-12 from NSE PDFs; first 8000 characters each)
 
 ## 2026-09-30 · Credit Rating- Others
 Source: https://nsearchives.nseindia.com/corporate/GANDHAROIL_30092026174215_Gandhar_Oil_-_Reaffirmed_Credit_Rating.pdf
