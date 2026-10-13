@@ -12,7 +12,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| MAXHEALTH | DISCOVER | RESEARCH | ₹0 | 865.95 | fast-lane event or discovery >= 60 |
+| HBLENGINE | DISCOVER | RESEARCH | ₹0 | 730.35 | fast-lane event or discovery >= 60 |
+| ARVIND | DISCOVER | RESEARCH | ₹0 | 511.55 | fast-lane event or discovery >= 60 |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -22,6 +24,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | MARINE | RESEARCH | 2026-10-06 | ₹0 | 39.8 | 47 | 3.4 | fast-lane event or discovery >= 60 |
 | LT | RESEARCH | 2026-10-06 | ₹0 | 29.0 | 37 | 15.3 | fast-lane event or discovery >= 60 |
 | TARIL | RESEARCH | 2026-10-06 | ₹0 | 37.2 | 39 | 17.6 | fast-lane event or discovery >= 60 |
+| MAXHEALTH | RESEARCH | 2026-10-12 | ₹0 | 19.8 | 42 | 5.0 | fast-lane event or discovery >= 60 |
+| HBLENGINE | RESEARCH | 2026-10-12 | ₹0 | 24.3 | 40 | 2.8 | fast-lane event or discovery >= 60 |
+| ARVIND | RESEARCH | 2026-10-12 | ₹0 | 13.0 | 35 | -1.5 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
@@ -29,8 +34,11 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | STLTECH | 70 | — | 54.4 | -1.8 | YELLOW | RESEARCH | 2026-10-06 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
 | MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
+| MAXHEALTH | 42 | — | 19.8 | 5.0 | YELLOW | RESEARCH | 2026-10-12 |
+| HBLENGINE | 40 | — | 24.3 | 2.8 | YELLOW | RESEARCH | 2026-10-12 |
 | TARIL | 39 | — | 37.2 | 17.6 | YELLOW | RESEARCH | 2026-10-06 |
 | LT | 37 | — | 29.0 | 15.3 | YELLOW | RESEARCH | 2026-10-06 |
+| ARVIND | 35 | — | 13.0 | -1.5 | YELLOW | RESEARCH | 2026-10-12 |
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
@@ -52,17 +60,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 - LT: new filing: Bagging/Receiving of orders/contracts
 - VIVIANA: fast lane: fast_lane,discovery
 
-## Missed-winner audit (624 cases logged; 195 new today)
-- GANDHAR: +54.5% vs Nifty 500 since 2026-07-13 — no history before the move (logging started later)
-- EMIL: +49.8% vs Nifty 500 since 2026-07-13 — no history before the move (logging started later)
-- SOTL: +120.9% vs Nifty 500 since 2026-04-15 — no history before the move (logging started later)
-- UFLEX: +44.9% vs Nifty 500 since 2026-07-13 — no history before the move (logging started later)
-- BALAMINES: +84.0% vs Nifty 500 since 2026-04-15 — no history before the move (logging started later)
-- YASHO: +41.9% vs Nifty 500 since 2026-07-13 — no history before the move (logging started later)
-- FAIRCHEMOR: +21.8% vs Nifty 500 since 2026-09-09 — no history before the move (logging started later)
-- KMEW: +43.0% vs Nifty 500 since 2026-07-13 — no history before the move (logging started later)
-- MARKSANS: +78.4% vs Nifty 500 since 2026-04-15 — no history before the move (logging started later)
-- ANTELOPUS: +90.8% vs Nifty 500 since 2026-04-15 — no history before the move (logging started later)
+## Missed-winner audit (1 cases logged; 0 new today)
 
 ## Cash
 Your confirmed cash ₹10,000 · confirmed holdings: none · starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.

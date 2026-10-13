@@ -1,0 +1,170 @@
+{
+ "symbol": "ARVIND",
+ "discovered": "2026-10-12",
+ "discovery_price": 511.55,
+ "reviews": [
+  {
+   "date": "2026-10-12",
+   "trigger": "fast lane: fast_lane",
+   "stage2_score": 149.6,
+   "price": 511.55,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-13T02:45:39.727295+00:00",
+   "result": {
+    "symbol": "ARVIND",
+    "company": "Arvind Limited",
+    "sector": "Textiles / apparel / technical textiles",
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 14,
+      "fy3_eps": 15,
+      "fy5_eps": 17,
+      "exit_pe": 17,
+      "price": 238,
+      "multiple": 0.47,
+      "cagr_pct": -31.4,
+      "return_2y_pct": -53.0,
+      "assumptions": "Textile cycle turns, PAT flat, no re-rating; P/E back to 17x"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 20,
+      "fy3_eps": 23,
+      "fy5_eps": 29,
+      "exit_pe": 25,
+      "price": 500,
+      "multiple": 0.98,
+      "cagr_pct": -1.0,
+      "return_2y_pct": -2.0,
+      "assumptions": "PAT grows ~12% pa from TTM EPS ~15.8 (ASSUMPTION); P/E eases 32x to 25x"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 25,
+      "fy3_eps": 30,
+      "fy5_eps": 40,
+      "exit_pe": 28,
+      "price": 700,
+      "multiple": 1.37,
+      "cagr_pct": 17.0,
+      "return_2y_pct": 37.0,
+      "assumptions": "Margin expands via operating leverage on +20% revenue; one-offs fade"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 30,
+      "fy3_eps": 38,
+      "fy5_eps": 52,
+      "exit_pe": 32,
+      "price": 960,
+      "multiple": 1.88,
+      "cagr_pct": 37.1,
+      "return_2y_pct": 88.0,
+      "assumptions": "Advanced-materials/Envisol EPC scale and apparel share gains"
+     }
+    },
+    "ev_2y_pct": -1.5,
+    "bear_downside_pct": -53.0,
+    "bull_value_per_share": 700,
+    "discovery_judgement": 25,
+    "score": {
+     "demand_shock": 3,
+     "supply_constraint": 2,
+     "pricing_power": 2,
+     "revenue_acceleration": 5,
+     "operating_leverage": 3,
+     "eps_acceleration": 1,
+     "capacity_catalyst": 2,
+     "cash_flow_quality": 7,
+     "valuation_asymmetry": 4,
+     "management_governance": 3,
+     "balance_sheet": 3,
+     "total": 35
+    },
+    "confirmation_score": 35,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "capital_to_deploy_inr": 0,
+    "reported_earnings_confirm": false,
+    "confirmation_falling": false,
+    "kill_condition_triggered": null,
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT: CARE upgraded Arvind Limited to AA Stable from AA- (25 Aug 2026) and its subsidiary Arvind Envisol to A- from BBB+ (12 Oct 2026). Dossier: Q1 revenue +24.6% but PAT +0.4%; unusual items 25.4% of PBT.",
+    "new_evidence_type": "rating",
+    "cfo_to_pat_value": 2.09,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "MEDIUM: ND/EBITDA 1.29, cover 4.4",
+     "cycle": "HIGH: textile/apparel margins cyclical and stock +78% in 12m",
+     "liquidity": "MEDIUM: Rs33cr/day",
+     "dilution": "LOW: 0.1%",
+     "order_firmness": "MEDIUM: Envisol order book concentrated in a few large orders (CARE)"
+    },
+    "thesis": "Arvind's revenue is growing +24.6% with credit ratings improving, but profit has not followed: PAT +0.4%, 35% tax rate and unusual items at 25% of PBT mean quality of earnings is unclear. EBITDA margin is 9.6% (textile-level), the stock is up 78% in 12 months, and 32x TTM P/E is high for a cyclical. A rating upgrade is a credit event, not a demand or pricing inflection.",
+    "chain_missing_links": [
+     "Industry demand shock (textile median revenue +8.4%)",
+     "Pricing power",
+     "Operating leverage into PAT (PAT +0.4%)",
+     "EPS acceleration",
+     "Segment breakdown unknown (results text not extracted)"
+    ],
+    "demand_signal": "Revenue +24.6% YoY vs industry median +8.4% (CALCULATION, dossier); drivers unknown",
+    "supply_signal": "Unknown",
+    "pricing_signal": "Unknown; EBITDA margin 9.6% (+0.8pt)",
+    "order_book": "Unknown for Arvind; Envisol: 'strong' order book at 31 Aug 2026 but concentrated (CARE, qualitative)",
+    "capacity_catalyst": "Unknown; dossier capacity +0%",
+    "cfo_to_pat": "2.09 (CALCULATION); receivables +22.6% vs revenue +11.8% flagged",
+    "debt": "ND/EBITDA 1.29; interest cover 4.4",
+    "roce": "ROE 10.2%; EBITDA/invested capital 19.1%",
+    "valuation": "TTM P/E 32.4, EV/EBITDA 14.1; PEG 65.7",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs33 at 31x",
+     "3x": "NO",
+     "5x": "5x/10x NOT reasonably underwritable.",
+     "10x": "5x/10x NOT reasonably underwritable."
+    },
+    "kill_conditions": [
+     "PAT growth stays below 10% for two more quarters despite revenue +20%",
+     "Unusual items keep boosting PBT",
+     "Receivable days rise above 70",
+     "Textile margin fall below 8%"
+    ],
+    "catalysts": [
+     "Q2 FY27 results",
+     "Segment margin disclosure",
+     "Envisol order wins"
+    ],
+    "biggest_risk": "Re-rating already done (+78%) while PAT is flat; cyclical mean reversion",
+    "next_datapoint": "Q2 FY27 PAT growth ex-unusual items and segment EBITDA margins",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "CARE upgraded Arvind Ltd to AA/Stable",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/ARVIND1_25082026224120_Arvind_Limited_Intimation.pdf"
+     },
+     {
+      "claim": "CARE upgraded Arvind Envisol to A-/Stable; order book concentrated in few large orders",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/ARVIND1_12102026120403_Arvind.pdf"
+     },
+     {
+      "claim": "Revenue, PAT, unusual items, valuation figures",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/ARVIND.md"
+     },
+     {
+      "claim": "Scenario EPS and exit multiples",
+      "type": "ASSUMPTION",
+      "url": "runs/inflection/dossiers/ARVIND.md"
+     }
+    ]
+   }
+  }
+ ]
+}

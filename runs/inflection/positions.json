@@ -83,5 +83,56 @@
   "discovery": 37.2,
   "confirmation": 39,
   "ev_2y_pct": 17.6
+ },
+ "MAXHEALTH": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-12",
+    "type": "rating",
+    "text": "FACT: Q1 FY27 revenue Rs2,982 cr, +16% YoY (NSE press-release title 2026-08-13); CARE upgraded Crosslay Remedies (ex-Jaypee Healthcare) LT facilities to AA+ Stable and removed Rating Watch (NSE 2026-10-09). Dossier: revenue +16.7%, EBITDA +14.4%, PAT +4.9%."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-12",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-12",
+  "discovery": 19.8,
+  "confirmation": 42,
+  "ev_2y_pct": 5.0
+ },
+ "HBLENGINE": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-12",
+    "type": "rating",
+    "text": "FACT: Kavach order Rs31.49 cr from ICF (3 Aug 2026), ~0.2% of mcap and small vs FY26 revenue growth; CARE upgraded LT bank facilities to AA- Stable from A+ Positive (9 Oct 2026). Dossier: Q1 EBITDA -23.5%, PAT -23.9% YoY."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-12",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-12",
+  "discovery": 24.3,
+  "confirmation": 40,
+  "ev_2y_pct": 2.8
+ },
+ "ARVIND": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-12",
+    "type": "rating",
+    "text": "FACT: CARE upgraded Arvind Limited to AA Stable from AA- (25 Aug 2026) and its subsidiary Arvind Envisol to A- from BBB+ (12 Oct 2026). Dossier: Q1 revenue +24.6% but PAT +0.4%; unusual items 25.4% of PBT."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-12",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-12",
+  "discovery": 13.0,
+  "confirmation": 35,
+  "ev_2y_pct": -1.5
  }
 }

@@ -1,0 +1,175 @@
+{
+ "symbol": "MAXHEALTH",
+ "discovered": "2026-10-12",
+ "discovery_price": 865.95,
+ "reviews": [
+  {
+   "date": "2026-10-12",
+   "trigger": "fast lane: fast_lane",
+   "stage2_score": 154.0,
+   "price": 865.95,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-13T02:45:38.751151+00:00",
+   "result": {
+    "symbol": "MAXHEALTH",
+    "company": "Max Healthcare Institute Limited",
+    "sector": "Healthcare (hospitals)",
+    "scenarios": {
+     "bear": {
+      "probability": 0.25,
+      "fy2_eps": 16,
+      "fy3_eps": 17,
+      "fy5_eps": 19,
+      "exit_pe": 32,
+      "price": 512,
+      "multiple": 0.59,
+      "cagr_pct": -23.2,
+      "return_2y_pct": -41.0,
+      "assumptions": "Brownfield ramp slows, receivable build persists, derating from 58x to 32x"
+     },
+     "base": {
+      "probability": 0.45,
+      "fy2_eps": 19.5,
+      "fy3_eps": 22.5,
+      "fy5_eps": 30,
+      "exit_pe": 45,
+      "price": 877.5,
+      "multiple": 1.01,
+      "cagr_pct": 0.5,
+      "return_2y_pct": 1.0,
+      "assumptions": "Revenue ~+16-18% pa, EBITDA margin ~25%, PAT growth ~14% pa from TTM EPS ~14.9 (ASSUMPTION), P/E compresses 58x to 45x"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 23,
+      "fy3_eps": 28,
+      "fy5_eps": 38,
+      "exit_pe": 52,
+      "price": 1196,
+      "multiple": 1.38,
+      "cagr_pct": 17.5,
+      "return_2y_pct": 38.0,
+      "assumptions": "Margins expand to 27% as new beds mature; PAT +24% pa"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 27,
+      "fy3_eps": 34,
+      "fy5_eps": 46,
+      "exit_pe": 58,
+      "price": 1566,
+      "multiple": 1.81,
+      "cagr_pct": 34.5,
+      "return_2y_pct": 81.0,
+      "assumptions": "Acquired Jaypee/Crosslay assets turn around fast; premium multiple holds"
+     }
+    },
+    "ev_2y_pct": 5.0,
+    "bear_downside_pct": -41.0,
+    "bull_value_per_share": 1196,
+    "discovery_judgement": 40,
+    "score": {
+     "demand_shock": 5,
+     "supply_constraint": 4,
+     "pricing_power": 4,
+     "revenue_acceleration": 4,
+     "operating_leverage": 2,
+     "eps_acceleration": 2,
+     "capacity_catalyst": 5,
+     "cash_flow_quality": 7,
+     "valuation_asymmetry": 1,
+     "management_governance": 4,
+     "balance_sheet": 4,
+     "total": 42
+    },
+    "confirmation_score": 42,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "capital_to_deploy_inr": 0,
+    "reported_earnings_confirm": false,
+    "confirmation_falling": false,
+    "kill_condition_triggered": null,
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT: Q1 FY27 revenue Rs2,982 cr, +16% YoY (NSE press-release title 2026-08-13); CARE upgraded Crosslay Remedies (ex-Jaypee Healthcare) LT facilities to AA+ Stable and removed Rating Watch (NSE 2026-10-09). Dossier: revenue +16.7%, EBITDA +14.4%, PAT +4.9%.",
+    "new_evidence_type": "rating",
+    "cfo_to_pat_value": 1.13,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "LOW: ND/EBITDA 0.96, interest cover 8.4 (dossier)",
+     "cycle": "LOW-MEDIUM: occupancy/ARPOB cycle not verified",
+     "liquidity": "LOW: Rs285cr/day",
+     "dilution": "LOW: 0.1%",
+     "order_firmness": "n/a (hospital)"
+    },
+    "thesis": "Max Healthcare is a quality hospital compounder with healthy cash conversion (CFO/PAT 1.13), low leverage and AA+ ratings, but there is no early-inflection evidence: revenue +16.7% is steady, not accelerating, EBITDA margin is down 0.5pt, PAT +4.9% lags EBITDA, receivables grew 41% vs revenue 19%, and TTM P/E 58x already prices years of growth. Expected value is near zero with a deep derating bear case.",
+    "chain_missing_links": [
+     "Revenue acceleration (steady ~16-17%)",
+     "Operating leverage (margin -0.5pt, incremental margin 22% < 25% base)",
+     "EPS acceleration (PAT +4.9%)",
+     "Valuation gap (58x TTM P/E)",
+     "Bed-addition/capacity timeline and occupancy not in extracted filings (unknown)"
+    ],
+    "demand_signal": "Q1 FY27 revenue +16% YoY (FACT, press-release title); occupancy/ARPOB unknown (earnings call text not extracted)",
+    "supply_signal": "Unknown: bed additions and sector utilisation not in extracted filings",
+    "pricing_signal": "Unknown; EBITDA margin 25.3%, -0.5pt YoY (CALCULATION, dossier)",
+    "order_book": "n/a",
+    "capacity_catalyst": "Kalinga Hospital fund infusion (2026-09-03) and Crosslay/Jaypee acquisition integration; commissioning dates unknown",
+    "cfo_to_pat": "1.13 healthy (CALCULATION, dossier); receivables +41% vs revenue +19% flagged",
+    "debt": "ND/EBITDA 0.96; interest cover 8.4",
+    "roce": "ROE 13.4%; EBITDA/invested capital 17.1%",
+    "valuation": "TTM P/E 58.1, EV/EBITDA 37, PEG 12.2; stock -24% over 12m yet still richly valued",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs ~Rs1,730, i.e. EPS ~Rs33 at 52x; not supported",
+     "3x": "NO",
+     "5x": "5x/10x NOT reasonably underwritable.",
+     "10x": "5x/10x NOT reasonably underwritable."
+    },
+    "kill_conditions": [
+     "Two consecutive quarters of revenue growth below 12%",
+     "CFO/PAT below 0.7 or receivable days keep rising",
+     "Crosslay/Jaypee integration losses dilute consolidated margin below 23%",
+     "Governance or auditor event"
+    ],
+    "catalysts": [
+     "Q2 FY27 results (Nov 2026): margin and PAT growth",
+     "Occupancy/ARPOB and bed-addition guidance",
+     "Crosslay turnaround evidence"
+    ],
+    "biggest_risk": "Multiple compression from 58x with PAT growth far below revenue growth",
+    "next_datapoint": "Q2 FY27 results: EBITDA margin vs 25.3%, PAT growth vs revenue growth, receivable days",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "CARE upgraded Crosslay Remedies (ex-Jaypee Healthcare) to AA+ Stable; parent facilities AA+ reaffirmed",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/MAXHEALTH_09102026222417_SE_Intimation.pdf"
+     },
+     {
+      "claim": "CARE reaffirmed parent AA+/A1+, LT limit enhanced to Rs1,818.88 cr",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/MAXHEALTH_09102026115625_SE_Intimation_Credit_Rating.pdf"
+     },
+     {
+      "claim": "Q1 FY27 revenue Rs2,982 cr, +16% YoY (headline only; body not extracted)",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/MAXHEALTH_13082026143249_SE_Intimation.pdf"
+     },
+     {
+      "claim": "EPS/valuation/cash-flow figures from Yahoo Finance data",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/MAXHEALTH.md"
+     },
+     {
+      "claim": "TTM EPS ~Rs14.9 derived as price/PE; scenario EPS and exit multiples",
+      "type": "ASSUMPTION",
+      "url": "runs/inflection/dossiers/MAXHEALTH.md"
+     }
+    ]
+   }
+  }
+ ]
+}

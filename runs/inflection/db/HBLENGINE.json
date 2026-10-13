@@ -1,0 +1,170 @@
+{
+ "symbol": "HBLENGINE",
+ "discovered": "2026-10-12",
+ "discovery_price": 730.35,
+ "reviews": [
+  {
+   "date": "2026-10-12",
+   "trigger": "fast lane: fast_lane",
+   "stage2_score": 150.7,
+   "price": 730.35,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-13T02:45:39.257853+00:00",
+   "result": {
+    "symbol": "HBLENGINE",
+    "company": "HBL Engineering Limited",
+    "sector": "Capital goods (Kavach/railway electronics, defence, batteries)",
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 24,
+      "fy3_eps": 25,
+      "fy5_eps": 28,
+      "exit_pe": 14,
+      "price": 336,
+      "multiple": 0.46,
+      "cagr_pct": -32.2,
+      "return_2y_pct": -54.0,
+      "assumptions": "Kavach inflow lumpy, margin stays ~20%, EPS below TTM, P/E 14x"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 33,
+      "fy3_eps": 38,
+      "fy5_eps": 46,
+      "exit_pe": 22,
+      "price": 726,
+      "multiple": 0.99,
+      "cagr_pct": -0.5,
+      "return_2y_pct": -1.0,
+      "assumptions": "FY26 base of Kavach CLW execution is lapped; EPS grows ~8% pa from TTM ~28.2 (ASSUMPTION)"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 42,
+      "fy3_eps": 52,
+      "fy5_eps": 68,
+      "exit_pe": 26,
+      "price": 1092,
+      "multiple": 1.5,
+      "cagr_pct": 22.5,
+      "return_2y_pct": 50.0,
+      "assumptions": "Fresh large Kavach orders, margin back to 28%+"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 50,
+      "fy3_eps": 64,
+      "fy5_eps": 85,
+      "exit_pe": 30,
+      "price": 1500,
+      "multiple": 2.05,
+      "cagr_pct": 43.2,
+      "return_2y_pct": 105.0,
+      "assumptions": "Kavach rollout 21,800 route-km plus defence/exports scale"
+     }
+    },
+    "ev_2y_pct": 2.8,
+    "bear_downside_pct": -54.0,
+    "bull_value_per_share": 1092,
+    "discovery_judgement": 38,
+    "score": {
+     "demand_shock": 6,
+     "supply_constraint": 5,
+     "pricing_power": 3,
+     "revenue_acceleration": 1,
+     "operating_leverage": 0,
+     "eps_acceleration": 0,
+     "capacity_catalyst": 4,
+     "cash_flow_quality": 6,
+     "valuation_asymmetry": 6,
+     "management_governance": 4,
+     "balance_sheet": 5,
+     "total": 40
+    },
+    "confirmation_score": 40,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "capital_to_deploy_inr": 0,
+    "reported_earnings_confirm": false,
+    "confirmation_falling": false,
+    "kill_condition_triggered": null,
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT: Kavach order Rs31.49 cr from ICF (3 Aug 2026), ~0.2% of mcap and small vs FY26 revenue growth; CARE upgraded LT bank facilities to AA- Stable from A+ Positive (9 Oct 2026). Dossier: Q1 EBITDA -23.5%, PAT -23.9% YoY.",
+    "new_evidence_type": "rating",
+    "cfo_to_pat_value": 0.91,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "LOW: ND/EBITDA 0.00, cover 27x (dossier)",
+     "cycle": "MEDIUM-HIGH: FY26 profit (+68% rev) rode a one-off-like CLW Kavach V4 order; margin reverting",
+     "liquidity": "LOW-MEDIUM: Rs145cr/day",
+     "dilution": "LOW: 0.0%",
+     "order_firmness": "MEDIUM: Rs31.49cr ICF PO firm, completion by Mar 2028; total order book unknown"
+    },
+    "thesis": "HBL has a real Kavach moat (limited RDSO-approved vendors; CARE notes 6,000 locos fitted, ~7,300 in progress, 21,800 route-km taken up), and a CARE upgrade to AA-. But the latest reported quarter shows no inflection: revenue +6% YoY, EBITDA -23.5%, margin 23.0% (-8.9pt), PAT -24%, with 25.9x TTM P/E on a peak-ish FY26 base. The only recent order (Rs31.49cr) is tiny. Wait for order inflow and margin stabilisation.",
+    "chain_missing_links": [
+     "Revenue acceleration (Q1 +6%)",
+     "Operating leverage (incremental EBITDA margin -124%)",
+     "EPS acceleration (-24%)",
+     "Order book size unknown (results text not extracted)",
+     "Large new Kavach orders not seen since May/Aug small orders"
+    ],
+    "demand_signal": "CARE: Kavach installed on >6,000 locos, ~7,300 under way, trackside on >21,800 route-km as of Jul 2026 (FACT, rating agency)",
+    "supply_signal": "Few RDSO-approved Kavach vendors (FACT per CARE); capacity data unknown",
+    "pricing_signal": "Unknown; Q1 margin fell 8.9pt (CALCULATION)",
+    "order_book": "Unknown (not in extracted filings); recent: Rs31.49cr ICF Kavach loco order (FACT, NSE 2026-08-03) and a 28 May 2026 Kavach order (text not extracted)",
+    "capacity_catalyst": "Lithium-ion battery division capex, e-fuses, charging hubs per CARE; timing unknown",
+    "cfo_to_pat": "0.91 healthy (dossier); receivables +73% vs revenue +68%, 72 days",
+    "debt": "Negligible external debt; ND/EBITDA 0.0",
+    "roce": "ROE 36.8%; EBITDA/invested capital 51% (FY26 peak)",
+    "valuation": "TTM P/E 25.9, EV/EBITDA 17.6; but TTM earnings include peak FY26 quarters, forward earnings falling",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs56 at 26x; Q1 EPS is falling",
+     "3x": "NO",
+     "5x": "5x/10x NOT reasonably underwritable.",
+     "10x": "5x/10x NOT reasonably underwritable."
+    },
+    "kill_conditions": [
+     "No Kavach order above Rs250cr in the next two quarters",
+     "Q2 EBITDA margin below 20%",
+     "CFO/PAT below 0.6 / receivables outgrow revenue",
+     "Loss of RDSO approval status or related-party governance issue"
+    ],
+    "catalysts": [
+     "Large Kavach tender awards (Railways, CLW)",
+     "Q2 FY27 results Nov 2026",
+     "Defence and export order wins"
+    ],
+    "biggest_risk": "Earnings peaked on a lumpy FY26 Kavach execution; lapping it leaves falling EPS",
+    "next_datapoint": "Q2 FY27 results and any Kavach order >Rs250cr; margin vs 23.0%",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "CARE upgrade to AA-/Stable; FY26 revenue +68%, Q1 FY27 momentum, Kavach rollout stats",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/HBLPOWER_09102026193130_updateoncreditrating0910.pdf"
+     },
+     {
+      "claim": "ICF Kavach loco order Rs31.49cr (ex-GST), completion by 31 Mar 2028",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/HBLPOWER_03082026091920_KavachorderAugust2026.pdf"
+     },
+     {
+      "claim": "Q1 revenue +6%, EBITDA -23.5%, PAT -23.9%, margins",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/HBLENGINE.md"
+     },
+     {
+      "claim": "Scenario EPS and exit multiples",
+      "type": "ASSUMPTION",
+      "url": "runs/inflection/dossiers/HBLENGINE.md"
+     }
+    ]
+   }
+  }
+ ]
+}
