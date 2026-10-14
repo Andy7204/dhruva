@@ -486,3 +486,13 @@
 {"date": "2026-10-10", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-12", "price": 817.8499755859375, "reasons": "order \u224857% of annual revenue (after firmness haircut)", "symbol": "VIVIANA"}
 {"date": "2026-08-17", "desc": "Credit Rating- Revision", "logged_on": "2026-10-12", "price": 3608.39990234375, "reasons": "credit rating upgrade", "symbol": "INDOTECH"}
 {"date": "2026-08-04", "desc": "Credit Rating", "logged_on": "2026-10-12", "price": 282.6000061035156, "reasons": "credit rating upgrade", "symbol": "ITI"}
+{"date": "2026-10-14", "desc": "Credit Rating- New", "logged_on": "2026-10-14", "price": 583.5999755859375, "reasons": "credit rating upgrade", "symbol": "PICCADIL"}
+{"date": "2026-10-14", "desc": "Credit Rating", "logged_on": "2026-10-14", "price": 266.3999938964844, "reasons": "credit rating upgrade", "symbol": "MASFIN"}
+{"date": "2026-10-13", "desc": "Credit Rating- Revision", "logged_on": "2026-10-14", "price": 1743.5, "reasons": "credit rating upgrade", "symbol": "KERNEX"}
+{"date": "2026-10-13", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-14", "price": 1417.5, "reasons": "order \u224849% of annual revenue (after firmness haircut)", "symbol": "KPIL"}
+{"date": "2026-10-12", "desc": "Credit Rating", "logged_on": "2026-10-14", "price": 220.67999267578125, "reasons": "credit rating upgrade", "symbol": "AEROPLANE"}
+{"date": "2026-10-10", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-14", "price": 369.8500061035156, "reasons": "order \u224827% of annual revenue (after firmness haircut)", "symbol": "KEC"}
+{"date": "2026-10-08", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-14", "price": 349.6000061035156, "reasons": "order \u224824% of annual revenue (after firmness haircut)", "symbol": "KEC"}
+{"date": "2026-07-14", "desc": "Credit Rating- Revision", "logged_on": "2026-10-14", "price": 136.75, "reasons": "credit rating upgrade", "symbol": "JSWCEMENT"}
+{"date": "2026-07-08", "desc": "Credit Rating- Others", "logged_on": "2026-10-14", "price": 206.6100006103516, "reasons": "credit rating upgrade", "symbol": "GOKULAGRO"}
+{"date": "2026-07-06", "desc": "Credit Rating", "logged_on": "2026-10-14", "price": 138.1199951171875, "reasons": "credit rating upgrade", "symbol": "TVSSCS"}

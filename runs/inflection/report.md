@@ -1,22 +1,18 @@
-# Dhruva inflection report — 2026-10-12
+# Dhruva inflection report — 2026-10-14
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
 ## Fast lane (material filings this week)
-- LT 2026-10-07: Bagging/Receiving of orders/contracts — order ≈71% of annual revenue (after firmness haircut) (price ₹3701.5)
 - VIVIANA 2026-10-10: Bagging/Receiving of orders/contracts — order ≈57% of annual revenue (after firmness haircut) (price ₹817.8499755859375)
-- ARVIND 2026-10-12: Credit Rating- Revision — credit rating upgrade (price ₹511.5499877929688)
-- MAXHEALTH 2026-10-09: Credit Rating — credit rating upgrade (price ₹883.7999877929688)
-- HBLENGINE 2026-10-09: Credit Rating- Revision — credit rating upgrade (price ₹719.0499877929688)
+- KPIL 2026-10-13: Bagging/Receiving of orders/contracts — order ≈49% of annual revenue (after firmness haircut) (price ₹1417.5)
+- KEC 2026-10-10: Bagging/Receiving of orders/contracts — order ≈27% of annual revenue (after firmness haircut) (price ₹369.8500061035156)
+- PICCADIL 2026-10-14: Credit Rating- New — credit rating upgrade (price ₹583.5999755859375)
+- AEROPLANE 2026-10-12: Credit Rating — credit rating upgrade (price ₹220.67999267578125)
 
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| MAXHEALTH | DISCOVER | RESEARCH | ₹0 | 865.95 | fast-lane event or discovery >= 60 |
-| HBLENGINE | DISCOVER | RESEARCH | ₹0 | 730.35 | fast-lane event or discovery >= 60 |
-| ARVIND | DISCOVER | RESEARCH | ₹0 | 511.55 | fast-lane event or discovery >= 60 |
-| LT | RESEARCH | RESEARCH | ₹0 | 3627.5 | fast-lane event or discovery >= 60 |
-| VIVIANA | DISCOVER | RESEARCH | ₹0 | 847.85 | fast-lane event or discovery >= 60 |
+| none | | | | | |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -46,11 +42,11 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | VIVIANA | 34 | — | 33.2 | 17.6 | YELLOW | RESEARCH | 2026-10-12 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- MAXHEALTH (Healthcare): discovery 6.4, confirmation 47.6, source fast_lane
-- HBLENGINE (Capital Goods): discovery 15.2, confirmation 46.1, source fast_lane
-- ARVIND (Textiles): discovery 5.0, confirmation 45.4, source fast_lane
-- LT (Construction): discovery 35.0, confirmation 36.1, source fast_lane,discovery
+- KPIL (Construction): discovery 30.0, confirmation 53.3, source fast_lane,discovery
+- PICCADIL (Fast Moving Consumer Goods): discovery 5.0, confirmation 37.2, source fast_lane
 - VIVIANA (Unclassified): discovery 30.0, confirmation 28.5, source fast_lane,discovery
+- KEC (Construction): discovery 25.0, confirmation 28.8, source fast_lane,discovery
+- AEROPLANE (Unclassified): discovery 6.8, confirmation 0.0, source fast_lane
 - NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.6, source confirmation
 - DEEPAKNTR (Chemicals): discovery 8.6, confirmation 92.8, source confirmation
 - ALKYLAMINE (Chemicals): discovery 15.0, confirmation 92.7, source confirmation
@@ -58,11 +54,11 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 - LUPIN (Healthcare): discovery 1.5, confirmation 92.2, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- MAXHEALTH: fast lane: fast_lane
-- HBLENGINE: fast lane: fast_lane
-- ARVIND: fast lane: fast_lane
-- LT: new filing: Bagging/Receiving of orders/contracts
-- VIVIANA: fast lane: fast_lane,discovery
+- KPIL: fast lane: fast_lane,discovery
+- PICCADIL: fast lane: fast_lane
+- KEC: fast lane: fast_lane,discovery
+- AEROPLANE: fast lane: fast_lane
+- NAVINFLUOR: first review
 
 ## Missed-winner audit (1 cases logged; 0 new today)
 

@@ -66,14 +66,14 @@ CEINSYS,2026-09-16,Credit Rating- Revision,credit rating upgrade,,,,credit ratin
 ASTERDM,2026-09-16,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
 WELSPUNLIV,2026-09-16,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
 GREENPOWER,2026-09-16,Credit Rating,credit rating upgrade,,,,credit rating upgrade
-MOTILALOFS,2026-09-15,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-SEDEMAC,2026-09-15,Credit Rating,credit rating upgrade,,,,credit rating upgrade
-KAVDEFENCE,2026-09-15,Bagging/Receiving of orders/contracts,order ≈370% of annual revenue (after firmness haircut),,,,order
-AHCL,2026-09-15,Credit Rating,credit rating upgrade,,,,credit rating upgrade
-HFCL,2026-09-14,Capacity addition,capex ≥30% of market cap,,,,capex
-RBLBANK,2026-09-11,Credit Rating,credit rating upgrade,,,,credit rating upgrade
-PIRAMALFIN,2026-09-11,Credit Rating,credit rating upgrade,,,,credit rating upgrade
-GLENMARK,2026-09-11,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+MOTILALOFS,2026-09-15,Credit Rating- Revision,credit rating upgrade,6.6,,,credit rating upgrade
+SEDEMAC,2026-09-15,Credit Rating,credit rating upgrade,10.3,,,credit rating upgrade
+KAVDEFENCE,2026-09-15,Bagging/Receiving of orders/contracts,order ≈370% of annual revenue (after firmness haircut),18.8,,,order
+AHCL,2026-09-15,Credit Rating,credit rating upgrade,45.6,,,credit rating upgrade
+HFCL,2026-09-14,Capacity addition,capex ≥30% of market cap,18.9,,,capex
+RBLBANK,2026-09-11,Credit Rating,credit rating upgrade,-2.6,,,credit rating upgrade
+PIRAMALFIN,2026-09-11,Credit Rating,credit rating upgrade,-6.4,,,credit rating upgrade
+GLENMARK,2026-09-11,Credit Rating,credit rating upgrade,-3.0,,,credit rating upgrade
 APARINDS,2026-09-10,Credit Rating- Revision,credit rating upgrade,8.1,,,credit rating upgrade
 RATNAMANI,2026-09-10,Credit Rating,credit rating upgrade,-6.1,,,credit rating upgrade
 RELIANCE,2026-09-09,Credit Rating,credit rating upgrade,-4.8,,,credit rating upgrade
@@ -172,7 +172,6 @@ NAVINFLUOR,2026-08-13,Credit Rating- Revision,credit rating upgrade,7.8,,,credit
 UGARSUGAR,2026-08-13,Credit Rating- Revision,credit rating upgrade,10.3,,,credit rating upgrade
 MAXESTATES,2026-08-13,Credit Rating,credit rating upgrade,30.3,,,credit rating upgrade
 LT,2026-08-13,Bagging/Receiving of orders/contracts,global Tier-1/hyperscale customer,0.1,,,global Tier-
-TEXMOPIPES,2026-08-12,Preferential issue,promoter puts in 4.45% of market cap at 100% of market price,37.6,,,promoter puts in
 BHEL,2026-08-12,Credit Rating,credit rating upgrade,6.2,,,credit rating upgrade
 ADFFOODS,2026-08-11,Credit Rating- Revision,credit rating upgrade,5.5,,,credit rating upgrade
 AWHCL,2026-08-11,Bagging/Receiving of orders/contracts,order ≈23% of annual revenue (after firmness haircut),-3.7,,,order
@@ -228,12 +227,12 @@ MOTILALOFS,2026-07-23,Credit Rating- Revision,credit rating upgrade,1.0,,,credit
 VIVIANA,2026-07-22,Bagging/Receiving of orders/contracts,order ≈24% of annual revenue (after firmness haircut),-7.1,,,order
 GABRIEL,2026-07-21,Preferential issue,promoter puts in 11.81% of market cap at 100% of market price,-2.1,,,promoter puts in
 GRMOVER,2026-07-21,Credit Rating- Revision,credit rating upgrade,-4.9,,,credit rating upgrade
-LT,2026-07-20,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),5.3,,,order
-HLEGLAS,2026-07-17,Credit Rating,credit rating upgrade,-23.6,,,credit rating upgrade
-HLEGLAS,2026-07-17,Credit Rating,credit rating upgrade,-23.6,,,credit rating upgrade
-BANKINDIA,2026-07-17,Credit Rating,credit rating upgrade,-0.6,,,credit rating upgrade
-BANKINDIA,2026-07-17,Credit Rating,credit rating upgrade,-0.6,,,credit rating upgrade
-NRAIL,2026-07-17,Credit Rating- Others,credit rating upgrade,21.2,,,credit rating upgrade
+LT,2026-07-20,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),5.3,-0.0,,order
+HLEGLAS,2026-07-17,Credit Rating,credit rating upgrade,-23.6,2.6,,credit rating upgrade
+HLEGLAS,2026-07-17,Credit Rating,credit rating upgrade,-23.6,2.6,,credit rating upgrade
+BANKINDIA,2026-07-17,Credit Rating,credit rating upgrade,-0.6,-1.1,,credit rating upgrade
+BANKINDIA,2026-07-17,Credit Rating,credit rating upgrade,-0.6,-1.1,,credit rating upgrade
+NRAIL,2026-07-17,Credit Rating- Others,credit rating upgrade,21.2,81.4,,credit rating upgrade
 OBEROIRLTY,2026-07-16,Credit Rating,credit rating upgrade,-2.8,-4.0,,credit rating upgrade
 VEDL,2026-07-16,Credit Rating,credit rating upgrade,3.1,7.4,,credit rating upgrade
 AURUM,2026-07-16,Preferential issue,promoter puts in 40.36% of market cap at 100% of market price,-8.6,-0.8,,promoter puts in
@@ -407,12 +406,12 @@ GSPCROP,2026-04-29,Credit Rating- Revision,credit rating upgrade,4.8,31.3,,credi
 INDIANHUME,2026-04-29,Bagging/Receiving of orders/contracts,order ≈35% of annual revenue (after firmness haircut),-2.1,17.2,,order
 E2E,2026-04-29,Bagging/Receiving of orders/contracts,order ≈20% of annual revenue (after firmness haircut),34.0,57.9,,order
 LUMAXIND,2026-04-27,Credit Rating,credit rating upgrade,15.4,-1.3,,credit rating upgrade
-JPPOWER,2026-04-25,Credit Rating- Revision,credit rating upgrade,-5.5,-17.8,,credit rating upgrade
-VARROC,2026-04-24,Credit Rating- New,credit rating upgrade,11.9,21.5,,credit rating upgrade
-MINDACORP,2026-04-24,Credit Rating- Revision,credit rating upgrade,9.3,24.4,,credit rating upgrade
-RATNAVEER,2026-04-24,Credit Rating- Revision,credit rating upgrade,25.5,20.9,,credit rating upgrade
-SOLARINDS,2026-04-24,Credit Rating,credit rating upgrade,20.0,18.8,,credit rating upgrade
-ATULAUTO,2026-04-24,Bagging/Receiving of orders/contracts,order ≈28% of annual revenue (after firmness haircut); global Tier-1/hyperscale customer,-3.2,-6.9,,order
+JPPOWER,2026-04-25,Credit Rating- Revision,credit rating upgrade,-5.5,-17.8,-19.9,credit rating upgrade
+VARROC,2026-04-24,Credit Rating- New,credit rating upgrade,11.9,21.5,62.0,credit rating upgrade
+MINDACORP,2026-04-24,Credit Rating- Revision,credit rating upgrade,9.3,24.4,26.0,credit rating upgrade
+RATNAVEER,2026-04-24,Credit Rating- Revision,credit rating upgrade,25.5,20.9,137.1,credit rating upgrade
+SOLARINDS,2026-04-24,Credit Rating,credit rating upgrade,20.0,18.8,34.9,credit rating upgrade
+ATULAUTO,2026-04-24,Bagging/Receiving of orders/contracts,order ≈28% of annual revenue (after firmness haircut); global Tier-1/hyperscale customer,-3.2,-6.9,-14.7,order
 BALRAMCHIN,2026-04-23,Preferential issue,promoter puts in 23.5% of market cap at 100% of market price,0.3,8.4,32.2,promoter puts in
 AZAD,2026-04-23,Bagging/Receiving of orders/contracts,global Tier-1/hyperscale customer,-3.3,11.8,43.1,global Tier-
 LT,2026-04-23,Bagging/Receiving of orders/contracts,order ≈101% of annual revenue (after firmness haircut),-2.2,-9.1,-8.0,order
@@ -466,3 +465,13 @@ ARVIND,2026-10-12,Credit Rating- Revision,credit rating upgrade,,,,credit rating
 VIVIANA,2026-10-10,Bagging/Receiving of orders/contracts,order ≈57% of annual revenue (after firmness haircut),,,,order
 INDOTECH,2026-08-17,Credit Rating- Revision,credit rating upgrade,-1.8,,,credit rating upgrade
 ITI,2026-08-04,Credit Rating,credit rating upgrade,-3.5,,,credit rating upgrade
+PICCADIL,2026-10-14,Credit Rating- New,credit rating upgrade,,,,credit rating upgrade
+MASFIN,2026-10-14,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+KERNEX,2026-10-13,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
+KPIL,2026-10-13,Bagging/Receiving of orders/contracts,order ≈49% of annual revenue (after firmness haircut),,,,order
+AEROPLANE,2026-10-12,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+KEC,2026-10-10,Bagging/Receiving of orders/contracts,order ≈27% of annual revenue (after firmness haircut),,,,order
+KEC,2026-10-08,Bagging/Receiving of orders/contracts,order ≈24% of annual revenue (after firmness haircut),,,,order
+JSWCEMENT,2026-07-14,Credit Rating- Revision,credit rating upgrade,-6.1,-12.9,,credit rating upgrade
+GOKULAGRO,2026-07-08,Credit Rating- Others,credit rating upgrade,6.3,5.0,,credit rating upgrade
+TVSSCS,2026-07-06,Credit Rating,credit rating upgrade,-2.7,0.5,,credit rating upgrade

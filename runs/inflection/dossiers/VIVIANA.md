@@ -1,8 +1,8 @@
 # VIVIANA — Viviana Power Tech Limited (Unclassified)
-Evidence dossier generated 2026-10-12 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-14 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 28.5 · Stage 2 score 135.8 · score 20 sessions ago  · 60 sessions ago 
-Price ₹847.85 · 12-month return -51.0% · -51.8% from 52-week high · RS rank 51.8 · stage-2 trend False · turnover ₹4.03 cr/day
+Price ₹878.00 · 12-month return -49.5% · -49.6% from 52-week high · RS rank 56.5 · stage-2 trend False · turnover ₹4.59 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY -46.1% · QoQ % (previous QoQ 173.8%) · quarters of sequential growth in last 4: 2
@@ -15,10 +15,10 @@ CFO/PAT -0.08 · class: C/D weak: negative operating cash flow · receivables gr
 Net debt/EBITDA 1.27 · interest cover 3.0 · dilution 5.1% · ROE 45.4% · EBITDA/invested capital 35.9%
 
 ## Valuation
-Market cap ₹851 cr · TTM P/E  · PEG  · EV/EBITDA 12.2 · EPS growth minus 12-month price return  pts
+Market cap ₹882 cr · TTM P/E  · PEG  · EV/EBITDA 12.6 · EPS growth minus 12-month price return  pts
 
 ## Industry (same NSE industry, this scan)
-751 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
+744 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
 
 Discovery score 30.0 (order intensity 180d 0.73, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.9 pts, turnaround False) · fast lane: True · source: fast_lane,discovery
 
@@ -27,6 +27,8 @@ Discovery score 30.0 (order intensity 180d 0.73, capacity +0%, promoter money 0.
 - date=2026-09-21 · desc=Commencement of commercial production/operations · url=https://nsearchives.nseindia.com/corporate/VIVIANA_21092026141448_Factory_Inaugration_21092026.pdf
 - date=2026-08-27 · desc=Bagging/Receiving of orders/contracts · value_cr=9.74 · firmness=0.5 · customer=domestic · tier1_customer=False · order_intensity=0.006 · url=https://nsearchives.nseindia.com/corporate/VIVIANA_27082026145941_VIVIANA__Intimation_of_Receiving_Order_GETCO_27082026.pdf
 - date=2026-07-22 · desc=Bagging/Receiving of orders/contracts · value_cr=128.35 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.157 · url=https://nsearchives.nseindia.com/corporate/VIVIANA_22072026090721_VIVIANA__Intimation_of_Receiving_Order_PGVCL_22072026.pdf
+- date=2026-07-09 · desc=Bagging/Receiving of orders/contracts · firmness=0.5 · customer=domestic · tier1_customer=False · url=https://nsearchives.nseindia.com/corporate/VIVIANA_09072026103134_VIVIANA__Intimation_of_Receiving_Order_PGVCL_09072026.pdf
+- date=2026-07-07 · desc=Bagging/Receiving of orders/contracts · firmness=0.5 · customer=domestic · tier1_customer=False · url=https://nsearchives.nseindia.com/corporate/VIVIANA_07072026132100_VIVIANA__Intimation_of_Receiving_Order_DGVCL_07072026.pdf
 
 Flags: receivables growing much faster than revenue
 

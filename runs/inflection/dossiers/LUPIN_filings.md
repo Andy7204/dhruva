@@ -1,4 +1,4 @@
-# LUPIN — source filing text (extracted 2026-10-12 from NSE PDFs; first 8000 characters each)
+# LUPIN — source filing text (extracted 2026-10-14 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-08 · Press Release
 Source: https://nsearchives.nseindia.com/corporate/Lupin2_08102026205937_SELetterPressRelease.pdf
