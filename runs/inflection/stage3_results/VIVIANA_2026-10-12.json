@@ -1,0 +1,159 @@
+{
+ "symbol": "VIVIANA",
+ "company": "Viviana Power Tech Limited",
+ "sector": "Power T&D EPC (state discom turnkey) / transformer manufacturing",
+ "discovery_judgement": 38,
+ "score": {
+  "demand_shock": 6,
+  "supply_constraint": 2,
+  "pricing_power": 1,
+  "revenue_acceleration": 5,
+  "operating_leverage": 3,
+  "eps_acceleration": 4,
+  "capacity_catalyst": 3,
+  "cash_flow_quality": 1,
+  "valuation_asymmetry": 5,
+  "management_governance": 2,
+  "balance_sheet": 2,
+  "total": 34
+ },
+ "confirmation_score": 34,
+ "band": "REJECT",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "FACT: 10 Oct 2026 NSE filing: Rs466.74 cr turnkey order from MGVCL (Robust-III, 18/16 months), ~88% of FY26 revenue of Rs531 cr (web-reported). The filing itself says the value was 'already considered and disclosed in the Investor Presentation and L1 intimation', so it is not new information. 21 Sep filing: transformer plant inaugurated, up to 1,000 MVA/yr (20 MVA, 33/66 kV class); commercial production not yet announced.",
+ "new_evidence_type": "order",
+ "reported_earnings_confirm": false,
+ "cfo_to_pat_value": -0.08,
+ "confirmation_falling": false,
+ "scenarios": {
+  "bear": {
+   "probability": 0.35,
+   "fy2_eps": 45,
+   "fy3_eps": 40,
+   "fy5_eps": 45,
+   "exit_pe": 10,
+   "price": 400,
+   "multiple": 0.47,
+   "cagr_pct": -31.4,
+   "return_2y_pct": -52.8,
+   "assumptions": "Discom receivables stay ~250+ days, CFO negative forces more equity/debt, margins slip to ~6%, small-cap illiquidity derating to 10x"
+  },
+  "base": {
+   "probability": 0.4,
+   "fy2_eps": 60,
+   "fy3_eps": 85,
+   "fy5_eps": 110,
+   "exit_pe": 12,
+   "price": 1020,
+   "multiple": 1.2,
+   "cagr_pct": 9.5,
+   "return_2y_pct": 20.3,
+   "assumptions": "FY27 revenue ~Rs750 cr (below Rs875-910 cr target, Q1 only Rs72 cr), ~8% PAT margin, ~5% dilution; 12x"
+  },
+  "bull": {
+   "probability": 0.2,
+   "fy2_eps": 70,
+   "fy3_eps": 110,
+   "fy5_eps": 150,
+   "exit_pe": 15,
+   "price": 1650,
+   "multiple": 1.95,
+   "cagr_pct": 39.6,
+   "return_2y_pct": 94.6,
+   "assumptions": "Order book of Rs1,300-1,700 cr converts on time, transformer plant adds margin, receivables normalise; 15x"
+  },
+  "extreme_bull": {
+   "probability": 0.05,
+   "fy2_eps": 80,
+   "fy3_eps": 140,
+   "fy5_eps": 200,
+   "exit_pe": 17,
+   "price": 2380,
+   "multiple": 2.81,
+   "cagr_pct": 67.6,
+   "return_2y_pct": 180.7,
+   "assumptions": "Transformer plant scales and EPC executes at guided run-rate; 17x"
+  }
+ },
+ "ev_2y_pct": 17.6,
+ "bear_downside_pct": -52.8,
+ "bull_value_per_share": 1650,
+ "risk": {
+  "governance": "MEDIUM: recent SME-to-main-board migrant, 5.1% dilution, receivables growing faster than revenue; no pledge data (unknown)",
+  "balance_sheet": "MEDIUM-HIGH: ND/EBITDA 1.27, interest cover 3.0, receivable days 267",
+  "cycle": "MEDIUM: state discom capex / RDSS-linked schemes, payment cycles",
+  "liquidity": "HIGH: Rs4.0 cr/day turnover, mcap Rs851 cr",
+  "dilution": "MEDIUM: 5.1% latest",
+  "order_firmness": "LOW-MEDIUM: firm LOAs from state discoms but already disclosed as L1; government-customer collection risk"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Small Gujarat discom-EPC with a Rs467 cr MGVCL award (~88% of FY26 revenue) and a new 1,000 MVA transformer plant, trading ~12x EV/EBITDA after a 51% price fall. But the award was already disclosed at L1 stage, the plant has no commercial production yet, FY26 CFO/PAT is -0.08 with 267 receivable days and receivables +213% vs revenue +143%, interest cover 3.0, and the stock trades Rs4 cr/day. Cash conversion, not orders, is the binding link.",
+ "chain_missing_links": [
+  "Cash conversion (CFO/PAT -0.08, 267 receivable days)",
+  "Capacity: transformer plant not yet in commercial production",
+  "Estimate revisions / consensus: unknown",
+  "Liquidity too thin for a paper position to be realistic"
+ ],
+ "demand_signal": "State discom distribution upgrade orders (PGVCL, MGVCL, DGVCL, GETCO); order book ~Rs1,312 cr (Arthneeti) vs >Rs1,700 cr (Sahi, derived) - conflicting, ANALYST ESTIMATE",
+ "supply_signal": "unknown",
+ "pricing_signal": "No evidence; EBITDA margin 15.7% (+1.8 pts QoQ, dossier)",
+ "order_book": "Rs466.74 cr MGVCL (9 Oct 2026 LOA, FACT); Rs128.35 cr PGVCL multi-contract (22 Jul); Rs9.74 cr GETCO (27 Aug); total order book unknown (sources conflict, Rs1,312-1,700 cr)",
+ "capacity_catalyst": "Power transformer plant inaugurated 21 Sep 2026, up to 1,000 MVA/yr, 33/66 kV up to 20 MVA, phased; commercial production date unknown (MANAGEMENT CLAIM / FACT of inauguration)",
+ "cfo_to_pat": "-0.08 FY (class C/D: negative operating cash flow, receivables growth outpacing revenue)",
+ "debt": "ND/EBITDA 1.27; interest cover 3.0 (dossier)",
+ "roce": "ROE 45.4%; EBITDA/invested capital 35.9% (dossier, flattered by small equity base)",
+ "valuation": "Market cap Rs851 cr, EV/EBITDA 12.2 (dossier); P/E not computed in dossier; ~19-20x implied by ASSUMPTION of ~Rs42 FY26 EPS (8% margin on Rs531 cr / ~1.0 cr shares). Dossier conflict: dossier latest-quarter revenue -46.1% YoY, PAT -48.2% vs web-reported Q1 FY27 revenue Rs72.39 cr (vs Rs31.68 cr, +128%) and PAT Rs6.02 cr (+84%); the dossier appears to compare against a different period. Unresolved; Q1 revenue is also down sharply QoQ from March quarter (~Rs257 cr).",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs ~Rs1,700 price, e.g. EPS Rs110 at 15x by FY29 with flawless collections",
+  "3x": "NO: needs EPS ~Rs140+ at 18x; requires full plant ramp and working-capital fix",
+  "5x": "5x/10x NOT reasonably underwritable",
+  "10x": "5x/10x NOT reasonably underwritable"
+ },
+ "kill_conditions": [
+  "FY27 H1 CFO still negative or receivable days above 250",
+  "Further equity dilution above 5% or promoter pledge disclosed",
+  "Revenue below Rs350 cr in H1 FY27 versus Rs875-910 cr FY27 target",
+  "No commercial production at transformer plant by Q4 FY27"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results (Nov 2026)",
+  "Transformer plant commercial production announcement",
+  "Discom payments / receivables reduction"
+ ],
+ "biggest_risk": "Government-customer receivables and working-capital funding: profit not converting to cash, forcing dilution or debt in an illiquid stock.",
+ "next_datapoint": "H1 FY27 balance sheet and cash flow: CFO, receivable days, debt and dilution; plus the board-meeting outcome of 10 Oct (text not extracted)",
+ "confidence": "LOW",
+ "material_change": "first review",
+ "sources": [
+  {
+   "claim": "Rs466.74 cr MGVCL turnkey order, 18/16 months, already disclosed in investor presentation / L1 intimation",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/VIVIANA_10102026133007_VIVIANA__Intimation_of_Receiving_Order_MGVCL_10102026.pdf"
+  },
+  {
+   "claim": "Transformer plant inauguration, up to 1,000 MVA/yr, phased",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/VIVIANA_21092026141448_Factory_Inaugration_21092026.pdf"
+  },
+  {
+   "claim": "Q1 FY27 revenue Rs72.39 cr, PAT Rs6.02 cr, FY27 target Rs875-910 cr, order book Rs1,312 cr (WebSearch, supplementary)",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://www.arthneeti.com/insights/viviana-power-q1-fy27-earnings"
+  },
+  {
+   "claim": "FY26 revenue Rs531 cr, March 2026 alone Rs257 cr, receivables up (company release via search)",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/VIVIANA_25052026230316_PRESS_RELEASE.pdf"
+  },
+  {
+   "claim": "Dossier CFO/PAT, receivable days, dilution, interest cover, EV/EBITDA",
+   "type": "CALCULATION",
+   "url": "runs/inflection/dossiers/VIVIANA.md"
+  }
+ ]
+}

@@ -15,6 +15,8 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | MAXHEALTH | DISCOVER | RESEARCH | ₹0 | 865.95 | fast-lane event or discovery >= 60 |
 | HBLENGINE | DISCOVER | RESEARCH | ₹0 | 730.35 | fast-lane event or discovery >= 60 |
 | ARVIND | DISCOVER | RESEARCH | ₹0 | 511.55 | fast-lane event or discovery >= 60 |
+| LT | RESEARCH | RESEARCH | ₹0 | 3627.5 | fast-lane event or discovery >= 60 |
+| VIVIANA | DISCOVER | RESEARCH | ₹0 | 847.85 | fast-lane event or discovery >= 60 |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -22,11 +24,12 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | STLTECH | RESEARCH | 2026-10-06 | ₹0 | 54.4 | 70 | -1.8 | fast-lane event or discovery >= 60 |
 | PATELRMART | RESEARCH | 2026-10-06 | ₹0 | 9.0 | 34 | 9.4 | fast-lane event or discovery >= 60 |
 | MARINE | RESEARCH | 2026-10-06 | ₹0 | 39.8 | 47 | 3.4 | fast-lane event or discovery >= 60 |
-| LT | RESEARCH | 2026-10-06 | ₹0 | 29.0 | 37 | 15.3 | fast-lane event or discovery >= 60 |
+| LT | RESEARCH | 2026-10-06 | ₹0 | 34.2 | 38 | 19.9 | fast-lane event or discovery >= 60 |
 | TARIL | RESEARCH | 2026-10-06 | ₹0 | 37.2 | 39 | 17.6 | fast-lane event or discovery >= 60 |
 | MAXHEALTH | RESEARCH | 2026-10-12 | ₹0 | 19.8 | 42 | 5.0 | fast-lane event or discovery >= 60 |
 | HBLENGINE | RESEARCH | 2026-10-12 | ₹0 | 24.3 | 40 | 2.8 | fast-lane event or discovery >= 60 |
 | ARVIND | RESEARCH | 2026-10-12 | ₹0 | 13.0 | 35 | -1.5 | fast-lane event or discovery >= 60 |
+| VIVIANA | RESEARCH | 2026-10-12 | ₹0 | 33.2 | 34 | 17.6 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
@@ -37,9 +40,10 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | MAXHEALTH | 42 | — | 19.8 | 5.0 | YELLOW | RESEARCH | 2026-10-12 |
 | HBLENGINE | 40 | — | 24.3 | 2.8 | YELLOW | RESEARCH | 2026-10-12 |
 | TARIL | 39 | — | 37.2 | 17.6 | YELLOW | RESEARCH | 2026-10-06 |
-| LT | 37 | — | 29.0 | 15.3 | YELLOW | RESEARCH | 2026-10-06 |
+| LT | 38 | 37 | 34.2 | 19.9 | YELLOW | RESEARCH | 2026-10-12 |
 | ARVIND | 35 | — | 13.0 | -1.5 | YELLOW | RESEARCH | 2026-10-12 |
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
+| VIVIANA | 34 | — | 33.2 | 17.6 | YELLOW | RESEARCH | 2026-10-12 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
 - MAXHEALTH (Healthcare): discovery 6.4, confirmation 47.6, source fast_lane

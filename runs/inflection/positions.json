@@ -57,15 +57,20 @@
     "date": "2026-10-06",
     "type": "order",
     "text": "Order book Rs7.79 lakh cr at 30 Jun 2026 (+27% YoY), Q1 inflow Rs1,08,014cr vs Q1 revenue Rs67,942cr (search-reported). Dossier order value Rs308,512cr on 30 Sep and 5 Oct filings is NOT trusted (likely extraction error or aggregate)"
+   },
+   {
+    "date": "2026-10-12",
+    "type": "order",
+    "text": "FACT (web-reported, consistent across Business Today/Kotak Neo/ICICI Direct): order book Rs7.79 lakh cr at 30 Jun 2026 (+27% YoY), Q1 inflow Rs1.08 lakh cr (+14%) vs Q1 consolidated revenue Rs67,942 cr (+7%). The 5-7 Oct 2026 NSE filings give no order values: the 7 Oct Chandrapura 2x800 MW thermal award is only a Limited Notice to Proceed (NTP awaits environmental clearance), counted at 50% haircut. The dossier's per-filing 'value_cr=306,432' is an extraction artefact and is NOT used."
    }
   ],
   "entries": [],
   "since": "2026-10-06",
   "last_reason": "fast-lane event or discovery >= 60",
-  "last_review": "2026-10-06",
-  "discovery": 29.0,
-  "confirmation": 37,
-  "ev_2y_pct": 15.3
+  "last_review": "2026-10-12",
+  "discovery": 34.2,
+  "confirmation": 38,
+  "ev_2y_pct": 19.9
  },
  "TARIL": {
   "state": "RESEARCH",
@@ -134,5 +139,22 @@
   "discovery": 13.0,
   "confirmation": 35,
   "ev_2y_pct": -1.5
+ },
+ "VIVIANA": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-12",
+    "type": "order",
+    "text": "FACT: 10 Oct 2026 NSE filing: Rs466.74 cr turnkey order from MGVCL (Robust-III, 18/16 months), ~88% of FY26 revenue of Rs531 cr (web-reported). The filing itself says the value was 'already considered and disclosed in the Investor Presentation and L1 intimation', so it is not new information. 21 Sep filing: transformer plant inaugurated, up to 1,000 MVA/yr (20 MVA, 33/66 kV class); commercial production not yet announced."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-12",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-12",
+  "discovery": 33.2,
+  "confirmation": 34,
+  "ev_2y_pct": 17.6
  }
 }

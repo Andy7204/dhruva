@@ -6,3 +6,5 @@
 {"date": "2026-10-12", "from": "DISCOVER", "inr": 0, "price": 865.95, "reason": "fast-lane event or discovery >= 60", "symbol": "MAXHEALTH", "to": "RESEARCH"}
 {"date": "2026-10-12", "from": "DISCOVER", "inr": 0, "price": 730.35, "reason": "fast-lane event or discovery >= 60", "symbol": "HBLENGINE", "to": "RESEARCH"}
 {"date": "2026-10-12", "from": "DISCOVER", "inr": 0, "price": 511.55, "reason": "fast-lane event or discovery >= 60", "symbol": "ARVIND", "to": "RESEARCH"}
+{"date": "2026-10-12", "from": "RESEARCH", "inr": 0, "price": 3627.5, "reason": "fast-lane event or discovery >= 60", "symbol": "LT", "to": "RESEARCH"}
+{"date": "2026-10-12", "from": "DISCOVER", "inr": 0, "price": 847.85, "reason": "fast-lane event or discovery >= 60", "symbol": "VIVIANA", "to": "RESEARCH"}

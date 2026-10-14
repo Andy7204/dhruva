@@ -161,6 +161,173 @@
     ],
     "confirmation_score": 37
    }
+  },
+  {
+   "date": "2026-10-12",
+   "trigger": "new filing: Bagging/Receiving of orders/contracts",
+   "stage2_score": 136.7,
+   "price": 3627.5,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-14T02:44:48.425607+00:00",
+   "result": {
+    "symbol": "LT",
+    "company": "Larsen & Toubro Limited",
+    "sector": "Construction / EPC conglomerate",
+    "discovery_judgement": 33,
+    "score": {
+     "demand_shock": 6,
+     "supply_constraint": 3,
+     "pricing_power": 2,
+     "revenue_acceleration": 3,
+     "operating_leverage": 1,
+     "eps_acceleration": 3,
+     "capacity_catalyst": 3,
+     "cash_flow_quality": 6,
+     "valuation_asymmetry": 4,
+     "management_governance": 4,
+     "balance_sheet": 3,
+     "total": 38
+    },
+    "confirmation_score": 38,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT (web-reported, consistent across Business Today/Kotak Neo/ICICI Direct): order book Rs7.79 lakh cr at 30 Jun 2026 (+27% YoY), Q1 inflow Rs1.08 lakh cr (+14%) vs Q1 consolidated revenue Rs67,942 cr (+7%). The 5-7 Oct 2026 NSE filings give no order values: the 7 Oct Chandrapura 2x800 MW thermal award is only a Limited Notice to Proceed (NTP awaits environmental clearance), counted at 50% haircut. The dossier's per-filing 'value_cr=306,432' is an extraction artefact and is NOT used.",
+    "new_evidence_type": "order",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": 1.04,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 128,
+      "fy3_eps": 135,
+      "fy5_eps": 150,
+      "exit_pe": 22,
+      "price": 2970,
+      "multiple": 0.82,
+      "cagr_pct": -9.4,
+      "return_2y_pct": -18.1,
+      "assumptions": "Middle East awards slip, EBITDA margin stays ~8-9%, execution under-delivers FY27 10-12% revenue guide, derates to 22x"
+     },
+     "base": {
+      "probability": 0.45,
+      "fy2_eps": 140,
+      "fy3_eps": 160,
+      "fy5_eps": 185,
+      "exit_pe": 27,
+      "price": 4320,
+      "multiple": 1.19,
+      "cagr_pct": 9.1,
+      "return_2y_pct": 19.1,
+      "assumptions": "Revenue +10-12% per guidance, PAT ~+12% CAGR, other income normalises, multiple ~27x"
+     },
+     "bull": {
+      "probability": 0.2,
+      "fy2_eps": 148,
+      "fy3_eps": 180,
+      "fy5_eps": 215,
+      "exit_pe": 32,
+      "price": 5760,
+      "multiple": 1.59,
+      "cagr_pct": 26.1,
+      "return_2y_pct": 58.8,
+      "assumptions": "Execution normalises H2 FY27, PPM margin recovers toward 7.8% target, 32x"
+     },
+     "extreme_bull": {
+      "probability": 0.05,
+      "fy2_eps": 155,
+      "fy3_eps": 200,
+      "fy5_eps": 250,
+      "exit_pe": 36,
+      "price": 7200,
+      "multiple": 1.98,
+      "cagr_pct": 40.7,
+      "return_2y_pct": 98.5,
+      "assumptions": "Offshore wind, data-centre and semiconductor optionality re-rate"
+     }
+    },
+    "ev_2y_pct": 19.9,
+    "bear_downside_pct": -18.1,
+    "bull_value_per_share": 5760,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "MEDIUM: dossier ND/EBITDA 3.2 consolidated incl. financial services; interest cover 11.3",
+     "cycle": "MEDIUM: infra / Middle East capex cycle; order book 52-56% international",
+     "liquidity": "LOW: Rs619 cr/day",
+     "dilution": "LOW: 0.0%",
+     "order_firmness": "MEDIUM: Oct filings include LNTP (not NTP); Middle East awards lumpy"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Rs7.79 lakh cr record order book and unchanged 10-12% FY27 guidance, but L&T is a Rs4.99 lakh cr mega-cap at ~31x TTM P/E where the chain breaks at operating leverage: Q1 revenue +7% was below guide, EBITDA fell ~3% with margin 9.0% (from 9.9%), PPM margin 7.0% vs 7.8% target, and PAT growth leaned on other income (+75%). October filings are routine order flow (one LNTP without disclosed value). Widely covered, not an early inflection; EV ~+20% fails the starter bar.",
+    "chain_missing_links": [
+     "Operating leverage (EBITDA down YoY, margin down ~90bp)",
+     "Revenue acceleration (+7% vs 10-12% guide)",
+     "Valuation gap (31x TTM, EV/EBITDA ~18)",
+     "Early-stage: order flow is already in consensus"
+    ],
+    "demand_signal": "Order book +27% YoY, Q1 inflow +14%, ~Rs15 lakh cr near-term pipeline (MANAGEMENT CLAIM)",
+    "supply_signal": "unknown",
+    "pricing_signal": "No evidence; Q1 margin compression attributed to lower execution, forex in IT subsidiaries and higher ECL provisions (MANAGEMENT CLAIM)",
+    "order_book": "Rs7.79 lakh cr at 30 Jun 2026 (+27% YoY); Oct 2026 filings: PT&D mega orders (value undisclosed in filing, Saudi/UAE/Vizag), Chandrapura 2x800 MW LNTP (value unknown), Dubai twin contracts (one large, one significant, completion end-2028)",
+    "capacity_catalyst": "L&T Semiconductor Technologies unveiled 40 products at SEMICON (18 Sep filing, text not extracted); revenue contribution unknown",
+    "cfo_to_pat": "1.04 FY (healthy, CALCULATION from dossier)",
+    "debt": "ND/EBITDA 3.2 consolidated per dossier (includes financial services); interest cover 11.3",
+    "roce": "ROE 14.7%; EBITDA/invested capital 14.4% (dossier)",
+    "valuation": "Dossier TTM P/E 30.7, EV/EBITDA 18.2, market cap Rs4.99 lakh cr. Dossier conflict: dossier latest-quarter revenue -8.7% YoY, EBITDA -25.4%, PAT -25.0% vs web-reported Q1 FY27 revenue +7%, PAT +14% (Rs4,123 cr); dossier EBITDA margin 9.0% matches. Web figures preferred; unresolved.",
+    "management_credibility": "HIGH",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs200 at 36x by FY29, roughly +30% EPS CAGR vs ~12% guided",
+     "3x": "NO: would need ~Rs300 EPS at 36x; not credible for a Rs5 lakh cr EPC conglomerate",
+     "5x": "5x/10x NOT reasonably underwritable",
+     "10x": "5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "FY27 order inflow or revenue guidance cut below 10%",
+     "Consolidated EBITDA margin below 8.5% for two consecutive quarters",
+     "Middle East awards not resuming by Q3 FY27",
+     "LNTP projects (Chandrapura) not converting to NTP within 12 months"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (Oct/Nov 2026)",
+     "NTP for Chandrapura",
+     "Middle East award pickup"
+    ],
+    "biggest_risk": "Derating from ~31x TTM P/E if execution and margins keep slipping while other income fades.",
+    "next_datapoint": "Q2 FY27 results: revenue growth vs 10-12% guide, EBITDA/PPM margin, other income share of PBT, Middle East inflow",
+    "confidence": "MEDIUM",
+    "material_change": "Since 2026-10-06 review: Oct 5 PT&D mega orders and Oct 7 Chandrapura LNTP (no value disclosed; LNTP not NTP) add order flow but no new independent evidence type; price fell 3770 -> 3627.5 (not evidence); base-case 2y return now ~+19% after the lower price. Dossier-vs-web quarter conflict still unresolved.",
+    "sources": [
+     {
+      "claim": "Chandrapura 2x800 MW LNTP; NTP awaits environmental clearance; order value not stated",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/PAM_07102026101304_PressRelease07102026.pdf"
+     },
+     {
+      "claim": "PT&D mega orders (Saudi 380 kV, UAE, Visakhapatnam); mega = Rs10,000-15,000 cr class per L&T classification footnote, but filing attributes it across multiple orders",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/PAM_05102026093512_PressRelease05102026.pdf"
+     },
+     {
+      "claim": "Dubai RTA twin contracts (one large, one significant), completion end-2028",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/PAM_30092026121641_PressRelease30092026.pdf"
+     },
+     {
+      "claim": "Q1 FY27: revenue Rs67,942 cr +7%, PAT Rs4,123 cr +14%, order book Rs7.79 lakh cr, inflow Rs1.08 lakh cr, FY27 guide 10-12% (WebSearch, supplementary)",
+      "type": "ANALYST ESTIMATE",
+      "url": "https://www.businesstoday.in/markets/stocks/story/lt-q1-results-pat-rises-14-to-rs-4123-crore-revenue-up-7-545769-2026-07-28"
+     },
+     {
+      "claim": "Dossier valuation, CFO/PAT and balance-sheet ratios (Yahoo-derived)",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/LT.md"
+     }
+    ]
+   }
   }
  ]
 }
