@@ -1,0 +1,164 @@
+{
+ "symbol": "PICCADIL",
+ "discovered": "2026-10-14",
+ "discovery_price": 583.6,
+ "reviews": [
+  {
+   "date": "2026-10-14",
+   "trigger": "fast lane: fast_lane",
+   "stage2_score": 141.3,
+   "price": 583.6,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-15T02:45:06.315845+00:00",
+   "result": {
+    "symbol": "PICCADIL",
+    "company": "Piccadily Agro Industries Limited",
+    "sector": "Alcoholic beverages (premium single malt)",
+    "discovery_judgement": 55,
+    "score": {
+     "demand_shock": 5,
+     "supply_constraint": 3,
+     "pricing_power": 5,
+     "revenue_acceleration": 5,
+     "operating_leverage": 3,
+     "eps_acceleration": 3,
+     "capacity_catalyst": 7,
+     "cash_flow_quality": 4,
+     "valuation_asymmetry": 3,
+     "management_governance": 3,
+     "balance_sheet": 2,
+     "total": 43
+    },
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "Crisil (14 Oct 2026) initial A+/Stable rating on Rs400 cr bank lines; FY26 operating income Rs1,038 cr; capacity Indri malt 12->30 KLPD and distillery 78->220 KLPD plus 200 KLPD greenfield Chhattisgarh commissioned. Rating agency forecast FY27 revenue +50-60% is an ANALYST ESTIMATE.",
+    "new_evidence_type": "rating",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": 0.86,
+    "confirmation_falling": false,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "MEDIUM",
+     "cycle": "LOW",
+     "liquidity": "MEDIUM",
+     "dilution": "MEDIUM",
+     "order_firmness": "LOW"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Premium single malt (Indri) scale-up with newly commissioned capacity; Crisil assigns A+/Stable and forecasts FY27 revenue +50-60% at 22-24% margins. But reported Q1 revenue was only +16.7% YoY, EBITDA margin 17.6% (below the 22.5% Crisil cites for FY26 - definitions differ, unreconciled), receivables +77% vs revenue +27%, ND/EBITDA 2.15, dilution 4.5%, and P/E 40.7 already prices a lot. The Crisil forecast, not reported numbers, carries the acceleration case.",
+    "chain_missing_links": [
+     "Revenue acceleration not yet reported (Q1 +16.7% vs Crisil 50-60% FY27)",
+     "Operating leverage absent (margin -0.2 pts)",
+     "Cash conversion (receivables +77%)",
+     "Valuation gap (P/E 40.7, PEG 3.3)"
+    ],
+    "demand_signal": "Premiumisation of Indian alco-bev; Indri awards (MANAGEMENT/ANALYST ESTIMATE, Crisil)",
+    "supply_signal": "Aged-whisky barrel inventory is a moat but no shortage data",
+    "pricing_signal": "unknown; no ASP data in extracted text",
+    "order_book": "n/a (consumer brand)",
+    "capacity_catalyst": "Commissioned: malt 30 KLPD, distillery 220 KLPD, Chhattisgarh 200 KLPD; ramp is the catalyst (FACT per Crisil rationale; utilisation unknown)",
+    "cfo_to_pat": "0.86 FY (class A per dossier); WC intensive from ageing inventory",
+    "debt": "ND/EBITDA 2.15; interest cover 5.0; gearing ~0.6x (Crisil); WCDL Rs145 cr; cash Rs70 cr",
+    "roce": "ROE 15.3%; EBITDA/invested capital 16.8%",
+    "valuation": "TTM P/E 40.7; EV/EBITDA 26.1; PEG 3.27; implied EPS ~Rs14.3",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs30 at 38x within 2y vs Q1 growth +16%",
+     "3x": "NO",
+     "5x": "NO: 5x/10x NOT reasonably underwritable",
+     "10x": "NO: 5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "Q2/Q3 revenue growth stays below 25% YoY",
+     "Receivable days above 100 or CFO/PAT below 0.5",
+     "Further equity dilution",
+     "Adverse state excise/regulatory action"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results",
+     "Festive season sales",
+     "Branded-mix and export growth"
+    ],
+    "biggest_risk": "Growth stays near 17% while P/E contracts from 40x; receivables and inventory absorb cash",
+    "next_datapoint": "Q2 FY27 results: revenue growth vs 50% forecast, distillery margin, receivable days",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "Crisil A+/Stable assigned, FY26 revenue Rs1,038 cr, capacity expansions, FY27 +50-60% growth forecast",
+      "type": "ANALYST ESTIMATE",
+      "url": "https://nsearchives.nseindia.com/corporate/CSPICCADILY_14102026182320_AGRO_CREDIT141026.pdf"
+     },
+     {
+      "claim": "Capacity figures and FY26 22.5% operating margin",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/CSPICCADILY_14102026182320_AGRO_CREDIT141026.pdf"
+     },
+     {
+      "claim": "Q1 revenue +16.7% YoY, margin 17.6%, P/E 40.7, receivables +77%",
+      "type": "CALCULATION",
+      "url": "dossier PICCADIL.md (Yahoo Finance data)"
+     }
+    ],
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 15,
+      "fy3_eps": 16,
+      "fy5_eps": 18,
+      "exit_pe": 20,
+      "price": 300,
+      "multiple": 0.51,
+      "cagr_pct": -28.3,
+      "return_2y_pct": -48.6,
+      "assumptions": "Growth ~15%, WC strain, P/E derates to 20x"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 21,
+      "fy3_eps": 28,
+      "fy5_eps": 40,
+      "exit_pe": 28,
+      "price": 588,
+      "multiple": 1.01,
+      "cagr_pct": 0.4,
+      "return_2y_pct": 0.8,
+      "assumptions": "Revenue +30%, margin 18-20%; P/E 28x"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 28,
+      "fy3_eps": 40,
+      "fy5_eps": 60,
+      "exit_pe": 32,
+      "price": 896,
+      "multiple": 1.54,
+      "cagr_pct": 23.9,
+      "return_2y_pct": 53.5,
+      "assumptions": "Crisil-type growth partly delivered; P/E 32x"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 36,
+      "fy3_eps": 55,
+      "fy5_eps": 85,
+      "exit_pe": 38,
+      "price": 1368,
+      "multiple": 2.34,
+      "cagr_pct": 53.1,
+      "return_2y_pct": 134.4,
+      "assumptions": "50% growth delivered with 22% margin"
+     }
+    },
+    "ev_2y_pct": 8.3,
+    "bear_downside_pct": -48.6,
+    "bull_value_per_share": 896,
+    "confirmation_score": 43
+   }
+  }
+ ]
+}

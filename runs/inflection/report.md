@@ -12,7 +12,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| KPIL | DISCOVER | RESEARCH | ₹0 | 1400.1 | fast-lane event or discovery >= 60 |
+| PICCADIL | DISCOVER | RESEARCH | ₹0 | 583.6 | fast-lane event or discovery >= 60 |
+| KEC | DISCOVER | DISCOVER | ₹0 | 360.25 | governance/balance-sheet risk HIGH |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -26,13 +28,17 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | HBLENGINE | RESEARCH | 2026-10-12 | ₹0 | 24.3 | 40 | 2.8 | fast-lane event or discovery >= 60 |
 | ARVIND | RESEARCH | 2026-10-12 | ₹0 | 13.0 | 35 | -1.5 | fast-lane event or discovery >= 60 |
 | VIVIANA | RESEARCH | 2026-10-12 | ₹0 | 33.2 | 34 | 17.6 | fast-lane event or discovery >= 60 |
+| KPIL | RESEARCH | 2026-10-14 | ₹0 | 42.8 | 49 | 25.9 | fast-lane event or discovery >= 60 |
+| PICCADIL | RESEARCH | 2026-10-14 | ₹0 | 25.0 | 43 | 8.3 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
 |---|---:|---:|---:|---:|---|---|---|
 | STLTECH | 70 | — | 54.4 | -1.8 | YELLOW | RESEARCH | 2026-10-06 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
+| KPIL | 49 | — | 42.8 | 25.9 | YELLOW | RESEARCH | 2026-10-14 |
 | MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
+| PICCADIL | 43 | — | 25.0 | 8.3 | YELLOW | RESEARCH | 2026-10-14 |
 | MAXHEALTH | 42 | — | 19.8 | 5.0 | YELLOW | RESEARCH | 2026-10-12 |
 | HBLENGINE | 40 | — | 24.3 | 2.8 | YELLOW | RESEARCH | 2026-10-12 |
 | TARIL | 39 | — | 37.2 | 17.6 | YELLOW | RESEARCH | 2026-10-06 |
@@ -40,6 +46,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | ARVIND | 35 | — | 13.0 | -1.5 | YELLOW | RESEARCH | 2026-10-12 |
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 | VIVIANA | 34 | — | 33.2 | 17.6 | YELLOW | RESEARCH | 2026-10-12 |
+| KEC | 21 | — | 33.0 | -7.2 | RED | DISCOVER | 2026-10-14 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
 - KPIL (Construction): discovery 30.0, confirmation 53.3, source fast_lane,discovery

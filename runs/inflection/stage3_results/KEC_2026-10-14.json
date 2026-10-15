@@ -1,0 +1,150 @@
+{
+ "symbol": "KEC",
+ "company": "KEC International Limited",
+ "sector": "Construction / T&D EPC",
+ "discovery_judgement": 45,
+ "score": {
+  "demand_shock": 5,
+  "supply_constraint": 3,
+  "pricing_power": 1,
+  "revenue_acceleration": 1,
+  "operating_leverage": 0,
+  "eps_acceleration": 0,
+  "capacity_catalyst": 1,
+  "cash_flow_quality": 1,
+  "valuation_asymmetry": 6,
+  "management_governance": 2,
+  "balance_sheet": 1,
+  "total": 21
+ },
+ "band": "REJECT",
+ "status": "RED",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "Management: YTD FY27 order intake >Rs9,600 cr (MANAGEMENT CLAIM). Single announced orders were Rs1,014 cr (10 Oct) and Rs1,030 cr (8 Oct), not Rs9,600/8,600 cr as the dossier event rows show.",
+ "new_evidence_type": "order",
+ "reported_earnings_confirm": false,
+ "cfo_to_pat_value": -0.68,
+ "confirmation_falling": true,
+ "risk": {
+  "governance": "MEDIUM",
+  "balance_sheet": "HIGH",
+  "cycle": "MEDIUM",
+  "liquidity": "LOW",
+  "dilution": "LOW",
+  "order_firmness": "MEDIUM"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Order intake is strong (YTD >Rs9,600 cr claimed; first 765 kV PSP evacuation order) and P/E is 17x after a 58% price fall. But reported fundamentals deteriorated: EBITDA -16.9% YoY, PAT -41.7%, margin 5.8%, CFO/PAT -0.68, receivable days 179, ND/EBITDA 2.86, interest cover 1.8. The cause of the 58% fall is not in the extracted filings (unknown). A crash is a reason to research, not evidence. Not underwritable until cash flow turns.",
+ "chain_missing_links": [
+  "Order to revenue (revenue flat YoY)",
+  "Operating leverage (negative)",
+  "EPS acceleration (negative)",
+  "Cash flow (CFO negative, receivables stretched)",
+  "Cause of the 58% price fall unknown"
+ ],
+ "demand_signal": "T&D and renewables evacuation orders; Bhutan/Saudi/Americas wins (MANAGEMENT CLAIM)",
+ "supply_signal": "unknown",
+ "pricing_signal": "none; margins compressing",
+ "order_book": "unknown total; YTD intake >Rs9,600 cr (MANAGEMENT CLAIM). Dossier order_intensity 0.27 and 0.24 misread cumulative YTD figures as single orders.",
+ "capacity_catalyst": "none evidenced",
+ "cfo_to_pat": "-0.68 (class C/D)",
+ "debt": "ND/EBITDA 2.86; interest cover 1.8",
+ "roce": "ROE 9.8%; EBITDA/invested capital 14.6%",
+ "valuation": "TTM P/E 17.3; EV/EBITDA 8.7 (CALCULATION). Cheap only if earnings recover.",
+ "management_credibility": "LOW",
+ "plausible": {
+  "2x": "NO: needs EPS to double and a rerating with negative CFO",
+  "3x": "NO",
+  "5x": "NO: 5x/10x NOT reasonably underwritable",
+  "10x": "NO: 5x/10x NOT reasonably underwritable"
+ },
+ "kill_conditions": [
+  "CFO/PAT remains negative for another half-year",
+  "Interest cover below 1.5 or rating downgrade",
+  "Margin below 5%",
+  "Order cancellations or large provisions"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results",
+  "Working-capital release / collections",
+  "Conversion of YTD orders to revenue"
+ ],
+ "biggest_risk": "Receivables and debt keep rising while margins compress; the price fall reflects problems not visible in the extracted text",
+ "next_datapoint": "Q2 FY27 results: CFO, receivable days, net debt and EBITDA margin",
+ "confidence": "LOW",
+ "material_change": "first review",
+ "sources": [
+  {
+   "claim": "YTD order intake >Rs9,600 cr; Rs1,014 cr new orders incl. first 765 kV PSP evacuation",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/KEC_10102026144951_PressRelease.pdf"
+  },
+  {
+   "claim": "YTD >Rs8,600 cr; Rs1,030 cr orders incl. Bhutan, Saudi, wind",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/KEC_08102026205717_PressRelease.pdf"
+  },
+  {
+   "claim": "EBITDA -16.9%, PAT -41.7%, CFO/PAT -0.68, ND/EBITDA 2.86, P/E 17.3",
+   "type": "CALCULATION",
+   "url": "dossier KEC.md (Yahoo Finance data)"
+  }
+ ],
+ "scenarios": {
+  "bear": {
+   "probability": 0.3,
+   "fy2_eps": 12,
+   "fy3_eps": 12,
+   "fy5_eps": 14,
+   "exit_pe": 10,
+   "price": 120,
+   "multiple": 0.33,
+   "cagr_pct": -42.3,
+   "return_2y_pct": -66.7,
+   "assumptions": "Margins fall to 5%, WC stress, P/E 10x"
+  },
+  "base": {
+   "probability": 0.4,
+   "fy2_eps": 24,
+   "fy3_eps": 30,
+   "fy5_eps": 40,
+   "exit_pe": 13,
+   "price": 312,
+   "multiple": 0.87,
+   "cagr_pct": -6.9,
+   "return_2y_pct": -13.4,
+   "assumptions": "Margins recover to 6.5%, CFO turns positive; P/E 13x"
+  },
+  "bull": {
+   "probability": 0.22,
+   "fy2_eps": 34,
+   "fy3_eps": 44,
+   "fy5_eps": 60,
+   "exit_pe": 15,
+   "price": 510,
+   "multiple": 1.42,
+   "cagr_pct": 19.0,
+   "return_2y_pct": 41.6,
+   "assumptions": "Order book converts, margin 7.5%; P/E 15x"
+  },
+  "extreme_bull": {
+   "probability": 0.08,
+   "fy2_eps": 45,
+   "fy3_eps": 60,
+   "fy5_eps": 85,
+   "exit_pe": 17,
+   "price": 765,
+   "multiple": 2.12,
+   "cagr_pct": 45.7,
+   "return_2y_pct": 112.4,
+   "assumptions": "Full recovery to prior earnings power"
+  }
+ },
+ "ev_2y_pct": -7.2,
+ "bear_downside_pct": -66.7,
+ "bull_value_per_share": 510,
+ "confirmation_score": 21
+}

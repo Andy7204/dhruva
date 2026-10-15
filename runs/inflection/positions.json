@@ -156,5 +156,55 @@
   "discovery": 33.2,
   "confirmation": 34,
   "ev_2y_pct": 17.6
+ },
+ "KPIL": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-14",
+    "type": "order",
+    "text": "Management states YTD FY27 order inflow ~Rs20,000 cr vs FY26 revenue Rs27,143 cr (0.74x), >30% YoY; UAE gas pipeline LoA classed Major (>Rs4,000 cr). Filed press releases (MANAGEMENT CLAIM). Latest single announcement is Rs2,225 cr (8% of revenue), not Rs20,000 cr as the dossier event row shows."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-14",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-14",
+  "discovery": 42.8,
+  "confirmation": 49,
+  "ev_2y_pct": 25.9
+ },
+ "PICCADIL": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-14",
+    "type": "rating",
+    "text": "Crisil (14 Oct 2026) initial A+/Stable rating on Rs400 cr bank lines; FY26 operating income Rs1,038 cr; capacity Indri malt 12->30 KLPD and distillery 78->220 KLPD plus 200 KLPD greenfield Chhattisgarh commissioned. Rating agency forecast FY27 revenue +50-60% is an ANALYST ESTIMATE."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-14",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-14",
+  "discovery": 25.0,
+  "confirmation": 43,
+  "ev_2y_pct": 8.3
+ },
+ "KEC": {
+  "state": "DISCOVER",
+  "evidence": [
+   {
+    "date": "2026-10-14",
+    "type": "order",
+    "text": "Management: YTD FY27 order intake >Rs9,600 cr (MANAGEMENT CLAIM). Single announced orders were Rs1,014 cr (10 Oct) and Rs1,030 cr (8 Oct), not Rs9,600/8,600 cr as the dossier event rows show."
+   }
+  ],
+  "entries": [],
+  "last_reason": "governance/balance-sheet risk HIGH",
+  "last_review": "2026-10-14",
+  "discovery": 33.0,
+  "confirmation": 21,
+  "ev_2y_pct": -7.2
  }
 }

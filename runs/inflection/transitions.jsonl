@@ -8,3 +8,6 @@
 {"date": "2026-10-12", "from": "DISCOVER", "inr": 0, "price": 511.55, "reason": "fast-lane event or discovery >= 60", "symbol": "ARVIND", "to": "RESEARCH"}
 {"date": "2026-10-12", "from": "RESEARCH", "inr": 0, "price": 3627.5, "reason": "fast-lane event or discovery >= 60", "symbol": "LT", "to": "RESEARCH"}
 {"date": "2026-10-12", "from": "DISCOVER", "inr": 0, "price": 847.85, "reason": "fast-lane event or discovery >= 60", "symbol": "VIVIANA", "to": "RESEARCH"}
+{"date": "2026-10-14", "from": "DISCOVER", "inr": 0, "price": 1400.1, "reason": "fast-lane event or discovery >= 60", "symbol": "KPIL", "to": "RESEARCH"}
+{"date": "2026-10-14", "from": "DISCOVER", "inr": 0, "price": 583.6, "reason": "fast-lane event or discovery >= 60", "symbol": "PICCADIL", "to": "RESEARCH"}
+{"date": "2026-10-14", "from": "DISCOVER", "inr": 0, "price": 360.25, "reason": "governance/balance-sheet risk HIGH", "symbol": "KEC", "to": "DISCOVER"}

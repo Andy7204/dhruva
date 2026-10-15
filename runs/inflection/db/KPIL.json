@@ -1,0 +1,174 @@
+{
+ "symbol": "KPIL",
+ "discovered": "2026-10-14",
+ "discovery_price": 1400.1,
+ "reviews": [
+  {
+   "date": "2026-10-14",
+   "trigger": "fast lane: fast_lane,discovery",
+   "stage2_score": 153.9,
+   "price": 1400.1,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-15T02:45:05.819287+00:00",
+   "result": {
+    "symbol": "KPIL",
+    "company": "Kalpataru Projects International Limited",
+    "sector": "Construction / T&D EPC",
+    "discovery_judgement": 62,
+    "score": {
+     "demand_shock": 6,
+     "supply_constraint": 4,
+     "pricing_power": 3,
+     "revenue_acceleration": 3,
+     "operating_leverage": 4,
+     "eps_acceleration": 6,
+     "capacity_catalyst": 3,
+     "cash_flow_quality": 8,
+     "valuation_asymmetry": 6,
+     "management_governance": 3,
+     "balance_sheet": 3,
+     "total": 49
+    },
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "Management states YTD FY27 order inflow ~Rs20,000 cr vs FY26 revenue Rs27,143 cr (0.74x), >30% YoY; UAE gas pipeline LoA classed Major (>Rs4,000 cr). Filed press releases (MANAGEMENT CLAIM). Latest single announcement is Rs2,225 cr (8% of revenue), not Rs20,000 cr as the dossier event row shows.",
+    "new_evidence_type": "order",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": 1.48,
+    "confirmation_falling": false,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "LOW",
+     "cycle": "MEDIUM",
+     "liquidity": "LOW",
+     "dilution": "LOW",
+     "order_firmness": "MEDIUM"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "T&D/EPC order momentum (YTD ~Rs20,000 cr claimed, L1 on >Rs12,000 cr more, UAE gas pipeline LoA) at 21.5x TTM P/E with healthy FY CFO/PAT 1.48 and ND/EBITDA 0.77. But latest quarter revenue was -9.3% YoY with EBITDA +4.5%; PAT +37.5% is helped by one-offs (13.7% of EBITDA). Orders have not yet converted to revenue/margin; margin ~8.8% is thin EPC. Valuation is reasonable but not an obvious asymmetry. Needs reported revenue acceleration.",
+    "chain_missing_links": [
+     "Order to revenue conversion (Q1 FY27 revenue -9.3% YoY)",
+     "Operating leverage (EBITDA margin 8.8%, one-offs 13.7% of EBITDA)",
+     "Order book size and execution period unknown",
+     "Estimate revisions unknown"
+    ],
+    "demand_signal": "Management: T&D grid/renewable-integration capex; sector peers (KEC) also report strong inflows (MANAGEMENT CLAIM). Peer median revenue growth -5.6% in dossier scan.",
+    "supply_signal": "unknown; EPC is competitive, no shortage evidence in filings",
+    "pricing_signal": "unknown; none evidenced",
+    "order_book": "unknown total; YTD inflow ~Rs20,000 cr and L1 >Rs12,000 cr (MANAGEMENT CLAIM). Dossier order_intensity 0.49 is mislabelled: it treats the cumulative YTD figure as one order. Real latest announcement Rs2,225 cr incl. SEK200m (~Rs194 cr) Linjemontage order.",
+    "capacity_catalyst": "none evidenced (capacity +0% per dossier)",
+    "cfo_to_pat": "1.48 FY26 (dossier CALCULATION)",
+    "debt": "ND/EBITDA 0.77; interest cover 6.8; rating upgrade 2026-07-03 (FACT, filing text not extracted)",
+    "roce": "EBITDA/invested capital 21.0%; ROE 13.4%",
+    "valuation": "TTM P/E 21.5, EV/EBITDA 11.0, PEG 0.61 (CALCULATION). Implied EPS ~Rs65.",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs ~Rs130 EPS at 21x in 2y, i.e. ~2x EPS on ~10% margins",
+     "3x": "NO",
+     "5x": "NO: 5x/10x NOT reasonably underwritable",
+     "10x": "NO: 5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "Two consecutive quarters of YoY revenue decline despite order claims",
+     "EBITDA margin below 8% ex one-offs",
+     "CFO/PAT below 0.7 or receivable days rising above 130",
+     "Material order cancellation or bank-guarantee/legal issue"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (Nov 2026): revenue growth and margin",
+     "Conversion of L1 >Rs12,000 cr to orders",
+     "Analyst meet 30 Sep 2026 commentary (text not extracted)"
+    ],
+    "biggest_risk": "Orders do not convert into profitable revenue; EPC margins stay ~8-9% and PAT growth was one-off aided",
+    "next_datapoint": "Q2 FY27 results: revenue YoY, EBITDA margin ex-one-offs, order book and CFO",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "YTD FY27 orders ~Rs20,000 cr, >30% YoY; Rs2,225 cr new orders",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_13102026084709_SEIntimationPR13102026.pdf"
+     },
+     {
+      "claim": "YTD Rs13,219 cr at 24 Sep; L1 on >Rs12,000 cr",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_24092026084832_SEIntimationPR24092026.pdf"
+     },
+     {
+      "claim": "UAE gas pipeline LoA, Major >Rs4,000 cr; value not disclosed",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_28092026084735_SEIntimationPR28092026.pdf"
+     },
+     {
+      "claim": "FY26 revenue Rs27,143 cr",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_13102026084709_SEIntimationPR13102026.pdf"
+     },
+     {
+      "claim": "Revenue -9.3% YoY, EBITDA +4.5%, PAT +37.5%, P/E 21.5, CFO/PAT 1.48",
+      "type": "CALCULATION",
+      "url": "dossier KPIL.md (Yahoo Finance data)"
+     }
+    ],
+    "scenarios": {
+     "bear": {
+      "probability": 0.2,
+      "fy2_eps": 58,
+      "fy3_eps": 60,
+      "fy5_eps": 64,
+      "exit_pe": 14,
+      "price": 812,
+      "multiple": 0.58,
+      "cagr_pct": -23.8,
+      "return_2y_pct": -42.0,
+      "assumptions": "Revenue flat, margin 8%, EPS falls; P/E 14x"
+     },
+     "base": {
+      "probability": 0.45,
+      "fy2_eps": 82,
+      "fy3_eps": 95,
+      "fy5_eps": 130,
+      "exit_pe": 20,
+      "price": 1640,
+      "multiple": 1.17,
+      "cagr_pct": 8.2,
+      "return_2y_pct": 17.1,
+      "assumptions": "Revenue +10%/yr on orders, margin ~9%; P/E 20x"
+     },
+     "bull": {
+      "probability": 0.25,
+      "fy2_eps": 100,
+      "fy3_eps": 120,
+      "fy5_eps": 170,
+      "exit_pe": 23,
+      "price": 2300,
+      "multiple": 1.64,
+      "cagr_pct": 28.2,
+      "return_2y_pct": 64.3,
+      "assumptions": "Revenue +15%, margin 9.5%, rerating to 23x"
+     },
+     "extreme_bull": {
+      "probability": 0.1,
+      "fy2_eps": 115,
+      "fy3_eps": 145,
+      "fy5_eps": 210,
+      "exit_pe": 25,
+      "price": 2875,
+      "multiple": 2.05,
+      "cagr_pct": 43.3,
+      "return_2y_pct": 105.3,
+      "assumptions": "Order surge converts, margin 10%, P/E 25x"
+     }
+    },
+    "ev_2y_pct": 25.9,
+    "bear_downside_pct": -42.0,
+    "bull_value_per_share": 2300,
+    "confirmation_score": 49
+   }
+  }
+ ]
+}
