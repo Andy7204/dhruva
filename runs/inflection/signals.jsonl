@@ -496,3 +496,6 @@
 {"date": "2026-07-14", "desc": "Credit Rating- Revision", "logged_on": "2026-10-14", "price": 136.75, "reasons": "credit rating upgrade", "symbol": "JSWCEMENT"}
 {"date": "2026-07-08", "desc": "Credit Rating- Others", "logged_on": "2026-10-14", "price": 206.6100006103516, "reasons": "credit rating upgrade", "symbol": "GOKULAGRO"}
 {"date": "2026-07-06", "desc": "Credit Rating", "logged_on": "2026-10-14", "price": 138.1199951171875, "reasons": "credit rating upgrade", "symbol": "TVSSCS"}
+{"date": "2026-10-15", "desc": "Credit Rating", "logged_on": "2026-10-15", "price": 242.0, "reasons": "credit rating upgrade", "symbol": "BUILDPRO"}
+{"date": "2026-06-11", "desc": "Credit Rating- Others", "logged_on": "2026-10-15", "price": 1570.9000244140625, "reasons": "credit rating upgrade", "symbol": "GRAVITA"}
+{"date": "2026-06-09", "desc": "Credit Rating- Revision", "logged_on": "2026-10-15", "price": 252.75, "reasons": "credit rating upgrade", "symbol": "MARKSANS"}

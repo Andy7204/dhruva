@@ -60,12 +60,12 @@ CENTUM,2026-09-17,Credit Rating,credit rating upgrade,,,,credit rating upgrade
 PNGJL,2026-09-17,Credit Rating,credit rating upgrade,,,,credit rating upgrade
 PNGJL,2026-09-17,Credit Rating,credit rating upgrade,,,,credit rating upgrade
 SGMART,2026-09-17,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-RRKABEL,2026-09-16,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-APOLLOPIPE,2026-09-16,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-CEINSYS,2026-09-16,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-ASTERDM,2026-09-16,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-WELSPUNLIV,2026-09-16,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-GREENPOWER,2026-09-16,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+RRKABEL,2026-09-16,Credit Rating- Revision,credit rating upgrade,10.5,,,credit rating upgrade
+APOLLOPIPE,2026-09-16,Credit Rating- Revision,credit rating upgrade,5.8,,,credit rating upgrade
+CEINSYS,2026-09-16,Credit Rating- Revision,credit rating upgrade,2.8,,,credit rating upgrade
+ASTERDM,2026-09-16,Credit Rating- Revision,credit rating upgrade,-6.0,,,credit rating upgrade
+WELSPUNLIV,2026-09-16,Credit Rating- Revision,credit rating upgrade,8.8,,,credit rating upgrade
+GREENPOWER,2026-09-16,Credit Rating,credit rating upgrade,-4.9,,,credit rating upgrade
 MOTILALOFS,2026-09-15,Credit Rating- Revision,credit rating upgrade,6.6,,,credit rating upgrade
 SEDEMAC,2026-09-15,Credit Rating,credit rating upgrade,10.3,,,credit rating upgrade
 KAVDEFENCE,2026-09-15,Bagging/Receiving of orders/contracts,order ≈370% of annual revenue (after firmness haircut),18.8,,,order
@@ -225,8 +225,8 @@ LT,2026-07-24,Bagging/Receiving of orders/contracts,order ≈108% of annual reve
 USHAMART,2026-07-23,Credit Rating,credit rating upgrade,-2.6,,,credit rating upgrade
 MOTILALOFS,2026-07-23,Credit Rating- Revision,credit rating upgrade,1.0,,,credit rating upgrade
 VIVIANA,2026-07-22,Bagging/Receiving of orders/contracts,order ≈24% of annual revenue (after firmness haircut),-7.1,,,order
-GABRIEL,2026-07-21,Preferential issue,promoter puts in 11.81% of market cap at 100% of market price,-2.1,,,promoter puts in
-GRMOVER,2026-07-21,Credit Rating- Revision,credit rating upgrade,-4.9,,,credit rating upgrade
+GABRIEL,2026-07-21,Preferential issue,promoter puts in 11.81% of market cap at 100% of market price,-2.1,1.4,,promoter puts in
+GRMOVER,2026-07-21,Credit Rating- Revision,credit rating upgrade,-4.9,8.0,,credit rating upgrade
 LT,2026-07-20,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),5.3,-0.0,,order
 HLEGLAS,2026-07-17,Credit Rating,credit rating upgrade,-23.6,2.6,,credit rating upgrade
 HLEGLAS,2026-07-17,Credit Rating,credit rating upgrade,-23.6,2.6,,credit rating upgrade
@@ -405,7 +405,7 @@ MMP,2026-04-30,Credit Rating,credit rating upgrade,11.1,12.9,,credit rating upgr
 GSPCROP,2026-04-29,Credit Rating- Revision,credit rating upgrade,4.8,31.3,,credit rating upgrade
 INDIANHUME,2026-04-29,Bagging/Receiving of orders/contracts,order ≈35% of annual revenue (after firmness haircut),-2.1,17.2,,order
 E2E,2026-04-29,Bagging/Receiving of orders/contracts,order ≈20% of annual revenue (after firmness haircut),34.0,57.9,,order
-LUMAXIND,2026-04-27,Credit Rating,credit rating upgrade,15.4,-1.3,,credit rating upgrade
+LUMAXIND,2026-04-27,Credit Rating,credit rating upgrade,15.4,-1.3,9.5,credit rating upgrade
 JPPOWER,2026-04-25,Credit Rating- Revision,credit rating upgrade,-5.5,-17.8,-19.9,credit rating upgrade
 VARROC,2026-04-24,Credit Rating- New,credit rating upgrade,11.9,21.5,62.0,credit rating upgrade
 MINDACORP,2026-04-24,Credit Rating- Revision,credit rating upgrade,9.3,24.4,26.0,credit rating upgrade
@@ -475,3 +475,6 @@ KEC,2026-10-08,Bagging/Receiving of orders/contracts,order ≈24% of annual reve
 JSWCEMENT,2026-07-14,Credit Rating- Revision,credit rating upgrade,-6.1,-12.9,,credit rating upgrade
 GOKULAGRO,2026-07-08,Credit Rating- Others,credit rating upgrade,6.3,5.0,,credit rating upgrade
 TVSSCS,2026-07-06,Credit Rating,credit rating upgrade,-2.7,0.5,,credit rating upgrade
+BUILDPRO,2026-10-15,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+GRAVITA,2026-06-11,Credit Rating- Others,credit rating upgrade,10.7,1.6,,credit rating upgrade
+MARKSANS,2026-06-09,Credit Rating- Revision,credit rating upgrade,-1.3,22.8,,credit rating upgrade

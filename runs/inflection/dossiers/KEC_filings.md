@@ -1,4 +1,4 @@
-# KEC — source filing text (extracted 2026-10-14 from NSE PDFs; first 8000 characters each)
+# KEC — source filing text (extracted 2026-10-15 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-10 · Bagging/Receiving of orders/contracts
 Source: https://nsearchives.nseindia.com/corporate/KEC_10102026144951_PressRelease.pdf

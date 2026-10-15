@@ -1,8 +1,8 @@
 # VIVIANA — Viviana Power Tech Limited (Unclassified)
-Evidence dossier generated 2026-10-14 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-15 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 28.5 · Stage 2 score 135.8 · score 20 sessions ago  · 60 sessions ago 
-Price ₹878.00 · 12-month return -49.5% · -49.6% from 52-week high · RS rank 56.5 · stage-2 trend False · turnover ₹4.59 cr/day
+Price ₹903.30 · 12-month return -47.3% · -48.2% from 52-week high · RS rank 60.4 · stage-2 trend False · turnover ₹6.01 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY -46.1% · QoQ % (previous QoQ 173.8%) · quarters of sequential growth in last 4: 2
@@ -15,10 +15,10 @@ CFO/PAT -0.08 · class: C/D weak: negative operating cash flow · receivables gr
 Net debt/EBITDA 1.27 · interest cover 3.0 · dilution 5.1% · ROE 45.4% · EBITDA/invested capital 35.9%
 
 ## Valuation
-Market cap ₹882 cr · TTM P/E  · PEG  · EV/EBITDA 12.6 · EPS growth minus 12-month price return  pts
+Market cap ₹907 cr · TTM P/E  · PEG  · EV/EBITDA 13.0 · EPS growth minus 12-month price return  pts
 
 ## Industry (same NSE industry, this scan)
-744 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
+745 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
 
 Discovery score 30.0 (order intensity 180d 0.73, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.9 pts, turnaround False) · fast lane: True · source: fast_lane,discovery
 
@@ -33,6 +33,7 @@ Discovery score 30.0 (order intensity 180d 0.73, capacity +0%, promoter money 0.
 Flags: receivables growing much faster than revenue
 
 ## Recent relevant NSE filings (newest first)
+- 2026-10-15 · Outcome of Board Meeting · Viviana Power Tech Limited has informed the Exchange regarding Outcome of Board Meeting held on October 15, 2026. · https://nsearchives.nseindia.com/corporate/VIVIANA_15102026182005_VIVIANA__OUTCOME_OF_BM_15102026.pdf
 - 2026-10-10 · Outcome of Board Meeting · Viviana Power Tech Limited has informed the Exchange regarding Outcome of Board Meeting held on October 10, 2026. · https://nsearchives.nseindia.com/corporate/VIVIANA_10102026224032_OUTCOME_OF_BM_10102026.pdf
 - 2026-10-10 · Bagging/Receiving of orders/contracts · Viviana Power Tech Limited has informed the Exchange about receiving a new turnkey contract aggregating to Rs. 466,73,61,738.00 (Rupees Four Hundred Sixty-Six Crore Seventy-Three Lakh Sixty-One Thousa · https://nsearchives.nseindia.com/corporate/VIVIANA_10102026133007_VIVIANA__Intimation_of_Receiving_Order_MGVCL_10102026.pdf
 - 2026-09-21 · Commencement of commercial production/operations · Viviana Power Tech Limited has informed the Exchange about Inauguration of Power Transformer Manufacturing Facility · https://nsearchives.nseindia.com/corporate/VIVIANA_21092026141448_Factory_Inaugration_21092026.pdf
@@ -47,6 +48,5 @@ Flags: receivables growing much faster than revenue
 - 2026-08-04 · Press Release · Viviana Power Tech Limited has informed the Exchange regarding a press release dated August 04, 2026, titled "Unaudited Financial Results of the Company for the quarter ended 30th June, 2026, along wi · https://nsearchives.nseindia.com/corporate/VIVIANA_04082026210433_Press_Release_04082026.pdf
 - 2026-08-04 · Outcome of Board Meeting · Viviana Power Tech Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. · https://nsearchives.nseindia.com/corporate/VIVIANA_04082026201424_OUTCOME_OF_BM_04082026.pdf
 - 2026-07-28 · Analysts/Institutional Investor Meet/Con. Call Updates · Viviana Power Tech Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.com/corporate/VIVIANA_28072026170202_VIVIANA_INVESTOR_CALL_06082026.pdf
-- 2026-07-22 · Bagging/Receiving of orders/contracts · Viviana Power Tech Limited has informed the Exchange about receiving multiple turnkey contracts from its existing client, M/s. Paschim Gujarat Vij Company Limited (PGVCL), having an aggregate contract · https://nsearchives.nseindia.com/corporate/VIVIANA_22072026090721_VIVIANA__Intimation_of_Receiving_Order_PGVCL_22072026.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

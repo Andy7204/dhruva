@@ -1,8 +1,8 @@
 # KPIL — Kalpataru Projects International Limited (Construction)
-Evidence dossier generated 2026-10-14 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-15 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 53.3 · Stage 2 score 153.9 · score 20 sessions ago 61.4 · 60 sessions ago 61.4
-Price ₹1400.10 · 12-month return 11.7% · -4.0% from 52-week high · RS rank 68.4 · stage-2 trend True · turnover ₹23.83 cr/day
+Price ₹1395.70 · 12-month return 11.7% · -4.3% from 52-week high · RS rank 69.0 · stage-2 trend True · turnover ₹24.08 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY -9.3% · QoQ % (previous QoQ 16.7%) · quarters of sequential growth in last 4: 2
@@ -15,7 +15,7 @@ CFO/PAT 1.48 · class: healthy · receivables growth 7.5% vs revenue 21.7% · in
 Net debt/EBITDA 0.77 · interest cover 6.8 · dilution 0.0% · ROE 13.4% · EBITDA/invested capital 21.0%
 
 ## Valuation
-Market cap ₹23910 cr · TTM P/E 21.5 · PEG 0.61 · EV/EBITDA 11.0 · EPS growth minus 12-month price return 23.6 pts
+Market cap ₹23835 cr · TTM P/E 21.5 · PEG 0.61 · EV/EBITDA 11.0 · EPS growth minus 12-month price return 23.6 pts
 
 ## Industry (same NSE industry, this scan)
 23 peers · 4% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY -5.6%
@@ -29,6 +29,7 @@ Discovery score 30.0 (order intensity 180d 1.00, capacity +0%, promoter money 0.
 - date=2026-08-14 · desc=Bagging/Receiving of orders/contracts · value_cr=11000.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.271 · fast_lane_reasons=order ≈27% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/KALPATPOWR_14082026143647_SEIntimationPR14082026.pdf
 - date=2026-07-03 · desc=Credit Rating · rating_move=1.0 · fast_lane_reasons=credit rating upgrade · url=https://nsearchives.nseindia.com/corporate/KALPATPOWR_03072026202122_SEIntimationCreditRatingIR072026FINAL.pdf
 - date=2026-06-30 · desc=Bagging/Receiving of orders/contracts · value_cr=2957.0 · years=2.0 · firmness=1.0 · customer=international · tier1_customer=False · order_intensity=0.055 · url=https://nsearchives.nseindia.com/corporate/KALPATPOWR_30062026084658_SEIntimationPR30062026.pdf
+- date=2026-06-01 · desc=Bagging/Receiving of orders/contracts · value_cr=2002.0 · firmness=1.0 · customer=international · tier1_customer=False · order_intensity=0.049 · url=https://nsearchives.nseindia.com/corporate/KALPATPOWR_01062026084809_SEIntimationPR01062026.pdf
 
 Flags: none
 

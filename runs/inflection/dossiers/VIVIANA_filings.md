@@ -1,4 +1,9 @@
-# VIVIANA — source filing text (extracted 2026-10-14 from NSE PDFs; first 8000 characters each)
+# VIVIANA — source filing text (extracted 2026-10-15 from NSE PDFs; first 8000 characters each)
+
+## 2026-10-15 · Outcome of Board Meeting
+Source: https://nsearchives.nseindia.com/corporate/VIVIANA_15102026182005_VIVIANA__OUTCOME_OF_BM_15102026.pdf
+
+(text not extracted yet; PDF budget or scanned image)
 
 ## 2026-10-10 · Outcome of Board Meeting
 Source: https://nsearchives.nseindia.com/corporate/VIVIANA_10102026224032_OUTCOME_OF_BM_10102026.pdf
@@ -22,11 +27,6 @@ Source: https://nsearchives.nseindia.com/corporate/VIVIANA_21092026130650_Intima
 
 ## 2026-09-21 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/VIVIANA_21092026130028_Intimation_of_Investor_Meet_Arihant.pdf
-
-(text not extracted yet; PDF budget or scanned image)
-
-## 2026-09-03 · Outcome of Board Meeting
-Source: https://nsearchives.nseindia.com/corporate/VIVIANA_03092026124538_OUTCOME_OF_BM_03092026.pdf
 
 (text not extracted yet; PDF budget or scanned image)
 
