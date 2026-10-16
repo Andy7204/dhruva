@@ -1,8 +1,8 @@
 # KPIL — Kalpataru Projects International Limited (Construction)
-Evidence dossier generated 2026-10-15 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-16 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 53.3 · Stage 2 score 153.9 · score 20 sessions ago 61.4 · 60 sessions ago 61.4
-Price ₹1395.70 · 12-month return 11.7% · -4.3% from 52-week high · RS rank 69.0 · stage-2 trend True · turnover ₹24.08 cr/day
+Stage 1 score 53.7 · Stage 2 score 154.3 · score 20 sessions ago 61.4 · 60 sessions ago 61.4
+Price ₹1364.30 · 12-month return 8.4% · -6.5% from 52-week high · RS rank 64.8 · stage-2 trend False · turnover ₹23.84 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY -9.3% · QoQ % (previous QoQ 16.7%) · quarters of sequential growth in last 4: 2
@@ -15,7 +15,7 @@ CFO/PAT 1.48 · class: healthy · receivables growth 7.5% vs revenue 21.7% · in
 Net debt/EBITDA 0.77 · interest cover 6.8 · dilution 0.0% · ROE 13.4% · EBITDA/invested capital 21.0%
 
 ## Valuation
-Market cap ₹23835 cr · TTM P/E 21.5 · PEG 0.61 · EV/EBITDA 11.0 · EPS growth minus 12-month price return 23.6 pts
+Market cap ₹23298 cr · TTM P/E 21.0 · PEG 0.59 · EV/EBITDA 10.8 · EPS growth minus 12-month price return 27.0 pts
 
 ## Industry (same NSE industry, this scan)
 23 peers · 4% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY -5.6%
@@ -23,6 +23,7 @@ Market cap ₹23835 cr · TTM P/E 21.5 · PEG 0.61 · EV/EBITDA 11.0 · EPS grow
 Discovery score 30.0 (order intensity 180d 1.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.5 pts, turnaround False) · fast lane: True · source: fast_lane,discovery
 
 ## Extracted event facts (CALCULATIONS from filing PDFs; verify in the source)
+- date=2026-10-16 · desc=Credit Rating · rating_move=1.0 · fast_lane_reasons=credit rating upgrade · url=https://nsearchives.nseindia.com/corporate/KALPATPOWR_16102026105124_KPILSEIntimationCreditRatingCRISIL16102026.pdf
 - date=2026-10-13 · desc=Bagging/Receiving of orders/contracts · value_cr=20000.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.493 · fast_lane_reasons=order ≈49% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/KALPATPOWR_13102026084709_SEIntimationPR13102026.pdf
 - date=2026-09-28 · desc=Bagging/Receiving of orders/contracts · firmness=1.0 · customer=domestic · tier1_customer=False · url=https://nsearchives.nseindia.com/corporate/KALPATPOWR_28092026084735_SEIntimationPR28092026.pdf
 - date=2026-09-24 · desc=Bagging/Receiving of orders/contracts · value_cr=13219.0 · firmness=1.0 · customer=domestic · tier1_customer=False · order_intensity=0.326 · fast_lane_reasons=order ≈33% of annual revenue (after firmness haircut) · url=https://nsearchives.nseindia.com/corporate/KALPATPOWR_24092026084832_SEIntimationPR24092026.pdf
@@ -34,6 +35,7 @@ Discovery score 30.0 (order intensity 180d 1.00, capacity +0%, promoter money 0.
 Flags: none
 
 ## Recent relevant NSE filings (newest first)
+- 2026-10-16 · Credit Rating · Kalpataru Projects International Limited has informed the Exchange about Credit Rating · https://nsearchives.nseindia.com/corporate/KALPATPOWR_16102026105124_KPILSEIntimationCreditRatingCRISIL16102026.pdf
 - 2026-10-13 · Bagging/Receiving of orders/contracts · Kalpataru Projects International Limited has informed the Exchange about Bagging/Receiving of orders/contracts · https://nsearchives.nseindia.com/corporate/KALPATPOWR_13102026084709_SEIntimationPR13102026.pdf
 - 2026-09-28 · Bagging/Receiving of orders/contracts · Kalpataru Projects International Limited has informed the Exchange about Bagging/Receiving of orders/contracts · https://nsearchives.nseindia.com/corporate/KALPATPOWR_28092026084735_SEIntimationPR28092026.pdf
 - 2026-09-25 · Press Release · Kalpataru Projects International Limited has informed the Exchange regarding a press release dated September 25, 2026, titled "KPIL ANNOUNCES SUCCESSFUL LISTING OF LINJEMONTAGE EQUITY SHARES ON NASDAQ · https://nsearchives.nseindia.com/corporate/KALPATPOWR_25092026125040_SEIntimationPR25092026.pdf
@@ -48,6 +50,5 @@ Flags: none
 - 2026-08-11 · Investor Presentation · Kalpataru Projects International Limited has informed the Exchange about Investor Presentation · https://nsearchives.nseindia.com/corporate/KALPATPOWR_11082026144928_SEIntimationIP11082026.pdf
 - 2026-08-11 · Outcome of Board Meeting · Kalpataru Projects International Limited has informed the Exchange regarding Outcome of Board Meeting held on August 11, 2026. · https://nsearchives.nseindia.com/corporate/KALPATPOWR_11082026143025_SEIntimationOutcomeothers11082026.pdf
 - 2026-08-11 · Outcome of Board Meeting · Kalpataru Projects International Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. · https://nsearchives.nseindia.com/corporate/KALPATPOWR_11082026142639_SEIntimationOutcomeResults11082026.pdf
-- 2026-08-06 · Analysts/Institutional Investor Meet/Con. Call Updates · Kalpataru Projects International Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.com/corporate/KALPATPOWR_06082026133326_SEIntimationInvestorAnalystMeeting12082026to19082026.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

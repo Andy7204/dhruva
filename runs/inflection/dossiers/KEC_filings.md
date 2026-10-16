@@ -1,4 +1,4 @@
-# KEC — source filing text (extracted 2026-10-15 from NSE PDFs; first 8000 characters each)
+# KEC — source filing text (extracted 2026-10-16 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-10 · Bagging/Receiving of orders/contracts
 Source: https://nsearchives.nseindia.com/corporate/KEC_10102026144951_PressRelease.pdf
@@ -13,7 +13,7 @@ KEC INTERNATIONAL LTD. RPG House 463, Dr. Annie Besant Road Worli, Mumbai 400030
 ## 2026-09-23 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/KEC_23092026173532_AnalystMeetIntimation.pdf
 
-(text not extracted yet; PDF budget or scanned image)
+KEC INTERNATIONAL LTD. RPG House 463, Dr. Annie Besant Road Worli, Mumbai 400030, India +91 22 66670200 kecindia@kecrpg.com www.kecrpg.com Registered Office: RPG House, 463, Dr. Annie Besant Road Worli, Mumbai 400030, CIN: L45200MH2005PLC152061, India. An Company September 23, 2026 National Stock Exchange of India Limited Exchange Plaza Bandra Kurla Complex Bandra (East), Mumbai - 400 051 Symbol: KEC BSE Limited Phiroze Jeejeebhoy Towers Dalal Street, Fort Mumbai - 400 001 Scrip Code: 532714 Sub.: Schedule of Analyst/ Institutional Investors meet Dear Sir / Madam, Pursuant to Regulation 30 read with Para A of Part A of Schedule III of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, the details of the Analyst/ Institutional Investors meet to be attended by the Company are given below: Date Name of the Meeting/ Call/ Conference/ Event/ Organizer Mode /Location Type of Meeting/ Call/ Conference/ Event September 28, 2026 Nuvama Emerging India CEO Forum In-person/Mumbai One-on-One/ Group Meet September 29, 2026 PL Capital Mid & Small Cap Conference 2026 “Emerging Titans: Unlocking India’s Next Growth Leaders” In-person/Mumbai One-on-One/ Group Meet September 30, 2026 Bharat Connect Conference: Rising Stars - September 2026 Virtual (Over Call) One-on-One/ Group Meet Notes: 1) Date is subject to changes due to exigencies on the part of the Company/ Organizer. 2) Presentation, if any to be made shall be in line with the presentation available on the Company/Stock Exchange websites. Kindly take the same on records. Thanking you, Yours faithfully, For KEC International Limited Suraj Eksambekar Company Secretary and Compliance Officer
 
 ## 2026-09-14 · Bagging/Receiving of orders/contracts
 Source: https://nsearchives.nseindia.com/corporate/KEC_14092026090455_PressRelease.pdf
@@ -23,10 +23,10 @@ KEC INTERNATIONAL LTD. RPG House 463, Dr. Annie Besant Road Worli, Mumbai 400030
 ## 2026-08-14 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/KEC_14082026153314_SE_Intimation_Transcript.pdf
 
-(text not extracted yet; PDF budget or scanned image)
+KEC INTERNATIONAL LTD. RPG House 463, Dr. Annie Besant Road Worli, Mumbai 400030, India +91 22 66670200 kecindia@kecrpg.com www.kecrpg.com Registered Office: RPG House, 463, Dr. Annie Besant Road Worli, Mumbai 400030, CIN: L45200MH2005PLC152061, India. An Company August 14, 2026 National Stock Exchange of India Limited Exchange Plaza Bandra Kurla Complex Bandra (East), Mumbai - 400 051 Symbol: KEC BSE Limited Phiroze Jeejeebhoy Towers Dalal Street, Fort Mumbai – 400 001 Scrip Code: 532714 Sub.: Results Earnings Conference Call Q1 FY27 - Transcript Dear Sir / Madam, In continuation to our letters dated August 03, 2026 and August 11, 2026, we would like to inform that the Transcript of the Earnings Conference Call held on Tuesday, August 11, 202 6, for the Unaudited Financial Results of the Company for the quarter ended June 30, 202 6, has been made available on the Company’s website at https://www.kecrpg.com/earning-call-transcripts. The above is for your information and records. Thanking you, Yours faithfully, For KEC International Limited Suraj Eksambekar Company Secretary & Compliance Officer
 
 ## 2026-08-11 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/KEC_11082026172906_AnalystMeetIntimation_-_JM.pdf
 
-(text not extracted yet; PDF budget or scanned image)
+KEC INTERNATIONAL LTD. RPG House 463, Dr. Annie Besant Road Worli, Mumbai 400030, India +91 22 66670200 kecindia@kecrpg.com www.kecrpg.com Registered Office: RPG House, 463, Dr. Annie Besant Road Worli, Mumbai 400030, CIN: L45200MH2005PLC152061, India. An Company August 11, 2026 National Stock Exchange of India Limited Exchange Plaza Bandra Kurla Complex Bandra (East), Mumbai - 400 051 Symbol: KEC BSE Limited Phiroze Jeejeebhoy Towers Dalal Street, Fort Mumbai - 400 001 Scrip Code: 532714 Sub.: Schedule of Analyst/ Institutional Investors meet Dear Sir / Madam, Pursuant to Regulation 30 read with Para A of Part A of Schedule III of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, the details of the Analyst/ Institutional Investors meet to be attended by the Company are given below: Date Organizer Mode /Location Nature of the meeting August 14, 2026 JM Financial Institutional Securities Limited In-person/Mumbai One-on-One/ Group Meet Notes: 1) Date is subject to changes due to exigencies on the part of the Company/ Organizer. 2) Presentation, if any to be made shall be in line with the presentation available on the Company/Stock Exchange websites. Kindly take the same on records. Thanking you, Yours faithfully, For KEC International Limited Suraj Eksambekar Company Secretary and Compliance Officer
 

@@ -1,8 +1,8 @@
 # VIVIANA — Viviana Power Tech Limited (Unclassified)
-Evidence dossier generated 2026-10-15 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-16 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 28.5 · Stage 2 score 135.8 · score 20 sessions ago  · 60 sessions ago 
-Price ₹903.30 · 12-month return -47.3% · -48.2% from 52-week high · RS rank 60.4 · stage-2 trend False · turnover ₹6.01 cr/day
+Price ₹796.10 · 12-month return -50.0% · -54.3% from 52-week high · RS rank 40.5 · stage-2 trend False · turnover ₹6.82 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY -46.1% · QoQ % (previous QoQ 173.8%) · quarters of sequential growth in last 4: 2
@@ -15,10 +15,10 @@ CFO/PAT -0.08 · class: C/D weak: negative operating cash flow · receivables gr
 Net debt/EBITDA 1.27 · interest cover 3.0 · dilution 5.1% · ROE 45.4% · EBITDA/invested capital 35.9%
 
 ## Valuation
-Market cap ₹907 cr · TTM P/E  · PEG  · EV/EBITDA 13.0 · EPS growth minus 12-month price return  pts
+Market cap ₹799 cr · TTM P/E  · PEG  · EV/EBITDA 11.6 · EPS growth minus 12-month price return  pts
 
 ## Industry (same NSE industry, this scan)
-745 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
+740 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.3%
 
 Discovery score 30.0 (order intensity 180d 0.73, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.9 pts, turnaround False) · fast lane: True · source: fast_lane,discovery
 

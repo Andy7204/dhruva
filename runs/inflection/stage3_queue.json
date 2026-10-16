@@ -1,36 +1,9 @@
 [
  {
-  "symbol": "VIVIANA",
-  "trigger": "new filing: Outcome of Board Meeting",
-  "dossier": "runs/inflection/dossiers/VIVIANA.md",
-  "price": 903.3,
-  "discovery_d": 30.0,
-  "fast_lane": true,
-  "stage2_score": 135.8
- },
- {
-  "symbol": "BUILDPRO",
-  "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/BUILDPRO.md",
-  "price": 242.0,
-  "discovery_d": 5.0,
-  "fast_lane": true,
-  "stage2_score": 110.8
- },
- {
-  "symbol": "NAVINFLUOR",
-  "trigger": "first review",
-  "dossier": "runs/inflection/dossiers/NAVINFLUOR.md",
-  "price": 8247.5,
-  "discovery_d": 6.6,
-  "fast_lane": false,
-  "stage2_score": 106.8
- },
- {
   "symbol": "DEEPAKNTR",
   "trigger": "first review",
   "dossier": "runs/inflection/dossiers/DEEPAKNTR.md",
-  "price": 1599.6,
+  "price": 1598.5,
   "discovery_d": 8.6,
   "fast_lane": false,
   "stage2_score": 102.0
@@ -39,9 +12,27 @@
   "symbol": "ALKYLAMINE",
   "trigger": "first review",
   "dossier": "runs/inflection/dossiers/ALKYLAMINE.md",
-  "price": 1838.5,
+  "price": 1844.7,
   "discovery_d": 15.0,
   "fast_lane": false,
   "stage2_score": 101.9
+ },
+ {
+  "symbol": "GANDHAR",
+  "trigger": "first review",
+  "dossier": "runs/inflection/dossiers/GANDHAR.md",
+  "price": 296.65,
+  "discovery_d": 15.0,
+  "fast_lane": false,
+  "stage2_score": 99.4
+ },
+ {
+  "symbol": "LUPIN",
+  "trigger": "first review",
+  "dossier": "runs/inflection/dossiers/LUPIN.md",
+  "price": 1961.6,
+  "discovery_d": 1.5,
+  "fast_lane": false,
+  "stage2_score": 98.8
  }
 ]

@@ -1,4 +1,4 @@
-# Dhruva inflection report — 2026-10-15
+# Dhruva inflection report — 2026-10-16
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
@@ -12,9 +12,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| VIVIANA | RESEARCH | RESEARCH | ₹0 | 903.3 | fast-lane event or discovery >= 60 |
-| BUILDPRO | DISCOVER | RESEARCH | ₹0 | 242.0 | fast-lane event or discovery >= 60 |
-| NAVINFLUOR | DISCOVER | DISCOVER | ₹0 | 8247.5 | below research threshold |
+| none | | | | | |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -52,23 +50,22 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KEC | 21 | — | 33.0 | -7.2 | RED | DISCOVER | 2026-10-14 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- KPIL (Construction): discovery 30.0, confirmation 53.3, source fast_lane,discovery
-- PICCADIL (Fast Moving Consumer Goods): discovery 5.0, confirmation 37.1, source fast_lane
+- KPIL (Construction): discovery 30.0, confirmation 53.7, source fast_lane,discovery
+- PICCADIL (Fast Moving Consumer Goods): discovery 5.0, confirmation 37.0, source fast_lane
 - VIVIANA (Unclassified): discovery 30.0, confirmation 28.5, source fast_lane,discovery
-- KEC (Construction): discovery 25.0, confirmation 28.9, source fast_lane
+- KEC (Construction): discovery 25.0, confirmation 29.0, source fast_lane
 - BUILDPRO (Unclassified): discovery 5.0, confirmation 0.0, source fast_lane
-- NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.6, source confirmation
+- NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.7, source confirmation
 - DEEPAKNTR (Chemicals): discovery 8.6, confirmation 92.8, source confirmation
 - ALKYLAMINE (Chemicals): discovery 15.0, confirmation 92.7, source confirmation
 - GANDHAR (Unclassified): discovery 15.0, confirmation 93.6, source confirmation
 - LUPIN (Healthcare): discovery 1.5, confirmation 92.2, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- VIVIANA: new filing: Outcome of Board Meeting
-- BUILDPRO: fast lane: fast_lane
-- NAVINFLUOR: first review
 - DEEPAKNTR: first review
 - ALKYLAMINE: first review
+- GANDHAR: first review
+- LUPIN: first review
 
 ## Missed-winner audit (1 cases logged; 0 new today)
 
