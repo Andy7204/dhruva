@@ -152,10 +152,10 @@
   "entries": [],
   "since": "2026-10-12",
   "last_reason": "fast-lane event or discovery >= 60",
-  "last_review": "2026-10-12",
+  "last_review": "2026-10-15",
   "discovery": 33.2,
   "confirmation": 34,
-  "ev_2y_pct": 17.6
+  "ev_2y_pct": 10.4
  },
  "KPIL": {
   "state": "RESEARCH",
@@ -206,5 +206,38 @@
   "discovery": 33.0,
   "confirmation": 21,
   "ev_2y_pct": -7.2
+ },
+ "BUILDPRO": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-15",
+    "type": "rating",
+    "text": "FACT: 14 Oct 2026 CRISIL upgraded long-term bank-facility rating to A/Stable from A-/Stable and short term to A1 from A2+; rated facilities enhanced to Rs820 cr from Rs745 cr."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-15",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-15",
+  "discovery": 13.0,
+  "confirmation": 37,
+  "ev_2y_pct": 12.5
+ },
+ "NAVINFLUOR": {
+  "state": "DISCOVER",
+  "evidence": [
+   {
+    "date": "2026-10-15",
+    "type": "commissioning",
+    "text": "FACT: 29 Sep 2026 filing: debottlenecking of the Dahej Multi Purpose Plant (Rs75 cr funding) commissioned, commercial production and dispatch started (capacity added not disclosed in the filing). Reported Q1 FY27 (press): revenue ~Rs1,045 cr +44%, EBITDA ~Rs357 cr (34.2% margin), PAT ~Rs243 cr (+108%)."
+   }
+  ],
+  "entries": [],
+  "last_reason": "below research threshold",
+  "last_review": "2026-10-15",
+  "discovery": 26.0,
+  "confirmation": 67,
+  "ev_2y_pct": 18.8
  }
 }

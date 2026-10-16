@@ -1,0 +1,167 @@
+{
+ "symbol": "BUILDPRO",
+ "discovered": "2026-10-15",
+ "discovery_price": 242.0,
+ "reviews": [
+  {
+   "date": "2026-10-15",
+   "trigger": "fast lane: fast_lane",
+   "stage2_score": 110.8,
+   "price": 242.0,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-16T02:45:00.390718+00:00",
+   "result": {
+    "symbol": "BUILDPRO",
+    "company": "Shankara Buildpro Limited",
+    "sector": "Building materials retail / steel and non-steel marketplace",
+    "discovery_judgement": 25,
+    "score": {
+     "demand_shock": 4,
+     "supply_constraint": 1,
+     "pricing_power": 1,
+     "revenue_acceleration": 5,
+     "operating_leverage": 2,
+     "eps_acceleration": 3,
+     "capacity_catalyst": 4,
+     "cash_flow_quality": 5,
+     "valuation_asymmetry": 5,
+     "management_governance": 3,
+     "balance_sheet": 4,
+     "total": 37
+    },
+    "confirmation_score": 37,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT: 14 Oct 2026 CRISIL upgraded long-term bank-facility rating to A/Stable from A-/Stable and short term to A1 from A2+; rated facilities enhanced to Rs820 cr from Rs745 cr.",
+    "new_evidence_type": "rating",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": 0.7,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.25,
+      "fy2_eps": 10,
+      "fy3_eps": 10,
+      "fy5_eps": 11,
+      "exit_pe": 14,
+      "price": 140,
+      "multiple": 0.58,
+      "cagr_pct": -23.8,
+      "return_2y_pct": -42.1,
+      "assumptions": "Steel price/volume downturn compresses ~3% EBITDA margin; PAT falls to ~Rs120 cr; 14x on a low-margin distributor"
+     },
+     "base": {
+      "probability": 0.5,
+      "fy2_eps": 14.5,
+      "fy3_eps": 17,
+      "fy5_eps": 24,
+      "exit_pe": 18,
+      "price": 261,
+      "multiple": 1.08,
+      "cagr_pct": 3.9,
+      "return_2y_pct": 7.9,
+      "assumptions": "Revenue +20%/yr, EBITDA margin ~3.3% flat, PAT +10%/yr (ASSUMPTION ~12.2 cr shares post 1:5 split); 18x"
+     },
+     "bull": {
+      "probability": 0.2,
+      "fy2_eps": 18,
+      "fy3_eps": 23,
+      "fy5_eps": 34,
+      "exit_pe": 22,
+      "price": 396,
+      "multiple": 1.64,
+      "cagr_pct": 28.1,
+      "return_2y_pct": 63.6,
+      "assumptions": "Volume to 1.2 mt target and non-steel recovery lift margin to ~3.8%; 22x"
+     },
+     "extreme_bull": {
+      "probability": 0.05,
+      "fy2_eps": 22,
+      "fy3_eps": 30,
+      "fy5_eps": 45,
+      "exit_pe": 25,
+      "price": 550,
+      "multiple": 2.27,
+      "cagr_pct": 50.7,
+      "return_2y_pct": 127.3,
+      "assumptions": "Margin re-rating plus strong organised-share gain; 25x"
+     }
+    },
+    "ev_2y_pct": 12.5,
+    "bear_downside_pct": -42.1,
+    "bull_value_per_share": 396,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "LOW",
+     "cycle": "MEDIUM: steel-price linked volumes and working capital",
+     "liquidity": "MEDIUM",
+     "dilution": "LOW",
+     "order_firmness": "n/a"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "A rating upgrade is a lender-confidence signal, not an earnings inflection. Q1 FY27 (web-reported) revenue grew ~21% to Rs1,890 cr but PAT only ~10-12% (Rs35.8 cr) on a ~3.3% EBITDA margin: growth without operating leverage. Steel volume +10%. Balance sheet is sound (ND/EBITDA 0.15, CFO/PAT 0.70) and valuation is mid-teens to 20x, so there is no obvious mispricing. Not an early-inflection candidate.",
+    "chain_missing_links": [
+     "Operating leverage (PAT growth below revenue growth)",
+     "Supply constraint and pricing power: absent",
+     "Estimate revisions: unknown"
+    ],
+    "demand_signal": "Steel marketplace volume 2.50 lakh t in Q1 FY27, +10% YoY (ANALYST/press-reported, not verified in filing)",
+    "supply_signal": "unknown",
+    "pricing_signal": "none; EBITDA margin ~3.26% (press)",
+    "order_book": "n/a (distribution model)",
+    "capacity_catalyst": "Target 1.2 mt steel volume in FY27 (MANAGEMENT CLAIM, press-reported); rated limits enhanced to Rs820 cr",
+    "cfo_to_pat": "0.70 (FY, dossier, healthy)",
+    "debt": "ND/EBITDA 0.15, interest cover 6.0 (dossier)",
+    "roce": "ROE 23.4% (dossier)",
+    "valuation": "Dossier mcap Rs587 cr / EV/EBITDA 2.8 look unadjusted for the 1:5 split (conflict). ASSUMPTION: ~12.2 cr post-split shares gives mcap ~Rs2,950 cr and ~20x TTM P/E on ~Rs143 cr annualised Q1 PAT.",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs24 at 20x, i.e. ~2x PAT in two years without margin expansion",
+     "3x": "NO",
+     "5x": "5x/10x NOT reasonably underwritable",
+     "10x": "5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "PAT growth stays below half of revenue growth for two more quarters",
+     "CFO/PAT falls below 0.5",
+     "Steel marketplace volume turns negative YoY"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (Nov 2026)",
+     "Stock split effectiveness",
+     "Margin trend in non-steel marketplace"
+    ],
+    "biggest_risk": "Thin-margin steel distribution: price swings and working capital erase earnings",
+    "next_datapoint": "Q2 FY27 EBITDA margin and PAT growth vs revenue growth; CFO/PAT",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "CRISIL upgrade to A/Stable, A1; facilities Rs820 cr",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/BUILDPRO_15102026172219_Filing.pdf"
+     },
+     {
+      "claim": "Q1 FY27 revenue ~Rs1,890 cr +21%, PAT Rs35.8 cr, EBITDA margin 3.26%, 1:5 split",
+      "type": "ANALYST ESTIMATE",
+      "url": "https://www.multibagg.ai/market-pulse/articles/shankara-buildpro-q1fy27-results-cmso9w6jzf9op0zqepk91j2l4"
+     },
+     {
+      "claim": "Q1 PAT +10.5% standalone",
+      "type": "ANALYST ESTIMATE",
+      "url": "https://scanx.trade/stock-market-news/companies/shankara-buildpro-q1-results-net-profit-rises-10-yoy-to-35-43-crore/47552928"
+     },
+     {
+      "claim": "CFO/PAT 0.70, ND/EBITDA 0.15",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/BUILDPRO.md"
+     }
+    ]
+   }
+  }
+ ]
+}

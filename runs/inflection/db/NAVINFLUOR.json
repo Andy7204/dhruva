@@ -1,0 +1,169 @@
+{
+ "symbol": "NAVINFLUOR",
+ "discovered": "2026-10-15",
+ "discovery_price": 8247.5,
+ "reviews": [
+  {
+   "date": "2026-10-15",
+   "trigger": "first review",
+   "stage2_score": 106.8,
+   "price": 8247.5,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-16T02:45:00.691340+00:00",
+   "result": {
+    "symbol": "NAVINFLUOR",
+    "company": "Navin Fluorine International Limited",
+    "sector": "Specialty chemicals (fluorination, HPP, CDMO)",
+    "discovery_judgement": 55,
+    "score": {
+     "demand_shock": 7,
+     "supply_constraint": 4,
+     "pricing_power": 5,
+     "revenue_acceleration": 8,
+     "operating_leverage": 9,
+     "eps_acceleration": 9,
+     "capacity_catalyst": 6,
+     "cash_flow_quality": 8,
+     "valuation_asymmetry": 3,
+     "management_governance": 4,
+     "balance_sheet": 4,
+     "total": 67
+    },
+    "confirmation_score": 67,
+    "band": "WATCH",
+    "status": "GREEN",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT: 29 Sep 2026 filing: debottlenecking of the Dahej Multi Purpose Plant (Rs75 cr funding) commissioned, commercial production and dispatch started (capacity added not disclosed in the filing). Reported Q1 FY27 (press): revenue ~Rs1,045 cr +44%, EBITDA ~Rs357 cr (34.2% margin), PAT ~Rs243 cr (+108%).",
+    "new_evidence_type": "commissioning",
+    "reported_earnings_confirm": true,
+    "cfo_to_pat_value": 1.35,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.25,
+      "fy2_eps": 190,
+      "fy3_eps": 200,
+      "fy5_eps": 240,
+      "exit_pe": 28,
+      "price": 5320,
+      "multiple": 0.65,
+      "cagr_pct": -19.4,
+      "return_2y_pct": -35.5,
+      "assumptions": "Refrigerant/CDMO cycle normalises, margin back to ~27%; FY28 EPS ~Rs190; P/E de-rates to 28x"
+     },
+     "base": {
+      "probability": 0.45,
+      "fy2_eps": 250,
+      "fy3_eps": 305,
+      "fy5_eps": 420,
+      "exit_pe": 38,
+      "price": 9500,
+      "multiple": 1.15,
+      "cagr_pct": 7.2,
+      "return_2y_pct": 15.2,
+      "assumptions": "Margin 31-33% (guidance), CDMO ~US$100 mn, new capacities ramp; FY28 EPS ~Rs250 at 38x"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 290,
+      "fy3_eps": 370,
+      "fy5_eps": 520,
+      "exit_pe": 45,
+      "price": 13050,
+      "multiple": 1.58,
+      "cagr_pct": 25.7,
+      "return_2y_pct": 58.2,
+      "assumptions": "Margin ~34%, CDMO and HPP scale faster; FY28 EPS ~Rs290 at 45x"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 330,
+      "fy3_eps": 430,
+      "fy5_eps": 620,
+      "exit_pe": 50,
+      "price": 16500,
+      "multiple": 2.0,
+      "cagr_pct": 41.4,
+      "return_2y_pct": 100.1,
+      "assumptions": "Sustained 35%+ margin and premium multiple; EPS ~Rs330 at 50x"
+     }
+    },
+    "ev_2y_pct": 18.8,
+    "bear_downside_pct": -35.5,
+    "bull_value_per_share": 13050,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "LOW",
+     "cycle": "MEDIUM: margin 34% is at/above guided 30-33% range; fluorochemical pricing is cyclical",
+     "liquidity": "LOW",
+     "dilution": "LOW: 3.3%",
+     "order_firmness": "n/a"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Genuine reported inflection: Q1 FY27 revenue +44-49%, EBITDA ~+73-100%, PAT roughly doubled, CFO/PAT 1.35, with the Dahej MPP debottleneck just commissioned and a CDMO ramp (~US$100 mn FY27 target). But the stock is up 74% in 12 months at ~55x TTM P/E and ~41x forward; 34% margin is above the guided 30-33%, so multiple contraction and margin normalisation drive a thin ~+19% EV against -35% bear. A quality compounder already priced for it; not an early asymmetry.",
+    "chain_missing_links": [
+     "Valuation gap: price already reflects the inflection",
+     "Estimate revisions/consensus: unknown",
+     "Supply constraint evidence: unknown"
+    ],
+    "demand_signal": "CDMO +82%, HPP +33%, specialty +48% YoY in Q1 (press-reported)",
+    "supply_signal": "unknown; new MPP capacity commissioned",
+    "pricing_signal": "margin +5.7-8.7 pts YoY; one-off share of EBITDA 9.8% (dossier)",
+    "order_book": "CDMO contracts; total unknown",
+    "capacity_catalyst": "Dahej MPP debottlenecking commissioned 29 Sep 2026 (Rs75 cr); other capacities unknown",
+    "cfo_to_pat": "1.35 (FY, dossier); Q1 CFO ~Rs173 cr (press)",
+    "debt": "Dossier ND/EBITDA 1.06 (FY-end) vs press \"net debt-free\" after Q1; unresolved conflict",
+    "roce": "ROE 16.7%, EBITDA/invested capital 21.9% (dossier)",
+    "valuation": "TTM P/E 55.5, EV/EBITDA 38.1, mcap Rs42,267 cr (dossier). CALCULATION: TTM EPS ~Rs149; Q1 annualised EPS ~Rs190 gives ~43x. Dossier conflict: dossier YoY (rev +49%, EBITDA +100%, PAT +156%) differs from press (+44%, +73%, +108%).",
+    "management_credibility": "HIGH",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs380 at 43x, ~FY30 on 25% EPS CAGR",
+     "3x": "NO: needs EPS ~Rs550 at 45x",
+     "5x": "5x/10x NOT reasonably underwritable",
+     "10x": "5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "EBITDA margin below 28% for a quarter",
+     "CFO/PAT below 0.7",
+     "CDMO revenue growth below 30% YoY",
+     "Major dilution or leverage-funded acquisition"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results",
+     "Investor meet 12 Oct",
+     "CDMO contract wins",
+     "Further capacity commissioning"
+    ],
+    "biggest_risk": "Valuation de-rating if margins normalise toward 30% while P/E is ~55x TTM",
+    "next_datapoint": "Q2 FY27 EBITDA margin vs 32-33% guidance and CDMO revenue run-rate",
+    "confidence": "MEDIUM",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "Dahej MPP debottlenecking commissioned, Rs75 cr",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/NAVINFLUOR_29092026164657_Intimationreg30.pdf"
+     },
+     {
+      "claim": "Q1 FY27 revenue Rs1,045 cr +44%, EBITDA Rs357 cr, PAT Rs243 cr, guidance 30-33% margin",
+      "type": "ANALYST ESTIMATE",
+      "url": "https://www.kotakneo.com/news/stocks/navin-fluorine-q1-fy27-results/"
+     },
+     {
+      "claim": "Q1 summary and margin guidance",
+      "type": "ANALYST ESTIMATE",
+      "url": "https://quartr.com/events/navin-fluorine-international-limited-532504-q1-26-27_F4Y2cK36"
+     },
+     {
+      "claim": "P/E 55.5, CFO/PAT 1.35, ND/EBITDA 1.06",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/NAVINFLUOR.md"
+     }
+    ]
+   }
+  }
+ ]
+}

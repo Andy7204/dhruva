@@ -169,6 +169,168 @@
      }
     ]
    }
+  },
+  {
+   "date": "2026-10-15",
+   "trigger": "new filing: Outcome of Board Meeting",
+   "stage2_score": 135.8,
+   "price": 903.3,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-16T02:45:00.031904+00:00",
+   "result": {
+    "symbol": "VIVIANA",
+    "company": "Viviana Power Tech Limited",
+    "sector": "Power T&D EPC (state discom turnkey) / transformer manufacturing",
+    "discovery_judgement": 38,
+    "score": {
+     "demand_shock": 6,
+     "supply_constraint": 2,
+     "pricing_power": 1,
+     "revenue_acceleration": 5,
+     "operating_leverage": 3,
+     "eps_acceleration": 4,
+     "capacity_catalyst": 3,
+     "cash_flow_quality": 1,
+     "valuation_asymmetry": 5,
+     "management_governance": 2,
+     "balance_sheet": 2,
+     "total": 34
+    },
+    "confirmation_score": 34,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT: Rs466.74 cr MGVCL turnkey order (LOA 9 Oct 2026, 18/16 months); the filing states it was already disclosed at L1/investor-presentation stage, so not new since the 12 Oct review. Transformer plant inaugurated 21 Sep (up to 1,000 MVA/yr), commercial production not yet announced.",
+    "new_evidence_type": null,
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": -0.08,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.35,
+      "fy2_eps": 45,
+      "fy3_eps": 40,
+      "fy5_eps": 45,
+      "exit_pe": 10,
+      "price": 400,
+      "multiple": 0.44,
+      "cagr_pct": -33.7,
+      "return_2y_pct": -55.7,
+      "assumptions": "Discom receivables stay ~250+ days, negative CFO forces more equity/debt, margin ~6%, illiquidity derating to 10x"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 60,
+      "fy3_eps": 85,
+      "fy5_eps": 110,
+      "exit_pe": 12,
+      "price": 1020,
+      "multiple": 1.13,
+      "cagr_pct": 6.3,
+      "return_2y_pct": 12.9,
+      "assumptions": "FY27 revenue ~Rs750 cr (below Rs875-910 cr target; Q1 only Rs72 cr), ~8% PAT margin, ~5% dilution, 12x"
+     },
+     "bull": {
+      "probability": 0.2,
+      "fy2_eps": 70,
+      "fy3_eps": 110,
+      "fy5_eps": 150,
+      "exit_pe": 15,
+      "price": 1650,
+      "multiple": 1.83,
+      "cagr_pct": 35.3,
+      "return_2y_pct": 82.7,
+      "assumptions": "Order book converts on time, transformer plant adds margin, receivables normalise, 15x"
+     },
+     "extreme_bull": {
+      "probability": 0.05,
+      "fy2_eps": 80,
+      "fy3_eps": 140,
+      "fy5_eps": 200,
+      "exit_pe": 17,
+      "price": 2380,
+      "multiple": 2.63,
+      "cagr_pct": 62.2,
+      "return_2y_pct": 163.5,
+      "assumptions": "Everything converts and plant ramps fast; 17x"
+     }
+    },
+    "ev_2y_pct": 10.4,
+    "bear_downside_pct": -55.7,
+    "bull_value_per_share": 1650,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "MEDIUM",
+     "cycle": "MEDIUM",
+     "liquidity": "HIGH",
+     "dilution": "MEDIUM",
+     "order_firmness": "MEDIUM: firm LOAs but already disclosed at L1; state-discom collection risk"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Small Gujarat discom-EPC with a Rs467 cr MGVCL award and a new 1,000 MVA transformer plant. Price is up ~7% since the 12 Oct review with no new independent fact: the 15 Oct board-meeting outcome text could not be extracted. FY26 CFO/PAT is -0.08 with 267 receivable days (receivables +213% vs revenue +143%) and interest cover 3.0. Cash conversion, not orders, is the binding link; EV is thin against a -56% bear case.",
+    "chain_missing_links": [
+     "Cash conversion (CFO/PAT -0.08, 267 receivable days)",
+     "Transformer plant commercial production/ramp",
+     "Estimate revisions: unknown",
+     "Liquidity (~Rs6 cr/day)"
+    ],
+    "demand_signal": "State discom distribution capex (RDSS-type schemes); MANAGEMENT CLAIM / FACT via LOAs",
+    "supply_signal": "unknown; no evidence of shortage",
+    "pricing_signal": "unknown; EBITDA margin 15.7% (+1.8 pts, dossier)",
+    "order_book": "Rs466.74 cr MGVCL (FACT) + Rs128.35 cr PGVCL + Rs9.74 cr GETCO; total unknown (web sources Rs950-1,700 cr conflict)",
+    "capacity_catalyst": "Transformer plant inaugurated 21 Sep, up to 1,000 MVA/yr, 20 MVA 33/66 kV class; commercial production not announced",
+    "cfo_to_pat": "-0.08 (FY26, class C/D)",
+    "debt": "ND/EBITDA 1.27, interest cover 3.0 (dossier)",
+    "roce": "ROE 45.4%, EBITDA/invested capital 35.9% (dossier, inflated by thin equity base)",
+    "valuation": "Mcap Rs907 cr, EV/EBITDA 13.0 (dossier); P/E unknown. Dossier conflict: latest-quarter revenue -46.1% YoY / PAT -48.2% vs web-reported Q1 FY27 revenue Rs72.4 cr (+128%) and PAT Rs6.0 cr; unresolved, likely different comparison period.",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs ~Rs1,800 price, EPS ~Rs120 at 15x with flawless collections",
+     "3x": "NO: needs EPS ~Rs160+ at 17x",
+     "5x": "5x/10x NOT reasonably underwritable",
+     "10x": "5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "FY27 H1 CFO still negative or receivable days above 250",
+     "Further equity dilution above 5% or promoter pledge disclosed",
+     "H1 FY27 revenue below Rs350 cr",
+     "No commercial production at transformer plant by Q4 FY27"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (Nov 2026)",
+     "Transformer plant commercial-production filing",
+     "Discom payment/receivable reduction"
+    ],
+    "biggest_risk": "Receivables/working-capital strain forcing dilution or debt while revenue converts slowly",
+    "next_datapoint": "H1 FY27 (Q2) results: CFO, receivable days, revenue vs Rs350 cr H1 floor; text of 15 Oct board outcome",
+    "confidence": "LOW",
+    "material_change": "No new independent fact since 2026-10-12 review; price +6.5%; 15 Oct board outcome text not extracted.",
+    "sources": [
+     {
+      "claim": "Rs466.74 cr MGVCL order, 18/16 months, previously disclosed",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/VIVIANA_10102026133007_VIVIANA__Intimation_of_Receiving_Order_MGVCL_10102026.pdf"
+     },
+     {
+      "claim": "Transformer plant inaugurated, up to 1,000 MVA/yr",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/VIVIANA_21092026141448_Factory_Inaugration_21092026.pdf"
+     },
+     {
+      "claim": "Receivable days 267, CFO/PAT -0.08, ND/EBITDA 1.27",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/VIVIANA.md"
+     },
+     {
+      "claim": "15 Oct board outcome: text not extracted; web search found nothing",
+      "type": "ASSUMPTION",
+      "url": "https://nsearchives.nseindia.com/corporate/VIVIANA_15102026182005_VIVIANA__OUTCOME_OF_BM_15102026.pdf"
+     }
+    ]
+   }
   }
  ]
 }

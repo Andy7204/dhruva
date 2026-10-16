@@ -12,7 +12,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| VIVIANA | RESEARCH | RESEARCH | ₹0 | 903.3 | fast-lane event or discovery >= 60 |
+| BUILDPRO | DISCOVER | RESEARCH | ₹0 | 242.0 | fast-lane event or discovery >= 60 |
+| NAVINFLUOR | DISCOVER | DISCOVER | ₹0 | 8247.5 | below research threshold |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -25,14 +27,16 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | MAXHEALTH | RESEARCH | 2026-10-12 | ₹0 | 19.8 | 42 | 5.0 | fast-lane event or discovery >= 60 |
 | HBLENGINE | RESEARCH | 2026-10-12 | ₹0 | 24.3 | 40 | 2.8 | fast-lane event or discovery >= 60 |
 | ARVIND | RESEARCH | 2026-10-12 | ₹0 | 13.0 | 35 | -1.5 | fast-lane event or discovery >= 60 |
-| VIVIANA | RESEARCH | 2026-10-12 | ₹0 | 33.2 | 34 | 17.6 | fast-lane event or discovery >= 60 |
+| VIVIANA | RESEARCH | 2026-10-12 | ₹0 | 33.2 | 34 | 10.4 | fast-lane event or discovery >= 60 |
 | KPIL | RESEARCH | 2026-10-14 | ₹0 | 42.8 | 49 | 25.9 | fast-lane event or discovery >= 60 |
 | PICCADIL | RESEARCH | 2026-10-14 | ₹0 | 25.0 | 43 | 8.3 | fast-lane event or discovery >= 60 |
+| BUILDPRO | RESEARCH | 2026-10-15 | ₹0 | 13.0 | 37 | 12.5 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
 |---|---:|---:|---:|---:|---|---|---|
 | STLTECH | 70 | — | 54.4 | -1.8 | YELLOW | RESEARCH | 2026-10-06 |
+| NAVINFLUOR | 67 | — | 26.0 | 18.8 | GREEN | DISCOVER | 2026-10-15 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
 | KPIL | 49 | — | 42.8 | 25.9 | YELLOW | RESEARCH | 2026-10-14 |
 | MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
@@ -41,9 +45,10 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | HBLENGINE | 40 | — | 24.3 | 2.8 | YELLOW | RESEARCH | 2026-10-12 |
 | TARIL | 39 | — | 37.2 | 17.6 | YELLOW | RESEARCH | 2026-10-06 |
 | LT | 38 | 37 | 34.2 | 19.9 | YELLOW | RESEARCH | 2026-10-12 |
+| BUILDPRO | 37 | — | 13.0 | 12.5 | YELLOW | RESEARCH | 2026-10-15 |
 | ARVIND | 35 | — | 13.0 | -1.5 | YELLOW | RESEARCH | 2026-10-12 |
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
-| VIVIANA | 34 | — | 33.2 | 17.6 | YELLOW | RESEARCH | 2026-10-12 |
+| VIVIANA | 34 | 34 | 33.2 | 10.4 | YELLOW | RESEARCH | 2026-10-15 |
 | KEC | 21 | — | 33.0 | -7.2 | RED | DISCOVER | 2026-10-14 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
