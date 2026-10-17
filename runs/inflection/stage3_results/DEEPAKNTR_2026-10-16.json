@@ -1,0 +1,159 @@
+{
+ "symbol": "DEEPAKNTR",
+ "company": "Deepak Nitrite Limited",
+ "sector": "Chemicals (phenolics, advanced intermediates)",
+ "discovery_judgement": 45,
+ "score": {
+  "demand_shock": 6,
+  "supply_constraint": 4,
+  "pricing_power": 6,
+  "revenue_acceleration": 6,
+  "operating_leverage": 10,
+  "eps_acceleration": 10,
+  "capacity_catalyst": 6,
+  "cash_flow_quality": 6,
+  "valuation_asymmetry": 6,
+  "management_governance": 3,
+  "balance_sheet": 4,
+  "total": 67
+ },
+ "band": "WATCH",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "FACT: Q1 FY27 consolidated revenue Rs2,592 cr (+35% YoY, +22% QoQ), EBITDA Rs554 cr (+159% YoY, margin 21% vs 11%), PAT Rs345 cr (+207% YoY); Phenolics EBIT Rs418 cr vs Rs118 cr a year ago (NSE 4 Aug and 11 Aug 2026 filings).",
+ "new_evidence_type": "margin",
+ "reported_earnings_confirm": true,
+ "cfo_to_pat_value": 0.98,
+ "confirmation_falling": false,
+ "risk": {
+  "governance": "LOW",
+  "balance_sheet": "LOW: net debt/EBITDA 1.25, interest cover 23.6",
+  "cycle": "HIGH: 75% of segment EBIT is phenolics; Q1 margin 21% vs 11% a year earlier is a spread spike tied to Middle East/Hormuz feedstock disruption",
+  "liquidity": "LOW: Rs31 cr/day turnover",
+  "dilution": "LOW: 0%",
+  "order_firmness": "n/a (commodity/intermediate sales)"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Reported inflection is real (Q1 FY27 EBITDA +159%, PAT +207%, record) but it is concentrated in Phenolics, whose EBIT rose from Rs118 cr to Rs418 cr YoY on spreads that management itself ties to feedstock/geopolitical disruption. FY26 revenue fell 4% and PAT was Rs551 cr, so only one quarter shows the new run-rate. At 27.8x TTM P/E the stock prices roughly half of the Q1 annualised earnings as sustainable; normalisation of phenol/acetone spreads is the key risk. New capacity (MIBK/MIBC, agro intermediates, polycarbonate) is a real but later catalyst. Not an early asymmetry.",
+ "chain_missing_links": [
+  "Supply constraint is geopolitical/temporary, not structural",
+  "Persistence of Phenolics spreads beyond one quarter: unknown",
+  "Consensus estimates and revisions: unknown",
+  "Q1 FY27 CFO not in filings text; FY26 CFO/PAT 0.98"
+ ],
+ "demand_signal": "MANAGEMENT CLAIM: domestic demand stable across auto, infra, pharma, electronics; AI export demand strengthening in select markets; 86:14 domestic:export (FY26 Q4).",
+ "supply_signal": "MANAGEMENT CLAIM: war in Middle East and Hormuz blockade disrupted feedstock/logistics; integrated domestic producers benefit. Temporary, not structural.",
+ "pricing_signal": "FACT: EBITDA margin 21% vs 11% YoY and 18% QoQ; Phenolics EBIT margin ~24% of revenue vs 9% a year earlier (CALCULATION).",
+ "order_book": "Not applicable / unknown",
+ "capacity_catalyst": "MANAGEMENT CLAIM: multipurpose agro intermediates and MIBK/MIBC projects scheduled for commissioning in Q2 FY27 (Jul-Sep 2026); integrated polycarbonate project on track (Praxair HyCO on-site plant, BOO); Dahej nitration/hydrogenation ramped in FY26. Commissioning confirmation not yet seen in filings.",
+ "cfo_to_pat": "0.98 (FY26, dossier CALCULATION); receivables +18.2% vs revenue -4.1% in FY26, a mild flag; Q1 FY27 unknown",
+ "debt": "Net debt/EBITDA 1.25, interest cover 23.6 (dossier)",
+ "roce": "EBITDA/invested capital 14.0%, ROE 9.4% on FY26 (dossier); Q1 annualised much higher",
+ "valuation": "Mkt cap Rs21,802 cr, TTM P/E 27.8, EV/EBITDA 22.5. CALCULATION: Q1 annualised EPS ~Rs101 (25.3 x 4) gives ~16x at the peak quarter; FY26 EPS Rs40 gives ~40x. Price implies mid-cycle spreads roughly half-way between.",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs FY28 EPS ~Rs120+ at 27x, i.e. Q1 peak spreads held for two years plus new capacity.",
+  "3x": "NO: not underwritable.",
+  "5x": "NO: 5x/10x NOT reasonably underwritable.",
+  "10x": "NO: 5x/10x NOT reasonably underwritable."
+ },
+ "kill_conditions": [
+  "Phenolics EBIT falls below Rs250 cr/quarter for two quarters",
+  "EBITDA margin back below 15% in Q2 or Q3 FY27",
+  "MIBK/MIBC or agro intermediates commissioning slips beyond Q4 FY27",
+  "CFO/PAT below 0.7 in FY27"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results (Nov 2026)",
+  "Commissioning of MIBK/MIBC and agro intermediates",
+  "Polycarbonate project progress"
+ ],
+ "biggest_risk": "Phenol/acetone spread normalisation after the geopolitical spike, collapsing the Phenolics profit pool.",
+ "next_datapoint": "Q2 FY27 results: Phenolics EBIT and EBITDA margin vs Q1 21%, and commissioning of MIBK/MIBC.",
+ "confidence": "MEDIUM",
+ "material_change": "first review",
+ "sources": [
+  {
+   "claim": "Q1 FY27 consolidated revenue Rs2,592 cr, EBITDA Rs554 cr, PAT Rs345 cr; segment EBIT; capacity commissioning Q2 FY27",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/DEEPAKNTR_11082026154707_NSETranscript.pdf"
+  },
+  {
+   "claim": "Segment revenue/EBIT (Phenolics EBIT 417.76 vs 117.90 cr), consolidated results Q1 FY27",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/DEEPAKNTR_04082026180429_NSERESULTS04082026.pdf"
+  },
+  {
+   "claim": "FY26 revenue Rs7,947 cr, EBITDA Rs1,041 cr, PAT Rs551 cr; Middle East war disruption; project timelines",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/DEEPAKNTR_22052026102706_NSE-CONCALL-Transcript_letter-2026.pdf"
+  },
+  {
+   "claim": "Conflict: dossier EBITDA YoY +185% vs management-reported +159% (different EBITDA definition, likely excludes other income); dossier revenue +36.4% vs call +35%",
+   "type": "CALCULATION",
+   "url": "runs/inflection/dossiers/DEEPAKNTR.md"
+  },
+  {
+   "claim": "Scenario EPS and exit multiples",
+   "type": "ASSUMPTION",
+   "url": ""
+  }
+ ],
+ "scenarios": {
+  "bear": {
+   "probability": 0.25,
+   "fy2_eps": 38,
+   "fy3_eps": 42,
+   "fy5_eps": 48,
+   "exit_pe": 28,
+   "price": 1064,
+   "multiple": 0.67,
+   "cagr_pct": -18.4,
+   "return_2y_pct": -33.4,
+   "assumptions": "Phenol spreads normalise to FY26 level (EPS ~Rs40); FY28 EPS 38; P/E 28x"
+  },
+  "base": {
+   "probability": 0.45,
+   "fy2_eps": 72,
+   "fy3_eps": 85,
+   "fy5_eps": 115,
+   "exit_pe": 26,
+   "price": 1872,
+   "multiple": 1.17,
+   "cagr_pct": 8.2,
+   "return_2y_pct": 17.1,
+   "assumptions": "Spreads settle between FY26 and Q1 peak; new capacity adds; FY28 EPS ~Rs72 at 26x"
+  },
+  "bull": {
+   "probability": 0.22,
+   "fy2_eps": 90,
+   "fy3_eps": 105,
+   "fy5_eps": 140,
+   "exit_pe": 28,
+   "price": 2520,
+   "multiple": 1.58,
+   "cagr_pct": 25.6,
+   "return_2y_pct": 57.6,
+   "assumptions": "Strong spreads persist plus MIBK/agro/polycarbonate ramp; EPS ~Rs90 at 28x"
+  },
+  "extreme_bull": {
+   "probability": 0.08,
+   "fy2_eps": 110,
+   "fy3_eps": 130,
+   "fy5_eps": 170,
+   "exit_pe": 30,
+   "price": 3300,
+   "multiple": 2.06,
+   "cagr_pct": 43.7,
+   "return_2y_pct": 106.4,
+   "assumptions": "Q1 run-rate (EPS ~Rs100) sustained and grows; EPS 110 at 30x"
+  }
+ },
+ "ev_2y_pct": 20.5,
+ "bear_downside_pct": -33.4,
+ "bull_value_per_share": 2520,
+ "confirmation_score": 67
+}

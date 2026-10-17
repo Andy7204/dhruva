@@ -14,3 +14,6 @@
 {"date": "2026-10-15", "from": "RESEARCH", "inr": 0, "price": 903.3, "reason": "fast-lane event or discovery >= 60", "symbol": "VIVIANA", "to": "RESEARCH"}
 {"date": "2026-10-15", "from": "DISCOVER", "inr": 0, "price": 242.0, "reason": "fast-lane event or discovery >= 60", "symbol": "BUILDPRO", "to": "RESEARCH"}
 {"date": "2026-10-15", "from": "DISCOVER", "inr": 0, "price": 8247.5, "reason": "below research threshold", "symbol": "NAVINFLUOR", "to": "DISCOVER"}
+{"date": "2026-10-16", "from": "DISCOVER", "inr": 0, "price": 1598.5, "reason": "below research threshold", "symbol": "DEEPAKNTR", "to": "DISCOVER"}
+{"date": "2026-10-16", "from": "DISCOVER", "inr": 0, "price": 1844.7, "reason": "below research threshold", "symbol": "ALKYLAMINE", "to": "DISCOVER"}
+{"date": "2026-10-16", "from": "DISCOVER", "inr": 0, "price": 296.65, "reason": "below research threshold", "symbol": "GANDHAR", "to": "DISCOVER"}

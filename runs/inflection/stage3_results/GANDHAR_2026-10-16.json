@@ -1,0 +1,155 @@
+{
+ "symbol": "GANDHAR",
+ "company": "Gandhar Oil Refinery (India) Limited",
+ "sector": "Specialty oils (white oils, transformer oils, lubricants)",
+ "discovery_judgement": 30,
+ "score": {
+  "demand_shock": 4,
+  "supply_constraint": 3,
+  "pricing_power": 3,
+  "revenue_acceleration": 7,
+  "operating_leverage": 8,
+  "eps_acceleration": 8,
+  "capacity_catalyst": 2,
+  "cash_flow_quality": 4,
+  "valuation_asymmetry": 6,
+  "management_governance": 3,
+  "balance_sheet": 4,
+  "total": 52
+ },
+ "band": "REJECT",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "FACT/MANAGEMENT CLAIM (22-23 Jul 2026 call): Q1 FY27 consolidated revenue Rs1,731.9 cr (+92% YoY), gross spread 3.4x to Rs28,145/kl, record profit; CRISIL A+/Stable reaffirmed on 29 Sep 2026 with rated facilities enhanced to Rs1,014 cr from Rs300 cr. Web (secondary): PAT ~Rs205.9 cr (+689%), EBITDA ~Rs281 cr, manufacturing volume +8%.",
+ "new_evidence_type": "margin",
+ "reported_earnings_confirm": true,
+ "cfo_to_pat_value": 0.94,
+ "confirmation_falling": false,
+ "risk": {
+  "governance": "MEDIUM: Texol (Sharjah) subsidiary exposure to Gulf conflict; nothing adverse found",
+  "balance_sheet": "LOW-MEDIUM: net debt/EBITDA 0.58 (dossier) vs 'debt-free' (mgmt); bank limits tripled to Rs1,014 cr signalling working-capital build",
+  "cycle": "HIGH: gross spread 3.4x in one quarter on base-oil/crude volatility looks like an inventory and spread windfall",
+  "liquidity": "MEDIUM: Rs22 cr/day, small cap Rs2,904 cr",
+  "dilution": "LOW: 0%",
+  "order_firmness": "n/a"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Profit exploded in Q1 FY27 (revenue +92%, spread 3.4x, record profit) on a Hormuz/crude shock that management says it navigated via 'agile sourcing and inventory management'. Volume grew only ~8%, so the profit leap is spread, not demand. Inventory is up 39% against FY revenue +8.7%, and credit lines were tripled, consistent with inventory-gain-driven earnings. At 9.6x TTM P/E the stock looks cheap only if Q1 spreads recur; they are classic cyclical-peak earnings. No capacity or structural supply catalyst. Reject as an early inflection.",
+ "chain_missing_links": [
+  "Structural demand shock: volume +8% only",
+  "Supply constraint: none; the spike is a price/inventory effect",
+  "Capacity catalyst: none in filings",
+  "Inventory gain vs recurring spread split: unknown (not quantified)",
+  "Q1 CFO: unknown"
+ ],
+ "demand_signal": "MANAGEMENT CLAIM: PHPO +18%, PIO +28%, exports +54% YoY; lubricants flat; volume +8% (web).",
+ "supply_signal": "MANAGEMENT CLAIM: Middle East tension and Hormuz concerns disrupted raw material availability; Texol operations temporarily hit.",
+ "pricing_signal": "FACT: gross spread Rs28,145/kl, 3.4x YoY, driven by base-oil price volatility; likely inventory gains (ASSUMPTION, unquantified).",
+ "order_book": "Not applicable / unknown",
+ "capacity_catalyst": "Unknown: none in the filings supplied.",
+ "cfo_to_pat": "0.94 (FY26 dossier); inventory +39.2% vs revenue +8.7% flagged",
+ "debt": "Dossier net debt/EBITDA 0.58, interest cover 22.1; mgmt says debt-free; CRISIL A+/Stable, facilities Rs1,014 cr",
+ "roce": "EBITDA/invested capital 15.9%, ROE 10.0% (FY26)",
+ "valuation": "Mkt cap Rs2,904 cr; TTM P/E 9.6; EV/EBITDA 12.6. CALCULATION: Q1 PAT ~Rs192-206 cr is ~65% of TTM PAT (~Rs302 cr), so TTM P/E is flattered by one windfall quarter.",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs FY28 EPS ~Rs50 at 12x, i.e. peak spreads held two years.",
+  "3x": "NO",
+  "5x": "NO: 5x/10x NOT reasonably underwritable.",
+  "10x": "NO: 5x/10x NOT reasonably underwritable."
+ },
+ "kill_conditions": [
+  "Gross spread below Rs12,000/kl in Q2 FY27",
+  "Inventory write-down or negative CFO",
+  "Texol operations disrupted for another quarter",
+  "Base-oil prices fall sharply"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results (Oct-Nov 2026)",
+  "Base-oil price trend",
+  "Texol throughput normalisation"
+ ],
+ "biggest_risk": "Spread and inventory-gain reversal when crude/base oil falls, collapsing earnings from the Q1 peak.",
+ "next_datapoint": "Q2 FY27: gross spread per kl and inventory days vs Q1 (Rs28,145/kl).",
+ "confidence": "LOW",
+ "material_change": "first review",
+ "sources": [
+  {
+   "claim": "Q1 FY27 revenue Rs1,731.9 cr +92%, spread Rs28,145/kl 3.4x, segment growth, geopolitical commentary",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/GANDHAROIL_28072026171838_Intimation_for_Transcript_of_earnings_call.pdf"
+  },
+  {
+   "claim": "CRISIL A+/Stable reaffirmed, bank facilities enhanced Rs300 cr to Rs1,014 cr",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/GANDHAROIL_30092026174215_Gandhar_Oil_-_Reaffirmed_Credit_Rating.pdf"
+  },
+  {
+   "claim": "WEB (secondary): Q1 PAT ~Rs205.9 cr, EBITDA ~Rs281 cr, volume +8%, no inventory gain quantified; dossier PAT margin 11.1% implies ~Rs192 cr (conflict between dossier and web on PAT)",
+   "type": "ANALYST ESTIMATE",
+   "url": "https://www.indianpharmapost.com/news/gandhar-oil-refinery-posts-record-q1-fy27-as-pat-surges-689-21040"
+  },
+  {
+   "claim": "Scenario EPS and exit multiples",
+   "type": "ASSUMPTION",
+   "url": ""
+  }
+ ],
+ "scenarios": {
+  "bear": {
+   "probability": 0.3,
+   "fy2_eps": 15,
+   "fy3_eps": 16,
+   "fy5_eps": 20,
+   "exit_pe": 8,
+   "price": 120,
+   "multiple": 0.4,
+   "cagr_pct": -36.4,
+   "return_2y_pct": -59.5,
+   "assumptions": "Spreads revert to FY26 level and inventory gains reverse; FY28 EPS Rs15 at 8x"
+  },
+  "base": {
+   "probability": 0.4,
+   "fy2_eps": 28,
+   "fy3_eps": 32,
+   "fy5_eps": 42,
+   "exit_pe": 10,
+   "price": 280,
+   "multiple": 0.94,
+   "cagr_pct": -2.8,
+   "return_2y_pct": -5.6,
+   "assumptions": "Spread settles about half-way between FY26 and Q1; EPS Rs28 at 10x"
+  },
+  "bull": {
+   "probability": 0.22,
+   "fy2_eps": 40,
+   "fy3_eps": 46,
+   "fy5_eps": 60,
+   "exit_pe": 11,
+   "price": 440,
+   "multiple": 1.48,
+   "cagr_pct": 21.8,
+   "return_2y_pct": 48.3,
+   "assumptions": "Elevated spreads persist; EPS Rs40 at 11x"
+  },
+  "extreme_bull": {
+   "probability": 0.08,
+   "fy2_eps": 55,
+   "fy3_eps": 62,
+   "fy5_eps": 80,
+   "exit_pe": 12,
+   "price": 660,
+   "multiple": 2.22,
+   "cagr_pct": 49.2,
+   "return_2y_pct": 122.5,
+   "assumptions": "Q1 earnings largely sustained; EPS Rs55 at 12x"
+  }
+ },
+ "ev_2y_pct": 0.3,
+ "bear_downside_pct": -59.5,
+ "bull_value_per_share": 440,
+ "confirmation_score": 52
+}

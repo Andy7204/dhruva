@@ -1,0 +1,159 @@
+{
+ "symbol": "ALKYLAMINE",
+ "company": "Alkyl Amines Chemicals Limited",
+ "sector": "Chemicals (aliphatic amines)",
+ "discovery_judgement": 40,
+ "score": {
+  "demand_shock": 4,
+  "supply_constraint": 5,
+  "pricing_power": 6,
+  "revenue_acceleration": 6,
+  "operating_leverage": 9,
+  "eps_acceleration": 9,
+  "capacity_catalyst": 3,
+  "cash_flow_quality": 8,
+  "valuation_asymmetry": 3,
+  "management_governance": 4,
+  "balance_sheet": 5,
+  "total": 62
+ },
+ "band": "WATCH",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "CALCULATION (dossier from reported results): Q1 FY27 revenue +36.8% YoY, EBITDA +97%, margin 25.3% (+7.7 pts), PAT +105.6%. FACT: FY26 revenue Rs1,535.85 cr vs Rs1,571.82 cr (-2%); Q4 FY26 revenue Rs386.91 cr (NSE 5 May 2026). Q1 FY27 statement text is truncated in the filings file.",
+ "new_evidence_type": "margin",
+ "reported_earnings_confirm": true,
+ "cfo_to_pat_value": 1.33,
+ "confirmation_falling": false,
+ "risk": {
+  "governance": "LOW",
+  "balance_sheet": "LOW: net debt/EBITDA 0.22, interest cover 343",
+  "cycle": "MEDIUM-HIGH: margin jump is driven by pass-through of war-driven ammonia price rise (Rs50 to >Rs100/kg) and tight competitor supply; FY26 volume was flat",
+  "liquidity": "LOW: Rs39 cr/day",
+  "dilution": "LOW: 0%",
+  "order_firmness": "n/a"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Margins and profit rebounded sharply in Q1 FY27 (EBITDA margin 25.3%, PAT roughly doubled) after a flat FY26 with volume down ~1%. Management says the gain is price-led: raw-material (ammonia) costs doubled and were passed on, and it expects prices not to revert quickly. That is a cost-push spread, not demonstrated volume or capacity growth. Balance sheet and cash conversion are excellent (CFO/PAT 1.33), but at 40.8x TTM P/E the stock already capitalises a normalised, higher earnings base. No capacity catalyst in the filings. Positive but not asymmetric.",
+ "chain_missing_links": [
+  "Volume growth: FY26 flat; Q1 volume unknown",
+  "Capacity/new product catalyst: none in filings",
+  "Sustainability of spreads once ammonia normalises",
+  "Consensus revisions: unknown (a Motilal Oswal FY27E EBITDA margin of ~20.8% predates the Q1 print; ANALYST ESTIMATE, secondary)"
+ ],
+ "demand_signal": "MANAGEMENT CLAIM: market not growing as fast as hoped; share retained/slightly up; FY26 volume ~-1%. Mgmt expects 5-10% volume growth (secondary source).",
+ "supply_signal": "MANAGEMENT CLAIM: ammonia sourcing disrupted for 1-2 weeks in March; competitors face the same constraints, so price hikes hold for a while.",
+ "pricing_signal": "FACT (via dossier): EBITDA margin 25.3% vs 17.6% a year ago; mgmt raised finished-goods prices to protect margins; amines are a minor 'C item' cost for customers.",
+ "order_book": "Not applicable / unknown",
+ "capacity_catalyst": "Unknown: no commissioning in the filings supplied.",
+ "cfo_to_pat": "1.33 (FY26, dossier); receivable days 55, inventory -25.9%",
+ "debt": "Net debt/EBITDA 0.22; interest cover 342.6",
+ "roce": "EBITDA/invested capital 20.6%; ROE 11.7% (FY26)",
+ "valuation": "Mkt cap Rs9,435 cr; TTM P/E 40.8; EV/EBITDA 30.1. CALCULATION: Q1 PAT ~Rs94.5 cr gives annualised EPS ~Rs74 (~25x) at the peak margin; TTM EPS ~Rs45.",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs FY28 EPS ~Rs90 at 42x, i.e. margins above 25% plus 15% volume growth.",
+  "3x": "NO",
+  "5x": "NO: 5x/10x NOT reasonably underwritable.",
+  "10x": "NO: 5x/10x NOT reasonably underwritable."
+ },
+ "kill_conditions": [
+  "EBITDA margin back below 18% for two quarters",
+  "Volume growth negative YoY for two quarters",
+  "Ammonia price normalises and finished-goods prices are cut",
+  "Related-party or governance issue"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results (Nov 2026)",
+  "Volume recovery in pharma/agro",
+  "Any new capacity announcement"
+ ],
+ "biggest_risk": "Price-led margin gain reverses when ammonia and competitor supply normalise, leaving a 40x multiple on lower earnings.",
+ "next_datapoint": "Q2 FY27: volume growth and EBITDA margin vs 25.3%; ammonia price trend.",
+ "confidence": "MEDIUM",
+ "material_change": "first review",
+ "sources": [
+  {
+   "claim": "FY26 revenue Rs1,535.85 cr vs Rs1,571.82 cr; Q4 FY26 revenue Rs386.91 cr",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/ALKYLAMINE_05052026135900_Outcomesd.pdf"
+  },
+  {
+   "claim": "Flat FY26 volume, ammonia Rs50 to >Rs100/kg, price pass-through, March sourcing disruption",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/ALKYLAMINE_13052026131401_SETranscript.pdf"
+  },
+  {
+   "claim": "Q1 FY27 results approved 4 Aug 2026; director re-designations (no governance concern)",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/ALKYLAMINE_04082026142839_finalfile.pdf"
+  },
+  {
+   "claim": "WEB (secondary, supplement): Q1 FY27 revenue ~Rs528 cr (+~30%), EBITDA ~Rs133 cr, PAT ~Rs94-95 cr, margin 25.3%. Conflict: dossier revenue +36.8% vs web ~+30% (prior-year base differs); using dossier for scores",
+   "type": "ANALYST ESTIMATE",
+   "url": "https://www.sahi.com/news/alkyl-amines-reports-q1-standalone-net-profit-of-95-crore-ebitda-margin-reaches-25-3-324-PE1_CORP"
+  },
+  {
+   "claim": "Scenario EPS and exit multiples",
+   "type": "ASSUMPTION",
+   "url": ""
+  }
+ ],
+ "scenarios": {
+  "bear": {
+   "probability": 0.25,
+   "fy2_eps": 38,
+   "fy3_eps": 42,
+   "fy5_eps": 50,
+   "exit_pe": 32,
+   "price": 1216,
+   "multiple": 0.66,
+   "cagr_pct": -18.8,
+   "return_2y_pct": -34.1,
+   "assumptions": "Spreads normalise toward FY26 (EPS ~Rs38); P/E de-rates to 32x"
+  },
+  "base": {
+   "probability": 0.45,
+   "fy2_eps": 58,
+   "fy3_eps": 68,
+   "fy5_eps": 90,
+   "exit_pe": 38,
+   "price": 2204,
+   "multiple": 1.19,
+   "cagr_pct": 9.3,
+   "return_2y_pct": 19.5,
+   "assumptions": "Partial hold of margin ~21-22% and 7% volume growth; FY28 EPS Rs58 at 38x"
+  },
+  "bull": {
+   "probability": 0.22,
+   "fy2_eps": 72,
+   "fy3_eps": 86,
+   "fy5_eps": 115,
+   "exit_pe": 42,
+   "price": 3024,
+   "multiple": 1.64,
+   "cagr_pct": 28.0,
+   "return_2y_pct": 63.9,
+   "assumptions": "Margins ~24% plus new volumes; EPS Rs72 at 42x"
+  },
+  "extreme_bull": {
+   "probability": 0.08,
+   "fy2_eps": 90,
+   "fy3_eps": 110,
+   "fy5_eps": 150,
+   "exit_pe": 45,
+   "price": 4050,
+   "multiple": 2.2,
+   "cagr_pct": 48.2,
+   "return_2y_pct": 119.5,
+   "assumptions": "Q1 annualised EPS (~Rs74) sustained with growth; EPS 90 at 45x"
+  }
+ },
+ "ev_2y_pct": 23.9,
+ "bear_downside_pct": -34.1,
+ "bull_value_per_share": 3024,
+ "confirmation_score": 62
+}

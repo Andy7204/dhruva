@@ -12,7 +12,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| DEEPAKNTR | DISCOVER | DISCOVER | ₹0 | 1598.5 | below research threshold |
+| ALKYLAMINE | DISCOVER | DISCOVER | ₹0 | 1844.7 | below research threshold |
+| GANDHAR | DISCOVER | DISCOVER | ₹0 | 296.65 | below research threshold |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -34,8 +36,11 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
 |---|---:|---:|---:|---:|---|---|---|
 | STLTECH | 70 | — | 54.4 | -1.8 | YELLOW | RESEARCH | 2026-10-06 |
+| DEEPAKNTR | 67 | — | 23.2 | 20.5 | YELLOW | DISCOVER | 2026-10-16 |
 | NAVINFLUOR | 67 | — | 26.0 | 18.8 | GREEN | DISCOVER | 2026-10-15 |
+| ALKYLAMINE | 62 | — | 25.0 | 23.9 | YELLOW | DISCOVER | 2026-10-16 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
+| GANDHAR | 52 | — | 21.0 | 0.3 | YELLOW | DISCOVER | 2026-10-16 |
 | KPIL | 49 | — | 42.8 | 25.9 | YELLOW | RESEARCH | 2026-10-14 |
 | MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
 | PICCADIL | 43 | — | 25.0 | 8.3 | YELLOW | RESEARCH | 2026-10-14 |
