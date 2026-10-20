@@ -287,5 +287,21 @@
   "discovery": 21.0,
   "confirmation": 52,
   "ev_2y_pct": 0.3
+ },
+ "LUPIN": {
+  "state": "DISCOVER",
+  "evidence": [
+   {
+    "date": "2026-10-16",
+    "type": "margin",
+    "text": "FACT (Lupin Q1 FY27 press release, 6 Aug 2026, secondary web summary; NSE PDF text not in dossier): revenue ~Rs8,217-8,277 cr (+32-33% YoY), EBITDA ~Rs2,463 cr (~30%), US ~USD 363-366m. MANAGEMENT CLAIM: FY27 US revenue USD 1.1-1.2bn, normalised US run-rate USD 250-280m/qtr, EBITDA margin guide ~24-25%."
+   }
+  ],
+  "entries": [],
+  "last_reason": "below research threshold",
+  "last_review": "2026-10-16",
+  "discovery": 10.9,
+  "confirmation": 52,
+  "ev_2y_pct": 7.8
  }
 }

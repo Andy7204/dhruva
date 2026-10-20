@@ -15,6 +15,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | DEEPAKNTR | DISCOVER | DISCOVER | ₹0 | 1598.5 | below research threshold |
 | ALKYLAMINE | DISCOVER | DISCOVER | ₹0 | 1844.7 | below research threshold |
 | GANDHAR | DISCOVER | DISCOVER | ₹0 | 296.65 | below research threshold |
+| LUPIN | DISCOVER | DISCOVER | ₹0 | 1961.6 | below research threshold |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -41,6 +42,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | ALKYLAMINE | 62 | — | 25.0 | 23.9 | YELLOW | DISCOVER | 2026-10-16 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
 | GANDHAR | 52 | — | 21.0 | 0.3 | YELLOW | DISCOVER | 2026-10-16 |
+| LUPIN | 52 | — | 10.9 | 7.8 | YELLOW | DISCOVER | 2026-10-16 |
 | KPIL | 49 | — | 42.8 | 25.9 | YELLOW | RESEARCH | 2026-10-14 |
 | MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
 | PICCADIL | 43 | — | 25.0 | 8.3 | YELLOW | RESEARCH | 2026-10-14 |

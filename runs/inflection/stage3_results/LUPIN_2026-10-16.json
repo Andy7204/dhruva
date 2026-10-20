@@ -1,0 +1,165 @@
+{
+ "symbol": "LUPIN",
+ "company": "Lupin Limited",
+ "sector": "Pharmaceuticals (generics, complex generics, India branded)",
+ "discovery_judgement": 25,
+ "score": {
+  "demand_shock": 4,
+  "supply_constraint": 3,
+  "pricing_power": 2,
+  "revenue_acceleration": 7,
+  "operating_leverage": 6,
+  "eps_acceleration": 5,
+  "capacity_catalyst": 4,
+  "cash_flow_quality": 8,
+  "valuation_asymmetry": 5,
+  "management_governance": 3,
+  "balance_sheet": 5,
+  "total": 52
+ },
+ "confirmation_score": 52,
+ "band": "REJECT",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "FACT (Lupin Q1 FY27 press release, 6 Aug 2026, secondary web summary; NSE PDF text not in dossier): revenue ~Rs8,217-8,277 cr (+32-33% YoY), EBITDA ~Rs2,463 cr (~30%), US ~USD 363-366m. MANAGEMENT CLAIM: FY27 US revenue USD 1.1-1.2bn, normalised US run-rate USD 250-280m/qtr, EBITDA margin guide ~24-25%.",
+ "new_evidence_type": "margin",
+ "reported_earnings_confirm": true,
+ "cfo_to_pat_value": 1.38,
+ "confirmation_falling": false,
+ "scenarios": {
+  "bear": {
+   "probability": 0.25,
+   "fy2_eps": 90,
+   "fy3_eps": 95,
+   "fy5_eps": 115,
+   "exit_pe": 15,
+   "price": 1350,
+   "multiple": 0.69,
+   "cagr_pct": -17.0,
+   "return_2y_pct": -31.2,
+   "assumptions": "ASSUMPTION: gTolvaptan/other gRevlimid-type exclusivities fade faster, US run-rate at low end of mgmt $250-280m/qtr, EBITDA margin ~21%, multiple compresses to 15x."
+  },
+  "base": {
+   "probability": 0.45,
+   "fy2_eps": 115,
+   "fy3_eps": 130,
+   "fy5_eps": 175,
+   "exit_pe": 18,
+   "price": 2070,
+   "multiple": 1.06,
+   "cagr_pct": 2.7,
+   "return_2y_pct": 5.5,
+   "assumptions": "ASSUMPTION: FY27 EPS ~Rs118, FY28 dips then recovers; mgmt FY27 EBITDA margin guide 24-25%, US $1.1-1.2bn; India/respiratory/ROW growth offsets US step-down."
+  },
+  "bull": {
+   "probability": 0.25,
+   "fy2_eps": 135,
+   "fy3_eps": 160,
+   "fy5_eps": 230,
+   "exit_pe": 20,
+   "price": 2700,
+   "multiple": 1.38,
+   "cagr_pct": 17.3,
+   "return_2y_pct": 37.6,
+   "assumptions": "ASSUMPTION: new launches (inhalers, Apixaban 505(b)(2), biosimilars) replace exclusivity income; margin held ~27%."
+  },
+  "extreme_bull": {
+   "probability": 0.05,
+   "fy2_eps": 155,
+   "fy3_eps": 195,
+   "fy5_eps": 300,
+   "exit_pe": 22,
+   "price": 3410,
+   "multiple": 1.74,
+   "cagr_pct": 31.8,
+   "return_2y_pct": 73.8,
+   "assumptions": "ASSUMPTION: complex-generic/specialty mix lifts margin ~29% and rerates toward 22x."
+  }
+ },
+ "ev_2y_pct": 7.8,
+ "bear_downside_pct": -31.2,
+ "bull_value_per_share": 2700,
+ "risk": {
+  "governance": "LOW: nothing adverse in filings reviewed",
+  "balance_sheet": "LOW: net debt/EBITDA 0.20, interest cover 22.5",
+  "cycle": "HIGH: Q1 margin ~30% vs guided 24-25% reflects limited-competition products (gTolvaptan) fading",
+  "liquidity": "LOW: turnover ~Rs142 cr/day",
+  "dilution": "LOW: 0.1%",
+  "order_firmness": "n/a: pharma, no order book; FDA approvals are not revenue"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Lupin's Q1 FY27 is a record, but it sits on peak one-off exclusivity income (gTolvaptan) that management itself says steps down: US run-rate guided USD 250-280m/qtr vs ~USD 365m reported, EBITDA margin guide 24-25% vs ~30% in Q1. The 17x TTM P/E looks cheap only on peak earnings. Pipeline (inhalers, Apixaban 505(b)(2), biosimilars, many FDA approvals) is real but each is small against the step-down. Probability-weighted EV is low; this is a cyclical-peak earnings case, not an inflection. Wait for evidence that normalised earnings hold.",
+ "chain_missing_links": [
+  "Durable demand/supply shortage (earnings driven by temporary exclusivity)",
+  "Sustained margin: guided to fall",
+  "Consensus revisions: unknown",
+  "Replacement revenue sized vs tolvaptan step-down: unknown"
+ ],
+ "demand_signal": "India COPD triple-combo MDI launch 6 Oct 2026 (FACT); no demand shock evidenced",
+ "supply_signal": "Temporary US exclusivities only; competition expected (MANAGEMENT CLAIM via web summary)",
+ "pricing_power": "Negative: US price erosion expected as tolvaptan competition arrives",
+ "pricing_signal": "Negative: US price erosion expected as tolvaptan competition arrives",
+ "order_book": "n/a (pharma); FDA approvals Aug-Oct 2026: Pitolisant, Modafinil (USD70.7m market), Phytonadione (USD52.3m market), Apixaban suspension tentative",
+ "capacity_catalyst": "15 manufacturing sites; no specific new capacity facts in dossier: unknown",
+ "cfo_to_pat": "1.38 FY (dossier CALCULATION); healthy",
+ "debt": "Net debt/EBITDA 0.20 (dossier)",
+ "roce": "EBITDA/invested capital 30.5%, ROE 23.8% (dossier)",
+ "valuation": "TTM P/E 17.1, EV/EBITDA 10.6 on peak-influenced earnings; forward consensus unknown",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs EPS ~Rs196 at 20x in 2y, against guided margin decline",
+  "3x": "NO: NOT reasonably underwritable in 2y",
+  "5x": "NO: 5x/10x NOT reasonably underwritable",
+  "10x": "NO: 5x/10x NOT reasonably underwritable"
+ },
+ "kill_conditions": [
+  "US quarterly revenue below USD 250m",
+  "EBITDA margin below 22% for a quarter",
+  "Material FDA warning letter/OAI at a key site",
+  "Two consecutive quarters of YoY PAT decline"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results (Nov 2026)",
+  "Apixaban 505(b)(2) final approval",
+  "Inhaler/biosimilar launches"
+ ],
+ "biggest_risk": "Earnings normalise sharply lower as tolvaptan exclusivity ends; multiple does not hold",
+ "next_datapoint": "Q2 FY27 results: US revenue vs USD 250-280m guided run-rate and EBITDA margin vs 24-25% guide",
+ "confidence": "MEDIUM",
+ "material_change": "first review. CONFLICT: dossier shows revenue +47.7%, PAT +83% YoY; web summaries of the company release show revenue +32-33% and PAT +16-24%. Dossier YoY figures likely use a different base/Yahoo data and are not relied on.",
+ "sources": [
+  {
+   "claim": "Q1 FY27 revenue, EBITDA, PAT, US sales",
+   "type": "FACT",
+   "url": "https://lupin.com/uploads/Lupin_Limited_Press_Release_Q1_FY_27_6_Aug_1_77fb8c7390.pdf"
+  },
+  {
+   "claim": "Q1 FY27 NSE release",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/Lupin2_06082026215741_SE_Intimation_Press_Release.pdf"
+  },
+  {
+   "claim": "FY27 US guide USD1.1-1.2bn, run-rate USD250-280m/qtr, EBITDA margin 24-25% (web summaries, not verified in transcript)",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://lupin.com/uploads/Lupin_Q1_FY_27_Earnings_call_Transcript_cde56458e2.pdf"
+  },
+  {
+   "claim": "India COPD triple MDI launch",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/Lupin2_06102026093541_SELetterpressrelease.pdf"
+  },
+  {
+   "claim": "Phytonadione approval, USD52.3m market",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/Lupin2_08102026205937_SELetterPressRelease.pdf"
+  },
+  {
+   "claim": "Scenario EPS and exit multiples",
+   "type": "ASSUMPTION",
+   "url": ""
+  }
+ ]
+}
