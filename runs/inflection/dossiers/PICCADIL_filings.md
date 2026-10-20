@@ -1,4 +1,4 @@
-# PICCADIL — source filing text (extracted 2026-10-16 from NSE PDFs; first 8000 characters each)
+# PICCADIL — source filing text (extracted 2026-10-19 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-14 · Credit Rating- New
 Source: https://nsearchives.nseindia.com/corporate/CSPICCADILY_14102026182320_AGRO_CREDIT141026.pdf

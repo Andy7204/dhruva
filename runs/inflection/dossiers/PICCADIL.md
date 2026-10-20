@@ -1,8 +1,8 @@
 # PICCADIL — Piccadily Agro Industries Limited (Fast Moving Consumer Goods)
-Evidence dossier generated 2026-10-16 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-19 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 37.0 · Stage 2 score 141.1 · score 20 sessions ago 39.2 · 60 sessions ago 39.2
-Price ₹589.90 · 12-month return -8.0% · -24.8% from 52-week high · RS rank 36.3 · stage-2 trend False · turnover ₹7.56 cr/day
+Stage 1 score 37.3 · Stage 2 score 141.4 · score 20 sessions ago 39.2 · 60 sessions ago 39.2
+Price ₹576.50 · 12-month return -11.4% · -26.5% from 52-week high · RS rank 31.9 · stage-2 trend False · turnover ₹7.27 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 16.7% · QoQ % (previous QoQ 21.6%) · quarters of sequential growth in last 4: 2
@@ -15,7 +15,7 @@ CFO/PAT 0.86 · class: A productive growth investment · receivables growth 77.4
 Net debt/EBITDA 2.15 · interest cover 5.0 · dilution 4.5% · ROE 15.3% · EBITDA/invested capital 16.8%
 
 ## Valuation
-Market cap ₹5815 cr · TTM P/E 41.1 · PEG 3.31 · EV/EBITDA 26.4 · EPS growth minus 12-month price return 20.4 pts
+Market cap ₹5683 cr · TTM P/E 40.2 · PEG 3.23 · EV/EBITDA 25.8 · EPS growth minus 12-month price return 23.8 pts
 
 ## Industry (same NSE industry, this scan)
 41 peers · 44% growing revenue >20% · 29% expanding EBITDA margin · median revenue YoY 16.7%

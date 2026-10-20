@@ -1,8 +1,8 @@
 # GANDHAR — Gandhar Oil Refinery (India) Limited (Unclassified)
-Evidence dossier generated 2026-10-16 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-19 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 93.6 · Stage 2 score 99.4 · score 20 sessions ago  · 60 sessions ago 
-Price ₹296.65 · 12-month return 118.1% · -4.6% from 52-week high · RS rank 95.5 · stage-2 trend True · turnover ₹22.21 cr/day
+Price ₹297.75 · 12-month return 117.0% · -4.2% from 52-week high · RS rank 95.2 · stage-2 trend True · turnover ₹22.09 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 91.8% · QoQ % (previous QoQ -6.3%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 0.94 · class: healthy · receivables growth 7.5% vs revenue 8.7% · inv
 Net debt/EBITDA 0.58 · interest cover 22.1 · dilution 0.0% · ROE 10.0% · EBITDA/invested capital 15.9%
 
 ## Valuation
-Market cap ₹2904 cr · TTM P/E 9.6 · PEG 0.02 · EV/EBITDA 12.6 · EPS growth minus 12-month price return 81.9 pts
+Market cap ₹2914 cr · TTM P/E 9.7 · PEG 0.02 · EV/EBITDA 12.6 · EPS growth minus 12-month price return 83.0 pts
 
 ## Industry (same NSE industry, this scan)
-740 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.3%
+739 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.3%
 
 Discovery score 15.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 10.4 pts, turnaround False) · fast lane: False · source: confirmation
 
@@ -30,6 +30,7 @@ Discovery score 15.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.
 Flags: inventory growing much faster than revenue
 
 ## Recent relevant NSE filings (newest first)
+- 2026-10-19 · Analysts/Institutional Investor Meet/Con. Call Updates · Gandhar Oil Refinery (India) Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.com/corporate/GANDHAROIL_19102026160148_investor_meet_intimation.pdf
 - 2026-09-30 · Credit Rating- Others · Gandhar Oil Refinery (India) Limited has informed the Exchange that Pursuant to Regulation 30(6) read with Para A of Part A of Schedule III of the SEBI (Listing Obligations and Disclosure Requirements · https://nsearchives.nseindia.com/corporate/GANDHAROIL_30092026174215_Gandhar_Oil_-_Reaffirmed_Credit_Rating.pdf
 - 2026-09-23 · Analysts/Institutional Investor Meet/Con. Call Updates · Gandhar Oil Refinery (India) Limited has informed the Exchange that Pursuant to regulation 30 of SEBI (LODR),2015, we would like to inform you that the representatives of the management of the Company · https://nsearchives.nseindia.com/corporate/GANDHAROIL_23092026184832_Intimation_Investor_meet.pdf
 - 2026-09-01 · Analysts/Institutional Investor Meet/Con. Call Updates · Gandhar Oil Refinery (India) Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.com/corporate/GANDHAROIL_01092026191048_Intimation_analyst_investor_meet.pdf
@@ -44,6 +45,5 @@ Flags: inventory growing much faster than revenue
 - 2026-07-18 · Analysts/Institutional Investor Meet/Con. Call Updates · Gandhar Oil Refinery (India) Limited has informed the Exchange that the Company has scheduled an Earnings Call with the Analysts / Investors on Thursday, July 23, 2026 at 11.00 a.m. (IST) to discuss U · https://nsearchives.nseindia.com/corporate/GANDHAROIL_18072026142228_Intimation_for_investors_meet.pdf
 - 2026-06-23 · Analysts/Institutional Investor Meet/Con. Call Updates · Gandhar Oil Refinery (India) Limited has informed the Exchange that Pursuant to Regulation 30 of SEBI (LODR) Regulations, 2015, we wish to inform you that a plant visit for Analyst/ Investors followed · https://nsearchives.nseindia.com/corporate/GANDHAROIL_23062026171208_initmation_covering.pdf
 - 2026-06-08 · Analysts/Institutional Investor Meet/Con. Call Updates · Gandhar Oil Refinery (India) Limited has informed the Exchange that Pursuant to Regulation 30 SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015 ( Listing Regulations ) this is t · https://nsearchives.nseindia.com/corporate/GANDHAROIL_08062026181845_Intimation_of_InsightX_2026_meet_s.pdf
-- 2026-06-02 · Analysts/Institutional Investor Meet/Con. Call Updates · Gandhar Oil Refinery (India) Limited has informed the Exchange that pursuant to Regulation 30 of the SEBI (LODR) Regulations, 2015, in furtherance to our letter dated May 27, 2026 regarding the audio  · https://nsearchives.nseindia.com/corporate/GANDHAROIL_02062026181005_Transcript_file_final_signed.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

@@ -1,8 +1,8 @@
 # BUILDPRO — Shankara Buildpro Limited (Unclassified)
-Evidence dossier generated 2026-10-16 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-19 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 0.0 · Stage 2 score 110.8 · score 20 sessions ago  · 60 sessions ago 
-Price ₹239.20 · 12-month return 47.2% · -11.3% from 52-week high · RS rank 74.1 · stage-2 trend False · turnover ₹10.88 cr/day
+Price ₹223.20 · 12-month return 37.3% · -17.2% from 52-week high · RS rank 71.1 · stage-2 trend False · turnover ₹10.50 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY % · QoQ % (previous QoQ %) · quarters of sequential growth in last 4: 
@@ -15,10 +15,10 @@ CFO/PAT 0.70 · class: healthy · receivables growth 22.3% vs revenue 29.6% · i
 Net debt/EBITDA 0.15 · interest cover 6.0 · dilution 0.0% · ROE 23.4% · EBITDA/invested capital 36.5%
 
 ## Valuation
-Market cap ₹580 cr · TTM P/E  · PEG  · EV/EBITDA 2.8 · EPS growth minus 12-month price return  pts
+Market cap ₹541 cr · TTM P/E  · PEG  · EV/EBITDA 2.6 · EPS growth minus 12-month price return  pts
 
 ## Industry (same NSE industry, this scan)
-740 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.3%
+739 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.3%
 
 Discovery score 5.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change -0.3 pts, turnaround False) · fast lane: True · source: fast_lane
 

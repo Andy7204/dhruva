@@ -1,27 +1,27 @@
 {
- "session": "2026-10-16",
- "started_at": "2026-10-16T17:08:19.843769+00:00",
+ "session": "2026-10-19",
+ "started_at": "2026-10-20T17:41:13.465893+00:00",
  "warnings": [],
- "universe": 2575,
- "priced": 2566,
- "liquid": 1641,
+ "universe": 2580,
+ "priced": 2579,
+ "liquid": 1639,
  "eligible": 1454,
  "fundamentals_ok": 1467,
  "vetoed": 15,
- "material_events": 269,
- "new_signals": 1,
+ "material_events": 267,
+ "new_signals": 0,
  "fast_lane": [
+  "KERNEX",
+  "MASFIN",
   "KPIL",
   "PICCADIL",
-  "VIVIANA",
-  "KEC",
   "BUILDPRO"
  ],
  "finalists": [
+  "KERNEX",
+  "MASFIN",
   "KPIL",
   "PICCADIL",
-  "VIVIANA",
-  "KEC",
   "BUILDPRO",
   "NAVINFLUOR",
   "DEEPAKNTR",
@@ -29,11 +29,11 @@
   "GANDHAR",
   "LUPIN"
  ],
- "announcements": 102543,
+ "announcements": 102393,
  "news_ok": true,
- "usd_inr": 94.94999694824219,
+ "usd_inr": 94.91500091552734,
  "price_errors": 0,
  "fundamental_errors": 0,
  "announcement_errors": [],
- "ended_at": "2026-10-16T17:13:59.070991+00:00"
+ "ended_at": "2026-10-20T17:43:05.375033+00:00"
 }

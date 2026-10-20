@@ -1,4 +1,4 @@
-# KPIL — source filing text (extracted 2026-10-16 from NSE PDFs; first 8000 characters each)
+# KPIL — source filing text (extracted 2026-10-19 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-16 · Credit Rating
 Source: https://nsearchives.nseindia.com/corporate/KALPATPOWR_16102026105124_KPILSEIntimationCreditRatingCRISIL16102026.pdf
