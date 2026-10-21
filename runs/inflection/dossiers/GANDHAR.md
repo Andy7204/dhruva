@@ -1,8 +1,8 @@
 # GANDHAR — Gandhar Oil Refinery (India) Limited (Unclassified)
-Evidence dossier generated 2026-10-19 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-21 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 93.6 · Stage 2 score 99.4 · score 20 sessions ago  · 60 sessions ago 
-Price ₹297.75 · 12-month return 117.0% · -4.2% from 52-week high · RS rank 95.2 · stage-2 trend True · turnover ₹22.09 cr/day
+Stage 1 score 93.6 · Stage 2 score 99.5 · score 20 sessions ago  · 60 sessions ago 
+Price ₹283.20 · 12-month return 108.9% · -8.9% from 52-week high · RS rank 95.3 · stage-2 trend True · turnover ₹22.28 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 91.8% · QoQ % (previous QoQ -6.3%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 0.94 · class: healthy · receivables growth 7.5% vs revenue 8.7% · inv
 Net debt/EBITDA 0.58 · interest cover 22.1 · dilution 0.0% · ROE 10.0% · EBITDA/invested capital 15.9%
 
 ## Valuation
-Market cap ₹2914 cr · TTM P/E 9.7 · PEG 0.02 · EV/EBITDA 12.6 · EPS growth minus 12-month price return 83.0 pts
+Market cap ₹2772 cr · TTM P/E 9.2 · PEG 0.01 · EV/EBITDA 12.1 · EPS growth minus 12-month price return 91.1 pts
 
 ## Industry (same NSE industry, this scan)
-739 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.3%
+740 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.3%
 
 Discovery score 15.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 10.4 pts, turnaround False) · fast lane: False · source: confirmation
 

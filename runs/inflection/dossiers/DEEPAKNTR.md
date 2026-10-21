@@ -1,8 +1,8 @@
 # DEEPAKNTR — Deepak Nitrite Limited (Chemicals)
-Evidence dossier generated 2026-10-19 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-21 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 92.9 · Stage 2 score 102.1 · score 20 sessions ago 90.4 · 60 sessions ago 90.4
-Price ₹1550.60 · 12-month return -11.9% · -17.3% from 52-week high · RS rank 42.3 · stage-2 trend False · turnover ₹28.07 cr/day
+Price ₹1506.20 · 12-month return -14.8% · -19.7% from 52-week high · RS rank 38.2 · stage-2 trend False · turnover ₹27.59 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 36.4% · QoQ % (previous QoQ 7.4%) · quarters of sequential growth in last 4: 4
@@ -15,7 +15,7 @@ CFO/PAT 0.98 · class: A productive growth investment · receivables growth 18.2
 Net debt/EBITDA 1.25 · interest cover 23.6 · dilution 0.0% · ROE 9.4% · EBITDA/invested capital 14.0%
 
 ## Valuation
-Market cap ₹21149 cr · TTM P/E 27.0 · PEG 0.13 · EV/EBITDA 21.8 · EPS growth minus 12-month price return 211.9 pts
+Market cap ₹20544 cr · TTM P/E 26.2 · PEG 0.13 · EV/EBITDA 21.2 · EPS growth minus 12-month price return 214.8 pts
 
 ## Industry (same NSE industry, this scan)
 44 peers · 61% growing revenue >20% · 64% expanding EBITDA margin · median revenue YoY 25.2%

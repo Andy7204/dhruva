@@ -1,4 +1,4 @@
-# BUILDPRO — source filing text (extracted 2026-10-19 from NSE PDFs; first 8000 characters each)
+# BUILDPRO — source filing text (extracted 2026-10-21 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-15 · Credit Rating
 Source: https://nsearchives.nseindia.com/corporate/BUILDPRO_15102026172219_Filing.pdf

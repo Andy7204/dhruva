@@ -1,4 +1,4 @@
-# DEEPAKNTR — source filing text (extracted 2026-10-19 from NSE PDFs; first 8000 characters each)
+# DEEPAKNTR — source filing text (extracted 2026-10-21 from NSE PDFs; first 8000 characters each)
 
 ## 2026-08-11 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/DEEPAKNTR_11082026154707_NSETranscript.pdf

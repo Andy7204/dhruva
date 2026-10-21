@@ -1,4 +1,4 @@
-# GANDHAR — source filing text (extracted 2026-10-19 from NSE PDFs; first 8000 characters each)
+# GANDHAR — source filing text (extracted 2026-10-21 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-19 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/GANDHAROIL_19102026160148_investor_meet_intimation.pdf

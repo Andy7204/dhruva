@@ -1,19 +1,16 @@
-# Dhruva inflection report — 2026-10-19
+# Dhruva inflection report — 2026-10-21
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
 ## Fast lane (material filings this week)
-- KPIL 2026-10-13: Bagging/Receiving of orders/contracts — order ≈49% of annual revenue (after firmness haircut) (price ₹1417.5)
+- SUDARSCHEM 2026-10-20: Credit Rating- New — credit rating upgrade (price ₹1121.699951171875)
+- KPIL 2026-10-16: Credit Rating — credit rating upgrade (price ₹1364.300048828125)
 - BUILDPRO 2026-10-15: Credit Rating — credit rating upgrade (price ₹242.0)
-- PICCADIL 2026-10-14: Credit Rating- New — credit rating upgrade (price ₹583.5999755859375)
-- MASFIN 2026-10-14: Credit Rating — credit rating upgrade (price ₹266.3999938964844)
-- KERNEX 2026-10-13: Credit Rating- Revision — credit rating upgrade (price ₹1743.5)
 
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| KERNEX | DISCOVER | RESEARCH | ₹0 | 1737.6 | fast-lane event or discovery >= 60 |
-| MASFIN | DISCOVER | RESEARCH | ₹0 | 263.9 | fast-lane event or discovery >= 60 |
+| none | | | | | |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -59,20 +56,22 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KEC | 21 | — | 33.0 | -7.2 | RED | DISCOVER | 2026-10-14 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- KERNEX (Unclassified): discovery 32.8, confirmation 73.7, source fast_lane,discovery
-- MASFIN (Unclassified): discovery 11.5, confirmation 56.9, source fast_lane
-- KPIL (Construction): discovery 30.0, confirmation 53.9, source fast_lane,discovery
-- PICCADIL (Fast Moving Consumer Goods): discovery 5.0, confirmation 37.3, source fast_lane
+- SUDARSCHEM (Chemicals): discovery 8.1, confirmation 76.0, source fast_lane
+- KPIL (Construction): discovery 30.0, confirmation 54.2, source fast_lane,discovery
 - BUILDPRO (Unclassified): discovery 5.0, confirmation 0.0, source fast_lane
 - NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.7, source confirmation
 - DEEPAKNTR (Chemicals): discovery 8.6, confirmation 92.9, source confirmation
-- ALKYLAMINE (Chemicals): discovery 15.0, confirmation 92.7, source confirmation
+- ALKYLAMINE (Chemicals): discovery 15.0, confirmation 92.8, source confirmation
 - GANDHAR (Unclassified): discovery 15.0, confirmation 93.6, source confirmation
-- LUPIN (Healthcare): discovery 1.5, confirmation 92.2, source confirmation
+- APCOTEXIND (Unclassified): discovery 15.0, confirmation 92.5, source confirmation
+- LUPIN (Healthcare): discovery 1.5, confirmation 91.7, source confirmation
+- SOTL (Unclassified): discovery 14.0, confirmation 91.8, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- KERNEX: fast lane: fast_lane,discovery
-- MASFIN: fast lane: fast_lane
+- SUDARSCHEM: fast lane: fast_lane
+- KPIL: new filing: Bagging/Receiving of orders/contracts
+- APCOTEXIND: first review
+- SOTL: first review
 
 ## Missed-winner audit (1 cases logged; 0 new today)
 

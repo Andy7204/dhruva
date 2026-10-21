@@ -1,20 +1,38 @@
 [
  {
-  "symbol": "KERNEX",
-  "trigger": "fast lane: fast_lane,discovery",
-  "dossier": "runs/inflection/dossiers/KERNEX.md",
-  "price": 1737.6,
-  "discovery_d": 32.8,
+  "symbol": "SUDARSCHEM",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/SUDARSCHEM.md",
+  "price": 1077.0,
+  "discovery_d": 8.1,
   "fast_lane": true,
-  "stage2_score": 179.5
+  "stage2_score": 185.2
  },
  {
-  "symbol": "MASFIN",
-  "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/MASFIN.md",
-  "price": 263.9,
-  "discovery_d": 11.5,
+  "symbol": "KPIL",
+  "trigger": "new filing: Bagging/Receiving of orders/contracts",
+  "dossier": "runs/inflection/dossiers/KPIL.md",
+  "price": 1301.1,
+  "discovery_d": 30.0,
   "fast_lane": true,
-  "stage2_score": 162.7
+  "stage2_score": 154.8
+ },
+ {
+  "symbol": "APCOTEXIND",
+  "trigger": "first review",
+  "dossier": "runs/inflection/dossiers/APCOTEXIND.md",
+  "price": 541.55,
+  "discovery_d": 15.0,
+  "fast_lane": false,
+  "stage2_score": 98.4
+ },
+ {
+  "symbol": "SOTL",
+  "trigger": "first review",
+  "dossier": "runs/inflection/dossiers/SOTL.md",
+  "price": 688.85,
+  "discovery_d": 14.0,
+  "fast_lane": false,
+  "stage2_score": 97.7
  }
 ]

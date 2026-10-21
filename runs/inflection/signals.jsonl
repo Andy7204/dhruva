@@ -500,3 +500,4 @@
 {"date": "2026-06-11", "desc": "Credit Rating- Others", "logged_on": "2026-10-15", "price": 1570.9000244140625, "reasons": "credit rating upgrade", "symbol": "GRAVITA"}
 {"date": "2026-06-09", "desc": "Credit Rating- Revision", "logged_on": "2026-10-15", "price": 252.75, "reasons": "credit rating upgrade", "symbol": "MARKSANS"}
 {"date": "2026-10-16", "desc": "Credit Rating", "logged_on": "2026-10-16", "price": 1364.300048828125, "reasons": "credit rating upgrade", "symbol": "KPIL"}
+{"date": "2026-10-20", "desc": "Credit Rating- New", "logged_on": "2026-10-21", "price": 1121.699951171875, "reasons": "credit rating upgrade", "symbol": "SUDARSCHEM"}
