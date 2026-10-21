@@ -12,7 +12,8 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| KERNEX | DISCOVER | RESEARCH | ₹0 | 1737.6 | fast-lane event or discovery >= 60 |
+| MASFIN | DISCOVER | RESEARCH | ₹0 | 263.9 | fast-lane event or discovery >= 60 |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -29,6 +30,8 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KPIL | RESEARCH | 2026-10-14 | ₹0 | 42.8 | 49 | 25.9 | fast-lane event or discovery >= 60 |
 | PICCADIL | RESEARCH | 2026-10-14 | ₹0 | 25.0 | 43 | 8.3 | fast-lane event or discovery >= 60 |
 | BUILDPRO | RESEARCH | 2026-10-15 | ₹0 | 13.0 | 37 | 12.5 | fast-lane event or discovery >= 60 |
+| KERNEX | RESEARCH | 2026-10-19 | ₹0 | 42.9 | 62 | 43.2 | fast-lane event or discovery >= 60 |
+| MASFIN | RESEARCH | 2026-10-19 | ₹0 | 16.9 | 49 | 39.6 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
@@ -37,10 +40,12 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | DEEPAKNTR | 67 | — | 23.2 | 20.5 | YELLOW | DISCOVER | 2026-10-16 |
 | NAVINFLUOR | 67 | — | 26.0 | 18.8 | GREEN | DISCOVER | 2026-10-15 |
 | ALKYLAMINE | 62 | — | 25.0 | 23.9 | YELLOW | DISCOVER | 2026-10-16 |
+| KERNEX | 62 | — | 42.9 | 43.2 | YELLOW | RESEARCH | 2026-10-19 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
 | GANDHAR | 52 | — | 21.0 | 0.3 | YELLOW | DISCOVER | 2026-10-16 |
 | LUPIN | 52 | — | 10.9 | 7.8 | YELLOW | DISCOVER | 2026-10-16 |
 | KPIL | 49 | — | 42.8 | 25.9 | YELLOW | RESEARCH | 2026-10-14 |
+| MASFIN | 49 | — | 16.9 | 39.6 | YELLOW | RESEARCH | 2026-10-19 |
 | MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
 | PICCADIL | 43 | — | 25.0 | 8.3 | YELLOW | RESEARCH | 2026-10-14 |
 | MAXHEALTH | 42 | — | 19.8 | 5.0 | YELLOW | RESEARCH | 2026-10-12 |

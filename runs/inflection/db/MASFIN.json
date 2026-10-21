@@ -1,0 +1,163 @@
+{
+ "symbol": "MASFIN",
+ "discovered": "2026-10-19",
+ "discovery_price": 263.9,
+ "reviews": [
+  {
+   "date": "2026-10-19",
+   "trigger": "fast lane: fast_lane",
+   "stage2_score": 162.7,
+   "price": 263.9,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-21T02:32:43.441676+00:00",
+   "result": {
+    "symbol": "MASFIN",
+    "company": "MAS Financial Services Limited",
+    "sector": "NBFC - MSME / SME / vehicle finance",
+    "discovery_judgement": 25,
+    "score": {
+     "demand_shock": 4,
+     "supply_constraint": 2,
+     "pricing_power": 3,
+     "revenue_acceleration": 6,
+     "operating_leverage": 5,
+     "eps_acceleration": 6,
+     "capacity_catalyst": 4,
+     "cash_flow_quality": 5,
+     "valuation_asymmetry": 7,
+     "management_governance": 4,
+     "balance_sheet": 3,
+     "total": 49
+    },
+    "confirmation_score": 49,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "Q1 FY27: AUM above Rs16,000cr, +21% YoY; GNPA 2.58%, NNPA 1.70%; CRAR above 23%; borrowing cost down ~55bp to 9.25% (MANAGEMENT CLAIM, Q1 FY27 call, 2026-07-30). Dossier: revenue +26.7%, PAT +31.5% YoY.",
+    "new_evidence_type": "rating",
+    "reported_earnings_confirm": true,
+    "cfo_to_pat_value": null,
+    "confirmation_falling": false,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "MEDIUM: lender; leverage inherent, CRAR above 23%",
+     "cycle": "MEDIUM: MSME credit cycle",
+     "liquidity": "MEDIUM: Rs4.9cr/day turnover",
+     "dilution": "LOW: 0.0%",
+     "order_firmness": "NA (lender)"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "MAS is a steady, well-run MSME lender compounding AUM near 20-25% with GNPA about 2.6% and PAT +31%. The Oct 2026 rating action is on a securitisation PTC tranche (Equity Tranche A to A+(SO)), not a corporate rating upgrade, so it is a weak catalyst. Cheap at 12x P/E, but it is a compounder, not an early inflection: no step change in demand, supply or pricing. The dossier's negative CFO/PAT and net debt/EBITDA flags are structural for an NBFC and carry no information. No asymmetric early-inflection case.",
+    "chain_missing_links": [
+     "No industry inflection; growth is in line with guidance",
+     "No supply constraint or pricing power",
+     "Rating upgrade is a PTC tranche, not the company",
+     "Consensus and revisions unknown"
+    ],
+    "demand_signal": "AUM +21% vs guidance of 20-25% (MANAGEMENT CLAIM)",
+    "supply_signal": "none identified",
+    "pricing_signal": "borrowing cost down ~55bp to 9.25% (MANAGEMENT CLAIM); lending yields unknown",
+    "order_book": "NA (lender)",
+    "capacity_catalyst": "209 branches, 16,500 centres; direct share 67% heading to 70%+ in 8-12 quarters (MANAGEMENT CLAIM)",
+    "cfo_to_pat": "Dossier -4.81 is structural for a growing NBFC (loan growth is an operating outflow); not a quality signal. Class A.",
+    "debt": "Lender; CRAR above 23% (MANAGEMENT CLAIM). Dossier net debt/EBITDA 19.65x not meaningful.",
+    "roce": "ROE 12.5% (dossier)",
+    "valuation": "Mcap Rs4,789cr, TTM P/E 12.3x, ROE 12.5%; price-to-book not in the data (unknown).",
+    "management_credibility": "HIGH",
+    "plausible": {
+     "2x": "NO: needs FY28 EPS ~Rs35 at 15x, above the bull case",
+     "3x": "NO: not reasonably underwritable",
+     "5x": "NO: 5x/10x NOT reasonably underwritable",
+     "10x": "NO: 5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "GNPA above 4%",
+     "AUM growth below 15%",
+     "Credit-cost spike or borrowing-cost increase over 50bp",
+     "Auditor or governance event"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results: AUM growth, GNPA",
+     "Falling borrowing costs"
+    ],
+    "biggest_risk": "MSME credit cycle turns while the stock stays at a lender multiple.",
+    "next_datapoint": "Q2 FY27 AUM growth and GNPA (Oct-Nov 2026)",
+    "confidence": "MEDIUM",
+    "material_change": "first review (2026-10-14 filing is a PTC tranche rating action)",
+    "sources": [
+     {
+      "claim": "CARE reaffirmed Series A PTC AAA(SO) and upgraded Equity Tranche PTC A to A+(SO) for INDIGO 045 (Rs9cr)",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/MASFIN_14102026175328_Final.pdf"
+     },
+     {
+      "claim": "AUM +21%, GNPA 2.58%, NNPA 1.70%, CRAR above 23%, borrowing cost 9.25%",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/MASFIN_05082026195948_Final.pdf"
+     },
+     {
+      "claim": "Scenario EPS and exit multiples (EPS base ~Rs21 from mcap/P/E)",
+      "type": "ASSUMPTION",
+      "url": ""
+     }
+    ],
+    "scenarios": {
+     "bear": {
+      "probability": 0.2,
+      "fy2_eps": 23,
+      "fy3_eps": 25,
+      "fy5_eps": 29,
+      "exit_pe": 9.5,
+      "price": 218.5,
+      "multiple": 0.83,
+      "cagr_pct": -9.0,
+      "return_2y_pct": -17.2,
+      "assumptions": "ASSUMPTION: credit cycle turns, credit cost rises, AUM growth falls to ~12%, ROE stays ~12%; P/E 9.5x."
+     },
+     "base": {
+      "probability": 0.5,
+      "fy2_eps": 29,
+      "fy3_eps": 34,
+      "fy5_eps": 46,
+      "exit_pe": 12,
+      "price": 348,
+      "multiple": 1.32,
+      "cagr_pct": 14.8,
+      "return_2y_pct": 31.9,
+      "assumptions": "ASSUMPTION: AUM +20-22% (guidance 20-25%), PAT ~+20% a year, margins stable, GNPA ~2.6%; P/E stays ~12x."
+     },
+     "bull": {
+      "probability": 0.25,
+      "fy2_eps": 32,
+      "fy3_eps": 40,
+      "fy5_eps": 58,
+      "exit_pe": 15,
+      "price": 480,
+      "multiple": 1.82,
+      "cagr_pct": 34.9,
+      "return_2y_pct": 81.9,
+      "assumptions": "ASSUMPTION: borrowing cost falls toward 9%, direct-distribution mix to 70%, PAT +25%; modest re-rating to 15x."
+     },
+     "extreme_bull": {
+      "probability": 0.05,
+      "fy2_eps": 34,
+      "fy3_eps": 44,
+      "fy5_eps": 68,
+      "exit_pe": 18,
+      "price": 612,
+      "multiple": 2.32,
+      "cagr_pct": 52.3,
+      "return_2y_pct": 131.9,
+      "assumptions": "ASSUMPTION: AUM +25%, ROA expands, re-rating to 18x."
+     }
+    },
+    "ev_2y_pct": 39.6,
+    "bear_downside_pct": -17.2,
+    "bull_value_per_share": 480
+   }
+  }
+ ]
+}

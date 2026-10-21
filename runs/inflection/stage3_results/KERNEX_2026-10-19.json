@@ -1,0 +1,171 @@
+{
+ "symbol": "KERNEX",
+ "company": "Kernex Microsystems (India) Limited",
+ "sector": "Railway signalling / Kavach electronics",
+ "discovery_judgement": 58,
+ "score": {
+  "demand_shock": 7,
+  "supply_constraint": 5,
+  "pricing_power": 4,
+  "revenue_acceleration": 10,
+  "operating_leverage": 9,
+  "eps_acceleration": 10,
+  "capacity_catalyst": 4,
+  "cash_flow_quality": 1,
+  "valuation_asymmetry": 8,
+  "management_governance": 2,
+  "balance_sheet": 2,
+  "total": 62
+ },
+ "confirmation_score": 62,
+ "band": "WATCH",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "Q1 FY27 consolidated revenue Rs503.6cr vs Rs55.9cr a year ago and Rs254.6cr in Q4 FY26; PBT Rs148.1cr; PAT Rs109.8cr vs Rs7.4cr (FACT, NSE results 2026-08-13). Orders from ICF Chennai: Rs100.53cr (Jul 14), Rs66.62cr (Aug 2), Rs31.87cr (Aug 20), all incl GST, to be executed by Mar 2027-Mar 2028.",
+ "new_evidence_type": "rating",
+ "reported_earnings_confirm": true,
+ "cfo_to_pat_value": -1.13,
+ "confirmation_falling": false,
+ "risk": {
+  "governance": "MEDIUM",
+  "balance_sheet": "MEDIUM: net debt/EBITDA 1.2x, interest cover 12x, but finance cost Rs13.2cr/qtr and limits raised to Rs660cr (CARE BBB; Stable)",
+  "cycle": "MEDIUM: Kavach is a policy-driven railway programme, lumpy single-customer-type demand",
+  "liquidity": "MEDIUM: Rs25cr/day turnover",
+  "dilution": "LOW: 0.3%",
+  "order_firmness": "MEDIUM: ICF orders are firm POs, but customer is government and receivable days 268"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Kavach (train-protection) orders from ICF (~Rs675cr incl GST since May 2026) are turning into reported revenue and profit at a scale that is 8x last year, with CARE upgrading the rating to BBB. The earnings inflection is real in the filed numbers. But FY26 operating cash flow was negative (CFO/PAT -1.1), receivables are 268 days, Rs222cr of FY26 profit sits in inventory/WIP, and one quarter does not make a trend. Wide outcome range; the bear case is a cash-conversion failure. Needs Q2 collections before any size.",
+ "chain_missing_links": [
+  "Cash conversion (CFO) not demonstrated",
+  "Order book total and execution schedule unknown",
+  "Capacity/utilisation unknown",
+  "No consensus or guidance data",
+  "Only one quarter of the new run-rate"
+ ],
+ "demand_signal": "Kavach on-board equipment orders from ICF: Rs31.87cr upgrade 3.2->4.0, Rs66.62cr EMU/MEMU, Rs100.53cr trainsets (FACT, NSE filings). Earlier Rs475.21cr CLW order in May (dossier extraction).",
+ "supply_signal": "unknown; RDSO-approved vendor list not in the filings (ASSUMPTION: limited vendors)",
+ "pricing_signal": "EBITDA margin 32.3%, up 9.8pts YoY (CALCULATION from filed results); cause (mix vs price) unknown",
+ "order_book": "Total order book unknown. Orders since May 2026 about Rs675cr incl GST (FACT) vs FY26 revenue Rs430cr.",
+ "capacity_catalyst": "unknown; dossier shows capacity +0%",
+ "cfo_to_pat": "-1.13 for FY26 (CALCULATION, dossier). Class C/D. FY26 change in inventories -Rs222.6cr against FY26 revenue Rs430cr (FACT, results). Receivable days 268.",
+ "debt": "Net debt/EBITDA 1.23x, interest cover 12.3x (dossier). CARE upgraded to BBB; Stable, LT facilities raised from Rs175cr to Rs525cr (FACT, 2026-10-13).",
+ "roce": "ROE 35.6%, EBITDA/invested capital 31.9% (dossier, FY26)",
+ "valuation": "Mcap Rs2,920cr, TTM P/E 15.3x. On Q1 annualised PAT (~Rs440cr) about 6.6x, but that run-rate is unproven. Dossier PEG 0.01 is not meaningful.",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "YES: needs FY28 EPS ~Rs290 at 12x, about Rs480cr PAT; requires continued order inflow and collections",
+  "3x": "NO-ish: needs EPS ~Rs370 at 14x, about Rs620cr PAT sustained; only in the extreme bull",
+  "5x": "NO: 5x/10x NOT reasonably underwritable",
+  "10x": "NO: 5x/10x NOT reasonably underwritable"
+ },
+ "kill_conditions": [
+  "Q2/Q3 FY27 CFO still negative with receivable days above 250",
+  "Revenue falls back below Rs250cr per quarter with no new orders",
+  "Rating downgrade or limit cut by CARE",
+  "Auditor qualification or restatement",
+  "Promoter pledge or related-party transactions emerge"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results (Nov 2026): revenue, CFO, receivables",
+  "New Kavach orders (zonal railways, CLW, ICF)",
+  "Order-book disclosure in investor presentation"
+ ],
+ "biggest_risk": "Profits are not turning into cash; receivables and WIP build could mean revenue was recognised ahead of collections.",
+ "next_datapoint": "Q2 FY27 half-year cash flow statement (CFO, trade receivables) due Nov 2026",
+ "confidence": "LOW",
+ "material_change": "first review (CARE upgrade to BBB on 2026-10-13 is the new fact since the Q1 results)",
+ "sources": [
+  {
+   "claim": "Q1 FY27 consolidated revenue 50,358 lakh, PAT 10,985 lakh vs 5,593 and 741 a year ago",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/KERNEX_13082026115954_outcome.pdf"
+  },
+  {
+   "claim": "CARE upgrade to BBB; Stable and limits enhanced",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/KERNEX_13102026132909_intimation.pdf"
+  },
+  {
+   "claim": "ICF order Rs100.53cr Kavach trainset, due 31 Mar 2028",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/KERNEX_14072026113830_Intimation_ICF_13072026.pdf"
+  },
+  {
+   "claim": "ICF order Rs66.62cr Kavach EMU/MEMU, due 31 Mar 2028 (dossier extraction missed the value)",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/KERNEX_02082026090417_Intimation_ICF_01082026_final.pdf"
+  },
+  {
+   "claim": "ICF order Rs31.87cr Kavach upgrade, due 31 Mar 2027",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/KERNEX_20082026105953_Intimation_ICF_20082026_final.pdf"
+  },
+  {
+   "claim": "FY26 CFO/PAT -1.13, receivable days 268, inventory build",
+   "type": "CALCULATION",
+   "url": "https://nsearchives.nseindia.com/corporate/KERNEX_29052026132716_Outcome.pdf"
+  },
+  {
+   "claim": "Scenario EPS and exit multiples",
+   "type": "ASSUMPTION",
+   "url": ""
+  }
+ ],
+ "scenarios": {
+  "bear": {
+   "probability": 0.3,
+   "fy2_eps": 120,
+   "fy3_eps": 130,
+   "fy5_eps": 150,
+   "exit_pe": 6,
+   "price": 720,
+   "multiple": 0.41,
+   "cagr_pct": -35.6,
+   "return_2y_pct": -58.6,
+   "assumptions": "ASSUMPTION: Q1 FY27 was a lumpy billing quarter; FY27-28 PAT ~Rs200cr (EPS ~120); receivables (268 days) and WIP do not convert to cash, working-capital stress, CARE BBB limits tight, market de-rates to 6x."
+  },
+  "base": {
+   "probability": 0.4,
+   "fy2_eps": 190,
+   "fy3_eps": 220,
+   "fy5_eps": 260,
+   "exit_pe": 11,
+   "price": 2090,
+   "multiple": 1.2,
+   "cagr_pct": 9.7,
+   "return_2y_pct": 20.3,
+   "assumptions": "ASSUMPTION: Kavach order flow (~Rs675cr incl GST since May 2026) converts through FY28 at ~25-30% EBITDA margin; FY28 PAT ~Rs320cr; P/E 11x for a BBB, receivable-heavy railway-electronics vendor."
+  },
+  "bull": {
+   "probability": 0.22,
+   "fy2_eps": 300,
+   "fy3_eps": 360,
+   "fy5_eps": 420,
+   "exit_pe": 14,
+   "price": 4200,
+   "multiple": 2.42,
+   "cagr_pct": 55.5,
+   "return_2y_pct": 141.7,
+   "assumptions": "ASSUMPTION: order inflow keeps pace (Kavach rollout on EMU/trainsets), margins hold ~30%, collections normalise; FY28 PAT ~Rs500cr; 14x."
+  },
+  "extreme_bull": {
+   "probability": 0.08,
+   "fy2_eps": 400,
+   "fy3_eps": 480,
+   "fy5_eps": 600,
+   "exit_pe": 16,
+   "price": 6400,
+   "multiple": 3.68,
+   "cagr_pct": 91.9,
+   "return_2y_pct": 268.3,
+   "assumptions": "ASSUMPTION: large Kavach roll-out across zonal railways, PAT ~Rs670cr, 16x."
+  }
+ },
+ "ev_2y_pct": 43.2,
+ "bear_downside_pct": -58.6,
+ "bull_value_per_share": 4200
+}

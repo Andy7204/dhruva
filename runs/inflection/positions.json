@@ -303,5 +303,39 @@
   "discovery": 10.9,
   "confirmation": 52,
   "ev_2y_pct": 7.8
+ },
+ "KERNEX": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-19",
+    "type": "rating",
+    "text": "Q1 FY27 consolidated revenue Rs503.6cr vs Rs55.9cr a year ago and Rs254.6cr in Q4 FY26; PBT Rs148.1cr; PAT Rs109.8cr vs Rs7.4cr (FACT, NSE results 2026-08-13). Orders from ICF Chennai: Rs100.53cr (Jul 14), Rs66.62cr (Aug 2), Rs31.87cr (Aug 20), all incl GST, to be executed by Mar 2027-Mar 2028."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-19",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-19",
+  "discovery": 42.9,
+  "confirmation": 62,
+  "ev_2y_pct": 43.2
+ },
+ "MASFIN": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-19",
+    "type": "rating",
+    "text": "Q1 FY27: AUM above Rs16,000cr, +21% YoY; GNPA 2.58%, NNPA 1.70%; CRAR above 23%; borrowing cost down ~55bp to 9.25% (MANAGEMENT CLAIM, Q1 FY27 call, 2026-07-30). Dossier: revenue +26.7%, PAT +31.5% YoY."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-19",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-19",
+  "discovery": 16.9,
+  "confirmation": 49,
+  "ev_2y_pct": 39.6
  }
 }
