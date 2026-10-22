@@ -1,4 +1,4 @@
-# KPIL — source filing text (extracted 2026-10-21 from NSE PDFs; first 8000 characters each)
+# KPIL — source filing text (extracted 2026-10-22 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-21 · Bagging/Receiving of orders/contracts
 Source: https://nsearchives.nseindia.com/corporate/KALPATPOWR_21102026084653_SEIntimationPR21102026.pdf

@@ -1,8 +1,8 @@
 # KPIL — Kalpataru Projects International Limited (Construction)
-Evidence dossier generated 2026-10-21 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-22 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 54.2 · Stage 2 score 154.8 · score 20 sessions ago 61.4 · 60 sessions ago 61.4
-Price ₹1301.10 · 12-month return 3.9% · -10.8% from 52-week high · RS rank 62.7 · stage-2 trend False · turnover ₹21.88 cr/day
+Stage 1 score 54.4 · Stage 2 score 155.0 · score 20 sessions ago 61.4 · 60 sessions ago 61.4
+Price ₹1302.80 · 12-month return 1.9% · -10.7% from 52-week high · RS rank 64.1 · stage-2 trend False · turnover ₹21.49 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY -9.3% · QoQ % (previous QoQ 16.7%) · quarters of sequential growth in last 4: 2
@@ -15,7 +15,7 @@ CFO/PAT 1.48 · class: healthy · receivables growth 7.5% vs revenue 21.7% · in
 Net debt/EBITDA 0.77 · interest cover 6.8 · dilution 0.0% · ROE 13.4% · EBITDA/invested capital 21.0%
 
 ## Valuation
-Market cap ₹22219 cr · TTM P/E 20.0 · PEG 0.57 · EV/EBITDA 10.3 · EPS growth minus 12-month price return 31.5 pts
+Market cap ₹22248 cr · TTM P/E 20.0 · PEG 0.57 · EV/EBITDA 10.3 · EPS growth minus 12-month price return 33.5 pts
 
 ## Industry (same NSE industry, this scan)
 23 peers · 4% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY -5.6%

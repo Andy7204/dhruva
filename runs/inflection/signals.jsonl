@@ -501,3 +501,7 @@
 {"date": "2026-06-09", "desc": "Credit Rating- Revision", "logged_on": "2026-10-15", "price": 252.75, "reasons": "credit rating upgrade", "symbol": "MARKSANS"}
 {"date": "2026-10-16", "desc": "Credit Rating", "logged_on": "2026-10-16", "price": 1364.300048828125, "reasons": "credit rating upgrade", "symbol": "KPIL"}
 {"date": "2026-10-20", "desc": "Credit Rating- New", "logged_on": "2026-10-21", "price": 1121.699951171875, "reasons": "credit rating upgrade", "symbol": "SUDARSCHEM"}
+{"date": "2026-10-22", "desc": "Credit Rating- Revision", "logged_on": "2026-10-22", "price": 530.9000244140625, "reasons": "credit rating upgrade", "symbol": "RAMCOSYS"}
+{"date": "2026-10-22", "desc": "Credit Rating- Revision", "logged_on": "2026-10-22", "price": 179.7899932861328, "reasons": "credit rating upgrade", "symbol": "SHAREINDIA"}
+{"date": "2026-10-22", "desc": "Credit Rating- Revision", "logged_on": "2026-10-22", "price": 109.29000091552734, "reasons": "credit rating upgrade", "symbol": "KECL"}
+{"date": "2026-10-15", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-10-22", "price": 72.41999816894531, "reasons": "order \u224845% of annual revenue (after firmness haircut)", "symbol": "AGASTYAEN"}

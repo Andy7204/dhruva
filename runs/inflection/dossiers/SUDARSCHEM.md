@@ -1,8 +1,8 @@
 # SUDARSCHEM — Sudarshan Chemical Industries Limited (Chemicals)
-Evidence dossier generated 2026-10-21 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-22 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 76.0 · Stage 2 score 185.2 · score 20 sessions ago 72.1 · 60 sessions ago 72.1
-Price ₹1077.00 · 12-month return -14.1% · -15.3% from 52-week high · RS rank 65.8 · stage-2 trend False · turnover ₹25.77 cr/day
+Stage 1 score 76.1 · Stage 2 score 185.3 · score 20 sessions ago 72.1 · 60 sessions ago 72.1
+Price ₹1044.30 · 12-month return -17.6% · -17.8% from 52-week high · RS rank 63.4 · stage-2 trend False · turnover ₹26.02 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 5.4% · QoQ % (previous QoQ 32.7%) · quarters of sequential growth in last 4: 1
@@ -15,7 +15,7 @@ CFO/PAT 15.43 · class: healthy · receivables growth 37.1% vs revenue 193.8% ·
 Net debt/EBITDA 1.80 · interest cover 6.3 · dilution 0.1% · ROE 0.7% · EBITDA/invested capital 11.8%
 
 ## Valuation
-Market cap ₹8467 cr · TTM P/E 118.3 · PEG 1.13 · EV/EBITDA 14.7 · EPS growth minus 12-month price return 119.1 pts
+Market cap ₹8209 cr · TTM P/E 114.8 · PEG 1.09 · EV/EBITDA 14.3 · EPS growth minus 12-month price return 122.6 pts
 
 ## Industry (same NSE industry, this scan)
 44 peers · 61% growing revenue >20% · 64% expanding EBITDA margin · median revenue YoY 25.2%

@@ -1,38 +1,29 @@
 [
  {
-  "symbol": "SUDARSCHEM",
+  "symbol": "SHAREINDIA",
   "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/SUDARSCHEM.md",
-  "price": 1077.0,
-  "discovery_d": 8.1,
+  "dossier": "runs/inflection/dossiers/SHAREINDIA.md",
+  "price": 179.79,
+  "discovery_d": 5.0,
   "fast_lane": true,
-  "stage2_score": 185.2
+  "stage2_score": 184.2
  },
  {
-  "symbol": "KPIL",
-  "trigger": "new filing: Bagging/Receiving of orders/contracts",
-  "dossier": "runs/inflection/dossiers/KPIL.md",
-  "price": 1301.1,
-  "discovery_d": 30.0,
+  "symbol": "RAMCOSYS",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/RAMCOSYS.md",
+  "price": 530.9,
+  "discovery_d": 5.0,
   "fast_lane": true,
-  "stage2_score": 154.8
+  "stage2_score": 141.9
  },
  {
-  "symbol": "APCOTEXIND",
-  "trigger": "first review",
-  "dossier": "runs/inflection/dossiers/APCOTEXIND.md",
-  "price": 541.55,
-  "discovery_d": 15.0,
-  "fast_lane": false,
-  "stage2_score": 98.4
- },
- {
-  "symbol": "SOTL",
-  "trigger": "first review",
-  "dossier": "runs/inflection/dossiers/SOTL.md",
-  "price": 688.85,
-  "discovery_d": 14.0,
-  "fast_lane": false,
-  "stage2_score": 97.7
+  "symbol": "KECL",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/KECL.md",
+  "price": 109.29,
+  "discovery_d": 5.0,
+  "fast_lane": true,
+  "stage2_score": 136.6
  }
 ]

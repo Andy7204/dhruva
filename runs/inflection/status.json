@@ -1,37 +1,39 @@
 {
- "session": "2026-10-21",
- "started_at": "2026-10-21T17:48:58.528392+00:00",
+ "session": "2026-10-22",
+ "started_at": "2026-10-22T17:47:52.072118+00:00",
  "warnings": [],
- "universe": 2578,
- "priced": 2563,
- "liquid": 1640,
- "eligible": 1453,
- "fundamentals_ok": 1468,
+ "universe": 2579,
+ "priced": 2562,
+ "liquid": 1644,
+ "eligible": 1451,
+ "fundamentals_ok": 1469,
  "vetoed": 14,
- "material_events": 264,
- "new_signals": 1,
+ "material_events": 266,
+ "new_signals": 4,
  "fast_lane": [
   "SUDARSCHEM",
+  "SHAREINDIA",
   "KPIL",
-  "BUILDPRO"
+  "RAMCOSYS",
+  "KECL"
  ],
  "finalists": [
   "SUDARSCHEM",
+  "SHAREINDIA",
   "KPIL",
-  "BUILDPRO",
+  "RAMCOSYS",
+  "KECL",
   "NAVINFLUOR",
   "DEEPAKNTR",
   "ALKYLAMINE",
   "GANDHAR",
-  "APCOTEXIND",
-  "LUPIN",
-  "SOTL"
+  "APCOTEXIND"
  ],
- "announcements": 101944,
+ "announcements": 101959,
  "news_ok": true,
- "usd_inr": 94.44999694824219,
- "price_errors": 2,
+ "usd_inr": 94.80799865722656,
+ "price_errors": 0,
  "fundamental_errors": 0,
  "announcement_errors": [],
- "ended_at": "2026-10-21T17:51:34.365500+00:00"
+ "ended_at": "2026-10-22T17:50:14.457670+00:00"
 }

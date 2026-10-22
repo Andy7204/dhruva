@@ -1,4 +1,4 @@
-# SUDARSCHEM — source filing text (extracted 2026-10-21 from NSE PDFs; first 8000 characters each)
+# SUDARSCHEM — source filing text (extracted 2026-10-22 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-20 · Credit Rating- New
 Source: https://nsearchives.nseindia.com/corporate/SUDARSCHEM_20102026183812_CreditRating20102026Signed.pdf
