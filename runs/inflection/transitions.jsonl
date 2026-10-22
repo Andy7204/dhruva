@@ -20,3 +20,6 @@
 {"date": "2026-10-16", "from": "DISCOVER", "inr": 0, "price": 1961.6, "reason": "below research threshold", "symbol": "LUPIN", "to": "DISCOVER"}
 {"date": "2026-10-19", "from": "DISCOVER", "inr": 0, "price": 1737.6, "reason": "fast-lane event or discovery >= 60", "symbol": "KERNEX", "to": "RESEARCH"}
 {"date": "2026-10-19", "from": "DISCOVER", "inr": 0, "price": 263.9, "reason": "fast-lane event or discovery >= 60", "symbol": "MASFIN", "to": "RESEARCH"}
+{"date": "2026-10-21", "from": "DISCOVER", "inr": 0, "price": 1077.0, "reason": "fast-lane event or discovery >= 60", "symbol": "SUDARSCHEM", "to": "RESEARCH"}
+{"date": "2026-10-21", "from": "RESEARCH", "inr": 0, "price": 1301.1, "reason": "fast-lane event or discovery >= 60", "symbol": "KPIL", "to": "RESEARCH"}
+{"date": "2026-10-21", "from": "DISCOVER", "inr": 0, "price": 541.55, "reason": "below research threshold", "symbol": "APCOTEXIND", "to": "DISCOVER"}

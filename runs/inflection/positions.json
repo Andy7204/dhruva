@@ -164,15 +164,20 @@
     "date": "2026-10-14",
     "type": "order",
     "text": "Management states YTD FY27 order inflow ~Rs20,000 cr vs FY26 revenue Rs27,143 cr (0.74x), >30% YoY; UAE gas pipeline LoA classed Major (>Rs4,000 cr). Filed press releases (MANAGEMENT CLAIM). Latest single announcement is Rs2,225 cr (8% of revenue), not Rs20,000 cr as the dossier event row shows."
+   },
+   {
+    "date": "2026-10-21",
+    "type": "rating",
+    "text": "FACT (company filings): order book Rs65,457 cr at 31 Mar 2026 vs FY26 revenue Rs27,143 cr (2.4x); Crisil upgraded long-term rating to AA+/Stable on 15 Oct 2026. MANAGEMENT CLAIM: FY27 YTD order inflow crossed Rs22,000 cr (21 Oct release, new orders Rs2,349 cr)."
    }
   ],
   "entries": [],
   "since": "2026-10-14",
   "last_reason": "fast-lane event or discovery >= 60",
-  "last_review": "2026-10-14",
-  "discovery": 42.8,
-  "confirmation": 49,
-  "ev_2y_pct": 25.9
+  "last_review": "2026-10-21",
+  "discovery": 41.2,
+  "confirmation": 51,
+  "ev_2y_pct": 26.6
  },
  "PICCADIL": {
   "state": "RESEARCH",
@@ -337,5 +342,32 @@
   "discovery": 16.9,
   "confirmation": 49,
   "ev_2y_pct": 39.6
+ },
+ "SUDARSCHEM": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-21",
+    "type": "rating",
+    "text": "FACT: Ind-Ra revised outlook on bank loans/FD to Positive from Stable, ratings affirmed IND AA/IND A1+ (filed 20 Oct 2026). CALCULATION (dossier): Q1 FY27 revenue +5.4% YoY, EBITDA +41.5%, PAT +106%, EBITDA margin 9.7%."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-21",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-21",
+  "discovery": 16.9,
+  "confirmation": 36,
+  "ev_2y_pct": -12.9
+ },
+ "APCOTEXIND": {
+  "state": "DISCOVER",
+  "evidence": [],
+  "entries": [],
+  "last_reason": "below research threshold",
+  "last_review": "2026-10-21",
+  "discovery": 23.8,
+  "confirmation": 59,
+  "ev_2y_pct": -9.2
  }
 }

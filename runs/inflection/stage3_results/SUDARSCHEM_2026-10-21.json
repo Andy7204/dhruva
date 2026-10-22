@@ -1,0 +1,161 @@
+{
+ "symbol": "SUDARSCHEM",
+ "company": "Sudarshan Chemical Industries Limited",
+ "sector": "Specialty chemicals / pigments",
+ "discovery_judgement": 30,
+ "score": {
+  "demand_shock": 3,
+  "supply_constraint": 2,
+  "pricing_power": 2,
+  "revenue_acceleration": 3,
+  "operating_leverage": 5,
+  "eps_acceleration": 6,
+  "capacity_catalyst": 3,
+  "cash_flow_quality": 4,
+  "valuation_asymmetry": 2,
+  "management_governance": 3,
+  "balance_sheet": 3,
+  "total": 36
+ },
+ "confirmation_score": 36,
+ "band": "REJECT",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "WAIT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "FACT: Ind-Ra revised outlook on bank loans/FD to Positive from Stable, ratings affirmed IND AA/IND A1+ (filed 20 Oct 2026). CALCULATION (dossier): Q1 FY27 revenue +5.4% YoY, EBITDA +41.5%, PAT +106%, EBITDA margin 9.7%.",
+ "new_evidence_type": "rating",
+ "reported_earnings_confirm": false,
+ "cfo_to_pat_value": null,
+ "confirmation_falling": false,
+ "scenarios": {
+  "bear": {
+   "probability": 0.3,
+   "fy2_eps": 20,
+   "fy3_eps": 22,
+   "fy5_eps": 28,
+   "exit_pe": 28,
+   "price": 560,
+   "multiple": 0.52,
+   "cagr_pct": -27.9,
+   "return_2y_pct": -48.0,
+   "assumptions": "ASSUMPTION: Heubach integration slips, margin stuck ~10%, PAT ~Rs160 cr, multiple compresses from 118x TTM to 28x"
+  },
+  "base": {
+   "probability": 0.45,
+   "fy2_eps": 30,
+   "fy3_eps": 38,
+   "fy5_eps": 52,
+   "exit_pe": 30,
+   "price": 900,
+   "multiple": 0.84,
+   "cagr_pct": -8.6,
+   "return_2y_pct": -16.4,
+   "assumptions": "ASSUMPTION: EBITDA margin recovers to ~12-13% on synergies, PAT ~Rs235 cr FY28, 30x"
+  },
+  "bull": {
+   "probability": 0.2,
+   "fy2_eps": 42,
+   "fy3_eps": 55,
+   "fy5_eps": 78,
+   "exit_pe": 32,
+   "price": 1344,
+   "multiple": 1.25,
+   "cagr_pct": 11.7,
+   "return_2y_pct": 24.8,
+   "assumptions": "ASSUMPTION: Synergies fully delivered, margin ~15%, PAT ~Rs330 cr, 32x"
+  },
+  "extreme_bull": {
+   "probability": 0.05,
+   "fy2_eps": 55,
+   "fy3_eps": 75,
+   "fy5_eps": 110,
+   "exit_pe": 35,
+   "price": 1925,
+   "multiple": 1.79,
+   "cagr_pct": 33.7,
+   "return_2y_pct": 78.7,
+   "assumptions": "ASSUMPTION: Pigment up-cycle plus deleveraging, PAT ~Rs430 cr, 35x"
+  }
+ },
+ "ev_2y_pct": -12.9,
+ "bear_downside_pct": -48.0,
+ "bull_value_per_share": 1344,
+ "risk": {
+  "governance": "LOW",
+  "balance_sheet": "MEDIUM: ND/EBITDA 1.8x after Heubach acquisition",
+  "cycle": "MEDIUM",
+  "liquidity": "LOW",
+  "dilution": "LOW",
+  "order_firmness": "unknown; no order book disclosed in extracted filings"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Pigment maker digesting the Heubach acquisition: portfolio pruning (VP4 Frankfurt sold to Celanese) and backward integration (Clariant Muttenz aluminium-dye plant, closing ~4 Jan 2027). Q1 FY27 profit doubled but off a tiny base; revenue only +5.4% and margin 9.7%. Ind-Ra outlook to Positive is a balance-sheet fact, not a demand or pricing signal. At 118x TTM P/E the price already assumes synergy delivery. No demand shock, supply constraint or pricing evidence in the filings.",
+ "chain_missing_links": [
+  "Demand inflection (revenue +5.4% YoY; FY +194% is acquisition consolidation)",
+  "Supply constraint and pricing power: no evidence",
+  "Order book/volume data: unknown",
+  "Consensus and revisions: unknown",
+  "Valuation asymmetry: 118x TTM P/E, EV/EBITDA 14.7"
+ ],
+ "demand_signal": "unknown; Q1 FY27 revenue +5.4% YoY (CALCULATION). Peer industry median revenue +25.2% in dossier scan, so the company lags its peer set.",
+ "supply_signal": "unknown; no shortage evidence",
+ "pricing_signal": "unknown; none evidenced",
+ "order_book": "unknown (not disclosed in extracted filings)",
+ "capacity_catalyst": "Muttenz (Switzerland) aluminium-dye plant acquisition from Clariant, completion expected ~4 Jan 2027: converts a supply arrangement into ownership; no capacity or revenue figure disclosed (FACT/MANAGEMENT CLAIM). VP4 Frankfurt divested (Diketene tolling), small captive use.",
+ "cfo_to_pat": "Dossier 15.43 for latest FY, not meaningful on a near-zero PAT base (ROE 0.7%); class healthy per dossier; true cash conversion unknown",
+ "debt": "ND/EBITDA 1.80, interest cover 6.3, dilution 0.1% (CALCULATION). Ind-Ra IND AA/Positive (FACT).",
+ "roce": "ROE 0.7%, EBITDA/invested capital 11.8% (CALCULATION)",
+ "valuation": "Mcap Rs8,467 cr, TTM P/E 118.3, EV/EBITDA 14.7, PEG 1.13 (CALCULATION). Dossier conflict: earnings block says turnaround True while discovery block says turnaround False; one-off share of EBITDA 13.7%. Q1 results text not in the extracted filings, so one-offs could not be verified.",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs EPS ~Rs70+ at 30x, i.e. PAT ~Rs550 cr vs ~Rs72 cr TTM",
+  "3x": "NO: not supported by any evidence in hand",
+  "5x": "5x/10x NOT reasonably underwritable",
+  "10x": "5x/10x NOT reasonably underwritable"
+ },
+ "kill_conditions": [
+  "Q2 FY27 EBITDA margin below 9% or revenue growth below 5% YoY",
+  "ND/EBITDA above 2.5x or Ind-Ra outlook reverted to Stable",
+  "Muttenz closing delayed past Q1 CY2027 or cost exceeds disclosed budget",
+  "One-offs above 20% of EBITDA in a second consecutive quarter"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results (Nov 2026)",
+  "Muttenz plant closing (~4 Jan 2027)",
+  "Heubach synergy disclosures",
+  "Further rating upgrade"
+ ],
+ "biggest_risk": "Paying 118x trailing earnings for a turnaround whose revenue growth is 5% while peers grow 25%; acquisition integration and leverage.",
+ "next_datapoint": "Q2 FY27 results: revenue growth vs 5.4%, EBITDA margin vs 9.7%, one-off share, CFO",
+ "confidence": "LOW",
+ "material_change": "first review",
+ "sources": [
+  {
+   "claim": "Ind-Ra outlook revised to Positive; IND AA/A1+ affirmed",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/SUDARSCHEM_20102026183812_CreditRating20102026Signed.pdf"
+  },
+  {
+   "claim": "Muttenz aluminium-dye plant purchase, completion ~4 Jan 2027",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/SUDARSCHEM_25082026133744_PRIntimationProjectTell25082026Signed.pdf"
+  },
+  {
+   "claim": "VP4 Frankfurt divested to Celanese",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/SUDARSCHEM_01092026021355_PRIntimation01092026Signed.pdf"
+  },
+  {
+   "claim": "Q1 FY27 growth rates, TTM P/E 118.3, ND/EBITDA 1.80",
+   "type": "CALCULATION",
+   "url": "runs/inflection/dossiers/SUDARSCHEM.md"
+  },
+  {
+   "claim": "FY28-FY32 EPS and exit multiples",
+   "type": "ASSUMPTION",
+   "url": "runs/inflection/dossiers/SUDARSCHEM.md"
+  }
+ ]
+}

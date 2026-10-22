@@ -1,0 +1,175 @@
+{
+ "symbol": "APCOTEXIND",
+ "discovered": "2026-10-21",
+ "discovery_price": 541.55,
+ "reviews": [
+  {
+   "date": "2026-10-21",
+   "trigger": "first review",
+   "stage2_score": 98.4,
+   "price": 541.55,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-22T02:33:25.718387+00:00",
+   "result": {
+    "symbol": "APCOTEXIND",
+    "company": "Apcotex Industries Limited",
+    "sector": "Synthetic rubber and latex (specialty chemicals)",
+    "discovery_judgement": 37,
+    "score": {
+     "demand_shock": 5,
+     "supply_constraint": 5,
+     "pricing_power": 5,
+     "revenue_acceleration": 7,
+     "operating_leverage": 7,
+     "eps_acceleration": 8,
+     "capacity_catalyst": 2,
+     "cash_flow_quality": 7,
+     "valuation_asymmetry": 5,
+     "management_governance": 3,
+     "balance_sheet": 5,
+     "total": 59
+    },
+    "confirmation_score": 59,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT (Q1 FY27 presentation): revenue Rs525.6 cr (+39.9% YoY) on higher realisations with lower volumes (-10-12%); EBITDA Rs117.1 cr (+202.6%), margin 22.28% vs 12.31% FY26, 8.96% FY25; PAT Rs78.9 cr; EPS Rs15.23 (vs FY26 full-year Rs19.56).",
+    "new_evidence_type": null,
+    "reported_earnings_confirm": true,
+    "cfo_to_pat_value": 2.01,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.35,
+      "fy2_eps": 22,
+      "fy3_eps": 20,
+      "fy5_eps": 24,
+      "exit_pe": 14,
+      "price": 308,
+      "multiple": 0.57,
+      "cagr_pct": -24.6,
+      "return_2y_pct": -43.1,
+      "assumptions": "ASSUMPTION: West Asia disruption ends, spreads normalise, margin back to ~11-12%, FY28 PAT ~Rs115 cr, 14x"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 32,
+      "fy3_eps": 34,
+      "fy5_eps": 42,
+      "exit_pe": 15,
+      "price": 480,
+      "multiple": 0.89,
+      "cagr_pct": -5.9,
+      "return_2y_pct": -11.4,
+      "assumptions": "ASSUMPTION: Margin settles ~14-15% (above FY26 12.3%), revenue ~Rs1,700 cr, 15x"
+     },
+     "bull": {
+      "probability": 0.2,
+      "fy2_eps": 45,
+      "fy3_eps": 50,
+      "fy5_eps": 60,
+      "exit_pe": 16,
+      "price": 720,
+      "multiple": 1.33,
+      "cagr_pct": 15.3,
+      "return_2y_pct": 33.0,
+      "assumptions": "ASSUMPTION: Elevated spreads persist, domestic volume +10% continues, margin ~18%, 16x"
+     },
+     "extreme_bull": {
+      "probability": 0.05,
+      "fy2_eps": 60,
+      "fy3_eps": 65,
+      "fy5_eps": 75,
+      "exit_pe": 16,
+      "price": 960,
+      "multiple": 1.77,
+      "cagr_pct": 33.1,
+      "return_2y_pct": 77.3,
+      "assumptions": "ASSUMPTION: Q1 run-rate (EPS ~Rs60) sustained; 16x"
+     }
+    },
+    "ev_2y_pct": -9.2,
+    "bear_downside_pct": -43.1,
+    "bull_value_per_share": 720,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "LOW: ND/EBITDA 0.31, interest cover 54.5",
+     "cycle": "HIGH: margin 2x its FY24-FY26 range, driven by a supply disruption",
+     "liquidity": "HIGH: ~Rs4.25 cr/day turnover",
+     "dilution": "LOW",
+     "order_firmness": "unknown; commodity/spec products, no order book"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Record Q1 FY27 is real (EBITDA +203%, margin 22%) but the driver is pricing and constrained supply during the West Asia/Hormuz disruption, with raw-material pass-through and inventory gains (management: ~2% of margin). Volumes fell 10-12% as exports suffered; domestic volume +10%. This is a cyclical windfall rather than a structural inflection: margin is 2x the 9-12% of the past three years. At 17x trailing EPS the price looks cheap only if the peak persists. Capex plans exist but are not quantified in the extracted text.",
+    "chain_missing_links": [
+     "Structural demand/capacity link: growth is price, volumes down",
+     "Durability of margin: tied to a geopolitical supply shock",
+     "Capacity and capex quantification: unknown",
+     "Estimate revisions: unknown",
+     "Liquidity: ~Rs4 cr/day"
+    ],
+    "demand_signal": "Domestic volume +10% YoY; export volume down (Hormuz/MENA); total volume -10-12% (MANAGEMENT CLAIM, Q1 FY27 call).",
+    "supply_signal": "Management: able to 'capitalize on constrained market supply' (MANAGEMENT CLAIM); temporary and war-linked.",
+    "pricing_signal": "Realisations up with input cost pass-through; EBITDA margin 22.3% vs 10.3% a year ago (FACT). ~2% of EBITDA margin from inventory gains (MANAGEMENT CLAIM).",
+    "order_book": "n/a (continuous-process producer); unknown",
+    "capacity_catalyst": "Taloja 103,000 MTPA latex + 7,000 MTPA HSR; Valia 21,000 MTPA nitrile rubber + 50,000 MTPA nitrile latex (FACT, presentation). Strategic capex 'in execution', size and date unknown.",
+    "cfo_to_pat": "2.01 FY26 (dossier, healthy); working capital rose in Q1 on higher input prices (MANAGEMENT CLAIM)",
+    "debt": "ND/EBITDA 0.31, interest cover 54.5; ICRA [ICRA]AA-(Stable) reaffirmed 26 Aug 2026 with enhanced limits (FACT)",
+    "roce": "ROE 16.3%, EBITDA/invested capital 27.2% (dossier)",
+    "valuation": "Mcap Rs2,808 cr, TTM P/E 17.4, EV/EBITDA 14.8, PEG 0.06 (dossier; PEG distorted by peak-quarter EPS). Annualising Q1 EPS (~Rs61) is not a normalised base; FY26 EPS Rs19.56. -20.5% from 52-week high.",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs70 at 15x, i.e. Q1 margin sustained for years",
+     "3x": "NO",
+     "5x": "5x/10x NOT reasonably underwritable",
+     "10x": "5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "Q2 FY27 EBITDA margin below 15%",
+     "Domestic volume growth turns negative",
+     "Ceasefire/Hormuz reopening followed by spread compression and inventory losses",
+     "Working capital/receivables days rising above 80"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (Oct/Nov 2026)",
+     "Resolution of West Asia disruption (negative for margin, positive for export volume)",
+     "Capex commissioning"
+    ],
+    "biggest_risk": "Margin mean reversion when supply normalises; peak-cycle earnings flattering the P/E.",
+    "next_datapoint": "Q2 FY27 results: EBITDA margin vs 22.3%, domestic vs export volumes, inventory gain disclosure, working capital",
+    "confidence": "MEDIUM",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "Q1 FY27 results, margins, volumes, EPS",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/APCOTEXIND_30072026112438_Covering_-_signed.pdf"
+     },
+     {
+      "claim": "Q1 FY27 call: inventory gain ~2% of EBITDA margin, volume -10-12%, exports hit by Hormuz",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/APCOTEXIND_05082026123135_Covering_Letter_-_signed.pdf"
+     },
+     {
+      "claim": "ICRA AA-/Stable reaffirmed",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/APCOTEXIND_27082026174842_Intimation_of_Credit_Rating_signed.pdf"
+     },
+     {
+      "claim": "TTM P/E 17.4, CFO/PAT 2.01, ND/EBITDA 0.31",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/APCOTEXIND.md"
+     },
+     {
+      "claim": "FY28+ EPS and exit multiples",
+      "type": "ASSUMPTION",
+      "url": "runs/inflection/dossiers/APCOTEXIND.md"
+     }
+    ]
+   }
+  }
+ ]
+}

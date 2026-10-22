@@ -10,7 +10,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| SUDARSCHEM | DISCOVER | RESEARCH | ₹0 | 1077.0 | fast-lane event or discovery >= 60 |
+| KPIL | RESEARCH | RESEARCH | ₹0 | 1301.1 | fast-lane event or discovery >= 60 |
+| APCOTEXIND | DISCOVER | DISCOVER | ₹0 | 541.55 | below research threshold |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -24,11 +26,12 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | HBLENGINE | RESEARCH | 2026-10-12 | ₹0 | 24.3 | 40 | 2.8 | fast-lane event or discovery >= 60 |
 | ARVIND | RESEARCH | 2026-10-12 | ₹0 | 13.0 | 35 | -1.5 | fast-lane event or discovery >= 60 |
 | VIVIANA | RESEARCH | 2026-10-12 | ₹0 | 33.2 | 34 | 10.4 | fast-lane event or discovery >= 60 |
-| KPIL | RESEARCH | 2026-10-14 | ₹0 | 42.8 | 49 | 25.9 | fast-lane event or discovery >= 60 |
+| KPIL | RESEARCH | 2026-10-14 | ₹0 | 41.2 | 51 | 26.6 | fast-lane event or discovery >= 60 |
 | PICCADIL | RESEARCH | 2026-10-14 | ₹0 | 25.0 | 43 | 8.3 | fast-lane event or discovery >= 60 |
 | BUILDPRO | RESEARCH | 2026-10-15 | ₹0 | 13.0 | 37 | 12.5 | fast-lane event or discovery >= 60 |
 | KERNEX | RESEARCH | 2026-10-19 | ₹0 | 42.9 | 62 | 43.2 | fast-lane event or discovery >= 60 |
 | MASFIN | RESEARCH | 2026-10-19 | ₹0 | 16.9 | 49 | 39.6 | fast-lane event or discovery >= 60 |
+| SUDARSCHEM | RESEARCH | 2026-10-21 | ₹0 | 16.9 | 36 | -12.9 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
@@ -38,10 +41,11 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | NAVINFLUOR | 67 | — | 26.0 | 18.8 | GREEN | DISCOVER | 2026-10-15 |
 | ALKYLAMINE | 62 | — | 25.0 | 23.9 | YELLOW | DISCOVER | 2026-10-16 |
 | KERNEX | 62 | — | 42.9 | 43.2 | YELLOW | RESEARCH | 2026-10-19 |
+| APCOTEXIND | 59 | — | 23.8 | -9.2 | YELLOW | DISCOVER | 2026-10-21 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
 | GANDHAR | 52 | — | 21.0 | 0.3 | YELLOW | DISCOVER | 2026-10-16 |
 | LUPIN | 52 | — | 10.9 | 7.8 | YELLOW | DISCOVER | 2026-10-16 |
-| KPIL | 49 | — | 42.8 | 25.9 | YELLOW | RESEARCH | 2026-10-14 |
+| KPIL | 51 | 49 | 41.2 | 26.6 | YELLOW | RESEARCH | 2026-10-21 |
 | MASFIN | 49 | — | 16.9 | 39.6 | YELLOW | RESEARCH | 2026-10-19 |
 | MARINE | 47 | — | 39.8 | 3.4 | YELLOW | RESEARCH | 2026-10-06 |
 | PICCADIL | 43 | — | 25.0 | 8.3 | YELLOW | RESEARCH | 2026-10-14 |
@@ -50,6 +54,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | TARIL | 39 | — | 37.2 | 17.6 | YELLOW | RESEARCH | 2026-10-06 |
 | LT | 38 | 37 | 34.2 | 19.9 | YELLOW | RESEARCH | 2026-10-12 |
 | BUILDPRO | 37 | — | 13.0 | 12.5 | YELLOW | RESEARCH | 2026-10-15 |
+| SUDARSCHEM | 36 | — | 16.9 | -12.9 | YELLOW | RESEARCH | 2026-10-21 |
 | ARVIND | 35 | — | 13.0 | -1.5 | YELLOW | RESEARCH | 2026-10-12 |
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 | VIVIANA | 34 | 34 | 33.2 | 10.4 | YELLOW | RESEARCH | 2026-10-15 |

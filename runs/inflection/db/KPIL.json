@@ -169,6 +169,179 @@
     "bull_value_per_share": 2300,
     "confirmation_score": 49
    }
+  },
+  {
+   "date": "2026-10-21",
+   "trigger": "new filing: Bagging/Receiving of orders/contracts",
+   "stage2_score": 154.8,
+   "price": 1301.1,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-22T02:33:25.343102+00:00",
+   "result": {
+    "symbol": "KPIL",
+    "company": "Kalpataru Projects International Limited",
+    "sector": "Construction / T&D EPC",
+    "discovery_judgement": 58,
+    "score": {
+     "demand_shock": 6,
+     "supply_constraint": 4,
+     "pricing_power": 3,
+     "revenue_acceleration": 3,
+     "operating_leverage": 4,
+     "eps_acceleration": 6,
+     "capacity_catalyst": 3,
+     "cash_flow_quality": 8,
+     "valuation_asymmetry": 7,
+     "management_governance": 3,
+     "balance_sheet": 4,
+     "total": 51
+    },
+    "confirmation_score": 51,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "FACT (company filings): order book Rs65,457 cr at 31 Mar 2026 vs FY26 revenue Rs27,143 cr (2.4x); Crisil upgraded long-term rating to AA+/Stable on 15 Oct 2026. MANAGEMENT CLAIM: FY27 YTD order inflow crossed Rs22,000 cr (21 Oct release, new orders Rs2,349 cr).",
+    "new_evidence_type": "rating",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": 1.48,
+    "confirmation_falling": false,
+    "scenarios": {
+     "bear": {
+      "probability": 0.25,
+      "fy2_eps": 65,
+      "fy3_eps": 70,
+      "fy5_eps": 80,
+      "exit_pe": 14,
+      "price": 910,
+      "multiple": 0.7,
+      "cagr_pct": -16.4,
+      "return_2y_pct": -30.1,
+      "assumptions": "ASSUMPTION: Execution/working-capital slippage, EPS flat at ~Rs65 (TTM), EPC derates to 14x"
+     },
+     "base": {
+      "probability": 0.45,
+      "fy2_eps": 85,
+      "fy3_eps": 100,
+      "fy5_eps": 135,
+      "exit_pe": 19,
+      "price": 1615,
+      "multiple": 1.24,
+      "cagr_pct": 11.4,
+      "return_2y_pct": 24.1,
+      "assumptions": "ASSUMPTION: Order book (Rs65,457 cr at Mar-26, 2.4x FY26 revenue) converts at ~12% revenue growth, margin ~9%, 19x"
+     },
+     "bull": {
+      "probability": 0.25,
+      "fy2_eps": 100,
+      "fy3_eps": 125,
+      "fy5_eps": 175,
+      "exit_pe": 22,
+      "price": 2200,
+      "multiple": 1.69,
+      "cagr_pct": 30.0,
+      "return_2y_pct": 69.1,
+      "assumptions": "ASSUMPTION: Revenue +18% CAGR, margin ~9.5-10%, Linjemontage value unlock, 22x"
+     },
+     "extreme_bull": {
+      "probability": 0.05,
+      "fy2_eps": 115,
+      "fy3_eps": 150,
+      "fy5_eps": 210,
+      "exit_pe": 25,
+      "price": 2875,
+      "multiple": 2.21,
+      "cagr_pct": 48.6,
+      "return_2y_pct": 121.0,
+      "assumptions": "ASSUMPTION: Everything converts with margin expansion; re-rating to 25x"
+     }
+    },
+    "ev_2y_pct": 26.6,
+    "bear_downside_pct": -30.1,
+    "bull_value_per_share": 2200,
+    "risk": {
+     "governance": "LOW",
+     "balance_sheet": "LOW: ND/EBITDA 0.77, interest cover 6.8, Crisil AA+",
+     "cycle": "MEDIUM",
+     "liquidity": "LOW",
+     "dilution": "LOW",
+     "order_firmness": "MEDIUM: UAE gas pipeline LoA and L1 positions are not yet revenue; some inflow figures are management cumulative claims"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Large T&D/B&F EPC with a Rs65,457 cr order book (2.4x revenue) and FY27 YTD inflows above Rs22,000 cr, now Crisil AA+/Stable and healthy FY CFO/PAT 1.48 at ND/EBITDA 0.77. Price is down ~7% since the 14 Oct review. But latest quarter revenue was -9.3% YoY, margin is thin (8.8%) and 13.7% of EBITDA is one-off, so orders have not yet shown up in reported growth. EV is positive but below the +30% starter bar; the missing link is order-to-revenue-to-EPS conversion.",
+    "chain_missing_links": [
+     "Order-to-revenue conversion (Q1 FY27 revenue -9.3% YoY)",
+     "Operating leverage (EBITDA margin 8.8%; one-offs 13.7% of EBITDA)",
+     "Estimate revisions: unknown",
+     "Execution period of order book: unknown"
+    ],
+    "demand_signal": "Grid expansion/renewable integration capex; management cites strong T&D inflows (MANAGEMENT CLAIM). Dossier peer set weak: median revenue -5.6%, only 4% growing >20%.",
+    "supply_signal": "unknown; EPC is competitive, no shortage evidence",
+    "pricing_signal": "unknown; none evidenced",
+    "order_book": "Rs65,457 cr at 31 Mar 2026 (company boilerplate, FACT/MANAGEMENT CLAIM); FY27 YTD inflow >Rs22,000 cr (MANAGEMENT CLAIM); 21 Oct release Rs2,349 cr; UAE gas pipeline LoA classed Major (>Rs4,000 cr, value not disclosed). Dossier 20 Oct event row (Rs20,000 cr, intensity 0.49) is a cumulative claim mislabelled as one order (conflict).",
+    "capacity_catalyst": "none evidenced; Linjemontage (Sweden) listed 25 Sep 2026 at SEK46/share, KPIL retains ~65.9% and receives gross SEK ~711.5m (before expenses): balance-sheet/value event, not operating capacity (FACT).",
+    "cfo_to_pat": "1.48 (dossier, healthy)",
+    "debt": "ND/EBITDA 0.77, interest cover 6.8; Crisil AA+/Stable upgrade 15 Oct 2026 (FACT)",
+    "roce": "ROE 13.4%, EBITDA/invested capital 21.0% (CALCULATION)",
+    "valuation": "Mcap Rs22,219 cr, TTM P/E 20.0, EV/EBITDA 10.3, PEG 0.57 (CALCULATION). Price Rs1,301, -10.8% from 52-wk high.",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs EPS ~Rs120 at 22x, i.e. ~Rs3,100 cr PAT with margin >10%",
+     "3x": "NO: not supported",
+     "5x": "5x/10x NOT reasonably underwritable",
+     "10x": "5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "Second consecutive quarter of YoY revenue decline despite order claims (Q2 FY27)",
+     "EBITDA margin below 8% ex one-offs",
+     "CFO/PAT below 0.7 or receivable days above 130",
+     "Material order cancellation or bank-guarantee/legal issue"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (Nov 2026)",
+     "Order-book disclosure at H1",
+     "UAE gas pipeline order value",
+     "Linjemontage stake monetisation"
+    ],
+    "biggest_risk": "Order book fails to convert into revenue and margin; thin EPC margin plus working-capital stretch.",
+    "next_datapoint": "Q2 FY27 results: revenue YoY (kill if negative again), EBITDA margin ex one-offs, H1 order book and CFO",
+    "confidence": "MEDIUM",
+    "material_change": "Since 2026-10-14 review: Crisil upgrade to AA+ (new independent fact of type 'rating'), additional Rs2,349 cr orders, YTD inflow raised to >Rs22,000 cr from ~Rs20,000 cr, price -7%. Scenario EV improved from +25.9% to current value; confirmation score 49 -> 51.",
+    "sources": [
+     {
+      "claim": "Crisil upgrade to AA+/Stable, 15 Oct 2026",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_16102026105124_KPILSEIntimationCreditRatingCRISIL16102026.pdf"
+     },
+     {
+      "claim": "Rs2,349 cr new orders; YTD FY27 inflows >Rs22,000 cr",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_21102026084653_SEIntimationPR21102026.pdf"
+     },
+     {
+      "claim": "Order book Rs65,457 cr and FY26 revenue Rs27,143 cr at 31 Mar 2026",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_25092026125040_SEIntimationPR25092026.pdf"
+     },
+     {
+      "claim": "UAE gas pipeline LoA, Major >Rs4,000 cr",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_28092026084735_SEIntimationPR28092026.pdf"
+     },
+     {
+      "claim": "Linjemontage IPO SEK46/share, KPIL ~65.9% retained",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_25092026125040_SEIntimationPR25092026.pdf"
+     },
+     {
+      "claim": "TTM P/E 20.0, CFO/PAT 1.48, ND/EBITDA 0.77",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/KPIL.md"
+     }
+    ]
+   }
   }
  ]
 }
