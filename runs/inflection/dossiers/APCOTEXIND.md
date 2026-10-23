@@ -1,8 +1,8 @@
 # APCOTEXIND — Apcotex Industries Limited (Unclassified)
-Evidence dossier generated 2026-10-22 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-23 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 93.0 · Stage 2 score 98.8 · score 20 sessions ago  · 60 sessions ago 
-Price ₹536.85 · 12-month return 47.0% · -21.2% from 52-week high · RS rank 84.0 · stage-2 trend False · turnover ₹4.23 cr/day
+Price ₹520.45 · 12-month return 43.7% · -23.6% from 52-week high · RS rank 82.5 · stage-2 trend False · turnover ₹4.21 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 39.9% · QoQ % (previous QoQ 19.9%) · quarters of sequential growth in last 4: 2
@@ -15,10 +15,10 @@ CFO/PAT 2.01 · class: healthy · receivables growth -3.8% vs revenue 3.6% · in
 Net debt/EBITDA 0.31 · interest cover 54.5 · dilution 0.0% · ROE 16.3% · EBITDA/invested capital 27.2%
 
 ## Valuation
-Market cap ₹2783 cr · TTM P/E 17.3 · PEG 0.06 · EV/EBITDA 14.6 · EPS growth minus 12-month price return 153.0 pts
+Market cap ₹2698 cr · TTM P/E 16.7 · PEG 0.05 · EV/EBITDA 14.2 · EPS growth minus 12-month price return 156.3 pts
 
 ## Industry (same NSE industry, this scan)
-741 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
+742 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.0%
 
 Discovery score 15.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 8.5 pts, turnaround False) · fast lane: False · source: confirmation
 

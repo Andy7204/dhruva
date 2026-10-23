@@ -1,8 +1,8 @@
 # SHAREINDIA — Share India Securities Limited (Financial Services)
-Evidence dossier generated 2026-10-22 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-23 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 79.2 · Stage 2 score 184.2 · score 20 sessions ago 77.0 · 60 sessions ago 77.0
-Price ₹179.79 · 12-month return -10.3% · -21.2% from 52-week high · RS rank 65.3 · stage-2 trend False · turnover ₹25.09 cr/day
+Price ₹171.68 · 12-month return -16.6% · -24.8% from 52-week high · RS rank 60.6 · stage-2 trend False · turnover ₹23.52 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 58.1% · QoQ % (previous QoQ 36.9%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT -0.56 · class: C/D weak: negative operating cash flow · receivables gr
 Net debt/EBITDA 0.57 · interest cover 5.5 · dilution 0.3% · ROE 12.3% · EBITDA/invested capital 16.9%
 
 ## Valuation
-Market cap ₹3934 cr · TTM P/E 11.1 · PEG 0.02 · EV/EBITDA 7.6 · EPS growth minus 12-month price return 210.3 pts
+Market cap ₹3757 cr · TTM P/E 10.6 · PEG 0.01 · EV/EBITDA 7.3 · EPS growth minus 12-month price return 216.6 pts
 
 ## Industry (same NSE industry, this scan)
-115 peers · 52% growing revenue >20% · 22% expanding EBITDA margin · median revenue YoY 21.3%
+114 peers · 52% growing revenue >20% · 22% expanding EBITDA margin · median revenue YoY 21.2%
 
 Discovery score 5.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 53.3 pts, turnaround False) · fast lane: True · source: fast_lane
 

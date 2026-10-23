@@ -1,4 +1,4 @@
-# SHAREINDIA — source filing text (extracted 2026-10-22 from NSE PDFs; first 8000 characters each)
+# SHAREINDIA — source filing text (extracted 2026-10-23 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-22 · Credit Rating- Revision
 Source: https://nsearchives.nseindia.com/corporate/SISL_22102026175645_Reg30_Credit_Rating_Acuite221026Signed.pdf

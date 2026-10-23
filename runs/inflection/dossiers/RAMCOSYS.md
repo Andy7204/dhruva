@@ -1,8 +1,8 @@
 # RAMCOSYS — Ramco Systems Limited (Unclassified)
-Evidence dossier generated 2026-10-22 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-23 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 36.1 · Stage 2 score 141.9 · score 20 sessions ago  · 60 sessions ago 
-Price ₹530.90 · 12-month return -9.1% · -40.1% from 52-week high · RS rank 44.0 · stage-2 trend False · turnover ₹3.67 cr/day
+Price ₹529.35 · 12-month return -8.7% · -40.3% from 52-week high · RS rank 51.0 · stage-2 trend False · turnover ₹3.61 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 7.1% · QoQ % (previous QoQ 3.9%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 3.21 · class: healthy · receivables growth 21.5% vs revenue 18.5% · i
 Net debt/EBITDA 0.16 · interest cover 28.5 · dilution 0.5% · ROE 12.0% · EBITDA/invested capital 38.9%
 
 ## Valuation
-Market cap ₹1989 cr · TTM P/E 48.0 · PEG  · EV/EBITDA 14.8 · EPS growth minus 12-month price return -26.9 pts
+Market cap ₹1983 cr · TTM P/E 47.8 · PEG  · EV/EBITDA 14.7 · EPS growth minus 12-month price return -27.3 pts
 
 ## Industry (same NSE industry, this scan)
-741 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.2%
+742 peers · 46% growing revenue >20% · 41% expanding EBITDA margin · median revenue YoY 18.0%
 
 Discovery score 5.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change -7.8 pts, turnaround False) · fast lane: True · source: fast_lane
 
@@ -28,6 +28,8 @@ Discovery score 5.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0
 Flags: other income over 25% of pre-tax profit
 
 ## Recent relevant NSE filings (newest first)
+- 2026-10-23 · Press Release · Ramco Systems Limited has informed the Exchange regarding a press release dated October 23, 2026, titled "Ramco Systems posts Q2 revenue of USD 19.20m, up 4% QoQ". · https://nsearchives.nseindia.com/corporate/RAMCOSYS_23102026193115_23102026PressRelease.pdf
+- 2026-10-23 · Outcome of Board Meeting · Ramco Systems Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. · https://nsearchives.nseindia.com/corporate/RAMCOSYS_23102026184228_23102026OutcomeofBoardMeeting.pdf
 - 2026-10-22 · Credit Rating- Revision · Ramco Systems Limited has informed the Exchange about Credit Rating- Revision · https://nsearchives.nseindia.com/corporate/RAMCOSYS_22102026185239_22102026CreditRatingUpgradation.pdf
 - 2026-10-13 · Press Release · Ramco Systems Limited has informed the Exchange regarding a press release dated October 13, 2026, titled "Ramco Aviation Receives Frost & Sullivan's 2026 Global Technology Innovation Leadership Recogn · https://nsearchives.nseindia.com/corporate/RAMCOSYS_13102026154819_13102026PressRelease.pdf
 - 2026-10-07 · Press Release · Ramco Systems Limited has informed the Exchange regarding a press release dated October 07, 2026, titled "Ramco Systems and Baker Tilly SM Envoy Consultancy LLC partner to simplify payroll for UAE bus · https://nsearchives.nseindia.com/corporate/RAMCOSYS_07102026111938_07102026PressRelease.pdf
@@ -41,7 +43,5 @@ Flags: other income over 25% of pre-tax profit
 - 2026-07-30 · Press Release · Ramco Systems Limited has informed the Exchange regarding a press release dated July 30, 2026, titled  Aurecon goes live on Ramco Payce  which is being released to the press from our end.". · https://nsearchives.nseindia.com/corporate/RAMCOSYS_30072026113225_30072026PressRelease.pdf
 - 2026-07-29 · Press Release · Ramco Systems Limited has informed the Exchange regarding a press release dated July 29, 2026, titled "CFS Aero Selects Ramco Aviation". · https://nsearchives.nseindia.com/corporate/RAMCOSYS_29072026153009_29072026PressRelease.pdf
 - 2026-07-23 · Press Release · Ramco Systems Limited has informed the Exchange regarding a press release dated July 23, 2026, titled "Ramco Systems posts Q1 revenue of USD 18.38m". · https://nsearchives.nseindia.com/corporate/RAMCOSYS_23072026200146_PressReleaseonQ1FY26-27.pdf
-- 2026-07-23 · Outcome of Board Meeting · Ramco Systems Limited has submitted to the Exchange, the financial results for the period ended Jun 30, 2026. · https://nsearchives.nseindia.com/corporate/RAMCOSYS_23072026192022_OutcomeoftheBoardMeeting23072026.pdf
-- 2026-07-02 · Press Release · Ramco Systems Limited has informed the Exchange regarding a press release dated July 02, 2026, titled "Ramco Systems appoints Sandesh Bilagi as Chief Executive Officer". · https://nsearchives.nseindia.com/corporate/RAMCOSYS_02072026195354_02072026PressReleaseCEOAppointment.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

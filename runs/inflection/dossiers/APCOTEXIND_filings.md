@@ -1,4 +1,4 @@
-# APCOTEXIND — source filing text (extracted 2026-10-22 from NSE PDFs; first 8000 characters each)
+# APCOTEXIND — source filing text (extracted 2026-10-23 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-22 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/APCOTEXIND_22102026182058_Intimation_of_Concall_-_signed.pdf

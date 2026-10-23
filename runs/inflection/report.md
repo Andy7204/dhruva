@@ -1,20 +1,18 @@
-# Dhruva inflection report — 2026-10-22
+# Dhruva inflection report — 2026-10-23
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
 ## Fast lane (material filings this week)
+- JYOTISTRUC 2026-10-23: Bagging/Receiving of orders/contracts — order ≈54% of annual revenue (after firmness haircut) (price ₹8.15999984741211)
+- KEC 2026-10-23: Bagging/Receiving of orders/contracts — order ≈30% of annual revenue (after firmness haircut) (price ₹327.75)
+- WELCORP 2026-10-23: Bagging/Receiving of orders/contracts — order ≈22% of annual revenue (after firmness haircut) (price ₹2388.699951171875)
 - RAMCOSYS 2026-10-22: Credit Rating- Revision — credit rating upgrade (price ₹530.9000244140625)
 - SHAREINDIA 2026-10-22: Credit Rating- Revision — credit rating upgrade (price ₹179.7899932861328)
-- KECL 2026-10-22: Credit Rating- Revision — credit rating upgrade (price ₹109.29000091552734)
-- SUDARSCHEM 2026-10-20: Credit Rating- New — credit rating upgrade (price ₹1121.699951171875)
-- KPIL 2026-10-16: Credit Rating — credit rating upgrade (price ₹1364.300048828125)
 
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| SHAREINDIA | DISCOVER | RESEARCH | ₹0 | 179.79 | fast-lane event or discovery >= 60 |
-| RAMCOSYS | DISCOVER | RESEARCH | ₹0 | 530.9 | fast-lane event or discovery >= 60 |
-| KECL | DISCOVER | RESEARCH | ₹0 | 109.29 | fast-lane event or discovery >= 60 |
+| none | | | | | |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -69,21 +67,22 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KECL | 16 | — | 11.0 | -22.9 | YELLOW | RESEARCH | 2026-10-22 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- SUDARSCHEM (Chemicals): discovery 8.1, confirmation 76.1, source fast_lane
 - SHAREINDIA (Financial Services): discovery 5.0, confirmation 79.2, source fast_lane
-- KPIL (Construction): discovery 30.0, confirmation 54.4, source fast_lane,discovery
+- JYOTISTRUC (Unclassified): discovery 25.7, confirmation 69.8, source fast_lane,discovery
+- WELCORP (Capital Goods): discovery 33.6, confirmation 65.2, source fast_lane,discovery
 - RAMCOSYS (Unclassified): discovery 5.0, confirmation 36.1, source fast_lane
-- KECL (Unclassified): discovery 5.0, confirmation 30.8, source fast_lane
-- NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.7, source confirmation
+- KEC (Construction): discovery 25.0, confirmation 29.3, source fast_lane
+- NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.8, source confirmation
 - DEEPAKNTR (Chemicals): discovery 8.6, confirmation 92.9, source confirmation
 - ALKYLAMINE (Chemicals): discovery 15.0, confirmation 92.8, source confirmation
 - GANDHAR (Unclassified): discovery 15.0, confirmation 93.6, source confirmation
 - APCOTEXIND (Unclassified): discovery 15.0, confirmation 93.0, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- SHAREINDIA: fast lane: fast_lane
-- RAMCOSYS: fast lane: fast_lane
-- KECL: fast lane: fast_lane
+- JYOTISTRUC: fast lane: fast_lane,discovery
+- WELCORP: fast lane: fast_lane,discovery
+- RAMCOSYS: new filing: Outcome of Board Meeting
+- KEC: new filing: Bagging/Receiving of orders/contracts
 
 ## Missed-winner audit (1 cases logged; 0 new today)
 
