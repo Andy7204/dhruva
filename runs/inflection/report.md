@@ -12,7 +12,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| SHAREINDIA | DISCOVER | RESEARCH | ₹0 | 179.79 | fast-lane event or discovery >= 60 |
+| RAMCOSYS | DISCOVER | RESEARCH | ₹0 | 530.9 | fast-lane event or discovery >= 60 |
+| KECL | DISCOVER | RESEARCH | ₹0 | 109.29 | fast-lane event or discovery >= 60 |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -32,6 +34,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KERNEX | RESEARCH | 2026-10-19 | ₹0 | 42.9 | 62 | 43.2 | fast-lane event or discovery >= 60 |
 | MASFIN | RESEARCH | 2026-10-19 | ₹0 | 16.9 | 49 | 39.6 | fast-lane event or discovery >= 60 |
 | SUDARSCHEM | RESEARCH | 2026-10-21 | ₹0 | 16.9 | 36 | -12.9 | fast-lane event or discovery >= 60 |
+| SHAREINDIA | RESEARCH | 2026-10-22 | ₹0 | 11.8 | 35 | 0.4 | fast-lane event or discovery >= 60 |
+| RAMCOSYS | RESEARCH | 2026-10-22 | ₹0 | 10.2 | 31 | -3.1 | fast-lane event or discovery >= 60 |
+| KECL | RESEARCH | 2026-10-22 | ₹0 | 11.0 | 16 | -22.9 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
@@ -56,9 +61,12 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | BUILDPRO | 37 | — | 13.0 | 12.5 | YELLOW | RESEARCH | 2026-10-15 |
 | SUDARSCHEM | 36 | — | 16.9 | -12.9 | YELLOW | RESEARCH | 2026-10-21 |
 | ARVIND | 35 | — | 13.0 | -1.5 | YELLOW | RESEARCH | 2026-10-12 |
+| SHAREINDIA | 35 | — | 11.8 | 0.4 | YELLOW | RESEARCH | 2026-10-22 |
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 | VIVIANA | 34 | 34 | 33.2 | 10.4 | YELLOW | RESEARCH | 2026-10-15 |
+| RAMCOSYS | 31 | — | 10.2 | -3.1 | YELLOW | RESEARCH | 2026-10-22 |
 | KEC | 21 | — | 33.0 | -7.2 | RED | DISCOVER | 2026-10-14 |
+| KECL | 16 | — | 11.0 | -22.9 | YELLOW | RESEARCH | 2026-10-22 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
 - SUDARSCHEM (Chemicals): discovery 8.1, confirmation 76.1, source fast_lane

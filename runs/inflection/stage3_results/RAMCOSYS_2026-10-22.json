@@ -1,0 +1,154 @@
+{
+ "symbol": "RAMCOSYS",
+ "company": "Ramco Systems Limited",
+ "sector": "Enterprise software (aviation MRO, payroll/HR SaaS)",
+ "discovery_judgement": 18,
+ "score": {
+  "demand_shock": 3,
+  "supply_constraint": 1,
+  "pricing_power": 2,
+  "revenue_acceleration": 3,
+  "operating_leverage": 1,
+  "eps_acceleration": 0,
+  "capacity_catalyst": 3,
+  "cash_flow_quality": 8,
+  "valuation_asymmetry": 3,
+  "management_governance": 3,
+  "balance_sheet": 4,
+  "total": 31
+ },
+ "confirmation_score": 31,
+ "band": "REJECT",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "REJECT",
+ "hard_numeric_fact": false,
+ "hard_numeric_fact_text": "Only filed quantity: Q1 FY27 revenue USD 18.38m (press release title); ICRA upgrade BBB+(Stable) to A-(Stable) on Rs150cr bank lines. Neither is an inflection.",
+ "new_evidence_type": "rating",
+ "reported_earnings_confirm": false,
+ "cfo_to_pat_value": 3.21,
+ "confirmation_falling": true,
+ "risk": {
+  "governance": "LOW",
+  "balance_sheet": "LOW: net debt/EBITDA 0.16, cover 28.5",
+  "cycle": "MEDIUM",
+  "liquidity": "MEDIUM: Rs3.7cr/day turnover",
+  "dilution": "LOW (0.5%)",
+  "order_firmness": "MEDIUM: only MoUs and partner announcements, no contract values"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "The fast-lane trigger is an ICRA rating upgrade, which is lagging evidence. Latest quarter revenue +7.1% YoY, EBITDA +1.9%, PAT -36%, incremental margin 4%; other income is over 25% of pre-tax profit (dossier flag), tax rate 84%. Press releases (customer wins, Safran MoU, UAE/Saudi payroll partners, an AI-native platform preview) carry no contract values. CFO/PAT 3.2 is good, but the P/E of 48 on falling EPS gives no asymmetry. A new CEO was appointed 2026-07-02. No inflection chain link is evidenced.",
+ "chain_missing_links": [
+  "revenue acceleration",
+  "operating leverage",
+  "EPS acceleration",
+  "quantified orders",
+  "valuation gap"
+ ],
+ "demand_signal": "Aviation customer announcements (Royal Jordanian, Pem-Air, CFS Aero) without values (MANAGEMENT CLAIM)",
+ "supply_signal": "n/a",
+ "pricing_signal": "unknown",
+ "order_book": "unknown; not disclosed in pack",
+ "capacity_catalyst": "AI-native platform preview (2026-09-10): product, no revenue date (MANAGEMENT CLAIM)",
+ "cfo_to_pat": "3.21 latest FY (CALCULATION); flattered by low PAT",
+ "debt": "Net debt/EBITDA 0.16; ICRA A-(Stable) long-term (FACT)",
+ "roce": "ROE 12.0%; EBITDA/invested capital 38.9% (CALCULATION)",
+ "valuation": "TTM P/E 48, EV/EBITDA 14.8 on falling EPS (CALCULATION); price 40% below 52w high.",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs EPS ~2x at constant multiple; recent trend is -36%",
+  "3x": "NO",
+  "5x": "NO",
+  "10x": "NO: 5x/10x NOT reasonably underwritable"
+ },
+ "kill_conditions": [
+  "Q2 FY27 revenue growth below 5% YoY",
+  "EBITDA margin below 14%",
+  "CEO exit or large unexplained other income dependence"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results",
+  "Disclosure of quantified contract wins",
+  "AI-native platform launch"
+ ],
+ "biggest_risk": "Low-growth software business with falling PAT priced at 48x earnings.",
+ "next_datapoint": "Q2 FY27 revenue in USD (Q1 base USD 18.38m) and EBITDA margin versus 15.8%.",
+ "confidence": "MEDIUM",
+ "material_change": "first review",
+ "sources": [
+  {
+   "claim": "ICRA upgraded Rs150cr bank facilities to A-(Stable)/A2+",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/RAMCOSYS_22102026185239_22102026CreditRatingUpgradation.pdf"
+  },
+  {
+   "claim": "Q1 FY27 revenue USD 18.38m",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/RAMCOSYS_23072026200146_PressReleaseonQ1FY26-27.pdf"
+  },
+  {
+   "claim": "AI-native platform preview and Safran MoU",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/RAMCOSYS_10092026132403_10092026PressRelease.pdf"
+  },
+  {
+   "claim": "Revenue +7.1%, EBITDA +1.9%, PAT -36.3% YoY; P/E 48",
+   "type": "CALCULATION",
+   "url": "runs/inflection/dossiers/RAMCOSYS.md"
+  }
+ ],
+ "scenarios": {
+  "bear": {
+   "probability": 0.35,
+   "fy2_eps": 10,
+   "fy3_eps": 11,
+   "fy5_eps": 12,
+   "exit_pe": 30,
+   "price": 300,
+   "multiple": 0.57,
+   "cagr_pct": -24.5,
+   "return_2y_pct": -43.0,
+   "assumptions": "EPS stagnant ~10, de-rating to 30x"
+  },
+  "base": {
+   "probability": 0.45,
+   "fy2_eps": 16,
+   "fy3_eps": 19,
+   "fy5_eps": 26,
+   "exit_pe": 32,
+   "price": 512,
+   "multiple": 0.96,
+   "cagr_pct": -2.0,
+   "return_2y_pct": -4.0,
+   "assumptions": "Revenue +8-10%, margins recover slightly, P/E 32 (ASSUMPTION)"
+  },
+  "bull": {
+   "probability": 0.17,
+   "fy2_eps": 24,
+   "fy3_eps": 32,
+   "fy5_eps": 50,
+   "exit_pe": 35,
+   "price": 840,
+   "multiple": 1.58,
+   "cagr_pct": 25.7,
+   "return_2y_pct": 58.0,
+   "assumptions": "Platform wins drive growth ~15%, margin to 20%"
+  },
+  "extreme_bull": {
+   "probability": 0.03,
+   "fy2_eps": 32,
+   "fy3_eps": 45,
+   "fy5_eps": 80,
+   "exit_pe": 38,
+   "price": 1216,
+   "multiple": 2.29,
+   "cagr_pct": 51.3,
+   "return_2y_pct": 129.0,
+   "assumptions": "AI platform adoption surge"
+  }
+ },
+ "ev_2y_pct": -3.1,
+ "bear_downside_pct": -43.0,
+ "bull_value_per_share": 840
+}

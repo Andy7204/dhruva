@@ -1,0 +1,156 @@
+{
+ "symbol": "KECL",
+ "company": "Kirloskar Electric Company Limited",
+ "sector": "Electrical equipment (motors, generators, transformers)",
+ "discovery_judgement": 20,
+ "score": {
+  "demand_shock": 3,
+  "supply_constraint": 2,
+  "pricing_power": 1,
+  "revenue_acceleration": 0,
+  "operating_leverage": 0,
+  "eps_acceleration": 0,
+  "capacity_catalyst": 2,
+  "cash_flow_quality": 3,
+  "valuation_asymmetry": 2,
+  "management_governance": 2,
+  "balance_sheet": 1,
+  "total": 16
+ },
+ "confirmation_score": 16,
+ "band": "REJECT",
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "REJECT",
+ "hard_numeric_fact": false,
+ "hard_numeric_fact_text": "Filed Q1 FY27 revenue Rs103.85cr vs Rs132.24cr (-21.5%), loss before tax Rs5.95cr vs profit Rs0.45cr. Positive filed facts are balance-sheet repair: CRISIL upgrade B+ to BB/Stable, MRA closure with Bank of India consortium, and Rs40cr promoter-group preferential at Rs115.34. None is an operating inflection.",
+ "new_evidence_type": "debt",
+ "reported_earnings_confirm": false,
+ "cfo_to_pat_value": 3.03,
+ "confirmation_falling": true,
+ "risk": {
+  "governance": "MEDIUM: promoter-group preferential; exchange sought clarification on Q1 results (2026-09-01)",
+  "balance_sheet": "HIGH: net debt/EBITDA 2.43, interest cover -0.1, CRISIL BB",
+  "cycle": "MEDIUM",
+  "liquidity": "HIGH: Rs1.9cr/day turnover",
+  "dilution": "MEDIUM: 34.68 lakh shares, about 5% of the post-issue base",
+  "order_firmness": "unknown: no order data in pack"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Fast-lane flag is a CRISIL upgrade from B+ to BB, which is lagging and still sub-investment grade. Operating data are going the wrong way: Q1 FY27 revenue -21.5% YoY, loss before tax Rs5.95cr, finance cost Rs5.25cr, EBITDA near zero. Positives are deleveraging steps (MRA closure, Rs40cr promoter-group equity at Rs115.34, above the current price of Rs109.29). Dossier CFO/PAT 3.03 and its 'productive growth' class conflict with the loss and receivables growing 43% against revenue 8%. No demand/supply/pricing evidence. Reject for now; revisit only on revenue growth and positive EBITDA.",
+ "chain_missing_links": [
+  "demand acceleration",
+  "order book",
+  "revenue acceleration",
+  "operating leverage",
+  "EPS",
+  "cash flow"
+ ],
+ "demand_signal": "unknown: no order inflow disclosed",
+ "supply_signal": "unknown",
+ "pricing_signal": "unknown",
+ "order_book": "unknown",
+ "capacity_catalyst": "None filed.",
+ "cfo_to_pat": "3.03 latest FY per dossier, but FY26 PAT was Rs8.45cr after a Rs8.09cr exceptional item; Q1 FY27 receivables rising; do not rely (CALCULATION)",
+ "debt": "Net debt/EBITDA 2.43; CRISIL BB/Stable on Rs115.63cr bank lines (FACT); Q1 finance cost Rs5.25cr (FACT)",
+ "roce": "ROE 6.4%; EBITDA/invested capital 14.4% (CALCULATION)",
+ "valuation": "TTM P/E 96.7, EV/EBITDA 24.1 (CALCULATION); market cap Rs726cr.",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs return to profit and about Rs10 EPS at 11x P/E-equivalent; no evidence",
+  "3x": "NO",
+  "5x": "NO",
+  "10x": "NO: 5x/10x NOT reasonably underwritable"
+ },
+ "kill_conditions": [
+  "Q2 FY27 revenue down YoY again",
+  "EBITDA negative for a second quarter",
+  "Further promoter-group dilution below market",
+  "Rating downgrade"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q2 FY27 results",
+  "Order wins disclosure",
+  "Interest cost reduction post MRA closure"
+ ],
+ "biggest_risk": "Revenue shrinking while debt costs consume operating profit; thin liquidity.",
+ "next_datapoint": "Q2 FY27 revenue and EBITDA versus Q1 revenue Rs103.85cr and EBITDA about -Rs0.4cr.",
+ "confidence": "MEDIUM",
+ "material_change": "first review",
+ "sources": [
+  {
+   "claim": "CRISIL upgraded Rs115.63cr bank loan facilities to BB/Stable and A4+",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/KECL_22102026163220_Credit_Rating.pdf"
+  },
+  {
+   "claim": "Allotted 34,68,007 shares at Rs115.34 to Kirloskar Power Equipments (Rs40cr); MRA with Bank of India consortium closed",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/KECL_23092026190530_Outcome_23092026.pdf"
+  },
+  {
+   "claim": "Q1 FY27 revenue Rs10,385 lakh vs Rs13,224 lakh; loss before tax Rs595 lakh",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/KECL_13082026132447_Outcome_Results_13082026_SGD.pdf"
+  },
+  {
+   "claim": "Dossier CFO/PAT 3.03 conflicts with loss-making latest quarter",
+   "type": "CALCULATION",
+   "url": "runs/inflection/dossiers/KECL.md"
+  }
+ ],
+ "scenarios": {
+  "bear": {
+   "probability": 0.35,
+   "fy2_eps": -1,
+   "fy3_eps": 1,
+   "fy5_eps": 2,
+   "exit_pe": 20,
+   "price": 45,
+   "multiple": 0.41,
+   "cagr_pct": -36.0,
+   "return_2y_pct": -59.0,
+   "assumptions": "Revenue keeps shrinking, losses persist, equity re-priced to assets"
+  },
+  "base": {
+   "probability": 0.45,
+   "fy2_eps": 3.5,
+   "fy3_eps": 5,
+   "fy5_eps": 8,
+   "exit_pe": 22,
+   "price": 77,
+   "multiple": 0.7,
+   "cagr_pct": -16.3,
+   "return_2y_pct": -30.0,
+   "assumptions": "Revenue recovers to FY26 level, thin margins, interest eased (ASSUMPTION)"
+  },
+  "bull": {
+   "probability": 0.17,
+   "fy2_eps": 7,
+   "fy3_eps": 10,
+   "fy5_eps": 16,
+   "exit_pe": 22,
+   "price": 154,
+   "multiple": 1.41,
+   "cagr_pct": 18.7,
+   "return_2y_pct": 41.0,
+   "assumptions": "Margin to 7% on Rs650cr revenue"
+  },
+  "extreme_bull": {
+   "probability": 0.03,
+   "fy2_eps": 12,
+   "fy3_eps": 18,
+   "fy5_eps": 28,
+   "exit_pe": 22,
+   "price": 264,
+   "multiple": 2.42,
+   "cagr_pct": 55.6,
+   "return_2y_pct": 142.0,
+   "assumptions": "Strong order cycle in power equipment"
+  }
+ },
+ "ev_2y_pct": -22.9,
+ "bear_downside_pct": -59.0,
+ "bull_value_per_share": 154
+}

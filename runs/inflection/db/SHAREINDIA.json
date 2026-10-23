@@ -1,0 +1,175 @@
+{
+ "symbol": "SHAREINDIA",
+ "discovered": "2026-10-22",
+ "discovery_price": 179.79,
+ "reviews": [
+  {
+   "date": "2026-10-22",
+   "trigger": "fast lane: fast_lane",
+   "stage2_score": 184.2,
+   "price": 179.79,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-23T02:33:11.628579+00:00",
+   "result": {
+    "symbol": "SHAREINDIA",
+    "company": "Share India Securities Limited",
+    "sector": "Financial Services (broking / proprietary trading)",
+    "discovery_judgement": 22,
+    "score": {
+     "demand_shock": 3,
+     "supply_constraint": 1,
+     "pricing_power": 2,
+     "revenue_acceleration": 6,
+     "operating_leverage": 5,
+     "eps_acceleration": 6,
+     "capacity_catalyst": 2,
+     "cash_flow_quality": 0,
+     "valuation_asymmetry": 6,
+     "management_governance": 2,
+     "balance_sheet": 2,
+     "total": 35
+    },
+    "confirmation_score": 35,
+    "band": "REJECT",
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": false,
+    "hard_numeric_fact_text": "No hard numeric fact usable: the only new filings are a withdrawn Acuite rating (A+/A1+ upgraded and withdrawn), a CRISIL A+/Stable on a proposed Rs250cr NCD, and a Rs200cr preferential warrant plan. Q1 FY27 results text was not in the filing pack (unknown).",
+    "new_evidence_type": "rating",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": -0.56,
+    "confirmation_falling": false,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "MEDIUM: Rs1,600cr bank lines plus Rs150cr NCDs withdrawn-rated; net debt/EBITDA 0.57 is meaningless for a broker",
+     "cycle": "HIGH: earnings depend on F&O volumes, proprietary/arbitrage trading gains and SEBI derivatives regulation",
+     "liquidity": "LOW: Rs25 cr/day turnover",
+     "dilution": "MEDIUM: Rs200cr convertible-warrant preferential (about 5% of Rs3,934cr market cap) approved 2026-09-21; plus Rs120cr new subsidiary investment",
+     "order_firmness": "n/a"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Dossier shows PAT +562% YoY and P/E 11, but these come from trading-income volatility, not an industry/company inflection chain. EBITDA margin of 112% is a data artefact of treating trading gains as revenue. CFO/PAT -0.56 and receivables +28.5% versus revenue +7.0% (latest FY) are weak. The new filings are rating housekeeping (Acuite withdrawal after the company switched to CRISIL) and a Rs200cr warrant raise. Cheap on trailing earnings, but earnings are cyclical and lumpy; no demand/supply/pricing link demonstrated. Wait for Q1 FY27 results text and normalised earnings.",
+    "chain_missing_links": [
+     "industry change",
+     "company advantage",
+     "pricing power",
+     "capacity",
+     "earnings quality (trading vs recurring broking income)",
+     "cash flow"
+    ],
+    "demand_signal": "unknown: no filed volume/client-addition data in pack",
+    "supply_signal": "n/a",
+    "pricing_signal": "unknown: brokerage yields and F&O regulation impact not in filings",
+    "order_book": "n/a (financial services)",
+    "capacity_catalyst": "New wealth-management subsidiary with up to Rs120cr investment (FACT, board outcome 2026-09-21); no revenue yet.",
+    "cfo_to_pat": "-0.56 latest FY (CALCULATION, dossier); class C/D",
+    "debt": "Net debt/EBITDA 0.57, interest cover 5.5 (dossier CALCULATION; weak meaning for a broker); bank facilities Rs1,600cr rated IVR A4 by Infomerics (rating withdrawn by company choice), CRISIL A+/Stable on NCDs",
+    "roce": "ROE 12.3% (dossier)",
+    "valuation": "TTM P/E 11.1, EV/EBITDA 7.6, market cap Rs3,934cr, price 21% below 52w high (CALCULATIONS). Low multiple reflects cyclical, trading-driven profit.",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs sustained EPS ~2x at unchanged P/E; trading profits mean-revert",
+     "3x": "NO: would need EPS tripling and rerating together",
+     "5x": "NO",
+     "10x": "NO: 5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "Q2 FY27 PAT falls below Rs50cr-equivalent run-rate of FY26 average with falling client/F&O volumes",
+     "Warrant issue priced at a deep discount to market or to non-promoter investors with weak disclosure",
+     "Adverse SEBI order on proprietary/algo trading or a further CFO deterioration"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (Oct/Nov 2026)",
+     "Final terms of Rs200cr warrants",
+     "Wealth-management subsidiary launch"
+    ],
+    "biggest_risk": "Profit is trading-driven and mean-reverting, with negative operating cash flow; low P/E may be a value trap.",
+    "next_datapoint": "Q2 FY27 results: split of broking vs proprietary income, CFO, and warrant pricing terms.",
+    "confidence": "LOW",
+    "material_change": "first review",
+    "sources": [
+     {
+      "claim": "Acuite upgraded to A+/A1+ and withdrew ratings after company moved to CRISIL",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/SISL_22102026175645_Reg30_Credit_Rating_Acuite221026Signed.pdf"
+     },
+     {
+      "claim": "CRISIL A+/Stable assigned to proposed Rs250cr NCD",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/SISL_29092026112946_CreditRatingCrisil29092026.pdf"
+     },
+     {
+      "claim": "Board approved Rs200cr preferential convertible warrants and up to Rs120cr investment in a new wealth subsidiary",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/SISL_21092026172244_OutcomeBM21092026finalsigned.pdf"
+     },
+     {
+      "claim": "Infomerics revised bank facility ratings to IVR A4 after company stopped seeking its ratings",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/SISL_18092026170317_CreditRatingInfomericssigned.pdf"
+     },
+     {
+      "claim": "PAT YoY +562%, EBITDA margin 112%, CFO/PAT -0.56, P/E 11.1 (conflicts with filings context: margin >100% is a data artefact)",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/SHAREINDIA.md"
+     }
+    ],
+    "scenarios": {
+     "bear": {
+      "probability": 0.35,
+      "fy2_eps": 14,
+      "fy3_eps": 12,
+      "fy5_eps": 12,
+      "exit_pe": 7,
+      "price": 98,
+      "multiple": 0.55,
+      "cagr_pct": -25.8,
+      "return_2y_pct": -45.0,
+      "assumptions": "Trading income normalises, EPS ~14 on FY+2, exit P/E 7"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 19,
+      "fy3_eps": 20,
+      "fy5_eps": 22,
+      "exit_pe": 9.5,
+      "price": 180,
+      "multiple": 1.0,
+      "cagr_pct": 0.0,
+      "return_2y_pct": 0.0,
+      "assumptions": "Flat-ish earnings, P/E ~9.5; warrant dilution offsets growth (ASSUMPTION)"
+     },
+     "bull": {
+      "probability": 0.2,
+      "fy2_eps": 25,
+      "fy3_eps": 30,
+      "fy5_eps": 38,
+      "exit_pe": 11,
+      "price": 275,
+      "multiple": 1.53,
+      "cagr_pct": 23.7,
+      "return_2y_pct": 53.0,
+      "assumptions": "Broking base grows with wealth arm, P/E 11"
+     },
+     "extreme_bull": {
+      "probability": 0.05,
+      "fy2_eps": 32,
+      "fy3_eps": 42,
+      "fy5_eps": 60,
+      "exit_pe": 12,
+      "price": 380,
+      "multiple": 2.11,
+      "cagr_pct": 45.3,
+      "return_2y_pct": 111.0,
+      "assumptions": "Sustained high F&O activity, rerating"
+     }
+    },
+    "ev_2y_pct": 0.4,
+    "bear_downside_pct": -45.0,
+    "bull_value_per_share": 275
+   }
+  }
+ ]
+}

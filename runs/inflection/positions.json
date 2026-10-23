@@ -369,5 +369,56 @@
   "discovery": 23.8,
   "confirmation": 59,
   "ev_2y_pct": -9.2
+ },
+ "SHAREINDIA": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-22",
+    "type": "rating",
+    "text": "No hard numeric fact usable: the only new filings are a withdrawn Acuite rating (A+/A1+ upgraded and withdrawn), a CRISIL A+/Stable on a proposed Rs250cr NCD, and a Rs200cr preferential warrant plan. Q1 FY27 results text was not in the filing pack (unknown)."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-22",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-22",
+  "discovery": 11.8,
+  "confirmation": 35,
+  "ev_2y_pct": 0.4
+ },
+ "RAMCOSYS": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-22",
+    "type": "rating",
+    "text": "Only filed quantity: Q1 FY27 revenue USD 18.38m (press release title); ICRA upgrade BBB+(Stable) to A-(Stable) on Rs150cr bank lines. Neither is an inflection."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-22",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-22",
+  "discovery": 10.2,
+  "confirmation": 31,
+  "ev_2y_pct": -3.1
+ },
+ "KECL": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-22",
+    "type": "debt",
+    "text": "Filed Q1 FY27 revenue Rs103.85cr vs Rs132.24cr (-21.5%), loss before tax Rs5.95cr vs profit Rs0.45cr. Positive filed facts are balance-sheet repair: CRISIL upgrade B+ to BB/Stable, MRA closure with Bank of India consortium, and Rs40cr promoter-group preferential at Rs115.34. None is an operating inflection."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-22",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-22",
+  "discovery": 11.0,
+  "confirmation": 16,
+  "ev_2y_pct": -22.9
  }
 }
