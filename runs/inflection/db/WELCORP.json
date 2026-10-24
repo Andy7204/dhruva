@@ -1,0 +1,175 @@
+{
+ "symbol": "WELCORP",
+ "discovered": "2026-10-23",
+ "discovery_price": 2388.7,
+ "reviews": [
+  {
+   "date": "2026-10-23",
+   "trigger": "fast lane: fast_lane,discovery",
+   "stage2_score": 169.8,
+   "price": 2388.7,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-24T02:33:10.448687+00:00",
+   "result": {
+    "company": "Welspun Corp Limited",
+    "sector": "Capital goods: large-diameter line pipes, DI pipes, TMT",
+    "discovery_judgement": 62,
+    "score": {
+     "demand_shock": 8,
+     "supply_constraint": 5,
+     "pricing_power": 6,
+     "revenue_acceleration": 3,
+     "operating_leverage": 6,
+     "eps_acceleration": 5,
+     "capacity_catalyst": 6,
+     "cash_flow_quality": 8,
+     "valuation_asymmetry": 2,
+     "management_governance": 4,
+     "balance_sheet": 5,
+     "total": 58
+    },
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "Record global order book ~USD 5.25bn (~Rs50,000cr) after a ~Rs5,500cr US coated line-pipe order (executed in FY29), against FY26 operating income of Rs16,749cr, so about 3x revenue (FACT; CALCULATION). CARE: PBILDT/tonne Rs11,922 (FY25) to Rs14,413 (FY26); net cash Rs202cr at March 2026.",
+    "new_evidence_type": "order",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": 1.99,
+    "confirmation_falling": false,
+    "risk": {
+     "governance": "LOW: CARE AA+ Stable reaffirmed 2026-10-15; no governance event in the pack",
+     "balance_sheet": "LOW: net cash Rs202cr (March 2026); net debt/EBITDA 0.24; gearing 0.39x",
+     "cycle": "MEDIUM: US line-pipe margins and steel prices are cyclical; DI pipe weak on Jal Jeevan funding slowdown",
+     "liquidity": "LOW: Rs421cr/day turnover",
+     "dilution": "LOW (0.6%)",
+     "order_firmness": "MEDIUM: orders are from US subsidiary, execution FY28-29; the Rs5,500cr order is tied to one hyperscaler data-centre anchor customer, firm contract wording not shown"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Welspun has a record, margin-rich US line-pipe backlog (about 3x FY26 revenue, executing FY27 to FY29) and a net-cash balance sheet, which is real visibility. But the earnings inflection is mostly in the future: Q1 revenue is only +4% YoY, and Q1 profit is flattered by a one-off (EPIC stake sale, dossier shows PAT margin 25.6% above EBITDA margin 17.0% and 98.9% one-off share of EBITDA). The share price is up 187% in 12 months at a TTM P/E of 28, so a lot of the backlog is priced. Domestic DI pipes are deteriorating. Interesting company, poor asymmetry at this price.",
+    "chain_missing_links": [
+     "revenue acceleration (Q1 +4% YoY; backlog converts from FY28)",
+     "recurring earnings separate from one-offs",
+     "valuation gap (price +187% in 12 months)",
+     "consensus/revisions (unknown)"
+    ],
+    "demand_signal": "US gas pipelines driven by LNG export and AI-data-centre power demand (CARE, FACT as rating-agency view); Permian pipeline for hyperscaler anchor customer (MANAGEMENT CLAIM)",
+    "supply_signal": "Few large US HFIW/line-pipe producers; supply tightness not evidenced numerically (unknown)",
+    "pricing_signal": "PBILDT/tonne +21% in FY26 to Rs14,413 (FACT, CARE); US orders higher-margin than domestic",
+    "order_book": "~USD 5.25bn (~Rs50,000cr) record (FACT, 2026-10-23 filing); CARE had >Rs42,000cr at 2026-08-20. Includes a ~USD 1.8bn order (2026-08-20, filing text not in pack), USD 412.5mn HFIW (FY28-29), ~Rs5,500cr Permian (FY29), and the associate EPIC Aramco SAR 771mn (Q4 FY27-Q1 FY28; EPIC is an associate, not consolidated revenue).",
+    "capacity_catalyst": "Upgraded HFIW mill at Little Rock (FACT, 2026-09-25 filing); balance of Rs5,500cr capex (~Rs1,800-2,000cr) in FY27 with no material delay (CARE).",
+    "cfo_to_pat": "1.99 latest FY (CALCULATION, dossier); healthy",
+    "debt": "Net cash Rs202cr at March 2026; gearing 0.39x; CARE AA+ Stable (FACT)",
+    "roce": "ROE 17.6%; EBITDA/invested capital 23.9% (CALCULATION)",
+    "valuation": "Mcap Rs62,991cr; TTM P/E 28.4; EV/EBITDA 23.5; price 16% below 52-week high after +187% in 12 months (CALCULATION). TTM EPS includes one-offs, so the clean P/E is higher.",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs FY28 EPS ~150 at P/E 32; roughly 1.8x the base earnings with no multiple contraction",
+     "3x": "NO",
+     "5x": "NO",
+     "10x": "NO: 5x/10x NOT reasonably underwritable at a Rs63,000cr starting market cap"
+    },
+    "kill_conditions": [
+     "Cancellation or deferral of the Permian or USD 1.8bn orders",
+     "US line-pipe margin per tonne falling below FY25 level (Rs11,922)",
+     "Net debt/PBILDT above 1x during capex",
+     "Q2/Q3 revenue growth still below 10% YoY while backlog is quoted as converting"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results",
+     "First deliveries from the USD 1.8bn and Rs4,000cr orders",
+     "Clean (ex one-off) EBITDA/tonne disclosure",
+     "Little Rock mill ramp"
+    ],
+    "biggest_risk": "Backlog already priced after a 187% move; one-off-inflated profit and a hyperscaler-linked order that could slip.",
+    "next_datapoint": "Q2 FY27 consolidated revenue growth and PBILDT/tonne ex one-offs (compare Q1 revenue +4% YoY, EBITDA margin 17.0%).",
+    "confidence": "MEDIUM",
+    "material_change": "First review. New fact: ~Rs5,500cr US order lifts order book to ~USD 5.25bn. Dossier conflict to check: dossier shows PAT margin (25.6%) above EBITDA margin (17.0%) and one-off share of EBITDA 98.9%, implying the Q1 PAT is not recurring; the Aug 20 order and Q1 results text were not in the filings pack, so I rely on CARE for the backlog bridge.",
+    "sources": [
+     {
+      "claim": "~Rs5,500cr US Permian order; order book ~USD 5.25bn; execution FY29",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/WELCORP_23102026090904_SEOrder.pdf"
+     },
+     {
+      "claim": "USD 412.5mn HFIW order; FY28-29; order book USD 4.7bn",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/WELCORP_25092026082837_SEDisclosureUSOrdersigned.pdf"
+     },
+     {
+      "claim": "EPIC (associate) Aramco contract SAR 771mn",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/WELCORP_20092026214050_SEDisclosureEPICOrdersigned.pdf"
+     },
+     {
+      "claim": "CARE AA+ Stable; FY26 TOI Rs16,749cr, PBILDT Rs2,207cr, net cash Rs202cr; DI pipe weak; EPIC stake sale Rs724cr",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/WELCORP_16102026194519_SEIntimationsigned.pdf"
+     },
+     {
+      "claim": "Q1 growth, one-off share, TTM P/E, CFO/PAT",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/WELCORP.md"
+     }
+    ],
+    "scenarios": {
+     "bear": {
+      "probability": 0.25,
+      "fy2_eps": 75,
+      "fy3_eps": 85,
+      "fy5_eps": 95,
+      "exit_pe": 15,
+      "price": 1125,
+      "multiple": 0.47,
+      "cagr_pct": -31.4,
+      "return_2y_pct": -52.9,
+      "assumptions": "US margins revert towards FY25, DI pipes weak, one-offs removed; exit P/E 15 (ASSUMPTION)"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 105,
+      "fy3_eps": 125,
+      "fy5_eps": 150,
+      "exit_pe": 22,
+      "price": 2310,
+      "multiple": 0.97,
+      "cagr_pct": -1.7,
+      "return_2y_pct": -3.3,
+      "assumptions": "Backlog converts FY28 at FY26 margins; recurring EPS ~Rs70 in FY27; P/E de-rates to 22 (ASSUMPTION)"
+     },
+     "bull": {
+      "probability": 0.28,
+      "fy2_eps": 135,
+      "fy3_eps": 165,
+      "fy5_eps": 200,
+      "exit_pe": 26,
+      "price": 3510,
+      "multiple": 1.47,
+      "cagr_pct": 21.2,
+      "return_2y_pct": 46.9,
+      "assumptions": "US mix rises, Little Rock ramp and full order execution (ASSUMPTION)"
+     },
+     "extreme_bull": {
+      "probability": 0.07,
+      "fy2_eps": 165,
+      "fy3_eps": 210,
+      "fy5_eps": 260,
+      "exit_pe": 30,
+      "price": 4950,
+      "multiple": 2.07,
+      "cagr_pct": 44.0,
+      "return_2y_pct": 107.2,
+      "assumptions": "More hyperscaler-linked orders and premium rating persists (ASSUMPTION)"
+     }
+    },
+    "ev_2y_pct": 6.1,
+    "bear_downside_pct": -52.9,
+    "bull_value_per_share": 3510,
+    "confirmation_score": 58,
+    "band": "REJECT",
+    "symbol": "WELCORP"
+   }
+  }
+ ]
+}

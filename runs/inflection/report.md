@@ -12,7 +12,9 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| none | | | | | |
+| JYOTISTRUC | DISCOVER | RESEARCH | ₹0 | 8.16 | fast-lane event or discovery >= 60 |
+| WELCORP | DISCOVER | RESEARCH | ₹0 | 2388.7 | fast-lane event or discovery >= 60 |
+| RAMCOSYS | RESEARCH | RESEARCH | ₹0 | 529.35 | fast-lane event or discovery >= 60 |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -33,8 +35,10 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | MASFIN | RESEARCH | 2026-10-19 | ₹0 | 16.9 | 49 | 39.6 | fast-lane event or discovery >= 60 |
 | SUDARSCHEM | RESEARCH | 2026-10-21 | ₹0 | 16.9 | 36 | -12.9 | fast-lane event or discovery >= 60 |
 | SHAREINDIA | RESEARCH | 2026-10-22 | ₹0 | 11.8 | 35 | 0.4 | fast-lane event or discovery >= 60 |
-| RAMCOSYS | RESEARCH | 2026-10-22 | ₹0 | 10.2 | 31 | -3.1 | fast-lane event or discovery >= 60 |
+| RAMCOSYS | RESEARCH | 2026-10-22 | ₹0 | 16.6 | 29 | 10.5 | fast-lane event or discovery >= 60 |
 | KECL | RESEARCH | 2026-10-22 | ₹0 | 11.0 | 16 | -22.9 | fast-lane event or discovery >= 60 |
+| JYOTISTRUC | RESEARCH | 2026-10-23 | ₹0 | 33.8 | 38 | 34.2 | fast-lane event or discovery >= 60 |
+| WELCORP | RESEARCH | 2026-10-23 | ₹0 | 45.0 | 58 | 6.1 | fast-lane event or discovery >= 60 |
 
 ## Underwritten radar (latest review, by Confirmation score)
 | Company | Confirmation | Prev | Discovery | EV 2y % | Status | State | Last review |
@@ -45,6 +49,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | ALKYLAMINE | 62 | — | 25.0 | 23.9 | YELLOW | DISCOVER | 2026-10-16 |
 | KERNEX | 62 | — | 42.9 | 43.2 | YELLOW | RESEARCH | 2026-10-19 |
 | APCOTEXIND | 59 | — | 23.8 | -9.2 | YELLOW | DISCOVER | 2026-10-21 |
+| WELCORP | 58 | — | 45.0 | 6.1 | YELLOW | RESEARCH | 2026-10-23 |
 | ELLEN | 55 | — | — | — | YELLOW |  | 2026-09-29 |
 | GANDHAR | 52 | — | 21.0 | 0.3 | YELLOW | DISCOVER | 2026-10-16 |
 | LUPIN | 52 | — | 10.9 | 7.8 | YELLOW | DISCOVER | 2026-10-16 |
@@ -55,6 +60,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | MAXHEALTH | 42 | — | 19.8 | 5.0 | YELLOW | RESEARCH | 2026-10-12 |
 | HBLENGINE | 40 | — | 24.3 | 2.8 | YELLOW | RESEARCH | 2026-10-12 |
 | TARIL | 39 | — | 37.2 | 17.6 | YELLOW | RESEARCH | 2026-10-06 |
+| JYOTISTRUC | 38 | — | 33.8 | 34.2 | YELLOW | RESEARCH | 2026-10-23 |
 | LT | 38 | 37 | 34.2 | 19.9 | YELLOW | RESEARCH | 2026-10-12 |
 | BUILDPRO | 37 | — | 13.0 | 12.5 | YELLOW | RESEARCH | 2026-10-15 |
 | SUDARSCHEM | 36 | — | 16.9 | -12.9 | YELLOW | RESEARCH | 2026-10-21 |
@@ -62,7 +68,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | SHAREINDIA | 35 | — | 11.8 | 0.4 | YELLOW | RESEARCH | 2026-10-22 |
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 | VIVIANA | 34 | 34 | 33.2 | 10.4 | YELLOW | RESEARCH | 2026-10-15 |
-| RAMCOSYS | 31 | — | 10.2 | -3.1 | YELLOW | RESEARCH | 2026-10-22 |
+| RAMCOSYS | 29 | 31 | 16.6 | 10.5 | YELLOW | RESEARCH | 2026-10-23 |
 | KEC | 21 | — | 33.0 | -7.2 | RED | DISCOVER | 2026-10-14 |
 | KECL | 16 | — | 11.0 | -22.9 | YELLOW | RESEARCH | 2026-10-22 |
 

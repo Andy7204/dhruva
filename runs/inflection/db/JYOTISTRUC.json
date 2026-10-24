@@ -1,0 +1,181 @@
+{
+ "symbol": "JYOTISTRUC",
+ "discovered": "2026-10-23",
+ "discovery_price": 8.16,
+ "reviews": [
+  {
+   "date": "2026-10-23",
+   "trigger": "fast lane: fast_lane,discovery",
+   "stage2_score": 175.6,
+   "price": 8.16,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-24T02:33:10.098496+00:00",
+   "result": {
+    "company": "Jyoti Structures Limited",
+    "sector": "Power transmission EPC (T&D towers, lines, substations)",
+    "discovery_judgement": 46,
+    "score": {
+     "demand_shock": 6,
+     "supply_constraint": 3,
+     "pricing_power": 2,
+     "revenue_acceleration": 7,
+     "operating_leverage": 6,
+     "eps_acceleration": 6,
+     "capacity_catalyst": 2,
+     "cash_flow_quality": 0,
+     "valuation_asymmetry": 5,
+     "management_governance": 1,
+     "balance_sheet": 0,
+     "total": 38
+    },
+    "status": "YELLOW",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "GETCO LoA Rs689.93cr (765kV DC Pachchham-Saykha, 42 months, turnkey) filed 2026-10-23; about 54% of annual revenue per the dossier, but only ~Rs197cr/yr of revenue over 42 months (CALCULATION). Q1 FY27 total income Rs255.18cr (+57.1% YoY), EBITDA Rs24.97cr (+90.0%), net profit Rs19.46cr (+74.4%) (FACT, standalone press release).",
+    "new_evidence_type": "order",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": -4.8,
+    "confirmation_falling": false,
+    "risk": {
+     "governance": "MEDIUM: CFO role relinquished 2026-10-15 (replaced by a 36-year insider, outgoing CFO stays as WTD to 2028); internal auditor Bhushan Khot removed 2026-08-04; NSE sought clarification on Q1 results 2026-08-28; history of restructuring",
+     "balance_sheet": "HIGH: net debt/EBITDA 28.4, EBITDA/invested capital 2.7% (dossier, CALCULATION)",
+     "cycle": "MEDIUM: T&D capex cycle strong but EPC margins are thin and order-driven",
+     "liquidity": "LOW: Rs4.6cr/day turnover",
+     "dilution": "HIGH: board is evaluating raising up to Rs250cr (about 26% of the Rs974cr market cap) and authorised capital was raised to 160cr shares",
+     "order_firmness": "MEDIUM: single LoA from a state utility, not yet a contract; 42-month execution"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Q1 FY27 shows real operating leverage (income +57%, EBITDA +90%) and a Rs690cr GETCO LoA adds a transmission order. But the cash flow does not support it: CFO/PAT is -4.8, net debt/EBITDA is 28x and the receivables base is a legacy problem. PAT is helped by a ~1% tax rate, the dossier flags 17.5% of EBITDA as one-off, a Rs250cr fund raise is under consideration, and the CFO seat and internal-audit arrangements changed within 11 weeks. The order is large against the market cap but spreads over 42 months. Not a clean inflection yet.",
+    "chain_missing_links": [
+     "cash-flow conversion (CFO/PAT -4.8)",
+     "balance-sheet capacity to fund working capital without dilution",
+     "pricing power",
+     "reported margin durability (one-offs)",
+     "consensus/revision data (unknown)"
+    ],
+    "demand_signal": "Gujarat 765kV transmission award plus Sri Lanka 220kV contract; sector tender flow strong (MANAGEMENT CLAIM, press release 2026-10-23)",
+    "supply_signal": "unknown; EPC execution capacity not disclosed",
+    "pricing_signal": "unknown; EBITDA margin 9.8% on company definition (FACT) vs 8.4% in dossier",
+    "order_book": "Total order book unknown (not in filings pack). Disclosed LoAs: Rs689.93cr (2026-10-23), Rs67.96cr (2026-05-13). GETCO order is a Letter of Award, so I haircut it 50% until a contract and revenue appear (rule).",
+    "capacity_catalyst": "none disclosed; Ahmedabad project office opened (MANAGEMENT CLAIM)",
+    "cfo_to_pat": "-4.80 latest FY (CALCULATION, dossier); class C/D",
+    "debt": "Net debt/EBITDA 28.4; interest cover 9.5 (CALCULATION)",
+    "roce": "ROE 11.8%; EBITDA/invested capital 2.7% (CALCULATION)",
+    "valuation": "Mcap Rs974cr; TTM P/E 15.1; EV/EBITDA 42.3 (CALCULATION). EV/EBITDA at 42x against 15x P/E shows the P/E relies on low tax and the thin EBITDA base.",
+    "management_credibility": "MEDIUM",
+    "plausible": {
+     "2x": "NO: needs FY28 EPS ~1.5 at P/E 11, i.e. a roughly 2.5x jump in earnings with no dilution; an announced fund raise works against it",
+     "3x": "NO",
+     "5x": "NO",
+     "10x": "NO: 5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "Equity raise at a deep discount or large promoter-linked preferential issue",
+     "Q2 FY27 CFO/PAT still negative or receivables rising faster than revenue",
+     "Q2 revenue growth below 25% YoY or EBITDA margin below 8%",
+     "Auditor qualification or further KMP exits"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results (Nov 2026)",
+     "GETCO contract signing and mobilisation advance",
+     "Fund-raise terms",
+     "Disclosure of total order book"
+    ],
+    "biggest_risk": "Working-capital-heavy EPC with 28x net debt/EBITDA; growth consumes cash and the Rs250cr raise dilutes holders.",
+    "next_datapoint": "Q2 FY27 results: CFO/PAT, receivables, tax rate and the size and price of the Rs250cr fund raise.",
+    "confidence": "MEDIUM",
+    "material_change": "First review. New fact since the dossier base: GETCO Rs689.93cr LoA (2026-10-23). CFO change (2026-10-15) is a governance flag. Dossier conflict: the dossier shows EBITDA +208% YoY and margin 8.4%, while the company press release says EBITDA +90% and margin 9.79% (differing definitions/other income). I use the company filing for growth and the dossier for forensics.",
+    "sources": [
+     {
+      "claim": "GETCO LoA Rs689.93cr, 42 months, turnkey, not related party",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/JYOTISTRUC_23102026085820_Intimation.pdf"
+     },
+     {
+      "claim": "Q1 FY27 income 255.18cr (+57.1%), EBITDA 24.97cr (+90%), PAT 19.46cr (+74.4%)",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/JYOTISTRUC_04082026165603_PressReleaseJune26.pdf"
+     },
+     {
+      "claim": "Board evaluating Rs250cr raise; internal auditor removed",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/JYOTISTRUC_04082026161638_Finaloutcome.pdf"
+     },
+     {
+      "claim": "CFO relinquished; WTD extended to June 2028",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/JYOTISTRUC_15102026175945_outcome_.pdf"
+     },
+     {
+      "claim": "Authorised capital raised from 128.15cr to 160cr shares",
+      "type": "FACT",
+      "url": "https://nsearchives.nseindia.com/corporate/JYOTISTRUC_20072026175708_outcome__1_.pdf"
+     },
+     {
+      "claim": "CFO/PAT -4.8, net debt/EBITDA 28.4, P/E 15.1",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/JYOTISTRUC.md"
+     }
+    ],
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 0.3,
+      "fy3_eps": 0.35,
+      "fy5_eps": 0.4,
+      "exit_pe": 8,
+      "price": 2.4,
+      "multiple": 0.29,
+      "cagr_pct": -45.8,
+      "return_2y_pct": -70.6,
+      "assumptions": "Margin falls back to ~6%, Rs250cr raise at a discount adds ~26%+ shares, working capital absorbs cash; exit P/E 8 (ASSUMPTION)"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 0.75,
+      "fy3_eps": 0.85,
+      "fy5_eps": 1.0,
+      "exit_pe": 14,
+      "price": 10.5,
+      "multiple": 1.29,
+      "cagr_pct": 13.4,
+      "return_2y_pct": 28.7,
+      "assumptions": "Revenue ~Rs1,300cr, EBITDA margin ~9%, tax normalises partly, dilution ~20%; exit P/E 14 (ASSUMPTION)"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 1.1,
+      "fy3_eps": 1.4,
+      "fy5_eps": 1.8,
+      "exit_pe": 16,
+      "price": 17.6,
+      "multiple": 2.16,
+      "cagr_pct": 46.9,
+      "return_2y_pct": 115.7,
+      "assumptions": "Order inflow of Rs2,000cr+ converts at 10% margins and FCF turns positive (ASSUMPTION)"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 1.5,
+      "fy3_eps": 2.0,
+      "fy5_eps": 2.6,
+      "exit_pe": 18,
+      "price": 27.0,
+      "multiple": 3.31,
+      "cagr_pct": 81.9,
+      "return_2y_pct": 230.9,
+      "assumptions": "Rerating as balance sheet repairs and book exceeds Rs4,000cr (ASSUMPTION)"
+     }
+    },
+    "ev_2y_pct": 34.2,
+    "bear_downside_pct": -70.6,
+    "bull_value_per_share": 17.6,
+    "confirmation_score": 38,
+    "band": "REJECT",
+    "symbol": "JYOTISTRUC"
+   }
+  }
+ ]
+}

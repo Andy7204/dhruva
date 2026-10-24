@@ -26,3 +26,6 @@
 {"date": "2026-10-22", "from": "DISCOVER", "inr": 0, "price": 179.79, "reason": "fast-lane event or discovery >= 60", "symbol": "SHAREINDIA", "to": "RESEARCH"}
 {"date": "2026-10-22", "from": "DISCOVER", "inr": 0, "price": 530.9, "reason": "fast-lane event or discovery >= 60", "symbol": "RAMCOSYS", "to": "RESEARCH"}
 {"date": "2026-10-22", "from": "DISCOVER", "inr": 0, "price": 109.29, "reason": "fast-lane event or discovery >= 60", "symbol": "KECL", "to": "RESEARCH"}
+{"date": "2026-10-23", "from": "DISCOVER", "inr": 0, "price": 8.16, "reason": "fast-lane event or discovery >= 60", "symbol": "JYOTISTRUC", "to": "RESEARCH"}
+{"date": "2026-10-23", "from": "DISCOVER", "inr": 0, "price": 2388.7, "reason": "fast-lane event or discovery >= 60", "symbol": "WELCORP", "to": "RESEARCH"}
+{"date": "2026-10-23", "from": "RESEARCH", "inr": 0, "price": 529.35, "reason": "fast-lane event or discovery >= 60", "symbol": "RAMCOSYS", "to": "RESEARCH"}

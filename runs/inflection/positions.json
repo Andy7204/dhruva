@@ -394,15 +394,20 @@
     "date": "2026-10-22",
     "type": "rating",
     "text": "Only filed quantity: Q1 FY27 revenue USD 18.38m (press release title); ICRA upgrade BBB+(Stable) to A-(Stable) on Rs150cr bank lines. Neither is an inflection."
+   },
+   {
+    "date": "2026-10-23",
+    "type": "order",
+    "text": "Q2 FY27 (filed 2026-10-23): revenue USD 19.20mn (+4% QoQ from USD 18.38mn), EBITDA USD 2.87mn (14.8% of USD 19.35mn income vs 15.8% in the dossier for Q1), consolidated net profit Rs0.24cr, unexecuted order book USD 161mn (about 2x annualised revenue; prior-quarter figure not in pack)."
    }
   ],
   "entries": [],
   "since": "2026-10-22",
   "last_reason": "fast-lane event or discovery >= 60",
-  "last_review": "2026-10-22",
-  "discovery": 10.2,
-  "confirmation": 31,
-  "ev_2y_pct": -3.1
+  "last_review": "2026-10-23",
+  "discovery": 16.6,
+  "confirmation": 29,
+  "ev_2y_pct": 10.5
  },
  "KECL": {
   "state": "RESEARCH",
@@ -420,5 +425,39 @@
   "discovery": 11.0,
   "confirmation": 16,
   "ev_2y_pct": -22.9
+ },
+ "JYOTISTRUC": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-23",
+    "type": "order",
+    "text": "GETCO LoA Rs689.93cr (765kV DC Pachchham-Saykha, 42 months, turnkey) filed 2026-10-23; about 54% of annual revenue per the dossier, but only ~Rs197cr/yr of revenue over 42 months (CALCULATION). Q1 FY27 total income Rs255.18cr (+57.1% YoY), EBITDA Rs24.97cr (+90.0%), net profit Rs19.46cr (+74.4%) (FACT, standalone press release)."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-23",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-23",
+  "discovery": 33.8,
+  "confirmation": 38,
+  "ev_2y_pct": 34.2
+ },
+ "WELCORP": {
+  "state": "RESEARCH",
+  "evidence": [
+   {
+    "date": "2026-10-23",
+    "type": "order",
+    "text": "Record global order book ~USD 5.25bn (~Rs50,000cr) after a ~Rs5,500cr US coated line-pipe order (executed in FY29), against FY26 operating income of Rs16,749cr, so about 3x revenue (FACT; CALCULATION). CARE: PBILDT/tonne Rs11,922 (FY25) to Rs14,413 (FY26); net cash Rs202cr at March 2026."
+   }
+  ],
+  "entries": [],
+  "since": "2026-10-23",
+  "last_reason": "fast-lane event or discovery >= 60",
+  "last_review": "2026-10-23",
+  "discovery": 45.0,
+  "confirmation": 58,
+  "ev_2y_pct": 6.1
  }
 }

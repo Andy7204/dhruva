@@ -1,0 +1,155 @@
+{
+ "company": "Ramco Systems Limited",
+ "sector": "Enterprise software (aviation MRO, payroll/HR SaaS)",
+ "discovery_judgement": 34,
+ "score": {
+  "demand_shock": 4,
+  "supply_constraint": 1,
+  "pricing_power": 2,
+  "revenue_acceleration": 3,
+  "operating_leverage": 0,
+  "eps_acceleration": 0,
+  "capacity_catalyst": 3,
+  "cash_flow_quality": 6,
+  "valuation_asymmetry": 3,
+  "management_governance": 3,
+  "balance_sheet": 4,
+  "total": 29
+ },
+ "status": "YELLOW",
+ "proposed_state": "RESEARCH",
+ "action": "REJECT",
+ "hard_numeric_fact": true,
+ "hard_numeric_fact_text": "Q2 FY27 (filed 2026-10-23): revenue USD 19.20mn (+4% QoQ from USD 18.38mn), EBITDA USD 2.87mn (14.8% of USD 19.35mn income vs 15.8% in the dossier for Q1), consolidated net profit Rs0.24cr, unexecuted order book USD 161mn (about 2x annualised revenue; prior-quarter figure not in pack).",
+ "new_evidence_type": "order",
+ "reported_earnings_confirm": false,
+ "cfo_to_pat_value": 3.21,
+ "confirmation_falling": true,
+ "risk": {
+  "governance": "LOW",
+  "balance_sheet": "LOW: net debt/EBITDA 0.16; ICRA upgraded to A-(Stable) on 2026-10-22",
+  "cycle": "MEDIUM",
+  "liquidity": "MEDIUM: Rs3.6cr/day turnover",
+  "dilution": "LOW (ESOP only, ~0.5%)",
+  "order_firmness": "MEDIUM: order book is unexecuted multi-year; CEO cites highest bookings in eight quarters but gives no value"
+ },
+ "capital_to_deploy_inr": 0,
+ "thesis": "Q2 shows a modest recovery: revenue +4% QoQ, an unexecuted order book of USD 161mn and the CEO calling order booking the highest in eight quarters (MANAGEMENT CLAIM). But reported profit is near zero (consolidated PAT Rs0.24cr; standalone loss Rs127mn in Q2), EBITDA margin slipped to 14.8%, and management says it will keep investing in AI talent, product and sales for two more quarters before revenue benefits. At a TTM P/E near 48 on falling EPS, an early-stage story without profit leverage is not enough. Revenue growth is mid-single digit.",
+ "chain_missing_links": [
+  "revenue acceleration",
+  "operating leverage (EBITDA margin falling)",
+  "EPS acceleration (PAT ~nil)",
+  "valuation gap",
+  "quantified order value and prior order-book comparison"
+ ],
+ "demand_signal": "Aviation and payroll wins in Middle East/Europe/SE Asia; bookings highest in eight quarters (MANAGEMENT CLAIM)",
+ "supply_signal": "n/a",
+ "pricing_signal": "unknown",
+ "order_book": "Unexecuted order book USD 161mn, up from an unknown prior level (FACT, press release 2026-10-23); recurring revenue USD 12.09mn in Q2",
+ "capacity_catalyst": "AI-native product transition; investment continues 2 quarters, benefit expected later (MANAGEMENT CLAIM)",
+ "cfo_to_pat": "3.21 latest FY (CALCULATION); distorted by low PAT",
+ "debt": "Net debt/EBITDA 0.16; cash USD 13.65mn (FACT); ICRA A-(Stable) (FACT)",
+ "roce": "ROE 12.0%; EBITDA/invested capital 38.9% (CALCULATION, dossier)",
+ "valuation": "Mcap Rs1,983cr; TTM P/E 47.8; EV/EBITDA 14.7 (CALCULATION); H1 FY27 earnings near zero so the forward multiple is higher",
+ "management_credibility": "MEDIUM",
+ "plausible": {
+  "2x": "NO: needs EPS to rise from ~Rs3 to ~Rs25 at P/E 40 within two years",
+  "3x": "NO",
+  "5x": "NO",
+  "10x": "NO: 5x/10x NOT reasonably underwritable"
+ },
+ "kill_conditions": [
+  "Q3 FY27 USD revenue growth below 2% QoQ",
+  "EBITDA margin below 13%",
+  "Order book falling back below USD 150mn",
+  "Standalone losses widening with no subsidiary dividends"
+ ],
+ "kill_condition_triggered": null,
+ "catalysts": [
+  "Q3 FY27 results",
+  "Quantified contract wins and order book trend",
+  "AI-native product launches"
+ ],
+ "biggest_risk": "Spending on AI product and sales compresses margins while revenue growth stays single-digit at a high P/E.",
+ "next_datapoint": "Q3 FY27 revenue in USD (Q2 base 19.20mn), EBITDA margin vs 14.8%, and unexecuted order book vs USD 161mn.",
+ "confidence": "MEDIUM",
+ "material_change": "Updated from the 2026-10-22 review (score 31, REJECT) with Q2 FY27 results: revenue USD 19.20mn +4% QoQ, EBITDA USD 2.87mn, PAT Rs0.24cr, order book USD 161mn. The earlier rating-upgrade trigger was lagging. The dossier (generated before the Q2 text) still shows Q1 data.",
+ "sources": [
+  {
+   "claim": "Q2 revenue USD 19.20mn, EBITDA USD 2.87mn, PAT Rs0.24cr, order book USD 161mn",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/RAMCOSYS_23102026193115_23102026PressRelease.pdf"
+  },
+  {
+   "claim": "Standalone Q2 loss Rs127mn; Q1 included Rs117mn subsidiary dividend in other income",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/RAMCOSYS_23102026184228_23102026OutcomeofBoardMeeting.pdf"
+  },
+  {
+   "claim": "ICRA upgrade to A-(Stable)",
+   "type": "FACT",
+   "url": "https://nsearchives.nseindia.com/corporate/RAMCOSYS_22102026185239_22102026CreditRatingUpgradation.pdf"
+  },
+  {
+   "claim": "CEO: investing for two more quarters, momentum to flow progressively into revenue",
+   "type": "MANAGEMENT CLAIM",
+   "url": "https://nsearchives.nseindia.com/corporate/RAMCOSYS_23102026193115_23102026PressRelease.pdf"
+  }
+ ],
+ "scenarios": {
+  "bear": {
+   "probability": 0.25,
+   "fy2_eps": 8,
+   "fy3_eps": 9,
+   "fy5_eps": 10,
+   "exit_pe": 30,
+   "price": 240,
+   "multiple": 0.45,
+   "cagr_pct": -32.7,
+   "return_2y_pct": -54.7,
+   "assumptions": "Revenue flat, AI investment depresses margins, PAT stays near zero; exit P/E 30 (ASSUMPTION)"
+  },
+  "base": {
+   "probability": 0.4,
+   "fy2_eps": 14,
+   "fy3_eps": 17,
+   "fy5_eps": 24,
+   "exit_pe": 32,
+   "price": 448,
+   "multiple": 0.85,
+   "cagr_pct": -8.0,
+   "return_2y_pct": -15.4,
+   "assumptions": "Growth to ~8% with margin recovery to 16% (ASSUMPTION)"
+  },
+  "bull": {
+   "probability": 0.28,
+   "fy2_eps": 25,
+   "fy3_eps": 32,
+   "fy5_eps": 45,
+   "exit_pe": 35,
+   "price": 875,
+   "multiple": 1.65,
+   "cagr_pct": 28.6,
+   "return_2y_pct": 65.3,
+   "assumptions": "Bookings convert to double-digit growth and margin 20% (ASSUMPTION)"
+  },
+  "extreme_bull": {
+   "probability": 0.07,
+   "fy2_eps": 38,
+   "fy3_eps": 50,
+   "fy5_eps": 70,
+   "exit_pe": 38,
+   "price": 1444,
+   "multiple": 2.73,
+   "cagr_pct": 65.2,
+   "return_2y_pct": 172.8,
+   "assumptions": "AI-native products drive a step change (ASSUMPTION)"
+  }
+ },
+ "ev_2y_pct": 10.5,
+ "bear_downside_pct": -54.7,
+ "bull_value_per_share": 875,
+ "confirmation_score": 29,
+ "band": "REJECT",
+ "symbol": "RAMCOSYS"
+}
