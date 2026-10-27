@@ -160,6 +160,174 @@
     "bull_value_per_share": 510,
     "confirmation_score": 21
    }
+  },
+  {
+   "date": "2026-10-23",
+   "trigger": "new filing: Bagging/Receiving of orders/contracts",
+   "stage2_score": 129.9,
+   "price": 327.75,
+   "model": "Claude Code session",
+   "reviewed_at": "2026-10-27T02:32:29.793111+00:00",
+   "result": {
+    "symbol": "KEC",
+    "company": "KEC International Limited",
+    "sector": "Construction / T&D EPC",
+    "discovery_judgement": 45,
+    "score": {
+     "demand_shock": 5,
+     "supply_constraint": 3,
+     "pricing_power": 1,
+     "revenue_acceleration": 1,
+     "operating_leverage": 0,
+     "eps_acceleration": 0,
+     "capacity_catalyst": 1,
+     "cash_flow_quality": 1,
+     "valuation_asymmetry": 6,
+     "management_governance": 2,
+     "balance_sheet": 1,
+     "total": 21
+    },
+    "band": "REJECT",
+    "status": "RED",
+    "proposed_state": "RESEARCH",
+    "action": "WAIT",
+    "hard_numeric_fact": true,
+    "hard_numeric_fact_text": "23 Oct 2026 press release: new orders Rs1,006 cr, YTD intake >Rs10,600 cr (MANAGEMENT CLAIM, normal course, no customer values disclosed). Reported Q1 FY27 fundamentals per dossier: EBITDA -16.9% YoY, PAT -41.7%, CFO/PAT -0.68 (CALCULATION).",
+    "new_evidence_type": "order",
+    "reported_earnings_confirm": false,
+    "cfo_to_pat_value": -0.68,
+    "confirmation_falling": true,
+    "risk": {
+     "governance": "MEDIUM",
+     "balance_sheet": "HIGH",
+     "cycle": "MEDIUM",
+     "liquidity": "LOW",
+     "dilution": "LOW",
+     "order_firmness": "MEDIUM"
+    },
+    "capital_to_deploy_inr": 0,
+    "thesis": "Order intake is strong (YTD >Rs9,600 cr claimed; first 765 kV PSP evacuation order) and P/E is 17x after a 58% price fall. But reported fundamentals deteriorated: EBITDA -16.9% YoY, PAT -41.7%, margin 5.8%, CFO/PAT -0.68, receivable days 179, ND/EBITDA 2.86, interest cover 1.8. The cause of the 58% fall is not in the extracted filings (unknown). A crash is a reason to research, not evidence. Not underwritable until cash flow turns.",
+    "chain_missing_links": [
+     "Order to revenue (revenue flat YoY)",
+     "Operating leverage (negative)",
+     "EPS acceleration (negative)",
+     "Cash flow (CFO negative, receivables stretched)",
+     "Cause of the 58% price fall unknown"
+    ],
+    "demand_signal": "T&D and renewables evacuation orders; Bhutan/Saudi/Americas wins (MANAGEMENT CLAIM)",
+    "supply_signal": "unknown",
+    "pricing_signal": "none; margins compressing",
+    "order_book": "Total order book unknown. YTD FY27 intake >Rs10,600 cr (MANAGEMENT CLAIM, 23 Oct press release). Dossier order_intensity 0.30/0.27/0.24 treats cumulative YTD totals as single orders: conflicts with filings; single announced orders were Rs1,006 cr, Rs1,014 cr, Rs1,030 cr.",
+    "capacity_catalyst": "none evidenced",
+    "cfo_to_pat": "-0.68 (class C/D)",
+    "debt": "ND/EBITDA 2.86; interest cover 1.8",
+    "roce": "ROE 9.8%; EBITDA/invested capital 14.6%",
+    "valuation": "TTM P/E 15.8, EV/EBITDA 8.2 (CALCULATION, dossier). Cheap only if earnings recover; EV from price 327.75 is roughly flat.",
+    "management_credibility": "LOW",
+    "plausible": {
+     "2x": "NO: needs EPS to double and a rerating with negative CFO",
+     "3x": "NO",
+     "5x": "NO: 5x/10x NOT reasonably underwritable",
+     "10x": "NO: 5x/10x NOT reasonably underwritable"
+    },
+    "kill_conditions": [
+     "CFO/PAT remains negative for another half-year",
+     "Interest cover below 1.5 or rating downgrade",
+     "Margin below 5%",
+     "Order cancellations or large provisions"
+    ],
+    "kill_condition_triggered": null,
+    "catalysts": [
+     "Q2 FY27 results",
+     "Working-capital release / collections",
+     "Conversion of YTD orders to revenue"
+    ],
+    "biggest_risk": "Receivables and debt keep rising while margins compress; the price fall reflects problems not visible in the extracted text",
+    "next_datapoint": "Q2 FY27 results: CFO, receivable days, net debt and EBITDA margin",
+    "confidence": "LOW",
+    "material_change": "Q1 FY27 fundamentals unchanged. New: 23 Oct order wins Rs1,006 cr (400 kV Oman, Americas towers, hospital civil repeat); management says YTD intake >Rs10,600 cr (was >Rs9,600 cr on 10 Oct). Same evidence type as before (order, cumulative MANAGEMENT CLAIM). Price lower (P/E 15.8 vs 17.3), which is not evidence.",
+    "sources": [
+     {
+      "claim": "23 Oct: orders Rs1,006 cr; YTD intake >Rs10,600 cr; Oman 400 kV, Americas supply, hospital civil",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/KEC_23102026124809_PressRelease.pdf"
+     },
+     {
+      "claim": "10 Oct: Rs1,014 cr orders incl. first 765 kV PSP evacuation line; YTD >Rs9,600 cr",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/KEC_10102026144951_PressRelease.pdf"
+     },
+     {
+      "claim": "8 Oct: Rs1,030 cr orders (Bhutan, Saudi, 300+ MW wind); YTD >Rs8,600 cr",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/KEC_08102026205717_PressRelease.pdf"
+     },
+     {
+      "claim": "14 Sep: 'challenging environment', strong L1 position claimed; YTD >Rs7,600 cr",
+      "type": "MANAGEMENT CLAIM",
+      "url": "https://nsearchives.nseindia.com/corporate/KEC_14092026090455_PressRelease.pdf"
+     },
+     {
+      "claim": "EBITDA -16.9%, PAT -41.7%, CFO/PAT -0.68, ND/EBITDA 2.86, interest cover 1.8, P/E 15.8",
+      "type": "CALCULATION",
+      "url": "runs/inflection/dossiers/KEC.md (Yahoo Finance data)"
+     }
+    ],
+    "scenarios": {
+     "bear": {
+      "probability": 0.3,
+      "fy2_eps": 12,
+      "fy3_eps": 12,
+      "fy5_eps": 14,
+      "exit_pe": 10,
+      "price": 120,
+      "multiple": 0.37,
+      "cagr_pct": -39.2,
+      "return_2y_pct": -63.0,
+      "assumptions": "Margin ~5%, working-capital stress persists, receivables unrecovered; P/E 10x on FY+2 EPS Rs12"
+     },
+     "base": {
+      "probability": 0.4,
+      "fy2_eps": 24,
+      "fy3_eps": 30,
+      "fy5_eps": 40,
+      "exit_pe": 13,
+      "price": 312,
+      "multiple": 0.95,
+      "cagr_pct": -2.5,
+      "return_2y_pct": -5.0,
+      "assumptions": "Margin recovers to ~6.5%, CFO turns positive, YTD orders (>Rs10,600 cr, MANAGEMENT CLAIM) convert slowly; P/E 13x"
+     },
+     "bull": {
+      "probability": 0.22,
+      "fy2_eps": 34,
+      "fy3_eps": 44,
+      "fy5_eps": 60,
+      "exit_pe": 15,
+      "price": 510,
+      "multiple": 1.56,
+      "cagr_pct": 24.9,
+      "return_2y_pct": 56.0,
+      "assumptions": "Order book converts, margin ~7.5%, collections normalise; P/E 15x"
+     },
+     "extreme_bull": {
+      "probability": 0.08,
+      "fy2_eps": 45,
+      "fy3_eps": 60,
+      "fy5_eps": 85,
+      "exit_pe": 17,
+      "price": 765,
+      "multiple": 2.33,
+      "cagr_pct": 52.6,
+      "return_2y_pct": 133.0,
+      "assumptions": "Full recovery to prior earnings power; P/E 17x"
+     }
+    },
+    "ev_2y_pct": 2.1,
+    "bear_downside_pct": -63.0,
+    "bull_value_per_share": 510,
+    "confirmation_score": 21
+   }
   }
  ]
 }

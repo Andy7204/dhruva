@@ -15,6 +15,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | JYOTISTRUC | DISCOVER | RESEARCH | ₹0 | 8.16 | fast-lane event or discovery >= 60 |
 | WELCORP | DISCOVER | RESEARCH | ₹0 | 2388.7 | fast-lane event or discovery >= 60 |
 | RAMCOSYS | RESEARCH | RESEARCH | ₹0 | 529.35 | fast-lane event or discovery >= 60 |
+| KEC | DISCOVER | DISCOVER | ₹0 | 327.75 | governance/balance-sheet risk HIGH |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -69,7 +70,7 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | PATELRMART | 34 | — | 9.0 | 9.4 | YELLOW | RESEARCH | 2026-10-06 |
 | VIVIANA | 34 | 34 | 33.2 | 10.4 | YELLOW | RESEARCH | 2026-10-15 |
 | RAMCOSYS | 29 | 31 | 16.6 | 10.5 | YELLOW | RESEARCH | 2026-10-23 |
-| KEC | 21 | — | 33.0 | -7.2 | RED | DISCOVER | 2026-10-14 |
+| KEC | 21 | 21 | 33.0 | 2.1 | RED | DISCOVER | 2026-10-23 |
 | KECL | 16 | — | 11.0 | -22.9 | YELLOW | RESEARCH | 2026-10-22 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)

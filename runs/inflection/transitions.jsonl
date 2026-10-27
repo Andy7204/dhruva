@@ -29,3 +29,4 @@
 {"date": "2026-10-23", "from": "DISCOVER", "inr": 0, "price": 8.16, "reason": "fast-lane event or discovery >= 60", "symbol": "JYOTISTRUC", "to": "RESEARCH"}
 {"date": "2026-10-23", "from": "DISCOVER", "inr": 0, "price": 2388.7, "reason": "fast-lane event or discovery >= 60", "symbol": "WELCORP", "to": "RESEARCH"}
 {"date": "2026-10-23", "from": "RESEARCH", "inr": 0, "price": 529.35, "reason": "fast-lane event or discovery >= 60", "symbol": "RAMCOSYS", "to": "RESEARCH"}
+{"date": "2026-10-23", "from": "DISCOVER", "inr": 0, "price": 327.75, "reason": "governance/balance-sheet risk HIGH", "symbol": "KEC", "to": "DISCOVER"}

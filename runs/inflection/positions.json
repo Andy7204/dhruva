@@ -203,14 +203,19 @@
     "date": "2026-10-14",
     "type": "order",
     "text": "Management: YTD FY27 order intake >Rs9,600 cr (MANAGEMENT CLAIM). Single announced orders were Rs1,014 cr (10 Oct) and Rs1,030 cr (8 Oct), not Rs9,600/8,600 cr as the dossier event rows show."
+   },
+   {
+    "date": "2026-10-23",
+    "type": "order",
+    "text": "23 Oct 2026 press release: new orders Rs1,006 cr, YTD intake >Rs10,600 cr (MANAGEMENT CLAIM, normal course, no customer values disclosed). Reported Q1 FY27 fundamentals per dossier: EBITDA -16.9% YoY, PAT -41.7%, CFO/PAT -0.68 (CALCULATION)."
    }
   ],
   "entries": [],
   "last_reason": "governance/balance-sheet risk HIGH",
-  "last_review": "2026-10-14",
+  "last_review": "2026-10-23",
   "discovery": 33.0,
   "confirmation": 21,
-  "ev_2y_pct": -7.2
+  "ev_2y_pct": 2.1
  },
  "BUILDPRO": {
   "state": "RESEARCH",
