@@ -1,8 +1,8 @@
 # LUPIN — Lupin Limited (Healthcare)
-Evidence dossier generated 2026-10-21 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 91.7 · Stage 2 score 98.3 · score 20 sessions ago 88.4 · 60 sessions ago 88.4
-Price ₹1964.00 · 12-month return 0.7% · -21.9% from 52-week high · RS rank 32.7 · stage-2 trend False · turnover ₹136.72 cr/day
+Stage 1 score 91.7 · Stage 2 score 98.7 · score 20 sessions ago 88.4 · 60 sessions ago 88.4
+Price ₹2011.00 · 12-month return 4.8% · -20.0% from 52-week high · RS rank 44.1 · stage-2 trend False · turnover ₹130.89 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 47.7% · QoQ % (previous QoQ 4.1%) · quarters of sequential growth in last 4: 4
@@ -15,16 +15,17 @@ CFO/PAT 1.38 · class: healthy · receivables growth 20.1% vs revenue 23.9% · i
 Net debt/EBITDA 0.20 · interest cover 22.5 · dilution 0.1% · ROE 23.8% · EBITDA/invested capital 30.5%
 
 ## Valuation
-Market cap ₹89790 cr · TTM P/E 17.1 · PEG 0.21 · EV/EBITDA 10.6 · EPS growth minus 12-month price return 82.5 pts
+Market cap ₹91939 cr · TTM P/E 17.5 · PEG 0.21 · EV/EBITDA 10.8 · EPS growth minus 12-month price return 78.3 pts
 
 ## Industry (same NSE industry, this scan)
-66 peers · 55% growing revenue >20% · 42% expanding EBITDA margin · median revenue YoY 22.2%
+67 peers · 60% growing revenue >20% · 46% expanding EBITDA margin · median revenue YoY 24.0%
 
 Discovery score 1.5 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.6 pts, turnaround False) · fast lane: False · source: confirmation
 
 Flags: none
 
 ## Recent relevant NSE filings (newest first)
+- 2026-10-23 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated October 23, 2026, titled "Lupin Appoints Brian Savage as President, Chief Legal Officer". · https://nsearchives.nseindia.com/corporate/Lupin2_23102026095748_SELetterPressRelease.pdf
 - 2026-10-19 · Analysts/Institutional Investor Meet/Con. Call Updates · Lupin Limited has informed the Exchange about Schedule of Earnings Call for Q2 FY27. · https://nsearchives.nseindia.com/corporate/Lupin2_19102026162709_SE_Intimation_Earnings_Call_Q2_FY27.pdf
 - 2026-10-08 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated October 08, 2026, titled "Lupin Receives U.S. FDA Approval for Phytonadione Injectable Emulsion, USP". · https://nsearchives.nseindia.com/corporate/Lupin2_08102026205937_SELetterPressRelease.pdf
 - 2026-10-06 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated October 06, 2026, titled "Lupin Launches Formoflo-G® MDI, World s First Fixed-dose Triple Combination Drug for COPD Management". · https://nsearchives.nseindia.com/corporate/Lupin2_06102026093541_SELetterpressrelease.pdf
@@ -39,6 +40,5 @@ Flags: none
 - 2026-08-07 · Investor Presentation · Lupin Limited has informed the Exchange about Investor Presentation · https://nsearchives.nseindia.com/corporate/Lupin2_07082026011112_SE_Intimation_Investor_Presentation-07082026.pdf
 - 2026-08-06 · Investor Presentation · Lupin Limited has informed the Exchange about Investor Presentation · https://nsearchives.nseindia.com/corporate/Lupin2_06082026220851_SE_Intimation_Investor_Presentation.pdf
 - 2026-08-06 · Press Release · Lupin Limited has informed the Exchange regarding a press release dated August 06, 2026, titled "Lupin Q1 FY2027 Results ". · https://nsearchives.nseindia.com/corporate/Lupin2_06082026215741_SE_Intimation_Press_Release.pdf
-- 2026-08-06 · Outcome of Board Meeting · Lupin Limited has submitted to the Exchange, Unaudited Standalone and Consolidated Financial Results of the Company for the quarter ended June 30, 2026. · https://nsearchives.nseindia.com/corporate/Lupin2_06082026215040_SE_Outcome_UFR_intimation.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

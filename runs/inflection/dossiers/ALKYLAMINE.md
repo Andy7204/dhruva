@@ -1,8 +1,8 @@
 # ALKYLAMINE — Alkyl Amines Chemicals Limited (Chemicals)
-Evidence dossier generated 2026-10-23 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-10-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 92.8 · Stage 2 score 102.0 · score 20 sessions ago 90.3 · 60 sessions ago 90.3
-Price ₹1634.80 · 12-month return -14.0% · -21.8% from 52-week high · RS rank 55.6 · stage-2 trend False · turnover ₹38.67 cr/day
+Stage 1 score 92.8 · Stage 2 score 100.6 · score 20 sessions ago 90.3 · 60 sessions ago 90.3
+Price ₹1589.90 · 12-month return -15.7% · -23.9% from 52-week high · RS rank 49.5 · stage-2 trend False · turnover ₹38.99 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 36.8% · QoQ % (previous QoQ 9.3%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 1.33 · class: healthy · receivables growth -0.2% vs revenue -2.4% · i
 Net debt/EBITDA 0.22 · interest cover 342.6 · dilution 0.0% · ROE 11.7% · EBITDA/invested capital 20.6%
 
 ## Valuation
-Market cap ₹8361 cr · TTM P/E 36.1 · PEG 0.34 · EV/EBITDA 26.7 · EPS growth minus 12-month price return 119.4 pts
+Market cap ₹8131 cr · TTM P/E 35.1 · PEG 0.33 · EV/EBITDA 26.0 · EPS growth minus 12-month price return 121.2 pts
 
 ## Industry (same NSE industry, this scan)
-44 peers · 61% growing revenue >20% · 64% expanding EBITDA margin · median revenue YoY 25.2%
+44 peers · 64% growing revenue >20% · 52% expanding EBITDA margin · median revenue YoY 27.1%
 
 Discovery score 15.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 7.0 pts, turnaround False) · fast lane: False · source: confirmation
 
@@ -29,6 +29,5 @@ Flags: none
 - 2026-05-13 · Analysts/Institutional Investor Meet/Con. Call Updates · Alkyl Amines Chemicals Limited has informed the Exchange about Transcript · https://nsearchives.nseindia.com/corporate/ALKYLAMINE_13052026131401_SETranscript.pdf
 - 2026-05-06 · Analysts/Institutional Investor Meet/Con. Call Updates · Alkyl Amines Chemicals Limited has informed the Exchange about Link of Recording · https://nsearchives.nseindia.com/corporate/ALKYLAMINE_06052026183408_Intimation.pdf
 - 2026-05-05 · Outcome of Board Meeting · Alkyl Amines Chemicals Limited has submitted to the Exchange, the financial results for the period ended March 31, 2026. · https://nsearchives.nseindia.com/corporate/ALKYLAMINE_05052026135900_Outcomesd.pdf
-- 2026-05-02 · Analysts/Institutional Investor Meet/Con. Call Updates · Alkyl Amines Chemicals Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.com/corporate/ALKYLAMINE_02052026173245_NoticeSEsd.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

@@ -1,38 +1,47 @@
 [
  {
-  "symbol": "JYOTISTRUC",
+  "symbol": "KMEW",
   "trigger": "fast lane: fast_lane,discovery",
+  "dossier": "runs/inflection/dossiers/KMEW.md",
+  "price": 3094.8,
+  "discovery_d": 35.0,
+  "fast_lane": true,
+  "stage2_score": 192.2
+ },
+ {
+  "symbol": "JYOTISTRUC",
+  "trigger": "new filing: Bagging/Receiving of orders/contracts",
   "dossier": "runs/inflection/dossiers/JYOTISTRUC.md",
-  "price": 8.16,
+  "price": 9.79,
   "discovery_d": 25.7,
   "fast_lane": true,
-  "stage2_score": 175.6
+  "stage2_score": 178.5
  },
  {
-  "symbol": "WELCORP",
+  "symbol": "BLKASHYAP",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/BLKASHYAP.md",
+  "price": 52.14,
+  "discovery_d": 21.8,
+  "fast_lane": true,
+  "stage2_score": 171.5
+ },
+ {
+  "symbol": "BAJEL",
   "trigger": "fast lane: fast_lane,discovery",
-  "dossier": "runs/inflection/dossiers/WELCORP.md",
-  "price": 2388.7,
-  "discovery_d": 33.6,
+  "dossier": "runs/inflection/dossiers/BAJEL.md",
+  "price": 160.84,
+  "discovery_d": 40.0,
   "fast_lane": true,
-  "stage2_score": 169.8
+  "stage2_score": 168.5
  },
  {
-  "symbol": "RAMCOSYS",
-  "trigger": "new filing: Outcome of Board Meeting",
-  "dossier": "runs/inflection/dossiers/RAMCOSYS.md",
-  "price": 529.35,
-  "discovery_d": 5.0,
+  "symbol": "SUBROS",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/SUBROS.md",
+  "price": 576.35,
+  "discovery_d": 8.8,
   "fast_lane": true,
-  "stage2_score": 141.9
- },
- {
-  "symbol": "KEC",
-  "trigger": "new filing: Bagging/Receiving of orders/contracts",
-  "dossier": "runs/inflection/dossiers/KEC.md",
-  "price": 327.75,
-  "discovery_d": 25.0,
-  "fast_lane": true,
-  "stage2_score": 129.9
+  "stage2_score": 149.9
  }
 ]

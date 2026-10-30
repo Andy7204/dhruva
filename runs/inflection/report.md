@@ -1,21 +1,18 @@
-# Dhruva inflection report — 2026-10-23
+# Dhruva inflection report — 2026-10-30
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
 ## Fast lane (material filings this week)
-- JYOTISTRUC 2026-10-23: Bagging/Receiving of orders/contracts — order ≈54% of annual revenue (after firmness haircut) (price ₹8.15999984741211)
-- KEC 2026-10-23: Bagging/Receiving of orders/contracts — order ≈30% of annual revenue (after firmness haircut) (price ₹327.75)
-- WELCORP 2026-10-23: Bagging/Receiving of orders/contracts — order ≈22% of annual revenue (after firmness haircut) (price ₹2388.699951171875)
-- RAMCOSYS 2026-10-22: Credit Rating- Revision — credit rating upgrade (price ₹530.9000244140625)
-- SHAREINDIA 2026-10-22: Credit Rating- Revision — credit rating upgrade (price ₹179.7899932861328)
+- JYOTISTRUC 2026-10-28: Bagging/Receiving of orders/contracts — order ≈51% of annual revenue (after firmness haircut) (price ₹10.3100004196167)
+- BAJEL 2026-10-26: Bagging/Receiving of orders/contracts — order ≈37% of annual revenue (after firmness haircut) (price ₹156.0500030517578)
+- KMEW 2026-10-30: Bagging/Receiving of orders/contracts — order ≈31% of annual revenue (after firmness haircut) (price ₹3094.800048828125)
+- BLKASHYAP 2026-10-24: Bagging/Receiving of orders/contracts — order ≈24% of annual revenue (after firmness haircut) (price ₹51.61000061035156)
+- SUBROS 2026-10-27: Bagging/Receiving of orders/contracts — order ≈21% of annual revenue (after firmness haircut) (price ₹615.8499755859375)
 
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
 |---|---|---|---:|---:|---|
-| JYOTISTRUC | DISCOVER | RESEARCH | ₹0 | 8.16 | fast-lane event or discovery >= 60 |
-| WELCORP | DISCOVER | RESEARCH | ₹0 | 2388.7 | fast-lane event or discovery >= 60 |
-| RAMCOSYS | RESEARCH | RESEARCH | ₹0 | 529.35 | fast-lane event or discovery >= 60 |
-| KEC | DISCOVER | DISCOVER | ₹0 | 327.75 | governance/balance-sheet risk HIGH |
+| none | | | | | |
 
 ## Positions by state (paper model portfolio)
 | Company | State | Since | Paper invested | Discovery | Confirmation | EV 2y % | Last reason |
@@ -74,24 +71,35 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KECL | 16 | — | 11.0 | -22.9 | YELLOW | RESEARCH | 2026-10-22 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- SHAREINDIA (Financial Services): discovery 5.0, confirmation 79.2, source fast_lane
-- JYOTISTRUC (Unclassified): discovery 25.7, confirmation 69.8, source fast_lane,discovery
-- WELCORP (Capital Goods): discovery 33.6, confirmation 65.2, source fast_lane,discovery
-- RAMCOSYS (Unclassified): discovery 5.0, confirmation 36.1, source fast_lane
-- KEC (Construction): discovery 25.0, confirmation 29.3, source fast_lane
-- NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.8, source confirmation
-- DEEPAKNTR (Chemicals): discovery 8.6, confirmation 92.9, source confirmation
+- KMEW (Services): discovery 35.0, confirmation 87.2, source fast_lane,discovery
+- JYOTISTRUC (Unclassified): discovery 25.7, confirmation 72.3, source fast_lane,discovery
+- BLKASHYAP (Unclassified): discovery 21.8, confirmation 65.3, source fast_lane
+- BAJEL (Unclassified): discovery 40.0, confirmation 62.3, source fast_lane,discovery
+- SUBROS (Capital Goods): discovery 8.8, confirmation 44.9, source fast_lane
+- NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.5, source confirmation
+- NEWGEN (Information Technology): discovery 13.3, confirmation 95.1, source confirmation
 - ALKYLAMINE (Chemicals): discovery 15.0, confirmation 92.8, source confirmation
-- GANDHAR (Unclassified): discovery 15.0, confirmation 93.6, source confirmation
-- APCOTEXIND (Unclassified): discovery 15.0, confirmation 93.0, source confirmation
+- VEDL (Metals & Mining): discovery 6.3, confirmation 90.8, source confirmation
+- LUPIN (Healthcare): discovery 1.5, confirmation 91.7, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- JYOTISTRUC: fast lane: fast_lane,discovery
-- WELCORP: fast lane: fast_lane,discovery
-- RAMCOSYS: new filing: Outcome of Board Meeting
-- KEC: new filing: Bagging/Receiving of orders/contracts
+- KMEW: fast lane: fast_lane,discovery
+- JYOTISTRUC: new filing: Bagging/Receiving of orders/contracts
+- BLKASHYAP: fast lane: fast_lane
+- BAJEL: fast lane: fast_lane,discovery
+- SUBROS: fast lane: fast_lane
 
-## Missed-winner audit (1 cases logged; 0 new today)
+## Missed-winner audit (35 cases logged; 34 new today)
+- SSWL: +23.2% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
+- ONWARDTEC: +33.5% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
+- LTTS: +38.9% vs Nifty 500 since 2026-09-29 — material signal logged but not escalated
+- PANACHE: +27.8% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
+- ACUTAAS: +21.2% vs Nifty 500 since 2026-09-29 — no deterministic signal before the move
+- LAURUSLABS: +21.6% vs Nifty 500 since 2026-09-29 — no deterministic signal before the move
+- PVRINOX: +25.6% vs Nifty 500 since 2026-09-29 — no deterministic signal before the move
+- HITECHCORP: +20.4% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
+- PNGSREVA: +21.4% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
+- UYFINCORP: +45.5% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
 
 ## Cash
 Your confirmed cash ₹10,000 · confirmed holdings: none · starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.
