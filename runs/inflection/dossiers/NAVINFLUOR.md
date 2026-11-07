@@ -1,26 +1,26 @@
 # NAVINFLUOR — Navin Fluorine International Limited (Chemicals)
-Evidence dossier generated 2026-10-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 97.5 · Stage 2 score 105.3 · score 20 sessions ago 95.3 · 60 sessions ago 95.3
-Price ₹8680.00 · 12-month return 72.0% · -1.1% from 52-week high · RS rank 88.5 · stage-2 trend True · turnover ₹114.29 cr/day
+Stage 1 score 94.0 · Stage 2 score 100.9 · score 20 sessions ago 95.3 · 60 sessions ago 95.3
+Price ₹9010.00 · 12-month return 52.6% · 0.0% from 52-week high · RS rank 84.5 · stage-2 trend True · turnover ₹143.36 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
-Revenue YoY 49.1% · QoQ % (previous QoQ 5.1%) · quarters of sequential growth in last 4: 4
-EBITDA YoY 99.8% · EBITDA margin 34.2% (change 8.7 pts) · incremental EBITDA margin 51.8%
-PAT YoY 156.2% · PAT margin 23.3% · EPS YoY 147.7% · turnaround False
-One-off share of EBITDA 9.8% · unusual items share of PBT 0.0% · tax rate 23.6%
+Revenue YoY 64.2% · QoQ % (previous QoQ 11.4%) · quarters of sequential growth in last 4: 4
+EBITDA YoY 97.0% · EBITDA margin 34.2% (change 5.7 pts) · incremental EBITDA margin 43.1%
+PAT YoY 129.8% · PAT margin 22.6% · EPS YoY 122.2% · turnaround False
+One-off share of EBITDA 3.8% · unusual items share of PBT 0.0% · tax rate 23.4%
 
 ## Cash flow and balance sheet (latest fiscal year)
 CFO/PAT 1.35 · class: healthy · receivables growth 29.1% vs revenue 40.0% · inventory growth 38.2% · receivable days 84
-Net debt/EBITDA 1.06 · interest cover 11.1 · dilution 3.3% · ROE 16.7% · EBITDA/invested capital 21.9%
+Net debt/EBITDA 1.06 · interest cover 14.2 · dilution 3.3% · ROE 16.7% · EBITDA/invested capital 21.9%
 
 ## Valuation
-Market cap ₹44484 cr · TTM P/E 58.4 · PEG 0.40 · EV/EBITDA 40.1 · EPS growth minus 12-month price return 75.7 pts
+Market cap ₹46236 cr · TTM P/E 50.8 · PEG 0.42 · EV/EBITDA 41.6 · EPS growth minus 12-month price return 69.6 pts
 
 ## Industry (same NSE industry, this scan)
-44 peers · 64% growing revenue >20% · 52% expanding EBITDA margin · median revenue YoY 27.1%
+44 peers · 70% growing revenue >20% · 45% expanding EBITDA margin · median revenue YoY 27.4%
 
-Discovery score 6.6 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change -0.1 pts, turnaround False) · fast lane: False · source: confirmation
+Discovery score 7.2 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.1 pts, turnaround False) · fast lane: False · source: confirmation
 
 ## Extracted event facts (CALCULATIONS from filing PDFs; verify in the source)
 - date=2026-09-29 · desc=Commencement of commercial production/operations · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_29092026164657_Intimationreg30.pdf
@@ -32,6 +32,7 @@ Discovery score 6.6 (order intensity 180d 0.00, capacity +0%, promoter money 0.0
 Flags: none
 
 ## Recent relevant NSE filings (newest first)
+- 2026-11-06 · Analysts/Institutional Investor Meet/Con. Call Updates · Navin Fluorine International Limited has informed the Exchange about Transcript · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_06112026142511_NFILIntimationofTranscriptofEarningsCallQ2FY27.pdf
 - 2026-10-30 · Analysts/Institutional Investor Meet/Con. Call Updates · Pursuant to Regulation 30 read with Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, this is to inform you that the audio recording of the Company s Earnings C · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_30102026201917_NFILIntimationofAuditRecordingofEarningsCallQ2FY27.pdf
 - 2026-10-30 · Investor Presentation · Navin Fluorine International Limited has informed the Exchange about Investor Presentation · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_30102026160134_NFILIntimationofEarningsCallQ2FY27.pdf
 - 2026-10-30 · Outcome of Board Meeting · Navin Fluorine International Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_30102026144801_NFILoutcome2026signed.pdf
@@ -46,6 +47,5 @@ Flags: none
 - 2026-08-13 · Credit Rating- Revision · Navin Fluorine International Limited has informed the Exchange about Credit Rating- Revision · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_13082026184117_upload.pdf
 - 2026-08-11 · Analysts/Institutional Investor Meet/Con. Call Updates · Pursuant to Regulation 30 read with Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, the transcript of the Company s Earnings Call held on August 05, 2026 rega · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_11082026154547_NFILIntimationofTranscriptofEarningsCallQ1FY27.pdf
 - 2026-08-05 · Analysts/Institutional Investor Meet/Con. Call Updates · Navin Fluorine International Limited has informed the Exchange about Link of Recording · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_05082026204657_NFILIntimationofAuditRecordingofEarningsCallQ1FY27signed.pdf
-- 2026-08-05 · Investor Presentation · Navin Fluorine International Limited has informed the Exchange about Investor Presentation · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_05082026164351_Binder1.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

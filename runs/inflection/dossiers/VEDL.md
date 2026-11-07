@@ -1,8 +1,8 @@
 # VEDL — Vedanta Limited (Metals & Mining)
-Evidence dossier generated 2026-10-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 90.8 · Stage 2 score 99.0 · score 20 sessions ago 75.4 · 60 sessions ago 75.4
-Price ₹237.90 · 12-month return -52.7% · -69.8% from 52-week high · RS rank 7.4 · stage-2 trend False · turnover ₹275.75 cr/day
+Stage 1 score 90.8 · Stage 2 score 99.6 · score 20 sessions ago 75.4 · 60 sessions ago 75.4
+Price ₹261.75 · 12-month return -48.5% · -66.8% from 52-week high · RS rank 8.9 · stage-2 trend False · turnover ₹288.71 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 57.0% · QoQ % (previous QoQ -1.2%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 2.27 · class: healthy · receivables growth -64.1% vs revenue 24.5% · 
 Net debt/EBITDA 0.87 · interest cover 13.1 · dilution -0.0% · ROE 42.6% · EBITDA/invested capital 43.4%
 
 ## Valuation
-Market cap ₹92895 cr · TTM P/E 4.3 · PEG 0.29 · EV/EBITDA 4.0 · EPS growth minus 12-month price return 67.6 pts
+Market cap ₹102208 cr · TTM P/E 4.8 · PEG 0.32 · EV/EBITDA 4.3 · EPS growth minus 12-month price return 63.5 pts
 
 ## Industry (same NSE industry, this scan)
-25 peers · 68% growing revenue >20% · 56% expanding EBITDA margin · median revenue YoY 32.1%
+25 peers · 72% growing revenue >20% · 60% expanding EBITDA margin · median revenue YoY 32.1%
 
 Discovery score 6.3 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change  pts, turnaround False) · fast lane: False · source: confirmation
 
@@ -29,7 +29,6 @@ Discovery score 6.3 (order intensity 180d 0.00, capacity +0%, promoter money 0.0
 - date=2026-08-13 · desc=Credit Rating · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/VEDL_13082026203815_VEDLSEIntimationIndiaRatingssigned.pdf
 - date=2026-07-16 · desc=Credit Rating · rating_move=1.0 · fast_lane_reasons=credit rating upgrade · url=https://nsearchives.nseindia.com/corporate/VEDL_16072026163309_VEDLSEIntimationCreditRatingfinalsigned.pdf
 - date=2026-05-27 · desc=Credit Rating · rating_move=1.0 · fast_lane_reasons=credit rating upgrade · url=https://nsearchives.nseindia.com/corporate/VEDL_27052026165304_VEDLSEIntimationRatingsUpgradeVEDLVAMLTSPLcombinedsigned.pdf
-- date=2026-05-06 · desc=Credit Rating · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/VEDL_06052026174903_VEDLSEIntimationICRARatingMay2026signed.pdf
 
 Flags: PAT up while CFO down
 

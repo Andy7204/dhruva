@@ -1,4 +1,4 @@
-# VEDL — source filing text (extracted 2026-10-30 from NSE PDFs; first 8000 characters each)
+# VEDL — source filing text (extracted 2026-11-06 from NSE PDFs; first 8000 characters each)
 
 ## 2026-10-29 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/VEDL_29102026173812_VEDLSEIntimationTranscriptofConferenceCallfinal.pdf

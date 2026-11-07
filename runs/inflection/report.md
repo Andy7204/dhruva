@@ -1,13 +1,13 @@
-# Dhruva inflection report — 2026-10-30
+# Dhruva inflection report — 2026-11-06
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
 ## Fast lane (material filings this week)
-- JYOTISTRUC 2026-10-28: Bagging/Receiving of orders/contracts — order ≈51% of annual revenue (after firmness haircut) (price ₹10.3100004196167)
-- BAJEL 2026-10-26: Bagging/Receiving of orders/contracts — order ≈37% of annual revenue (after firmness haircut) (price ₹156.0500030517578)
-- KMEW 2026-10-30: Bagging/Receiving of orders/contracts — order ≈31% of annual revenue (after firmness haircut) (price ₹3094.800048828125)
-- BLKASHYAP 2026-10-24: Bagging/Receiving of orders/contracts — order ≈24% of annual revenue (after firmness haircut) (price ₹51.61000061035156)
-- SUBROS 2026-10-27: Bagging/Receiving of orders/contracts — order ≈21% of annual revenue (after firmness haircut) (price ₹615.8499755859375)
+- GRSE 2026-11-02: Bagging/Receiving of orders/contracts — order ≈50% of annual revenue (after firmness haircut) (price ₹2046.800048828125)
+- KNRCON 2026-11-05: Bagging/Receiving of orders/contracts — order ≈35% of annual revenue (after firmness haircut) (price ₹107.16000366210938)
+- DEEDEV 2026-11-04: Credit Rating- Revision — credit rating upgrade (price ₹570.5999755859375)
+- CEMPRO 2026-11-06: Credit Rating- Revision — credit rating upgrade (price ₹1323.300048828125)
+- ADVAIT 2026-11-03: Credit Rating- Revision — credit rating upgrade (price ₹1732.0)
 
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
@@ -71,38 +71,38 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KECL | 16 | — | 11.0 | -22.9 | YELLOW | RESEARCH | 2026-10-22 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- KMEW (Services): discovery 35.0, confirmation 87.2, source fast_lane,discovery
-- JYOTISTRUC (Unclassified): discovery 25.7, confirmation 72.3, source fast_lane,discovery
-- BLKASHYAP (Unclassified): discovery 21.8, confirmation 65.3, source fast_lane
-- BAJEL (Unclassified): discovery 40.0, confirmation 62.3, source fast_lane,discovery
-- SUBROS (Capital Goods): discovery 8.8, confirmation 44.9, source fast_lane
-- NAVINFLUOR (Chemicals): discovery 6.6, confirmation 97.5, source confirmation
+- ADVAIT (Unclassified): discovery 32.9, confirmation 82.8, source fast_lane,discovery
+- CEMPRO (Construction): discovery 5.0, confirmation 63.7, source fast_lane
+- DEEDEV (Unclassified): discovery 5.8, confirmation 54.7, source fast_lane
+- GRSE (Capital Goods): discovery 25.0, confirmation 24.6, source fast_lane
+- KNRCON (Construction): discovery 22.0, confirmation 24.0, source fast_lane
 - NEWGEN (Information Technology): discovery 13.3, confirmation 95.1, source confirmation
-- ALKYLAMINE (Chemicals): discovery 15.0, confirmation 92.8, source confirmation
+- NAVINFLUOR (Chemicals): discovery 7.2, confirmation 94.0, source confirmation
 - VEDL (Metals & Mining): discovery 6.3, confirmation 90.8, source confirmation
-- LUPIN (Healthcare): discovery 1.5, confirmation 91.7, source confirmation
+- KMEW (Services): discovery 35.0, confirmation 93.4, source discovery,confirmation
+- SOTL (Unclassified): discovery 14.0, confirmation 91.8, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- KMEW: fast lane: fast_lane,discovery
-- JYOTISTRUC: new filing: Bagging/Receiving of orders/contracts
-- BLKASHYAP: fast lane: fast_lane
-- BAJEL: fast lane: fast_lane,discovery
-- SUBROS: fast lane: fast_lane
+- ADVAIT: fast lane: fast_lane,discovery
+- CEMPRO: fast lane: fast_lane
+- DEEDEV: fast lane: fast_lane
+- GRSE: fast lane: fast_lane
+- KNRCON: fast lane: fast_lane
 
-## Missed-winner audit (35 cases logged; 34 new today)
-- SSWL: +23.2% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
-- ONWARDTEC: +33.5% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
-- LTTS: +38.9% vs Nifty 500 since 2026-09-29 — material signal logged but not escalated
-- PANACHE: +27.8% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
-- ACUTAAS: +21.2% vs Nifty 500 since 2026-09-29 — no deterministic signal before the move
-- LAURUSLABS: +21.6% vs Nifty 500 since 2026-09-29 — no deterministic signal before the move
-- PVRINOX: +25.6% vs Nifty 500 since 2026-09-29 — no deterministic signal before the move
-- HITECHCORP: +20.4% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
-- PNGSREVA: +21.4% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
-- UYFINCORP: +45.5% vs Nifty 500 since 2026-09-29 — not eligible (liquidity/market cap) before the move
+## Missed-winner audit (78 cases logged; 43 new today)
+- SSWL: +27.4% vs Nifty 500 since 2026-10-07 — no deterministic signal before the move
+- ONWARDTEC: +26.9% vs Nifty 500 since 2026-10-07 — not eligible (liquidity/market cap) before the move
+- SHYAMMETL: +21.9% vs Nifty 500 since 2026-10-07 — no deterministic signal before the move
+- CUBEXTUB: +21.6% vs Nifty 500 since 2026-10-07 — no deterministic signal before the move
+- SAREGAMA: +23.0% vs Nifty 500 since 2026-10-07 — no deterministic signal before the move
+- LTTS: +31.0% vs Nifty 500 since 2026-10-07 — material signal logged but not escalated
+- SEJALLTD: +29.2% vs Nifty 500 since 2026-10-07 — no deterministic signal before the move
+- TECHM: +22.8% vs Nifty 500 since 2026-10-07 — no deterministic signal before the move
+- ORIENTELEC: +24.2% vs Nifty 500 since 2026-10-07 — no deterministic signal before the move
+- LUMAXTECH: +25.9% vs Nifty 500 since 2026-10-07 — no deterministic signal before the move
 
 ## Cash
-Your confirmed cash ₹10,000 · confirmed holdings: none · starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.
+Your confirmed cash ₹20,000 · confirmed holdings: none · starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.
 
 ## Final output
 BEST CURRENT OPPORTUNITY: STLTECH

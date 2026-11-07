@@ -1,50 +1,50 @@
 {
- "session": "2026-10-30",
+ "session": "2026-11-06",
  "queue": [
   {
-   "symbol": "KMEW",
+   "symbol": "ADVAIT",
    "trigger": "fast lane: fast_lane,discovery",
-   "dossier": "runs/inflection/dossiers/KMEW.md",
-   "price": 3094.8,
-   "discovery_d": 35.0,
+   "dossier": "runs/inflection/dossiers/ADVAIT.md",
+   "price": 1828.2,
+   "discovery_d": 32.9,
    "fast_lane": true,
-   "stage2_score": 192.2
+   "stage2_score": 189.3
   },
   {
-   "symbol": "JYOTISTRUC",
-   "trigger": "new filing: Bagging/Receiving of orders/contracts",
-   "dossier": "runs/inflection/dossiers/JYOTISTRUC.md",
-   "price": 9.79,
-   "discovery_d": 25.7,
-   "fast_lane": true,
-   "stage2_score": 178.5
-  },
-  {
-   "symbol": "BLKASHYAP",
+   "symbol": "CEMPRO",
    "trigger": "fast lane: fast_lane",
-   "dossier": "runs/inflection/dossiers/BLKASHYAP.md",
-   "price": 52.14,
-   "discovery_d": 21.8,
+   "dossier": "runs/inflection/dossiers/CEMPRO.md",
+   "price": 1323.3,
+   "discovery_d": 5.0,
    "fast_lane": true,
-   "stage2_score": 171.5
+   "stage2_score": 164.3
   },
   {
-   "symbol": "BAJEL",
-   "trigger": "fast lane: fast_lane,discovery",
-   "dossier": "runs/inflection/dossiers/BAJEL.md",
-   "price": 160.84,
-   "discovery_d": 40.0,
-   "fast_lane": true,
-   "stage2_score": 168.5
-  },
-  {
-   "symbol": "SUBROS",
+   "symbol": "DEEDEV",
    "trigger": "fast lane: fast_lane",
-   "dossier": "runs/inflection/dossiers/SUBROS.md",
-   "price": 576.35,
-   "discovery_d": 8.8,
+   "dossier": "runs/inflection/dossiers/DEEDEV.md",
+   "price": 542.8,
+   "discovery_d": 5.8,
    "fast_lane": true,
-   "stage2_score": 149.9
+   "stage2_score": 161.2
+  },
+  {
+   "symbol": "GRSE",
+   "trigger": "fast lane: fast_lane",
+   "dossier": "runs/inflection/dossiers/GRSE.md",
+   "price": 2135.7,
+   "discovery_d": 25.0,
+   "fast_lane": true,
+   "stage2_score": 130.0
+  },
+  {
+   "symbol": "KNRCON",
+   "trigger": "fast lane: fast_lane",
+   "dossier": "runs/inflection/dossiers/KNRCON.md",
+   "price": 109.67,
+   "discovery_d": 22.0,
+   "fast_lane": true,
+   "stage2_score": 124.6
   }
  ],
  "reviewed": [],

@@ -1,8 +1,8 @@
 # NEWGEN — Newgen Software Technologies Limited (Information Technology)
-Evidence dossier generated 2026-10-30 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 95.1 · Stage 2 score 102.0 · score 20 sessions ago 41.7 · 60 sessions ago 41.7
-Price ₹442.45 · 12-month return -55.6% · -55.6% from 52-week high · RS rank 13.3 · stage-2 trend False · turnover ₹48.37 cr/day
+Stage 1 score 95.1 · Stage 2 score 102.3 · score 20 sessions ago 41.7 · 60 sessions ago 41.7
+Price ₹440.70 · 12-month return -54.7% · -55.2% from 52-week high · RS rank 11.1 · stage-2 trend False · turnover ₹47.62 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 31.7% · QoQ % (previous QoQ -21.2%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 0.77 · class: healthy · receivables growth 27.2% vs revenue 5.9% · in
 Net debt/EBITDA -0.15 · interest cover 120.7 · dilution 0.7% · ROE 16.9% · EBITDA/invested capital 24.1%
 
 ## Valuation
-Market cap ₹6254 cr · TTM P/E 19.7 · PEG 0.26 · EV/EBITDA 14.4 · EPS growth minus 12-month price return 133.0 pts
+Market cap ₹6229 cr · TTM P/E 19.7 · PEG 0.25 · EV/EBITDA 14.4 · EPS growth minus 12-month price return 132.1 pts
 
 ## Industry (same NSE industry, this scan)
-40 peers · 50% growing revenue >20% · 45% expanding EBITDA margin · median revenue YoY 20.3%
+40 peers · 55% growing revenue >20% · 48% expanding EBITDA margin · median revenue YoY 20.9%
 
 Discovery score 13.3 (order intensity 180d 0.01, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 10.2 pts, turnaround False) · fast lane: False · source: confirmation
 
@@ -30,7 +30,6 @@ Discovery score 13.3 (order intensity 180d 0.01, capacity +0%, promoter money 0.
 - date=2026-06-30 · desc=Bagging/Receiving of orders/contracts · value_cr=26.7 · firmness=0.5 · customer=international · tier1_customer=False · order_intensity=0.005 · url=https://nsearchives.nseindia.com/corporate/NEWGEN2_30062026230039_STOCKEXCHANGE30062026WARBA.pdf
 - date=2026-06-30 · desc=Bagging/Receiving of orders/contracts · value_cr=161868600.0 · firmness=0.5 · customer=international · tier1_customer=False · url=https://nsearchives.nseindia.com/corporate/NEWGEN2_30062026200938_Stockexchangeintiamtion30062026.pdf
 - date=2026-06-29 · desc=Bagging/Receiving of orders/contracts · value_cr=15.59 · firmness=0.5 · customer=domestic · tier1_customer=False · order_intensity=0.003 · url=https://nsearchives.nseindia.com/corporate/NEWGEN2_29062026204242_Stockexchangeintimationfinalsigned29062026.pdf
-- date=2026-05-06 · desc=Bagging/Receiving of orders/contracts · value_cr=14.47 · firmness=0.5 · customer=international · tier1_customer=False · order_intensity=0.003 · url=https://nsearchives.nseindia.com/corporate/NEWGEN2_06052026223503_Stock_Exchange_Material_disclosure-_NewgenUK.pdf
 
 Flags: none
 
