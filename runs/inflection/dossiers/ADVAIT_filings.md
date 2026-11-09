@@ -1,4 +1,4 @@
-# ADVAIT — source filing text (extracted 2026-11-06 from NSE PDFs; first 8000 characters each)
+# ADVAIT — source filing text (extracted 2026-11-09 from NSE PDFs; first 8000 characters each)
 
 ## 2026-11-05 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/ADVAITENERGY_05112026232429_AETL_Transcript_SE_s.pdf

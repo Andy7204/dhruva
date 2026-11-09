@@ -1,8 +1,8 @@
 # ADVAIT — Advait Energy Transitions Limited (Unclassified)
-Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 82.8 · Stage 2 score 189.3 · score 20 sessions ago  · 60 sessions ago 
-Price ₹1828.20 · 12-month return 31.4% · -25.4% from 52-week high · RS rank 56.4 · stage-2 trend False · turnover ₹7.19 cr/day
+Stage 1 score 82.3 · Stage 2 score 188.9 · score 20 sessions ago  · 60 sessions ago 
+Price ₹1895.10 · 12-month return 36.2% · -22.7% from 52-week high · RS rank 64.0 · stage-2 trend False · turnover ₹7.24 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 40.8% · QoQ % (previous QoQ -21.4%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT -0.19 · class: C/D weak: negative operating cash flow · receivables gr
 Net debt/EBITDA 1.06 · interest cover 5.6 · dilution 1.1% · ROE 18.6% · EBITDA/invested capital 22.9%
 
 ## Valuation
-Market cap ₹1999 cr · TTM P/E 30.1 · PEG 0.33 · EV/EBITDA 22.9 · EPS growth minus 12-month price return 60.1 pts
+Market cap ₹2073 cr · TTM P/E 31.2 · PEG 0.34 · EV/EBITDA 23.7 · EPS growth minus 12-month price return 55.3 pts
 
 ## Industry (same NSE industry, this scan)
 724 peers · 49% growing revenue >20% · 43% expanding EBITDA margin · median revenue YoY 19.6%

@@ -102,3 +102,11 @@
 {"book": "B", "date": "2026-11-06", "liquidation_value": 977580.68, "nav": 977580.68, "pending_target": null, "recorded_at": "2026-11-06T19:47:36.965083+00:00", "weights": {"GOLD": 0.1956, "MOM30": 0.6298, "NDX": 0.1746}}
 {"book": "C", "date": "2026-11-06", "liquidation_value": 900316.49, "nav": 900316.49, "pending_target": null, "recorded_at": "2026-11-06T19:47:36.965083+00:00", "weights": {"LIQ": 1.0}}
 {"book": "N50", "date": "2026-11-06", "liquidation_value": 1091590.07, "nav": 1115918.89, "pending_target": null, "recorded_at": "2026-11-06T19:47:36.965083+00:00", "weights": {"N50": 1.0}}
+{"book": "A", "date": "2026-11-08", "liquidation_value": 1004093.18, "nav": 1005992.82, "reconstructed": true, "recorded_at": "2026-11-09T22:49:32.252898+00:00"}
+{"book": "A", "date": "2026-11-09", "liquidation_value": 1009437.67, "nav": 1012745.59, "pending_target": null, "recorded_at": "2026-11-09T22:49:32.252898+00:00", "weights": {"GOLD": 0.2823, "MIDMOM50": 0.7177}}
+{"book": "B", "date": "2026-11-08", "liquidation_value": 980187.2, "nav": 980187.2, "reconstructed": true, "recorded_at": "2026-11-09T22:49:32.252898+00:00"}
+{"book": "B", "date": "2026-11-09", "liquidation_value": 986217.6, "nav": 986217.6, "pending_target": null, "recorded_at": "2026-11-09T22:49:32.252898+00:00", "weights": {"GOLD": 0.195, "MOM30": 0.6311, "NDX": 0.1739}}
+{"book": "C", "date": "2026-11-08", "liquidation_value": 900578.88, "nav": 900578.88, "reconstructed": true, "recorded_at": "2026-11-09T22:49:32.252898+00:00"}
+{"book": "C", "date": "2026-11-09", "liquidation_value": 900697.55, "nav": 900697.55, "pending_target": null, "recorded_at": "2026-11-09T22:49:32.252898+00:00", "weights": {"LIQ": 1.0}}
+{"book": "N50", "date": "2026-11-08", "liquidation_value": 1090035.99, "nav": 1113957.19, "reconstructed": true, "recorded_at": "2026-11-09T22:49:32.252898+00:00"}
+{"book": "N50", "date": "2026-11-09", "liquidation_value": 1092090.58, "nav": 1116551.89, "pending_target": null, "recorded_at": "2026-11-09T22:49:32.252898+00:00", "weights": {"N50": 1.0}}

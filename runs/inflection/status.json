@@ -1,39 +1,38 @@
 {
- "session": "2026-11-06",
- "started_at": "2026-11-07T21:15:05.934913+00:00",
+ "session": "2026-11-09",
+ "started_at": "2026-11-09T22:49:34.146638+00:00",
  "warnings": [],
- "universe": 2597,
- "priced": 2596,
- "liquid": 1624,
+ "universe": 2603,
+ "priced": 2588,
+ "liquid": 1623,
  "eligible": 1444,
  "fundamentals_ok": 1463,
  "vetoed": 16,
- "material_events": 284,
- "new_signals": 10,
+ "material_events": 282,
+ "new_signals": 0,
  "fast_lane": [
   "ADVAIT",
   "CEMPRO",
   "DEEDEV",
-  "GRSE",
   "KNRCON"
  ],
  "finalists": [
   "ADVAIT",
   "CEMPRO",
   "DEEDEV",
-  "GRSE",
   "KNRCON",
   "NEWGEN",
   "NAVINFLUOR",
   "VEDL",
   "KMEW",
-  "SOTL"
+  "SOTL",
+  "GALAXYSURF"
  ],
- "announcements": 106591,
+ "announcements": 105855,
  "news_ok": true,
- "usd_inr": 93.91000366210938,
- "price_errors": 0,
+ "usd_inr": 93.91999816894531,
+ "price_errors": 1,
  "fundamental_errors": 0,
  "announcement_errors": [],
- "ended_at": "2026-11-07T21:18:57.231473+00:00"
+ "ended_at": "2026-11-09T22:51:42.344956+00:00"
 }

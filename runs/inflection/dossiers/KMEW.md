@@ -1,8 +1,8 @@
 # KMEW — Knowledge Marine & Engineering Works Limited (Services)
-Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 93.4 · Stage 2 score 98.4 · score 20 sessions ago 87.2 · 60 sessions ago 87.2
-Price ₹652.80 · 12-month return -53.2% · -79.3% from 52-week high · RS rank 0.4 · stage-2 trend False · turnover ₹39.77 cr/day
+Price ₹663.70 · 12-month return -52.1% · -78.9% from 52-week high · RS rank 0.4 · stage-2 trend False · turnover ₹37.55 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 138.1% · QoQ % (previous QoQ -24.9%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 0.94 · class: A productive growth investment · receivables growth 6.7%
 Net debt/EBITDA 1.35 · interest cover 13.9 · dilution 13.2% · ROE 13.8% · EBITDA/invested capital 13.9%
 
 ## Valuation
-Market cap ₹1596 cr · TTM P/E 12.1 · PEG 0.08 · EV/EBITDA 15.9 · EPS growth minus 12-month price return 199.3 pts
+Market cap ₹1622 cr · TTM P/E 12.3 · PEG 0.08 · EV/EBITDA 16.1 · EPS growth minus 12-month price return 198.2 pts
 
 ## Industry (same NSE industry, this scan)
 24 peers · 67% growing revenue >20% · 29% expanding EBITDA margin · median revenue YoY 27.3%

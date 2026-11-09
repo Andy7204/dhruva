@@ -1,8 +1,8 @@
 # CEMPRO — Cemindia Projects Limited (Construction)
-Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 63.7 · Stage 2 score 164.3 · score 20 sessions ago 41.3 · 60 sessions ago 41.3
-Price ₹1323.30 · 12-month return 53.4% · -19.3% from 52-week high · RS rank 90.8 · stage-2 trend True · turnover ₹75.21 cr/day
+Price ₹1307.50 · 12-month return 54.0% · -20.3% from 52-week high · RS rank 91.0 · stage-2 trend True · turnover ₹75.11 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 25.2% · QoQ % (previous QoQ -8.5%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 0.84 · class: healthy · receivables growth 30.8% vs revenue 8.8% · in
 Net debt/EBITDA 0.43 · interest cover 4.6 · dilution 0.0% · ROE 24.9% · EBITDA/invested capital 33.4%
 
 ## Valuation
-Market cap ₹22733 cr · TTM P/E 36.4 · PEG  · EV/EBITDA 20.7 · EPS growth minus 12-month price return -58.3 pts
+Market cap ₹22461 cr · TTM P/E 36.0 · PEG  · EV/EBITDA 20.4 · EPS growth minus 12-month price return -58.8 pts
 
 ## Industry (same NSE industry, this scan)
 23 peers · 13% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY -4.0%

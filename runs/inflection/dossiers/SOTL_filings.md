@@ -1,4 +1,4 @@
-# SOTL — source filing text (extracted 2026-11-06 from NSE PDFs; first 8000 characters each)
+# SOTL — source filing text (extracted 2026-11-09 from NSE PDFs; first 8000 characters each)
 
 ## 2026-11-03 · Outcome of Board Meeting
 Source: https://nsearchives.nseindia.com/corporate/SOTL_03112026161117_bmoutcome.pdf

@@ -168,7 +168,7 @@ VEDL,2026-08-13,Credit Rating,credit rating upgrade,2.2,,,credit rating upgrade
 NAVINFLUOR,2026-08-13,Credit Rating- Revision,credit rating upgrade,7.8,,,credit rating upgrade
 MAXESTATES,2026-08-13,Credit Rating,credit rating upgrade,30.3,,,credit rating upgrade
 LT,2026-08-13,Bagging/Receiving of orders/contracts,global Tier-1/hyperscale customer,0.1,,,global Tier-
-BHEL,2026-08-12,Credit Rating,credit rating upgrade,6.2,,,credit rating upgrade
+BHEL,2026-08-12,Credit Rating,credit rating upgrade,6.2,7.3,,credit rating upgrade
 ADFFOODS,2026-08-11,Credit Rating- Revision,credit rating upgrade,5.5,-2.8,,credit rating upgrade
 AWHCL,2026-08-11,Bagging/Receiving of orders/contracts,order ≈23% of annual revenue (after firmness haircut),-3.7,-15.2,,order
 ZENTEC,2026-08-10,Bagging/Receiving of orders/contracts,order ≈22% of annual revenue (after firmness haircut),6.8,7.1,,order
@@ -361,9 +361,9 @@ MTARTECH,2026-05-22,Bagging/Receiving of orders/contracts,order ≈43% of annual
 HARIOMPIPE,2026-05-21,Preferential issue,promoter puts in 5.0% of market cap at 100% of market price,20.7,4.2,,promoter puts in
 WOCKPHARMA,2026-05-21,Credit Rating,credit rating upgrade,21.5,14.4,,credit rating upgrade
 INDUSINDBK,2026-05-21,Credit Rating,credit rating upgrade,1.5,8.6,,credit rating upgrade
-SAMMAANCAP,2026-05-20,Credit Rating- Revision,credit rating upgrade,21.7,8.0,,credit rating upgrade
+SAMMAANCAP,2026-05-20,Credit Rating- Revision,credit rating upgrade,21.7,8.0,-3.5,credit rating upgrade
 CLEANMAX,2026-05-20,Credit Rating- Revision,credit rating upgrade,8.2,-1.5,,credit rating upgrade
-TEGA,2026-05-20,Credit Rating,credit rating upgrade,13.7,-2.3,,credit rating upgrade
+TEGA,2026-05-20,Credit Rating,credit rating upgrade,13.7,-2.3,8.2,credit rating upgrade
 OMNI,2026-05-19,Credit Rating,credit rating upgrade,18.5,38.6,,credit rating upgrade
 IDFCFIRSTB,2026-05-16,Credit Rating- New,credit rating upgrade,14.2,20.0,16.5,credit rating upgrade
 PANAMAPET,2026-05-15,Credit Rating,credit rating upgrade,26.8,64.4,55.9,credit rating upgrade
@@ -445,10 +445,10 @@ PATELRMART,2026-10-03,Credit Rating- Revision,credit rating upgrade,9.3,,,credit
 TARIL,2026-10-02,Bagging/Receiving of orders/contracts,order ≈26% of annual revenue (after firmness haircut),5.6,,,order
 TARIL,2026-10-02,Bagging/Receiving of orders/contracts,order ≈26% of annual revenue (after firmness haircut),5.6,,,order
 AUBANK,2026-10-01,Credit Rating,credit rating upgrade,-9.8,,,credit rating upgrade
-MAXHEALTH,2026-10-09,Credit Rating,credit rating upgrade,,,,credit rating upgrade
-EMBDL,2026-10-09,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-HBLENGINE,2026-10-09,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-INDHOTEL,2026-10-09,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
+MAXHEALTH,2026-10-09,Credit Rating,credit rating upgrade,3.5,,,credit rating upgrade
+EMBDL,2026-10-09,Credit Rating- Revision,credit rating upgrade,-6.3,,,credit rating upgrade
+HBLENGINE,2026-10-09,Credit Rating- Revision,credit rating upgrade,10.9,,,credit rating upgrade
+INDHOTEL,2026-10-09,Credit Rating- Revision,credit rating upgrade,24.6,,,credit rating upgrade
 ADANIENT,2026-10-07,Credit Rating,credit rating upgrade,-0.4,,,credit rating upgrade
 MANBA,2026-10-07,Credit Rating- Revision,credit rating upgrade,1.7,,,credit rating upgrade
 LT,2026-10-07,Bagging/Receiving of orders/contracts,order ≈72% of annual revenue (after firmness haircut),9.4,,,order

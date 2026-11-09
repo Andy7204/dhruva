@@ -1,4 +1,4 @@
-# KMEW — source filing text (extracted 2026-11-06 from NSE PDFs; first 8000 characters each)
+# KMEW — source filing text (extracted 2026-11-09 from NSE PDFs; first 8000 characters each)
 
 ## 2026-11-06 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.com/corporate/KMEW_06112026192905_Earnings_Call-s.pdf

@@ -1,8 +1,8 @@
 # SOTL — Savita Oil Technologies Limited (Unclassified)
-Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 91.8 · Stage 2 score 98.3 · score 20 sessions ago  · 60 sessions ago 
-Price ₹676.95 · 12-month return 71.2% · -15.8% from 52-week high · RS rank 90.2 · stage-2 trend False · turnover ₹12.69 cr/day
+Stage 1 score 91.8 · Stage 2 score 98.4 · score 20 sessions ago  · 60 sessions ago 
+Price ₹675.00 · 12-month return 72.2% · -16.0% from 52-week high · RS rank 90.4 · stage-2 trend False · turnover ₹12.17 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 49.7% · QoQ % (previous QoQ 14.2%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 0.75 · class: healthy · receivables growth 17.6% vs revenue 14.2% · i
 Net debt/EBITDA -0.46 · interest cover 91.9 · dilution 0.0% · ROE 10.0% · EBITDA/invested capital 15.3%
 
 ## Valuation
-Market cap ₹4641 cr · TTM P/E 11.2 · PEG 0.03 · EV/EBITDA 16.2 · EPS growth minus 12-month price return 128.8 pts
+Market cap ₹4628 cr · TTM P/E 11.2 · PEG 0.03 · EV/EBITDA 16.2 · EPS growth minus 12-month price return 127.8 pts
 
 ## Industry (same NSE industry, this scan)
 724 peers · 49% growing revenue >20% · 43% expanding EBITDA margin · median revenue YoY 19.6%

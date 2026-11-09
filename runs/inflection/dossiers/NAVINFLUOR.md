@@ -1,8 +1,8 @@
 # NAVINFLUOR — Navin Fluorine International Limited (Chemicals)
-Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 94.0 · Stage 2 score 100.9 · score 20 sessions ago 95.3 · 60 sessions ago 95.3
-Price ₹9010.00 · 12-month return 52.6% · 0.0% from 52-week high · RS rank 84.5 · stage-2 trend True · turnover ₹143.36 cr/day
+Price ₹9115.00 · 12-month return 50.5% · 0.0% from 52-week high · RS rank 84.9 · stage-2 trend True · turnover ₹147.90 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 64.2% · QoQ % (previous QoQ 11.4%) · quarters of sequential growth in last 4: 4
@@ -15,7 +15,7 @@ CFO/PAT 1.35 · class: healthy · receivables growth 29.1% vs revenue 40.0% · i
 Net debt/EBITDA 1.06 · interest cover 14.2 · dilution 3.3% · ROE 16.7% · EBITDA/invested capital 21.9%
 
 ## Valuation
-Market cap ₹46236 cr · TTM P/E 50.8 · PEG 0.42 · EV/EBITDA 41.6 · EPS growth minus 12-month price return 69.6 pts
+Market cap ₹46775 cr · TTM P/E 51.4 · PEG 0.42 · EV/EBITDA 42.1 · EPS growth minus 12-month price return 71.6 pts
 
 ## Industry (same NSE industry, this scan)
 44 peers · 70% growing revenue >20% · 45% expanding EBITDA margin · median revenue YoY 27.4%

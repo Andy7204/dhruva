@@ -1,8 +1,8 @@
 # KNRCON — KNR Constructions Limited (Construction)
-Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 24.0 · Stage 2 score 124.6 · score 20 sessions ago 24.6 · 60 sessions ago 24.6
-Price ₹109.67 · 12-month return -38.9% · -39.1% from 52-week high · RS rank 10.1 · stage-2 trend False · turnover ₹10.18 cr/day
+Stage 1 score 23.9 · Stage 2 score 124.5 · score 20 sessions ago 24.6 · 60 sessions ago 24.6
+Price ₹111.93 · 12-month return -37.5% · -37.9% from 52-week high · RS rank 11.1 · stage-2 trend False · turnover ₹9.98 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY -4.0% · QoQ % (previous QoQ -6.4%) · quarters of sequential growth in last 4: 2
@@ -15,7 +15,7 @@ CFO/PAT -0.34 · class: C/D weak: negative operating cash flow · receivables gr
 Net debt/EBITDA 2.85 · interest cover 1.8 · dilution 0.0% · ROE 8.8% · EBITDA/invested capital 10.6%
 
 ## Valuation
-Market cap ₹3084 cr · TTM P/E 7.8 · PEG  · EV/EBITDA 6.8 · EPS growth minus 12-month price return 4.3 pts
+Market cap ₹3148 cr · TTM P/E 8.0 · PEG  · EV/EBITDA 6.8 · EPS growth minus 12-month price return 2.9 pts
 
 ## Industry (same NSE industry, this scan)
 23 peers · 13% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY -4.0%

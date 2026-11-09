@@ -1,4 +1,4 @@
-# CEMPRO — source filing text (extracted 2026-11-06 from NSE PDFs; first 8000 characters each)
+# CEMPRO — source filing text (extracted 2026-11-09 from NSE PDFs; first 8000 characters each)
 
 ## 2026-11-06 · Credit Rating- Revision
 Source: https://nsearchives.nseindia.com/corporate/ITD_06112026152218_STK_ltr_Creditrating_CARE_SIGNED.pdf

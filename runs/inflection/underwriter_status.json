@@ -1,20 +1,20 @@
 {
- "session": "2026-11-06",
+ "session": "2026-11-09",
  "queue": [
   {
    "symbol": "ADVAIT",
    "trigger": "fast lane: fast_lane,discovery",
    "dossier": "runs/inflection/dossiers/ADVAIT.md",
-   "price": 1828.2,
+   "price": 1895.1,
    "discovery_d": 32.9,
    "fast_lane": true,
-   "stage2_score": 189.3
+   "stage2_score": 188.9
   },
   {
    "symbol": "CEMPRO",
    "trigger": "fast lane: fast_lane",
    "dossier": "runs/inflection/dossiers/CEMPRO.md",
-   "price": 1323.3,
+   "price": 1307.5,
    "discovery_d": 5.0,
    "fast_lane": true,
    "stage2_score": 164.3
@@ -23,28 +23,28 @@
    "symbol": "DEEDEV",
    "trigger": "fast lane: fast_lane",
    "dossier": "runs/inflection/dossiers/DEEDEV.md",
-   "price": 542.8,
+   "price": 524.8,
    "discovery_d": 5.8,
    "fast_lane": true,
-   "stage2_score": 161.2
-  },
-  {
-   "symbol": "GRSE",
-   "trigger": "fast lane: fast_lane",
-   "dossier": "runs/inflection/dossiers/GRSE.md",
-   "price": 2135.7,
-   "discovery_d": 25.0,
-   "fast_lane": true,
-   "stage2_score": 130.0
+   "stage2_score": 161.5
   },
   {
    "symbol": "KNRCON",
    "trigger": "fast lane: fast_lane",
    "dossier": "runs/inflection/dossiers/KNRCON.md",
-   "price": 109.67,
+   "price": 111.93,
    "discovery_d": 22.0,
    "fast_lane": true,
-   "stage2_score": 124.6
+   "stage2_score": 124.5
+  },
+  {
+   "symbol": "NEWGEN",
+   "trigger": "first review",
+   "dossier": "runs/inflection/dossiers/NEWGEN.md",
+   "price": 437.7,
+   "discovery_d": 13.3,
+   "fast_lane": false,
+   "stage2_score": 102.3
   }
  ],
  "reviewed": [],

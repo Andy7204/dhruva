@@ -1,8 +1,8 @@
 # DEEDEV — DEE Development Engineers Limited (Unclassified)
-Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 54.7 · Stage 2 score 161.2 · score 20 sessions ago  · 60 sessions ago 
-Price ₹542.80 · 12-month return 109.8% · -26.5% from 52-week high · RS rank 93.5 · stage-2 trend False · turnover ₹16.80 cr/day
+Stage 1 score 54.9 · Stage 2 score 161.5 · score 20 sessions ago  · 60 sessions ago 
+Price ₹524.80 · 12-month return 113.1% · -29.0% from 52-week high · RS rank 92.1 · stage-2 trend False · turnover ₹16.97 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 31.6% · QoQ % (previous QoQ 26.1%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 0.25 · class: A productive growth investment · receivables growth 54.5
 Net debt/EBITDA 3.25 · interest cover 2.9 · dilution 0.3% · ROE 8.7% · EBITDA/invested capital 12.6%
 
 ## Valuation
-Market cap ₹3760 cr · TTM P/E 47.0 · PEG 2.13 · EV/EBITDA 22.1 · EPS growth minus 12-month price return -87.7 pts
+Market cap ₹3635 cr · TTM P/E 45.5 · PEG 2.06 · EV/EBITDA 21.5 · EPS growth minus 12-month price return -91.0 pts
 
 ## Industry (same NSE industry, this scan)
 724 peers · 49% growing revenue >20% · 43% expanding EBITDA margin · median revenue YoY 19.6%

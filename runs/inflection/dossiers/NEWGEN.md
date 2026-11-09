@@ -1,8 +1,8 @@
 # NEWGEN — Newgen Software Technologies Limited (Information Technology)
-Evidence dossier generated 2026-11-06 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 95.1 · Stage 2 score 102.3 · score 20 sessions ago 41.7 · 60 sessions ago 41.7
-Price ₹440.70 · 12-month return -54.7% · -55.2% from 52-week high · RS rank 11.1 · stage-2 trend False · turnover ₹47.62 cr/day
+Price ₹437.70 · 12-month return -54.2% · -55.5% from 52-week high · RS rank 9.5 · stage-2 trend False · turnover ₹46.56 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 31.7% · QoQ % (previous QoQ -21.2%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 0.77 · class: healthy · receivables growth 27.2% vs revenue 5.9% · in
 Net debt/EBITDA -0.15 · interest cover 120.7 · dilution 0.7% · ROE 16.9% · EBITDA/invested capital 24.1%
 
 ## Valuation
-Market cap ₹6229 cr · TTM P/E 19.7 · PEG 0.25 · EV/EBITDA 14.4 · EPS growth minus 12-month price return 132.1 pts
+Market cap ₹6187 cr · TTM P/E 19.5 · PEG 0.25 · EV/EBITDA 14.3 · EPS growth minus 12-month price return 131.6 pts
 
 ## Industry (same NSE industry, this scan)
 40 peers · 55% growing revenue >20% · 48% expanding EBITDA margin · median revenue YoY 20.9%
