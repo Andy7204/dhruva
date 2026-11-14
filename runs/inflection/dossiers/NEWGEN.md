@@ -1,8 +1,8 @@
 # NEWGEN — Newgen Software Technologies Limited (Information Technology)
-Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-13 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 95.1 · Stage 2 score 102.3 · score 20 sessions ago 41.7 · 60 sessions ago 41.7
-Price ₹437.70 · 12-month return -54.2% · -55.5% from 52-week high · RS rank 9.5 · stage-2 trend False · turnover ₹46.56 cr/day
+Stage 1 score 95.1 · Stage 2 score 102.0 · score 20 sessions ago 41.7 · 60 sessions ago 41.7
+Price ₹439.15 · 12-month return -54.2% · -55.4% from 52-week high · RS rank 9.6 · stage-2 trend False · turnover ₹39.99 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 31.7% · QoQ % (previous QoQ -21.2%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 0.77 · class: healthy · receivables growth 27.2% vs revenue 5.9% · in
 Net debt/EBITDA -0.15 · interest cover 120.7 · dilution 0.7% · ROE 16.9% · EBITDA/invested capital 24.1%
 
 ## Valuation
-Market cap ₹6187 cr · TTM P/E 19.5 · PEG 0.25 · EV/EBITDA 14.3 · EPS growth minus 12-month price return 131.6 pts
+Market cap ₹6207 cr · TTM P/E 19.6 · PEG 0.25 · EV/EBITDA 14.3 · EPS growth minus 12-month price return 131.6 pts
 
 ## Industry (same NSE industry, this scan)
-40 peers · 55% growing revenue >20% · 48% expanding EBITDA margin · median revenue YoY 20.9%
+40 peers · 57% growing revenue >20% · 45% expanding EBITDA margin · median revenue YoY 22.0%
 
 Discovery score 13.3 (order intensity 180d 0.01, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 10.2 pts, turnaround False) · fast lane: False · source: confirmation
 
@@ -34,6 +34,7 @@ Discovery score 13.3 (order intensity 180d 0.01, capacity +0%, promoter money 0.
 Flags: none
 
 ## Recent relevant NSE filings (newest first)
+- 2026-11-13 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.in/corporate/NEWGEN2_13112026134904_CONFERENCECALL18THNOV2026finaldocusigned.pdf
 - 2026-10-29 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Transcript -Conference Call   Q2 FY 27 · https://nsearchives.nseindia.com/corporate/NEWGEN2_29102026202709_NSTL_EarningCalls.pdf
 - 2026-10-23 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Audio Recording of the Conference Call held on 23rd October 2026. · https://nsearchives.nseindia.com/corporate/NEWGEN2_23102026202429_AudioRecording.pdf
 - 2026-10-23 · Press Release · Newgen Software Technologies Limited has informed the Exchange regarding a press release dated October 23, 2026, titled "Financial Results for the quarter and half year ended 30th September 2026". · https://nsearchives.nseindia.com/corporate/NEWGEN2_23102026145129_Press_Release_Newgen.pdf
@@ -48,6 +49,5 @@ Flags: none
 - 2026-08-24 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.com/corporate/NEWGEN2_24082026134727_coveringsign.pdf
 - 2026-08-04 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Schedule of meet Pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, this is · https://nsearchives.nseindia.com/corporate/NEWGEN2_04082026172833_Intimation_for_Investor_Call_Newgen_--Copy.pdf
 - 2026-07-21 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Transcript · https://nsearchives.nseindia.com/corporate/NEWGEN2_21072026162303_TRANSCRIPTSIGN.pdf
-- 2026-07-16 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Link of Recording · https://nsearchives.nseindia.com/corporate/NEWGEN2_16072026192935_AudioRecording.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

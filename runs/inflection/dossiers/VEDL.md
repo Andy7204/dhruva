@@ -1,8 +1,8 @@
 # VEDL — Vedanta Limited (Metals & Mining)
-Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-13 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 90.8 · Stage 2 score 99.6 · score 20 sessions ago 75.4 · 60 sessions ago 75.4
-Price ₹262.00 · 12-month return -48.1% · -66.7% from 52-week high · RS rank 7.4 · stage-2 trend False · turnover ₹286.17 cr/day
+Stage 1 score 90.8 · Stage 2 score 99.0 · score 20 sessions ago 75.4 · 60 sessions ago 75.4
+Price ₹259.68 · 12-month return -50.4% · -67.0% from 52-week high · RS rank 5.1 · stage-2 trend False · turnover ₹262.33 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 57.0% · QoQ % (previous QoQ -1.2%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 2.27 · class: healthy · receivables growth -64.1% vs revenue 24.5% · 
 Net debt/EBITDA 0.87 · interest cover 13.1 · dilution -0.0% · ROE 42.6% · EBITDA/invested capital 43.4%
 
 ## Valuation
-Market cap ₹102306 cr · TTM P/E 4.8 · PEG 0.32 · EV/EBITDA 4.3 · EPS growth minus 12-month price return 63.1 pts
+Market cap ₹101400 cr · TTM P/E 4.7 · PEG 0.32 · EV/EBITDA 4.3 · EPS growth minus 12-month price return 65.4 pts
 
 ## Industry (same NSE industry, this scan)
-25 peers · 72% growing revenue >20% · 60% expanding EBITDA margin · median revenue YoY 32.1%
+25 peers · 72% growing revenue >20% · 56% expanding EBITDA margin · median revenue YoY 35.6%
 
 Discovery score 6.3 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change  pts, turnaround False) · fast lane: False · source: confirmation
 

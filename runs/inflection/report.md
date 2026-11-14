@@ -1,12 +1,13 @@
-# Dhruva inflection report — 2026-11-09
+# Dhruva inflection report — 2026-11-13
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
 ## Fast lane (material filings this week)
-- KNRCON 2026-11-05: Bagging/Receiving of orders/contracts — order ≈35% of annual revenue (after firmness haircut) (price ₹107.16000366210938)
-- CEMPRO 2026-11-06: Credit Rating- Revision — credit rating upgrade (price ₹1323.300048828125)
-- DEEDEV 2026-11-04: Credit Rating- Revision — credit rating upgrade (price ₹570.5999755859375)
-- ADVAIT 2026-11-03: Credit Rating- Revision — credit rating upgrade (price ₹1732.0)
+- IIFL 2026-11-10: Preferential issue — promoter puts in 23.44% of market cap at 100% of market price (price ₹602.0)
+- IMAGICAA 2026-11-13: Preferential issue — promoter puts in 10.51% of market cap at 100% of market price (price ₹73.5)
+- PVRINOX 2026-11-13: Credit Rating- Revision — credit rating upgrade (price ₹1641.199951171875)
+- E2E 2026-11-13: Credit Rating- Revision — credit rating upgrade (price ₹560.0499877929688)
+- AYE 2026-11-11: Credit Rating- Revision — credit rating upgrade (price ₹150.3800048828125)
 
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
@@ -70,35 +71,35 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KECL | 16 | — | 11.0 | -22.9 | YELLOW | RESEARCH | 2026-10-22 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- ADVAIT (Unclassified): discovery 32.9, confirmation 82.3, source fast_lane,discovery
-- CEMPRO (Construction): discovery 5.0, confirmation 63.7, source fast_lane
-- DEEDEV (Unclassified): discovery 5.8, confirmation 54.9, source fast_lane
-- KNRCON (Construction): discovery 22.0, confirmation 23.9, source fast_lane
+- PVRINOX (Media Entertainment & Publication): discovery 15.9, confirmation 71.8, source fast_lane
+- E2E (Information Technology): discovery 20.0, confirmation 69.8, source fast_lane
+- AYE (Unclassified): discovery 5.2, confirmation 68.5, source fast_lane
+- IMAGICAA (Unclassified): discovery 40.0, confirmation 68.3, source fast_lane,discovery
+- IIFL (Financial Services): discovery 20.7, confirmation 51.9, source fast_lane
 - NEWGEN (Information Technology): discovery 13.3, confirmation 95.1, source confirmation
-- NAVINFLUOR (Chemicals): discovery 7.2, confirmation 94.0, source confirmation
+- NAVINFLUOR (Chemicals): discovery 7.2, confirmation 93.3, source confirmation
 - VEDL (Metals & Mining): discovery 6.3, confirmation 90.8, source confirmation
-- KMEW (Services): discovery 35.0, confirmation 93.4, source discovery,confirmation
-- SOTL (Unclassified): discovery 14.0, confirmation 91.8, source confirmation
-- GALAXYSURF (Unclassified): discovery 12.5, confirmation 91.5, source confirmation
+- TTKPRESTIG (Consumer Durables): discovery 14.7, confirmation 93.5, source confirmation
+- APLLTD (Unclassified): discovery 14.0, confirmation 91.2, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- ADVAIT: fast lane: fast_lane,discovery
-- CEMPRO: fast lane: fast_lane
-- DEEDEV: fast lane: fast_lane
-- KNRCON: fast lane: fast_lane
-- NEWGEN: first review
+- PVRINOX: fast lane: fast_lane
+- E2E: fast lane: fast_lane
+- AYE: fast lane: fast_lane
+- IMAGICAA: fast lane: fast_lane,discovery
+- IIFL: fast lane: fast_lane
 
-## Missed-winner audit (150 cases logged; 72 new today)
-- APLLTD: +27.1% vs Nifty 500 since 2026-10-08 — no deterministic signal before the move
-- SSWL: +33.7% vs Nifty 500 since 2026-10-08 — no deterministic signal before the move
-- ONWARDTEC: +30.1% vs Nifty 500 since 2026-10-08 — not eligible (liquidity/market cap) before the move
-- LAURUSLABS: +22.8% vs Nifty 500 since 2026-10-08 — no deterministic signal before the move
-- PRINCEPIPE: +26.6% vs Nifty 500 since 2026-10-08 — no deterministic signal before the move
-- SHYAMMETL: +23.8% vs Nifty 500 since 2026-10-08 — no deterministic signal before the move
-- ALGOQUANT: +27.1% vs Nifty 500 since 2026-10-08 — no deterministic signal before the move
-- SAREGAMA: +34.4% vs Nifty 500 since 2026-10-08 — no deterministic signal before the move
-- LTTS: +32.3% vs Nifty 500 since 2026-10-08 — material signal logged but not escalated
-- SEJALLTD: +28.3% vs Nifty 500 since 2026-10-08 — no deterministic signal before the move
+## Missed-winner audit (216 cases logged; 66 new today)
+- APLLTD: +29.1% vs Nifty 500 since 2026-10-13 — no deterministic signal before the move
+- DIVISLAB: +23.2% vs Nifty 500 since 2026-10-13 — no deterministic signal before the move
+- PRINCEPIPE: +20.4% vs Nifty 500 since 2026-10-13 — no deterministic signal before the move
+- ICIL: +22.1% vs Nifty 500 since 2026-10-13 — no deterministic signal before the move
+- SSWL: +37.2% vs Nifty 500 since 2026-10-13 — no deterministic signal before the move
+- AARTIDRUGS: +23.7% vs Nifty 500 since 2026-10-13 — no deterministic signal before the move
+- NILKAMAL: +25.0% vs Nifty 500 since 2026-10-13 — no deterministic signal before the move
+- BHAGYANGR: +70.7% vs Nifty 500 since 2026-10-13 — material signal logged but not escalated
+- ROLEXRINGS: +25.5% vs Nifty 500 since 2026-10-13 — material signal logged but not escalated
+- VINYLINDIA: +24.3% vs Nifty 500 since 2026-10-13 — not eligible (liquidity/market cap) before the move
 
 ## Cash
 Your confirmed cash ₹20,000 · confirmed holdings: none · starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.

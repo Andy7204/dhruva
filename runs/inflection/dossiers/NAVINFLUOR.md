@@ -1,8 +1,8 @@
 # NAVINFLUOR — Navin Fluorine International Limited (Chemicals)
-Evidence dossier generated 2026-11-09 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-13 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 94.0 · Stage 2 score 100.9 · score 20 sessions ago 95.3 · 60 sessions ago 95.3
-Price ₹9115.00 · 12-month return 50.5% · 0.0% from 52-week high · RS rank 84.9 · stage-2 trend True · turnover ₹147.90 cr/day
+Stage 1 score 93.3 · Stage 2 score 99.4 · score 20 sessions ago 95.3 · 60 sessions ago 95.3
+Price ₹10002.00 · 12-month return 66.9% · 0.0% from 52-week high · RS rank 89.7 · stage-2 trend True · turnover ₹201.09 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 64.2% · QoQ % (previous QoQ 11.4%) · quarters of sequential growth in last 4: 4
@@ -15,14 +15,15 @@ CFO/PAT 1.35 · class: healthy · receivables growth 29.1% vs revenue 40.0% · i
 Net debt/EBITDA 1.06 · interest cover 14.2 · dilution 3.3% · ROE 16.7% · EBITDA/invested capital 21.9%
 
 ## Valuation
-Market cap ₹46775 cr · TTM P/E 51.4 · PEG 0.42 · EV/EBITDA 42.1 · EPS growth minus 12-month price return 71.6 pts
+Market cap ₹51326 cr · TTM P/E 56.4 · PEG 0.46 · EV/EBITDA 46.1 · EPS growth minus 12-month price return 55.3 pts
 
 ## Industry (same NSE industry, this scan)
-44 peers · 70% growing revenue >20% · 45% expanding EBITDA margin · median revenue YoY 27.4%
+44 peers · 70% growing revenue >20% · 39% expanding EBITDA margin · median revenue YoY 27.4%
 
 Discovery score 7.2 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 0.1 pts, turnaround False) · fast lane: False · source: confirmation
 
 ## Extracted event facts (CALCULATIONS from filing PDFs; verify in the source)
+- date=2026-11-12 · desc=Commencement of commercial production/operations · url=https://nsearchives.nseindia.in/corporate/NAVINFLUOR_12112026192025_Intimation_under_Reg30commercialisation_of_R32Final.pdf
 - date=2026-09-29 · desc=Commencement of commercial production/operations · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_29092026164657_Intimationreg30.pdf
 - date=2026-09-29 · desc=Commencement of commercial production/operations · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_29092026153201_Intimationreg30.pdf
 - date=2026-09-16 · desc=Credit Rating- New · rating_move=0.0 · url=https://nsearchives.nseindia.com/corporate/NAVINFLUOR_16092026115634_Revision_in_Ratings.pdf
@@ -32,7 +33,10 @@ Discovery score 7.2 (order intensity 180d 0.00, capacity +0%, promoter money 0.0
 Flags: none
 
 ## Recent relevant NSE filings (newest first)
-- 2026-11-06 · Analysts/Institutional Investor Meet/Con. Call Updates · Navin Fluorine International Limited has informed the Exchange about Transcript · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_06112026142511_NFILIntimationofTranscriptofEarningsCallQ2FY27.pdf
+- 2026-11-13 · Analysts/Institutional Investor Meet/Con. Call Updates · Navin Fluorine International Limited has informed the Exchange about Schedule of meet and Presentation · https://nsearchives.nseindia.in/corporate/NAVINFLUOR_13112026154611_final_upload.pdf
+- 2026-11-12 · Commencement of commercial production/operations · Navin Fluorine International Limited has informed the Exchange about Commencement of commercial production/operations · https://nsearchives.nseindia.in/corporate/NAVINFLUOR_12112026192025_Intimation_under_Reg30commercialisation_of_R32Final.pdf
+- 2026-11-11 · Analysts/Institutional Investor Meet/Con. Call Updates · Pursuant to Regulation 30 of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, we would like to inform you that the officials of Navin Fluorine International Limited ('the Comp · https://nsearchives.nseindia.in/corporate/NAVINFLUOR_11112026143600_NFILStockExchangeIntimation11112026.pdf
+- 2026-11-06 · Analysts/Institutional Investor Meet/Con. Call Updates · Navin Fluorine International Limited has informed the Exchange about Transcript · https://nsearchives.nseindia.in/corporate/NAVINFLUOR_06112026142511_NFILIntimationofTranscriptofEarningsCallQ2FY27.pdf
 - 2026-10-30 · Analysts/Institutional Investor Meet/Con. Call Updates · Pursuant to Regulation 30 read with Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, this is to inform you that the audio recording of the Company s Earnings C · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_30102026201917_NFILIntimationofAuditRecordingofEarningsCallQ2FY27.pdf
 - 2026-10-30 · Investor Presentation · Navin Fluorine International Limited has informed the Exchange about Investor Presentation · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_30102026160134_NFILIntimationofEarningsCallQ2FY27.pdf
 - 2026-10-30 · Outcome of Board Meeting · Navin Fluorine International Limited has submitted to the Exchange, the financial results for the period ended September 30, 2026. · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_30102026144801_NFILoutcome2026signed.pdf
@@ -44,8 +48,5 @@ Flags: none
 - 2026-09-07 · Analysts/Institutional Investor Meet/Con. Call Updates · Navin Fluorine International Limited has informed the Exchange about Schedule of meet and Presentation · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_07092026125352_SEupload.pdf
 - 2026-08-18 · Credit Rating- New · Navin Fluorine International Limited has informed the Exchange about Credit Rating- New · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_18082026175857_upload.pdf
 - 2026-08-17 · Analysts/Institutional Investor Meet/Con. Call Updates · Navin Fluorine International Limited has informed the Exchange about Schedule of meet and Presentation · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_17082026224533_BSENSE.pdf
-- 2026-08-13 · Credit Rating- Revision · Navin Fluorine International Limited has informed the Exchange about Credit Rating- Revision · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_13082026184117_upload.pdf
-- 2026-08-11 · Analysts/Institutional Investor Meet/Con. Call Updates · Pursuant to Regulation 30 read with Schedule III of SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, the transcript of the Company s Earnings Call held on August 05, 2026 rega · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_11082026154547_NFILIntimationofTranscriptofEarningsCallQ1FY27.pdf
-- 2026-08-05 · Analysts/Institutional Investor Meet/Con. Call Updates · Navin Fluorine International Limited has informed the Exchange about Link of Recording · https://nsearchives.nseindia.com/corporate/NAVINFLUOR_05082026204657_NFILIntimationofAuditRecordingofEarningsCallQ1FY27signed.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.
