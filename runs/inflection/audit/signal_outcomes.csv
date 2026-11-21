@@ -48,6 +48,7 @@ AADHARHFC,2026-09-22,Credit Rating- Revision,credit rating upgrade,3.4,,,credit 
 WELENT,2026-09-21,Credit Rating,credit rating upgrade,-8.8,,,credit rating upgrade
 PARAGMILK,2026-09-21,Capacity addition,capex ≥30% of market cap,-3.6,,,capex
 KMEW,2026-09-21,Credit Rating,credit rating upgrade,-75.0,,,credit rating upgrade
+INDOFARM,2026-09-19,Credit Rating- Revision,credit rating upgrade,-11.5,,,credit rating upgrade
 M&M,2026-09-18,Credit Rating,credit rating upgrade,-1.5,,,credit rating upgrade
 NEPHROPLUS,2026-09-18,Credit Rating- Revision,credit rating upgrade,-14.5,,,credit rating upgrade
 PNB,2026-09-18,Credit Rating,credit rating upgrade,7.2,,,credit rating upgrade
@@ -137,25 +138,25 @@ JSL,2026-08-25,Credit Rating,credit rating upgrade,11.0,,,credit rating upgrade
 PNBHOUSING,2026-08-25,Credit Rating,credit rating upgrade,-0.8,,,credit rating upgrade
 GMRAIRPORT,2026-08-25,Credit Rating,credit rating upgrade,2.1,,,credit rating upgrade
 LT,2026-08-25,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),-1.8,,,order
-FCL,2026-08-24,Credit Rating,credit rating upgrade,18.7,,,credit rating upgrade
-RATNAMANI,2026-08-24,Bagging/Receiving of orders/contracts,order ≈64% of annual revenue (after firmness haircut),6.2,,,order
-IVALUE,2026-08-24,Credit Rating- Revision,credit rating upgrade,-17.6,,,credit rating upgrade
-PIRAMALFIN,2026-08-24,Preferential issue,promoter puts in 3.83% of market cap at 100% of market price,4.1,,,promoter puts in
-LT,2026-08-24,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),-2.4,,,order
-DIACABS,2026-08-22,Bagging/Receiving of orders/contracts,global Tier-1/hyperscale customer,8.1,,,global Tier-
-PSB,2026-08-22,Credit Rating,credit rating upgrade,-2.5,,,credit rating upgrade
-UNIONBANK,2026-08-21,Credit Rating- New,credit rating upgrade,-0.1,,,credit rating upgrade
-BHAGCHEM,2026-08-21,Credit Rating,credit rating upgrade,-9.5,,,credit rating upgrade
-NSLNISP,2026-08-21,Credit Rating- Revision,credit rating upgrade,9.5,,,credit rating upgrade
-DATAPATTNS,2026-08-21,Bagging/Receiving of orders/contracts,order ≈31% of annual revenue (after firmness haircut),-3.8,,,order
-WELCORP,2026-08-20,Bagging/Receiving of orders/contracts,order ≈105% of annual revenue (after firmness haircut),35.5,,,order
-PNBHOUSING,2026-08-20,Credit Rating,credit rating upgrade,-0.8,,,credit rating upgrade
-LT,2026-08-20,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),-2.0,,,order
-BANKINDIA,2026-08-19,Credit Rating,credit rating upgrade,0.6,,,credit rating upgrade
-ABDL,2026-08-19,Credit Rating- Revision,credit rating upgrade,12.3,,,credit rating upgrade
-ESAFSFB,2026-08-18,Credit Rating,credit rating upgrade,0.4,,,credit rating upgrade
-ONESOURCE,2026-08-18,Credit Rating,credit rating upgrade,7.5,,,credit rating upgrade
-ADANIPOWER,2026-08-18,Credit Rating,credit rating upgrade,2.4,,,credit rating upgrade
+FCL,2026-08-24,Credit Rating,credit rating upgrade,18.7,-3.7,,credit rating upgrade
+RATNAMANI,2026-08-24,Bagging/Receiving of orders/contracts,order ≈64% of annual revenue (after firmness haircut),6.2,-6.5,,order
+IVALUE,2026-08-24,Credit Rating- Revision,credit rating upgrade,-17.6,-11.1,,credit rating upgrade
+PIRAMALFIN,2026-08-24,Preferential issue,promoter puts in 3.83% of market cap at 100% of market price,4.1,-1.6,,promoter puts in
+LT,2026-08-24,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),-2.4,8.9,,order
+DIACABS,2026-08-22,Bagging/Receiving of orders/contracts,global Tier-1/hyperscale customer,8.1,8.8,,global Tier-
+PSB,2026-08-22,Credit Rating,credit rating upgrade,-2.5,2.5,,credit rating upgrade
+UNIONBANK,2026-08-21,Credit Rating- New,credit rating upgrade,-0.1,20.5,,credit rating upgrade
+BHAGCHEM,2026-08-21,Credit Rating,credit rating upgrade,-9.5,-28.6,,credit rating upgrade
+NSLNISP,2026-08-21,Credit Rating- Revision,credit rating upgrade,9.5,4.3,,credit rating upgrade
+DATAPATTNS,2026-08-21,Bagging/Receiving of orders/contracts,order ≈31% of annual revenue (after firmness haircut),-3.8,-8.8,,order
+WELCORP,2026-08-20,Bagging/Receiving of orders/contracts,order ≈105% of annual revenue (after firmness haircut),35.5,16.9,,order
+PNBHOUSING,2026-08-20,Credit Rating,credit rating upgrade,-0.8,1.7,,credit rating upgrade
+LT,2026-08-20,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),-2.0,7.9,,order
+BANKINDIA,2026-08-19,Credit Rating,credit rating upgrade,0.6,17.9,,credit rating upgrade
+ABDL,2026-08-19,Credit Rating- Revision,credit rating upgrade,12.3,37.8,,credit rating upgrade
+ESAFSFB,2026-08-18,Credit Rating,credit rating upgrade,0.4,20.0,,credit rating upgrade
+ONESOURCE,2026-08-18,Credit Rating,credit rating upgrade,7.5,10.4,,credit rating upgrade
+ADANIPOWER,2026-08-18,Credit Rating,credit rating upgrade,2.4,5.7,,credit rating upgrade
 PREMIERENE,2026-08-17,Credit Rating,credit rating upgrade,-2.4,-5.6,,credit rating upgrade
 SEDEMAC,2026-08-17,Credit Rating,credit rating upgrade,-4.4,2.7,,credit rating upgrade
 IIFL,2026-08-17,Credit Rating,credit rating upgrade,-3.2,7.9,,credit rating upgrade
@@ -344,17 +345,17 @@ IDEA,2026-06-02,Credit Rating- Revision,credit rating upgrade,-0.2,1.9,,credit r
 KROSS,2026-06-02,Credit Rating,credit rating upgrade,-6.9,3.3,,credit rating upgrade
 MANINDS,2026-06-02,Credit Rating,credit rating upgrade,13.7,36.6,,credit rating upgrade
 SAMMAANCAP,2026-06-02,Credit Rating- Revision,credit rating upgrade,-5.3,-21.5,,credit rating upgrade
-DEEDEV,2026-05-30,Bagging/Receiving of orders/contracts,order ≈32% of annual revenue (after firmness haircut),5.3,-2.4,,order
-GMRP&UI,2026-05-29,Credit Rating- Revision,credit rating upgrade,-11.3,-16.2,,credit rating upgrade
-RELIANCE,2026-05-29,Credit Rating,credit rating upgrade,-2.5,-4.7,,credit rating upgrade
-TATASTEEL,2026-05-29,Credit Rating,credit rating upgrade,-11.5,-16.4,,credit rating upgrade
-SMARTWORKS,2026-05-28,Credit Rating,credit rating upgrade,7.9,10.7,,credit rating upgrade
-HBLENGINE,2026-05-28,Bagging/Receiving of orders/contracts,order ≈51% of annual revenue (after firmness haircut),0.3,-15.7,,order
-VEDL,2026-05-27,Credit Rating,credit rating upgrade,-21.2,-28.3,,credit rating upgrade
-KERNEX,2026-05-27,Bagging/Receiving of orders/contracts,order ≈54% of annual revenue (after firmness haircut),36.2,23.9,,order
-NETWEB,2026-05-26,Credit Rating,credit rating upgrade,27.2,36.0,,credit rating upgrade
-LT,2026-05-26,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),2.8,-2.3,,order
-REGAAL,2026-05-26,Capacity addition,capex ≥30% of market cap,-18.0,3.1,,capex
+DEEDEV,2026-05-30,Bagging/Receiving of orders/contracts,order ≈32% of annual revenue (after firmness haircut),5.3,-2.4,-15.6,order
+GMRP&UI,2026-05-29,Credit Rating- Revision,credit rating upgrade,-11.3,-16.2,-15.7,credit rating upgrade
+RELIANCE,2026-05-29,Credit Rating,credit rating upgrade,-2.5,-4.7,6.1,credit rating upgrade
+TATASTEEL,2026-05-29,Credit Rating,credit rating upgrade,-11.5,-16.4,-11.1,credit rating upgrade
+SMARTWORKS,2026-05-28,Credit Rating,credit rating upgrade,7.9,10.7,16.4,credit rating upgrade
+HBLENGINE,2026-05-28,Bagging/Receiving of orders/contracts,order ≈51% of annual revenue (after firmness haircut),0.3,-15.7,-0.3,order
+VEDL,2026-05-27,Credit Rating,credit rating upgrade,-21.2,-28.3,-24.8,credit rating upgrade
+KERNEX,2026-05-27,Bagging/Receiving of orders/contracts,order ≈54% of annual revenue (after firmness haircut),36.2,23.9,22.6,order
+NETWEB,2026-05-26,Credit Rating,credit rating upgrade,27.2,36.0,8.4,credit rating upgrade
+LT,2026-05-26,Bagging/Receiving of orders/contracts,order ≈108% of annual revenue (after firmness haircut),2.8,-2.3,5.5,order
+REGAAL,2026-05-26,Capacity addition,capex ≥30% of market cap,-18.0,3.1,3.6,capex
 SANDHAR,2026-05-25,Credit Rating,credit rating upgrade,-0.7,-13.6,-23.1,credit rating upgrade
 PICCADIL,2026-05-23,Credit Rating- Revision,credit rating upgrade,-6.4,11.7,-5.8,credit rating upgrade
 VIYASH,2026-05-22,Credit Rating- Others,credit rating upgrade,1.2,-0.8,4.4,credit rating upgrade
@@ -471,14 +472,14 @@ KEC,2026-10-08,Bagging/Receiving of orders/contracts,order ≈24% of annual reve
 JSWCEMENT,2026-07-14,Credit Rating- Revision,credit rating upgrade,-6.1,-12.9,,credit rating upgrade
 GOKULAGRO,2026-07-08,Credit Rating- Others,credit rating upgrade,6.3,5.0,,credit rating upgrade
 TVSSCS,2026-07-06,Credit Rating,credit rating upgrade,-2.7,0.5,,credit rating upgrade
-BUILDPRO,2026-10-15,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+BUILDPRO,2026-10-15,Credit Rating,credit rating upgrade,-22.7,,,credit rating upgrade
 GRAVITA,2026-06-11,Credit Rating- Others,credit rating upgrade,10.7,1.6,,credit rating upgrade
 MARKSANS,2026-06-09,Credit Rating- Revision,credit rating upgrade,-1.3,22.8,,credit rating upgrade
-KPIL,2026-10-16,Credit Rating,credit rating upgrade,,,,credit rating upgrade
-SUDARSCHEM,2026-10-20,Credit Rating- New,credit rating upgrade,,,,credit rating upgrade
-RAMCOSYS,2026-10-22,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-SHAREINDIA,2026-10-22,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
-KECL,2026-10-22,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
+KPIL,2026-10-16,Credit Rating,credit rating upgrade,-2.3,,,credit rating upgrade
+SUDARSCHEM,2026-10-20,Credit Rating- New,credit rating upgrade,6.6,,,credit rating upgrade
+RAMCOSYS,2026-10-22,Credit Rating- Revision,credit rating upgrade,0.9,,,credit rating upgrade
+SHAREINDIA,2026-10-22,Credit Rating- Revision,credit rating upgrade,-0.3,,,credit rating upgrade
+KECL,2026-10-22,Credit Rating- Revision,credit rating upgrade,-4.2,,,credit rating upgrade
 HILINFRA,2026-10-23,Bagging/Receiving of orders/contracts,order ≈28% of annual revenue (after firmness haircut),,,,order
 KEC,2026-10-23,Bagging/Receiving of orders/contracts,order ≈30% of annual revenue (after firmness haircut),,,,order
 WELCORP,2026-10-23,Bagging/Receiving of orders/contracts,order ≈22% of annual revenue (after firmness haircut),,,,order
@@ -516,3 +517,14 @@ AYE,2026-11-11,Credit Rating- Revision,credit rating upgrade,,,,credit rating up
 ADANIPOWER,2026-11-10,Credit Rating,credit rating upgrade,,,,credit rating upgrade
 IIFL,2026-11-10,Preferential issue,promoter puts in 23.44% of market cap at 100% of market price,,,,promoter puts in
 SHALPAINTS,2026-08-13,Preferential issue,promoter puts in 858.64% of market cap at 100% of market price,1.1,4.0,,promoter puts in
+SANGHVIMOV,2026-11-20,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+HILINFRA,2026-11-19,Bagging/Receiving of orders/contracts,order ≈28% of annual revenue (after firmness haircut),,,,order
+PNB,2026-11-19,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
+IRB,2026-11-19,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+AURIONPRO,2026-11-19,Bagging/Receiving of orders/contracts,global Tier-1/hyperscale customer,,,,global Tier-
+INDIASHLTR,2026-11-18,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+ADANIENT,2026-11-17,Credit Rating,credit rating upgrade,,,,credit rating upgrade
+IOB,2026-11-17,Credit Rating- Revision,credit rating upgrade,,,,credit rating upgrade
+PACEDIGITK,2026-11-16,Bagging/Receiving of orders/contracts,order ≈58% of annual revenue (after firmness haircut),,,,order
+HINDZINC,2026-11-16,Capacity addition,capex ≥30% of market cap,,,,capex
+MOREPENLAB,2026-11-14,Credit Rating,credit rating upgrade,,,,credit rating upgrade

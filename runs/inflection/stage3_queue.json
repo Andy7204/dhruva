@@ -1,47 +1,47 @@
 [
  {
-  "symbol": "PVRINOX",
-  "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/PVRINOX.md",
-  "price": 1641.2,
-  "discovery_d": 15.9,
-  "fast_lane": true,
-  "stage2_score": 179.3
- },
- {
-  "symbol": "E2E",
-  "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/E2E.md",
-  "price": 560.05,
-  "discovery_d": 20.0,
-  "fast_lane": true,
-  "stage2_score": 176.7
- },
- {
-  "symbol": "AYE",
-  "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/AYE.md",
-  "price": 158.98,
-  "discovery_d": 5.2,
-  "fast_lane": true,
-  "stage2_score": 175.3
- },
- {
-  "symbol": "IMAGICAA",
+  "symbol": "PACEDIGITK",
   "trigger": "fast lane: fast_lane,discovery",
-  "dossier": "runs/inflection/dossiers/IMAGICAA.md",
-  "price": 41.72,
-  "discovery_d": 40.0,
+  "dossier": "runs/inflection/dossiers/PACEDIGITK.md",
+  "price": 165.36,
+  "discovery_d": 36.2,
   "fast_lane": true,
-  "stage2_score": 175.1
+  "stage2_score": 165.7
  },
  {
-  "symbol": "IIFL",
+  "symbol": "AURIONPRO",
   "trigger": "fast lane: fast_lane",
-  "dossier": "runs/inflection/dossiers/IIFL.md",
-  "price": 641.1,
-  "discovery_d": 20.7,
+  "dossier": "runs/inflection/dossiers/AURIONPRO.md",
+  "price": 551.2,
+  "discovery_d": 13.7,
   "fast_lane": true,
-  "stage2_score": 156.9
+  "stage2_score": 154.4
+ },
+ {
+  "symbol": "SANGHVIMOV",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/SANGHVIMOV.md",
+  "price": 371.3,
+  "discovery_d": 5.0,
+  "fast_lane": true,
+  "stage2_score": 152.5
+ },
+ {
+  "symbol": "PNB",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/PNB.md",
+  "price": 155.33,
+  "discovery_d": 5.0,
+  "fast_lane": true,
+  "stage2_score": 151.4
+ },
+ {
+  "symbol": "HILINFRA",
+  "trigger": "fast lane: fast_lane",
+  "dossier": "runs/inflection/dossiers/HILINFRA.md",
+  "price": 84.11,
+  "discovery_d": 26.4,
+  "fast_lane": true,
+  "stage2_score": 137.9
  }
 ]

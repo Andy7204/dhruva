@@ -1,8 +1,8 @@
 # NEWGEN — Newgen Software Technologies Limited (Information Technology)
-Evidence dossier generated 2026-11-13 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-20 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 95.1 · Stage 2 score 102.0 · score 20 sessions ago 41.7 · 60 sessions ago 41.7
-Price ₹439.15 · 12-month return -54.2% · -55.4% from 52-week high · RS rank 9.6 · stage-2 trend False · turnover ₹39.99 cr/day
+Stage 1 score 95.2 · Stage 2 score 101.8 · score 20 sessions ago 41.7 · 60 sessions ago 41.7
+Price ₹413.55 · 12-month return -55.0% · -55.1% from 52-week high · RS rank 9.9 · stage-2 trend False · turnover ₹34.23 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 31.7% · QoQ % (previous QoQ -21.2%) · quarters of sequential growth in last 4: 3
@@ -15,14 +15,16 @@ CFO/PAT 0.77 · class: healthy · receivables growth 27.2% vs revenue 5.9% · in
 Net debt/EBITDA -0.15 · interest cover 120.7 · dilution 0.7% · ROE 16.9% · EBITDA/invested capital 24.1%
 
 ## Valuation
-Market cap ₹6207 cr · TTM P/E 19.6 · PEG 0.25 · EV/EBITDA 14.3 · EPS growth minus 12-month price return 131.6 pts
+Market cap ₹5846 cr · TTM P/E 18.4 · PEG 0.24 · EV/EBITDA 13.5 · EPS growth minus 12-month price return 132.4 pts
 
 ## Industry (same NSE industry, this scan)
-40 peers · 57% growing revenue >20% · 45% expanding EBITDA margin · median revenue YoY 22.0%
+40 peers · 57% growing revenue >20% · 42% expanding EBITDA margin · median revenue YoY 21.7%
 
-Discovery score 13.3 (order intensity 180d 0.01, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 10.2 pts, turnaround False) · fast lane: False · source: confirmation
+Discovery score 13.3 (order intensity 180d 0.02, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 10.2 pts, turnaround False) · fast lane: False · source: confirmation
 
 ## Extracted event facts (CALCULATIONS from filing PDFs; verify in the source)
+- date=2026-11-20 · desc=Bagging/Receiving of orders/contracts · value_cr=17.46 · firmness=0.5 · customer=domestic · tier1_customer=False · order_intensity=0.004 · url=https://nsearchives.nseindia.in/corporate/NEWGEN2_20112026125844_Stock_Exchange_Material_disclosure_CAGL.pdf
+- date=2026-11-17 · desc=Bagging/Receiving of orders/contracts · firmness=0.5 · customer=international · tier1_customer=False · url=https://nsearchives.nseindia.in/corporate/NEWGEN2_17112026125241_Stock_Exchange_Material_disclosure__17112026.pdf
 - date=2026-10-16 · desc=Bagging/Receiving of orders/contracts · value_cr=20.51 · firmness=0.5 · customer=international · tier1_customer=False · order_intensity=0.004 · url=https://nsearchives.nseindia.com/corporate/NEWGEN2_16102026131011_Stock_Exchange_Material_disclosure_NewgenUKSIGN.pdf
 - date=2026-09-28 · desc=Bagging/Receiving of orders/contracts · value_cr=0.55 · firmness=0.5 · customer=international · tier1_customer=False · order_intensity=0.0 · url=https://nsearchives.nseindia.com/corporate/NEWGEN2_28092026225702_Stock_Exchange_Material_disclosure-NSI.pdf
 - date=2026-09-21 · desc=Bagging/Receiving of orders/contracts · value_cr=0.18 · firmness=0.5 · customer=international · tier1_customer=False · order_intensity=0.0 · url=https://nsearchives.nseindia.com/corporate/NEWGEN2_21092026200344_Stock_Exchange_Material_disclosure_Newgen.pdf
@@ -34,6 +36,8 @@ Discovery score 13.3 (order intensity 180d 0.01, capacity +0%, promoter money 0.
 Flags: none
 
 ## Recent relevant NSE filings (newest first)
+- 2026-11-20 · Bagging/Receiving of orders/contracts · Newgen Software Technologies Limited has informed the Exchange about Newgen Software Technologies Limited, has received and accepted a Purchase Order from a customer for providing Loan Origination Sol · https://nsearchives.nseindia.in/corporate/NEWGEN2_20112026125844_Stock_Exchange_Material_disclosure_CAGL.pdf
+- 2026-11-17 · Bagging/Receiving of orders/contracts · Newgen Software Technologies Limited has informed the Exchange about the Company has received and accepted a Letter of Award received from a customer located at Ghana, West Africa, for implementation  · https://nsearchives.nseindia.in/corporate/NEWGEN2_17112026125241_Stock_Exchange_Material_disclosure__17112026.pdf
 - 2026-11-13 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.in/corporate/NEWGEN2_13112026134904_CONFERENCECALL18THNOV2026finaldocusigned.pdf
 - 2026-10-29 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Transcript -Conference Call   Q2 FY 27 · https://nsearchives.nseindia.com/corporate/NEWGEN2_29102026202709_NSTL_EarningCalls.pdf
 - 2026-10-23 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Audio Recording of the Conference Call held on 23rd October 2026. · https://nsearchives.nseindia.com/corporate/NEWGEN2_23102026202429_AudioRecording.pdf
@@ -47,7 +51,5 @@ Flags: none
 - 2026-09-21 · Bagging/Receiving of orders/contracts · Newgen Software Technologies Limited has informed the Exchange about an agreement entered with a customer situated in Qatar for Newgen Platform License, implementation, maintenance and support · https://nsearchives.nseindia.com/corporate/NEWGEN2_21092026200344_Stock_Exchange_Material_disclosure_Newgen.pdf
 - 2026-09-03 · Credit Rating- New · Newgen Software Technologies Limited has informed the Exchange about Credit Rating- New · https://nsearchives.nseindia.com/corporate/NEWGEN2_03092026192632_NEWSOFT_Credit_Letter_31032027.pdf
 - 2026-08-24 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Schedule of meet · https://nsearchives.nseindia.com/corporate/NEWGEN2_24082026134727_coveringsign.pdf
-- 2026-08-04 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Schedule of meet Pursuant to Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015, this is · https://nsearchives.nseindia.com/corporate/NEWGEN2_04082026172833_Intimation_for_Investor_Call_Newgen_--Copy.pdf
-- 2026-07-21 · Analysts/Institutional Investor Meet/Con. Call Updates · Newgen Software Technologies Limited has informed the Exchange about Transcript · https://nsearchives.nseindia.com/corporate/NEWGEN2_21072026162303_TRANSCRIPTSIGN.pdf
 
 Not available from free data: consensus estimates and revisions, order-book size, capacity and utilization, promoter pledges. Stage 3 must source these from filings, presentations and credible reports, or mark them unknown.

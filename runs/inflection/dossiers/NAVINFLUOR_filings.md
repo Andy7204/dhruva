@@ -1,4 +1,4 @@
-# NAVINFLUOR — source filing text (extracted 2026-11-13 from NSE PDFs; first 8000 characters each)
+# NAVINFLUOR — source filing text (extracted 2026-11-20 from NSE PDFs; first 8000 characters each)
 
 ## 2026-11-13 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.in/corporate/NAVINFLUOR_13112026154611_final_upload.pdf
