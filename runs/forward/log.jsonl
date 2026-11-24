@@ -142,3 +142,7 @@
 {"book": "B", "date": "2026-11-20", "liquidation_value": 952194.81, "nav": 952194.81, "pending_target": null, "recorded_at": "2026-11-20T20:52:26.805095+00:00", "weights": {"GOLD": 0.1766, "MOM30": 0.6482, "NDX": 0.1752}}
 {"book": "C", "date": "2026-11-20", "liquidation_value": 902079.42, "nav": 902079.42, "pending_target": null, "recorded_at": "2026-11-20T20:52:26.805095+00:00", "weights": {"LIQ": 1.0}}
 {"book": "N50", "date": "2026-11-20", "liquidation_value": 1118896.36, "nav": 1150401.73, "pending_target": null, "recorded_at": "2026-11-20T20:52:26.805095+00:00", "weights": {"N50": 1.0}}
+{"book": "A", "date": "2026-11-23", "liquidation_value": 973457.97, "nav": 973457.97, "pending_target": null, "recorded_at": "2026-11-24T00:31:50.013374+00:00", "weights": {"GOLD": 0.2589, "MIDMOM50": 0.7411}}
+{"book": "B", "date": "2026-11-23", "liquidation_value": 936719.93, "nav": 936719.93, "pending_target": null, "recorded_at": "2026-11-24T00:31:50.013374+00:00", "weights": {"GOLD": 0.181, "MOM30": 0.6516, "NDX": 0.1674}}
+{"book": "C", "date": "2026-11-23", "liquidation_value": 902486.4, "nav": 902486.4, "pending_target": null, "recorded_at": "2026-11-24T00:31:50.013374+00:00", "weights": {"LIQ": 1.0}}
+{"book": "N50", "date": "2026-11-23", "liquidation_value": 1102968.19, "nav": 1130290.93, "pending_target": null, "recorded_at": "2026-11-24T00:31:50.013374+00:00", "weights": {"N50": 1.0}}
