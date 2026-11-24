@@ -1,4 +1,4 @@
-# ROTO — source filing text (extracted 2026-11-20 from NSE PDFs; first 8000 characters each)
+# ROTO — source filing text (extracted 2026-11-23 from NSE PDFs; first 8000 characters each)
 
 ## 2026-11-11 · Outcome of Board Meeting
 Source: https://nsearchives.nseindia.in/corporate/ROTO_11112026193647_SE_Intimation_Outcome.pdf

@@ -1,4 +1,4 @@
-# NEWGEN — source filing text (extracted 2026-11-20 from NSE PDFs; first 8000 characters each)
+# NEWGEN — source filing text (extracted 2026-11-23 from NSE PDFs; first 8000 characters each)
 
 ## 2026-11-20 · Bagging/Receiving of orders/contracts
 Source: https://nsearchives.nseindia.in/corporate/NEWGEN2_20112026125844_Stock_Exchange_Material_disclosure_CAGL.pdf

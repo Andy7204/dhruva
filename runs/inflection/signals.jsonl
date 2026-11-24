@@ -557,3 +557,7 @@
 {"date": "2026-11-16", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-11-20", "price": 170.47000122070312, "reasons": "order \u224858% of annual revenue (after firmness haircut)", "symbol": "PACEDIGITK"}
 {"date": "2026-11-16", "desc": "Capacity addition", "logged_on": "2026-11-20", "price": 550.2000122070312, "reasons": "capex \u226530% of market cap", "symbol": "HINDZINC"}
 {"date": "2026-11-14", "desc": "Credit Rating", "logged_on": "2026-11-20", "price": 99.63999938964844, "reasons": "credit rating upgrade", "symbol": "MOREPENLAB"}
+{"date": "2026-11-23", "desc": "Credit Rating", "logged_on": "2026-11-23", "price": 245.4499969482422, "reasons": "credit rating upgrade", "symbol": "JNPR"}
+{"date": "2026-11-23", "desc": "Credit Rating", "logged_on": "2026-11-23", "price": 151.0800018310547, "reasons": "credit rating upgrade", "symbol": "FUSION"}
+{"date": "2026-11-23", "desc": "Credit Rating", "logged_on": "2026-11-23", "price": 54.380001068115234, "reasons": "credit rating upgrade", "symbol": "RAJOOENG"}
+{"date": "2026-11-23", "desc": "Bagging/Receiving of orders/contracts", "logged_on": "2026-11-23", "price": 4099.89990234375, "reasons": "global Tier-1/hyperscale customer", "symbol": "LT"}

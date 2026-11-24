@@ -1,50 +1,50 @@
 {
- "session": "2026-11-20",
+ "session": "2026-11-23",
  "queue": [
   {
-   "symbol": "PACEDIGITK",
-   "trigger": "fast lane: fast_lane,discovery",
-   "dossier": "runs/inflection/dossiers/PACEDIGITK.md",
-   "price": 165.36,
-   "discovery_d": 36.2,
+   "symbol": "FUSION",
+   "trigger": "fast lane: fast_lane",
+   "dossier": "runs/inflection/dossiers/FUSION.md",
+   "price": 151.08,
+   "discovery_d": 12.7,
    "fast_lane": true,
-   "stage2_score": 165.7
+   "stage2_score": 168.2
+  },
+  {
+   "symbol": "LT",
+   "trigger": "Stage 2 score moved 5+ points",
+   "dossier": "runs/inflection/dossiers/LT.md",
+   "price": 4099.9,
+   "discovery_d": 12.7,
+   "fast_lane": true,
+   "stage2_score": 158.4
   },
   {
    "symbol": "AURIONPRO",
    "trigger": "fast lane: fast_lane",
    "dossier": "runs/inflection/dossiers/AURIONPRO.md",
-   "price": 551.2,
+   "price": 555.4,
    "discovery_d": 13.7,
    "fast_lane": true,
-   "stage2_score": 154.4
+   "stage2_score": 154.6
   },
   {
-   "symbol": "SANGHVIMOV",
+   "symbol": "RAJOOENG",
    "trigger": "fast lane: fast_lane",
-   "dossier": "runs/inflection/dossiers/SANGHVIMOV.md",
-   "price": 371.3,
+   "dossier": "runs/inflection/dossiers/RAJOOENG.md",
+   "price": 54.38,
    "discovery_d": 5.0,
    "fast_lane": true,
-   "stage2_score": 152.5
-  },
-  {
-   "symbol": "PNB",
-   "trigger": "fast lane: fast_lane",
-   "dossier": "runs/inflection/dossiers/PNB.md",
-   "price": 155.33,
-   "discovery_d": 5.0,
-   "fast_lane": true,
-   "stage2_score": 151.4
+   "stage2_score": 146.2
   },
   {
    "symbol": "HILINFRA",
    "trigger": "fast lane: fast_lane",
    "dossier": "runs/inflection/dossiers/HILINFRA.md",
-   "price": 84.11,
+   "price": 85.12,
    "discovery_d": 26.4,
    "fast_lane": true,
-   "stage2_score": 137.9
+   "stage2_score": 138.0
   }
  ],
  "reviewed": [],

@@ -1,8 +1,8 @@
 # ROTO — Roto Pumps Limited (Unclassified)
-Evidence dossier generated 2026-11-20 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-23 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
-Stage 1 score 91.3 · Stage 2 score 98.0 · score 20 sessions ago  · 60 sessions ago 
-Price ₹71.57 · 12-month return 18.9% · -7.0% from 52-week high · RS rank 73.2 · stage-2 trend False · turnover ₹13.73 cr/day
+Stage 1 score 91.3 · Stage 2 score 98.1 · score 20 sessions ago  · 60 sessions ago 
+Price ₹71.30 · 12-month return 23.4% · -7.4% from 52-week high · RS rank 75.7 · stage-2 trend False · turnover ₹13.80 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 54.6% · QoQ % (previous QoQ -7.0%) · quarters of sequential growth in last 4: 3
@@ -15,10 +15,10 @@ CFO/PAT 1.49 · class: healthy · receivables growth 1.6% vs revenue -3.1% · in
 Net debt/EBITDA 0.06 · interest cover 39.5 · dilution 0.0% · ROE 10.3% · EBITDA/invested capital 21.7%
 
 ## Valuation
-Market cap ₹1349 cr · TTM P/E 19.8 · PEG 0.08 · EV/EBITDA 24.0 · EPS growth minus 12-month price return 181.1 pts
+Market cap ₹1344 cr · TTM P/E 19.8 · PEG 0.08 · EV/EBITDA 23.9 · EPS growth minus 12-month price return 176.6 pts
 
 ## Industry (same NSE industry, this scan)
-721 peers · 53% growing revenue >20% · 44% expanding EBITDA margin · median revenue YoY 21.6%
+714 peers · 53% growing revenue >20% · 44% expanding EBITDA margin · median revenue YoY 21.6%
 
 Discovery score 15.0 (order intensity 180d 0.00, capacity +0%, promoter money 0.0% of mcap, core margin QoQ change 9.7 pts, turnaround False) · fast lane: False · source: confirmation
 

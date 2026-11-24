@@ -1,4 +1,4 @@
-# TTKPRESTIG — source filing text (extracted 2026-11-20 from NSE PDFs; first 8000 characters each)
+# TTKPRESTIG — source filing text (extracted 2026-11-23 from NSE PDFs; first 8000 characters each)
 
 ## 2026-11-17 · Analysts/Institutional Investor Meet/Con. Call Updates
 Source: https://nsearchives.nseindia.in/corporate/TTKPRESTIG1_17112026120534_Outcome_Avendus_Call_Signed.pdf

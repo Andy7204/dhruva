@@ -1,8 +1,8 @@
 # TTKPRESTIG — TTK Prestige Limited (Consumer Durables)
-Evidence dossier generated 2026-11-20 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
+Evidence dossier generated 2026-11-23 by Stage 2. Numbers are CALCULATIONS from Yahoo Finance data; filings are FACTS from NSE.
 
 Stage 1 score 93.5 · Stage 2 score 98.4 · score 20 sessions ago 72.9 · 60 sessions ago 72.9
-Price ₹539.90 · 12-month return -18.2% · -23.1% from 52-week high · RS rank 39.9 · stage-2 trend False · turnover ₹27.56 cr/day
+Price ₹529.30 · 12-month return -19.9% · -24.6% from 52-week high · RS rank 39.3 · stage-2 trend False · turnover ₹27.48 cr/day
 
 ## Earnings (latest quarter vs same quarter last year)
 Revenue YoY 65.6% · QoQ % (previous QoQ 11.6%) · quarters of sequential growth in last 4: 3
@@ -15,7 +15,7 @@ CFO/PAT 1.31 · class: healthy · receivables growth -0.7% vs revenue 9.6% · in
 Net debt/EBITDA 0.06 · interest cover 41.6 · dilution 0.0% · ROE 8.1% · EBITDA/invested capital 15.5%
 
 ## Valuation
-Market cap ₹7395 cr · TTM P/E 30.8 · PEG 0.10 · EV/EBITDA 23.5 · EPS growth minus 12-month price return 218.2 pts
+Market cap ₹7250 cr · TTM P/E 30.2 · PEG 0.10 · EV/EBITDA 23.0 · EPS growth minus 12-month price return 219.9 pts
 
 ## Industry (same NSE industry, this scan)
 40 peers · 45% growing revenue >20% · 35% expanding EBITDA margin · median revenue YoY 17.8%

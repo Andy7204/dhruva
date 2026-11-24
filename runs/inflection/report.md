@@ -1,13 +1,13 @@
-# Dhruva inflection report — 2026-11-20
+# Dhruva inflection report — 2026-11-23
 
 Paper research, not investment advice. The model portfolio is paper; your holdings change only after you confirm a trade.
 
 ## Fast lane (material filings this week)
-- PACEDIGITK 2026-11-16: Bagging/Receiving of orders/contracts — order ≈58% of annual revenue (after firmness haircut) (price ₹170.47000122070312)
 - HILINFRA 2026-11-19: Bagging/Receiving of orders/contracts — order ≈28% of annual revenue (after firmness haircut) (price ₹83.9000015258789)
 - AURIONPRO 2026-11-19: Bagging/Receiving of orders/contracts — global Tier-1/hyperscale customer (price ₹555.4000244140625)
-- PNB 2026-11-19: Credit Rating- Revision — credit rating upgrade (price ₹154.85000610351562)
-- SANGHVIMOV 2026-11-20: Credit Rating — credit rating upgrade (price ₹371.2999877929688)
+- LT 2026-11-23: Bagging/Receiving of orders/contracts — global Tier-1/hyperscale customer (price ₹4099.89990234375)
+- RAJOOENG 2026-11-23: Credit Rating — credit rating upgrade (price ₹54.380001068115234)
+- FUSION 2026-11-23: Credit Rating — credit rating upgrade (price ₹151.0800018310547)
 
 ## State changes today
 | Company | From | To | Paper amount | Price | Reason |
@@ -71,10 +71,10 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 | KECL | 16 | — | 11.0 | -22.9 | YELLOW | RESEARCH | 2026-10-22 |
 
 ## Stage 2 finalists (quantitative; the Stage 3 queue picks from here)
-- PACEDIGITK (Unclassified): discovery 36.2, confirmation 59.0, source fast_lane,discovery
-- AURIONPRO (Information Technology): discovery 13.7, confirmation 47.8, source fast_lane
-- SANGHVIMOV (Unclassified): discovery 5.0, confirmation 45.8, source fast_lane
-- PNB (Financial Services): discovery 5.0, confirmation 46.4, source fast_lane
+- FUSION (Unclassified): discovery 12.7, confirmation 61.4, source fast_lane
+- LT (Construction): discovery 12.7, confirmation 55.7, source fast_lane
+- AURIONPRO (Information Technology): discovery 13.7, confirmation 48.0, source fast_lane
+- RAJOOENG (Unclassified): discovery 5.0, confirmation 39.4, source fast_lane
 - HILINFRA (Unclassified): discovery 26.4, confirmation 31.2, source fast_lane
 - NEWGEN (Information Technology): discovery 13.3, confirmation 95.2, source confirmation
 - NAVINFLUOR (Chemicals): discovery 7.2, confirmation 93.1, source confirmation
@@ -83,23 +83,23 @@ Paper research, not investment advice. The model portfolio is paper; your holdin
 - ROTO (Unclassified): discovery 15.0, confirmation 91.3, source confirmation
 
 ## Stage 3 queue (underwritten in Claude Code sessions)
-- PACEDIGITK: fast lane: fast_lane,discovery
+- FUSION: fast lane: fast_lane
+- LT: Stage 2 score moved 5+ points
 - AURIONPRO: fast lane: fast_lane
-- SANGHVIMOV: fast lane: fast_lane
-- PNB: fast lane: fast_lane
+- RAJOOENG: fast lane: fast_lane
 - HILINFRA: fast lane: fast_lane
 
-## Missed-winner audit (319 cases logged; 103 new today)
-- NAVINFLUOR: +25.7% vs Nifty 500 since 2026-10-21 — material signal logged but not escalated
-- ROTO: +23.3% vs Nifty 500 since 2026-10-21 — no deterministic signal before the move
-- APLLTD: +32.1% vs Nifty 500 since 2026-10-21 — no deterministic signal before the move
-- DIVISLAB: +21.7% vs Nifty 500 since 2026-10-21 — no deterministic signal before the move
-- ASAHIINDIA: +30.1% vs Nifty 500 since 2026-10-21 — no deterministic signal before the move
-- ICIL: +41.2% vs Nifty 500 since 2026-10-21 — no deterministic signal before the move
-- SSWL: +34.0% vs Nifty 500 since 2026-10-21 — no deterministic signal before the move
-- AARTIDRUGS: +24.7% vs Nifty 500 since 2026-10-21 — no deterministic signal before the move
-- NILKAMAL: +20.6% vs Nifty 500 since 2026-10-21 — no deterministic signal before the move
-- BHAGYANGR: +39.0% vs Nifty 500 since 2026-10-21 — material signal logged but not escalated
+## Missed-winner audit (421 cases logged; 102 new today)
+- NAVINFLUOR: +27.8% vs Nifty 500 since 2026-10-22 — material signal logged but not escalated
+- APLLTD: +30.1% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
+- ROTO: +25.5% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
+- AARTIPHARM: +23.1% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
+- DIVISLAB: +22.3% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
+- ASAHIINDIA: +29.0% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
+- SSWL: +25.5% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
+- VRLLOG: +26.3% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
+- ICIL: +46.2% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
+- AARTIDRUGS: +27.3% vs Nifty 500 since 2026-10-22 — no deterministic signal before the move
 
 ## Cash
 Your confirmed cash ₹20,000 · confirmed holdings: none · starter ₹2,500, build +₹3,000, core to ₹10,000; at most 4 open starters and 2 new a month.
